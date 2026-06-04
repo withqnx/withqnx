@@ -2,8 +2,11 @@ name: 매일 후기 크롤링 & Cloudflare 배포
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # 매일 08:00 KST (UTC+9)
+    - cron: '17 23 * * *'  # 매일 08:17 KST (UTC+9) — 정시 혼잡 회피
   workflow_dispatch:        # 수동 실행 버튼
+
+permissions:
+  contents: write           # data.json 커밋 권한
 
 jobs:
   crawl-and-deploy:
