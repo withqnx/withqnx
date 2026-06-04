@@ -1,0 +1,3442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>겸손몰 후기 분석</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Paperlogy 한글 폰트 (로컬 파일) */
+  @font-face { font-family: 'Paperlogy'; font-weight: 100; src: url('fonts/Paperlogy-1Thin.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 200; src: url('fonts/Paperlogy-2ExtraLight.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 300; src: url('fonts/Paperlogy-3Light.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 400; src: url('fonts/Paperlogy-4Regular.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 500; src: url('fonts/Paperlogy-5Medium.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 600; src: url('fonts/Paperlogy-6SemiBold.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 700; src: url('fonts/Paperlogy-7Bold.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 800; src: url('fonts/Paperlogy-8ExtraBold.ttf') format('truetype'); font-display: swap; }
+  @font-face { font-family: 'Paperlogy'; font-weight: 900; src: url('fonts/Paperlogy-9Black.ttf') format('truetype'); font-display: swap; }
+
+  :root {
+    /* Colors */
+    --midnight: #000000;
+    --obsidian: #030304;
+    --charcoal: #08080a;
+    --pewter: #121317;
+    --slate: #1c1d22;
+    --ash: #5e616e;
+    --stone: #777a88;
+    --silver: #acafb9;
+    --porcelain: #cdcdcd;
+    --frost: #e2e3e9;
+    --white: #ffffff;
+    --gold: #cc9166;
+    --gold-grad: linear-gradient(103deg, rgb(174, 147, 87), rgb(255, 240, 204) 40%, rgb(174, 147, 87) 70%, rgba(189, 157, 79, 0));
+
+    /* Category colors - 6 categories */
+    --cat-positive: #60a5fa;   /* 긍정 - 파랑 */
+    --cat-negative: #ef4444;   /* 부정 - 빨강 */
+    --cat-neutral:  #22c55e;   /* 중립/단순수령 - 초록 */
+    --cat-resale:   #16a34a;   /* 양도/거래 - 진초록 */
+    --cat-exchange: #fb923c;   /* 교환/반품 - 주황 */
+    --cat-shipping: #c084fc;   /* 배송관련불편 - 보라 */
+
+    --font-display: 'Playfair Display', 'Paperlogy', ui-serif, Georgia, serif;
+    --font-body: 'Paperlogy', 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+    --radius-md: 10px;
+    --radius-sm: 2px;
+    --radius-pill: 9999px;
+
+    --max-width: 1216px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    background: var(--midnight);
+    color: var(--frost);
+    font-family: var(--font-body);
+    font-weight: 400;  /* Paperlogy Regular */
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: -0.01px;
+    min-height: 100vh;
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 한글 + 영문 결합 시 더 자연스러운 베이스라인 */
+  body, button, input, select, textarea {
+    font-family: 'Paperlogy', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+
+  body { padding-bottom: 80px; }
+
+  /* ───── Header ───── */
+  header {
+    border-bottom: 1px solid var(--slate);
+    padding: 32px 40px 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  .masthead {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.0;
+    letter-spacing: -0.04px;
+    color: var(--white);
+  }
+  .masthead .accent {
+    color: var(--white);
+    font-style: normal;
+  }
+  .header-meta {
+    text-align: right;
+    font-size: 12px;
+    color: var(--stone);
+    line-height: 1.6;
+  }
+  .header-meta .label { color: var(--ash); }
+  .header-meta .value { color: var(--porcelain); }
+
+  /* ───── Nav ───── */
+  nav {
+    border-bottom: 1px solid var(--slate);
+    padding: 0 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    align-items: center;
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .publish-btn {
+    margin-left: auto;
+    flex-shrink: 0;
+    background: var(--gold);
+    color: var(--midnight);
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity .15s, background .2s, color .2s;
+  }
+  .publish-btn:hover { opacity: 0.82; }
+  .publish-btn:active { opacity: 0.65; }
+  .publish-btn.loading { opacity: 0.45; cursor: wait; pointer-events: none; }
+  .publish-btn.success { background: #22c55e; color: #fff; }
+  .publish-btn.error   { background: var(--cat-negative); color: #fff; }
+  .tab {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 16px 20px;
+    cursor: pointer;
+    color: var(--stone);
+    border-bottom: 1px solid transparent;
+    transition: color .15s, border-color .15s;
+    white-space: nowrap;
+    user-select: none;
+    letter-spacing: -0.013px;
+  }
+  .tab:hover { color: var(--porcelain); }
+  .tab.active {
+    color: var(--white);
+    border-bottom-color: var(--white);
+  }
+  .tab-badge {
+    background: var(--gold);
+    color: var(--midnight);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    margin-left: 6px;
+    border-radius: var(--radius-pill);
+    vertical-align: middle;
+  }
+
+  /* ───── Main ───── */
+  main {
+    padding: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  .section { display: none; animation: fadeIn .3s ease-out; }
+  .section.active { display: block; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ───── Stats Grid ───── */
+  .section-header {
+    display: flex; align-items: baseline; gap: 16px;
+    margin-bottom: 24px;
+  }
+  .pill {
+    display: inline-flex; align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border: 1px solid var(--frost);
+    border-radius: var(--radius-pill);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .pill.gold {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .section-date {
+    font-size: 14px;
+    color: var(--stone);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .stats-grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 720px) {
+    .stats-grid-3 { grid-template-columns: 1fr; }
+  }
+  .stats-grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media (max-width: 900px) {
+    .stats-grid-4 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .stats-grid-4 { grid-template-columns: 1fr; }
+  }
+  /* Today 탭 3줄 레이아웃 */
+  .today-row1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .today-row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .today-row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 900px) {
+    .today-row1 { grid-template-columns: 1fr; }
+    .today-row2 { grid-template-columns: 1fr 1fr; }
+    .today-row3 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .today-row2 { grid-template-columns: 1fr; }
+  }
+  /* 키워드 가로 막대 그래프 */
+  .kw-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .kw-bar-label {
+    width: 72px;
+    font-size: 11px;
+    color: var(--silver);
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .kw-bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .kw-bar-fill-pos {
+    height: 100%;
+    background: var(--cat-positive, #60a5fa);
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+  .kw-bar-fill-neg {
+    height: 100%;
+    background: var(--cat-negative, #ef4444);
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+  .kw-bar-num {
+    font-size: 11px;
+    color: var(--stone);
+    width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  /* TOP3 카드 */
+  .top3-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .top3-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .top3-item:hover .top3-name { color: var(--white); }
+  .top3-rank {
+    font-size: 10px;
+    color: var(--stone);
+    width: 14px;
+    flex-shrink: 0;
+  }
+  .top3-name {
+    font-size: 12px;
+    color: var(--silver);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.15s;
+  }
+  .top3-pct {
+    font-size: 11px;
+    color: var(--stone);
+    flex-shrink: 0;
+  }
+  .recent-products-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .recent-product-tag {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: var(--silver);
+    white-space: nowrap;
+  }
+  .stat-card {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--ash), transparent);
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .stat-card:hover::before { opacity: 1; }
+  .stat-clickable {
+    cursor: pointer;
+    transition: transform .15s, background .15s;
+  }
+  .stat-clickable:hover {
+    background: var(--pewter);
+    transform: translateY(-1px);
+  }
+  .stat-num {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.0;
+    color: var(--white);
+    letter-spacing: -0.04px;
+    margin-bottom: 8px;
+  }
+  .stat-num.accent {
+    background: var(--gold-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--silver);
+    letter-spacing: -0.007px;
+  }
+  .stat-sub {
+    font-size: 11px;
+    color: var(--stone);
+    letter-spacing: -0.007px;
+    margin-top: 6px;
+  }
+  .stat-sub-num {
+    color: var(--frost);
+    font-weight: 500;
+  }
+  .stat-pre {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .stat-group-name {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 8px;
+    /* 너무 긴 그룹명 2줄로 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 48px;
+  }
+
+  /* ───── Today List ───── */
+  .today-list { list-style: none; }
+  .today-list li {
+    border-bottom: 1px solid var(--pewter);
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 180px 1fr auto;
+    gap: 24px;
+    align-items: center;
+    transition: background .15s;
+  }
+  .today-list li:hover { background: rgba(255,255,255,.01); }
+  .today-list li:last-child { border-bottom: none; }
+  .today-product {
+    font-size: 12px;
+    color: var(--ash);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    letter-spacing: -0.007px;
+  }
+  .today-product.is-group { color: var(--gold); }
+  .today-title { font-size: 15px; line-height: 1.5; color: var(--frost); }
+  .today-title a {
+    color: inherit; text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s;
+    cursor: pointer;
+  }
+  .today-title a:hover { border-bottom-color: var(--porcelain); }
+  .today-title .summary {
+    font-size: 12px;
+    color: var(--stone);
+    margin-top: 4px;
+    letter-spacing: -0.007px;
+  }
+
+  /* ───── Tags ───── */
+  .tag {
+    display: inline-flex;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid;
+  }
+  .tag-긍정         { color: var(--cat-positive); border-color: rgba(96,165,250,.3);  background: rgba(96,165,250,.06); }
+  .tag-부정         { color: var(--cat-negative); border-color: rgba(239,68,68,.3);   background: rgba(239,68,68,.06); }
+  .tag-중립\/단순수령 { color: var(--cat-neutral);  border-color: rgba(34,197,94,.3);  background: rgba(34,197,94,.06); }
+  .tag-양도\/거래   { color: var(--cat-resale);   border-color: rgba(22,163,74,.3);  background: rgba(22,163,74,.06); }
+  .tag-교환\/반품   { color: var(--cat-exchange); border-color: rgba(251,146,60,.3); background: rgba(251,146,60,.06); }
+  .tag-배송관련불편 { color: var(--cat-shipping); border-color: rgba(192,132,252,.3); background: rgba(192,132,252,.06); }
+  .tag-미분류       { color: var(--silver);       border-color: var(--ash); background: var(--pewter); }
+
+  .hash-tag {
+    display: inline-flex;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 8px;
+    background: var(--pewter);
+    color: var(--silver);
+    border-radius: var(--radius-pill);
+    margin-left: 4px;
+    cursor: pointer;
+    transition: all .15s;
+    letter-spacing: -0.007px;
+  }
+  .hash-tag:hover { background: var(--slate); color: var(--white); }
+
+  .review-badge {
+    display: inline-flex;
+    background: var(--gold);
+    color: var(--midnight);
+    font-size: 9px; font-weight: 600;
+    padding: 2px 7px; margin-left: 6px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* ───── Product Selector ───── */
+  .product-selector {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .product-btn {
+    font-size: 12px; font-weight: 500;
+    padding: 6px 14px;
+    border: 1px solid var(--slate);
+    background: transparent;
+    color: var(--silver);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    letter-spacing: -0.007px;
+  }
+  .product-btn:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .product-btn.active {
+    background: var(--white);
+    color: var(--midnight);
+    border-color: var(--white);
+  }
+
+  /* ───── Analysis Grid ───── */
+  .analysis-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 980px) {
+    .analysis-grid { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    padding: 24px;
+  }
+  .panel-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--silver);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--pewter);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .panel-meta {
+    font-size: 11px;
+    color: var(--ash);
+    margin: -8px 0 16px;
+  }
+  .panel-meta .highlight { color: var(--gold); font-weight: 500; }
+
+  /* ───── Bar Chart ───── */
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row {
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer;
+    padding: 6px 0;
+    border-radius: var(--radius-sm);
+    transition: background .15s;
+  }
+  .bar-row:hover { background: rgba(255,255,255,.02); }
+  .bar-row.active {
+    background: rgba(204, 145, 102, 0.08);
+    box-shadow: inset 2px 0 0 var(--gold);
+  }
+  .hashtag-row.active {
+    background: rgba(204, 145, 102, 0.08);
+  }
+  .bar-label {
+    font-size: 11px;
+    width: 96px;
+    flex-shrink: 0;
+    text-align: right;
+    color: var(--silver);
+    letter-spacing: -0.007px;
+    font-weight: 500;
+  }
+  .bar-track {
+    flex: 1; height: 6px;
+    background: var(--pewter);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    transition: width .6s cubic-bezier(.4,0,.2,1);
+  }
+  .fill-긍정         { background: var(--cat-positive); }
+  .fill-부정         { background: var(--cat-negative); }
+  .fill-중립\/단순수령 { background: var(--cat-neutral); }
+  .fill-양도\/거래   { background: var(--cat-resale); }
+  .fill-교환\/반품   { background: var(--cat-exchange); }
+  .fill-배송관련불편 { background: var(--cat-shipping); }
+
+  .bar-count {
+    font-size: 12px;
+    font-weight: 500;
+    width: 36px;
+    text-align: right;
+    color: var(--white);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ───── Hashtag stats - donut style ───── */
+  .hashtag-stats {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--pewter);
+  }
+  .hashtag-list {
+    display: flex; flex-direction: column; gap: 8px;
+    margin-top: 12px;
+  }
+  .hashtag-row {
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  .hashtag-row .name {
+    font-size: 11px;
+    width: 80px; flex-shrink: 0;
+    color: var(--silver);
+    font-weight: 500;
+  }
+  .hashtag-row .bar {
+    flex: 1; height: 4px;
+    background: var(--pewter);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  .hashtag-row .bar-inner {
+    height: 100%;
+    background: var(--gold-grad);
+    transition: width .5s ease-out;
+  }
+  .hashtag-row .num {
+    font-size: 11px;
+    color: var(--porcelain);
+    width: 32px; text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ───── Reviews list ───── */
+  .reviews-panel {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .reviews-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--pewter);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--silver);
+    font-weight: 600;
+  }
+  .reviews-header .filter-pill {
+    background: var(--white);
+    color: var(--midnight);
+    padding: 4px 12px;
+    font-size: 10px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .review-item {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--pewter);
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .review-item:hover { background: var(--pewter); }
+  .review-item:last-child { border-bottom: none; }
+  .review-item-header {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 12px;
+    margin-bottom: 6px;
+  }
+  .review-item-title { font-size: 14px; color: var(--frost); flex: 1; line-height: 1.5; }
+  .review-item-meta {
+    font-size: 11px;
+    color: var(--ash);
+    margin-bottom: 6px;
+  }
+  .review-item-summary {
+    font-size: 12px;
+    color: var(--stone);
+    line-height: 1.5;
+  }
+
+  /* ───── Groups ───── */
+  .group-toolbar {
+    display: flex; gap: 12px;
+    align-items: center; margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    font-size: 13px; font-weight: 500;
+    padding: 10px 24px;
+    background: var(--white);
+    color: var(--midnight);
+    border: none;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: opacity .15s;
+    letter-spacing: -0.013px;
+  }
+  .btn-primary:hover { opacity: .85; }
+  .btn-secondary {
+    font-size: 13px; font-weight: 500;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    letter-spacing: -0.013px;
+  }
+  .btn-secondary:hover { background: rgba(255,255,255,.06); }
+  .btn-hint {
+    font-size: 12px;
+    color: var(--stone);
+  }
+
+  .group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .group-card {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .group-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--gold-grad);
+    opacity: .4;
+  }
+  .group-card-name {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: -0.025px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+  .group-card-date {
+    font-size: 11px;
+    color: var(--silver);
+    margin-bottom: 16px;
+    letter-spacing: -0.007px;
+  }
+  .group-card-products {
+    font-size: 12px;
+    color: var(--stone);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: -0.007px;
+  }
+  .group-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid var(--pewter);
+    border-bottom: 1px solid var(--pewter);
+    text-align: center;
+  }
+  .group-stat-num {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .group-stat-num.pos { color: var(--cat-positive); }
+  .group-stat-num.neg { color: var(--cat-negative); }
+  .group-stat-label {
+    font-size: 10px;
+    color: var(--ash);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  /* Groups - 가로 긍정/부정 막대 */
+  .group-ratio {
+    margin-top: 14px;
+  }
+  .group-ratio-bar {
+    display: flex;
+    height: 6px;
+    background: var(--pewter);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .group-ratio-bar .seg-pos { background: var(--cat-positive); }
+  .group-ratio-bar .seg-neg { background: var(--cat-negative); }
+  .group-ratio-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-top: 4px;
+    color: var(--ash);
+    letter-spacing: -0.007px;
+  }
+  .group-ratio-labels .pos { color: var(--cat-positive); }
+  .group-ratio-labels .neg { color: var(--cat-negative); }
+  /* Groups - 드래그앤드롭 */
+  .group-card {
+    cursor: grab;
+    position: relative;
+  }
+  .group-card.dragging {
+    opacity: 0.4;
+    cursor: grabbing;
+  }
+  .group-card.drop-target {
+    border-color: var(--gold) !important;
+    background: rgba(204,145,102,.05);
+  }
+  .group-drag-handle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 14px;
+    color: var(--ash);
+    cursor: grab;
+    user-select: none;
+    line-height: 1;
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  .group-drag-handle:hover {
+    color: var(--frost);
+    background: rgba(255,255,255,.05);
+  }
+  .group-meta {
+    font-size: 10px;
+    color: var(--ash);
+    text-align: center;
+    margin-top: 12px;
+  }
+  .group-actions {
+    display: flex; gap: 8px;
+    margin-top: 16px;
+  }
+  .btn-small {
+    font-size: 11px;
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid var(--ash);
+    color: var(--silver);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    letter-spacing: -0.007px;
+  }
+  .btn-small:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .btn-small.danger:hover {
+    border-color: var(--cat-negative);
+    color: var(--cat-negative);
+  }
+
+  /* ───── Form ───── */
+  .form-row { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .form-label {
+    font-size: 11px;
+    color: var(--silver);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .form-input {
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 12px 20px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    outline: none;
+    transition: border-color .15s;
+  }
+  .form-input:focus { border-color: var(--white); }
+  .form-input::placeholder { color: var(--ash); }
+
+  .product-checklist {
+    max-height: 280px;
+    overflow-y: auto;
+    background: var(--pewter);
+    border-radius: var(--radius-md);
+    padding: 8px;
+  }
+  .product-check {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--porcelain);
+    border-radius: var(--radius-sm);
+    transition: background .1s;
+  }
+  .product-check:hover { background: var(--slate); }
+  .product-check input { cursor: pointer; accent-color: var(--gold); }
+
+  /* ───── Photos ───── */
+  .photos-toolbar {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .photos-select {
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    min-width: 200px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23acafb9' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+  }
+  .photos-checkbox-label {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px;
+    color: var(--silver);
+    cursor: pointer;
+  }
+  .photos-checkbox-label input { accent-color: var(--gold); }
+  .toggle-btn {
+    font-size: 13px; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--midnight);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .toggle-btn:hover { opacity: .85; }
+  .toggle-btn.off {
+    background: transparent;
+    color: var(--silver);
+    border-color: var(--ash);
+  }
+
+  /* 갤러리 — 후기 카드 단위 (한 후기 = 한 카드, 메인 이미지 + 썸네일 + 정보) */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+  }
+  .photo-card {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform .15s;
+  }
+  .photo-card:hover { transform: translateY(-2px); }
+
+  /* 메인 큰 이미지 */
+  .photo-main {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--charcoal);
+    overflow: hidden;
+  }
+  .photo-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: opacity .2s;
+  }
+  .photo-main.hidden img {
+    filter: blur(28px) brightness(0.4);
+    cursor: default;
+  }
+  .photo-main.hidden::after {
+    content: '사진 숨김';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--silver);
+    font-size: 13px;
+    pointer-events: none;
+    font-weight: 500;
+  }
+
+  /* 가리기/보이기 토글 (카드 좌상단) */
+  .photo-toggle {
+    position: absolute;
+    top: 12px; right: 12px;
+    width: 32px; height: 32px;
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: var(--radius-pill);
+    color: var(--white);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    transition: all .15s;
+    z-index: 2;
+  }
+  .photo-toggle:hover {
+    background: rgba(0,0,0,.85);
+    border-color: var(--gold);
+  }
+
+  /* 썸네일 스트립 (이미지 2장 이상일 때) */
+  .photo-thumbs {
+    display: flex; gap: 4px;
+    padding: 8px 12px;
+    background: var(--charcoal);
+    border-top: 1px solid var(--pewter);
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .photo-thumbs::-webkit-scrollbar { height: 4px; }
+  .photo-thumbs::-webkit-scrollbar-thumb { background: var(--ash); border-radius: 2px; }
+  .photo-thumb {
+    width: 56px; height: 56px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color .15s, opacity .15s;
+    opacity: .7;
+  }
+  .photo-thumb:hover { opacity: 1; }
+  .photo-thumb.active {
+    border-color: var(--gold);
+    opacity: 1;
+  }
+
+  /* 카드 하단 정보 */
+  .photo-card-info {
+    padding: 14px 16px;
+    border-top: 1px solid var(--pewter);
+  }
+  .photo-card-product {
+    font-size: 11px;
+    color: var(--gold);
+    margin-bottom: 4px;
+    letter-spacing: -0.007px;
+    font-weight: 500;
+  }
+  .photo-card-product.is-product { color: var(--silver); }
+  .photo-card-title {
+    font-size: 13px;
+    color: var(--frost);
+    line-height: 1.45;
+    cursor: pointer;
+  }
+  .photo-card-title:hover { text-decoration: underline; }
+  .photo-card-meta {
+    font-size: 10px;
+    color: var(--ash);
+    margin-top: 6px;
+    letter-spacing: -0.007px;
+  }
+
+  .photo-section-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--white);
+    letter-spacing: -0.025px;
+  }
+  .photo-section-meta {
+    font-size: 11px;
+    color: var(--ash);
+    margin-bottom: 16px;
+  }
+
+  /* ───── Modal ───── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--obsidian);
+    border: 1px solid var(--slate);
+    border-radius: var(--radius-md);
+    max-width: 720px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  .modal-header {
+    padding: 24px 32px 20px;
+    border-bottom: 1px solid var(--slate);
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 16px;
+    position: sticky; top: 0;
+    background: var(--obsidian);
+    z-index: 1;
+  }
+  .modal-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white);
+    flex: 1;
+    line-height: 1.4;
+    letter-spacing: -0.022px;
+  }
+  .modal-close {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--silver);
+    line-height: 1;
+    flex-shrink: 0;
+    transition: color .15s;
+    padding: 4px;
+  }
+  .modal-close:hover { color: var(--white); }
+  .modal-body { padding: 24px 32px 32px; }
+  .modal-meta {
+    display: flex; gap: 12px; align-items: center;
+    flex-wrap: wrap; margin-bottom: 20px;
+  }
+  .modal-meta-item {
+    font-size: 12px;
+    color: var(--silver);
+    letter-spacing: -0.007px;
+  }
+  .modal-meta-item .dim { color: var(--ash); }
+  .modal-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--frost);
+    white-space: pre-wrap;
+    padding-top: 20px;
+    border-top: 1px solid var(--slate);
+    letter-spacing: -0.013px;
+  }
+  .modal-link {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 1px;
+    letter-spacing: -0.007px;
+  }
+  .modal-images {
+    margin-top: 16px;
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .modal-images img {
+    width: 120px; height: 120px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    cursor: zoom-in;
+  }
+  .segments-box {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: var(--charcoal);
+    border-radius: var(--radius-md);
+    border-left: 2px solid var(--gold);
+  }
+  .segments-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--silver);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .seg-row {
+    display: flex; gap: 12px;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--porcelain);
+  }
+  .seg-row + .seg-row { border-top: 1px dashed var(--pewter); }
+
+  .modal-relabel {
+    margin-top: 24px;
+    padding: 20px;
+    background: var(--charcoal);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--slate);
+  }
+  .modal-relabel-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .relabel-options {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .relabel-row {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background .15s, border-color .15s;
+  }
+  .relabel-row.has-cat {
+    background: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.06);
+  }
+  .relabel-btn {
+    font-size: 11px;
+    padding: 6px 14px;
+    background: transparent;
+    color: var(--silver);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    font-weight: 500;
+    flex-shrink: 0;
+    min-width: 88px;
+  }
+  .relabel-btn:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .relabel-btn.active {
+    background: var(--white);
+    color: var(--midnight);
+    border-color: var(--white);
+  }
+  .relabel-tags {
+    display: none;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex: 1;
+  }
+  .relabel-row.has-cat .relabel-tags {
+    display: flex;
+  }
+  .relabel-tag-btn {
+    font-size: 10px;
+    padding: 3px 9px;
+    background: transparent;
+    color: var(--silver);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .relabel-tag-btn:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .relabel-tag-btn.active {
+    background: var(--gold);
+    color: var(--midnight);
+    border-color: var(--gold);
+  }
+  .relabel-help {
+    font-size: 10px;
+    color: var(--ash);
+    margin-top: 10px;
+    letter-spacing: -0.007px;
+  }
+  .relabel-save-btn {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 14px;
+    padding: 8px 18px;
+    background: var(--gold);
+    color: var(--midnight);
+    border: none;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    letter-spacing: -0.007px;
+  }
+  .relabel-save-btn:hover { opacity: .85; }
+
+  /* ───── Empty state ───── */
+  .empty-state {
+    text-align: center;
+    padding: 80px 40px;
+    color: var(--silver);
+  }
+  .empty-state-big {
+    font-family: var(--font-display);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--slate);
+    display: block;
+    margin-bottom: 16px;
+    letter-spacing: -0.04px;
+    font-style: italic;
+  }
+  .empty-state .note {
+    font-size: 13px;
+    color: var(--silver);
+  }
+
+  /* ───── 빠른 검토 UI ───── */
+  .review-quick {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .review-quick { grid-template-columns: 1fr; } }
+
+  .quick-content-panel {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    padding: 28px 32px;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .quick-progress {
+    font-size: 11px;
+    color: var(--ash);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .quick-progress .current { color: var(--gold); font-weight: 600; }
+
+  .quick-product {
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .quick-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: -0.025px;
+    line-height: 1.3;
+  }
+  .quick-meta {
+    font-size: 11px;
+    color: var(--silver);
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--pewter);
+    display: flex; gap: 16px;
+  }
+  .quick-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--frost);
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+  }
+  .quick-ai-suggestion {
+    background: var(--charcoal);
+    border-left: 2px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: var(--radius-md);
+    margin-bottom: 20px;
+  }
+  .quick-ai-suggestion .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .quick-ai-suggestion .preds {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: 4px;
+  }
+
+  .quick-decision-panel {
+    background: var(--slate);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    position: sticky;
+    top: 24px;
+  }
+  .quick-panel-title {
+    font-size: 11px;
+    color: var(--silver);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .quick-panel-sub {
+    font-size: 11px;
+    color: var(--ash);
+    margin-bottom: 18px;
+  }
+  .quick-cat-list {
+    display: flex; flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .quick-cat-row {
+    display: flex; flex-direction: column;
+    gap: 6px;
+    padding: 0;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: background .15s, border-color .15s, padding .15s;
+  }
+  .quick-cat-row.has-cat {
+    background: rgba(255,255,255,.025);
+    border-color: rgba(255,255,255,.06);
+    padding: 8px;
+  }
+  .quick-cat-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: transparent;
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    color: var(--silver);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+  }
+  .quick-cat-btn:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .quick-cat-btn.active {
+    background: var(--white);
+    color: var(--midnight);
+    border-color: var(--white);
+  }
+  .quick-cat-btn .num {
+    font-family: var(--font-display);
+    font-size: 16px;
+    width: 24px;
+    flex-shrink: 0;
+    text-align: center;
+    color: var(--ash);
+  }
+  .quick-cat-btn.active .num { color: var(--midnight); }
+  .quick-cat-btn:hover .num { color: var(--white); }
+  .quick-cat-tags {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 4px 6px 2px 6px;
+  }
+  .quick-cat-row.has-cat .quick-cat-tags {
+    display: flex;
+  }
+  .quick-cat-tag-btn {
+    font-size: 11px;
+    padding: 4px 11px;
+    background: transparent;
+    color: var(--silver);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all .15s;
+    font-family: inherit;
+  }
+  .quick-cat-tag-btn:hover {
+    border-color: var(--frost);
+    color: var(--white);
+  }
+  .quick-cat-tag-btn.active {
+    background: var(--gold);
+    color: var(--midnight);
+    border-color: var(--gold);
+  }
+
+  .quick-actions {
+    display: flex; flex-direction: column; gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--pewter);
+  }
+  .quick-btn {
+    padding: 12px 20px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all .15s;
+    border: none;
+    font-family: inherit;
+  }
+  .quick-btn.primary {
+    background: var(--gold);
+    color: var(--midnight);
+  }
+  .quick-btn.primary:hover { opacity: .85; }
+  .quick-btn.secondary {
+    background: transparent;
+    color: var(--silver);
+    border: 1px solid var(--ash);
+  }
+  .quick-btn.secondary:hover { border-color: var(--frost); color: var(--white); }
+  .quick-shortcut {
+    display: inline-block;
+    font-family: 'SF Mono', ui-monospace, monospace;
+    font-size: 10px;
+    background: var(--pewter);
+    color: var(--silver);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    margin-left: 8px;
+  }
+
+  kbd {
+    display: inline-block;
+    font-family: 'SF Mono', ui-monospace, monospace;
+    font-size: 10px;
+    background: var(--pewter);
+    color: var(--silver);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--ash);
+  }
+
+  /* ───── Lightbox ───── */
+  .lightbox {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.96);
+    z-index: 2000;
+    align-items: center; justify-content: center;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 92vh; object-fit: contain; }
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 32px;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    transition: border-color .15s;
+  }
+  .lightbox-close:hover { border-color: var(--white); }
+
+  /* ───── API 잔액 부족 배너 ───── */
+  .api-exhausted-banner {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background: linear-gradient(90deg, #7c2d12, #991b1b);
+    border-bottom: 1px solid #ef4444;
+    padding: 12px 48px;
+    align-items: center;
+    gap: 12px;
+  }
+  .api-exhausted-banner.visible { display: flex; }
+  .api-exhausted-banner-icon { font-size: 18px; flex-shrink: 0; }
+  .api-exhausted-banner-text { flex: 1; font-size: 13px; line-height: 1.5; color: #fecaca; }
+  .api-exhausted-banner-text strong { color: #fff; font-weight: 700; }
+  .api-exhausted-banner-text .sub { font-size: 12px; color: #fca5a5; margin-top: 2px; }
+  .api-exhausted-banner-close {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    color: #fecaca;
+    font-size: 14px;
+    transition: border-color .15s, color .15s;
+  }
+  .api-exhausted-banner-close:hover { border-color: #fff; color: #fff; }
+
+  /* ───── Responsive ───── */
+  @media (max-width: 720px) {
+    header, nav { padding-left: 24px; padding-right: 24px; }
+    main { padding: 28px 24px; }
+    .masthead { font-size: 36px; }
+    .today-list li { grid-template-columns: 1fr; gap: 6px; }
+    .stat-num { font-size: 36px; }
+  }
+
+  /* ═══════════════════════════════════════════
+     모바일 (640px 이하)
+     ═══════════════════════════════════════════ */
+  @media (max-width: 640px) {
+    /* Header */
+    header {
+      padding: 16px 16px 12px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .masthead { font-size: 26px; }
+    .header-meta { text-align: left; font-size: 11px; }
+
+    /* Nav */
+    nav { padding: 0 12px; gap: 0; }
+    nav .publish-btn { display: none; } /* FAB으로 대체 */
+    .tab { padding: 13px 12px; font-size: 12px; }
+
+    /* Main */
+    main { padding: 20px 16px 24px; }
+
+    /* Stat cards */
+    .stat-num { font-size: 30px; }
+    .stat-card { padding: 16px; }
+    .panel { padding: 14px; }
+    .section-header { margin-bottom: 14px; }
+    .stats-grid { margin-bottom: 20px; gap: 10px; }
+
+    /* Bar chart */
+    .bar-label { width: 66px; font-size: 10px; }
+    .bar-count { width: 26px; font-size: 11px; }
+    .hashtag-row .name { width: 58px; }
+
+    /* Today list */
+    .today-product { white-space: normal; }
+
+    /* Product selector */
+    .product-selector { gap: 6px; margin-bottom: 20px; }
+    .product-btn { font-size: 11px; padding: 5px 12px; }
+
+    /* Group list */
+    .group-list { grid-template-columns: 1fr; }
+    .group-card { padding: 18px; }
+    .group-card-name { font-size: 20px; }
+    .group-toolbar { flex-wrap: wrap; gap: 8px; }
+    .btn-hint { display: none; }
+
+    /* Photo gallery — 2열 */
+    .photo-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    /* Modal — 바텀 시트 */
+    .modal-overlay { padding: 0; align-items: flex-end; }
+    .modal {
+      max-height: 90vh;
+      border-radius: 20px 20px 0 0;
+    }
+    .modal-header { padding: 18px 20px 14px; }
+    .modal-body { padding: 16px 20px 32px; }
+
+    /* Group 편집 모달도 동일 */
+    #group-modal-overlay { padding: 0; align-items: flex-end; }
+    #group-modal-overlay .modal { border-radius: 20px 20px 0 0; max-height: 92vh; }
+
+    /* API 배너 */
+    .api-exhausted-banner { padding: 12px 16px; }
+
+    /* body 하단 여백 (FAB 가리지 않게) */
+    body { padding-bottom: 88px; }
+  }
+
+  /* Publish FAB — 모바일 전용 플로팅 버튼 */
+  .publish-fab { display: none; }
+
+  @media (max-width: 640px) {
+    .publish-fab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      bottom: 20px;
+      right: 16px;
+      z-index: 500;
+      background: var(--gold);
+      color: var(--midnight);
+      border: none;
+      border-radius: 50px;
+      padding: 15px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: var(--font-body);
+      letter-spacing: -0.01em;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,0,0,.5);
+      transition: opacity .15s, background .2s, color .2s;
+      min-width: 110px;
+    }
+    .publish-fab.loading { opacity: 0.45; pointer-events: none; }
+    .publish-fab.success { background: #22c55e; color: #fff; }
+    .publish-fab.error   { background: var(--cat-negative); color: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<!-- API 잔액 부족 배너 -->
+<div class="api-exhausted-banner" id="api-exhausted-banner">
+  <div class="api-exhausted-banner-icon">💳</div>
+  <div class="api-exhausted-banner-text">
+    <strong>API 잔액 부족으로 일부 후기가 분류되지 않았습니다.</strong>
+    <div class="sub" id="api-exhausted-detail">Anthropic Console에서 잔액을 충전한 뒤 run_crawler.command를 다시 실행하면 이어서 분류됩니다.</div>
+  </div>
+  <div class="api-exhausted-banner-close" onclick="document.getElementById('api-exhausted-banner').classList.remove('visible')" title="닫기">✕</div>
+</div>
+
+<header>
+  <div>
+    <div class="masthead">겸손몰 <span class="accent">후기 분석</span></div>
+    <div style="margin-top:8px;font-size:12px;color:var(--stone);letter-spacing:0.08em;text-transform:uppercase">Review Intelligence</div>
+  </div>
+  <div class="header-meta">
+    <div><span class="label">Last update</span> · <span class="value" id="last-updated">—</span></div>
+    <div><span class="label">Total</span> · <span class="value" id="total-count">—</span></div>
+  </div>
+</header>
+
+<nav>
+  <div class="tab active" data-tab="overview">Today</div>
+  <div class="tab" data-tab="analysis">Analysis</div>
+  <div class="tab" data-tab="groups">Groups</div>
+  <div class="tab" data-tab="review">Review <span id="review-badge" class="tab-badge" style="display:none"></span></div>
+  <div class="tab" data-tab="photos">Photos</div>
+  <button class="publish-btn" id="publish-btn" onclick="publishAll()">Publish</button>
+</nav>
+
+<!-- 모바일 전용 플로팅 Publish 버튼 -->
+<button class="publish-fab" id="publish-fab" onclick="publishAll()">Publish</button>
+
+<main>
+
+  <!-- ① Today -->
+  <section class="section active" id="section-overview">
+    <div class="section-header">
+      <span class="pill gold">Today</span>
+      <span class="section-date" id="today-date"></span>
+    </div>
+
+    <!-- 1줄: 누적 | 최근 2주 제품 -->
+    <div class="today-row1">
+      <div class="stat-card stat-summary">
+        <div class="stat-num" id="stat-total">0</div>
+        <div class="stat-label">누적 후기</div>
+        <div class="stat-sub">
+          오늘 <span class="stat-sub-num" id="stat-today">0</span>건 ·
+          검토 필요 <span class="stat-sub-num" id="stat-needs">0</span>건
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-pre" style="color:var(--silver)">최근 2주 후기 제품</div>
+        <div class="recent-products-wrap" id="stat-recent-products"><span style="color:var(--stone);font-size:13px">—</span></div>
+      </div>
+    </div>
+
+    <!-- 2줄: 긍정 최다 | 부정 최다 | 긍정 비율 TOP3 | 부정 비율 TOP3 -->
+    <div class="today-row2">
+      <div class="stat-card stat-clickable" id="stat-top-pos-card" onclick="jumpToGroup('positive')">
+        <div class="stat-pre" style="color:var(--cat-positive)">긍정 최다 아이템</div>
+        <div class="stat-group-name" id="stat-top-pos-name">—</div>
+        <div class="stat-sub" id="stat-top-pos-meta">—</div>
+      </div>
+      <div class="stat-card stat-clickable" id="stat-top-neg-card" onclick="jumpToGroup('negative')">
+        <div class="stat-pre" style="color:var(--cat-negative)">부정 최다 아이템</div>
+        <div class="stat-group-name" id="stat-top-neg-name">—</div>
+        <div class="stat-sub" id="stat-top-neg-meta">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-pre" style="color:var(--cat-positive)">긍정 비율 TOP 3</div>
+        <div class="top3-list" id="stat-pos-top3">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-pre" style="color:var(--cat-negative)">부정 비율 TOP 3</div>
+        <div class="top3-list" id="stat-neg-top3">—</div>
+      </div>
+    </div>
+
+    <!-- 3줄: 긍정 키워드 그래프 | 부정 키워드 그래프 (최근 3개월) -->
+    <div class="today-row3">
+      <div class="stat-card">
+        <div class="stat-pre" style="color:var(--cat-positive);margin-bottom:12px">긍정 키워드 <span style="font-size:10px;color:var(--stone);font-weight:400">최근 3개월</span></div>
+        <div id="stat-pos-kw">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-pre" style="color:var(--cat-negative);margin-bottom:12px">부정 키워드 <span style="font-size:10px;color:var(--stone);font-weight:400">최근 3개월</span></div>
+        <div id="stat-neg-kw">—</div>
+      </div>
+    </div>
+
+    <ul class="today-list" id="today-list">
+      <li class="loading-state">Loading...</li>
+    </ul>
+  </section>
+
+  <!-- ② Analysis -->
+  <section class="section" id="section-analysis">
+    <div class="product-selector" id="product-selector"></div>
+    <div class="analysis-grid">
+      <div class="panel">
+        <div class="panel-title">Review Distribution</div>
+        <div class="panel-meta" id="dist-meta"></div>
+        <div class="bar-chart" id="bar-chart"></div>
+        <div class="hashtag-stats">
+          <div class="panel-title" style="border:none;padding:0;margin-bottom:8px" id="hashtag-stats-title">자주 언급되는 키워드</div>
+          <div class="hashtag-list" id="hashtag-stats"></div>
+        </div>
+      </div>
+      <div class="reviews-panel">
+        <div class="reviews-header">
+          <span id="reviews-panel-label">전체 후기</span>
+          <span class="filter-pill" id="filter-clear" style="display:none" onclick="clearFilter()">✕ Clear</span>
+        </div>
+        <div id="reviews-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ③ Groups -->
+  <section class="section" id="section-groups">
+    <div class="group-toolbar">
+      <button class="btn-primary" onclick="openGroupModal()">+ New Group</button>
+      <button class="btn-secondary" onclick="restorePresetGroups()">프리셋 복원</button>
+      <button class="btn-secondary" onclick="resetAllGroups()">Reset all</button>
+      <span class="btn-hint">상품들을 묶고 출시일을 등록하면 출시 후 후기 추이를 볼 수 있어요.</span>
+    </div>
+    <div class="group-list" id="group-list"></div>
+  </section>
+
+  <!-- ④ Review queue - 빠른 검토 모드 -->
+  <section class="section" id="section-review">
+    <div style="margin-bottom:24px">
+      <h2 style="font-family:var(--font-display);font-size:32px;font-weight:500;color:var(--white);letter-spacing:-0.025px;margin-bottom:8px">검토 큐</h2>
+      <p style="font-size:13px;color:var(--silver)">키보드 단축키 <kbd>1-6</kbd>로 카테고리 선택, <kbd>Enter</kbd>로 저장 후 다음, <kbd>↓</kbd>로 스킵, <kbd>A</kbd>로 AI 그대로 승인</p>
+    </div>
+
+    <!-- 분류 공유 패널 -->
+    <div style="background:var(--pewter);border:1px solid var(--steel);border-radius:12px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:200px">
+        <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:4px">분류 공유</div>
+        <div style="font-size:12px;color:var(--silver)">내 분류 내역을 저장하거나, 다른 사람이 저장한 파일을 불러오세요.</div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button onclick="exportRelabels()" style="background:var(--gold-start,#c9a84c);color:#000;border:none;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;">💾 분류 저장하기</button>
+        <label style="background:var(--steel);color:var(--white);border:none;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;">📂 저장된 분류 불러오기<input type="file" accept=".json" onchange="importRelabels(event)" style="display:none"></label>
+      </div>
+    </div>
+
+    <div id="review-quick" class="review-quick"></div>
+  </section>
+
+  <!-- ⑤ Photos -->
+  <section class="section" id="section-photos">
+    <div class="photos-toolbar">
+      <select class="photos-select" id="photos-product-select" onchange="renderPhotos()">
+        <option value="">전체 (그룹별 묶어 보기)</option>
+      </select>
+      <span class="btn-hint" style="margin-left:auto">각 카드의 ◉ 버튼으로 사진 가리기/보이기</span>
+    </div>
+    <div id="photo-container"></div>
+  </section>
+
+</main>
+
+<!-- 상세 모달 -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-close" onclick="closeModalDirect()">✕</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-meta" id="modal-meta"></div>
+      <div class="modal-images" id="modal-images"></div>
+      <div class="segments-box" id="modal-segments" style="display:none"></div>
+      <div class="modal-content" id="modal-content"></div>
+      <div class="modal-relabel">
+        <div class="modal-relabel-label">분류 수정 (여러 개 선택 가능)</div>
+        <div class="relabel-options" id="relabel-options"></div>
+        <div class="relabel-help">여러 카테고리를 선택할 수 있어요 (예: 교환/반품 + 부정)</div>
+        <button class="relabel-save-btn" onclick="saveRelabel()">선택한 분류로 저장</button>
+      </div>
+      <a class="modal-link" id="modal-link" target="_blank" rel="noopener">원문 보기 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- 그룹 모달 -->
+<div class="modal-overlay" id="group-modal-overlay" onclick="closeGroupModal(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="group-modal-title">New Group</div>
+      <div class="modal-close" onclick="closeGroupModalDirect()">✕</div>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <label class="form-label">그룹 이름</label>
+        <input type="text" class="form-input" id="group-name-input" placeholder="예: 봄 시즌 콜라보, 별 시리즈">
+      </div>
+      <div class="form-row">
+        <label class="form-label">출시일</label>
+        <input type="date" class="form-input" id="group-date-input">
+      </div>
+      <div class="form-row">
+        <label class="form-label">상품 선택 (여러 개 가능)</label>
+        <div class="product-checklist" id="product-checklist"></div>
+      </div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px">
+        <button class="btn-secondary" onclick="closeGroupModalDirect()">취소</button>
+        <button class="btn-primary" onclick="saveGroup()">저장</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+let DATA = null;
+let GROUPS = [];
+let RELABELS = {};
+let currentUnitProducts = null;
+let currentUnitName = null;
+let currentFilter = null;
+let photosVisible = true;  // 사진 탭 진입 시 기본 보이기
+let hiddenPhotos = new Set();  // 사용자가 가린 후기 ID들
+let editingGroupId = null;
+let modalReviewId = null;
+
+const today = new Date().toISOString().slice(0, 10);
+document.getElementById("today-date").textContent = new Date().toLocaleDateString("ko-KR", {
+  year: "numeric", month: "long", day: "numeric", weekday: "long"
+});
+
+const CATEGORIES = ["긍정","부정","중립/단순수령","양도/거래","교환/반품","배송관련불편"];
+// 태그 목록: tags.json에서 로드 (없으면 기본값)
+let HASHTAGS = window.__EMBEDDED_TAGS__ || ["#사이즈","#색상","#핏","#마감","#재질","#내구성","#디자인","#가격","#구성","#기획"];
+
+// ── 그룹 프리셋 ──
+const PRESET_GROUPS = [
+  { id: "pre_bag", name: "[PRE] 겸손 가죽 가방", products: ["[2차 예약구매] 겸손 리얼레더 가방 남성용","[2차 예약구매] 겸손 한지 가방 여성용","[3차 예약구매] 겸손 리얼레더 가방 남성용","[3차 예약구매] 겸손 한지 가방 여성용","겸손 리얼레더 가방 남성용","겸손 한지 가방 남성용","겸손 한지 가방 여성용","겸손-한지-가방-여성용","2차-예약구매-겸손-리얼레더-가방-남성용"] },
+  { id: "pre_tweed", name: "[PRE] 겸손 트위드", products: ["겸손 트위드 잠바 남성용","겸손 트위드 잠바 여성용","겸손 트위드 코트 남성용 - 네이비","겸손 울 코트 남성용 -  다크카키","겸손 브로치 추가 구매"] },
+  { id: "g101", name: "[101] 지우산", products: ["겸손 지우산","겸손-지우산"] },
+  { id: "g102", name: "[102] 겸손니트", products: ["겸손 니트","겸손-니트"] },
+  { id: "g103", name: "[103] 겸손트렌치코트", products: ["겸손 더블 트렌치코트","겸손 싱글 트렌치코트","겸손-더블-트렌치코트"] },
+  { id: "g104", name: "[104] 겸손주방가위", products: ["겸손 주방가위","겸손-주방가위"] },
+  { id: "g105", name: "[105] 2024겸손색안경", products: ["겸손색안경-반뿔 4.2","겸손색안경-반뿔 기본","겸손색안경-반뿔-42","겸손색안경-쇠네모","겸손색안경-쇠동글"] },
+  { id: "g106", name: "[106] 겸손우산", products: ["긴우산-암막","긴우산-일반","접는우산-암막","접는우산-일반","큰우산"] },
+  { id: "g107", name: "[107] 만년필 베개", products: ["베개-18K촉","베개-18k촉","베개-스테인리스촉","펜레스트"] },
+  { id: "g201", name: "[201] 퍼자마", products: ["퍼자마"] },
+  { id: "g202", name: "[202] 입맞춤", products: ["입맞춤"] },
+  { id: "g203", name: "[203] 겸손지갑", products: ["겸손 남자 반지갑","겸손 남자 장지갑","겸손 여자 지갑","겸손-남자-반지갑","겸손-남자-장지갑","겸손-여자-지갑"] },
+  { id: "g204", name: "[204] 발옷", products: ["발옷 (5종)","발옷-5종"] },
+  { id: "g205", name: "[205] 겸손구두", products: ["겸손 남자 구두","겸손 여자 낮은 구두","겸손 여자 높은 구두","겸손-남자-구두","겸손-여자-낮은-구두","겸손-여자-높은-구두"] },
+  { id: "g301", name: "[301] 수빈", products: ["수빈 (3종)","수빈 홈가운","수빈-3종","수빈-홈가운"] },
+  { id: "g302", name: "[302] 베개집", products: ["베개집 (2구)","베개집 (3구)","베개집-3구"] },
+  { id: "g303", name: "[303] 겸손넥타이•겸손넥카프", products: ["겸손넥카프 (2종)","겸손넥카프-2종","겸손넥타이 (3종)","겸손넥타이-3종"] },
+  { id: "g304a", name: "[304] 사각", products: ["사각"] },
+  { id: "g304b", name: "[304] 베개샘", products: ["베개샘"] },
+  { id: "g401", name: "[401] 여름니트", products: ["더블넥 여름니트","더블넥-여름니트","하이넥 여름니트","하이넥-여름니트","셔츠넥 여름니트","셔츠넥-여름니트"] },
+  { id: "g402", name: "[402] 2025겸손색안경", products: ["2025-겸손색안경-반동글","2025-겸손색안경-쇠네모","2025-겸손색안경-쇠칠각","2025-겸손색안경-작은쇠동글","2025-겸손색안경-작은쇠육각","[2025 겸손색안경] 반동글","[2025 겸손색안경] 쇠네모","[2025 겸손색안경] 쇠칠각","[2025 겸손색안경] 작은쇠동글","[2025 겸손색안경] 작은쇠육각"] },
+  { id: "g403", name: "[403] 베개 파인라이너", products: ["베개 파인라이너 (여분 심지 1개 포함)","베개-파인라이너-여분-심지-1개-포함","심지 추가","심지-추가"] },
+  { id: "g404a", name: "[404] 더파워풀-발옷", products: ["[더파워풀] 발옷(3종)"] },
+  { id: "g404b", name: "[404] 더파워풀-베개 파인라이너", products: ["[더파워풀] 베개 파인라이너 (여분 심지 1개 포함)","[더파워풀] 심지 추가"] },
+  { id: "g404c", name: "[404] 더파워풀-반팔", products: ["[더파워풀] 반팔","더파워풀-반팔","더파워풀-베개-파인라이너-여분-심지-1개-포함","더파워풀-심지-추가"] },
+  { id: "g404d", name: "[404] 더파워풀-색안경", products: ["[더파워풀] 색안경","더파워풀-색안경"] },
+  { id: "g405", name: "[405] 해바라기", products: ["해바라기"] },
+  { id: "g501", name: "[501] 만년필 세종", products: [] },
+  { id: "g502", name: "[502] 별", products: ["별"] },
+  { id: "g503", name: "[503] 100수", products: [] },
+  { id: "g504", name: "[504] 껑•건", products: ["건","껑"] },
+];
+
+// ── 카테고리 마이그레이션 맵 (옛 → 새) ──
+const CAT_MIGRATE = {
+  "제품관련불편": "부정",
+  "교환요청":     "교환/반품",
+  "반품요청":     "교환/반품",
+  "추가구매":     "긍정",
+  "추가구매희망": "긍정",
+};
+
+// segments 배열 정규화: 카테고리 매핑 + #배송 제거 + 중립 단독 규칙
+function normalizeSegments(segments) {
+  if (!Array.isArray(segments)) return segments;
+  let segs = segments.map(s => {
+    const newCat = CAT_MIGRATE[s.category] || s.category;
+    const newHashtags = (s.hashtags || []).filter(h => h !== "#배송");
+    return { ...s, category: newCat, hashtags: newHashtags };
+  });
+  // 중립 단독 규칙: 다른 카테고리와 함께 있으면 중립 제외
+  const hasOther = segs.some(s => s.category !== "중립/단순수령");
+  if (hasOther) segs = segs.filter(s => s.category !== "중립/단순수령");
+  // 같은 카테고리 중복 제거 (마이그레이션 결과 동일 카테고리가 둘 생길 수 있음)
+  const seen = new Set();
+  const merged = [];
+  for (const s of segs) {
+    if (seen.has(s.category)) {
+      // 같은 카테고리는 hashtags 합치고 첫 번째 유지
+      const idx = merged.findIndex(m => m.category === s.category);
+      merged[idx].hashtags = [...new Set([...(merged[idx].hashtags || []), ...(s.hashtags || [])])];
+    } else {
+      seen.add(s.category);
+      merged.push(s);
+    }
+  }
+  return merged;
+}
+
+// 후기의 hashtags 배열 정규화: #배송 제거
+function normalizeHashtags(hashtags) {
+  return (hashtags || []).filter(h => h !== "#배송");
+}
+
+// ── localStorage ──
+function loadLocal() {
+  try {
+    const saved = localStorage.getItem("groups");
+    const baseGroups = window.__EMBEDDED_GROUPS__ || PRESET_GROUPS;
+    // 배포된 groups.json이 있으면 우선 사용 (공유 소스), 없으면 localStorage → PRESET 순
+    GROUPS = window.__EMBEDDED_GROUPS__
+      ? JSON.parse(JSON.stringify(baseGroups))
+      : (saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(baseGroups)));
+    RELABELS = JSON.parse(localStorage.getItem("relabels") || "{}");
+  } catch (e) { GROUPS = JSON.parse(JSON.stringify(window.__EMBEDDED_GROUPS__ || PRESET_GROUPS)); RELABELS = {}; }
+  // 그룹 순서 (드래그앤드롭 결과)
+  try {
+    const order = JSON.parse(localStorage.getItem("group_order") || "null");
+    if (Array.isArray(order)) {
+      const byId = Object.fromEntries(GROUPS.map(g => [g.id, g]));
+      const ordered = order.map(id => byId[id]).filter(Boolean);
+      const remaining = GROUPS.filter(g => !order.includes(g.id));
+      GROUPS = [...ordered, ...remaining];
+    }
+  } catch (e) { /* ignore */ }
+  // RELABELS 마이그레이션 (한 번만)
+  if (!localStorage.getItem("_v2_migrated")) {
+    let changed = false;
+    Object.keys(RELABELS).forEach(rid => {
+      const rl = RELABELS[rid];
+      if (!rl) return;
+      if (rl.category && CAT_MIGRATE[rl.category]) {
+        rl.category = CAT_MIGRATE[rl.category];
+        changed = true;
+      }
+      if (rl.segments) {
+        const newSegs = normalizeSegments(rl.segments);
+        if (JSON.stringify(newSegs) !== JSON.stringify(rl.segments)) {
+          rl.segments = newSegs;
+          changed = true;
+        }
+      }
+      if (rl.hashtags) {
+        const newTags = normalizeHashtags(rl.hashtags);
+        if (newTags.length !== rl.hashtags.length) {
+          rl.hashtags = newTags;
+          changed = true;
+        }
+      }
+    });
+    if (changed) localStorage.setItem("relabels", JSON.stringify(RELABELS));
+    localStorage.setItem("_v2_migrated", "1");
+  }
+}
+function saveLocal() {
+  localStorage.setItem("groups", JSON.stringify(GROUPS));
+  localStorage.setItem("relabels", JSON.stringify(RELABELS));
+  localStorage.setItem("group_order", JSON.stringify(GROUPS.map(g => g.id)));
+}
+
+// ── 분류 내보내기: RELABELS를 DATA에 병합해서 data.json으로 다운로드 ──
+function exportRelabels() {
+  const relabelCount = Object.keys(RELABELS).length;
+  if (relabelCount === 0) {
+    alert("내보낼 분류 내역이 없어요.\nReview 탭에서 후기를 분류한 뒤 사용하세요.");
+    return;
+  }
+
+  // DATA.reviews에 RELABELS 병합
+  const merged = JSON.parse(JSON.stringify(DATA));
+  let changedCount = 0;
+  Object.entries(RELABELS).forEach(([id, relabel]) => {
+    if (!merged.reviews[id]) return;
+    const r = merged.reviews[id];
+    r.classification = r.classification || {};
+    if (relabel.segments) {
+      r.classification.segments = relabel.segments;
+      r.classification.confidence = 1.0;
+      r.classification.needs_review = false;
+      r.classification._relabeled = true;
+    }
+    if (relabel.hashtags) r.hashtags = relabel.hashtags;
+    changedCount++;
+  });
+
+  const json = JSON.stringify(merged, null, 2);
+  const blob = new Blob([json], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "data.json";
+  a.click();
+  URL.revokeObjectURL(url);
+
+  alert(`✅ data.json 저장 완료!\n수정된 후기: ${changedCount}건\n\n이 파일을 NAS의 NONOHUMBLE_REVIEW 폴더에 덮어쓰고\npython3 deploy_nas.py 를 실행하면 모두에게 반영돼요.`);
+}
+
+// ── 분류 가져오기: data.json을 읽어서 RELABELS에 반영 ──
+function importRelabels(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const imported = JSON.parse(e.target.result);
+      const reviews = imported.reviews || imported;
+      let importedCount = 0;
+      Object.entries(reviews).forEach(([id, r]) => {
+        if (!r.classification?._relabeled) return;
+        RELABELS[id] = {
+          segments: r.classification.segments,
+          category: r.classification.segments?.[0]?.category || "중립/단순수령",
+          hashtags: r.hashtags || []
+        };
+        importedCount++;
+      });
+      saveLocal();
+      renderAll();
+      event.target.value = "";
+      alert(`✅ 가져오기 완료!\n불러온 분류: ${importedCount}건\n\n이제 검토 큐가 업데이트됐어요.`);
+    } catch (err) {
+      alert("파일을 읽는 중 오류가 발생했어요.\ndata.json 파일이 맞는지 확인해주세요.");
+      console.error(err);
+    }
+  };
+  reader.readAsText(file);
+}
+
+// ── 그룹 헬퍼 ──
+function getDisplayName(productName) {
+  if (!productName) return "(상품명 없음)";
+  for (const g of GROUPS) {
+    if (g.products.includes(productName)) return g.name;
+  }
+  return productName;
+}
+function getAllDisplayUnits() {
+  const reviews = Object.values(DATA.reviews);
+  const products = [...new Set(reviews.map(r => r.product_name).filter(Boolean))];
+  const groupedProducts = new Set();
+  GROUPS.forEach(g => g.products.forEach(p => groupedProducts.add(p)));
+  const units = [];
+  GROUPS.forEach(g => units.push({
+    name: g.name, isGroup: true, products: g.products, releaseDate: g.releaseDate
+  }));
+  products.filter(p => !groupedProducts.has(p)).sort().forEach(p =>
+    units.push({ name: p, isGroup: false, products: [p] })
+  );
+  return units;
+}
+
+function getReviewCategory(r) {
+  return getReviewSegments(r)[0]?.category || "중립/단순수령";
+}
+function getReviewSegments(r) {
+  let segs;
+  if (RELABELS[r.id]) {
+    if (RELABELS[r.id].segments) segs = RELABELS[r.id].segments;
+    else segs = [{ category: RELABELS[r.id].category, summary: RELABELS[r.id].summary || "" }];
+  } else if (r.classification?.segments) {
+    segs = r.classification.segments;
+  } else {
+    segs = [{ category: r.classification?.category || "중립/단순수령",
+              summary: r.classification?.summary || "" }];
+  }
+  return normalizeSegments(segs);
+}
+function getReviewHashtags(r) {
+  // RELABELS 우선
+  if (RELABELS[r.id]) {
+    if (RELABELS[r.id].hashtags) return normalizeHashtags(RELABELS[r.id].hashtags);
+    if (RELABELS[r.id].segments) {
+      const fromSegs = RELABELS[r.id].segments.flatMap(s => s.hashtags || []);
+      if (fromSegs.length > 0) return normalizeHashtags([...new Set(fromSegs)]);
+    }
+  }
+  return normalizeHashtags(r.hashtags || []);
+}
+
+// ── Load ──
+async function loadData() {
+  loadLocal();
+  // tags.json 시도 (실패해도 기본값으로 동작)
+  if (!window.__EMBEDDED_TAGS__) {
+    try {
+      const resp = await fetch("tags.json?" + Date.now());
+      if (resp.ok) {
+        const tags = await resp.json();
+        if (Array.isArray(tags) && tags.length > 0) HASHTAGS = tags;
+      }
+    } catch (e) { /* 기본값 유지 */ }
+  }
+  if (window.__EMBEDDED_DATA__) {
+    DATA = window.__EMBEDDED_DATA__;
+    init();
+    return;
+  }
+  try {
+    const resp = await fetch("data.json?" + Date.now());
+    if (!resp.ok) throw new Error();
+    DATA = await resp.json();
+    init();
+  } catch (e) {
+    showNoData();
+  }
+}
+function showNoData() {
+  document.getElementById("last-updated").textContent = "—";
+  const empty = `<div class="empty-state">
+    <span class="empty-state-big">No Data</span>
+    <div class="note">터미널에서 <strong>python3 crawl.py</strong>를 먼저 실행해주세요</div>
+  </div>`;
+  ["today-list","bar-chart","photo-container","reviews-list","review-list","group-list"]
+    .forEach(id => { const el = document.getElementById(id); if (el) el.innerHTML = empty; });
+}
+
+function init() {
+  const reviews = Object.values(DATA.reviews);
+  document.getElementById("last-updated").textContent = (DATA.last_updated || "—").split(" ")[0];
+  document.getElementById("total-count").textContent = reviews.length + "건";
+
+  const needs = reviews.filter(r => (!r.classification || r.classification?.needs_review) && !RELABELS[r.id]);
+  if (needs.length) {
+    const b = document.getElementById("review-badge");
+    b.textContent = needs.length;
+    b.style.display = "inline-block";
+  } else {
+    document.getElementById("review-badge").style.display = "none";
+  }
+
+  renderOverview(reviews);
+  renderProductSelector(reviews);
+  renderAnalysis(reviews);
+  renderGroups();
+  renderReviewQueue(reviews);
+  renderPhotosSelect(reviews);
+}
+
+// ── Today ──
+function renderOverview(reviews) {
+  const todayLog = (DATA.daily_logs || []).find(l => l.date === today);
+  const todayIds = new Set(todayLog ? todayLog.new_ids : []);
+  const todayReviews = reviews.filter(r => todayIds.has(r.id));
+  const needs = reviews.filter(r => (!r.classification || r.classification?.needs_review) && !RELABELS[r.id]);
+
+  document.getElementById("stat-today").textContent = todayReviews.length;
+  document.getElementById("stat-total").textContent = reviews.length.toLocaleString();
+  document.getElementById("stat-needs").textContent = needs.length;
+
+  // ── 최근 2주 후기 제품 ──
+  const twoWeeksAgo = new Date(); twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+  const recentReviews = reviews.filter(r => r.written_at && new Date(r.written_at) >= twoWeeksAgo);
+  const recentProductNames = new Set(recentReviews.map(r => r.product_name).filter(Boolean));
+  const recentGroupNames = new Set();
+  recentProductNames.forEach(pName => {
+    const group = GROUPS.find(g => g.products.includes(pName));
+    recentGroupNames.add(group ? group.name : pName);
+  });
+  const recentEl = document.getElementById("stat-recent-products");
+  if (recentGroupNames.size === 0) {
+    recentEl.innerHTML = `<span style="color:var(--stone);font-size:13px">최근 2주 후기 없음</span>`;
+  } else {
+    recentEl.innerHTML = [...recentGroupNames].map(name => {
+      const safeName = name.replace(/'/g, "\'");
+      return `<span class="recent-product-tag" onclick="jumpToGroupByName('${safeName}')" style="cursor:pointer">${name}</span>`;
+    }).join("");
+  }
+
+  // ── 그룹별 통계 ──
+  const MIN_REVIEWS = 10;
+  const hasCat = (r, cat) => getReviewSegments(r).some(s => s.category === cat);
+  const groupStats = GROUPS.map(g => {
+    const gR = reviews.filter(r => g.products.includes(r.product_name));
+    if (gR.length < MIN_REVIEWS) return null;
+    const pos = gR.filter(r => hasCat(r, "긍정")).length;
+    const neg = gR.filter(r => hasCat(r, "부정")).length;
+    return { group: g, pos, neg, total: gR.length, posRatio: pos/gR.length, negRatio: neg/gR.length };
+  }).filter(Boolean);
+
+  // 최다 절대수
+  const topPos = [...groupStats].sort((a,b) => b.pos - a.pos)[0] || null;
+  const topNeg = [...groupStats].sort((a,b) => b.neg - a.neg)[0] || null;
+  const posCard = document.getElementById("stat-top-pos-card");
+  const negCard = document.getElementById("stat-top-neg-card");
+  if (topPos) {
+    document.getElementById("stat-top-pos-name").textContent = topPos.group.name;
+    document.getElementById("stat-top-pos-meta").innerHTML = `<span class="stat-sub-num">${topPos.pos}</span>건 (총 ${topPos.total}건 중)`;
+    posCard.dataset.groupId = topPos.group.id;
+  } else {
+    document.getElementById("stat-top-pos-name").textContent = "—";
+    document.getElementById("stat-top-pos-meta").textContent = `최소 ${MIN_REVIEWS}건 이상 그룹 없음`;
+    delete posCard.dataset.groupId;
+  }
+  if (topNeg) {
+    document.getElementById("stat-top-neg-name").textContent = topNeg.group.name;
+    document.getElementById("stat-top-neg-meta").innerHTML = `<span class="stat-sub-num">${topNeg.neg}</span>건 (총 ${topNeg.total}건 중)`;
+    negCard.dataset.groupId = topNeg.group.id;
+  } else {
+    document.getElementById("stat-top-neg-name").textContent = "—";
+    document.getElementById("stat-top-neg-meta").textContent = `최소 ${MIN_REVIEWS}건 이상 그룹 없음`;
+    delete negCard.dataset.groupId;
+  }
+
+  // TOP3 비율
+  const renderTop3 = (elId, sortKey) => {
+    const sorted = [...groupStats].sort((a,b) => b[sortKey] - a[sortKey]).slice(0,3);
+    if (!sorted.length) { document.getElementById(elId).innerHTML = `<span style="color:var(--stone);font-size:12px">데이터 없음</span>`; return; }
+    document.getElementById(elId).innerHTML = sorted.map((s,i) => {
+      const pct = Math.round(s[sortKey]*100);
+      const safe = s.group.name.replace(/'/g, "\'");
+      return `<div class="top3-item" onclick="jumpToGroupByName('${safe}')"><span class="top3-rank">${i+1}</span><span class="top3-name">${s.group.name}</span><span class="top3-pct">${pct}%</span></div>`;
+    }).join("");
+  };
+  renderTop3("stat-pos-top3", "posRatio");
+  renderTop3("stat-neg-top3", "negRatio");
+
+  // ── 최근 3개월 키워드 그래프 ──
+  const threeMonthsAgo = new Date(); threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+  const recent3m = reviews.filter(r => r.written_at && new Date(r.written_at) >= threeMonthsAgo);
+  const countKw = (cat) => {
+    const counts = {}; HASHTAGS.forEach(h => counts[h] = 0);
+    recent3m.forEach(r => getReviewSegments(r).forEach(s => {
+      if (s.category !== cat) return;
+      (s.hashtags||[]).forEach(h => { if (counts[h]!==undefined) counts[h]++; });
+    }));
+    return Object.entries(counts).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  };
+  const renderKwGraph = (elId, kwData, fillClass) => {
+    if (!kwData.length) { document.getElementById(elId).innerHTML = `<span style="color:var(--stone);font-size:12px">데이터 없음</span>`; return; }
+    const max = kwData[0][1];
+    document.getElementById(elId).innerHTML = kwData.map(([h,c]) =>
+      `<div class="kw-bar-row"><div class="kw-bar-label">${h}</div><div class="kw-bar-track"><div class="${fillClass}" style="width:${Math.round(c/max*100)}%"></div></div><div class="kw-bar-num">${c}</div></div>`
+    ).join("");
+  };
+  renderKwGraph("stat-pos-kw", countKw("긍정"), "kw-bar-fill-pos");
+  renderKwGraph("stat-neg-kw", countKw("부정"), "kw-bar-fill-neg");
+
+  // ── 오늘 후기 목록 ──
+  if (todayReviews.length === 0) {
+    document.getElementById("today-list").innerHTML = `<li class="empty-state" style="padding:48px 0"><div class="note">오늘 수집된 새 후기가 없습니다.</div></li>`;
+    return;
+  }
+  const html = todayReviews.map(r => {
+    const segs = getReviewSegments(r);
+    const summary = segs.map(s => s.summary).filter(Boolean).join(" · ");
+    const tags = getReviewHashtags(r).map(h => `<span class="hash-tag">${h}</span>`).join("");
+    const catTags = segs.map(s => `<span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>`).join(" ");
+    const displayName = getDisplayName(r.product_name);
+    const isGroup = displayName !== r.product_name;
+    return `<li><div class="today-product ${isGroup?'is-group':''}">${isGroup?'◆ ':''}${displayName}</div><div class="today-title"><a onclick="openModal('${r.id}')">${r.title}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
+  }).join("");
+  document.getElementById("today-list").innerHTML = html;
+}
+
+// 대시보드 카드 클릭 → Analysis 탭으로 점프 + 해당 그룹 자동 선택
+function jumpToGroup(mode) {
+  const cardId = mode === "positive" ? "stat-top-pos-card" : "stat-top-neg-card";
+  const groupId = document.getElementById(cardId).dataset.groupId;
+  if (!groupId) return;
+  const group = GROUPS.find(g => g.id === groupId);
+  if (!group) return;
+  jumpToGroupByName(group.name);
+}
+
+function jumpToGroupByName(name) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+  document.querySelector('.tab[data-tab="analysis"]').classList.add("active");
+  document.getElementById("section-analysis").classList.add("active");
+  setTimeout(() => {
+    const btns = document.querySelectorAll(".product-btn");
+    btns.forEach(b => {
+      const t = b.textContent.trim();
+      if (t === `◆ ${name}` || t === name) b.click();
+    });
+  }, 0);
+}
+
+// ── Analysis ──
+function renderProductSelector(reviews) {
+  const units = getAllDisplayUnits();
+  const sel = document.getElementById("product-selector");
+  const allBtn = `<button class="product-btn active" onclick="selectUnit(null, this)">All</button>`;
+  const btns = units.map(u => {
+    const label = u.isGroup ? `◆ ${u.name}` : u.name;
+    return `<button class="product-btn" onclick='selectUnit(${JSON.stringify(u.products)}, this, ${JSON.stringify(u.name)})'>${label}</button>`;
+  }).join("");
+  sel.innerHTML = allBtn + btns;
+}
+
+function selectUnit(products, btn, name) {
+  currentUnitProducts = products;
+  currentUnitName = name || null;
+  currentFilter = null;
+  document.getElementById("filter-clear").style.display = "none";
+  document.getElementById("reviews-panel-label").textContent = "전체 후기";
+  document.querySelectorAll(".product-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderAnalysis(Object.values(DATA.reviews));
+}
+
+function renderAnalysis(allReviews) {
+  // 그냥 applyFilters로 위임 (단일 진입점)
+  applyFilters();
+}
+
+function renderHashtagStats(reviews, focusCategory) {
+  // focusCategory가 있으면: 그 카테고리에 해당하는 후기의 r.hashtags 카운트
+  // 없으면: 후기 전체의 hashtags 카운트
+  const hashCounts = {};
+  HASHTAGS.forEach(h => hashCounts[h] = 0);
+
+  if (focusCategory) {
+    reviews.forEach(r => {
+      const segs = getReviewSegments(r);
+      const matchesCat = segs.some(s => s.category === focusCategory);
+      if (!matchesCat) return;
+      // segment 안에 hashtags가 있으면 그걸, 없으면 r.hashtags 사용
+      const segHashtags = segs.filter(s => s.category === focusCategory)
+        .flatMap(s => s.hashtags || []);
+      const hashtags = segHashtags.length > 0 ? segHashtags : getReviewHashtags(r);
+      hashtags.forEach(h => {
+        if (hashCounts[h] !== undefined) hashCounts[h]++;
+      });
+    });
+  } else {
+    reviews.forEach(r => getReviewHashtags(r).forEach(h => {
+      if (hashCounts[h] !== undefined) hashCounts[h]++;
+    }));
+  }
+
+  const totalReviews = reviews.length || 1;
+  const sorted = HASHTAGS.filter(h => hashCounts[h] > 0)
+    .sort((a,b) => hashCounts[b] - hashCounts[a]);
+  if (sorted.length === 0) {
+    document.getElementById("hashtag-stats").innerHTML =
+      `<div style="font-size:11px;color:var(--ash);padding:8px 0">데이터 없음</div>`;
+    return;
+  }
+  const topCount = hashCounts[sorted[0]];
+  document.getElementById("hashtag-stats").innerHTML = sorted.map(h => {
+    const c = hashCounts[h];
+    const widthPct = Math.round(c / topCount * 100);
+    const sharePct = Math.round(c / totalReviews * 100);
+    const isActive = currentFilter?.hash === h;
+    return `<div class="hashtag-row ${isActive?'active':''}" onclick="filterByHashtag('${h}')">
+      <div class="name">${h}</div>
+      <div class="bar"><div class="bar-inner" style="width:${widthPct}%"></div></div>
+      <div class="num">${c} <span style="color:var(--ash);font-size:9px">${sharePct}%</span></div>
+    </div>`;
+  }).join("");
+}
+
+function applyFilters() {
+  // 현재 unit + 현재 filter 조합으로 후기 + 차트 갱신
+  const baseAll = currentUnitProducts
+    ? Object.values(DATA.reviews).filter(r => currentUnitProducts.includes(r.product_name))
+    : Object.values(DATA.reviews);
+
+  let filtered = baseAll;
+  let labelParts = [];
+
+  // 카테고리 필터 (이중 필터링용 currentFilter.cat / .hash 사용)
+  if (currentFilter?.cat) {
+    filtered = filtered.filter(r =>
+      getReviewSegments(r).some(s => s.category === currentFilter.cat));
+    labelParts.push(currentFilter.cat);
+  }
+  // 해시태그 필터 (카테고리 필터와 함께 쓰면 해당 카테고리 segment의 hashtags만 체크)
+  if (currentFilter?.hash) {
+    filtered = filtered.filter(r => {
+      const segs = getReviewSegments(r);
+      if (currentFilter.cat) {
+        // 카테고리 필터가 걸려있으면 그 카테고리 segment의 hashtags에만 해당 태그가 있어야 함
+        return segs.some(s => s.category === currentFilter.cat && (s.hashtags||[]).includes(currentFilter.hash));
+      }
+      return getReviewHashtags(r).includes(currentFilter.hash);
+    });
+    labelParts.push(currentFilter.hash);
+  }
+
+  // 라벨 갱신
+  if (labelParts.length === 0) {
+    document.getElementById("reviews-panel-label").textContent = "전체 후기";
+    document.getElementById("filter-clear").style.display = "none";
+    document.getElementById("hashtag-stats-title").textContent = "자주 언급되는 키워드";
+  } else {
+    document.getElementById("reviews-panel-label").textContent = labelParts.join(" + ") + " 후기";
+    document.getElementById("filter-clear").style.display = "inline-block";
+    // 카테고리 필터가 있으면 그 안의 키워드로 제목 변경
+    if (currentFilter.cat) {
+      document.getElementById("hashtag-stats-title").textContent = `${currentFilter.cat} 안의 키워드`;
+    } else {
+      document.getElementById("hashtag-stats-title").textContent = "자주 언급되는 키워드";
+    }
+  }
+
+  // 키워드 통계: 카테고리 필터 시 그 카테고리의 segment 안 hashtag만 카운트
+  let hashStatsBase = baseAll;
+  let focusCat = null;
+  if (currentFilter?.cat) {
+    hashStatsBase = baseAll.filter(r =>
+      getReviewSegments(r).some(s => s.category === currentFilter.cat));
+    focusCat = currentFilter.cat;
+  }
+
+  rerenderBarChart(baseAll);
+  renderHashtagStats(hashStatsBase, focusCat);
+  renderReviewsList(filtered);
+}
+
+function rerenderBarChart(baseAll) {
+  const counts = {};
+  CATEGORIES.forEach(c => counts[c] = 0);
+  baseAll.forEach(r => {
+    getReviewSegments(r).forEach(s => {
+      if (counts[s.category] !== undefined) counts[s.category]++;
+    });
+  });
+  const total = Object.values(counts).reduce((a,b) => a+b, 0) || 1;
+  document.getElementById("dist-meta").innerHTML = `${baseAll.length}건`;
+
+  const barHtml = CATEGORIES.map(cat => {
+    const count = counts[cat] || 0;
+    const rawPct = count / total * 100;
+    let pct = rawPct;
+    if (count > 0 && rawPct < 2) pct = 2;
+    pct = Math.round(pct * 10) / 10;
+    const isActive = currentFilter?.cat === cat;
+    return `<div class="bar-row ${isActive?'active':''}" onclick="filterByCategory('${cat}')">
+      <div class="bar-label">${cat}</div>
+      <div class="bar-track"><div class="bar-fill fill-${CSS.escape(cat)}" style="width:${pct}%"></div></div>
+      <div class="bar-count">${count}</div>
+    </div>`;
+  }).join("");
+  document.getElementById("bar-chart").innerHTML = barHtml;
+}
+
+function filterByCategory(cat) {
+  currentFilter = currentFilter || {};
+  // 같은 카테고리 다시 누르면 해제
+  if (currentFilter.cat === cat) {
+    currentFilter.cat = null;
+  } else {
+    currentFilter.cat = cat;
+  }
+  if (!currentFilter.cat && !currentFilter.hash) currentFilter = null;
+  applyFilters();
+}
+function filterByHashtag(tag) {
+  currentFilter = currentFilter || {};
+  // 같은 해시태그 다시 누르면 해제
+  if (currentFilter.hash === tag) {
+    currentFilter.hash = null;
+  } else {
+    currentFilter.hash = tag;
+  }
+  if (!currentFilter.cat && !currentFilter.hash) currentFilter = null;
+  applyFilters();
+}
+function clearFilter() {
+  currentFilter = null;
+  applyFilters();
+}
+
+function renderReviewsList(reviews) {
+  if (reviews.length === 0) {
+    document.getElementById("reviews-list").innerHTML =
+      `<div class="empty-state" style="padding:48px 24px"><div class="note">해당 후기가 없습니다</div></div>`;
+    return;
+  }
+  const html = [...reviews].reverse().slice(0, 200).map(r => {
+    const cat = getReviewCategory(r);
+    const segs = getReviewSegments(r);
+    const summary = segs.map(s => s.summary).filter(Boolean).join(" · ");
+    const isRelabeled = !!RELABELS[r.id];
+    const needsReview = (!r.classification || r.classification?.needs_review) && !isRelabeled;
+    const tags = getReviewHashtags(r).map(h => `<span class="hash-tag">${h}</span>`).join("");
+    const rightTag = segs.length > 1
+      ? segs.map(s => `<span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>`).join(" ")
+      : `<span class="tag tag-${CSS.escape(cat)}">${cat}</span>`;
+    return `<div class="review-item" onclick="openModal('${r.id}')">
+      <div class="review-item-header">
+        <div class="review-item-title">
+          ${r.title}
+          ${needsReview ? '<span class="review-badge">Review</span>' : ''}
+          ${isRelabeled ? '<span class="review-badge" style="background:var(--cat-positive)">Edited</span>' : ''}
+        </div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${rightTag}</div>
+      </div>
+      <div class="review-item-meta">${getDisplayName(r.product_name)} · ${(r.written_at||"").slice(0,10)}</div>
+      ${summary || tags ? `<div class="review-item-summary">${summary} ${tags}</div>` : ""}
+    </div>`;
+  }).join("");
+  document.getElementById("reviews-list").innerHTML = html;
+}
+
+// ── Groups ──
+function renderGroups() {
+  if (GROUPS.length === 0) {
+    document.getElementById("group-list").innerHTML =
+      `<div class="empty-state" style="grid-column:1/-1">
+        <span class="empty-state-big">No groups</span>
+        <div class="note">아직 만든 그룹이 없어요. 위 버튼으로 첫 그룹을 만들어보세요.</div>
+      </div>`;
+    return;
+  }
+  const reviews = Object.values(DATA.reviews);
+  const html = GROUPS.map(g => {
+    const groupReviews = reviews.filter(r => g.products.includes(r.product_name));
+    const afterRelease = g.releaseDate
+      ? groupReviews.filter(r => (r.written_at||"").slice(0,10) >= g.releaseDate)
+      : groupReviews;
+    // segment 단위로 카운트
+    const hasCat = (r, cats) => getReviewSegments(r).some(s => cats.includes(s.category));
+    const positive = afterRelease.filter(r => hasCat(r, ["긍정"])).length;
+    const negative = afterRelease.filter(r => hasCat(r, ["부정"])).length;
+
+    // 가로 막대: 분모 = (긍정 + 부정)만
+    const denom = positive + negative;
+    const posPct = denom > 0 ? Math.round(positive / denom * 100) : 50;
+    const negPct = denom > 0 ? 100 - posPct : 50;
+    const ratioBar = denom > 0 ? `
+      <div class="group-ratio">
+        <div class="group-ratio-bar">
+          <div class="seg-pos" style="width:${posPct}%"></div>
+          <div class="seg-neg" style="width:${negPct}%"></div>
+        </div>
+        <div class="group-ratio-labels">
+          <span class="pos">긍정 ${posPct}%</span>
+          <span class="neg">부정 ${negPct}%</span>
+        </div>
+      </div>` : `
+      <div class="group-ratio">
+        <div class="group-ratio-labels"><span style="margin:0 auto;color:var(--ash)">긍부정 데이터 없음</span></div>
+      </div>`;
+
+    return `<div class="group-card" draggable="true" data-group-id="${g.id}">
+      <div class="group-drag-handle" title="드래그해서 순서 변경">⋮⋮</div>
+      <div class="group-card-name">${g.name}</div>
+      <div class="group-card-date">${g.releaseDate || "출시일 미정"}</div>
+      <div class="group-card-products">
+        ${g.products.length}개 상품 · ${g.products.slice(0,3).join(", ")}${g.products.length>3?" 외":""}
+      </div>
+      <div class="group-stats">
+        <div><div class="group-stat-num pos">${positive}</div><div class="group-stat-label">긍정</div></div>
+        <div><div class="group-stat-num neg">${negative}</div><div class="group-stat-label">부정</div></div>
+      </div>
+      ${ratioBar}
+      <div class="group-meta">총 ${afterRelease.length}건${g.releaseDate?" (출시 이후)":""}</div>
+      <div class="group-actions">
+        <button class="btn-small" onclick="openGroupModal('${g.id}')">수정</button>
+        <button class="btn-small danger" onclick="deleteGroup('${g.id}')">삭제</button>
+      </div>
+    </div>`;
+  }).join("");
+  document.getElementById("group-list").innerHTML = html;
+
+  // group-stats를 2칸으로 (긍정/부정)
+  document.querySelectorAll("#group-list .group-stats").forEach(el => {
+    el.style.gridTemplateColumns = "repeat(2, 1fr)";
+  });
+
+  // 드래그앤드롭 바인딩
+  bindGroupDragDrop();
+}
+
+let _draggingGroupId = null;
+function bindGroupDragDrop() {
+  const cards = document.querySelectorAll("#group-list .group-card");
+  cards.forEach(card => {
+    card.addEventListener("dragstart", (e) => {
+      _draggingGroupId = card.dataset.groupId;
+      card.classList.add("dragging");
+      e.dataTransfer.effectAllowed = "move";
+      // Firefox 호환
+      try { e.dataTransfer.setData("text/plain", _draggingGroupId); } catch (err) {}
+    });
+    card.addEventListener("dragend", () => {
+      card.classList.remove("dragging");
+      cards.forEach(c => c.classList.remove("drop-target"));
+      _draggingGroupId = null;
+    });
+    card.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = "move";
+      if (card.dataset.groupId !== _draggingGroupId) {
+        cards.forEach(c => c.classList.remove("drop-target"));
+        card.classList.add("drop-target");
+      }
+    });
+    card.addEventListener("dragleave", () => {
+      card.classList.remove("drop-target");
+    });
+    card.addEventListener("drop", (e) => {
+      e.preventDefault();
+      card.classList.remove("drop-target");
+      const fromId = _draggingGroupId;
+      const toId = card.dataset.groupId;
+      if (!fromId || !toId || fromId === toId) return;
+      // 순서 재정렬: from을 to 위치로 이동
+      const fromIdx = GROUPS.findIndex(g => g.id === fromId);
+      const toIdx = GROUPS.findIndex(g => g.id === toId);
+      if (fromIdx < 0 || toIdx < 0) return;
+      const [moved] = GROUPS.splice(fromIdx, 1);
+      GROUPS.splice(toIdx, 0, moved);
+      saveLocal();
+      renderGroups();
+    });
+  });
+}
+
+function openGroupModal(groupId) {
+  editingGroupId = groupId || null;
+  const g = groupId ? GROUPS.find(x => x.id === groupId) : null;
+  document.getElementById("group-modal-title").textContent = g ? "Edit Group" : "New Group";
+  document.getElementById("group-name-input").value = g ? g.name : "";
+  document.getElementById("group-date-input").value = g ? (g.releaseDate || "") : "";
+
+  const products = [...new Set(Object.values(DATA.reviews)
+    .map(r => r.product_name).filter(Boolean))].sort();
+  const selected = new Set(g ? g.products : []);
+  document.getElementById("product-checklist").innerHTML = products.map(p => `
+    <label class="product-check">
+      <input type="checkbox" value="${p.replace(/"/g,'&quot;')}" ${selected.has(p)?"checked":""}>
+      ${p}
+    </label>
+  `).join("");
+  document.getElementById("group-modal-overlay").classList.add("open");
+}
+function closeGroupModal(e) {
+  if (e.target.id === "group-modal-overlay") closeGroupModalDirect();
+}
+function closeGroupModalDirect() {
+  document.getElementById("group-modal-overlay").classList.remove("open");
+  editingGroupId = null;
+}
+function saveGroup() {
+  const name = document.getElementById("group-name-input").value.trim();
+  const releaseDate = document.getElementById("group-date-input").value;
+  const checked = [...document.querySelectorAll("#product-checklist input:checked")]
+    .map(c => c.value);
+  if (!name) { alert("그룹 이름을 입력해주세요"); return; }
+  if (checked.length === 0) { alert("상품을 1개 이상 선택해주세요"); return; }
+
+  if (editingGroupId) {
+    const g = GROUPS.find(x => x.id === editingGroupId);
+    g.name = name; g.releaseDate = releaseDate; g.products = checked;
+  } else {
+    GROUPS.push({
+      id: "g" + Date.now(),
+      name, releaseDate, products: checked,
+    });
+  }
+  saveLocal();
+  closeGroupModalDirect();
+  init();
+}
+function deleteGroup(id) {
+  if (!confirm("이 그룹을 삭제할까요?")) return;
+  GROUPS = GROUPS.filter(g => g.id !== id);
+  saveLocal();
+  init();
+}
+function resetAllGroups() {
+  if (!confirm("모든 그룹을 삭제합니다. 진행할까요? (분류 수정 기록은 유지)")) return;
+  GROUPS = [];
+  saveLocal();
+  init();
+}
+function restorePresetGroups() {
+  if (!confirm("프리셋 그룹으로 복원합니다. 기존 그룹 설정이 덮어씌워져요. 진행할까요?")) return;
+  GROUPS = JSON.parse(JSON.stringify(PRESET_GROUPS));
+  saveLocal();
+  init();
+}
+function exportGroups() {
+  const json = JSON.stringify(GROUPS, null, 2);
+  const blob = new Blob([json], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "groups.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// ── Publish: 그룹 + 분류 저장 & 배포 (원클릭) ──
+function publishAll() {
+  const btns = ['publish-btn','publish-fab'].map(id => document.getElementById(id)).filter(Boolean);
+  if (btns.some(b => b.classList.contains('loading'))) return;
+
+  // 모든 버튼 상태 일괄 변경
+  const setState = (cls, text) => btns.forEach(b => {
+    b.classList.remove('loading','success','error');
+    if (cls) b.classList.add(cls);
+    b.textContent = text;
+  });
+
+  // RELABELS를 DATA에 병합
+  const merged = JSON.parse(JSON.stringify(DATA));
+  Object.entries(RELABELS).forEach(([id, relabel]) => {
+    if (!merged.reviews[id]) return;
+    const r = merged.reviews[id];
+    r.classification = r.classification || {};
+    if (relabel.segments) {
+      r.classification.segments    = relabel.segments;
+      r.classification.confidence  = 1.0;
+      r.classification.needs_review = false;
+      r.classification._relabeled  = true;
+    }
+    if (relabel.hashtags) r.hashtags = relabel.hashtags;
+  });
+
+  setState('loading', '저장 중…');
+
+  fetch('http://localhost:7878/publish', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ groups: GROUPS, data: merged })
+  })
+  .then(r => r.json())
+  .then(res => {
+    if (res.ok) {
+      setState('success', '✓ 배포 완료');
+      RELABELS = {};
+      localStorage.setItem('relabels', '{}');
+      if (res.cf_url) console.log('🌐 Cloudflare:', res.cf_url);
+      setTimeout(() => setState(null, 'Publish'), 3000);
+    } else {
+      throw new Error(res.error || 'deploy 실패');
+    }
+  })
+  .catch(err => {
+    setState(null, 'Publish');
+    const isNetErr = err instanceof TypeError || String(err).includes('fetch');
+    const msg = isNetErr
+      ? 'Publish 서버에 연결할 수 없어요.\nrun_crawler.command를 실행하면 서버가 자동으로 시작됩니다.\n\n지금은 파일을 직접 다운로드합니다.'
+      : `배포 중 오류가 발생했어요:\n${err.message}`;
+    alert(msg);
+    if (isNetErr) {
+      [['groups.json', GROUPS], ['data.json', merged]].forEach(([name, obj]) => {
+        const blob = new Blob([JSON.stringify(obj, null, 2)], {type:'application/json'});
+        const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: name});
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+      });
+    }
+  });
+}
+
+// ── Review queue ──
+let reviewQueue = [];
+let reviewQueueIdx = 0;
+let quickSelectedCats = new Set();
+let quickCatTags = {};
+
+function renderReviewQueue(reviews) {
+  reviewQueue = reviews.filter(r => (!r.classification || r.classification?.needs_review) && !RELABELS[r.id]);
+  reviewQueueIdx = 0;
+  renderQuickReviewCard();
+}
+
+function renderQuickReviewCard() {
+  const container = document.getElementById("review-quick");
+  if (!container) return;
+  if (reviewQueue.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1;padding:80px 0">
+        <span class="empty-state-big">All clear</span>
+        <div class="note">검토할 후기가 없습니다.</div>
+      </div>`;
+    return;
+  }
+  if (reviewQueueIdx >= reviewQueue.length) {
+    container.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1;padding:80px 0">
+        <span class="empty-state-big">Done</span>
+        <div class="note">${reviewQueue.length}건 모두 검토 완료!</div>
+      </div>`;
+    return;
+  }
+
+  const r = reviewQueue[reviewQueueIdx];
+  const segs = r.classification?.segments || [];
+  const aiCats = segs.map(s => s.category);
+  // 빠른 선택 초기값: AI 추측 그대로
+  quickSelectedCats = new Set(aiCats);
+  // 카테고리별 태그 상태: AI segment의 hashtags만 사용 (자동 채움 없음)
+  quickCatTags = {};
+  aiCats.forEach(cat => {
+    const seg = segs.find(s => s.category === cat);
+    quickCatTags[cat] = new Set(seg?.hashtags || []);
+  });
+
+  const aiPreds = segs.map(s =>
+    `<span class="tag tag-${CSS.escape(s.category)}">${s.category}${s.summary?` · ${s.summary}`:''}</span>`
+  ).join("");
+
+  const displayName = getDisplayName(r.product_name);
+  const isGroup = displayName !== r.product_name;
+
+  container.innerHTML = `
+    <!-- 좌측: 후기 본문 -->
+    <div class="quick-content-panel">
+      <div class="quick-progress">
+        <span class="current">${reviewQueueIdx + 1}</span> / ${reviewQueue.length}
+      </div>
+      <div class="quick-product">${isGroup?'◆ ':''}${displayName}</div>
+      <div class="quick-title">${r.title}</div>
+      <div class="quick-meta">
+        <span>${(r.written_at||"").slice(0,10)}</span>
+        <span>조회 ${r.views || 0}</span>
+        <a href="${r.review_link}" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">원문 →</a>
+      </div>
+      <div class="quick-ai-suggestion">
+        <div class="label">AI 추측</div>
+        <div class="preds">${aiPreds}</div>
+      </div>
+      <div class="quick-body">${r.content || "(본문 없음 — 제목만 작성된 후기)"}</div>
+    </div>
+
+    <!-- 우측: 결정 패널 -->
+    <div class="quick-decision-panel">
+      <div class="quick-panel-title">카테고리 + 태그 선택</div>
+      <div class="quick-panel-sub">키 1~6 분류 토글 · 분류 활성 시 태그 클릭</div>
+      <div class="quick-cat-list" id="quick-cat-list">
+        ${CATEGORIES.map((c, i) => {
+          const isActive = quickSelectedCats.has(c);
+          const catTags = quickCatTags[c] || new Set();
+          const tagBtns = HASHTAGS.map(h =>
+            `<button class="quick-cat-tag-btn ${catTags.has(h)?'active':''}" data-tag="${h}" onclick="quickToggleTag('${c}','${h}',event)">${h}</button>`
+          ).join("");
+          return `<div class="quick-cat-row ${isActive?'has-cat':''}" data-cat="${c}">
+            <button class="quick-cat-btn ${isActive?'active':''}" data-cat="${c}" onclick="quickToggleCat('${c}')">
+              <span class="num">${i+1}</span>
+              <span>${c}</span>
+            </button>
+            <div class="quick-cat-tags">${tagBtns}</div>
+          </div>`;
+        }).join("")}
+      </div>
+      <div class="quick-actions">
+        <button class="quick-btn primary" onclick="quickSaveAndNext()">저장 후 다음 <span class="quick-shortcut">Enter</span></button>
+        <button class="quick-btn secondary" onclick="quickAcceptAI()">AI 그대로 승인 <span class="quick-shortcut">A</span></button>
+        <button class="quick-btn secondary" onclick="quickSkip()">스킵 (저장 안 함) <span class="quick-shortcut">↓</span></button>
+      </div>
+    </div>
+  `;
+}
+
+function quickToggleCat(cat) {
+  if (quickSelectedCats.has(cat)) {
+    quickSelectedCats.delete(cat);
+    // 카테고리 끄면 그 안의 태그 선택도 초기화
+    quickCatTags[cat] = new Set();
+  } else {
+    quickSelectedCats.add(cat);
+    // 처음 켜는 거면 빈 Set 보장
+    if (!quickCatTags[cat]) quickCatTags[cat] = new Set();
+  }
+  // 행 + 버튼 상태 갱신
+  document.querySelectorAll("#quick-cat-list .quick-cat-row").forEach(row => {
+    if (row.dataset.cat === cat) {
+      row.classList.toggle("has-cat");
+      const btn = row.querySelector(".quick-cat-btn");
+      btn.classList.toggle("active");
+      // 카테고리 껐으면 태그 버튼들도 초기화
+      if (!row.classList.contains("has-cat")) {
+        row.querySelectorAll(".quick-cat-tag-btn.active").forEach(b => b.classList.remove("active"));
+      }
+    }
+  });
+}
+
+function quickToggleTag(cat, tag, e) {
+  e.stopPropagation();
+  if (!quickCatTags[cat]) quickCatTags[cat] = new Set();
+  if (quickCatTags[cat].has(tag)) quickCatTags[cat].delete(tag);
+  else quickCatTags[cat].add(tag);
+  // 버튼 상태 갱신
+  const row = document.querySelector(`#quick-cat-list .quick-cat-row[data-cat="${cat}"]`);
+  if (row) {
+    row.querySelectorAll(".quick-cat-tag-btn").forEach(b => {
+      if (b.dataset.tag === tag) b.classList.toggle("active");
+    });
+  }
+}
+
+function quickSaveAndNext() {
+  if (quickSelectedCats.size === 0) {
+    alert("최소 1개 카테고리를 선택하세요");
+    return;
+  }
+  const r = reviewQueue[reviewQueueIdx];
+  const sentMap = {
+    "긍정":           "positive",
+    "부정":           "negative",
+    "중립/단순수령": "neutral",
+    "양도/거래":     "neutral",
+    "교환/반품":     "neutral",
+    "배송관련불편":  "negative",
+  };
+  const oldSegs = r.classification?.segments || [];
+  const newSegs = [...quickSelectedCats].map(cat => {
+    const existing = oldSegs.find(s => s.category === cat);
+    // 사용자가 선택한 태그 우선, 없으면 기존 segment hashtags
+    const userTags = quickCatTags[cat] ? [...quickCatTags[cat]] : [];
+    return {
+      category: cat,
+      sentiment: sentMap[cat] || "neutral",
+      summary: existing?.summary || "",
+      hashtags: userTags.length > 0 ? userTags : (existing?.hashtags || []),
+      confidence: 1.0
+    };
+  });
+  // 전체 hashtags 합집합도 함께 저장 (Analysis 탭 호환용)
+  const allTags = [...new Set(newSegs.flatMap(s => s.hashtags))];
+  RELABELS[r.id] = {
+    segments: newSegs,
+    category: newSegs[0].category,
+    hashtags: allTags
+  };
+  saveLocal();
+  reviewQueueIdx++;
+  renderQuickReviewCard();
+  updateReviewBadge();
+}
+
+function quickAcceptAI() {
+  const r = reviewQueue[reviewQueueIdx];
+  const segs = r.classification?.segments || [];
+  if (segs.length === 0) {
+    quickSkip();
+    return;
+  }
+  // AI 추측 그대로 confirm (hashtags 그대로 유지)
+  RELABELS[r.id] = {
+    segments: segs.map(s => ({
+      category: s.category,
+      sentiment: s.sentiment,
+      summary: s.summary || "",
+      hashtags: s.hashtags || [],
+      confidence: 1.0
+    })),
+    category: segs[0].category
+  };
+  saveLocal();
+  reviewQueueIdx++;
+  renderQuickReviewCard();
+  updateReviewBadge();
+}
+
+function quickSkip() {
+  reviewQueueIdx++;
+  renderQuickReviewCard();
+}
+
+function updateReviewBadge() {
+  const reviews = Object.values(DATA.reviews);
+  const needs = reviews.filter(r => (!r.classification || r.classification?.needs_review) && !RELABELS[r.id]);
+  const b = document.getElementById("review-badge");
+  if (needs.length) {
+    b.textContent = needs.length;
+    b.style.display = "inline-block";
+  } else {
+    b.style.display = "none";
+  }
+}
+
+// 키보드 단축키 (검토 탭에서만 작동)
+document.addEventListener("keydown", e => {
+  // 모달 열려있으면 무시
+  if (document.getElementById("modal-overlay").classList.contains("open")) return;
+  if (document.getElementById("group-modal-overlay").classList.contains("open")) return;
+  // 검토 탭이 활성화되어 있을 때만
+  if (!document.getElementById("section-review").classList.contains("active")) return;
+
+  const key = e.key.toLowerCase();
+  // 숫자 1-6: 카테고리 토글
+  if (/^[1-6]$/.test(e.key)) {
+    e.preventDefault();
+    const idx = parseInt(e.key) - 1;
+    if (CATEGORIES[idx]) quickToggleCat(CATEGORIES[idx]);
+  }
+  // Enter: 저장 후 다음
+  else if (e.key === "Enter") {
+    e.preventDefault();
+    quickSaveAndNext();
+  }
+  // A: AI 승인
+  else if (key === "a") {
+    e.preventDefault();
+    quickAcceptAI();
+  }
+  // ↓ 또는 S: 스킵
+  else if (e.key === "ArrowDown" || key === "s") {
+    e.preventDefault();
+    quickSkip();
+  }
+});
+
+// ── Photos ──
+function renderPhotosSelect(reviews) {
+  const sel = document.getElementById("photos-product-select");
+  sel.innerHTML = '<option value="">전체</option>';
+  const units = getAllDisplayUnits();
+  units.forEach(u => {
+    const opt = document.createElement("option");
+    opt.value = u.products.join("|");
+    opt.textContent = u.isGroup ? `◆ ${u.name}` : u.name;
+    sel.appendChild(opt);
+  });
+}
+function renderPhotos() {
+  const container = document.getElementById("photo-container");
+  const selected = document.getElementById("photos-product-select").value;
+  const selectedProducts = selected ? selected.split("|") : null;
+  const reviews = Object.values(DATA.reviews);
+  const filtered = selectedProducts
+    ? reviews.filter(r => selectedProducts.includes(r.product_name) && r.images?.length)
+    : reviews.filter(r => r.images?.length);
+
+  if (filtered.length === 0) {
+    const total = reviews.length;
+    const withImg = reviews.filter(r => r.images?.length).length;
+    container.innerHTML =
+      `<div class="empty-state" style="padding:80px 0">
+        <span class="empty-state-big">No photos</span>
+        <div class="note">사진 있는 후기 ${withImg}건 / 전체 ${total}건</div>
+      </div>`;
+    return;
+  }
+
+  function renderCard(r) {
+    const isHidden = hiddenPhotos.has(r.id);
+    const displayName = getDisplayName(r.product_name);
+    const isGroup = displayName !== r.product_name;
+    const mainSrc = r.images[0];
+    const escTitle = r.title.replace(/"/g,'&quot;');
+
+    // 썸네일 스트립 (이미지가 2장 이상일 때만)
+    const thumbs = r.images.length > 1
+      ? `<div class="photo-thumbs">${
+          r.images.map((src, i) =>
+            `<img class="photo-thumb ${i===0?'active':''}" src="${src}"
+              onclick="switchMainPhoto(this, '${src.replace(/'/g,"\\'")}')"
+              loading="lazy" onerror="this.style.display='none'">`
+          ).join("")
+        }</div>`
+      : '';
+
+    return `<div class="photo-card" data-rid="${r.id}">
+      <div class="photo-main ${isHidden?'hidden':''}">
+        <button class="photo-toggle" onclick="togglePhotoCard('${r.id}')" title="가리기/보이기">
+          ${isHidden ? '◎' : '◉'}
+        </button>
+        <img src="${mainSrc}" alt="${escTitle}"
+          onclick="${isHidden?'':`openLightbox('${mainSrc.replace(/'/g,"\\'")}')`}"
+          loading="lazy" onerror="this.parentElement.style.background='var(--pewter)'">
+      </div>
+      ${thumbs}
+      <div class="photo-card-info">
+        <div class="photo-card-product ${isGroup?'':'is-product'}">${isGroup?'◆ ':''}${displayName}</div>
+        <div class="photo-card-title" onclick="openModal('${r.id}')">${r.title}</div>
+        <div class="photo-card-meta">${(r.written_at||"").slice(0,10)} · ${r.images.length}장</div>
+      </div>
+    </div>`;
+  }
+
+  function renderGallery(arr) {
+    return `<div class="photo-gallery">${arr.map(renderCard).join("")}</div>`;
+  }
+
+  // 기본: 그룹/상품별로 묶어서 보여줌 (체크박스 제거됨)
+  const units = getAllDisplayUnits();
+  const sections = units.map(u => {
+    const unitReviews = filtered.filter(r => u.products.includes(r.product_name));
+    if (unitReviews.length === 0) return "";
+    const photoCount = unitReviews.reduce((sum, r) => sum + (r.images?.length||0), 0);
+    const label = u.isGroup ? `◆ ${u.name}` : u.name;
+    return `<div style="margin-bottom:48px">
+      <div class="photo-section-title">${label}</div>
+      <div class="photo-section-meta">${photoCount}장 · ${unitReviews.length}개 후기</div>
+      ${renderGallery(unitReviews)}
+    </div>`;
+  }).filter(Boolean).join("");
+  container.innerHTML = sections;
+}
+
+function switchMainPhoto(thumbEl, src) {
+  const card = thumbEl.closest(".photo-card");
+  if (!card) return;
+  const mainWrap = card.querySelector(".photo-main");
+  const mainImg = mainWrap.querySelector("img");
+  mainImg.src = src;
+  mainImg.onclick = () => openLightbox(src);
+  card.querySelectorAll(".photo-thumb").forEach(t => t.classList.remove("active"));
+  thumbEl.classList.add("active");
+}
+
+function togglePhotoCard(rid) {
+  if (hiddenPhotos.has(rid)) hiddenPhotos.delete(rid);
+  else hiddenPhotos.add(rid);
+  // 해당 카드만 갱신 (전체 다시 그리지 않음 — 스크롤 위치 유지)
+  const card = document.querySelector(`.photo-card[data-rid="${rid}"]`);
+  if (!card) return;
+  const mainWrap = card.querySelector(".photo-main");
+  const toggleBtn = card.querySelector(".photo-toggle");
+  const mainImg = mainWrap.querySelector("img");
+  if (hiddenPhotos.has(rid)) {
+    mainWrap.classList.add("hidden");
+    toggleBtn.textContent = "◎";
+    mainImg.onclick = null;
+  } else {
+    mainWrap.classList.remove("hidden");
+    toggleBtn.textContent = "◉";
+    const src = mainImg.src;
+    mainImg.onclick = () => openLightbox(src);
+  }
+}
+
+// ── Modal ──
+function openModal(id) {
+  const r = DATA.reviews[id];
+  if (!r) return;
+  modalReviewId = id;
+  const cat = getReviewCategory(r);
+  const segs = getReviewSegments(r);
+  document.getElementById("modal-title").textContent = r.title;
+  const tags = getReviewHashtags(r).map(h => `<span class="hash-tag">${h}</span>`).join("");
+  const displayName = getDisplayName(r.product_name);
+  const isGroup = displayName !== r.product_name;
+  document.getElementById("modal-meta").innerHTML = `
+    <span class="tag tag-${CSS.escape(cat)}">${cat}</span>
+    <span class="modal-meta-item">${isGroup?'◆ ':''}${displayName}${isGroup?` <span class="dim">(${r.product_name})</span>`:''}</span>
+    <span class="modal-meta-item">${(r.written_at||"").slice(0,10)}</span>
+    <span class="modal-meta-item">조회 ${r.views || 0}</span>
+    ${tags}
+  `;
+  document.getElementById("modal-link").href = r.review_link;
+  document.getElementById("modal-content").textContent = r.content || "(본문 없음 — 제목만 작성된 후기)";
+
+  const segBox = document.getElementById("modal-segments");
+  if (segs.length > 1) {
+    segBox.style.display = "block";
+    segBox.innerHTML = `
+      <div class="segments-title">${segs.length}개 분류로 분리됨</div>
+      ${segs.map(s => `
+        <div class="seg-row">
+          <span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>
+          <span>${s.summary || "(요약 없음)"}</span>
+        </div>`).join("")}`;
+  } else { segBox.style.display = "none"; }
+
+  const imgs = (r.images || []).map(src =>
+    `<img src="${src}" onclick="openLightbox('${src.replace(/'/g,"\\'")}')" loading="lazy" onerror="this.style.display='none'">`).join("");
+  document.getElementById("modal-images").innerHTML = imgs;
+
+  // 카테고리별 태그 선택 UI: 카테고리 활성화 시 그 아래에 태그 옵션 펼침
+  const activeCats = new Set(segs.map(s => s.category));
+  // 카테고리별 현재 태그 상태 맵 만들기 (segment에 명시된 hashtags만 사용)
+  const catTagsMap = {};
+  segs.forEach(s => {
+    if (s.category) catTagsMap[s.category] = new Set(s.hashtags || []);
+  });
+
+  document.getElementById("relabel-options").innerHTML = CATEGORIES.map(c => {
+    const isActive = activeCats.has(c);
+    const catTags = catTagsMap[c] || new Set();
+    const tagBtns = HASHTAGS.map(h =>
+      `<button class="relabel-tag-btn ${catTags.has(h)?'active':''}" data-tag="${h}" onclick="toggleRelabelTag(this, event)">${h}</button>`
+    ).join("");
+    return `<div class="relabel-row ${isActive?'has-cat':''}" data-cat="${c}">
+      <button class="relabel-btn ${isActive?'active':''}" onclick="toggleRelabelBtn(this)">${c}</button>
+      <div class="relabel-tags">${tagBtns}</div>
+    </div>`;
+  }).join("");
+
+  document.getElementById("modal-overlay").classList.add("open");
+}
+function closeModal(e) {
+  if (e.target === document.getElementById("modal-overlay")) closeModalDirect();
+}
+function closeModalDirect() {
+  document.getElementById("modal-overlay").classList.remove("open");
+  modalReviewId = null;
+}
+function toggleRelabelBtn(btn) {
+  btn.classList.toggle("active");
+  // 부모 row에 has-cat 토글 → 태그 영역 펼침/접힘
+  const row = btn.closest(".relabel-row");
+  if (btn.classList.contains("active")) {
+    row.classList.add("has-cat");
+  } else {
+    row.classList.remove("has-cat");
+    // 카테고리 끄면 그 안의 태그 선택도 초기화
+    row.querySelectorAll(".relabel-tag-btn.active").forEach(b => b.classList.remove("active"));
+  }
+}
+function toggleRelabelTag(btn, e) {
+  e.stopPropagation();
+  btn.classList.toggle("active");
+}
+function saveRelabel() {
+  if (!modalReviewId) return;
+  const activeRows = [...document.querySelectorAll("#relabel-options .relabel-row.has-cat")];
+  if (activeRows.length === 0) { alert("최소 1개 분류 선택"); return; }
+  const sentMap = {
+    "긍정":           "positive",
+    "부정":           "negative",
+    "중립/단순수령": "neutral",
+    "양도/거래":     "neutral",
+    "교환/반품":     "neutral",
+    "배송관련불편":  "negative",
+  };
+  const segments = activeRows.map(row => {
+    const cat = row.dataset.cat;
+    const hashtags = [...row.querySelectorAll(".relabel-tag-btn.active")].map(b => b.dataset.tag);
+    return {
+      category: cat,
+      sentiment: sentMap[cat] || "neutral",
+      summary: "",
+      confidence: 1.0,
+      hashtags: hashtags
+    };
+  });
+  // 전체 hashtags 합집합도 함께 저장 (Analysis 탭 호환용)
+  const allTags = [...new Set(segments.flatMap(s => s.hashtags))];
+  RELABELS[modalReviewId] = {
+    segments: segments,
+    category: segments[0].category,
+    hashtags: allTags
+  };
+  saveLocal();
+  openModal(modalReviewId);
+  init();
+}
+
+function openLightbox(src) {
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox").classList.add("open");
+}
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("open");
+}
+
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+    tab.classList.add("active");
+    document.getElementById("section-" + tab.dataset.tab).classList.add("active");
+    if (tab.dataset.tab === "photos" && DATA) renderPhotos();
+  });
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeModalDirect(); closeGroupModalDirect(); closeLightbox(); }
+});
+
+// ── API 잔액 부족 배너 ──
+function initApiExhaustedBanner() {
+  if (!window.__API_EXHAUSTED__) return;
+  const banner = document.getElementById("api-exhausted-banner");
+  const detail = document.getElementById("api-exhausted-detail");
+  const count = window.__UNCLASSIFIED_COUNT__ || 0;
+  const at = window.__API_EXHAUSTED_AT__ || "";
+  let msg = `미분류 후기 ${count}건이 있습니다. `;
+  if (at) msg += `(${at} 중단) `;
+  msg += `Anthropic Console에서 잔액을 충전한 뒤 run_crawler.command를 다시 실행하면 이어서 분류됩니다.`;
+  detail.textContent = msg;
+  banner.classList.add("visible");
+}
+
+loadData();
+initApiExhaustedBanner();
+</script>
+</body>
+</html>

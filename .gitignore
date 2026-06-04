@@ -1,0 +1,18 @@
+# 시크릿
+.env
+
+# 빌드 결과물 (Actions에서 매번 재생성)
+겸손몰 후기 분석.html
+dashboard.html
+.cf_deploy/
+
+# 개발 임시파일
+debug_html/
+*.backup_*
+*.before_*
+*.save
+*.original
+*.pyc
+__pycache__/
+.DS_Store
+/tmp/
