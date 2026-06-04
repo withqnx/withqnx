@@ -6,6 +6,9 @@
 dashboard.html
 .cf_deploy/
 
+# Wrangler 로컬 캐시
+.wrangler/
+
 # 개발 임시파일
 debug_html/
 *.backup_*
