@@ -2358,10 +2358,18 @@ function initGate() {
 const ADMIN_PWD = '251111';
 let IS_ADMIN = sessionStorage.getItem('_nh_admin') === '1';
 
+// localhost에서만 Publish 가능 (Cloudflare URL에서는 숨김)
+const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+
 function updateAdminState() {
   document.body.classList.toggle('admin-mode', IS_ADMIN);
   const btn = document.getElementById('admin-toggle');
   if (btn) btn.textContent = IS_ADMIN ? '🔓 Admin' : '🔒 Admin';
+  // Publish 버튼: localhost에서만 표시
+  ['publish-btn', 'publish-fab'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (IS_ADMIN && IS_LOCAL) ? '' : 'none';
+  });
 }
 
 function toggleAdmin() {
