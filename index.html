@@ -1770,6 +1770,12 @@
     .group-toolbar { flex-wrap: wrap; gap: 8px; }
     .btn-hint { display: none; }
 
+    /* Analysis — 상품 선택: 가로 스크롤 토글 */
+    .product-selector { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
+    .product-selector::-webkit-scrollbar { height: 2px; }
+    .product-selector::-webkit-scrollbar-thumb { background: var(--ash); border-radius: 2px; }
+    .product-btn { font-size: 11px; padding: 4px 10px; flex-shrink: 0; }
+
     /* Photo gallery — 2열 */
     .photo-gallery {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
