@@ -1635,6 +1635,36 @@
     .stat-num { font-size: 36px; }
   }
 
+  /* ── Admin 권한 제어 ─────────────────────────── */
+  .admin-only { display: none !important; }
+  body.admin-mode .publish-btn.admin-only   { display: inline-flex !important; }
+  body.admin-mode .tab.admin-only           { display: flex !important; }
+  body.admin-mode .btn-primary.admin-only,
+  body.admin-mode .btn-secondary.admin-only { display: inline-flex !important; }
+  @media (max-width: 640px) {
+    body.admin-mode .publish-fab.admin-only { display: flex !important; }
+  }
+  @media (min-width: 641px) {
+    .publish-fab.admin-only { display: none !important; }
+  }
+  .admin-toggle {
+    font-size: 11px;
+    color: var(--ash);
+    background: none;
+    border: 1px solid var(--slate);
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    letter-spacing: -0.007px;
+    transition: all .15s;
+    white-space: nowrap;
+    margin-top: 4px;
+    align-self: flex-start;
+  }
+  .admin-toggle:hover { color: var(--silver); border-color: var(--ash); }
+  body.admin-mode .admin-toggle { color: var(--gold); border-color: rgba(204,145,102,.5); }
+
   /* ═══════════════════════════════════════════
      모바일 (640px 이하)
      ═══════════════════════════════════════════ */
@@ -1676,12 +1706,34 @@
     .product-selector { gap: 6px; margin-bottom: 20px; }
     .product-btn { font-size: 11px; padding: 5px 12px; }
 
-    /* Group list */
-    .group-list { grid-template-columns: 1fr; }
-    .group-card { padding: 18px; }
-    .group-card-name { font-size: 20px; }
+    /* Groups — 모바일 3열 바둑판 */
+    .group-list { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .group-card { padding: 10px 8px; }
+    .group-card-name { font-size: 13px; min-height: auto; }
+    .group-card-date { font-size: 10px; margin-bottom: 8px; }
+    .group-card-products { display: none; }
+    .group-stat-num { font-size: 16px; }
+    .group-stat-label { font-size: 9px; }
+    .group-actions { display: none; }
+    .group-meta { display: none; }
     .group-toolbar { flex-wrap: wrap; gap: 8px; }
     .btn-hint { display: none; }
+
+    /* Analysis — 상품 선택: 가로 스크롤 토글 */
+    .product-selector { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
+    .product-selector::-webkit-scrollbar { height: 2px; }
+    .product-selector::-webkit-scrollbar-thumb { background: var(--ash); border-radius: 2px; }
+    .product-btn { font-size: 11px; padding: 4px 10px; flex-shrink: 0; }
+
+    /* Analysis — Distribution + Keywords 가로 나란히 */
+    #section-analysis .panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 12px;
+    }
+    #section-analysis .panel > .panel-title:first-child,
+    #section-analysis .panel > .panel-meta { grid-column: 1 / -1; }
+    .hashtag-stats { margin-top: 0; padding-top: 0; border-top: none; }
 
     /* Photo gallery — 2열 */
     .photo-gallery {
@@ -1761,6 +1813,7 @@
   <div class="header-meta">
     <div><span class="label">Last update</span> · <span class="value" id="last-updated">—</span></div>
     <div><span class="label">Total</span> · <span class="value" id="total-count">—</span></div>
+    <button class="admin-toggle" id="admin-toggle" onclick="toggleAdmin()">🔒 Admin</button>
   </div>
 </header>
 
@@ -1768,13 +1821,13 @@
   <div class="tab active" data-tab="overview">Today</div>
   <div class="tab" data-tab="analysis">Analysis</div>
   <div class="tab" data-tab="groups">Groups</div>
-  <div class="tab" data-tab="review">Review <span id="review-badge" class="tab-badge" style="display:none"></span></div>
+  <div class="tab admin-only" data-tab="review">Review <span id="review-badge" class="tab-badge" style="display:none"></span></div>
   <div class="tab" data-tab="photos">Photos</div>
-  <button class="publish-btn" id="publish-btn" onclick="publishAll()">Publish</button>
+  <button class="publish-btn admin-only" id="publish-btn" onclick="publishAll()">Publish</button>
 </nav>
 
 <!-- 모바일 전용 플로팅 Publish 버튼 -->
-<button class="publish-fab" id="publish-fab" onclick="publishAll()">Publish</button>
+<button class="publish-fab admin-only" id="publish-fab" onclick="publishAll()">Publish</button>
 
 <main>
 
@@ -1866,9 +1919,9 @@
   <!-- ③ Groups -->
   <section class="section" id="section-groups">
     <div class="group-toolbar">
-      <button class="btn-primary" onclick="openGroupModal()">+ New Group</button>
-      <button class="btn-secondary" onclick="restorePresetGroups()">프리셋 복원</button>
-      <button class="btn-secondary" onclick="resetAllGroups()">Reset all</button>
+      <button class="btn-primary admin-only" onclick="openGroupModal()">+ New Group</button>
+      <button class="btn-secondary admin-only" onclick="restorePresetGroups()">프리셋 복원</button>
+      <button class="btn-secondary admin-only" onclick="resetAllGroups()">Reset all</button>
       <span class="btn-hint">상품들을 묶고 출시일을 등록하면 출시 후 후기 추이를 볼 수 있어요.</span>
     </div>
     <div class="group-list" id="group-list"></div>
@@ -1879,18 +1932,6 @@
     <div style="margin-bottom:24px">
       <h2 style="font-family:var(--font-display);font-size:32px;font-weight:500;color:var(--white);letter-spacing:-0.025px;margin-bottom:8px">검토 큐</h2>
       <p style="font-size:13px;color:var(--silver)">키보드 단축키 <kbd>1-6</kbd>로 카테고리 선택, <kbd>Enter</kbd>로 저장 후 다음, <kbd>↓</kbd>로 스킵, <kbd>A</kbd>로 AI 그대로 승인</p>
-    </div>
-
-    <!-- 분류 공유 패널 -->
-    <div style="background:var(--pewter);border:1px solid var(--steel);border-radius:12px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-      <div style="flex:1;min-width:200px">
-        <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:4px">분류 공유</div>
-        <div style="font-size:12px;color:var(--silver)">내 분류 내역을 저장하거나, 다른 사람이 저장한 파일을 불러오세요.</div>
-      </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <button onclick="exportRelabels()" style="background:var(--gold-start,#c9a84c);color:#000;border:none;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;">💾 분류 저장하기</button>
-        <label style="background:var(--steel);color:var(--white);border:none;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;">📂 저장된 분류 불러오기<input type="file" accept=".json" onchange="importRelabels(event)" style="display:none"></label>
-      </div>
     </div>
 
     <div id="review-quick" class="review-quick"></div>
@@ -2238,6 +2279,37 @@ function getReviewHashtags(r) {
   return normalizeHashtags(r.hashtags || []);
 }
 
+// ── Admin ──────────────────────────────────────
+const ADMIN_PWD = '251111';
+let IS_ADMIN = sessionStorage.getItem('_nh_admin') === '1';
+
+function updateAdminState() {
+  document.body.classList.toggle('admin-mode', IS_ADMIN);
+  const btn = document.getElementById('admin-toggle');
+  if (btn) btn.textContent = IS_ADMIN ? '🔓 Admin' : '🔒 Admin';
+}
+
+function toggleAdmin() {
+  if (IS_ADMIN) {
+    IS_ADMIN = false;
+    sessionStorage.removeItem('_nh_admin');
+    // 관리자 전용 탭(Review)에 있으면 Today로 이동
+    const active = document.querySelector('.tab.active.admin-only');
+    if (active) document.querySelector('.tab[data-tab="overview"]')?.click();
+  } else {
+    const pwd = prompt('관리자 비밀번호:');
+    if (pwd === null) return;
+    if (pwd === ADMIN_PWD) {
+      IS_ADMIN = true;
+      sessionStorage.setItem('_nh_admin', '1');
+    } else {
+      alert('비밀번호가 틀렸습니다.');
+      return;
+    }
+  }
+  updateAdminState();
+}
+
 // ── Load ──
 async function loadData() {
   loadLocal();
@@ -2295,6 +2367,7 @@ function init() {
   renderGroups();
   renderReviewQueue(reviews);
   renderPhotosSelect(reviews);
+  updateAdminState();
 }
 
 // ── Today ──
@@ -2850,6 +2923,7 @@ function exportGroups() {
 
 // ── Publish: 그룹 + 분류 저장 & 배포 (원클릭) ──
 function publishAll() {
+  if (!IS_ADMIN) { alert('관리자만 배포할 수 있습니다.'); return; }
   const btns = ['publish-btn','publish-fab'].map(id => document.getElementById(id)).filter(Boolean);
   if (btns.some(b => b.classList.contains('loading'))) return;
 
@@ -3435,6 +3509,7 @@ function initApiExhaustedBanner() {
   banner.classList.add("visible");
 }
 
+updateAdminState();
 loadData();
 initApiExhaustedBanner();
 </script>
