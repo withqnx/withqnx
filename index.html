@@ -1635,6 +1635,57 @@
     .stat-num { font-size: 36px; }
   }
 
+  /* ── 홈페이지 진입 게이트 ─────────────────────── */
+  .site-gate {
+    position: fixed; inset: 0;
+    background: var(--midnight);
+    z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 20px;
+  }
+  .site-gate.hidden { display: none; }
+  .gate-logo {
+    font-family: var(--font-display);
+    font-size: 28px; font-weight: 500;
+    color: var(--white);
+    letter-spacing: -0.025px;
+    margin-bottom: 4px;
+  }
+  .gate-sub { font-size: 13px; color: var(--stone); }
+  .gate-form { display: flex; flex-direction: column; gap: 10px; width: 260px; }
+  .gate-input {
+    font-family: var(--font-body);
+    font-size: 22px;
+    padding: 14px 20px;
+    background: var(--slate);
+    color: var(--white);
+    border: 1px solid var(--ash);
+    border-radius: var(--radius-pill);
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.15em;
+    transition: border-color .15s;
+  }
+  .gate-input:focus { border-color: var(--frost); }
+  .gate-input.error {
+    border-color: var(--cat-negative);
+    animation: gateShake .3s ease;
+  }
+  @keyframes gateShake {
+    0%,100% { transform: translateX(0); }
+    25%      { transform: translateX(-8px); }
+    75%      { transform: translateX(8px); }
+  }
+  .gate-btn {
+    font-family: var(--font-body);
+    font-size: 14px; font-weight: 700;
+    padding: 14px;
+    background: var(--white); color: var(--midnight);
+    border: none; border-radius: var(--radius-pill);
+    cursor: pointer; transition: opacity .15s;
+  }
+  .gate-btn:hover { opacity: 0.85; }
+
   /* ── Admin 권한 제어 ─────────────────────────── */
   .admin-only { display: none !important; }
   body.admin-mode .publish-btn.admin-only   { display: inline-flex !important; }
@@ -1719,22 +1770,6 @@
     .group-toolbar { flex-wrap: wrap; gap: 8px; }
     .btn-hint { display: none; }
 
-    /* Analysis — 상품 선택: 가로 스크롤 토글 */
-    .product-selector { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
-    .product-selector::-webkit-scrollbar { height: 2px; }
-    .product-selector::-webkit-scrollbar-thumb { background: var(--ash); border-radius: 2px; }
-    .product-btn { font-size: 11px; padding: 4px 10px; flex-shrink: 0; }
-
-    /* Analysis — Distribution + Keywords 가로 나란히 */
-    #section-analysis .panel {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 12px;
-    }
-    #section-analysis .panel > .panel-title:first-child,
-    #section-analysis .panel > .panel-meta { grid-column: 1 / -1; }
-    .hashtag-stats { margin-top: 0; padding-top: 0; border-top: none; }
-
     /* Photo gallery — 2열 */
     .photo-gallery {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -1794,6 +1829,17 @@
 </style>
 </head>
 <body>
+
+<!-- 홈페이지 진입 비밀번호 게이트 -->
+<div class="site-gate" id="site-gate">
+  <div class="gate-logo">겸손몰 후기 분석</div>
+  <div class="gate-sub">비밀번호를 입력해주세요</div>
+  <div class="gate-form">
+    <input class="gate-input" id="gate-input" type="password" placeholder="••••••"
+           onkeydown="if(event.key==='Enter')checkGate()" autocomplete="off" autofocus>
+    <button class="gate-btn" onclick="checkGate()">입장</button>
+  </div>
+</div>
 
 <!-- API 잔액 부족 배너 -->
 <div class="api-exhausted-banner" id="api-exhausted-banner">
@@ -2277,6 +2323,29 @@ function getReviewHashtags(r) {
     }
   }
   return normalizeHashtags(r.hashtags || []);
+}
+
+// ── 홈페이지 진입 게이트 ───────────────────────
+const GATE_PWD = '10ㅁㅎ';
+
+function checkGate() {
+  const input = document.getElementById('gate-input');
+  if (input.value === GATE_PWD) {
+    sessionStorage.setItem('_nh_gate', '1');
+    document.getElementById('site-gate').classList.add('hidden');
+  } else {
+    input.classList.add('error');
+    input.value = '';
+    setTimeout(() => { input.classList.remove('error'); input.focus(); }, 400);
+  }
+}
+
+function initGate() {
+  if (sessionStorage.getItem('_nh_gate') === '1') {
+    document.getElementById('site-gate').classList.add('hidden');
+  } else {
+    setTimeout(() => document.getElementById('gate-input')?.focus(), 50);
+  }
 }
 
 // ── Admin ──────────────────────────────────────
@@ -3509,6 +3578,7 @@ function initApiExhaustedBanner() {
   banner.classList.add("visible");
 }
 
+initGate();
 updateAdminState();
 loadData();
 initApiExhaustedBanner();
