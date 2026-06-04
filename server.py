@@ -50,6 +50,12 @@ def deploy_to_cloudflare():
     try:
         os.makedirs(deploy_dir, exist_ok=True)
         shutil.copy(DASHBOARD, os.path.join(deploy_dir, "index.html"))
+        # Cloudflare Function(functions/api/publish.js) 포함
+        src_fn = os.path.join(SCRIPT_DIR, "functions")
+        if os.path.isdir(src_fn):
+            dst_fn = os.path.join(deploy_dir, "functions")
+            shutil.rmtree(dst_fn, ignore_errors=True)
+            shutil.copytree(src_fn, dst_fn)
 
         env = {
             **os.environ,

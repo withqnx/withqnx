@@ -1,0 +1,49 @@
+name: 빌드 & Cloudflare 배포 (Publish/수정 시)
+
+# 데이터·그룹·템플릿이 push 되면 자동으로 빌드 + 배포.
+# - 관리자 Publish → Function이 PAT로 커밋 → 이 워크플로우 트리거
+# - index.html 직접 수정 push → 이 워크플로우 트리거
+# (daily_crawl 의 봇 커밋은 GITHUB_TOKEN 이라 이 워크플로우를 트리거하지 않음 → 중복 배포 없음)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data.json'
+      - 'groups.json'
+      - 'tags.json'
+      - 'index.html'
+      - 'functions/**'
+
+permissions:
+  contents: read
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 대시보드 HTML 빌드
+        run: python deploy_nas.py
+
+      - name: Cloudflare Pages 배포
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_PROJECT: ${{ secrets.CF_PROJECT }}
+        run: |
+          mkdir -p .cf_deploy
+          cp "겸손몰 후기 분석.html" .cf_deploy/index.html
+          cp -r functions .cf_deploy/functions
+          npx wrangler@3 pages deploy .cf_deploy \
+            --project-name="$CF_PROJECT" \
+            --commit-dirty=true \
+            --branch=main
+          echo "✅ 배포 완료: https://$CF_PROJECT.pages.dev"

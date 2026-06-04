@@ -2358,18 +2358,10 @@ function initGate() {
 const ADMIN_PWD = '251111';
 let IS_ADMIN = sessionStorage.getItem('_nh_admin') === '1';
 
-// localhost에서만 Publish 가능 (Cloudflare URL에서는 숨김)
-const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-
 function updateAdminState() {
   document.body.classList.toggle('admin-mode', IS_ADMIN);
   const btn = document.getElementById('admin-toggle');
   if (btn) btn.textContent = IS_ADMIN ? '🔓 Admin' : '🔒 Admin';
-  // Publish 버튼: localhost에서만 표시
-  ['publish-btn', 'publish-fab'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = (IS_ADMIN && IS_LOCAL) ? '' : 'none';
-  });
 }
 
 function toggleAdmin() {
@@ -3005,12 +2997,13 @@ function exportGroups() {
 }
 
 // ── Publish: 그룹 + 분류 저장 & 배포 (원클릭) ──
-function publishAll() {
+// Cloudflare URL → /api/publish (GitHub 커밋 → 자동 빌드/배포)
+// 로컬(file://, localhost) → localhost:7878/publish (로컬 서버)
+async function publishAll() {
   if (!IS_ADMIN) { alert('관리자만 배포할 수 있습니다.'); return; }
   const btns = ['publish-btn','publish-fab'].map(id => document.getElementById(id)).filter(Boolean);
   if (btns.some(b => b.classList.contains('loading'))) return;
 
-  // 모든 버튼 상태 일괄 변경
   const setState = (cls, text) => btns.forEach(b => {
     b.classList.remove('loading','success','error');
     if (cls) b.classList.add(cls);
@@ -3032,40 +3025,58 @@ function publishAll() {
     if (relabel.hashtags) r.hashtags = relabel.hashtags;
   });
 
+  const payload = JSON.stringify({ groups: GROUPS, data: merged });
+
+  // 시도할 엔드포인트 (순서대로 폴백)
+  const isHttp = location.protocol === 'http:' || location.protocol === 'https:';
+  const endpoints = [];
+  if (isHttp) endpoints.push({ url: '/api/publish', kind: 'cf' });      // Cloudflare Function
+  endpoints.push({ url: 'http://localhost:7878/publish', kind: 'local' }); // 로컬 서버
+
   setState('loading', '저장 중…');
 
-  fetch('http://localhost:7878/publish', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ groups: GROUPS, data: merged })
-  })
-  .then(r => r.json())
-  .then(res => {
-    if (res.ok) {
-      setState('success', '✓ 배포 완료');
-      RELABELS = {};
-      localStorage.setItem('relabels', '{}');
-      if (res.cf_url) console.log('🌐 Cloudflare:', res.cf_url);
-      setTimeout(() => setState(null, 'Publish'), 3000);
-    } else {
-      throw new Error(res.error || 'deploy 실패');
-    }
-  })
-  .catch(err => {
-    setState(null, 'Publish');
-    const isNetErr = err instanceof TypeError || String(err).includes('fetch');
-    const msg = isNetErr
-      ? 'Publish 서버에 연결할 수 없어요.\nrun_crawler.command를 실행하면 서버가 자동으로 시작됩니다.\n\n지금은 파일을 직접 다운로드합니다.'
-      : `배포 중 오류가 발생했어요:\n${err.message}`;
-    alert(msg);
-    if (isNetErr) {
-      [['groups.json', GROUPS], ['data.json', merged]].forEach(([name, obj]) => {
-        const blob = new Blob([JSON.stringify(obj, null, 2)], {type:'application/json'});
-        const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: name});
-        document.body.appendChild(a); a.click(); document.body.removeChild(a);
-        URL.revokeObjectURL(a.href);
+  let lastErr = null;
+  for (const ep of endpoints) {
+    try {
+      const r = await fetch(ep.url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
       });
+      // Function이 없는 환경이면 405/404 → 다음 엔드포인트로
+      if (r.status === 404 || r.status === 405) { lastErr = new Error('endpoint-missing'); continue; }
+      const res = await r.json();
+      if (res.ok) {
+        setState('success', ep.kind === 'cf' ? '✓ 저장됨 (배포 중)' : '✓ 배포 완료');
+        RELABELS = {};
+        localStorage.setItem('relabels', '{}');
+        if (ep.kind === 'cf') {
+          setTimeout(() => alert('GitHub에 저장됐어요.\n1~2분 후 모두에게 자동 반영됩니다.'), 100);
+        }
+        setTimeout(() => setState(null, 'Publish'), 3500);
+        return;
+      }
+      throw new Error(res.error || '저장 실패');
+    } catch (e) {
+      lastErr = e;
+      // 네트워크 에러(서버 없음)면 다음 엔드포인트 시도
+      if (e instanceof TypeError || String(e).includes('fetch') || String(e).includes('endpoint-missing')) continue;
+      // 서버가 응답했는데 ok:false → 실제 에러, 중단
+      setState('error', '✕ 실패');
+      alert(`저장 중 오류가 발생했어요:\n${e.message}`);
+      setTimeout(() => setState(null, 'Publish'), 3000);
+      return;
     }
+  }
+
+  // 모든 엔드포인트 실패 → 파일 다운로드 폴백
+  setState(null, 'Publish');
+  alert('저장 서버에 연결할 수 없어요.\n지금은 파일을 직접 다운로드합니다.\n(다운로드한 파일을 프로젝트 폴더에 넣고 배포하세요)');
+  [['groups.json', GROUPS], ['data.json', merged]].forEach(([name, obj]) => {
+    const blob = new Blob([JSON.stringify(obj, null, 2)], {type:'application/json'});
+    const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: name});
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
   });
 }
 

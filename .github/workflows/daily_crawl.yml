@@ -51,6 +51,7 @@ jobs:
           fi
           mkdir -p .cf_deploy
           cp "겸손몰 후기 분석.html" .cf_deploy/index.html
+          cp -r functions .cf_deploy/functions
           npx wrangler@3 pages deploy .cf_deploy \
             --project-name="$CF_PROJECT" \
             --commit-dirty=true \
