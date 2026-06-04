@@ -3025,7 +3025,7 @@ async function publishAll() {
     if (relabel.hashtags) r.hashtags = relabel.hashtags;
   });
 
-  const payload = JSON.stringify({ groups: GROUPS, data: merged });
+  const payload = JSON.stringify({ groups: GROUPS, data: merged, pwd: ADMIN_PWD });
 
   // 시도할 엔드포인트 (순서대로 폴백)
   const isHttp = location.protocol === 'http:' || location.protocol === 'https:';
