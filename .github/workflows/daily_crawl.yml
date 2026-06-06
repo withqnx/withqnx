@@ -2,7 +2,7 @@ name: 매일 후기 크롤링 & Cloudflare 배포
 
 on:
   schedule:
-    - cron: '17 23 * * *'  # 매일 08:17 KST (UTC+9) — 정시 혼잡 회피
+    - cron: '0 21 * * *'   # 매일 06:00 KST (UTC+9, 전날 21:00 UTC)
   workflow_dispatch:        # 수동 실행 버튼
 
 permissions:
