@@ -1,8 +1,9 @@
 name: 매일 후기 크롤링 & Cloudflare 배포
 
 on:
-  schedule:
-    - cron: '0 21 * * *'   # 매일 06:00 KST (UTC+9, 전날 21:00 UTC)
+  # ⚠️ schedule 비활성화: GitHub 서버(미국 IP)는 cafe24 게시판 차단으로 0건만 수집됨.
+  #    실제 크롤링은 로컬 Mac(한국 IP)의 launchd(auto_crawl.sh)가 담당.
+  #    이 워크플로우는 수동 백업용으로만 유지.
   workflow_dispatch:        # 수동 실행 버튼
 
 permissions:
