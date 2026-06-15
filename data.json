@@ -128633,6 +128633,233 @@
         ]
       },
       "crawled_date": "2026-06-15"
+    },
+    "100127": {
+      "id": "100127",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "쓰는데 정말 좋습니다. 다만 뚜껑이 뒤에 안꼽히네요 ㅎㅎ",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100127/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-15 16:04:02",
+      "views": "0",
+      "content": "베게에 이어...\n세종 흑진주...   너무 좋네요.\n주력 으로 사무실에서 계속 쓰는데 길이 들여 질수록 좋네요.\n다만  뚜껑이 뒤에 안꼽혀서 출장이나 이럴때 휴대하기는 힘들듯 하네요.\n다른 색상 사신 지인은 꼽힌 다는데... 먼지 모르겠습니다.\n혹시 다들 뚜껑 뒤에 꼽히 시나요?",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/06/15/30b9293d88326f82dfbe3555d5fa86ff.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/06/15/49309a9f2783ed411f63458de39ab7d3.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#또사고싶다",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사용할수록 좋고 사무실에서 주력으로 잘 쓰고 있음",
+            "hashtags": [
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "뚜껑이 뒤에 안 꼽혀서 휴대 시 불편함",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용 만족도는 높으나 뚜껑 결함으로 인한 휴대성 문제가 명확한 제품 결함 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#또사고싶다",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-06-16"
+    },
+    "100125": {
+      "id": "100125",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100125/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-15 15:46:55",
+      "views": "0",
+      "content": "색상과 디자인 모두 맘에 들고",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색상과 디자인 모두 만족",
+            "hashtags": [
+              "#색상",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 색상과 디자인에 대한 명확한 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-06-16"
+    },
+    "100123": {
+      "id": "100123",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100123/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-15 15:44:31",
+      "views": "0",
+      "content": "색상과 디자인 모두 맘에 들고",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색상과 디자인 모두 만족",
+            "hashtags": [
+              "#색상",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상과 디자인에 대한 명확한 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-06-16"
+    },
+    "100102": {
+      "id": "100102",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "라이트그레이 60 사이즈 있습니다. 56이나 58로 교환하고 싶습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100102/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-15 13:52:32",
+      "views": "0",
+      "content": "라이트그레이 60 사이즈 있습니다. 신랑것과 제것을 샀는데 의외로 신랑 머리가 작더라구요. 그래서 56이나 58로 교환하고 싶습니다. 색상은 어느 것이든 좋습니다. 포장은 비닐까지 그대로 있습니다.\n교환 원하시거나 혹시 구입 원하시는 분(정가)은 01095177274로 문자주세요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "라이트그레이 60사이즈를 56~58사이즈로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "category": "양도/거래",
+            "summary": "미사용 제품(비닐 포장 그대로)을 정가로 판매 또는 교환 제시",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 맞지 않아 교환 요청하면서 동시에 판매·양도를 제시하는 이중 의도의 글로, 교환/반품 세그먼트와 양도/거래 세그먼트로 분리 필요",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-16"
+    },
+    "100087": {
+      "id": "100087",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "상품 불량",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100087/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-15 13:08:44",
+      "views": "0",
+      "content": "[상품불량] 8장 구매/ 6장 먼저 받고/1장은 약 10일 후 받았음/ 1장은 기다리는중 : 1장 받은걸 개봉해보니 목덜미 안쪽 바이어스 마무리 처리가 덜된채와서 이전에 온것들을 개봉하니 같은 불량이 발견된것 1개 함께 반품 합니다. (한두땀 바느질 가능한 것은 처리해서 입겠는데 두개는 손재주가 부족해서...) 처리요망",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/06/15/8c6d43bdd4da36da341ee911d81821d7.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/06/15/0e82f5c3e8121b59fc8e118be61b4022.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/06/15/ac997e7100abbccba35746a6f54dc523.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "8장 구매 중 여러 장에서 목덜미 바이어스 마무리 처리 불량 발견",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "배송관련불편",
+            "summary": "8장 주문 시 나누어 수령 (6장→1장→1장 미수령)",
+            "hashtags": [],
+            "confidence": 0.85
+          },
+          {
+            "category": "교환/반품",
+            "summary": "불량 상품 2장 반품 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 상품 품질 문제(마감 불량)와 함께 분산 배송 및 반품 의사 표현이 있음",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-16"
     }
   },
   "daily_logs": [
@@ -131951,9 +132178,20 @@
         "99800",
         "99797"
       ]
+    },
+    {
+      "date": "2026-06-16",
+      "count": 5,
+      "new_ids": [
+        "100127",
+        "100125",
+        "100123",
+        "100102",
+        "100087"
+      ]
     }
   ],
-  "last_updated": "2026-06-15 08:01:28",
+  "last_updated": "2026-06-16 08:16:44",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
