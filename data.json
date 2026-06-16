@@ -128853,6 +128853,198 @@
         "_relabeled": true
       },
       "crawled_date": "2026-06-16"
+    },
+    "100358": {
+      "id": "100358",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "작아요. ㅠ",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100358/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-17 07:22:38",
+      "views": "0",
+      "content": "여자 큰 싸이즈인데 작아서 아쉬워요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "여자 큰 사이즈인데도 작게 나옴",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만족에 대한 명확한 부정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-17"
+    },
+    "100247": {
+      "id": "100247",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "옷감은 참 좋은데요. 박음질이 잘못돼서 밑단이 울어요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100247/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-16 12:24:31",
+      "views": "0",
+      "content": "큰맘먹고 샀는데, 진짜 옷감은 참 좋은데.\n밑단이 울어서 싸구려 옷처럼 보여요.\n싸구려 면티도 이렇진 않은데 너무 아쉽습니다.",
+      "images": [],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "옷감은 좋지만 박음질 불량으로 밑단이 울어 있음",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 박음질 결함(밑단 울음)에 대한 명확한 불만으로 부정 카테고리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-17"
+    },
+    "100186": {
+      "id": "100186",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "만족합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100186/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-16 09:42:15",
+      "views": "0",
+      "content": "적당한 가격과 품질에 만족합니다",
+      "images": [],
+      "hashtags": [
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "적당한 가격과 품질에 만족",
+            "hashtags": [
+              "#가격",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격과 품질 만족을 명확히 표현한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#가격",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-17"
+    },
+    "100185": {
+      "id": "100185",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "만족합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100185/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-16 09:41:25",
+      "views": "0",
+      "content": "적당한 가격과 품질에 만족합니다",
+      "images": [],
+      "hashtags": [
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "적당한 가격과 품질에 만족",
+            "hashtags": [
+              "#가격",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격과 품질 만족을 명확히 표현한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#가격",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-17"
+    },
+    "100183": {
+      "id": "100183",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "아주멋스럽게잘착용합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100183/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-16 09:40:08",
+      "views": "0",
+      "content": "평상시모자를 즐겨 씁니다\n어떠한옷에든 계절에상관없이 잘 어울려요 완전. 맘에 듬요",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "다양한 옷과 계절에 잘 어울리며 만족한다",
+            "hashtags": [
+              "#디자인",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체에 대한 명확한 칭찬(어울림, 만족)으로 긍정 카테고리 확정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-06-17"
     }
   },
   "daily_logs": [
@@ -132182,9 +132374,20 @@
         "100102",
         "100087"
       ]
+    },
+    {
+      "date": "2026-06-17",
+      "count": 5,
+      "new_ids": [
+        "100358",
+        "100247",
+        "100186",
+        "100185",
+        "100183"
+      ]
     }
   ],
-  "last_updated": "2026-06-16 08:16:44",
+  "last_updated": "2026-06-17 07:57:17",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
