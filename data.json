@@ -129045,6 +129045,254 @@
         ]
       },
       "crawled_date": "2026-06-17"
+    },
+    "100445": {
+      "id": "100445",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "드디어 왔네요^^",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100445/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-17 16:29:42",
+      "views": "0",
+      "content": "해바라기칼 오늘 드디어 받았어요..ㅎ\n명인의 칼을 만나니 그저 기분이 좋습니다.\n명인님 애쓰셨고 아까워서 어찌쓸지...\n받자 마자 후기 남깁니다.\n당장 써봐야겠어요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/17/65b03e2bc5d04e5f2aa8ad1633f0c58b.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "상품 수령 알림",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "단순 수령 사실 전달이 주 내용이며, '기분이 좋다'는 이유 없는 짧은 호평으로 중립/단순수령 범주에 해당",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-18"
+    },
+    "100413": {
+      "id": "100413",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "60호 차콜그레이 교환 또는 판매합니다 - 완료",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100413/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-17 13:09:19",
+      "views": "0",
+      "content": "60호 차콜그레이 샀는데 크네요. 58과 교환 또는 판매하고 싶습니다\n모자는 아주 이쁘고, 머리가 푹 들어갑니다. 스타일 멋져요",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#디자인",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "60호 차콜그레이를 58호로 교환 또는 판매 희망",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "모자 디자인과 착용감이 만족스러움",
+            "hashtags": [
+              "#디자인",
+              "#핏"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 문제로 양도/거래 의도가 명확하며, 동시에 상품 자체에 대한 만족감도 표현되어 두 개 segment로 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#디자인",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-06-18"
+    },
+    "100412": {
+      "id": "100412",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "해바리기 3개 팝니다!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100412/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-17 13:08:22",
+      "views": "0",
+      "content": "카톡id : gowoo\n이메일 :  gowoo72@hotmail.com\n수량 3개 : 각 109,900 원 (택배비용은 별도)",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "해바리기 상품 3개를 판매 중",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 구매한 상품을 재판매하는 양도/거래 글로, 연락처와 가격 정보를 제시하고 있음",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-18"
+    },
+    "100411": {
+      "id": "100411",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "부분 탈색 문제",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100411/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-17 12:42:32",
+      "views": "0",
+      "content": "짜장 국물이나 김치 국물이 튀었을 때 여느때처럼 주방세제를 이용하여 부분 세탁을 한 뒤에 전체 세탁을 하는데 저렇게 탈색이 되어 보기 안좋게 되어 버렸어요. 디자이너의 고급 셔츠라고 해서 신뢰하고 구매했는데 이렇게 되니 당황스럽고 아쉽네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/17/60c1956dd24173fb198c4e82b87dded1.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/17/499821d5e6d9942b9e9a68d6868331ac.jpeg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "일반적인 세탁 방법으로 부분 탈색 발생, 고급 셔츠 기대와 불일치",
+            "hashtags": [
+              "#재질",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 염색 견뢰도 문제로 인한 명확한 불만. 제조사 결함이 의심되는 상황",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-18"
+    },
+    "100392": {
+      "id": "100392",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "상품 잘 받았습니다.~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100392/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-17 10:47:17",
+      "views": "0",
+      "content": "선물같은 택배였습니다. ^^\n옷감도, 착용감도 디자인도 다 만족입니다.\n다만 기장이 2cm 아쉽습니다.\n77로 큰 사이즈를 입으니 밑 기장이 배에서 부터 약간 들뜸처럼 보여서 부담스러운 길이가 됩니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/17/a6f25f2b093ee8e9684240677754adf0.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/17/aebdb1d90a2d4f63cf921fb1bdd5cdc7.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#핏",
+        "#디자인",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "옷감, 착용감, 디자인 모두 만족",
+            "hashtags": [
+              "#재질",
+              "#핏",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "큰 사이즈 기장이 2cm 짧아 들뜸 현상 발생",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반적 만족도는 높으나 사이즈 규격상 기장 길이 문제로 착용감 저하",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#핏",
+          "#디자인",
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-18"
+    },
+    "100363": {
+      "id": "100363",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "옷색이변함",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100363/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-17 08:51:58",
+      "views": "0",
+      "content": "남편이 처녀자리를 구매했는데 색이 변하고 처음 구매했을때 새캉이 옅어져서 못입고있어요 ㅜ",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "구매 후 색이 변하고 새색이 옅어져 착용 불가",
+            "hashtags": [
+              "#색상",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 색상 변화 및 퀄리티 문제로 인한 명확한 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-18"
     }
   },
   "daily_logs": [
@@ -132385,9 +132633,21 @@
         "100185",
         "100183"
       ]
+    },
+    {
+      "date": "2026-06-18",
+      "count": 6,
+      "new_ids": [
+        "100445",
+        "100413",
+        "100412",
+        "100411",
+        "100392",
+        "100363"
+      ]
     }
   ],
-  "last_updated": "2026-06-17 07:57:17",
+  "last_updated": "2026-06-18 08:00:11",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
