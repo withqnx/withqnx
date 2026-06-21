@@ -129293,6 +129293,592 @@
         ]
       },
       "crawled_date": "2026-06-18"
+    },
+    "100744": {
+      "id": "100744",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "방석이 너무 커서 '중'자로 시킨줄 알았어요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100744/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-21 18:19:08",
+      "views": "0",
+      "content": "어제 배송온다는 통보받고 오늘 도착했는데 처음에 열어보고 깜짝 놀랐습니다.\n진공포장 비슷하게 방석속이 포장되어 있었는데 커버보다 2배는 커보이더군요.\n깜짝놀라 다시 주문을 확인해보고 커버에 끼워 넣으니 도톰하게 잘 들어가네요.\n아직은 애들이 좀 어색해 하는데... 곧 적을하리라 믿습니다.\n그나저나 강아지들에게 너무 고급품을 선물하는게 아닌가 싶어요...",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/34e0eff87c00570e189ee38c2abfef54.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/bd235340a277d939b0f88c4912ffef02.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "배송 도착 후 개봉, 제품 구성 확인 완료",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "제품이 두툼하고 잘 만들어져 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#구성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "초기 당황했으나 제품 확인 후 만족, 퀄리티에 대한 긍정 평가",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100743": {
+      "id": "100743",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "이제 좀 떨어져서 잘 수 있으려나요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100743/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-21 18:14:58",
+      "views": "0",
+      "content": "안방침대에 쓸  침대커버와 같이 주문했는데 강아지 방석이 먼저 왔습니다.\n확실히 면사가 가늘어서 부드러운게 실감이 나고, 박음질이 튼튼해서 마음이 드네요.\n아직은 눞혀놓으니 많이 서먹해하는데 곧 적응을 하겠지요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/04c376ff64a3abe72bffea8a8595430f.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/306b21639a33d68428bcf67ac20643a4.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "면사가 부드럽고 박음질이 튼튼함",
+            "hashtags": [
+              "#재질",
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "강아지 방석의 재질 부드러움과 박음질 튼튼함을 직접 경험한 명확한 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100735": {
+      "id": "100735",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "펫방석 (소)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100735/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-21 14:58:12",
+      "views": "0",
+      "content": "울집 댕댕이는 중대형견에 속해서 큰걸 주문해야하나 고민하다\n집에 있는 켄넬패드 크기랑 비교하니 겸손 펫방석 소랑 비슷해서 소자랑 중자를 같이 주문해봤는데 중은 아직 안왔고 소만 먼저 왔네요.\n울 댕댕이가 신문물에 적응하려면 시간이 좀 많이 걸려서\n최애간식으로 일단 위에 올라가게는 했는데 조금 단단한 방석류에 익숙해서인지 적응시간이 좀 더 걸리겠네요. 좀 거 크면 안정감이 있을수도 있겠죠?\n제꺼랑 커플디자인은 중자라.. ㅎㅎ\n어여 같이 오기를 기다립니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/b26092b38fff864a78b6bb115636b07e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/9844cabe6bc0e7c872bf6f697584b743.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/5111c57f7cea3092da4ed4e7481f681c.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/21/41d0b8ef386fa051c84647ef0ad09dce.jpeg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "펫방석 소 수령, 반려견 적응 중",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품에 대한 명확한 만족/불만 표현 없이 수령 상황과 반려견의 적응 과정만 설명하는 단순 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100703": {
+      "id": "100703",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "교환신청했는데 답변부탁드립니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100703/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-20 11:53:35",
+      "views": "0",
+      "content": "교환신청했는데 답변부탁드립니다",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "교환 신청 후 답변 대기 중",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 신청을 명시적으로 언급했으므로 교환/반품 카테고리로 분류",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100700": {
+      "id": "100700",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "맑은순은 a/s 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100700/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-20 11:06:58",
+      "views": "0",
+      "content": "교환은 불가 통보 받고 바로 단차 불량이니 단차 맞춰 달리고 문의해서 a/s 보냈습니다. 불량품 보내놓고 겸손은 없네요. ㅎㅎ\n택배 보내고 2일 뒤 만년필 제조사에서 단차 심해서 불량 맞다고 확인전화 왔습니다~ 1대1 답변다신 겸손몰 관계자님 불량 맞다는데요? 잘 모르면 답글 달지 마세요. 단차가 생긴 원인 등등을 설명 받고 만년필에 문제 있으면 1대1 문의하지 말고 직접 전화하라 하시더군요. 제조사 대응은 엄지척! 내폰이 갤럭시라 자동통화녹음됩니다. 발목금지 ㅋㅋ\n어제 받은 만년필은 단차없이 깨끗합니다.\n판매글에도 단차가 발생 할 수 있으니 주문시 고려바란다 이딴 설명 없었지요?\n단차 있으신 분들 참고 하셔서 a/s 신청하세요.\n15만원 땅파서 나오는 돈 아닙니다.\n똑같은 돈 주고 나만 불량품 쓰고 싶으세요?\n만년필 검수하시는 분은 단차있는거 안보이셨나봐요? 내 눈에는 보이던데.. 보고도 그냥 보내신건가? ㅋ\n아래 내용은  a/s 신청 답글입니다. 참고하세요.\n기존 안내드린 바와 같이 해당 단차는 제작 공정상 발생할 수 있는 범위로 불량에 해당하지 않는 것으로 판단됩니다.\n다만 고객님께서 말씀 주신 내용을 고려하여 내부적으로 검토한 결과, 이번 건에 한하여 A/S를 진행해 드리기로 하였습니다.\n번거로우시겠지만 무상 A/S 동의서를 작성 후 회신해 주시면 확인하여 A/S 진행하겠습니다.\n횐불 교횐이 안된다면 a/s 신청\n정당한 s/s 신청이 거부되면 소비자보호원 고발. ㅋㅋ",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/20/650245d4d569f5248876c2b19ded7cbf.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "배송받은 만년필에 단차 불량 발견, 초기 교환 불가 통보 후 A/S 신청",
+            "hashtags": [
+              "#퀄리티",
+              "#마감"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "불량품 교환 및 A/S 요청, 제조사 확인 후 무상 A/S 진행",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "A/S 후 받은 만년필은 단차 없이 깨끗함, 제조사 대응 만족",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 불량(단차)으로 인한 A/S 신청과 결과적 만족으로 분리 분류, 배송 자체 문제 아님",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100684": {
+      "id": "100684",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "날이 미를 쳤네요. 미를 쳤어.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100684/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-19 20:25:00",
+      "views": "0",
+      "content": "후기 한번도 안써봤는데, 이건 안쓸 수가 없었어요.\n겸손몰에서 구매한 상품중 가장 만족스럽네요.\n오늘 해바라기를 처음 사용해 봤어요.\n김치찌개 안에 넣을 돼지 앞다리살에 지방이 많아 다듬었습니다.\n포를 뜨는 방식으로 살코기와 지방을 분리하는데,\n살코기가 너무 얇게 붙어 있는 부분까지 미세하게 포를 뜰 수 있었습니다.\n슥삭슥삭~ 힘은 전혀 들이지 않고 손목에 미약한 스냅만으로 충분했어요.\n요리를 좋아해서 칼이 많은데, 제가 가진 칼 중 단연 으뜸이예요.\n앞으로 이 칼만 사용할 것 같아요. 더 큰 사이즈 만들어 주시면 200% 구매의사 있습니다.\n회를 떠본적은 없는데, 이 칼로 충분히 가능할 것 같아서 필렛을 사서 도전 해 봐야겠어요.\n좋은 칼 판매 감사드립니다.\n더 큰 사이즈도 빨리 내놔랏!",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "해바라기 칼의 뛰어난 절단력과 사용감에 매우 만족하며, 소유한 칼 중 최고라고 평가",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 만족도가 높고 재구매 의사까지 표현한 명백한 긍정 후기. 칼의 절단력, 사용 편의성, 전체적 품질에 대한 칭찬",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100683": {
+      "id": "100683",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "Gooooood !",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100683/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-19 20:15:19",
+      "views": "0",
+      "content": "쓸 수록 베개와는 또 다른 맛을 느낍니다.\n다만 간혹 화가 나는 건\n제가 추천해서 겸손 만년필을 사서 쓰시는 분들이\n자꾸 몽블랑 금촉, 펠리칸 금촉과 비교 합니다.\n그럼 그런 생각이 들지요.\n왜 비슷한 가격대의 만년필과 비교를 안해볼까?\n진짜 만년필 많이 써본 사람들이 맞는가 하는\n백베개보다 사각거림은 덜합니다.\n흑베개보다는 덜 부드럽습니다.\n하지만 달려야 할 때 달리고\n설 때 서는 능력은 제가 써본 펜들 중에 손꼽힙니다.\n황금연두는 남사스러워 집에서만 쓰다가 회사에 가져갔는데 다들 예쁘다고 난리입니다^^\n세종 금촉 출시를 기다립니다.\n그리고 겸손문방구를 열 때\n잉크도 별도 구매하게 해주시고\n새로나올 잉크 공병도 구매하게 해주세요.\n지난번 겸손 잉크 녹색이 이번에 안나오니, 잉크를 별도로 사고 병도 사면 세종의 달빛녹색에 넣을 수 있겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#또사고싶다",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사용할수록 좋은 맛을 느끼며, 백펜/흑펜보다 사각거림과 부드러움의 밸런스가 좋고 필기감이 우수함",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "황금연두 색상이 예쁘고 주변에서도 호평함",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "중립/단순수령",
+            "summary": "세종 금촉 출시를 기다리고 있음",
+            "hashtags": [],
+            "confidence": 0.8
+          },
+          {
+            "category": "중립/단순수령",
+            "summary": "향후 잉크와 병 별도 판매 희망",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "전반적으로 제품에 만족하며 타 제품과의 비교 우월성을 언급한 긍정 후기이며, 세종 금촉 출시와 잉크 판매 관련은 단순 희망사항으로 중립 분류",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#또사고싶다",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100654": {
+      "id": "100654",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "q",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100654/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-19 13:31:32",
+      "views": "0",
+      "content": "기다리고 있었는데요,,가능하시면 문자답변으로  부탁드립니다.\n010 2519 9526\n이 두 장 주문 배송 받았는데요,\n여 M으로 교환받을 수 있을지 문의드립니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "여 M 사이즈로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 수령 후 사이즈 교환을 회사에 요청하는 명확한 교환 의사 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100606": {
+      "id": "100606",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "목 부분 탈색",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100606/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-19 06:46:00",
+      "views": "0",
+      "content": "커피를 마시다 흘려 목부분을 비벼 빨았더니(첫 세탁임)\n검은색 라인이 탈색이 되어 색이 연해졌어요.\n남편은 목이 불편하다며 두개 사줬는데 안입는데요.ㅠㅠ\n제품의 퀄리티나 디자인이 생각보다 별로입니다.\n지금까지 제품중 가장 만족도가 낮아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/19/c20bd52a81618b8fa73e95e5b566e8a7.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#마감",
+        "#디자인",
+        "#핏",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "첫 세탁에서 목 부분 검은색 라인이 탈색되고 퀄리티 및 디자인 만족도 낮음",
+            "hashtags": [
+              "#퀄리티",
+              "#마감",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "목 부분 착용감이 불편함",
+            "hashtags": [
+              "#핏",
+              "#사용성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색감 탈색과 착용감 불편함이 상품 자체 결함이며, 구매 후 미사용 상태임을 고려하면 교환/반품 고려 상황이지만 현재 후기는 부정 평가로 분류",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#마감",
+          "#디자인",
+          "#핏",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100603": {
+      "id": "100603",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "남자 별옷 목부분 불편",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100603/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-19 06:24:39",
+      "views": "0",
+      "content": "남편이  옷의  목이 올라와 걸리고 앞뒤 뒤집어 입은것처럼 불편하다고 안입는다고 하네요.\n흰색도 하나더 샀는데 그것도 목 부분이 어색하고  올라와 답답하다고 합니다.\n별옷은 퀄리티가 별로인듯 합니다.\n저도 흰색 목부분이 커피가 묻어 살짝 비벼 빨았더니(첫 세탁)  검은색 라인이 탈색이 되었네요.ㅠㅠ",
+      "images": [],
+      "hashtags": [
+        "#핏",
+        "#사이즈",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "목 부분이 올라와 답답하고 핏이 불편함",
+            "hashtags": [
+              "#핏",
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "첫 세탁에서 검은색 라인이 탈색됨",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "목 부분 핏 불편함과 세탁 후 색상 탈색 문제로 인한 명확한 상품 자체 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#핏",
+          "#사이즈",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100597": {
+      "id": "100597",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "기대의 한계",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100597/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-18 21:25:03",
+      "views": "0",
+      "content": "11년전쯤 유명 브랜드에서 목 늘어짐에 대해 무상으로 수선해준다고 마켓팅에 혹해서 꽤 비싼 금액으로 구매했으나, 늘어지지 않아서가 아니고 귀찮아서(새것으로 바꾸면 색상도 달라지고 이것저것 입력하는것도 구차하고..) 암튼 여러가지 게으름으로 포기한 기억이 있었어요.\n그후 공장장의 제작 의도를 충분히 공감해서 이번  제품을 색상별로 6개를 주문했는데 결국 티셔츠의 한계에 너무 큰 기대를 했구나...올 여름 한철 잘 입고 말아야겠구나..우리 겸공몰에서의 옷은 쫌 신중히 생각하고 결정해야겠다는 생각이듭니다. ^^",
+      "images": [],
+      "hashtags": [
+        "#내구성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "티셔츠의 내구성 기대치가 높지 않으며, 제품 품질에 대해 신중한 재고 필요",
+            "hashtags": [
+              "#내구성",
+              "#퀄리티"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "과거 경험과 현재 구매를 통해 제품의 내구성(목 늘어짐)에 대한 불만과 기대 이하의 품질을 표현한 부정 평가",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100593": {
+      "id": "100593",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "주문 못하셨던 분 득템하세요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100593/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-18 20:50:51",
+      "views": "0",
+      "content": "오늘 받고 호기심에 성능 시험 삼아 무 채썰어보고 참외 깎아 봤어요.\n와 무서울 정도로 잘 썰립니다. 무겁지도 않고 들러붙지도 않아요.\n그런데 그 사이 식칼이 너무 많아져서 필요한 분께\n109900원 가격 그대로 배송비 착불로 팔고자 합니다.\n환불은 안되시고 댓글로 이메일주소 남기시면 연락드리겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#무게감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "제품 성능 만족 - 자르는 기능이 우수하고 무게감 적절",
+            "hashtags": [
+              "#사용성",
+              "#무게감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "구매자가 타인에게 판매 의사 표현",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 성능에 대한 긍정적 평가(실제 사용 후기)와 개인 간 판매 거래 의사를 명확히 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#무게감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-22"
+    },
+    "100551": {
+      "id": "100551",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "세탁 후 올이 풀리는 문제",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/100551/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-18 12:56:37",
+      "views": "0",
+      "content": "1회 세탁 후 아래 밑단의 올이 풀어지는데\n어떻게 해야 하나요?",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/18/a15c0f44a63e3597dfa8d4f55a630612.jpg"
+      ],
+      "hashtags": [
+        "#내구성",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "세탁 후 밑단의 올이 풀어지는 품질 문제 발생",
+            "hashtags": [
+              "#내구성",
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품의 마감 불량으로 인한 세탁 후 올 풀림은 상품 자체의 품질 결함으로 분류",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-06-22"
     }
   },
   "daily_logs": [
@@ -132645,9 +133231,28 @@
         "100392",
         "100363"
       ]
+    },
+    {
+      "date": "2026-06-22",
+      "count": 13,
+      "new_ids": [
+        "100744",
+        "100743",
+        "100735",
+        "100703",
+        "100700",
+        "100684",
+        "100683",
+        "100654",
+        "100606",
+        "100603",
+        "100597",
+        "100593",
+        "100551"
+      ]
     }
   ],
-  "last_updated": "2026-06-18 08:00:11",
+  "last_updated": "2026-06-22 07:58:37",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
