@@ -129579,52 +129579,33 @@
       "hashtags": [
         "#사용성",
         "#퀄리티",
-        "#또사고싶다",
-        "#색상"
+        "#또사고싶다"
       ],
       "classification": {
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "사용할수록 좋은 맛을 느끼며, 백펜/흑펜보다 사각거림과 부드러움의 밸런스가 좋고 필기감이 우수함",
             "hashtags": [
               "#사용성",
               "#퀄리티",
               "#또사고싶다"
             ],
-            "confidence": 0.9
-          },
-          {
-            "category": "긍정",
-            "summary": "황금연두 색상이 예쁘고 주변에서도 호평함",
-            "hashtags": [
-              "#색상"
-            ],
-            "confidence": 0.9
-          },
-          {
-            "category": "중립/단순수령",
-            "summary": "세종 금촉 출시를 기다리고 있음",
-            "hashtags": [],
-            "confidence": 0.8
-          },
-          {
-            "category": "중립/단순수령",
-            "summary": "향후 잉크와 병 별도 판매 희망",
-            "hashtags": [],
-            "confidence": 0.7
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "전반적으로 제품에 만족하며 타 제품과의 비교 우월성을 언급한 긍정 후기이며, 세종 금촉 출시와 잉크 판매 관련은 단순 희망사항으로 중립 분류",
-        "confidence": 0.7,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#사용성",
           "#퀄리티",
           "#또사고싶다",
           "#색상"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-06-22"
     },
