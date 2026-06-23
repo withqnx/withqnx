@@ -129946,6 +129946,138 @@
         ]
       },
       "crawled_date": "2026-06-23"
+    },
+    "101057": {
+      "id": "101057",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "달항아리 펫방석 :)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101057/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-23 22:15:04",
+      "views": "0",
+      "content": "달 항아리 펫방석 (중) 사이즈\n✔️\n디자인 예쁨\n✔️ 쿠션감 좋음\n✔️ 사이즈 넉넉함\n✔️ 인테리어 방해 없음\n새 방석에 예민한 편인데 펼쳐놓은 첫날부터 자연스럽게 올라가서 쉬더라고요. 사진 찍으려고 하니 포즈까지 잡아주네요 ㅎㅎ\n깔끔한 달항아리 디자인 덕분에 거실에 두어도 과하지 않고,\n쿠션이 적당히 탄탄해서 편안하게 사용할 수 있을 것 같아요.\n﻿\n강아지도 좋고 저도 좋은 달항아리 펫방석입니다🫶🏻",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/23/4854730007136e57952517e9c65f1817.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/23/89b1d3d029db3fbfefe3430bf9aa4153.jpeg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#쿠션감",
+        "#사이즈",
+        "#인테리어"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디자인, 쿠션감, 사이즈 모두 만족하며 강아지가 잘 사용함",
+            "hashtags": [
+              "#디자인",
+              "#쿠션감",
+              "#사이즈",
+              "#인테리어"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인, 쿠션감, 사이즈, 사용성 등 여러 측면에서 명확한 만족도를 표현한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#쿠션감",
+          "#사이즈",
+          "#인테리어"
+        ]
+      },
+      "crawled_date": "2026-06-24"
+    },
+    "101055": {
+      "id": "101055",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "만족합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101055/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-23 21:24:53",
+      "views": "0",
+      "content": "재질이 부드럽고 예쁘고 고급스럽습니다",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "재질이 부드럽고 고급스러운 디자인으로 만족",
+            "hashtags": [
+              "#재질",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질 만족, 디자인 칭찬으로 명확한 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-06-24"
+    },
+    "101054": {
+      "id": "101054",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "핏 과 안감 소재 아주 맘에 듭니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101054/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-23 21:04:23",
+      "views": "0",
+      "content": "길이와 품이 딱 원하던 핏이라 아주 맘에 듭니다. 안에 추가적인 이너웨어 입지 않아도 비치지 않는데다, 품이 너무 헐렁하지도 붙지도 않고 안감이 쿨링 소재라  여름에 입기 너무 편하네요. 클래식/캐주얼 하의 모두 어색하지 않고 잘 어울립니다.. 오래 기다린 보람 있네요. 요즘 물가 대비 이가격에 구매하기 힘든 퀄러티라 생각합니다. 총 6 장 구매하고 제작 순서대로 4 번에 나눠 배송받았는데, 배송비는 1 회 분만 결제해서 배송비까지 고려하면 판매자 입장에서 남는 게 있었으려나 하는 맘에 감사히 입겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#핏",
+        "#재질",
+        "#퀄리티",
+        "#가격"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "핏, 안감 소재, 퀄리티 모두 만족하며 가성비 우수",
+            "hashtags": [
+              "#핏",
+              "#재질",
+              "#퀄리티",
+              "#가격"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "핏, 안감 소재, 퀄리티, 가성비에 대한 명확한 칭찬으로 순수 긍정 후기",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#핏",
+          "#재질",
+          "#퀄리티",
+          "#가격"
+        ]
+      },
+      "crawled_date": "2026-06-24"
     }
   },
   "daily_logs": [
@@ -133325,9 +133457,18 @@
         "100874",
         "100859"
       ]
+    },
+    {
+      "date": "2026-06-24",
+      "count": 3,
+      "new_ids": [
+        "101057",
+        "101055",
+        "101054"
+      ]
     }
   ],
-  "last_updated": "2026-06-23 07:58:30",
+  "last_updated": "2026-06-24 08:01:11",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
