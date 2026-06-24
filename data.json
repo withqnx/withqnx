@@ -130078,6 +130078,123 @@
         ]
       },
       "crawled_date": "2026-06-24"
+    },
+    "101172": {
+      "id": "101172",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈교환요청",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101172/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-24 18:13:42",
+      "views": "0",
+      "content": "사이즈가 너무너무커서 교한해야하는데\n어떻게 해야하나요?",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈가 커서 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만으로 인한 명확한 교환 요청",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-25"
+    },
+    "101158": {
+      "id": "101158",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "60호가 사이즈가 커서 교환부탁해요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101158/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-24 17:06:10",
+      "views": "0",
+      "content": "60호 그레이 사이즈가\n58 그레이로 교환부탁합니다",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "60호 사이즈가 커서 58호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만으로 인한 명확한 교환 요청",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-25"
+    },
+    "101098": {
+      "id": "101098",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "오랜 기다림은 설레임이 묻어 있습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101098/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-24 11:42:27",
+      "views": "0",
+      "content": "사이즈가 생각보다 크네요\n커버 소재는 폴리에스터 100 이라 미끌거리고 아주 얇은 보자기 느낌입니다.\n솜 두께는 9센치인데(넘 얇아요) 너무 퐁신거려서 밀리고 뭉쳐서 전체적으로 기대에 훨씬 못미치네요\n충전재를 아주 빵빵하게 넣어주셨어야 그나마 괜찮았을것 같습니다.\n애견 리안이가 하우스에 들어가지를 않아요..  차츰 익숙해지겠지요.\n기존에 사용하던 방석은 폐기하려 했었는데 재사용해야 할것 같습니다.\n암튼 많이 아쉽네요.  애견 전문 업체가 아니다 보니 이해합니다.  힝 ㅠ",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#재질",
+        "#무게감",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "사이즈가 크고 커버 소재가 얇으며 충전재가 부족해 기대에 못 미침",
+            "hashtags": [
+              "#사이즈",
+              "#재질",
+              "#무게감",
+              "#구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 사이즈, 소재, 두께, 충전재 부족 등 다중 불만으로 명확한 부정 리뷰",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#재질",
+          "#무게감",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-06-25"
     }
   },
   "daily_logs": [
@@ -133466,9 +133583,18 @@
         "101055",
         "101054"
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "count": 3,
+      "new_ids": [
+        "101172",
+        "101158",
+        "101098"
+      ]
     }
   ],
-  "last_updated": "2026-06-24 08:01:11",
+  "last_updated": "2026-06-25 07:58:58",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
