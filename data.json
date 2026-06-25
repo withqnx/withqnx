@@ -130195,6 +130195,420 @@
         ]
       },
       "crawled_date": "2026-06-25"
+    },
+    "101293": {
+      "id": "101293",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "카키브라운/60호가 커서 아무거나 58호로 교환하거나 또는 구매가에 팔고 싶습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101293/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 21:37:58",
+      "views": "0",
+      "content": "카키브라운/60호가 커서 아무거나 58호로 교환하거나 또는 구매가(59,000)에 팔고 싶습니다.\nnarkrok@naver.com",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "구매 상품(카키브라운/60호)을 구매가 59,000원에 판매하거나 58호로 교환 희망",
+            "hashtags": [],
+            "confidence": 0.95
+          },
+          {
+            "category": "교환/반품",
+            "summary": "60호 사이즈가 커서 58호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "후기가 교환 의사와 개인거래(판매) 의사를 모두 표현했으므로 두 개 segment로 분리. 사이즈 문제가 주 사유.",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101286": {
+      "id": "101286",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "자기꺼인줄 아는듯",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101286/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-25 21:18:04",
+      "views": "0",
+      "content": "솜이 너무 뭉치고 실망이에요 ㅠㅠ 커버재질은 좋아요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/bffbe57a8482aae1163b814ffdcd5575.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/a3199f6cd431ce674434d06be2fa6f34.png"
+      ],
+      "hashtags": [
+        "#재질",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "솜이 뭉쳐있어 실망스러움",
+            "hashtags": [
+              "#재질",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "커버 재질이 좋음",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "솜 뭉침은 제품 품질 문제(부정), 커버 재질 만족은 긍정으로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101283": {
+      "id": "101283",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "카키브라운/58호 판매.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101283/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 20:37:01",
+      "views": "0",
+      "content": "카키브라운/58호 어울리지 않아서 원가에 판매합니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "카키브라운 58호를 어울리지 않아 원가에 판매",
+            "hashtags": [
+              "#사이즈",
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 상품을 다른 구매자에게 양도/판매하려는 의도가명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101279": {
+      "id": "101279",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "남자 105 사이즈 /전갈, 처녀자리 티 구매하실 분!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101279/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-25 19:20:56",
+      "views": "0",
+      "content": "3개 샀다가 1개 입어보고 사이즈 잘 안맞는대서\n2개 내놓습니다.\n010-6340-2896\n으로 연락주세요!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/451a592a9d8d14f4e3d4946d33746a8e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/571c5f219a4015d0c8be602319020ad5.jpeg"
+      ],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "사이즈 맞지 않아 구매한 상품 2개 양도 판매",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 직접 사이즈 문제로 인해 상품을 양도·판매하려는 거래 의도 명시",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101278": {
+      "id": "101278",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "가족들  모자는 커서 교환 요청합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101278/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 18:36:22",
+      "views": "0",
+      "content": "차콜그레이  60호 》》56호로  교환 원하고\n블루브라운 62호 》》58호로 교환 원합니다\n색상이 똑같지 않아도 호수만 이라도 맞으면 연락주세요.\n010 8597  7081",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈가 커서 두 개 모자의 호수 교환 요청 (차콜그레이 60→56호, 블루브라운 62→58호)",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 사이즈 불만으로 인한 교환 요청 의사 표현",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101275": {
+      "id": "101275",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "회색 따뜻한  모자",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101275/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-25 17:57:24",
+      "views": "0",
+      "content": "잔잔한 세로 골지 패턴이 들어가 있어서 심플하면서도 밋밋하지 않아요. 밝은 회색이라 어떤 옷에나 매치하기 편하고, 니트 느낌의 부드러운 소재라 착용했을 때 머리를 포근하게 감싸주는 느낌이 아주 좋습니다. 캐주얼한 룩에 휘뚜루마뚜루 쓰기 딱 좋아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/9f0c63834ca20c4bb213b005ca91da56.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#색상",
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세로 골지 패턴의 심플한 디자인, 밝은 회색 색상으로 매칭이 쉽고, 부드러운 니트 소재가 포근한 착용감을 제공",
+            "hashtags": [
+              "#디자인",
+              "#색상",
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 디자인, 색상, 소재, 착용감에 대한 명확한 칭찬과 만족감을 표현한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#색상",
+          "#재질",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101274": {
+      "id": "101274",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "따뜻한 모자!!! 예뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101274/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-25 17:55:23",
+      "views": "0",
+      "content": "잔잔한 세로 골지 패턴이 들어가 있어서 심플하면서도 밋밋하지 않아요. 밝은 회색이라 어떤 옷에나 매치하기 편하고, 니트 느낌의 부드러운 소재라 착용했을 때 머리를 포근하게 감싸주는 느낌이 아주 좋습니다. 캐주얼한 룩에 휘뚜루마뚜루 쓰기 딱 좋아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/25/efda1738569cfa9f8438cb63074ee8c0.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세로 골지 패턴의 심플한 디자인, 부드러운 니트 소재로 포근한 착용감, 다양한 옷과의 매치가 용이",
+            "hashtags": [
+              "#디자인",
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 디자인, 소재, 색상, 착용감을 종합적으로 칭찬하는 명확한 긍정 리뷰",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#재질",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101244": {
+      "id": "101244",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "60호 라이트그레이 사이즈 켜요. 어떻게 해야하나요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101244/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 13:32:21",
+      "views": "0",
+      "content": "20251217-0018866\n껑 (라이트그레이60호)\n58,60호 껑 커풀로 착용하려고 구매했는데,\n60호 껑은 많이 크네요.\n작은 사이즈 56,58호로 교환 하거나\n필요하신 분께 판매 원합니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "60호 사이즈가 크다는 이유로 56,58호로 교환 요청",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "필요한 사람에게 판매 의사 표현",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 교환 요청과 판매 의사가 분리되어 표현되었음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101238": {
+      "id": "101238",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "62호ㅡ>60호 교환원합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101238/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 11:31:46",
+      "views": "0",
+      "content": "차콜, 라이트 그레이  62호 가지고 있습니다\n너무 커서 교환하실 분 구합니다\n60호 가지고 계신분 댓글남겨주세요!!",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "62호를 60호로 교환하려는 구매자",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 다른 구매자와의 직접 교환을 제안하는 양도/거래 사례. 사이즈 맞지 않음이 이유이지만 회사 교환이 아닌 개인거래 성격",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-26"
+    },
+    "101206": {
+      "id": "101206",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "라이트그레이 60호  58호 교환 원합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101206/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-25 09:30:49",
+      "views": "0",
+      "content": "제가 라이트그레이 60호를 구매하였는데 제 머리에 커서 큰 사이즈 원하시는분 찾습니다.\n60호 <-> 58호 교환 원합니다.\n판매도 가능합니다.\n연락주세요 010-4013-3240",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "라이트그레이 60호를 58호로 교환하거나 판매하려는 구매자",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 사이즈가 크다는 이유로 다른 구매자와의 교환 또는 판매를 제안하는 양도/거래 행동",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-26"
     }
   },
   "daily_logs": [
@@ -133592,9 +134006,25 @@
         "101158",
         "101098"
       ]
+    },
+    {
+      "date": "2026-06-26",
+      "count": 10,
+      "new_ids": [
+        "101293",
+        "101286",
+        "101283",
+        "101279",
+        "101278",
+        "101275",
+        "101274",
+        "101244",
+        "101238",
+        "101206"
+      ]
     }
   ],
-  "last_updated": "2026-06-25 07:58:58",
+  "last_updated": "2026-06-26 07:58:08",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
