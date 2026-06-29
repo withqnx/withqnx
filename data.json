@@ -131144,6 +131144,347 @@
         "hashtags": []
       },
       "crawled_date": "2026-06-29"
+    },
+    "101742": {
+      "id": "101742",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "라이트그레이/58호 판매해봅니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101742/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 22:48:27",
+      "views": "0",
+      "content": "사이즈가 크고 깊이가 생각한거랑 다르네요 ㅜㅜ\n댓글 주시면 연락드릴께요!",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "사이즈가 크고 깊이가 맞지 않아 판매 중",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 상품을 다시 판매하려는 의도가 명확하며, 불만 사유는 사이즈/깊이 문제",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101724": {
+      "id": "101724",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "차콜 그레이 62를 60으로 교환 또는 판매하고 싶습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101724/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 19:51:53",
+      "views": "0",
+      "content": "생각보다 더 커서 교환 또는 판매하려합니다.\n62>>60으로 색상무관 교환원하며 판매시 판매가는 4만원입니다.\n테스트 1회 실착후 바로 박스 보관중입니다.\n의사 있으신분은 010-2197-4528 로 전화 또는 문자 부탁드립니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 맞지 않아 62에서 60으로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "62사이즈 차콜 그레이 판매 의사 있음 (4만원)",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 요청(사이즈 불만)과 판매 의사(양도/거래)를 별도 segment로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101703": {
+      "id": "101703",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "라이트그레이60을 58로 교환원합니다  색상무관",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101703/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 16:17:25",
+      "views": "0",
+      "content": "라이트그레이 60이 커서 58로 교환원합니다. 색상 상관없습니다.\n제작사에 전화했더니, 주문제작이라 교환안되니 구매자들끼리 알아서 교환하라네요. 색상, 사이즈만 선택했는데 주문제작이라니 허참. 6개월을 기다릔 소비자에게 너무 하네요\n010 2439 2668로 연락주시기 바랍니다~~",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "라이트그레이 60을 58로 교환 요청 중 (구매자 간 양도 필요)",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "주문제작으로 교환 불가 정책과 6개월 대기에 대한 불만",
+            "hashtags": [
+              "#기획"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제작사 교환 불가로 인한 교환/반품 시도와 장기 대기·제작사 정책에 대한 불만 표현으로 두 개 세그먼트 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#기획"
+        ]
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101692": {
+      "id": "101692",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "교환 신청합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101692/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 15:31:21",
+      "views": "0",
+      "content": "주문번호_ 0025474\n전갈자리 S(55) -> 처녀자리 S(55)\n황소자리 S(55) -> 쌍둥이자리 S(55)\n2장 교환 부탁드립니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "2장의 상품 교환 요청",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 신청 의사가 명확하며, 구체적인 주문번호와 교환 품목이 명시됨",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101643": {
+      "id": "101643",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "62호 차콜그레이, 라이트그레이  팔아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101643/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 13:43:36",
+      "views": "0",
+      "content": "62호 차콜그레이, 라이트그레이\n각각 1개씩 가지고 있습니다.\n많은 분들이 저와 같은 생각이신거 같네요.\n60호나 58호 교환 하실분 계시다면 추가금을 드리고서라도 교환하고 싶네요.\n그럴분 안계실거 같아서 팔아볼까 합니다.\n개당 5만원에 팔아봅니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "62호 차콜그레이, 라이트그레이 각 1개씩 판매 중, 개당 5만원",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 보유한 상품을 다른 구매자에게 판매하려는 양도/거래 사유, 사이즈 맞지 않음으로 인한 판매 의도 명확",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101630": {
+      "id": "101630",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "블루브라운/60호가 커서 58호로 교환하거나 또는 구매가에 팔고 싶습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101630/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-29 12:19:39",
+      "views": "0",
+      "content": "블루브라운 60 사이즈 있습니다.\n58로 교환하거나 구매가(59,000원)에 팔고 싶습니다.\n교환이나 구매 원하시는 분은 010.7412.3457로 문자 부탁드립니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/29/ddb1f97311ab3780817e79ae8b66839b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/06/29/68bd017a4bb706f07ff759f737957970.jpg"
+      ],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "60호가 커서 58호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "구매가 59,000원에 판매 의향",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 의사와 양도 의사가 함께 표현되어 두 개 segment로 분리. 사이즈 불만으로 교환 요청하는 것이 주 행동.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101621": {
+      "id": "101621",
+      "product_name": "건",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "예뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101621/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-29 11:44:33",
+      "views": "0",
+      "content": "기다리다 잊고 있으면 찾아서 옵니다.  뜨거운 여름날 받았어요  올 겨울에 이쁘게 잘 사용할 것 같습니다. 맘에 들어요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/29/84f916250b2f28048a0108127b3b38bf.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "상품 수령 후 만족감 표현",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 불만이나 장점 설명 없이 '예쁘다', '맘에 들어요' 등 이유 없는 짧은 호평만 있어 중립/단순수령 카테고리에 해당",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101584": {
+      "id": "101584",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "교환하실 분...카키브라운/60호 >56호 또는 58호, 색상 무관!_새로운 주인 찾았습니다!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101584/page/1/",
+      "has_photo": true,
+      "written_at": "2026-06-29 09:53:07",
+      "views": "0",
+      "content": "의외로 큰 사이즈네요.\n수령일 : 2026.06 27.(토)\n상품 : 카키브라운/60호 >\n교환 희망 사이즈 및 색상 :\n56호 또는 58호, 색상 무관!\n교환 원하시는 구매자께서는 전화주시거나 문자로 연락주세요!\n010-3574-6743\np.s 혹시 필요로 하신 분 있으시면 연락주세요.\n구매의향이 있는 분께 직접 연락받았고, 주인 찾아 갔습니다.\n행복하시길 바랍니다. 감사합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/06/29/31d3dd89dde1e4b6064cceb6a42a8fda.jpg"
+      ],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "60호 카키브라운을 56호 또는 58호로 교환해줄 구매자를 찾고 있으며, 이후 새로운 주인을 찾음",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 양도·거래 목적의 글이며, 사이즈 불만이 원인이지만 회사에 교환 요청이 아닌 다른 구매자와의 직거래 형태로 진행됨",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-30"
+    },
+    "101566": {
+      "id": "101566",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "저도 교환이 필요하네요 카키브라운60 -> 58",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/101566/page/1/",
+      "has_photo": false,
+      "written_at": "2026-06-29 08:13:37",
+      "views": "0",
+      "content": "저도 교환이 필요하네요 카키브라운60 -> 58 로 교환하실분 댓글 달아 주세요  대전, 세종에 계시는분 우선으로 하겠습니다\n겸손몰의 큰 단점이, 물건을 보지못하는데, 판매사에서 교환이 안되는 거, 겸손몰 기준으로는 제 머리가 큰 게 아니었어요\n칫수가 애매해서 고민 끝에 모델이 착용한 60을 했는데 큽니다\n이제는 겸손몰 상품의 구매의욕이 떨어집니다 -_-;",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "카키브라운 60 사이즈를 58로 교환해줄 구매자 찾는 중",
+            "hashtags": [],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "사이즈가 맞지 않는데 판매처 교환 불가 정책으로 인한 불만",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "양도/거래 의도와 상품 사이즈 불만이 모두 포함되어 있어 두 개 세그먼트로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-06-30"
     }
   },
   "daily_logs": [
@@ -134576,9 +134917,24 @@
         "101387",
         "101384"
       ]
+    },
+    {
+      "date": "2026-06-30",
+      "count": 9,
+      "new_ids": [
+        "101742",
+        "101724",
+        "101703",
+        "101692",
+        "101643",
+        "101630",
+        "101621",
+        "101584",
+        "101566"
+      ]
     }
   ],
-  "last_updated": "2026-06-29 07:59:44",
+  "last_updated": "2026-06-30 08:00:41",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
