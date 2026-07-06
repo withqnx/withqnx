@@ -132675,6 +132675,62 @@
         ]
       },
       "crawled_date": "2026-07-06"
+    },
+    "102238": {
+      "id": "102238",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "여름용도 만들어주세요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102238/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-06 14:19:34",
+      "views": "0",
+      "content": "제품을 받은 지는 좀 되었는데 이제야 후기를 남깁니다.\n제품을 받고 모자를 쓰자 아내가 대뜸 \"정말 잘 만들었네! 얼굴이 작아보여!\"라고 하더군요.\n참고로 제가 구매한 모자는 공장장보다 훨씬 작은 사이즈입니다^^\n디자인, 재질 등등 만족합니다. 별 다섯개!\n다만 여름에 쓰기에는 재질상 좀 버거운 감이 있습니다.\n하여 여름용으로도 제작해주셨으면 합니다.\n그리고 여름용이니만큼 너무 깊지는 않게 해주시고요. 껑의 경우 안경이 닿을락말락하거든요.\n여름에도 껑을 쓰고 싶어 제안(부탁?)드립니다. 수고하세요.",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#재질",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디자인과 재질 만족, 얼굴을 작아 보이게 해주는 효과",
+            "hashtags": [
+              "#디자인",
+              "#재질",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "여름용도에 현재 재질이 적합하지 않음",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "기획",
+            "summary": "여름용 라인 제작 및 깊이 조절, 챙 길이 개선 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반적 만족(디자인, 재질, 핏)으로 긍정 평가하되 여름 사용성 한계 지적 및 제품 개선 제안이 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#재질",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-07"
     }
   },
   "daily_logs": [
@@ -136157,9 +136213,16 @@
         "101759",
         "101755"
       ]
+    },
+    {
+      "date": "2026-07-07",
+      "count": 1,
+      "new_ids": [
+        "102238"
+      ]
     }
   ],
-  "last_updated": "2026-07-06 07:57:59",
+  "last_updated": "2026-07-07 07:58:56",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
