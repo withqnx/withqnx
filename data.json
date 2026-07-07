@@ -132731,6 +132731,129 @@
         ]
       },
       "crawled_date": "2026-07-07"
+    },
+    "102369": {
+      "id": "102369",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "별루에여. 또.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102369/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-08 07:49:35",
+      "views": "0",
+      "content": "실밍입니다. 달항아리 컬로도 촌스럽습니다. 애매한 흐린연두??!. 천자체도 너무 무겁습니다.\n그나마 매트만 쓸만하네요. 또 실망 했어요. 또 자리만 차지하는 물건이 됐네요",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#재질",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "색상이 촌스럽고 소재가 너무 무거우며 전반적으로 실망스러움",
+            "hashtags": [
+              "#색상",
+              "#재질",
+              "#무게감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 상품 자체 불만(색감, 소재, 무게)으로 부정 카테고리 확정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#재질",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-07-08"
+    },
+    "102351": {
+      "id": "102351",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "너무 기다렸던 제품!! 드디어 도착",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102351/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-07 18:23:14",
+      "views": "0",
+      "content": "대박 너무 좋네요.\n필기감이 너무 좋아요.\n베개 금촉만 구매해서 이번엔 욕심내서 전 색깔 다 구매했습니다.\n제 느낌은 베개 금촉보다 필기감이 더 좋은 듯.\n스텐레스 촉의 특유의 거친 필기감 없이 부드럽게 써지는것 이 글씨가 굴러가는 느낌입니다. ^^\n이런 제품 만들어 줘서 감사합니다.\n당분간 세종만 들고 다닐듯.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#사용성",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "필기감이 부드럽고 좋아서 전 색깔을 모두 구매할 정도로 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품의 필기감과 품질에 대한 명확한 만족감 표현, 반복 구매 의사 명시",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사용성",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-07-08"
+    },
+    "102287": {
+      "id": "102287",
+      "product_name": "[2025 겸손색안경] 쇠칠각",
+      "product_link": "https://nonohumble.com/product/2025-겸손색안경-쇠칠각/216/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202505/79b549ee62fc55bb1f2111b8b5128449.png",
+      "title": "잘받았는데..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102287/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-07 10:08:48",
+      "views": "0",
+      "content": "렌즈안쪽면에 혹시 보호필름 이 부착되있나요?\n육안으로는 아닌것 같은데\n착용하면 시야가 맑지않은데..\n평상시 썬글라스를 많이 착용하는데\n겸손 썬글라스는 착용을 즐겨 못하고 있어서 아쉬움이 많음.\n정확히 표현해서 겸손썬글라스를 착용하면 돗수 않맞난 안경을 착용한듯함..",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "렌즈에 보호필름이 있는지 의심되며 착용 시 시야가 흐림",
+            "hashtags": [
+              "#퀄리티",
+              "#사용성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "렌즈 품질 문제로 인한 사용성 불만이지만, 보호필름 제거 여부 확인이 필요하므로 검토 권장",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-07-08"
     }
   },
   "daily_logs": [
@@ -136220,9 +136343,18 @@
       "new_ids": [
         "102238"
       ]
+    },
+    {
+      "date": "2026-07-08",
+      "count": 3,
+      "new_ids": [
+        "102369",
+        "102351",
+        "102287"
+      ]
     }
   ],
-  "last_updated": "2026-07-07 07:58:56",
+  "last_updated": "2026-07-08 07:58:08",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
