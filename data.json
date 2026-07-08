@@ -132854,6 +132854,99 @@
         ]
       },
       "crawled_date": "2026-07-08"
+    },
+    "102440": {
+      "id": "102440",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "장인의 손길",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102440/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-09 01:33:09",
+      "views": "0",
+      "content": "칼날 부분에 미세하게 빗살무늬가 들어가 칼질이 쉽게 되는 효과가 있어 감탄했습니다.\n더군다나 무게가 상당히 가벼워, 기존에 애용하던 독일 쌍둥이칼 보다 훨씬 더 우리나라 제품을 사랑하게 되었습니다.\n재질, 가공법, 무늬, 사용성 모든 면에 만족 합니다.",
+      "images": [],
+      "hashtags": [
+        "#마감",
+        "#재질",
+        "#무게감",
+        "#사용성",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "칼날의 빗살무늬 디자인과 가벼운 무게감으로 사용성이 우수하며, 재질과 가공 품질에 전반적으로 만족",
+            "hashtags": [
+              "#마감",
+              "#재질",
+              "#무게감",
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 기술적 특징(빗살무늬), 물리적 속성(무게), 품질(재질/가공)에 대한 명확한 칭찬으로 긍정 분류 확실함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#재질",
+          "#무게감",
+          "#사용성",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-07-09"
+    },
+    "102390": {
+      "id": "102390",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "해바라기 상품 교환이 되나요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102390/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-08 13:06:37",
+      "views": "0",
+      "content": "식도 칼이 당근, 고구마를 썰 때 잘 들지 않아 요. 새 칼인데도 절삭력이 떨어지네요. 팔목 힘을 주어야 썰리네요.  교환이나 AS가능한가요.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "식도 칼의 절삭력이 떨어져 사용에 불편함",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "제품 교환 또는 AS 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "새 제품이지만 절삭력 부족으로 불만을 제기하면서 교환/AS를 요청하는 명확한 사례",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-09"
     }
   },
   "daily_logs": [
@@ -136352,9 +136445,17 @@
         "102351",
         "102287"
       ]
+    },
+    {
+      "date": "2026-07-09",
+      "count": 2,
+      "new_ids": [
+        "102440",
+        "102390"
+      ]
     }
   ],
-  "last_updated": "2026-07-08 07:58:08",
+  "last_updated": "2026-07-09 07:58:38",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
