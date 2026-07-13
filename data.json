@@ -132935,6 +132935,647 @@
         ]
       },
       "crawled_date": "2026-07-09"
+    },
+    "102756": {
+      "id": "102756",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈 교환가능 할까요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102756/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-13 17:34:56",
+      "views": "0",
+      "content": "두개 주문했는데 작은 사이즈는 맞는데 큰사이즈는 너무 커서 모자가 고정이 안되네요\n앞으로 쏟아져요ㅜ",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "큰 사이즈가 너무 커서 모자 고정이 안 되어 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "큰 사이즈 제품이 맞지 않아 사용 불가능",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만으로 인한 교환 요청이 주된 목적이지만, 부정적 평가도 포함되어 두 개 segment로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102738": {
+      "id": "102738",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "별티셔츠",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102738/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-13 14:41:25",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "별티셔츠 수령",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목만 있고 본문이 없어 단순 수령 알림으로 판단",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102712": {
+      "id": "102712",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "생각보다....??",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102712/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-13 11:40:39",
+      "views": "0",
+      "content": "겸공을 신뢰했기에 디자인만 보고 주문했는데...\n갈수록 원단은 별로이고 사이즈도 생각만큼 이쁘게 나오지 않네요",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "원단 품질 낮고 사이즈 핏이 기대에 미치지 못함",
+            "hashtags": [
+              "#재질",
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "원단 품질과 사이즈/핏에 대한 명확한 불만이 주요 내용",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102690": {
+      "id": "102690",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "주말에 세종 만년필을 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102690/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-13 09:54:19",
+      "views": "0",
+      "content": "수개월을 기다려 드디어 세종 만년필을 받았습니다.\n기대했던 대로 정말 이쁘고 그립감도 좋았습니다.\n잉크가 나오는 양과 닙이 종이 위에서 긁히는 느낌이 정말 한글을 쓰기에 최적화된 느낌이었습니다.\n한 가지 의문이 들었습니다.\n지금까지 다른 만년필은 뒤에 두껑을 끼우면서 무게중심이 맞아지면서 안정감을 느꼈는데, 세종 만년필은 무게 중심을 낮추기 위해서인지 두껑을 끼울 수 없는 구조로 되어 있네요.\n아직은 그 느낌이 어색하네요.\n펜을 사용할 때 두껑은 옆에 두고 펜 뒤에 끼우지 않은 상태로 사용하는 걸 의도한게 맞는 건 지 궁금합니다.",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#그립감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "외관과 그립감, 필기감이 훌륭하며 한글 쓰기에 최적화됨",
+            "hashtags": [
+              "#디자인",
+              "#그립감",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "중립/단순수령",
+            "summary": "무게중심 구조에 대한 의문 제기",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "주요 만족감(외관, 그립감, 필기감)은 명확한 긍정이며, 무게중심 구조는 불만이 아닌 사용 방식에 대한 궁금증으로 판단되어 중립으로 분류",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#그립감",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102669": {
+      "id": "102669",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "제품 좀 실망이네요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102669/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-12 22:03:57",
+      "views": "0",
+      "content": "어떤분도 작성하셨는데, 누르면 솜이 푹푹꺼져서 아내도 뭐라고 하고, 강아지도 싫어하네요. 믿고 오랜 시간 기다려서 받은 제품이 실망이 큽니다. 좀 많이 아쉽네요.",
+      "images": [],
+      "hashtags": [
+        "#내구성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "누르면 솜이 푹푹 꺼지는 내구성 문제로 가족과 강아지 모두 불만족",
+            "hashtags": [
+              "#내구성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품의 솜 탄력성 부족으로 인한 명확한 불만 - 부정 카테고리 확정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102661": {
+      "id": "102661",
+      "product_name": "건",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "상품후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102661/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-12 13:25:34",
+      "views": "0",
+      "content": "살에 닿으면 조금 따갑네요...모자부분도 작고 힘이 없어서 겨울 덥어 쓰지는 못할 거 같아요. 너무 기대를 했나봐요.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#핏",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "소재가 피부에 자극적이고 모자 부분이 작으며 보온성이 부족함",
+            "hashtags": [
+              "#재질",
+              "#핏",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 소재 문제(따가움), 사이즈/핏 문제(모자 부분 작음), 기능성 부족(보온성 없음)을 지적하는 명확한 부정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#핏",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102659": {
+      "id": "102659",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "별로다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102659/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-12 12:51:42",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "상품에 대한 불만",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "제목만 '별로다'로 구체적 사유 없어 판단이 애매함",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102629": {
+      "id": "102629",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈 교환 가능한지요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102629/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-11 13:33:49",
+      "views": "0",
+      "content": "생각보다 큽니다.\n60에서 58로 교환 가능한지요.\n총 4개구매했는데 모두 바꾸고 싶어요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈가 크다며 58로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 교환 요청이며, 사이즈 불만을 이유로 회사에 교환을 신청하는 상황",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102627": {
+      "id": "102627",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈 교환이 가능한지 문의드립니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102627/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-11 13:22:01",
+      "views": "0",
+      "content": "기다리고 기다리던 껑을 받았는데, 생각보다 너무 크네요.\n분명이 줄자로 계속 재도 60이면 충분하다고 생각했는데,\n또한 제가 3개를 구입해서 3개 모두 커서 58로 교환하고 싶어요.\n주문제작이라 교환이 쉽지 않겠지만 혹시 방법이 있나 문의드립니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "주문제작 상품 3개 모두 사이즈가 커서 58 사이즈로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "회사에 사이즈 교환을 직접 요청하는 명확한 의사 표현, 주문제작 상품이지만 교환 가능성 문의",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102614": {
+      "id": "102614",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "이보다 좋을 순 없다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102614/page/1/",
+      "has_photo": true,
+      "written_at": "2026-07-10 21:07:30",
+      "views": "0",
+      "content": "아... 고급스럽고 우리스럽다..\n다음에는 매화 꽃을 입은 만년필 만들어 주셨으면 합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/07/10/5cf841561824f78c92f76ccb4fb918af.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "고급스럽고 우리스럽다며 상품에 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 고급스러운 퀄리티와 디자인에 대한 명확한 칭찬으로 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102598": {
+      "id": "102598",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "석유류(?) 냄새와 같은 강하고 불쾌한 냄새 관련 문의",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102598/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-10 16:21:26",
+      "views": "0",
+      "content": "겸손몰의 기획 제품들을 꾸준히 구매하고 있는 나름 충성고객입니다.\n가격대비 품질에 항상 만족하고 있고, made in Korea로 이렇게 좋은 물건을 만날 있다는 점이 기쁘고 자부심도 느낍니다.\n이불 커버 세트 총 3세트를 구매하였고, 첫번째 1세트를 수령하였습니다.\n현재는 한여름이라 '인견' 침대커버와 이불을 덮고 있기에, 아직 사용은 개시하지 않았습니다.\n그런데 이번에 이불 커버 세트 상품을 수령하고 많이 놀라서 이렇게 글 남깁니다.\n너무 불쾌한 석유(?)류의 냄새가 진동을 하였습니다.\n이틀 이상 계속 되었는데, 일단 옥탑 창고에 올려 놓은 상태입니다.\n예를 들자면, 저개발국에서 생산한 아주 저렴한 의류를 구매하는 경우, 아주 불쾌한 석유류의 냄새가 나곤 하는데요,\n그 냄새와 매우 비슷하였습니다.\n이불이나 침대 커버를 사서 세탁을 한 후 사용한 적은 없습니다.\n당연히 바로 사용 가능해야 한다고 생각합니다.\n여태까지 겸손몰에서 구입한 티셔츠 등 어떤 의류에서도 이와 같은 냄새는 나지 않았습니다.\n그런데 가격대도 상당하고... 면 100수는 처음이라 기대도 컸는데... ㅠ.ㅠ\n왜 이런 고약한 냄새가 나는 거지요?\n수령 후 바로 글을 남기고 싶었는데, 너무 바빠서 이제야 글 남깁니다.\n저만 이런 것인지, 다른분들도 동일한 컴플레인을 하셨는지 궁금합니다.\n며칠 내로 두번째 세트가 저희 친정 어머니 댁으로 배송될 예정인데, 제가 직접 받는 것도 아니라서 걱정입니다.\n확인하시고 답변 부탁드립니다.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "이불 커버에서 석유류 냄새 발생, 제품 품질 문제",
+            "hashtags": [
+              "#퀄리티",
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 불쾌한 냄새 문제로 부정 카테고리. 배송 문제 아님. 회사 답변 필요한 품질 민원이므로 needs_review=true",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102578": {
+      "id": "102578",
+      "product_name": "[2025 겸손색안경] 작은쇠동글",
+      "product_link": "https://nonohumble.com/product/2025-겸손색안경-작은쇠동글/179/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202505/f9b0f6e0daf3fa23bae710250516efcc.png",
+      "title": "작은쇠동글 금or은 으로 L사이즈구합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102578/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-10 13:14:01",
+      "views": "0",
+      "content": "사용감이 좋아서 추가 구매하고 싶어서 글올립니다.\n010-9170-7211로 연락주세요.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "사용감이 좋아서 추가 구매를 원하는 문의글",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "연락처 공개와 함께 제품 추가 구매 의사를 밝힌 양도/거래 성격의 글",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102568": {
+      "id": "102568",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "하...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102568/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-10 11:44:41",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "단순 수령 알림",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "제목만 있고 본문이 없어 의도 파악이 어렵습니다",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102512": {
+      "id": "102512",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "56,62 주문!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102512/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-09 20:41:09",
+      "views": "0",
+      "content": "제 꺼는 56 남편 꺼는 62 선택, 남편이 눈 바로 위까지 푹 눌러쓴 느낌이 나는 모자는 처음인 듯 ㅋㅋ 남편이 모자를 좋아하는데 늘 작은 모자 얹어 있는 느낌이었는데 이 모자는 머리에 딱 부착한 듯한 멋진 핏이 나서 너무 만족해요. 크기도 만족하지만 깊이감이 더 만족스러워요. 60를 선택해도 될 뻔 했는데 뒤를 조절하니 괜찮더라고요. 시중의 대두 모자를 사도 예쁜 핏이 나지 않아서 처 박아두곤 했는데 이 번 모자는 오래오래 쓸 듯.  물건을 잘 잃어버리는 편인 남편이 이 모자도 잃어버리면 어쩌지 걱정부터 하네요 ㅠㅠ 마음에 쏙 드나봐요~^^ 저도 봄여름용이 아닌 점이 아쉬워요~봄여름용도 만들어주세요~^^",
+      "images": [],
+      "hashtags": [
+        "#핏",
+        "#사이즈",
+        "#퀄리티",
+        "#디자인",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "모자의 핏과 깊이감이 우수하며, 사이즈 선택도 만족스러움",
+            "hashtags": [
+              "#핏",
+              "#사이즈",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "기존 제품들과 달리 예쁜 핏이 나와 오래 사용할 만큼 만족도가 높음",
+            "hashtags": [
+              "#디자인",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "모자의 핏, 사이즈, 깊이감에 대한 명확한 만족 표현과 함께 시즈널 제품 개발 제안이 있는 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#핏",
+          "#사이즈",
+          "#퀄리티",
+          "#디자인",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102511": {
+      "id": "102511",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "최고의 필감",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102511/page/1/",
+      "has_photo": true,
+      "written_at": "2026-07-09 20:27:16",
+      "views": "0",
+      "content": "한글 흘림체에 최적화 돼 있다. 6개월의 기다림 끝에 온 만년필을 한 이틀 써보고 후기 남긴다. 우리 글의 획은 직선과 동그라미, 세모로 이루어져 있는데, 쓸 때마다 나의 의도를 만년필이 읽어내는 느낌이다. 전문가의 터치가 있어서 더 빛나는 듯하다. 어짜피 구구절절 후기 써도 다시 살 수 없는 시스템이지만, 정말 좋은 제품 만들어줘서 감사하다. 겸공 방송보며 아침부터 구매 버튼 누른 내가 승자.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/07/09/5769e96b0c621630c4962c4efcb77561.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/07/09/41dc4f87acd9adcddb171cdd4046c91c.jpg"
+      ],
+      "hashtags": [
+        "#필감",
+        "#사용성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "한글 흘림체에 최적화된 필감이 우수하고, 6개월 기다린 만큼 만족스러운 제품",
+            "hashtags": [
+              "#필감",
+              "#사용성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품의 필감과 성능에 대한 명확한 만족과 칭찬으로 긍정 분류",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#필감",
+          "#사용성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-14"
+    },
+    "102487": {
+      "id": "102487",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종만년필 잘 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102487/page/2/",
+      "has_photo": true,
+      "written_at": "2026-07-09 15:07:28",
+      "views": "0",
+      "content": "어제 받아서 오늘 잉크 넣어 써봐는데, 부드럽게 잘 써져서 좋네요. 기다림이 긴 만큼 만족합니다.\n단지, 잉크가 너무 많이 나오고 EF인데 너무 굵게 나오네요. 박종진소장님께 터치 받으러 가야 할 거 같이요.\n라미만 쓰다가 좋은 만년필 만났어요. 레이져 각인 하러 가야겠네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/07/09/d578ce6ddb5a82f5a8209a6555011805.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "부드러운 필기감으로 기대 이상의 만족도",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "잉크 분사량이 많고 굵기가 예상과 다름",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "부드러운 필기감과 기다림의 보상을 표현한 긍정의견과 잉크량/굵기 불만의 부정의견으로 이원화된 평가",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-07-14"
     }
   },
   "daily_logs": [
@@ -136441,9 +137082,31 @@
         "102440",
         "102390"
       ]
+    },
+    {
+      "date": "2026-07-14",
+      "count": 16,
+      "new_ids": [
+        "102756",
+        "102738",
+        "102712",
+        "102690",
+        "102669",
+        "102661",
+        "102659",
+        "102629",
+        "102627",
+        "102614",
+        "102598",
+        "102578",
+        "102568",
+        "102512",
+        "102511",
+        "102487"
+      ]
     }
   ],
-  "last_updated": "2026-07-09 07:58:38",
+  "last_updated": "2026-07-14 07:58:55",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
