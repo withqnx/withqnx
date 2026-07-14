@@ -133576,6 +133576,53 @@
         ]
       },
       "crawled_date": "2026-07-14"
+    },
+    "102783": {
+      "id": "102783",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "카키브라운 62호를 60호와 교환 가능하신 분 계실까요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/102783/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-14 14:34:29",
+      "views": "0",
+      "content": "깊은 모자를 원해 카기브라운 62호를 주문해서 받았는데 둘레가 너무 크네요\n혹시 60호 사이즈와 교환하고 싶은데 교환 조건이 맞는 60호 구매자분이 계실까요?\n게시판 리스트 보니 많이들 커서 교환원하신단 글이 많아 그닥 가늠성은 없어보이지만 그래도 잘 맞게 쓰고 싶은 맘에 혹시 몰라 글 남겨봅니다~ ^^\n연락처는 010 삼둘둘칠 공공일공 입니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "카키브라운 62호를 60호와 교환해줄 구매자를 찾는 중",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "62호 사이즈가 둘레가 너무 커서 불만",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "주요 목적은 양도/거래(사이즈 맞춤을 위한 직거래 교환)이며, 배경 사유는 부정(사이즈 불만)",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-07-15"
     }
   },
   "daily_logs": [
@@ -137104,9 +137151,16 @@
         "102511",
         "102487"
       ]
+    },
+    {
+      "date": "2026-07-15",
+      "count": 1,
+      "new_ids": [
+        "102783"
+      ]
     }
   ],
-  "last_updated": "2026-07-14 07:58:55",
+  "last_updated": "2026-07-15 07:58:40",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
