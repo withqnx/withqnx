@@ -134578,6 +134578,191 @@
         ]
       },
       "crawled_date": "2026-07-24"
+    },
+    "103426": {
+      "id": "103426",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "생각보다 사이즈가 너무 크네요 ㅠㅠ (62->58로 교환) 대책이 없는건가요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103426/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-27 12:22:32",
+      "views": "0",
+      "content": "남자 모델분이 쓴거와 비교해서 큰걸로 주문했는데 실망이 크네요\n교환도 안되고 아무런 대첵이 없는건가요?\n작은걸 큰게 변경 불가하지만 시간이 걸리더라도 큰 모자를 작게 수선은 가능해 보이는데",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 불만으로 교환 요청 (62→58)",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "예상과 다른 사이즈로 인한 불만족",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 맞음 실패로 인한 교환 요청이 주요 행동이며, 상품 자체(사이즈)에 대한 불만이 함께 존재",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-27"
+    },
+    "103390": {
+      "id": "103390",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "정말 잘산거같습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103390/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-26 20:10:50",
+      "views": "0",
+      "content": "잘썰리고 기분좋은 무게감이내요\n기존칼과는 썰리는느낌이 좀 다른데\n익숙해지면 괜찬을꺼같습니다",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "좋은 무게감과 썰림질감으로 만족함",
+            "hashtags": [
+              "#무게감",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목과 본문에서 긍정적 평가(잘산거, 기분좋은 무게감, 괜찮을 것)가 명확하며, 적응 필요성을 언급했으나 부정적 평가가 아님",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-07-27"
+    },
+    "103357": {
+      "id": "103357",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "검은진주, 펜레스트 판매합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103357/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-24 16:58:32",
+      "views": "0",
+      "content": "만년필은 개봉만 하고 잉크도 넣어보지 않았고\n펜레스트는 미개봉 상태입니다.\n오픈채팅으로 연락주세요.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "검은진주 만년필과 펜레스트 미사용 상태로 판매",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 미사용 상품을 직접 판매하려는 거래 글로, 양도/거래 카테고리가 명확함",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-27"
+    },
+    "103356": {
+      "id": "103356",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈62호인데 60호로 교환",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103356/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-24 16:50:33",
+      "views": "0",
+      "content": "사이즈62호인데 60호로 교환하고 싶어요.\n사이즈만 있다면 색상은 상관 없어요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 62호에서 60호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자가 명확하게 회사에 사이즈 교환을 요청하는 내용",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-27"
+    },
+    "103355": {
+      "id": "103355",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈62호인데 60호로 교환",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103355/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-24 16:49:48",
+      "views": "0",
+      "content": "사이즈62호인데 60호로 교환하고 싶어요.\n사이즈만 있다면 색상은 상관 없어요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 62호를 60호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 교환 요청으로 사이즈 불만이 유일한 사유",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-27"
     }
   },
   "daily_logs": [
@@ -138158,9 +138343,20 @@
         "103262",
         "103259"
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "count": 5,
+      "new_ids": [
+        "103426",
+        "103390",
+        "103357",
+        "103356",
+        "103355"
+      ]
     }
   ],
-  "last_updated": "2026-07-24 14:28:37",
+  "last_updated": "2026-07-27 16:53:34",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
