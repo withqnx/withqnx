@@ -134763,6 +134763,258 @@
         ]
       },
       "crawled_date": "2026-07-27"
+    },
+    "103556": {
+      "id": "103556",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "겸손몰제품 관리 요청 : 껑 사이즈 문제",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103556/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-28 18:45:14",
+      "views": "0",
+      "content": "*** 겸손은힘들다 뉴스공장에 남긴 댓글 입니다 ***\n<겸손몰 제품 관리 요청 : 껑 사이즈 문제>\n그동안 겸손몰을 통해 여러 제품을 구매해서 사용 중인 겸공 애청자입니다.\n공장장님의 높은 안목과 극강의 가성비 덕분에 크게 만족하고 있습니다.\n그런데 이 번에 배송받은 모자 껑은 사이즈가 너무 큰 것입니다.\n제가 주문을 잘 못했나 싶었는데\n겸손몰 게시판에 가 보니 사이즈가 너무 크다는 사람들이 한 두명이 아니더군요\n색상이나 질감은 너무 마음에 드는데 가장 기대했던 사이즈, 모자 핏이 너무 실망스럽습니다\n우리 같은 대두도 외국인이 야구모자 쓴 것 같은 핏의 모자를 만들겠다는 공장장님의 약속을 믿고 반가운 마음에 사서 1년 반을 기다렸는데 ㅠㅠ\n평생 모자 한 번 제대로 써 보는 게 소원인 사람들 생각해서라도\n제작사에서 꼭 해결책을 마련해주셨으면 좋겠습니다 ㅠㅠ\n*** 게시 글을 읽다 보니 사이즈 수선을 원하는 분도 있던데\n추가로 돈을 더 내더라도 수선 받을 수 있으면 좋겠습니다\n제작사에서는 사이즈 교환은 불가하다는 사무적인 답변만 하지 말고 뭔가 성의 있는 노력을 해주시길 바랍니다",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "모자 사이즈가 너무 커서 핏이 맞지 않음. 게시판에 같은 불만이 많으며 1년 반을 기다린 기대와 달라 실망",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 교환 또는 수선 서비스를 요청하며 추가 비용 지불도 가능함을 전달",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만으로 인한 명확한 부정 리뷰이며, 제작사에 교환/수선을 요청하는 별도의 행동 segment로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-07-29"
+    },
+    "103552": {
+      "id": "103552",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "잉크는 어떤 걸 사야하는 지요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103552/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-28 17:01:57",
+      "views": "0",
+      "content": "잊고 지내다보니 드.디.어 만년필이 왔어요~~\n잉크가 안. 채워져 있는 거 맞죠?\n만년필 무식자여서 어떤 잉크가 좋은 지 추천해주세요~",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "상품 수령 알림 및 사용법 문의",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 도착 확인과 잉크 선택에 대한 단순 질문으로, 상품에 대한 만족도나 불만 표현이 없는 단순 수령 알림",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-29"
+    },
+    "103542": {
+      "id": "103542",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "62호 차콜그레이 > 60호로 교환 원합니다..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103542/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-28 15:26:49",
+      "views": "0",
+      "content": "구두는 사이즈 바꿔주던데 모자는 안해주네요..쩝쩝..\n010-9557-9577 서울 사당동 연락주세요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "62호 차콜그레이를 60호로 교환 요청",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불일치로 인한 교환 요청이며, 구두와 달리 모자는 교환이 안 된다는 불만을 포함",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-29"
+    },
+    "103538": {
+      "id": "103538",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "껑 사이즈 관련 제작사의 성의 있는 대책 요청 + 남자 60호 (차콜그레이, 네이비브라운) 판매합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103538/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-28 14:49:41",
+      "views": "0",
+      "content": "그동안 나한테 맞는 모자 구하기가﻿ 너무 힘들어서\n껑 판매소식 들었을 때 반가운 마음에 2개나 구입했습니다\n그저께 배송 되었다고해서 기대감 가지고 집에 갔는데\n이번엔 너무 큰 겁니다 ㅠㅠ\n공장장님이 62호를 쓰고 뉴스 진행하는 걸 봐서\n60호 정도면 나한테 맞을 줄 알았는데 ..\n여기 와서 보니 나같은 사람들이 꽤 되시는 것 같은데\n제작사에서 사이즈 관련해서 뭔가 대책을 좀 마련해 주시길 부탁드립니다~!\n색상이나 질감은 너무 마음에 드는데\n공장장님이 말했던 외국인이 야구모자 쓴 것 같은 핏은 아니더라도\n이건 너무 한 것 같습니다 ㅠㅠ\n평생 모자 한 번 제대로 써 보는 게 소원인 사람들 생각해서라도\n제작사에서 꼭 해결책을 마련해주셨으면 좋겠습니다 ㅠㅠ\n*** 밑에 글을 읽다 보니 사이즈 수선을 원하는 분도 있던데\n저도 추가로 돈을 더 내더라도 수선 받을 수 있으면 좋겠습니다\n제작사에서는 사이즈 교환은 불가하다는 사무적인 답변만 하지 말고\n뭔가 성의 있는 노력을 해주시길 바랍니다\nps) 남자 60호 차콜그레이, 네이비브라운 1개씩 있는데\n구매 원하시는 분은 연락주세요\n(010-2077-6974)",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "사이즈가 너무 커서 맞지 않음. 색상과 질감은 만족하지만 핏 문제로 불만",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "제작사에 사이즈 교환 또는 수선 대책 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "남자 60호 차콜그레이, 네이비브라운 판매 중",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만으로 인한 교환 요청과 함께 상품 양도 판매가 명확하게 분리되는 다중 세그먼트 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-07-29"
+    },
+    "103509": {
+      "id": "103509",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "꼼꼼한 마무리 부탁드립니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103509/page/1/",
+      "has_photo": true,
+      "written_at": "2026-07-28 09:57:57",
+      "views": "0",
+      "content": "레이저가공 -> 연마 -> 도금의 순서로 제작하는 것으로 압니다.\n첨부된 사진과 같이 말끔히 연마되어야 하는 부분에 가로 페임 자국이 있습니다.\n아마 연마시 벨트 사포의 문제이거나, 연마를 꼼꼼히 하지 못한 것 같습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/07/28/f1ac52b6a39e9ab9bf1665bb0b7c2c97.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "연마 공정에서 벨트 자국이 남아있어 마감 품질 불만",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 마감 공정 결함(연마 자국)에 대한 명확한 불만으로 부정 카테고리 확실",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-07-29"
+    },
+    "103490": {
+      "id": "103490",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "라이트그레이 58호 ->56호로 교환 원합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103490/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-28 07:57:14",
+      "views": "0",
+      "content": "두께가 톡톡해서 추울 때 쓰면 좋을 것 같은데\n깊이는 얕고 너비는 넓어서 뒷 부분 조절해도 쓰고 다니기 어려울 것 같아요.\n56호로 교환 부탁 드립니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈가 맞지 않아 56호로 교환 요청",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "category": "긍정",
+            "summary": "두께감이 좋아 추운 날씨에 사용하기 좋음",
+            "hashtags": [
+              "#무게감"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 부적합(깊이/너비 문제)으로 교환 요청하는 명확한 사례이며, 두께감에 대한 긍정 평가를 함께 포함",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-07-29"
     }
   },
   "daily_logs": [
@@ -138354,9 +138606,21 @@
         "103356",
         "103355"
       ]
+    },
+    {
+      "date": "2026-07-29",
+      "count": 6,
+      "new_ids": [
+        "103556",
+        "103552",
+        "103542",
+        "103538",
+        "103509",
+        "103490"
+      ]
     }
   ],
-  "last_updated": "2026-07-27 16:53:34",
+  "last_updated": "2026-07-29 08:03:01",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
