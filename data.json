@@ -135015,6 +135015,78 @@
         ]
       },
       "crawled_date": "2026-07-29"
+    },
+    "103635": {
+      "id": "103635",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "3세트 주문 했는데 한세트만 왔어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103635/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-30 00:12:24",
+      "views": "0",
+      "content": "3세트 주문 했는데 한세트만 왔어요. 확인 후 나머지 보내주세요.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "3세트 주문했으나 1세트만 수령",
+            "hashtags": [],
+            "confidence": 0.95
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "오배송(수량 부족)으로 명확한 배송 관련 불편사항",
+        "confidence": 0.95,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-07-30"
+    },
+    "103627": {
+      "id": "103627",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "사이즈가 너무커요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103627/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-29 17:05:55",
+      "views": "0",
+      "content": "카키브라운 62호인데 너무 크네요..58호가 맞을듯 하네요. 교환이 안된다니 무용지물입니다..해결책이 없나요..",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "사이즈가 너무 커서 교환을 원하지만 불가 안내를 받음",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "교환 불가 정책으로 인해 상품이 쓸 수 없게 됨",
+            "hashtags": [],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만과 교환 요청이 명확하며, 교환 불가 정책으로 인한 불만으로 이원화",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-07-30"
     }
   },
   "daily_logs": [
@@ -138618,9 +138690,17 @@
         "103509",
         "103490"
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "count": 2,
+      "new_ids": [
+        "103635",
+        "103627"
+      ]
     }
   ],
-  "last_updated": "2026-07-29 08:03:01",
+  "last_updated": "2026-07-30 15:55:51",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
