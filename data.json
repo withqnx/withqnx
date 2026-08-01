@@ -135168,6 +135168,99 @@
         ]
       },
       "crawled_date": "2026-07-31"
+    },
+    "103712": {
+      "id": "103712",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "카키브라운 60호 저도 너무 크네요. - 교환하실 분!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103712/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-31 23:52:05",
+      "views": "0",
+      "content": "아래 먼저 받으신 분들 글을 쭉 보니 거의 동일한 문제네요.\n실측해서 주문했는데 실제 온 제품은 너무 큽니다. 뒤를 최대한 줄이면 겨우 써질 정도인데 이건 뭐 모자가 예뻐서 산 건데 그냥 얹는 수준이라 왜 샀나 싶네요.\n평소 모자 잘 안 쓰는데 공장장의 말을 듣고 이건 괜찮겠다 싶어 구입했는데 이 가격에 이런 결과물이라니 진짜 실망입니다.\n그것도 가장 더운 날 도착하고 ㅎ\n같은 문제들이 너무 많은데 이건 전체적으로 문제를 해결해주셔야 하는 거 아닌가요.\n혹시라도 58호 가지고 계신 분 작아서 60호 카키브라운 필요하다면 댓글 남겨주세요.\n지금 다 큰 분들이 많아서 색상도 무관합니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "실측 기준과 다르게 실제 제품이 너무 크며, 가격 대비 품질에 불만족",
+            "hashtags": [
+              "#사이즈",
+              "#핏",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "58호와의 교환을 원하며, 회사의 전체적인 문제 해결 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 사이즈 불만 + 교환 의사 표현으로 부정과 교환/반품 두 세그먼트로 분리. 배송 지연은 언급되었으나 주요 불만은 제품 자체 사이즈 문제.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-01"
+    },
+    "103685": {
+      "id": "103685",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "60호 58호로 교환하실 분 연락주세요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103685/page/1/",
+      "has_photo": false,
+      "written_at": "2026-07-31 10:37:13",
+      "views": "0",
+      "content": "휴가 며칠 다녀왔더니 삼복에 겨울모자가 도착했네요.\n아무리 둘레를 줄여도 푹잠기네.\n살 때 제 머리를 재고 주문했는데 이상하네요.\n좀 큰 걸 원하시는 분 있으면 문자주세요.\n010-6415-o394",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "60호를 58호로 교환해줄 구매자를 찾는 양도 제안",
+            "hashtags": [],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "주문 시 머리 둘레를 재고 주문했으나 상품이 너무 커서 맞지 않음",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "주요 의도는 양도 제안(연락처 제시)이고, 불만 사유는 사이즈 맞지 않음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-08-01"
     }
   },
   "daily_logs": [
@@ -138787,9 +138880,17 @@
         "103671",
         "103657"
       ]
+    },
+    {
+      "date": "2026-08-01",
+      "count": 2,
+      "new_ids": [
+        "103712",
+        "103685"
+      ]
     }
   ],
-  "last_updated": "2026-07-31 08:00:25",
+  "last_updated": "2026-08-01 16:02:06",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
