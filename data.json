@@ -135261,6 +135261,148 @@
         ]
       },
       "crawled_date": "2026-08-01"
+    },
+    "103744": {
+      "id": "103744",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "입었을 때 너무 더워서 입을 수가 없어요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103744/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-03 07:31:03",
+      "views": "0",
+      "content": "소재가 화학섬유 계통이라 그런지 공기 소통이 안되어서 그런지 착용시 덥습니다. 왜 샀나 후회막급. 다시는 티셔츠 구입 안할겁니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "화학섬유 소재로 인해 통풍이 안 되어 착용 시 너무 덥고 불만족",
+            "hashtags": [
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체의 소재와 통풍성 문제로 인한 명확한 불만족 의사 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-03"
+    },
+    "103739": {
+      "id": "103739",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "오랜 기다림 끝에 드디어 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103739/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-02 19:29:59",
+      "views": "0",
+      "content": "원래는 책모양 세종케이스 5구(?) 짜리를 기다리고 있었는데 1구짜리만 나와서 아쉬운마음에 이거만 구입하였네요.\n아라크나인의 딱 떨어지는 단단한 만듦새가 기분 좋게 합니다.\n고급스럽고 색상도 마음에 듭니다. 특히 육각형 실버 버튼이 화룡점정이네요.\n다만, 고정용 버튼때문에 만년필이 접촉하는 내부에 금속 표면이 노출되어 세종 같은 금속성 바디의 만년필이 혹시나 긁히지 않을까 걱정이 듭니다. 손으로 만졌을때 표면 처리가 되었는지 날카롭거나 걸리는 촉감은 없었지만 버튼 뒤쪽도 내부 가죽으로 마무리 되었으면 하는 아쉬움이 있네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/fd40ca136ad1674ff5b4c8901e6922f2.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/58110c6891ac333ea69b3fde7b714f90.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/e98edb439ad9a42424394c349701abe6.jpeg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#색상",
+        "#디자인",
+        "#퀄리티",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "단단한 만듦새와 고급스러운 색상, 육각형 실버 버튼 디자인에 만족",
+            "hashtags": [
+              "#마감",
+              "#색상",
+              "#디자인",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "고정용 버튼 부분 금속 표면 노출로 인한 만년필 손상 우려, 내부 마감 개선 요청",
+            "hashtags": [
+              "#마감",
+              "#내구성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만족도 높은 긍정 평가와 구체적인 마감 개선 지점을 지적한 부정 의견이 함께 있음. 교환/반품 요청 없는 건설적 피드백",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#색상",
+          "#디자인",
+          "#퀄리티",
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-08-03"
+    },
+    "103733": {
+      "id": "103733",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "세종필통(1구) 검정..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103733/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-02 11:53:35",
+      "views": "0",
+      "content": "선물용으로 구입한건데. ㅎㅎ 이쁘네요..\n아라크&겸송 제품은 배송만 늦을뿐. ㅎㅎ\n품질은 최고인듯 합니다. 필통을 담고있는 주머니랑 박스까지 예술..",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/82eefb0eea0e14d98d0a1dcee250c3bd.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/d714941c555b1347121db39788d66881.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/02/a980f8191f70738c824118b0890193c0.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "선물용으로 구입했는데 디자인과 품질, 패키징 모두 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체에 대한 만족 표현(예쁨, 품질 최고, 패키징 예술)이 명확하며, 배송 지연 언급은 배송관련불편이 아닌 단순 언급으로 판단",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-08-03"
     }
   },
   "daily_logs": [
@@ -138888,9 +139030,18 @@
         "103712",
         "103685"
       ]
+    },
+    {
+      "date": "2026-08-03",
+      "count": 3,
+      "new_ids": [
+        "103744",
+        "103739",
+        "103733"
+      ]
     }
   ],
-  "last_updated": "2026-08-01 16:02:06",
+  "last_updated": "2026-08-03 07:54:03",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
