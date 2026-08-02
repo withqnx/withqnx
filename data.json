@@ -135322,38 +135322,29 @@
         "https://nonohumble.com/file_data/nohumble/2026/08/02/e98edb439ad9a42424394c349701abe6.jpeg"
       ],
       "hashtags": [
-        "#마감",
         "#색상",
+        "#마감",
         "#디자인",
-        "#퀄리티",
-        "#내구성"
+        "#퀄리티"
       ],
       "classification": {
         "segments": [
           {
             "category": "긍정",
-            "summary": "단단한 만듦새와 고급스러운 색상, 육각형 실버 버튼 디자인에 만족",
+            "sentiment": "positive",
+            "summary": "",
+            "confidence": 1,
             "hashtags": [
-              "#마감",
               "#색상",
+              "#마감",
               "#디자인",
               "#퀄리티"
-            ],
-            "confidence": 0.9
-          },
-          {
-            "category": "부정",
-            "summary": "고정용 버튼 부분 금속 표면 노출로 인한 만년필 손상 우려, 내부 마감 개선 요청",
-            "hashtags": [
-              "#마감",
-              "#내구성"
-            ],
-            "confidence": 0.85
+            ]
           }
         ],
         "needs_review": false,
         "reasoning": "만족도 높은 긍정 평가와 구체적인 마감 개선 지점을 지적한 부정 의견이 함께 있음. 교환/반품 요청 없는 건설적 피드백",
-        "confidence": 0.85,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#마감",
@@ -135361,7 +135352,8 @@
           "#디자인",
           "#퀄리티",
           "#내구성"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-08-03"
     },
