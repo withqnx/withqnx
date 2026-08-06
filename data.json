@@ -135395,6 +135395,374 @@
         ]
       },
       "crawled_date": "2026-08-03"
+    },
+    "104012": {
+      "id": "104012",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "아쉬운 점이 있어요. 꼭 개선할 부분이에요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104012/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-06 18:32:47",
+      "views": "0",
+      "content": "길게 썼는데 다 날아가 버렸어요 ㅠ.ㅠ\n배게는 컨버터 잉크 주입때문에 배럴을 열고 닫을때  나사선이 헐거워져\n그립부가 살짝 더  돌아가서 처음 받았을때 보다 각이 틀어지고요.\n이건 플라스틱 재질이라 그럴 수 있지라고 생각했어요\n그런데 세종은 뚜껑과 바디가 금속 재질이라 걱정을 안했는데\n이것도 자주 쓰다보니 나사선이 헐거워져 세종 몸통의 곤룡포 무늬가\n뚜껑과 바디 얼라인이 미세하게 틀어지더라구요\n세종 금촉에서 당장 개선하긴 어려울거 같으니요\n차기 이순신?에서는 나사선이 헐거워져도 문양이나 각이 틀어져\n보기에 안좋아지는 디자인은 지양해주시면 좋겠습니다.\n몽블랑 같은 비싼건 못써봤지만 필기감은 더할나위 없이 대만족하고 있어요.\n다만 꼭 사용중에 미세하게 틀어지는걸 인지하지 못하게 하는 디자인을 채택해주세요",
+      "images": [],
+      "hashtags": [
+        "#내구성",
+        "#마감",
+        "#디자인",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "나사선이 헐거워져 그립부와 뚜껑 정렬이 틀어지는 내구성 문제",
+            "hashtags": [
+              "#내구성",
+              "#마감",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "필기감이 우수함",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "반복 사용 시 나사선 이완으로 인한 외관 정렬 문제는 제품 내구성 및 설계 문제(부정), 필기감에 대한 만족은 별도 긍정 의견으로 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#마감",
+          "#디자인",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103975": {
+      "id": "103975",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103975/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-06 11:39:24",
+      "views": "0",
+      "content": "좋어요 그런데 매트리스 커버는 좀 작네요 작아도 그냥 쓸게요 매트리스마다 사이즈가 다르니 ..좀 여유롭게 했으면 좋겠어요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "상품 만족하나 매트리스 커버 사이즈가 작아 개선 희망",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반적으로 만족하되 사이즈 문제를 지적한 건설적 피드백이므로 긍정 분류",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103948": {
+      "id": "103948",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "기다린 보람이 있네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103948/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-05 16:41:43",
+      "views": "0",
+      "content": "기다리던 세종 만년필이 정확히 고지된 날짜에 출발해서 오늘 받았습니다.\n만년필은 처음이라  비교 대상은 없지만, 필기감이나 무게감 모두 만족합니다.\n의미있는 날 제게 주는 선물로 구매한거라서 더욱 소중하게 잘 쓰겠습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/05/d24086c92f162ad91016a11028894c61.jpg"
+      ],
+      "hashtags": [
+        "#필기감",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "첫 만년필 구매로 필기감과 무게감 모두 만족, 의미있는 선물로 소중히 사용할 예정",
+            "hashtags": [
+              "#필기감",
+              "#무게감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 시간 준수는 배송관련 범주가 아닌 긍정적 수령으로 보며, 상품 자체 만족도가 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#필기감",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103934": {
+      "id": "103934",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "색이 너무 예뻐요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103934/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-05 15:05:26",
+      "views": "0",
+      "content": "색감도 좋고, 감촉도 좋아서 만족합니다.\n은은한 광택도 있어서 더 예쁘게 느껴져요.",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#재질",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색감, 감촉, 광택감 등 전반적으로 만족",
+            "hashtags": [
+              "#색상",
+              "#재질",
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색감, 감촉, 광택 등 구체적인 만족 사유가 명시되어 있어 긍정 후기로 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#재질",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103896": {
+      "id": "103896",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "재판매 부탁드립니다!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103896/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-04 21:33:32",
+      "views": "0",
+      "content": "촉감이 정말 좋습니다\n같은천으로 된 잠옷이 있었으면 좋겠습니다.\n두세트씩 사놨어야했는데, 한세트씩 밖에 없어 빨수가 없습니다.\n재판매 및 잠옷 제작 부탁 및 건의 드립니다~",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "촉감이 좋아 만족함",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "기획",
+            "summary": "같은 소재의 잠옷 출시를 건의함",
+            "hashtags": [
+              "#기획"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 만족도(촉감)와 신제품 기획 건의가 함께 나타남. 재판매 언급은 구매자의 개인적 필요 표현으로 양도/거래 카테고리와는 별개",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#기획"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103837": {
+      "id": "103837",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종만년필 받고 난 후",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103837/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-03 22:10:43",
+      "views": "0",
+      "content": "8개월을 기다려서 만년필 세종을 받았네요.\n주문한 후 항상 언제  받아보나 두근거리며\n이번 결과물은 좀 실망이네요.\n뚜껑을 열어서 후미 부분에 끼울수 있게 해주지\n그동안 쭉 겸손몰 이용했는데 갈수록\n품질관리가 안되는 것 같아요.\n그래서 요즘은 제작물에 대해 기대감이 없어요.\n공장장이나 관계자들은 이 점 고려하세요.\n작은 틈이 모든 걸 허물어요.\n요즘 뉴스공장을 보고 있자면 그런 생각이\n들어 안타깝네요.\n지지하는 사람으로서...",
+      "images": [],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "8개월 기다린 만년필이 뚜껑 후미 부분 마감이 불완전하고 품질 관리 부족",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "오랜 기다림 후 뚜껑 마감 결함과 품질 저하에 대한 명확한 불만 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103795": {
+      "id": "103795",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "진짜 좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103795/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-03 12:37:29",
+      "views": "0",
+      "content": "예쁜건 말할 것도 없구요.\n일단 잉크가 마르지 않아서 몇 일 안 쓰다가 다시 써도 문제 없어요.\n사파리는 이틀만 안 써도 잉크가 굳어서 풀어줘야 했는데 세종은 일주일 안 쓰다가 썼는데도 문제없이 잘 써져요.\n필기감은 좀 딱딱한 편인데 괜찮아요.\n오랫동안 잘 쓸께요~~",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#내구성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "잉크 건조 방지 기능이 우수하고 필기감이 좋아 만족",
+            "hashtags": [
+              "#사용성",
+              "#내구성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 잉크 유지력과 필기감을 구체적으로 칭찬하는 명확한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#내구성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103774": {
+      "id": "103774",
+      "product_name": "세종필통(1구 붓)",
+      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
+      "title": "너무 이뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103774/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-03 10:47:51",
+      "views": "0",
+      "content": "앙증 맞아요~빨리 만년필 받아서 넣고 들고 다니고 싶어요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/03/668a0a53f9fd7464d07bae36ac2bbd68.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "상품 수령 후 만족감 표현",
+            "hashtags": [],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목은 긍정이지만 본문이 '이쁘다', '앙증맞다' 등 구체적 사유 없는 단순 호평 + 미래 사용 의도 표현으로 실질적 수령 알림 성격",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-06"
+    },
+    "103746": {
+      "id": "103746",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "세종 필통 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/103746/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-03 08:46:03",
+      "views": "0",
+      "content": "이런 퀄로 오면 포장용 박스까지 소장하게 됩니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/03/e456c2ea6eb20d2ee554fc59f576b57c.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "높은 퀄리티의 제품과 포장까지 만족",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 퀄리티에 대한 명확한 칭찬이며, 포장 품질도 함께 언급한 긍정 리뷰",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-06"
     }
   },
   "daily_logs": [
@@ -139031,9 +139399,24 @@
         "103739",
         "103733"
       ]
+    },
+    {
+      "date": "2026-08-06",
+      "count": 9,
+      "new_ids": [
+        "104012",
+        "103975",
+        "103948",
+        "103934",
+        "103896",
+        "103837",
+        "103795",
+        "103774",
+        "103746"
+      ]
     }
   ],
-  "last_updated": "2026-08-03 07:54:03",
+  "last_updated": "2026-08-06 21:11:32",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
