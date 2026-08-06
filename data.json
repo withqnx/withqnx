@@ -135763,6 +135763,36 @@
         ]
       },
       "crawled_date": "2026-08-06"
+    },
+    "104017": {
+      "id": "104017",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "좋네요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104017/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-06 21:12:52",
+      "views": "0",
+      "content": "아주 맘에 듭니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "상품에 만족함을 표현",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적인 사유 없는 짧은 호평으로 중립/단순수령에 해당",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-07"
     }
   },
   "daily_logs": [
@@ -139414,9 +139444,16 @@
         "103774",
         "103746"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "count": 1,
+      "new_ids": [
+        "104017"
+      ]
     }
   ],
-  "last_updated": "2026-08-06 21:11:32",
+  "last_updated": "2026-08-07 06:19:12",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
