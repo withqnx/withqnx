@@ -135448,27 +135448,21 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/08/03/668a0a53f9fd7464d07bae36ac2bbd68.jpg"
       ],
-      "hashtags": [
-        "#디자인"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
-            "category": "긍정",
-            "sentiment": "positive",
-            "summary": "",
-            "confidence": 1,
-            "hashtags": [
-              "#디자인"
-            ]
+            "category": "중립/단순수령",
+            "summary": "상품 수령 후 만족감 표현",
+            "hashtags": [],
+            "confidence": 0.85
           }
         ],
         "needs_review": false,
         "reasoning": "제목은 긍정이지만 본문이 '이쁘다', '앙증맞다' 등 구체적 사유 없는 단순 호평 + 미래 사용 의도 표현으로 실질적 수령 알림 성격",
-        "confidence": 1,
+        "confidence": 0.85,
         "_v2": true,
-        "hashtags": [],
-        "_relabeled": true
+        "hashtags": []
       },
       "crawled_date": "2026-08-06"
     },
@@ -135700,21 +135694,23 @@
       "classification": {
         "segments": [
           {
-            "category": "긍정",
-            "summary": "상품 만족하나 매트리스 커버 사이즈가 작아 개선 희망",
+            "category": "부정",
+            "sentiment": "negative",
+            "summary": "",
+            "confidence": 1,
             "hashtags": [
               "#사이즈"
-            ],
-            "confidence": 0.9
+            ]
           }
         ],
         "needs_review": false,
         "reasoning": "전반적으로 만족하되 사이즈 문제를 지적한 건설적 피드백이므로 긍정 분류",
-        "confidence": 0.9,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#사이즈"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-08-06"
     },
