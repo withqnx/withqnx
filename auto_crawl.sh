@@ -34,11 +34,19 @@ python3 crawl.py
 echo "=== Claude Code 분류 시작 ==="
 python3 classify_pending.py
 
-# 3) 변경 있으면 커밋 + push(최대 3회 재시도)
+# 3) 실질 변경(후기 추가/분류 변경)이 있을 때만 커밋 + push(최대 3회 재시도)
+#    last_updated 타임스탬프만 바뀐 경우는 커밋하지 않는다(매일 빈 커밋·불필요 배포 방지)
 PUSHED=0
 if ! git diff --quiet data.json 2>/dev/null; then
-  git add data.json
-  git commit -m "🤖 Auto crawl $(date '+%Y-%m-%d %H:%M')" >/dev/null 2>&1
+  # data.json 변경 라인 중 last_updated 외에 다른 게 있는지 확인
+  REAL_CHANGE=$(git diff -U0 data.json | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | grep -vE '"last_updated"' | head -1)
+  if [ -n "$REAL_CHANGE" ]; then
+    git add data.json
+    git commit -m "🤖 Auto crawl $(date '+%Y-%m-%d %H:%M')" >/dev/null 2>&1
+  else
+    echo "✅ 새 후기 없음 (타임스탬프만 변경 → 커밋 생략)"
+    git checkout -- data.json 2>/dev/null
+  fi
 fi
 # 아직 원격에 안 올라간 커밋이 있으면 push 시도
 if [ -n "$(git log --oneline origin/main..HEAD 2>/dev/null)" ]; then
@@ -75,7 +83,12 @@ if [ "$PUSHED" -eq 1 ]; then
   sleep 5
 fi
 
-# 5) 홈페이지 자동 오픈
-echo "▶ 홈페이지 여는 중: $SITE"
-open "$SITE"
+# 5) 완전 자동 모드: 브라우저를 띄우지 않는다(사람 개입 불필요).
+#    확인이 필요하면 언제든 $SITE 접속. OPEN_SITE=1 로 실행하면 예전처럼 창을 연다.
+if [ "${OPEN_SITE:-0}" = "1" ]; then
+  echo "▶ 홈페이지 여는 중: $SITE"
+  open "$SITE"
+else
+  [ "$PUSHED" -eq 1 ] && echo "▶ 대시보드 갱신됨: $SITE"
+fi
 echo "=== 종료 ==="
