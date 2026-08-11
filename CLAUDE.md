@@ -12,6 +12,15 @@
 - 키는 `.env`에 있음 (`ANTHROPIC_API_KEY`, `CF_*`). 현재 키 그대로 사용.
 - **Anthropic/Cloudflare API 잔액이 소진되면 즉시 사용자에게 알릴 것.** 그때 새 키를 받아 `.env`와 GitHub Secrets를 교체한다.
 
+## 자동 실행 — 매일 오전 8시 (2026-08-11~)
+launchd `com.nonohumble.crawl`(`~/Library/LaunchAgents/com.nonohumble.crawl.plist`)가 **매일 08:00**에
+`auto_crawl.sh`를 실행: **수집 → Claude Code 분류 → 커밋 → push(3회 재시도) → Cloudflare 배포 대기**. 완전 자동, 사람 개입·브라우저 없음.
+- 신규 후기 0건이면 커밋하지 않음(빈 커밋·불필요 배포 방지).
+- 브라우저를 띄우려면 `OPEN_SITE=1 bash auto_crawl.sh`.
+- 로그: `/tmp/nonohumble_crawl.log`, 에러: `/tmp/nonohumble_crawl_error.log`.
+- 즉시 1회 실행: `launchctl start com.nonohumble.crawl`
+- ⚠️ **8시에 Mac이 꺼져있거나 잠들어 있으면 그 시각엔 못 돌고, 깨어난 직후 1회 실행**된다(launchd 동작). 정각 보장이 필요하면 `pmset repeat wake` 로 자동 기상 설정 필요(관리자 권한 — 사용자가 직접 실행).
+
 ## 분류 방식 — Claude Code(구독) 사용 (2026-08-11~)
 후기 분류는 **Anthropic API 키 대신 Claude Code(`claude -p` 헤드리스, 구독)** 로 처리한다.
 - `crawl.py` 는 `CLASSIFY_MODE=claude` 이면 **수집만** 하고 분류는 건너뜀(미분류로 저장).
