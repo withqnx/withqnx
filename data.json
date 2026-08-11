@@ -135766,215 +135766,96 @@
       },
       "crawled_date": "2026-08-06"
     },
-    "104273": {
-      "id": "104273",
-      "product_name": "세종필통1구",
-      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
-      "title": "세종필통!!! 생각했던 딱 그색상과 품질",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104273/page/1/",
-      "has_photo": true,
-      "written_at": "2026-08-10 21:08:17",
-      "views": "0",
-      "content": "큰아이 첫입사 선물로 주려고 세종 만년필과 필통을 주문했습니다.\n우선 필통은 합격!!!\n만년필은 올해말 배송 예정이더군요..그래도 괜찮습니다.\n아직 대학교 2학년이니 졸업하고 취업하려면 아직 시간이 있습니다.\n만년필도 기대됩니다!",
-      "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/10/e4abb7d182f53b51a6b0995054e119a8.jpg"
-      ],
-      "hashtags": [
-        "#색상",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "필통이 기대했던 색상과 품질로 만족, 만년필도 기대 중",
-            "hashtags": [
-              "#색상",
-              "#퀄리티"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "필통에 대한 명확한 만족 표현('합격', '생각했던 딱 그색상과 품질')이 있으며, 배송 지연도 긍정적으로 수용하고 있음",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104174": {
-      "id": "104174",
-      "product_name": "100수",
-      "product_link": "https://nonohumble.com/product/100수/349/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
-      "title": "진짜 호텔이불 느낌입니다!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104174/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-10 09:54:59",
-      "views": "0",
-      "content": "정말 호텔 이불 같습니다.\n솜을 따로 사야하는 점이 불편해서\n솜도 같이 판매하셨으면 좋을 것 같아요",
-      "images": [],
-      "hashtags": [
-        "#퀄리티",
-        "#디자인",
-        "#구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "호텔 이불 같은 고급스러운 느낌으로 만족",
-            "hashtags": [
-              "#퀄리티",
-              "#디자인"
-            ],
-            "confidence": 0.9
-          },
-          {
-            "category": "부정",
-            "summary": "솜을 별도로 구매해야 하는 점이 불편함",
-            "hashtags": [
-              "#구성"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "호텔 이불 같은 느낌에 대한 명확한 칭찬과 솜 미포함에 대한 구성 불만이 분리 가능",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#디자인",
-          "#구성"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104163": {
-      "id": "104163",
-      "product_name": "세종 펜레스트",
-      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
-      "title": "이 펜레스트는 디자인 부터 세종만년필이 더 빛나게 하는 작품 입니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104163/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-09 19:47:26",
-      "views": "0",
-      "content": "작품 그 자체라고 해도 과언이 아닙니다.\n야무지게 구성된 여백의 미가 아름답네요\n너무 마음에 듭니다",
-      "images": [],
-      "hashtags": [
-        "#디자인",
-        "#구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "디자인과 구성이 뛰어나 작품 같은 수준의 펜레스트",
-            "hashtags": [
-              "#디자인",
-              "#구성"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "디자인, 구성, 여백의 미 등 제품 자체에 대한 명확한 칭찬으로 긍정 범주 확실",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#디자인",
-          "#구성"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104162": {
-      "id": "104162",
+    "104017": {
+      "id": "104017",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "수려한 모습의 세종 만년필",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104162/page/1/",
+      "title": "좋네요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104017/page/1/",
       "has_photo": false,
-      "written_at": "2026-08-09 19:45:34",
+      "written_at": "2026-08-06 21:12:52",
       "views": "0",
-      "content": "이 만년필은 작품 그 자체라고 해도 과언이 아닙니다.\n상자를 열어본 순간, 아......\n너무 마음에 듭니다",
-      "images": [],
-      "hashtags": [
-        "#디자인",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "만년필의 외형 디자인과 전체적인 완성도에 매우 만족",
-            "hashtags": [
-              "#디자인",
-              "#퀄리티"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "상품 자체를 '작품', '마음에 든다'고 표현한 명확한 긍정평가",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#디자인",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104153": {
-      "id": "104153",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "포장이ᆢ",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104153/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-09 09:27:49",
-      "views": "0",
-      "content": "선물드리고싶어 주문했는데\n포장이 조금 허접해보이네요ㅠㅠ",
+      "content": "아주 맘에 듭니다.",
       "images": [],
       "hashtags": [],
       "classification": {
         "segments": [
           {
-            "category": "배송관련불편",
-            "summary": "선물용 주문했는데 포장이 허접해 보임",
+            "category": "중립/단순수령",
+            "summary": "상품 만족 표현",
             "hashtags": [],
-            "confidence": 0.9
+            "confidence": 0.8
           }
         ],
         "needs_review": false,
-        "reasoning": "포장 상태에 대한 불만으로 배송관련불편 카테고리에 해당",
-        "confidence": 0.9,
+        "reasoning": "이유 없는 짧은 호평으로 중립/단순수령 분류, 구체적 언급 부재",
+        "confidence": 0.8,
         "_v2": true,
         "hashtags": []
       },
       "crawled_date": "2026-08-11"
     },
-    "104147": {
-      "id": "104147",
+    "104030": {
+      "id": "104030",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "1구 세종필통...너무 좋네요...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104030/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-07 08:51:03",
+      "views": "0",
+      "content": "첫 번째 사진처럼 첫 느낌은 왠 사각티슈? ^^;;;\n하지만 항아리라 해야 하나...물고기라고 해야 하나...제품명처럼 세종의 훈민정음을 찢어서 붙인 형태의 종이 상자가 저를 맞이하더군요...\n허허...하는 느낌으로 제품을 꺼내니...마로 만든 것처럼 느껴지는 파우치(?)가 나를 반겼고...\n여기에서 진짜 제품인 1구 세종필통을 맞이했습니다...^^\n생각보다 크기가 좀 되지만...\n후크의 문양도 너무 마음에 들었고...\n실제로 열고 당겼을 때 자석에서 떨어지는 것처럼 느껴지면서 앞으로 나오고...\n여기에 실제 만년필 등을 넣고 닫으니 저절로 닫히는 것처럼 제자리로 돌아가더군요...\n누누히 말하는 기능성이 충분하다고 느껴집니다...\n2구도 구입했지만...아직 받질 못했지만...\n어쨌든 너무 마음에 드네요...\n두고두고 사용할 것 같네요...^^\n좋은 제품 제작해 주셔서 감사합니다...^^",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/459836d5e50052d13e2bc178546a8424.JPEG",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/c5105d2c28d413b8cb929fd0f5b3617f.JPEG",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/ea5bceadb8f8acbb30c35fc230968812.JPEG"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#사용성",
+        "#퀄리티",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디자인과 기능성 모두 만족스러운 세종필통, 재구매 의향까지 있음",
+            "hashtags": [
+              "#디자인",
+              "#사용성",
+              "#퀄리티",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "패키징 디자인, 마감(자석 기능), 사용성 모두에 대해 긍정적으로 평가하며 2구 추가 구매했고 재구매 의향 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#사용성",
+          "#퀄리티",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104041": {
+      "id": "104041",
       "product_name": "껑",
       "product_link": "https://nonohumble.com/product/껑/352/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
-      "title": "한국인 머리 사이즈에 딱 맞는 모자입니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104147/page/1/",
+      "title": "챠콜그레이 62호--> 60호 교환 원합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104041/page/1/",
       "has_photo": false,
-      "written_at": "2026-08-08 17:26:36",
+      "written_at": "2026-08-07 09:51:08",
       "views": "0",
-      "content": "아주 맘에 듭니다\n진짜로 얼굴이 쏙 들어가서 얼굴이 작아보입니다",
+      "content": "색상 상관없이 60호 가지고 계신분들 중 62호 챠콜 그레이 필요하시면 교환 원합니다.\n기대하면서 기다렸는데 이렇게 모자가 클 줄은 몰랐습니다.\n62호 모자도 잘 없을 뿐더러 써도 머리가 지끈 거릴 정도로 작아서 항상 모자쓰기는 포기했었는데...\n이렇게 제 머리가 작았는지...새삼 놀라움을 느낍니다.  ㅠㅠ\n다른분들 말씀처럼 LIE에서도 대책을 마련해주면 좋겠네요.",
       "images": [],
       "hashtags": [
         "#사이즈",
@@ -135983,8 +135864,14 @@
       "classification": {
         "segments": [
           {
-            "category": "긍정",
-            "summary": "한국인 머리 사이즈에 맞고 얼굴 라인을 잘 살려주는 모자",
+            "category": "양도/거래",
+            "summary": "62호 챠콜그레이를 60호로 교환 희망",
+            "hashtags": [],
+            "confidence": 0.95
+          },
+          {
+            "category": "부정",
+            "summary": "사이즈가 너무 커서 착용 불가능, 회사의 사이즈 기준 개선 필요",
             "hashtags": [
               "#사이즈",
               "#핏"
@@ -135993,173 +135880,12 @@
           }
         ],
         "needs_review": false,
-        "reasoning": "사이즈 적합성과 착용감에 만족하는 명확한 긍정 후기",
+        "reasoning": "양도 의도와 사이즈 불만이 명확하게 분리됨. 사이즈 기준 문제로 인한 착용 불가 상태를 호소하고 있음",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
           "#사이즈",
           "#핏"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104145": {
-      "id": "104145",
-      "product_name": "세종필통(1구 붓)",
-      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
-      "title": "세종 집이 드디어 왔네요.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104145/page/1/",
-      "has_photo": true,
-      "written_at": "2026-08-08 17:10:44",
-      "views": "0",
-      "content": "다른 필통들 먼저 주문하고,  고민하다 추가로 주문한 붓이 먼저 왔네요.   안 했으면 두고두고 생각날 뻔 했어요.   잘 쓰겠습니다.",
-      "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/08/143b200c76a666692282ba2780a81a53.jpg"
-      ],
-      "hashtags": [
-        "#또사고싶다"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "추가 주문한 붓이 먼저 도착했고 잘 쓸 예정이며 구매 결정에 만족",
-            "hashtags": [
-              "#또사고싶다"
-            ],
-            "confidence": 0.85
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "상품 구매 결정을 만족하며 긍정적으로 평가하고 있으나, 배송 순서에 대한 언급이 있어 신뢰도를 0.85로 조정",
-        "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#또사고싶다"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104126": {
-      "id": "104126",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "딱 좋음, 완전 좋음.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104126/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-07 20:38:02",
-      "views": "0",
-      "content": "은빛, 검정빛, 그린... 세 가지 색상으로 구입.\n오늘 그 물건들 도착.\n그리고 오늘 역사적으로 웹앱 배포한 날.\n만년필로 그날을 기록함.\n만년필 느낌. 딱 좋음. 우선, 한글 최적화에 동의함.\n몽블머시기, 트위스트 꽈배기, 빠이롯뚜, 중국산, 파카 최근 다이소까지...시도 중, 아직도...\n공항 가면 만년필 코너 먼저 가지만, 작년 세종 주문하고 나서는 기다렸음. 믿었음.\n그리고 오늘 확인했음.\n딱 내가 찾는 거야. 적당히 무겁고, 손목도 안 아프고, 굵기도 딱 좋고. 종이 긁히는 것도 강하지도 없지도 않고...\n어떤 잉크를 넣어줄까 고민해야겠음.\n일단 첫 잉크는 몽블랑 마이스터스튁끄 오리진 꼴렉쎤 블루 병잉쿠\n오늘이 그날이었음.\n또 그날을 향하여..",
-      "images": [],
-      "hashtags": [
-        "#색상",
-        "#무게감",
-        "#사용성",
-        "#또사고싶다"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "세 가지 색상 모두 만족스럽고, 무게감·굵기·필감 등 모든 면에서 기대했던 제품",
-            "hashtags": [
-              "#색상",
-              "#무게감",
-              "#사용성",
-              "#또사고싶다"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "여러 경쟁 제품과 비교 후 선택했고, 무게·크기·필감·한글 최적화 등 구체적 만족 표현으로 명확한 긍정 평가",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#무게감",
-          "#사용성",
-          "#또사고싶다"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104124": {
-      "id": "104124",
-      "product_name": "세종필통(1구)",
-      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
-      "title": "너무 고급집니다~",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104124/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-07 19:30:42",
-      "views": "0",
-      "content": "생각보다 빨리 배송되어 기쁜 마음에 제품을 개봉해보니 너무 고급지고 맘에 듭니다. 얼른 세종만년필도 도착해서 가지고 다녔으면하는 마음 뿐입니다.",
-      "images": [],
-      "hashtags": [
-        "#퀄리티",
-        "#또사고싶다"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "제품이 고급지고 만족스러움",
-            "hashtags": [
-              "#퀄리티",
-              "#또사고싶다"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "상품 자체에 대한 만족감(고급지다, 맘에 든다)을 명확히 표현했으며, 다른 제품도 구매하고 싶어하는 의도가 드러남. 배송 언급은 설명 문맥일 뿐 불편함 없음.",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#또사고싶다"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104092": {
-      "id": "104092",
-      "product_name": "별",
-      "product_link": "https://nonohumble.com/product/별/341/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
-      "title": "상품 설명과 전혀 달라요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104092/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-07 14:43:41",
-      "views": "0",
-      "content": "완전 싸구리에요. 그리고 쩌죽어요 속은거 후회되었어요. 못 입고 버렸네요. 컨플레인하려다 스트레스라 걍 포기했네요",
-      "images": [],
-      "hashtags": [
-        "#퀄리티",
-        "#마감"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "부정",
-            "summary": "상품 설명과 다르고 품질이 낮으며 입을 수 없는 상태",
-            "hashtags": [
-              "#퀄리티",
-              "#마감"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "상품 자체에 대한 명확한 불만(싸구리, 쩌죽음, 입을 수 없음)이므로 부정 카테고리",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#마감"
         ]
       },
       "crawled_date": "2026-08-11"
@@ -136224,17 +135950,178 @@
       },
       "crawled_date": "2026-08-11"
     },
-    "104041": {
-      "id": "104041",
+    "104092": {
+      "id": "104092",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "상품 설명과 전혀 달라요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104092/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-07 14:43:41",
+      "views": "0",
+      "content": "완전 싸구리에요. 그리고 쩌죽어요 속은거 후회되었어요. 못 입고 버렸네요. 컨플레인하려다 스트레스라 걍 포기했네요",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "상품 설명과 다르고 품질이 낮으며 입을 수 없는 상태",
+            "hashtags": [
+              "#퀄리티",
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체에 대한 명확한 불만(싸구리, 쩌죽음, 입을 수 없음)이므로 부정 카테고리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104124": {
+      "id": "104124",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "너무 고급집니다~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104124/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-07 19:30:42",
+      "views": "0",
+      "content": "생각보다 빨리 배송되어 기쁜 마음에 제품을 개봉해보니 너무 고급지고 맘에 듭니다. 얼른 세종만년필도 도착해서 가지고 다녔으면하는 마음 뿐입니다.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "제품이 고급지고 만족스러움",
+            "hashtags": [
+              "#퀄리티",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체에 대한 만족감(고급지다, 맘에 든다)을 명확히 표현했으며, 다른 제품도 구매하고 싶어하는 의도가 드러남. 배송 언급은 설명 문맥일 뿐 불편함 없음.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104126": {
+      "id": "104126",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "딱 좋음, 완전 좋음.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104126/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-07 20:38:02",
+      "views": "0",
+      "content": "은빛, 검정빛, 그린... 세 가지 색상으로 구입.\n오늘 그 물건들 도착.\n그리고 오늘 역사적으로 웹앱 배포한 날.\n만년필로 그날을 기록함.\n만년필 느낌. 딱 좋음. 우선, 한글 최적화에 동의함.\n몽블머시기, 트위스트 꽈배기, 빠이롯뚜, 중국산, 파카 최근 다이소까지...시도 중, 아직도...\n공항 가면 만년필 코너 먼저 가지만, 작년 세종 주문하고 나서는 기다렸음. 믿었음.\n그리고 오늘 확인했음.\n딱 내가 찾는 거야. 적당히 무겁고, 손목도 안 아프고, 굵기도 딱 좋고. 종이 긁히는 것도 강하지도 없지도 않고...\n어떤 잉크를 넣어줄까 고민해야겠음.\n일단 첫 잉크는 몽블랑 마이스터스튁끄 오리진 꼴렉쎤 블루 병잉쿠\n오늘이 그날이었음.\n또 그날을 향하여..",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#무게감",
+        "#사용성",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세 가지 색상 모두 만족스럽고, 무게감·굵기·필감 등 모든 면에서 기대했던 제품",
+            "hashtags": [
+              "#색상",
+              "#무게감",
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "여러 경쟁 제품과 비교 후 선택했고, 무게·크기·필감·한글 최적화 등 구체적 만족 표현으로 명확한 긍정 평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#무게감",
+          "#사용성",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104145": {
+      "id": "104145",
+      "product_name": "세종필통(1구 붓)",
+      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
+      "title": "세종 집이 드디어 왔네요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104145/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-08 17:10:44",
+      "views": "0",
+      "content": "다른 필통들 먼저 주문하고,  고민하다 추가로 주문한 붓이 먼저 왔네요.   안 했으면 두고두고 생각날 뻔 했어요.   잘 쓰겠습니다.",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/08/143b200c76a666692282ba2780a81a53.jpg"
+      ],
+      "hashtags": [
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "추가 주문한 붓이 먼저 도착했고 잘 쓸 예정이며 구매 결정에 만족",
+            "hashtags": [
+              "#또사고싶다"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 구매 결정을 만족하며 긍정적으로 평가하고 있으나, 배송 순서에 대한 언급이 있어 신뢰도를 0.85로 조정",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104147": {
+      "id": "104147",
       "product_name": "껑",
       "product_link": "https://nonohumble.com/product/껑/352/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
-      "title": "챠콜그레이 62호--> 60호 교환 원합니다.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104041/page/1/",
+      "title": "한국인 머리 사이즈에 딱 맞는 모자입니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104147/page/1/",
       "has_photo": false,
-      "written_at": "2026-08-07 09:51:08",
+      "written_at": "2026-08-08 17:26:36",
       "views": "0",
-      "content": "색상 상관없이 60호 가지고 계신분들 중 62호 챠콜 그레이 필요하시면 교환 원합니다.\n기대하면서 기다렸는데 이렇게 모자가 클 줄은 몰랐습니다.\n62호 모자도 잘 없을 뿐더러 써도 머리가 지끈 거릴 정도로 작아서 항상 모자쓰기는 포기했었는데...\n이렇게 제 머리가 작았는지...새삼 놀라움을 느낍니다.  ㅠㅠ\n다른분들 말씀처럼 LIE에서도 대책을 마련해주면 좋겠네요.",
+      "content": "아주 맘에 듭니다\n진짜로 얼굴이 쏙 들어가서 얼굴이 작아보입니다",
       "images": [],
       "hashtags": [
         "#사이즈",
@@ -136243,14 +136130,8 @@
       "classification": {
         "segments": [
           {
-            "category": "양도/거래",
-            "summary": "62호 챠콜그레이를 60호로 교환 희망",
-            "hashtags": [],
-            "confidence": 0.95
-          },
-          {
-            "category": "부정",
-            "summary": "사이즈가 너무 커서 착용 불가능, 회사의 사이즈 기준 개선 필요",
+            "category": "긍정",
+            "summary": "한국인 머리 사이즈에 맞고 얼굴 라인을 잘 살려주는 모자",
             "hashtags": [
               "#사이즈",
               "#핏"
@@ -136259,7 +136140,7 @@
           }
         ],
         "needs_review": false,
-        "reasoning": "양도 의도와 사이즈 불만이 명확하게 분리됨. 사이즈 기준 문제로 인한 착용 불가 상태를 호소하고 있음",
+        "reasoning": "사이즈 적합성과 착용감에 만족하는 명확한 긍정 후기",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
@@ -136269,122 +136150,243 @@
       },
       "crawled_date": "2026-08-11"
     },
-    "104030": {
-      "id": "104030",
-      "product_name": "세종필통(1구)",
-      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
-      "title": "1구 세종필통...너무 좋네요...",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104030/page/1/",
-      "has_photo": true,
-      "written_at": "2026-08-07 08:51:03",
-      "views": "0",
-      "content": "첫 번째 사진처럼 첫 느낌은 왠 사각티슈? ^^;;;\n하지만 항아리라 해야 하나...물고기라고 해야 하나...제품명처럼 세종의 훈민정음을 찢어서 붙인 형태의 종이 상자가 저를 맞이하더군요...\n허허...하는 느낌으로 제품을 꺼내니...마로 만든 것처럼 느껴지는 파우치(?)가 나를 반겼고...\n여기에서 진짜 제품인 1구 세종필통을 맞이했습니다...^^\n생각보다 크기가 좀 되지만...\n후크의 문양도 너무 마음에 들었고...\n실제로 열고 당겼을 때 자석에서 떨어지는 것처럼 느껴지면서 앞으로 나오고...\n여기에 실제 만년필 등을 넣고 닫으니 저절로 닫히는 것처럼 제자리로 돌아가더군요...\n누누히 말하는 기능성이 충분하다고 느껴집니다...\n2구도 구입했지만...아직 받질 못했지만...\n어쨌든 너무 마음에 드네요...\n두고두고 사용할 것 같네요...^^\n좋은 제품 제작해 주셔서 감사합니다...^^",
-      "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/459836d5e50052d13e2bc178546a8424.JPEG",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/c5105d2c28d413b8cb929fd0f5b3617f.JPEG",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/07/ea5bceadb8f8acbb30c35fc230968812.JPEG"
-      ],
-      "hashtags": [
-        "#디자인",
-        "#사용성",
-        "#퀄리티",
-        "#또사고싶다"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "디자인과 기능성 모두 만족스러운 세종필통, 재구매 의향까지 있음",
-            "hashtags": [
-              "#디자인",
-              "#사용성",
-              "#퀄리티",
-              "#또사고싶다"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "패키징 디자인, 마감(자석 기능), 사용성 모두에 대해 긍정적으로 평가하며 2구 추가 구매했고 재구매 의향 표현",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#디자인",
-          "#사용성",
-          "#퀄리티",
-          "#또사고싶다"
-        ]
-      },
-      "crawled_date": "2026-08-11"
-    },
-    "104017": {
-      "id": "104017",
+    "104153": {
+      "id": "104153",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "좋네요!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104017/page/1/",
+      "title": "포장이ᆢ",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104153/page/1/",
       "has_photo": false,
-      "written_at": "2026-08-06 21:12:52",
+      "written_at": "2026-08-09 09:27:49",
       "views": "0",
-      "content": "아주 맘에 듭니다.",
+      "content": "선물드리고싶어 주문했는데\n포장이 조금 허접해보이네요ㅠㅠ",
       "images": [],
       "hashtags": [],
       "classification": {
         "segments": [
           {
-            "category": "중립/단순수령",
-            "summary": "상품 만족 표현",
+            "category": "배송관련불편",
+            "summary": "선물용 주문했는데 포장이 허접해 보임",
             "hashtags": [],
-            "confidence": 0.8
+            "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "이유 없는 짧은 호평으로 중립/단순수령 분류, 구체적 언급 부재",
-        "confidence": 0.8,
+        "reasoning": "포장 상태에 대한 불만으로 배송관련불편 카테고리에 해당",
+        "confidence": 0.9,
         "_v2": true,
         "hashtags": []
       },
       "crawled_date": "2026-08-11"
     },
-    "104398": {
-      "id": "104398",
+    "104162": {
+      "id": "104162",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "고급지고 필기감 좋네요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104398/page/1/",
-      "has_photo": true,
-      "written_at": "2026-08-11 13:08:41",
+      "title": "수려한 모습의 세종 만년필",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104162/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-09 19:45:34",
       "views": "0",
-      "content": "정말 잘 구매한거 같네요\n이번에 세종 18K도 오늘 구매했습니다",
-      "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/57973de4687dd5f50c6bc2a9b4b5a0e4.jpeg"
-      ],
+      "content": "이 만년필은 작품 그 자체라고 해도 과언이 아닙니다.\n상자를 열어본 순간, 아......\n너무 마음에 듭니다",
+      "images": [],
       "hashtags": [
-        "#퀄리티",
-        "#사용성"
+        "#디자인",
+        "#퀄리티"
       ],
       "classification": {
         "segments": [
           {
             "category": "긍정",
-            "summary": "필기감이 좋고 고급스러운 제품에 만족",
+            "summary": "만년필의 외형 디자인과 전체적인 완성도에 매우 만족",
             "hashtags": [
-              "#퀄리티",
-              "#사용성"
+              "#디자인",
+              "#퀄리티"
             ],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "필기감과 고급스러움을 언급한 명확한 긍정 리뷰, 반복 구매 의사 표현",
+        "reasoning": "상품 자체를 '작품', '마음에 든다'고 표현한 명확한 긍정평가",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104163": {
+      "id": "104163",
+      "product_name": "세종 펜레스트",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "이 펜레스트는 디자인 부터 세종만년필이 더 빛나게 하는 작품 입니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104163/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-09 19:47:26",
+      "views": "0",
+      "content": "작품 그 자체라고 해도 과언이 아닙니다.\n야무지게 구성된 여백의 미가 아름답네요\n너무 마음에 듭니다",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디자인과 구성이 뛰어나 작품 같은 수준의 펜레스트",
+            "hashtags": [
+              "#디자인",
+              "#구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인, 구성, 여백의 미 등 제품 자체에 대한 명확한 칭찬으로 긍정 범주 확실",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104174": {
+      "id": "104174",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "진짜 호텔이불 느낌입니다!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104174/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-10 09:54:59",
+      "views": "0",
+      "content": "정말 호텔 이불 같습니다.\n솜을 따로 사야하는 점이 불편해서\n솜도 같이 판매하셨으면 좋을 것 같아요",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#디자인",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "호텔 이불 같은 고급스러운 느낌으로 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "솜을 별도로 구매해야 하는 점이 불편함",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "호텔 이불 같은 느낌에 대한 명확한 칭찬과 솜 미포함에 대한 구성 불만이 분리 가능",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
           "#퀄리티",
-          "#사용성"
+          "#디자인",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104273": {
+      "id": "104273",
+      "product_name": "세종필통1구",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "세종필통!!! 생각했던 딱 그색상과 품질",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104273/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-10 21:08:17",
+      "views": "0",
+      "content": "큰아이 첫입사 선물로 주려고 세종 만년필과 필통을 주문했습니다.\n우선 필통은 합격!!!\n만년필은 올해말 배송 예정이더군요..그래도 괜찮습니다.\n아직 대학교 2학년이니 졸업하고 취업하려면 아직 시간이 있습니다.\n만년필도 기대됩니다!",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/10/e4abb7d182f53b51a6b0995054e119a8.jpg"
+      ],
+      "hashtags": [
+        "#색상",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "필통이 기대했던 색상과 품질로 만족, 만년필도 기대 중",
+            "hashtags": [
+              "#색상",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필통에 대한 명확한 만족 표현('합격', '생각했던 딱 그색상과 품질')이 있으며, 배송 지연도 긍정적으로 수용하고 있음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104378": {
+      "id": "104378",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "AS",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104378/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-11 11:26:25",
+      "views": "0",
+      "content": "모자 뒷 부분에 살짝 올이 풀렸는데 니트 재질이라 아무래도 앞으로 계속 풀릴 수도 있겠다 싶은데 AS 받을 수 있을까요…?❓",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/3af817fb40edfe78c79b403f9052a550.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/16b4104076bc3a4dd36d274958821b1d.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/29205e440172eea19cdc873a14f8a260.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "니트 모자 뒷부분 올 풀림으로 AS 문의",
+            "hashtags": [
+              "#재질",
+              "#내구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 불량(올 풀림)으로 인한 AS 요청 의도가 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#내구성"
         ]
       },
       "crawled_date": "2026-08-11"
@@ -136437,45 +136439,43 @@
       },
       "crawled_date": "2026-08-11"
     },
-    "104378": {
-      "id": "104378",
-      "product_name": "껑",
-      "product_link": "https://nonohumble.com/product/껑/352/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
-      "title": "AS",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104378/page/1/",
+    "104398": {
+      "id": "104398",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "고급지고 필기감 좋네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104398/page/1/",
       "has_photo": true,
-      "written_at": "2026-08-11 11:26:25",
+      "written_at": "2026-08-11 13:08:41",
       "views": "0",
-      "content": "모자 뒷 부분에 살짝 올이 풀렸는데 니트 재질이라 아무래도 앞으로 계속 풀릴 수도 있겠다 싶은데 AS 받을 수 있을까요…?❓",
+      "content": "정말 잘 구매한거 같네요\n이번에 세종 18K도 오늘 구매했습니다",
       "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/3af817fb40edfe78c79b403f9052a550.jpg",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/16b4104076bc3a4dd36d274958821b1d.jpg",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/29205e440172eea19cdc873a14f8a260.jpg"
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/57973de4687dd5f50c6bc2a9b4b5a0e4.jpeg"
       ],
       "hashtags": [
-        "#재질",
-        "#내구성"
+        "#퀄리티",
+        "#사용성"
       ],
       "classification": {
         "segments": [
           {
-            "category": "교환/반품",
-            "summary": "니트 모자 뒷부분 올 풀림으로 AS 문의",
+            "category": "긍정",
+            "summary": "필기감이 좋고 고급스러운 제품에 만족",
             "hashtags": [
-              "#재질",
-              "#내구성"
+              "#퀄리티",
+              "#사용성"
             ],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "상품의 불량(올 풀림)으로 인한 AS 요청 의도가 명확함",
+        "reasoning": "필기감과 고급스러움을 언급한 명확한 긍정 리뷰, 반복 구매 의사 표현",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
-          "#재질",
-          "#내구성"
+          "#퀄리티",
+          "#사용성"
         ]
       },
       "crawled_date": "2026-08-11"
