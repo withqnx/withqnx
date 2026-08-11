@@ -28,6 +28,9 @@ DELAY      = 0.5
 TEST_MODE  = False
 DEBUG_MODE = False
 
+# 분류 방식: "api"=Anthropic Haiku API 호출(기본) / "claude"·"none"=수집만(분류는 classify_pending.py가 Claude Code로 처리)
+CLASSIFY_MODE = os.environ.get("CLASSIFY_MODE", "api").strip().lower()
+
 _ARTICLE_ID_RE = re.compile(r"/article/[^/]+/\d+/(\d+)/?")
 
 HEADERS = {
@@ -229,8 +232,9 @@ class APIExhaustedError(Exception):
 
 
 def classify_review(title: str, content: str) -> dict:
-    """AI로 후기 분류. 실패 시 빈 dict 반환. 잔액 부족 시 APIExhaustedError 발생."""
-    if not AI_AVAILABLE or not _ai_client:
+    """AI로 후기 분류. 실패 시 빈 dict 반환. 잔액 부족 시 APIExhaustedError 발생.
+    CLASSIFY_MODE 가 'api'가 아니면 분류를 건너뛰고 미분류로 남긴다(classify_pending.py가 처리)."""
+    if CLASSIFY_MODE != "api" or not AI_AVAILABLE or not _ai_client:
         return {}
     text = f"제목: {title}\n본문: {content or '(본문 없음)'}"
     try:
