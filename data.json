@@ -136479,6 +136479,190 @@
         ]
       },
       "crawled_date": "2026-08-11"
+    },
+    "104496": {
+      "id": "104496",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "제품 문의",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104496/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-11 20:13:58",
+      "views": "0",
+      "content": "주문 제품은 블랙펄이 들어간 검은 진주 제품인데 검은색 같지가 않고 블랙펄 느낌이 거의 나지 않는 것 같습니다. 혹시 다른 제품으로 잘 못 배송된 것은 아닌지요?",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/f1f5d58f7b837cf4b05d2070373b6d61.jpeg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/545d5f31588d6df05712a7f7c526ff52.jpeg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/4bf46fd0c8c5ae227a3b6ef9c061aa75.jpeg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "블랙펄 검은 진주 제품인데 검은색 같지 않고 블랙펄 느낌이 거의 없다",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "배송관련불편",
+            "summary": "다른 제품으로 잘못 배송된 것이 아닌지 오배송 여부 문의",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "색상 불만(사유)과 오배송 의심 문의(행동)를 분리했고, 오배송은 확정이 아닌 추측성 문의라 신뢰도 낮음",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-12"
+    },
+    "104494": {
+      "id": "104494",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "저희 가족은 만족합니다 까이에 고마워요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104494/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-11 19:21:22",
+      "views": "0",
+      "content": "고급스럽고 바깥쪽 소재도 좋고 안쪽 쿨 섬유소재로 몸에 붙지 않고 색깔도 아주 좋아요. 옷이 고급스럽습니다\n공장장의 의도를 잘 표현해주신거 같아요, 입으면서 직접 느끼게되네요\n좋은 옷 기획하고 만들어주신 공장장과 까이에에 감사드립니다",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#색상",
+        "#퀄리티",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "겉감·안쪽 쿨섬유 소재와 색상 모두 좋고 옷이 고급스러우며 기획 의도가 잘 표현됐다",
+            "hashtags": [
+              "#재질",
+              "#색상",
+              "#퀄리티",
+              "#기획"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "소재·색상·고급스러움·기획 의도까지 구체적 사유가 명시된 순수 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#색상",
+          "#퀄리티",
+          "#기획"
+        ]
+      },
+      "crawled_date": "2026-08-12"
+    },
+    "104442": {
+      "id": "104442",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "좋아요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104442/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-11 16:13:03",
+      "views": "0",
+      "content": "엄마 호텔 이불 같어!!\n낡은 침대가 고급져 졌어요.\n사이즈도 딱 맞고 좋아요.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "호텔 이불 같은 고급스러움으로 낡은 침대가 살아났고 사이즈도 딱 맞다",
+            "hashtags": [
+              "#퀄리티",
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급스러운 품질감과 사이즈 적합성을 사유로 든 명확한 긍정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-12"
+    },
+    "104418": {
+      "id": "104418",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "정교한 디테일에 놀랐습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104418/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-11 14:26:18",
+      "views": "0",
+      "content": "잘 사용하고 있고 이쁘다고 막 쓰다보니 잉크가 바로 떨어져 리필 볼펜 있어야 해요",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/459702b9b1027dc1f5192ec3d49cf115.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티",
+        "#내구성",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "정교한 디테일에 놀랄 만큼 마감이 좋고 잘 사용 중",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "많이 쓰다 보니 잉크가 금방 떨어져 리필 볼펜이 별도로 필요하다",
+            "hashtags": [
+              "#내구성",
+              "#사용성"
+            ],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "마감 칭찬과 잉크 소모 관련 아쉬움을 분리했으나, 사용량이 많아서라는 단서가 있어 불만 강도가 애매함",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티",
+          "#내구성",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-12"
     }
   },
   "daily_logs": [
@@ -140153,9 +140337,19 @@
         "104398",
         "104174"
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "count": 4,
+      "new_ids": [
+        "104496",
+        "104494",
+        "104442",
+        "104418"
+      ]
     }
   ],
-  "last_updated": "2026-08-11 14:22:38",
+  "last_updated": "2026-08-12 08:00:42",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
