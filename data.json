@@ -136347,6 +136347,138 @@
         "hashtags": []
       },
       "crawled_date": "2026-08-11"
+    },
+    "104398": {
+      "id": "104398",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "고급지고 필기감 좋네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104398/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-11 13:08:41",
+      "views": "0",
+      "content": "정말 잘 구매한거 같네요\n이번에 세종 18K도 오늘 구매했습니다",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/57973de4687dd5f50c6bc2a9b4b5a0e4.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "필기감이 좋고 고급스러운 제품에 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감과 고급스러움을 언급한 명확한 긍정 리뷰, 반복 구매 의사 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104379": {
+      "id": "104379",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "마음에 꼭 드는 모자...좋네요..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104379/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-11 11:33:36",
+      "views": "0",
+      "content": "사이즈 이슈가 있는 듯 한데..\n저는 58호 신청해서 58호 착용했는데 완전 맞춤처럼 좋습니다.\n혹시 맞지 않는 분들은 서로 교환 하시면 좋을거 같아요..모자 진짜 좋습니다.\n겸손 당근 만들어야 하는거 아닌가 몰라요...아니 겸손 당근 어플 만들어 주세요 ㅎㅎㅎ",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사이즈가 완벽하게 맞아 매우 만족하며 모자 품질이 우수함",
+            "hashtags": [
+              "#사이즈",
+              "#핏",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "사이즈 맞지 않는 구매자들끼리 교환할 것을 제안",
+            "hashtags": [],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전체적으로 긍정 후기이며 사이즈 맞춤에 만족하고 있고, 다른 구매자들과의 교환을 제안하는 양도/거래 언급 포함",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-11"
+    },
+    "104378": {
+      "id": "104378",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "AS",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104378/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-11 11:26:25",
+      "views": "0",
+      "content": "모자 뒷 부분에 살짝 올이 풀렸는데 니트 재질이라 아무래도 앞으로 계속 풀릴 수도 있겠다 싶은데 AS 받을 수 있을까요…?❓",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/3af817fb40edfe78c79b403f9052a550.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/16b4104076bc3a4dd36d274958821b1d.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/29205e440172eea19cdc873a14f8a260.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "니트 모자 뒷부분 올 풀림으로 AS 문의",
+            "hashtags": [
+              "#재질",
+              "#내구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품의 불량(올 풀림)으로 인한 AS 요청 의도가 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-08-11"
     }
   },
   "daily_logs": [
@@ -140001,26 +140133,29 @@
     },
     {
       "date": "2026-08-11",
-      "count": 14,
+      "count": 17,
       "new_ids": [
-        "104273",
-        "104174",
-        "104163",
-        "104162",
+        "104379",
+        "104126",
         "104153",
+        "104030",
         "104147",
         "104145",
-        "104126",
-        "104124",
-        "104092",
         "104083",
+        "104163",
+        "104092",
         "104041",
-        "104030",
-        "104017"
+        "104162",
+        "104017",
+        "104273",
+        "104378",
+        "104124",
+        "104398",
+        "104174"
       ]
     }
   ],
-  "last_updated": "2026-08-11 07:54:49",
+  "last_updated": "2026-08-11 13:51:25",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
