@@ -136663,6 +136663,134 @@
         ]
       },
       "crawled_date": "2026-08-12"
+    },
+    "104680": {
+      "id": "104680",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "매트리스 커버 사이즈가 잘 맞지 않네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104680/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-12 21:14:09",
+      "views": "0",
+      "content": "작년 12월에 주문해서 기다린 끝에 해외 일정 중에 온다고 해서 돌아와서 체크했는데,\n매트리스 커버 사이즈가 잘 맞지 않네요\n오래 기다렸는데...\n그래서 보기에 좋지 않네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/2f9076c792a72d063edb2f233dc685e5.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/4f9312239b7bb07b79a17893d599e083.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/bf9530f869a5b1ad45bb32a3303a5385.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/d24c3fd64f5dba6977d6204a14b3a2e6.jpg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "오래 기다려 받은 매트리스 커버가 사이즈가 맞지 않아 보기에도 좋지 않음",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "긴 대기는 배경 서술이고 핵심 불만은 커버 사이즈 부적합 → 상품 자체 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-08-13"
+    },
+    "104672": {
+      "id": "104672",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "오래 기다린 나 칭찬합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104672/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-12 18:47:22",
+      "views": "0",
+      "content": "만년필 라미 사용합니다. 입문용.\n중간에 파카 구입했는데..펜을 잡았을 때 불편해서\n다시 라미로 사용하며\n만년필을 계속 고르고 있다가 세종을 만났습니다.\n원래 오랜 시간 검증된 브랜드 선호 하는 편인데\n한번 써보고 싶은 생각이 들어서 구매하게 되었습니다.\n받자마자 바로 설명서 읽고 테스트 해 보았습니다.\n잉크 채우고 제일 먼저 \"안녕하세요\" 쓰다가\n술술 다른 문장도 써내려갔습니다.\n어느덧 공책 반이 채워졌어요.\n펜을 안들고 영어필기체를 이어쓰는 느낌입니다.\n술술 잘 써지고 펜 잡았을 때와 글씨를 쓸 때 편합니다.\n무엇보다 간지나며 고급스럽고 펜촉 디자인도\n오랜시간 기다린 나 자신..칭찬합니다. ^^",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#디자인",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세종 만년필이 술술 잘 써지고 그립이 편하며 고급스러운 펜촉 디자인에 만족",
+            "hashtags": [
+              "#사용성",
+              "#디자인",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감·그립 편안함(사용성)과 고급스러움·펜촉 디자인 칭찬이 명확한 긍정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#디자인",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-13"
+    },
+    "104551": {
+      "id": "104551",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "해바라기 실 사용 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104551/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-12 10:01:20",
+      "views": "0",
+      "content": "참 오래 기다려서 받았는데...\n오~ 그 만족감은 대단히 쩔어요.\n오이.당근.무 채썰기를 해보면,\n얇게 썰어도 달라 붙지 않아서 손으로 떼내는 일이 없습니다.\n닭다리 칼집도 아주 잘 들어 가고,\n뭘 썰어도 잘되니\n내가 칼질을 잘하네 라는 생각이 듭니다.ㅎ\n아무튼 평생 쓸 칼이 생겨서 너무 기쁩니다.\n앞으로도 좋은 제품 많이 만들어 주세요.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "채썰기·칼집 모두 잘 들어가고 재료가 붙지 않아 평생 쓸 칼로 만족",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티",
+              "#내구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "절삭력·사용 편의 구체적 칭찬과 '평생 쓸 칼' 표현으로 사용성·퀄리티·내구성 긍정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-08-13"
     }
   },
   "daily_logs": [
@@ -140347,9 +140475,18 @@
         "104442",
         "104418"
       ]
+    },
+    {
+      "date": "2026-08-13",
+      "count": 3,
+      "new_ids": [
+        "104680",
+        "104672",
+        "104551"
+      ]
     }
   ],
-  "last_updated": "2026-08-12 08:00:42",
+  "last_updated": "2026-08-13 08:00:33",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
