@@ -1713,8 +1713,10 @@
     margin-top: 4px;
     align-self: flex-start;
   }
-  .admin-toggle:hover { color: var(--silver); border-color: var(--ash); }
   body.admin-mode .admin-toggle { color: var(--gold); border-color: rgba(204,145,102,.5); }
+  /* 관리자 표시 배지: 클릭 불가, 관리자 모드일 때만 노출 */
+  .admin-badge { display: none; cursor: default; }
+  body.admin-mode .admin-badge { display: inline-block; }
 
   /* ═══════════════════════════════════════════
      모바일 (640px 이하)
@@ -1865,7 +1867,8 @@
   <div class="header-meta">
     <div><span class="label">Last update</span> · <span class="value" id="last-updated">—</span></div>
     <div><span class="label">Total</span> · <span class="value" id="total-count">—</span></div>
-    <button class="admin-toggle" id="admin-toggle" onclick="toggleAdmin()">🔒 Admin</button>
+    <!-- 관리자 진입은 게이트에서 관리자 비번 입력으로 처리(별도 버튼 없음) -->
+    <span class="admin-toggle admin-badge" id="admin-toggle">🔓 Admin</span>
   </div>
 </header>
 
@@ -2071,8 +2074,11 @@ let hiddenPhotos = new Set();  // 사용자가 가린 후기 ID들
 let editingGroupId = null;
 let modalReviewId = null;
 
-const today = new Date().toISOString().slice(0, 10);
+// daily_logs 는 크롤러(한국)의 KST 날짜로 기록되므로, 비교도 KST 기준으로 한다.
+// (UTC 기준으로 하면 00:00~08:59 KST 구간에 전날로 밀려 오늘 후기가 안 뜬다)
+const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 document.getElementById("today-date").textContent = new Date().toLocaleDateString("ko-KR", {
+  timeZone: "Asia/Seoul",
   year: "numeric", month: "long", day: "numeric", weekday: "long"
 });
 
@@ -2332,12 +2338,18 @@ function getReviewHashtags(r) {
 }
 
 // ── 홈페이지 진입 게이트 ───────────────────────
+// 일반 비번 → 일반 모드 / 관리자 비번 → 관리자 모드로 바로 입장
 const GATE_PWD = '10ag';
 
 function checkGate() {
   const input = document.getElementById('gate-input');
-  if (input.value === GATE_PWD) {
+  if (input.value === GATE_PWD || input.value === ADMIN_PWD) {
+    const asAdmin = (input.value === ADMIN_PWD);
     sessionStorage.setItem('_nh_gate', '1');
+    if (asAdmin) sessionStorage.setItem('_nh_admin', '1');
+    else         sessionStorage.removeItem('_nh_admin');
+    IS_ADMIN = asAdmin;
+    updateAdminState();
     document.getElementById('site-gate').classList.add('hidden');
   } else {
     input.classList.add('error');
@@ -2360,29 +2372,6 @@ let IS_ADMIN = sessionStorage.getItem('_nh_admin') === '1';
 
 function updateAdminState() {
   document.body.classList.toggle('admin-mode', IS_ADMIN);
-  const btn = document.getElementById('admin-toggle');
-  if (btn) btn.textContent = IS_ADMIN ? '🔓 Admin' : '🔒 Admin';
-}
-
-function toggleAdmin() {
-  if (IS_ADMIN) {
-    IS_ADMIN = false;
-    sessionStorage.removeItem('_nh_admin');
-    // 관리자 전용 탭(Review)에 있으면 Today로 이동
-    const active = document.querySelector('.tab.active.admin-only');
-    if (active) document.querySelector('.tab[data-tab="overview"]')?.click();
-  } else {
-    const pwd = prompt('관리자 비밀번호:');
-    if (pwd === null) return;
-    if (pwd === ADMIN_PWD) {
-      IS_ADMIN = true;
-      sessionStorage.setItem('_nh_admin', '1');
-    } else {
-      alert('비밀번호가 틀렸습니다.');
-      return;
-    }
-  }
-  updateAdminState();
 }
 
 // ── Load ──
