@@ -136480,48 +136480,86 @@
       },
       "crawled_date": "2026-08-11"
     },
-    "104496": {
-      "id": "104496",
+    "104418": {
+      "id": "104418",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "제품 문의",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104496/page/1/",
+      "title": "정교한 디테일에 놀랐습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104418/page/1/",
       "has_photo": true,
-      "written_at": "2026-08-11 20:13:58",
+      "written_at": "2026-08-11 14:26:18",
       "views": "0",
-      "content": "주문 제품은 블랙펄이 들어간 검은 진주 제품인데 검은색 같지가 않고 블랙펄 느낌이 거의 나지 않는 것 같습니다. 혹시 다른 제품으로 잘 못 배송된 것은 아닌지요?",
+      "content": "잘 사용하고 있고 이쁘다고 막 쓰다보니 잉크가 바로 떨어져 리필 볼펜 있어야 해요",
       "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/f1f5d58f7b837cf4b05d2070373b6d61.jpeg",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/545d5f31588d6df05712a7f7c526ff52.jpeg",
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/4bf46fd0c8c5ae227a3b6ef9c061aa75.jpeg"
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/459702b9b1027dc1f5192ec3d49cf115.jpg"
       ],
       "hashtags": [
-        "#색상"
+        "#마감",
+        "#퀄리티"
       ],
       "classification": {
         "segments": [
           {
-            "category": "부정",
-            "summary": "블랙펄 검은 진주 제품인데 검은색 같지 않고 블랙펄 느낌이 거의 없다",
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "정교한 디테일에 놀랄 만큼 마감이 좋고 잘 사용 중",
             "hashtags": [
-              "#색상"
+              "#마감",
+              "#퀄리티"
             ],
-            "confidence": 0.9
-          },
-          {
-            "category": "배송관련불편",
-            "summary": "다른 제품으로 잘못 배송된 것이 아닌지 오배송 여부 문의",
-            "hashtags": [],
-            "confidence": 0.7
+            "confidence": 1
           }
         ],
-        "needs_review": true,
-        "reasoning": "색상 불만(사유)과 오배송 의심 문의(행동)를 분리했고, 오배송은 확정이 아닌 추측성 문의라 신뢰도 낮음",
-        "confidence": 0.7,
+        "needs_review": false,
+        "reasoning": "마감 칭찬과 잉크 소모 관련 아쉬움을 분리했으나, 사용량이 많아서라는 단서가 있어 불만 강도가 애매함",
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
-          "#색상"
+          "#마감",
+          "#퀄리티",
+          "#내구성",
+          "#사용성"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-08-12"
+    },
+    "104442": {
+      "id": "104442",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "좋아요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104442/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-11 16:13:03",
+      "views": "0",
+      "content": "엄마 호텔 이불 같어!!\n낡은 침대가 고급져 졌어요.\n사이즈도 딱 맞고 좋아요.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "호텔 이불 같은 고급스러움으로 낡은 침대가 살아났고 사이즈도 딱 맞다",
+            "hashtags": [
+              "#퀄리티",
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급스러운 품질감과 사이즈 적합성을 사유로 든 명확한 긍정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사이즈"
         ]
       },
       "crawled_date": "2026-08-12"
@@ -136571,139 +136609,86 @@
       },
       "crawled_date": "2026-08-12"
     },
-    "104442": {
-      "id": "104442",
-      "product_name": "100수",
-      "product_link": "https://nonohumble.com/product/100수/349/",
-      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
-      "title": "좋아요.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104442/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-11 16:13:03",
-      "views": "0",
-      "content": "엄마 호텔 이불 같어!!\n낡은 침대가 고급져 졌어요.\n사이즈도 딱 맞고 좋아요.",
-      "images": [],
-      "hashtags": [
-        "#퀄리티",
-        "#사이즈"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "호텔 이불 같은 고급스러움으로 낡은 침대가 살아났고 사이즈도 딱 맞다",
-            "hashtags": [
-              "#퀄리티",
-              "#사이즈"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "고급스러운 품질감과 사이즈 적합성을 사유로 든 명확한 긍정",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#사이즈"
-        ]
-      },
-      "crawled_date": "2026-08-12"
-    },
-    "104418": {
-      "id": "104418",
+    "104496": {
+      "id": "104496",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "정교한 디테일에 놀랐습니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104418/page/1/",
+      "title": "제품 문의",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104496/page/1/",
       "has_photo": true,
-      "written_at": "2026-08-11 14:26:18",
+      "written_at": "2026-08-11 20:13:58",
       "views": "0",
-      "content": "잘 사용하고 있고 이쁘다고 막 쓰다보니 잉크가 바로 떨어져 리필 볼펜 있어야 해요",
+      "content": "주문 제품은 블랙펄이 들어간 검은 진주 제품인데 검은색 같지가 않고 블랙펄 느낌이 거의 나지 않는 것 같습니다. 혹시 다른 제품으로 잘 못 배송된 것은 아닌지요?",
       "images": [
-        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/459702b9b1027dc1f5192ec3d49cf115.jpg"
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/f1f5d58f7b837cf4b05d2070373b6d61.jpeg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/545d5f31588d6df05712a7f7c526ff52.jpeg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/11/4bf46fd0c8c5ae227a3b6ef9c061aa75.jpeg"
       ],
       "hashtags": [
-        "#마감",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "sentiment": "negative",
+            "summary": "블랙펄 검은 진주 제품인데 검은색 같지 않고 블랙펄 느낌이 거의 없다",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상 불만(사유)과 오배송 의심 문의(행동)를 분리했고, 오배송은 확정이 아닌 추측성 문의라 신뢰도 낮음",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-08-12"
+    },
+    "104551": {
+      "id": "104551",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "해바라기 실 사용 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104551/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-12 10:01:20",
+      "views": "0",
+      "content": "참 오래 기다려서 받았는데...\n오~ 그 만족감은 대단히 쩔어요.\n오이.당근.무 채썰기를 해보면,\n얇게 썰어도 달라 붙지 않아서 손으로 떼내는 일이 없습니다.\n닭다리 칼집도 아주 잘 들어 가고,\n뭘 썰어도 잘되니\n내가 칼질을 잘하네 라는 생각이 듭니다.ㅎ\n아무튼 평생 쓸 칼이 생겨서 너무 기쁩니다.\n앞으로도 좋은 제품 많이 만들어 주세요.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
         "#퀄리티",
-        "#내구성",
-        "#사용성"
+        "#내구성"
       ],
       "classification": {
         "segments": [
           {
             "category": "긍정",
-            "summary": "정교한 디테일에 놀랄 만큼 마감이 좋고 잘 사용 중",
+            "summary": "채썰기·칼집 모두 잘 들어가고 재료가 붙지 않아 평생 쓸 칼로 만족",
             "hashtags": [
-              "#마감",
-              "#퀄리티"
-            ],
-            "confidence": 0.9
-          },
-          {
-            "category": "부정",
-            "summary": "많이 쓰다 보니 잉크가 금방 떨어져 리필 볼펜이 별도로 필요하다",
-            "hashtags": [
-              "#내구성",
-              "#사용성"
-            ],
-            "confidence": 0.7
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "마감 칭찬과 잉크 소모 관련 아쉬움을 분리했으나, 사용량이 많아서라는 단서가 있어 불만 강도가 애매함",
-        "confidence": 0.7,
-        "_v2": true,
-        "hashtags": [
-          "#마감",
-          "#퀄리티",
-          "#내구성",
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-08-12"
-    },
-    "104680": {
-      "id": "104680",
-      "product_name": "100수",
-      "product_link": "https://nonohumble.com/product/100수/349/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
-      "title": "매트리스 커버 사이즈가 잘 맞지 않네요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104680/page/1/",
-      "has_photo": true,
-      "written_at": "2026-08-12 21:14:09",
-      "views": "0",
-      "content": "작년 12월에 주문해서 기다린 끝에 해외 일정 중에 온다고 해서 돌아와서 체크했는데,\n매트리스 커버 사이즈가 잘 맞지 않네요\n오래 기다렸는데...\n그래서 보기에 좋지 않네요",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/08/12/2f9076c792a72d063edb2f233dc685e5.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/08/12/4f9312239b7bb07b79a17893d599e083.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/08/12/bf9530f869a5b1ad45bb32a3303a5385.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/08/12/d24c3fd64f5dba6977d6204a14b3a2e6.jpg"
-      ],
-      "hashtags": [
-        "#사이즈",
-        "#핏"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "부정",
-            "summary": "오래 기다려 받은 매트리스 커버가 사이즈가 맞지 않아 보기에도 좋지 않음",
-            "hashtags": [
-              "#사이즈",
-              "#핏"
+              "#사용성",
+              "#퀄리티",
+              "#내구성"
             ],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "긴 대기는 배경 서술이고 핵심 불만은 커버 사이즈 부적합 → 상품 자체 불만",
+        "reasoning": "절삭력·사용 편의 구체적 칭찬과 '평생 쓸 칼' 표현으로 사용성·퀄리티·내구성 긍정",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
-          "#사이즈",
-          "#핏"
+          "#사용성",
+          "#퀄리티",
+          "#내구성"
         ]
       },
       "crawled_date": "2026-08-13"
@@ -136750,44 +136735,46 @@
       },
       "crawled_date": "2026-08-13"
     },
-    "104551": {
-      "id": "104551",
-      "product_name": "해바라기",
-      "product_link": "https://nonohumble.com/product/해바라기/302/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
-      "title": "해바라기 실 사용 후기",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104551/page/1/",
-      "has_photo": false,
-      "written_at": "2026-08-12 10:01:20",
+    "104680": {
+      "id": "104680",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "매트리스 커버 사이즈가 잘 맞지 않네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104680/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-12 21:14:09",
       "views": "0",
-      "content": "참 오래 기다려서 받았는데...\n오~ 그 만족감은 대단히 쩔어요.\n오이.당근.무 채썰기를 해보면,\n얇게 썰어도 달라 붙지 않아서 손으로 떼내는 일이 없습니다.\n닭다리 칼집도 아주 잘 들어 가고,\n뭘 썰어도 잘되니\n내가 칼질을 잘하네 라는 생각이 듭니다.ㅎ\n아무튼 평생 쓸 칼이 생겨서 너무 기쁩니다.\n앞으로도 좋은 제품 많이 만들어 주세요.",
-      "images": [],
+      "content": "작년 12월에 주문해서 기다린 끝에 해외 일정 중에 온다고 해서 돌아와서 체크했는데,\n매트리스 커버 사이즈가 잘 맞지 않네요\n오래 기다렸는데...\n그래서 보기에 좋지 않네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/2f9076c792a72d063edb2f233dc685e5.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/4f9312239b7bb07b79a17893d599e083.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/bf9530f869a5b1ad45bb32a3303a5385.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/12/d24c3fd64f5dba6977d6204a14b3a2e6.jpg"
+      ],
       "hashtags": [
-        "#사용성",
-        "#퀄리티",
-        "#내구성"
+        "#사이즈",
+        "#핏"
       ],
       "classification": {
         "segments": [
           {
-            "category": "긍정",
-            "summary": "채썰기·칼집 모두 잘 들어가고 재료가 붙지 않아 평생 쓸 칼로 만족",
+            "category": "부정",
+            "summary": "오래 기다려 받은 매트리스 커버가 사이즈가 맞지 않아 보기에도 좋지 않음",
             "hashtags": [
-              "#사용성",
-              "#퀄리티",
-              "#내구성"
+              "#사이즈",
+              "#핏"
             ],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "절삭력·사용 편의 구체적 칭찬과 '평생 쓸 칼' 표현으로 사용성·퀄리티·내구성 긍정",
+        "reasoning": "긴 대기는 배경 서술이고 핵심 불만은 커버 사이즈 부적합 → 상품 자체 불만",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
-          "#사용성",
-          "#퀄리티",
-          "#내구성"
+          "#사이즈",
+          "#핏"
         ]
       },
       "crawled_date": "2026-08-13"
