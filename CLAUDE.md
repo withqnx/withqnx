@@ -21,6 +21,20 @@ launchd `com.nonohumble.crawl`(`~/Library/LaunchAgents/com.nonohumble.crawl.plis
 - 즉시 1회 실행: `launchctl start com.nonohumble.crawl`
 - ⚠️ **8시에 Mac이 꺼져있거나 잠들어 있으면 그 시각엔 못 돌고, 깨어난 직후 1회 실행**된다(launchd 동작). 정각 보장이 필요하면 `pmset repeat wake` 로 자동 기상 설정 필요(관리자 권한 — 사용자가 직접 실행).
 
+## 대시보드 진입 (2026-08-13~)
+게이트 비밀번호 하나로 권한이 갈린다. **별도 관리자 버튼 없음.**
+- 일반 비번 → 일반 모드 / 관리자 비번 → 관리자 모드(Publish·Review 탭 노출, 우상단 🔓 Admin 배지)
+- 관리자 해제는 탭/브라우저 닫기(sessionStorage 기준).
+
+## ⚠️ git push 인증 — 이 저장소는 withqnx 고정
+Mac에 GitHub 계정이 2개(`withqnx`, `10MH`) 로그인돼 있어, **gh 활성 계정이 `10MH`로 바뀌면 push가 403**으로 실패한다(팀 브레인 `10MH/tenmilhee-brain` 작업 후 발생).
+→ 이 저장소 `.git/config`에 **withqnx 자격증명을 고정**해둠(전역 설정·다른 세션에 영향 없음, 토큰은 파일에 저장 안 하고 gh 키체인에서 조회):
+```bash
+git config --local --replace-all credential.helper ""
+git config --local --add credential.helper '!f() { echo username=withqnx; echo "password=$(gh auth token --user withqnx)"; }; f'
+```
+push 403이 다시 나면 위 설정이 살아있는지 `git config --local --get-all credential.helper`로 확인.
+
 ## 분류 방식 — Claude Code(구독) 사용 (2026-08-11~)
 후기 분류는 **Anthropic API 키 대신 Claude Code(`claude -p` 헤드리스, 구독)** 로 처리한다.
 - `crawl.py` 는 `CLASSIFY_MODE=claude` 이면 **수집만** 하고 분류는 건너뜀(미분류로 저장).
