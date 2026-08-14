@@ -136985,6 +136985,104 @@
         ]
       },
       "crawled_date": "2026-08-14"
+    },
+    "104995": {
+      "id": "104995",
+      "product_name": "틈-클래식",
+      "product_link": "https://nonohumble.com/product/틈-클래식/385/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/161915c3f090c3aa17f05e8d229e0e81.png",
+      "title": "좋습니다:)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104995/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-14 16:12:40",
+      "views": "0",
+      "content": "255 / 정사이즈 인데 약간 큰거 같은 느낌도 있긴 한데 크게 불편하지는 않습니다.\n확실히 가죽이라서 여름에 신기에는 좀 덥네요 ㅎ\n반대로 겨울에는 따뜻할거 같아서 좋을거 같네요 ^^\n운전할때는 운동화보다는 편한데 까데기 할때는 좀 불편할거 같아요 ㅎ\n그래도 간지 하나는 죽입니다^^!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/14/6c867113b737addba5e111406a6c6808.jpeg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#디자인",
+        "#사용성",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "가죽 소재 간지가 좋고 운전 시 편안함",
+            "hashtags": [
+              "#재질",
+              "#디자인",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "정사이즈지만 약간 크고 여름엔 더우며 작업 시 불편",
+            "hashtags": [
+              "#사이즈",
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가죽 간지·운전 편함은 칭찬이고, 약간 큰 사이즈·여름 더위·까데기 불편은 상품 자체 불만이라 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#디자인",
+          "#사용성",
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-15"
+    },
+    "104980": {
+      "id": "104980",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 만년필 (순은)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/104980/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-14 15:35:35",
+      "views": "0",
+      "content": "디테일이 알흠답네요\n금촉도 기대되요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/14/cd91c60ba27df0cd36ea6ff9703078ba.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/14/981362e3f81dfb8300fda82c0959cb3c.jpeg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디테일이 아름답고 금촉도 기대됨",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디테일 칭찬으로 마감·퀄리티 만족을 표현한 긍정 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-15"
     }
   },
   "daily_logs": [
@@ -140689,9 +140787,17 @@
         "104797",
         "104749"
       ]
+    },
+    {
+      "date": "2026-08-15",
+      "count": 2,
+      "new_ids": [
+        "104995",
+        "104980"
+      ]
     }
   ],
-  "last_updated": "2026-08-14 08:00:38",
+  "last_updated": "2026-08-15 08:00:16",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
