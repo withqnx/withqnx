@@ -137083,6 +137083,91 @@
         ]
       },
       "crawled_date": "2026-08-15"
+    },
+    "105043": {
+      "id": "105043",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "디자인 진짜 예쁩니다!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105043/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-15 13:47:41",
+      "views": "0",
+      "content": "그립감 좋고 디자인, 연두 컬러 너무 좋아요!\n근데 필기감을 너무 기대한건지 좀 긁히는 느낌이;;\n제것만 그런가요? 제가 아무 공책이나 종이에 쓰긴하는데 영어를 써도 한글을 써도ㅠㅠ 그래도 너무 예뻐서 맨날 쓸거 같아요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/15/9c162983662db4723d42d57e3d608018.jpeg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#색상",
+        "#사용성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "그립감 좋고 연두 컬러·디자인 만족",
+            "hashtags": [
+              "#디자인",
+              "#색상",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "필기감이 기대보다 긁히는 느낌",
+            "hashtags": [
+              "#퀄리티",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인·컬러·그립감 칭찬과 필기감 불만이 함께 있어 긍정/부정 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#색상",
+          "#사용성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-16"
+    },
+    "105035": {
+      "id": "105035",
+      "product_name": "틈-클래식",
+      "product_link": "https://nonohumble.com/product/틈-클래식/385/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/161915c3f090c3aa17f05e8d229e0e81.png",
+      "title": "음..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105035/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-15 10:56:26",
+      "views": "0",
+      "content": "음........",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "내용 없는 단순 후기",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문이 '음........' 뿐이라 판단 근거 없는 중립 처리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-16"
     }
   },
   "daily_logs": [
@@ -140795,9 +140880,17 @@
         "104995",
         "104980"
       ]
+    },
+    {
+      "date": "2026-08-16",
+      "count": 2,
+      "new_ids": [
+        "105043",
+        "105035"
+      ]
     }
   ],
-  "last_updated": "2026-08-15 08:00:16",
+  "last_updated": "2026-08-16 08:00:16",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
