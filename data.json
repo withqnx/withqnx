@@ -137452,6 +137452,100 @@
         ]
       },
       "crawled_date": "2026-08-17"
+    },
+    "105109": {
+      "id": "105109",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "최고로 만족합니다. 하나만 구매해서 후회중입니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105109/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-17 13:13:52",
+      "views": "0",
+      "content": "색상은 화면상으로 본 것과 동일합니다.\n바느질 무척 꼼꼼하게 잘 되었습니다. 실밥 남은거 좀 있었지만 세탁하고 털어버리니 다 제거되었습니다.\n세탁은 평소 하던대로 막 돌렸고(귀찮은 거 싫어해서 ^^;;;) 건조기 자동코스로  돌렸습니다.\n터진 곳 없고 줄어듬 없습니다. 대만족입니다.\n드디어 하이라이트!\n감촉이 최고입니다.\n겸손몰에서 물건 구입하고 후기 처음 남기는 이유가 이겁니다.\n감촉!  하늘 위 구름에 감싸인 듯한 예술적 감촉!\n나름 침구 좋은 거(크리스피바바 사용중입니다.) 쓴다고 생각했는데 오산이었습니다.\n한번 더 재판매 부탁드립니다.\n이번에는 바닥 생활용 요와 차렵으로 부탁드립니다.\n좋은 상품 기획해 주셔서 감사합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/17/6a8acb424aa9b464dff441429907e0d1.jpg"
+      ],
+      "hashtags": [
+        "#색상",
+        "#마감",
+        "#재질",
+        "#내구성",
+        "#또사고싶다",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색상 일치·바느질 마감 우수, 세탁/건조기 후에도 이상 없고 감촉이 최고라며 재판매(요·차렵) 요청",
+            "hashtags": [
+              "#색상",
+              "#마감",
+              "#재질",
+              "#내구성",
+              "#또사고싶다",
+              "#기획"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체에 대한 구체적 만족(색상·마감·재질·내구성)과 재구매/재판매 희망이 명확한 순수 긍정 단일 후기.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#마감",
+          "#재질",
+          "#내구성",
+          "#또사고싶다",
+          "#기획"
+        ]
+      },
+      "crawled_date": "2026-08-18"
+    },
+    "105108": {
+      "id": "105108",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "마음에 들어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105108/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-17 12:41:31",
+      "views": "0",
+      "content": "세종의 쉼이 편안해졌습니다.\n군더더기 없이 깔끔하고 실용적입니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/17/1435089820f61295df2e7abb25368b2b.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "군더더기 없이 깔끔하고 실용적이어서 쉼이 편안해졌다는 만족",
+            "hashtags": [
+              "#디자인",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "짧지만 '깔끔함(디자인)'과 '실용적·편안함(사용성)'이라는 구체 사유가 있어 중립/단순수령이 아닌 긍정.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-18"
     }
   },
   "daily_logs": [
@@ -141184,9 +141278,17 @@
         "105073",
         "105071"
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "count": 2,
+      "new_ids": [
+        "105109",
+        "105108"
+      ]
     }
   ],
-  "last_updated": "2026-08-17 08:00:31",
+  "last_updated": "2026-08-18 08:00:30",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
