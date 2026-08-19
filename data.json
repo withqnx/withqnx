@@ -137838,6 +137838,143 @@
         ]
       },
       "crawled_date": "2026-08-19"
+    },
+    "105546": {
+      "id": "105546",
+      "product_name": "틈-클래식",
+      "product_link": "https://nonohumble.com/product/틈-클래식/385/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/161915c3f090c3aa17f05e8d229e0e81.png",
+      "title": "와 겁나 맘에드네",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105546/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-20 00:55:12",
+      "views": "0",
+      "content": "정말 사길 잘했습니다. 클래식, 검정을 샀는데 제가 발등이 비정상적으로 높아 발등쪽이 걸리는거 빼고는\n우선 회사에서 신기 완벽합니다. 쓰레바인데 앞에서 보면 정장구두 ㅋㅋ 개꿀입니다. 회사에서 신고 다닙니다. 2개 사놓을걸그랬어요.\n진짜 하나 더 사고싶습니다. 연락주세요",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#사용성",
+        "#또사고싶다",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "쓰레바인데 정장구두처럼 보여 회사에서 신기 완벽, 하나 더 사고 싶음",
+            "hashtags": [
+              "#디자인",
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "발등이 높아 발등 부분이 걸림",
+            "hashtags": [
+              "#핏"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반적 만족·재구매 의사와 발등 걸림 불편을 각각 분리.",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#사용성",
+          "#또사고싶다",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-08-20"
+    },
+    "105456": {
+      "id": "105456",
+      "product_name": "틈-클래식",
+      "product_link": "https://nonohumble.com/product/틈-클래식/385/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/161915c3f090c3aa17f05e8d229e0e81.png",
+      "title": "265랑 교환하실 분~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105456/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-19 13:56:35",
+      "views": "0",
+      "content": "틈 클래식 딥그린 265 사이즈입니다\n260이나 255로 교환 원합니다\n가능하신 분 연락 주세요^^\n01020350886",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "클래식 딥그린 265를 260/255와 교환할 구매자 구함",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "회사가 아닌 구매자끼리의 사이즈 교환 요청이므로 양도/거래.",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-20"
+    },
+    "105448": {
+      "id": "105448",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "일년하고도 한달 열흘걸려서 받았네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105448/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-19 12:26:45",
+      "views": "0",
+      "content": "구매내역을 보니 2025년 7월 9일 주문했었네요. 어제 배송 받았으니 일년하고도 한달 열흘 걸렸습니다.\n아직 사용전입니다만 품질은 의심의 여지가 없을것 같고 배송비 정도만 부담하는 연마 서비스도 이용할수 있어서 아마 평생 사용하지 않을까 싶습니다.\n감사합니다. 수고하세요~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/19/42fb7aad636ee86d1b8dd37e671ecfb6.png",
+        "https://nonohumble.com/file_data/nohumble/2026/08/19/3ae9695ddce797aeaf960638b1f01740.png",
+        "https://nonohumble.com/file_data/nohumble/2026/08/19/99c83198ded0ee88f2056b4c26f885fd.png"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "주문 후 1년 1개월 10일 만에 배송 받음",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "품질 신뢰, 연마 서비스 덕에 평생 쓸 것 같다",
+            "hashtags": [
+              "#퀄리티",
+              "#내구성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "초장기 배송 지연 언급과 품질·연마서비스 호평을 분리, 다만 아직 미사용이라 긍정 confidence 0.8.",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-08-20"
     }
   },
   "daily_logs": [
@@ -141586,9 +141723,18 @@
         "105109",
         "105108"
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "count": 3,
+      "new_ids": [
+        "105546",
+        "105456",
+        "105448"
+      ]
     }
   ],
-  "last_updated": "2026-08-19 08:01:04",
+  "last_updated": "2026-08-20 08:00:34",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
