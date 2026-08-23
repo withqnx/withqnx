@@ -24,6 +24,9 @@ CONTENT_MAX = 800                                                 # 후기 본�
 CLAUDE_MODEL = os.environ.get("CLASSIFY_CLAUDE_MODEL", "").strip()  # 비우면 Claude Code 기본 모델
 DRY_RUN = "--dry-run" in sys.argv
 
+# 분류 가이드 v2 의 6개 카테고리. 이 외 값이 나오면 통계가 오염되므로 검토 큐로 보낸다.
+VALID_CATEGORIES = {"긍정", "부정", "중립/단순수령", "양도/거래", "교환/반품", "배송관련불편"}
+
 
 def find_claude() -> str:
     return shutil.which("claude") or os.path.expanduser("~/.local/bin/claude")
@@ -53,13 +56,28 @@ def build_prompt(batch: list) -> str:
     return "\n".join(lines)
 
 
+def claude_env() -> dict:
+    """Claude Code 가 '구독'으로 인증되도록 API 키 계열 변수를 제거한 환경을 만든다.
+    ANTHROPIC_API_KEY 가 남아 있으면 Claude Code 가 그 키(종량 과금)를 우선 사용하고,
+    잔액이 없으면 'Credit balance is too low' 로 실패한다. (auto_crawl.sh 가 .env 를 export 하므로 필수)"""
+    env = os.environ.copy()
+    for k in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_BASE_URL"):
+        env.pop(k, None)
+    return env
+
+
 def run_claude(prompt: str) -> str:
     cmd = [find_claude(), "-p", prompt, "--output-format", "text"]
     if CLAUDE_MODEL:
         cmd += ["--model", CLAUDE_MODEL]
-    res = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+    res = subprocess.run(cmd, capture_output=True, text=True, timeout=600, env=claude_env())
     if res.returncode != 0:
-        raise RuntimeError(f"claude -p 실패(rc={res.returncode}): {res.stderr.strip()[:300]}")
+        # stdout 에도 실패 이유가 담긴다("Not logged in" 등) → 둘 다 남긴다
+        raise RuntimeError(
+            f"claude -p 실패(rc={res.returncode})\n"
+            f"  stdout: {res.stdout.strip()[:400]}\n"
+            f"  stderr: {res.stderr.strip()[:400]}"
+        )
     return res.stdout
 
 
@@ -82,6 +100,11 @@ def postprocess(clf: dict) -> dict:
         clf["confidence"] = min_conf
         clf["needs_review"] = min_conf < 0.8
     clf["_v2"] = True
+    # 규격 외 카테고리(모델이 해시태그를 카테고리 칸에 넣는 등)는 사람이 보게 검토 큐로
+    off_spec = [s.get("category") for s in segs if s.get("category") not in VALID_CATEGORIES]
+    if off_spec:
+        clf["needs_review"] = True
+        clf["off_spec_categories"] = off_spec
     all_tags = []
     for s in segs:
         for t in s.get("hashtags", []):

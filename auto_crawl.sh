@@ -31,8 +31,12 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') 크롤링(수집) 시작 ==="
 python3 crawl.py
 
 # 2) 미분류 후기를 Claude Code(구독)로 분류
+#    실패하면(인증·잔액·JSON 오류) 후기가 미분류로 남아 Review 큐에 쌓이므로 반드시 알린다.
 echo "=== Claude Code 분류 시작 ==="
-python3 classify_pending.py
+if ! python3 classify_pending.py; then
+  echo "❌ 분류 실패 — 후기가 미분류(검토 큐)로 남았습니다. 로그: /tmp/nonohumble_crawl_error.log"
+  osascript -e 'display notification "겸손몰 후기 분류 실패 — 미분류로 쌓임. 로그 확인 필요" with title "NONOHUMBLE"' 2>/dev/null
+fi
 
 # 3) 실질 변경(후기 추가/분류 변경)이 있을 때만 커밋 + push(최대 3회 재시도)
 #    last_updated 타임스탬프만 바뀐 경우는 커밋하지 않는다(매일 빈 커밋·불필요 배포 방지)

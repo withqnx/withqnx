@@ -138746,51 +138746,45 @@
         "https://nonohumble.com/file_data/nohumble/2026/08/22/dc922a36918f18ddbc9f085fcfaca712.jpg"
       ],
       "hashtags": [
-        "#사용성",
         "#퀄리티",
-        "#핏"
+        "#사용성",
+        "#디자인"
       ],
       "classification": {
         "segments": [
           {
-            "category": "긍타",
-            "summary": "",
+            "category": "배송관련불편",
+            "summary": "배송이 오래 걸려 잊을 때쯤 도착한다고 농담조로 언급",
             "hashtags": [],
-            "confidence": 0.0
+            "confidence": 0.7
           },
           {
             "category": "긍정",
-            "summary": "베개 만년필의 필기감이 최고이며 세종은 적당한 부드러움으로 고급진 느낌",
+            "summary": "종이 위를 미끄러지며 미세한 강약에 잉크량이 반응하는 필기감이 최고",
             "hashtags": [
-              "#사용성",
-              "#퀄리티"
+              "#퀄리티",
+              "#사용성"
             ],
             "confidence": 0.9
           },
           {
             "category": "부정",
-            "summary": "베개 만년필 그립부가 사각이라 그립감이 취약하고 펜촉 방향 조절이 불가",
+            "summary": "잡는 부분이 사각이라 그립감이 취약하고 펜촉 방향 조절이 안 됨",
             "hashtags": [
               "#사용성",
-              "#핏"
+              "#디자인"
             ],
-            "confidence": 0.8
-          },
-          {
-            "category": "배송관련불편",
-            "summary": "배송이 매우 늦어 잊고 있을 때 도착한다고 농담 섞어 언급",
-            "hashtags": [],
-            "confidence": 0.7
+            "confidence": 0.9
           }
         ],
         "needs_review": true,
-        "reasoning": "필기감 호평·그립감 불만·배송 지연 언급이 섞인 장문, 배송 언급은 유머 톤이라 신뢰도 낮음",
-        "confidence": 0.0,
+        "reasoning": "필기감 호평과 사각 그립·펜촉 방향 불만이 함께 있고, 배송 지연 언급은 농담조라 confidence 낮게 분리",
+        "confidence": 0.7,
         "_v2": true,
         "hashtags": [
-          "#사용성",
           "#퀄리티",
-          "#핏"
+          "#사용성",
+          "#디자인"
         ]
       },
       "crawled_date": "2026-08-23"
@@ -142824,7 +142818,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-24 08:10:03",
+  "last_updated": "2026-08-24 08:11:50",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
