@@ -138510,10 +138510,33 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/08/22/831e0499688b5c9669c0eea52f959853.jpg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#구성"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "1년 기다려 받은 만년필 외관에 매우 만족",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "만년필용 잉크가 별도 판매되지 않아 사용할 수 없어 아쉬움",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "외관 호평은 긍정, 잉크 미판매로 사용 못하는 구성 아쉬움은 부정으로 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
       },
       "crawled_date": "2026-08-23"
     },
@@ -138531,8 +138554,19 @@
       "images": [],
       "hashtags": [],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "라이트그레이 56 사이즈 구매 희망 (구매자간 거래)",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "특정 사이즈를 판매할 사람을 찾는 구매자간 거래 글",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
       },
       "crawled_date": "2026-08-23"
     },
@@ -138550,10 +138584,30 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/08/22/6fbb284f517055b448fabbc59db22906.jpg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#사용성",
+        "#또사고싶다"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "9개월 기다린 세종 만년필의 필기 감촉에 만족, 추가 주문한 금촉도 기대",
+            "hashtags": [
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "감촉 호평과 추가 주문·기대 표현이 명확한 긍정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#또사고싶다"
+        ]
       },
       "crawled_date": "2026-08-23"
     },
@@ -138569,10 +138623,33 @@
       "views": "0",
       "content": "오늘 받았는데 싸이즈가 크네요\n58 호로 교환하고 싶어요\n60호 판매도 가능해요 010 5475 4333",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#사이즈"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "차콜그레이 60호가 사이즈가 커서 맞지 않음",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "58호와 교환 또는 60호 판매 희망, 연락처 공개",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사유(사이즈 큼)는 부정, 연락처 남긴 교환·판매 제안은 구매자간 거래로 분리 (회사 교환요청 여부 애매)",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
       },
       "crawled_date": "2026-08-23"
     },
@@ -138590,8 +138667,19 @@
       "images": [],
       "hashtags": [],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "블루브라운 62호를 60호 또는 58호와 교환할 구매자 찾음",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자끼리 사이즈 교환 상대를 찾는 거래 글, 불만 서술 없음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
       },
       "crawled_date": "2026-08-23"
     },
@@ -138609,10 +138697,37 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/08/22/f44b58d67cb71ab4f769e78a8f0436c5.jpeg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#퀄리티",
+        "#마감"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "제품이 아주 고급스럽다는 평",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "곤룡포 장식과 펜촉이 약간 어긋나게 조립됨",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급스러움 칭찬과 장식·펜촉 정렬 불량 지적이 함께 있어 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#마감"
+        ]
       },
       "crawled_date": "2026-08-23"
     },
@@ -138630,10 +138745,53 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/08/22/dc922a36918f18ddbc9f085fcfaca712.jpg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#핏"
+      ],
       "classification": {
+        "segments": [
+          {
+            "category": "긍타",
+            "summary": "",
+            "hashtags": [],
+            "confidence": 0.0
+          },
+          {
+            "category": "긍정",
+            "summary": "베개 만년필의 필기감이 최고이며 세종은 적당한 부드러움으로 고급진 느낌",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "베개 만년필 그립부가 사각이라 그립감이 취약하고 펜촉 방향 조절이 불가",
+            "hashtags": [
+              "#사용성",
+              "#핏"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "category": "배송관련불편",
+            "summary": "배송이 매우 늦어 잊고 있을 때 도착한다고 농담 섞어 언급",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
         "needs_review": true,
-        "_v2": true
+        "reasoning": "필기감 호평·그립감 불만·배송 지연 언급이 섞인 장문, 배송 언급은 유머 톤이라 신뢰도 낮음",
+        "confidence": 0.0,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#핏"
+        ]
       },
       "crawled_date": "2026-08-23"
     },
@@ -138649,10 +138807,48 @@
       "views": "0",
       "content": "모자 무게가 너무 무겁고 깊이는 낮아서 고개 숙이면 쏟아질 것만 같은 미성숙함\n앞전에 받은 쇠동글 쇠네모 썬글라스 만족도 120%이면 모자 만족도 20%  수건과 잠옷 만족도가 너무 낮아 그다음부터 주문을 못하다 겨우 만연필 주문했는데 뭐야 이번엔 금촉이잖아 이걸 또 저질러야 하나 마나 고민중~",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#무게감",
+        "#핏",
+        "#퀄리티"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "모자가 너무 무겁고 깊이가 낮아 고개 숙이면 벗겨질 것 같음",
+            "hashtags": [
+              "#무게감",
+              "#핏"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "이전에 받은 수건과 잠옷 만족도가 매우 낮았음",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "category": "긍정",
+            "summary": "앞서 받은 쇠동글·쇠네모 선글라스는 만족도 120%",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "모자 무게·깊이 불만이 핵심이며 타 품목 만족·불만이 함께 언급되어 다중 segment",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#핏",
+          "#퀄리티"
+        ]
       },
       "crawled_date": "2026-08-24"
     },
@@ -138670,8 +138866,19 @@
       "images": [],
       "hashtags": [],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "기다린 보람이 있고 훌륭하다는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 사유 없는 짧은 호평이라 중립/단순수령 단독 처리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
       },
       "crawled_date": "2026-08-24"
     },
@@ -138687,10 +138894,33 @@
       "views": "0",
       "content": "62호(차콜그레이)가 크네요. 58호 또는 60호로 교환하실분 찾습니다.\n010-2456-6635",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#사이즈"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "62호 차콜그레이가 사이즈가 큼",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "양도/거래",
+            "summary": "58호 또는 60호와 교환할 구매자를 연락처와 함께 찾음",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만(사유)과 구매자간 교환 요청(행동)을 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
       },
       "crawled_date": "2026-08-24"
     },
@@ -138709,10 +138939,44 @@
         "https://nonohumble.com/file_data/nohumble/2026/08/23/b5b3e84329208aa965e3fceb539d6836.jpeg",
         "https://nonohumble.com/file_data/nohumble/2026/08/23/e692c4a5636e550392c7458016e334ca.jpeg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#사용성",
+        "#디자인",
+        "#구성",
+        "#퀄리티"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세종 만년필의 필기감·디자인·집필감과 고급스러운 포장에 대만족",
+            "hashtags": [
+              "#사용성",
+              "#디자인",
+              "#구성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "잉크 배출량이 과하고 잉크병 잔량이 적으면 피스톤 충전이 안 되며 내부 잉크 잔량 확인이 불가",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 대만족이지만 잉크 배출·충전·잔량 확인 관련 사용성 불편을 구체적으로 지적해 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#디자인",
+          "#구성",
+          "#퀄리티"
+        ]
       },
       "crawled_date": "2026-08-24"
     },
@@ -138728,10 +138992,27 @@
       "views": "0",
       "content": "겸손 몰 첫 구매\n앞으로 출시 될 후속도 기대합니다\n여타 만연필 연관 상품도 빠른 출시 요청 해 봅니다",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#또사고싶다"
+      ],
       "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "겸손몰 첫 구매에 충분히 만족, 후속 제품과 만년필 관련 상품 출시 기대",
+            "hashtags": [
+              "#또사고싶다"
+            ],
+            "confidence": 0.7
+          }
+        ],
         "needs_review": true,
-        "_v2": true
+        "reasoning": "만족 사유는 없지만 후속 제품 기대·출시 요청으로 재구매 의향이 드러나 긍정 처리",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": [
+          "#또사고싶다"
+        ]
       },
       "crawled_date": "2026-08-24"
     }
@@ -142543,7 +142824,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-24 08:00:10",
+  "last_updated": "2026-08-24 08:10:03",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
