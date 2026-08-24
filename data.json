@@ -138993,19 +138993,437 @@
         "segments": [
           {
             "category": "긍정",
-            "summary": "겸손몰 첫 구매에 충분히 만족, 후속 제품과 만년필 관련 상품 출시 기대",
+            "summary": "겸손몰 첫 구매에 충분히 만족, 후속·연관 상품 출시 기대",
             "hashtags": [
               "#또사고싶다"
             ],
-            "confidence": 0.7
+            "confidence": 0.85
           }
         ],
-        "needs_review": true,
-        "reasoning": "만족 사유는 없지만 후속 제품 기대·출시 요청으로 재구매 의향이 드러나 긍정 처리",
-        "confidence": 0.7,
+        "needs_review": false,
+        "reasoning": "만족 표현과 후속 상품 구매 의향이 함께 드러남",
+        "confidence": 0.85,
         "_v2": true,
         "hashtags": [
           "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106076": {
+      "id": "106076",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "잘 받았습니다^-^",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106076/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 16:26:17",
+      "views": "0",
+      "content": "주문했던 모자 잘 받았습니다. 너무 기대가 컸는데 실제로도 저하고 잘 어울리는 것 같습니다.(자기만족)\n좋은 제품 정말 감사합니다.^-^",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "모자가 기대대로 본인과 잘 어울려 만족",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 알림에 그치지 않고 어울린다는 구체적 만족 사유가 있어 긍정",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106049": {
+      "id": "106049",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "겸손몰 &껑 제작 업체의 신뢰도 하락 문제가 심각합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106049/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 14:37:05",
+      "views": "0",
+      "content": "겸손몰에서 껑을 구매하신 분들중 대부분의 구매 후기가 사이즈에 대한 아쉬움을 토로하고 있습니다.\n\"아쉬움\" 이라는 최대한 점잖은 표현을 했지만 맘 같아서는 쌍욕을 박고 싶은 그런 심정으로 구매평을\n대두의 입장에서 모자를 한번 구매하기가 쉬운 선택은 아닌지라\n제품 설명만 믿고 껑을 구매한 소비자들은 사이즈 오류의 갭차이가 크다는  심각함을 겸손몰 판매자께서는\n알고 계신지 매우 궁금합니다.\n그저 원론적인 답변이나 무응답으로 일관하기에는 주문후 오랜시간 기다려온 구매자들을 무시하는 처사라 생각됩니다.\n공짜로 처리 해달라는 얘기는 하지 않겠습니다.\n그러나 수선이든 구매자들간의 맞교환이든 아니면 지역별로 수선할수 있는곳을 알려주시면 발품이라도 팔겠습니다.\n함께 해결할수 있도록 제발 조치를 취해주십시요.\n이런 글을 올리는것에 대한 울분과 부담감이 있지만\n신뢰도 하락은 다른 제품 판매에도 부정적인 영향이 있을까 매우 염려가 되어 평을 남깁니다.\n**** 껑 60호 _ 카키브라운 / 라이트 그레이 보유하고 있습니다.\n사이즈가 커서 저는 사용할 수 없을 것 같으니 필요하신 분 연락 주시면 나눔 하겠습니다.\n조용히 연락 주셔요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "제품 설명과 실제 사이즈 갭이 커 대두 구매자들이 착용 불가",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "수선·맞교환·수선처 안내 등 판매자의 조치를 요구",
+            "hashtags": [],
+            "confidence": 0.85
+          },
+          {
+            "category": "양도/거래",
+            "summary": "사이즈가 큰 껑 60호 2색을 필요한 사람에게 나눔",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만·회사 조치 요구·나눔 양도가 한 글에 섞인 다중 세그먼트 클레임",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106025": {
+      "id": "106025",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106025/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 12:43:28",
+      "views": "0",
+      "content": "엣지 있는 양발 눈 빠지게 기다려서 드디어 내손안에 받았습니다 넘 컬러풀하니 ㅇㅖ쁘네요. 얼른 신고 뽐내고 싶네요",
+      "images": [],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기다린 양말을 받아 컬러풀해서 만족",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "컬러풀하다는 색상 관련 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106024": {
+      "id": "106024",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106024/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 12:42:53",
+      "views": "0",
+      "content": "엣지 있는 양발 눈 빠지게 기다려서 드디어 내손안에 받았습니다 넘 컬러풀하니 ㅇㅖ쁘네요. 얼른 신고 뽐내고 싶네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/0fb617f8d0b3c6c382eae95ec42d1dfa.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/e6558e61a5b1afa24016a84d32c48543.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/51d6643f25524025eceb49d390c62254.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/fbafdc0d4c7754463759a536a2dd808a.jpg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기다린 양말을 받아 컬러풀해서 만족",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "컬러풀하다는 색상 관련 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106023": {
+      "id": "106023",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106023/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 12:41:54",
+      "views": "0",
+      "content": "엣지 있는 양발 눈 빠지게 기다려서 드디어 내손안에 받았습니다 넘 컬러풀하니 ㅇㅖ쁘네요. 얼른 신고 뽐내고 싶네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/fbe40857c02e893d83bd53e09115de5f.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/24a5cf04da5da5981dc9928a15f4eaa8.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/3147e8feca6ebff5103aa22641ee63f6.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/3504fd7405211bb6891f19485dfac539.jpg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기다린 양말을 받아 컬러풀해서 만족",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "컬러풀하다는 색상 관련 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106022": {
+      "id": "106022",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106022/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 12:41:23",
+      "views": "0",
+      "content": "엣지 있는 양발 눈 빠지게 기다려서 드디어 내손안에 받았습니다 넘 컬러풀하니 ㅇㅖ쁘네요. 얼른 신고 뽐내고 싶네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/1ae076e7e446a0e99ff9ba3958626e4c.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/06c0aa5d923b615d28def611f903a174.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/ebf56e3fdfdbaeaeb29cffe4e706cb8a.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/7bc0505ecd7261aa25e3e8420b8be38e.jpg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기다린 양말을 받아 컬러풀해서 만족",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "컬러풀하다는 색상 관련 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106021": {
+      "id": "106021",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106021/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 12:40:08",
+      "views": "0",
+      "content": "엣지 있는 양발 눈 빠지게 기다려서 드디어 내손안에 받았습니다 넘 컬러풀하니 ㅇㅖ쁘네요. 얼른 신고 뽐내고 싶네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/9a4a9444b70801290f9f44bcbd585db6.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/bc93a70ca64621e04d56049563a53736.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/33d2ce6448d6fd1d63466aa4d195d96b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/554867e4539ae833bd21721274117a3b.jpg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기다린 양말을 받아 컬러풀해서 만족",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "컬러풀하다는 색상 관련 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106013": {
+      "id": "106013",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": ",빠른배송 감사합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106013/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 12:02:11",
+      "views": "0",
+      "content": "역시 품질 넘 좋아요^^\n멋지고 좋은 제품 꾸준히 업데이트 부탁드립니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/6322d5db4999dc31dfecfeb235e4e0e8.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "품질이 매우 좋고 꾸준한 신제품 업데이트를 요청",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "품질 호평 중심이며 빠른 배송 언급은 태그 대상 아님",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "106009": {
+      "id": "106009",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "이뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106009/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 11:54:16",
+      "views": "0",
+      "content": "여름 덧버선 받았어요",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "여름 덧버선 수령, 예쁘다는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 알림과 이유 없는 짧은 호평뿐",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "105984": {
+      "id": "105984",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 도착",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105984/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 10:38:31",
+      "views": "0",
+      "content": "고급스럽고 너무좋네요",
+      "images": [],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "고급스럽고 좋다는 제품 만족",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급스럽다는 표현은 퀄리티 호평",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-24"
+    },
+    "105959": {
+      "id": "105959",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "구매후기...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/105959/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 08:24:03",
+      "views": "0",
+      "content": "사용하기에 너무 좋습니다. 잘 사용하겠습니다.^-^",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사용하기 좋아 만족하며 잘 쓰겠다는 후기",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용 편의성에 대한 호평",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
         ]
       },
       "crawled_date": "2026-08-24"
@@ -142808,17 +143226,28 @@
     },
     {
       "date": "2026-08-24",
-      "count": 5,
+      "count": 16,
       "new_ids": [
-        "105955",
+        "106009",
         "105952",
+        "106023",
+        "106025",
+        "105955",
+        "106021",
+        "106013",
+        "106076",
+        "105932",
+        "106022",
+        "105959",
+        "106024",
         "105948",
-        "105935",
-        "105932"
+        "105984",
+        "106049",
+        "105935"
       ]
     }
   ],
-  "last_updated": "2026-08-24 08:11:50",
+  "last_updated": "2026-08-24 17:45:53",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
