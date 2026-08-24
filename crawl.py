@@ -28,8 +28,9 @@ DELAY      = 0.5
 TEST_MODE  = False
 DEBUG_MODE = False
 
-# 분류 방식: "api"=Anthropic Haiku API 호출(기본) / "claude"·"none"=수집만(분류는 classify_pending.py가 Claude Code로 처리)
-CLASSIFY_MODE = os.environ.get("CLASSIFY_MODE", "api").strip().lower()
+# 분류 방식(기본 "claude"): "claude"·"none"=수집만 → 분류는 classify_pending.py 가 Claude Code(구독)로 처리.
+# "api"=Anthropic Haiku API 직접 호출(종량 과금). 명시적으로 CLASSIFY_MODE=api 를 줄 때만 쓴다.
+CLASSIFY_MODE = os.environ.get("CLASSIFY_MODE", "claude").strip().lower()
 
 _ARTICLE_ID_RE = re.compile(r"/article/[^/]+/\d+/(\d+)/?")
 
@@ -533,7 +534,11 @@ def main():
             item["crawled_date"] = today_str
 
             # AI 분류
-            if AI_AVAILABLE and not api_exhausted:
+            if CLASSIFY_MODE != "api":
+                # 수집만: 미분류로 저장해두고 classify_pending.py 가 Claude Code 로 분류한다
+                print(f"     ○ 수집만 (분류는 classify_pending.py → Claude Code)")
+                item["classification"] = {"needs_review": True, "_v2": True}
+            elif AI_AVAILABLE and not api_exhausted:
                 print(f"     🤖 분류 중...", end=" ", flush=True)
                 try:
                     clf = classify_review(item["title"], item["content"])

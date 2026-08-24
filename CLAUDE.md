@@ -35,11 +35,21 @@ git config --local --add credential.helper '!f() { echo username=withqnx; echo "
 ```
 push 403이 다시 나면 위 설정이 살아있는지 `git config --local --get-all credential.helper`로 확인.
 
-## 분류 방식 — Claude Code(구독) 사용 (2026-08-11~)
-후기 분류는 **Anthropic API 키 대신 Claude Code(`claude -p` 헤드리스, 구독)** 로 처리한다.
-- `crawl.py` 는 `CLASSIFY_MODE=claude` 이면 **수집만** 하고 분류는 건너뜀(미분류로 저장).
-- `classify_pending.py` 가 미분류 후기를 모아 `claude -p` 로 **배치 분류** → data.json 갱신.
-- 분류 기준(`CLASSIFY_SYSTEM`)은 crawl.py 단일 출처. `CLASSIFY_MODE` 미지정 시 기본값은 예전처럼 `api`.
+## 분류 방식 — Claude Code(구독) 전용 (2026-08-11~, 2026-08-24 확정)
+후기 분류는 **Anthropic API를 쓰지 않는다.** Claude Code(`claude -p` 헤드리스, 구독)로만 처리한다.
+- `crawl.py` 는 **기본값이 `CLASSIFY_MODE=claude`** → 수집만 하고 미분류로 저장.
+- `classify_pending.py` 가 미분류분을 `claude -p` 로 **배치 분류** → data.json 갱신.
+- 분류 기준(`CLASSIFY_SYSTEM`)은 crawl.py 단일 출처. 규격 외 카테고리는 자동으로 검토 큐로.
+- API를 쓰려면 **명시적으로** `CLASSIFY_MODE=api` (현재 API 잔액 0이므로 실패함).
+
+### ⚠️ ANTHROPIC_API_KEY 가 환경에 있으면 안 된다
+`ANTHROPIC_API_KEY` 가 남아 있으면 Claude Code 가 **구독 대신 그 키(종량 과금)** 를 우선 사용한다.
+2026-08-12 전환 후에도 이 때문에 계속 API로 과금되다가, **8/23 잔액 소진("Credit balance is too low")** 으로
+분류가 조용히 멈춰 후기 12건이 미분류로 쌓였다. 그래서 이중으로 막아둠:
+1. `auto_crawl.sh` 가 `.env` 를 source 한 뒤 `unset ANTHROPIC_API_KEY`
+2. `classify_pending.py` 의 `claude_env()` 가 서브프로세스 환경에서 `ANTHROPIC_*` 제거
+분류 실패 시 로그(`/tmp/nonohumble_crawl_error.log`) + macOS 알림이 뜬다.
+**진단 팁:** `claude -p` 는 실패 이유를 **stdout** 에 쓴다("Not logged in", "Credit balance is too low").
 
 ## 명령 모음
 ```bash

@@ -17,10 +17,15 @@ else
   source "$VENV/bin/activate"
 fi
 
-# .env (git push/gh 인증엔 불필요하나 유지)
+# .env (CF_* 등). git push/gh 인증엔 불필요하나 유지.
 set -a; [ -f .env ] && source .env; set +a
 
-# 분류를 Claude Code로: crawl.py는 수집만 하도록 지시
+# ⚠️ ANTHROPIC_API_KEY 는 환경에서 제거한다.
+#    남아 있으면 Claude Code 가 구독 대신 그 키(종량 과금)를 우선 사용하고,
+#    잔액이 없으면 "Credit balance is too low" 로 분류가 실패한다. (2026-08-23 실제 발생)
+unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN
+
+# 분류는 Claude Code(구독): crawl.py 는 수집만
 export CLASSIFY_MODE=claude
 
 # 최신 동기화
