@@ -139427,6 +139427,233 @@
         ]
       },
       "crawled_date": "2026-08-24"
+    },
+    "106126": {
+      "id": "106126",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "인생의 최애 만년필입니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106126/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 22:31:30",
+      "views": "0",
+      "content": "오~~~ 가격과 성능이 반드시 비례하지않는구나...~~~~!!!\n가성비정도로 구매했다가\n나의 최애의 만년필이 될듯싶습니다.\n평생 A/S 고민해주십시요. 버리기 아까워요~ㅠㅠ\n아차차.. 잉크는 소모품인데, 잉크도 쭉....제공하심이 어떠실지?",
+      "images": [],
+      "hashtags": [
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "가성비로 샀는데 성능이 뛰어나 최애 만년필이 됨, 평생 A/S와 잉크 공급 희망",
+            "hashtags": [
+              "#가격",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격 대비 성능 만족을 명확히 표현한 칭찬 후기, A/S·잉크 언급은 요청일 뿐 불만 아님",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#가격",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-25"
+    },
+    "106099": {
+      "id": "106099",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106099/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 18:53:20",
+      "views": "0",
+      "content": "일부러 제일 큰사이즈 샀어요.\n엄청 편하고 톡톡하니 좋아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/cc0bd2394ab152c3fd8f81f83fbbc291.jpg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#사용성",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "제일 큰 사이즈로 구매해 편하고 원단이 톡톡해 만족",
+            "hashtags": [
+              "#사이즈",
+              "#사용성",
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "큰 사이즈 선택 만족+착용 편안함+톡톡한 재질감 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#사용성",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-08-25"
+    },
+    "106098": {
+      "id": "106098",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "엄청 편해요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106098/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 18:51:52",
+      "views": "0",
+      "content": "받고 보니 더 화려한걸 살껄 그랬네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/2f0c32566df4221ac2d028389e4d7826.jpg"
+      ],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "착용감이 매우 편하나 더 화려한 색상을 살 걸 그랬다는 아쉬움",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "편함이 핵심 만족 포인트이고 '더 화려한 걸 살걸'은 상품 결함이 아닌 본인 선택 후회",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-25"
+    },
+    "106093": {
+      "id": "106093",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "13개월 좀 넘어 받았네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106093/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-24 18:10:29",
+      "views": "0",
+      "content": "이렇게까지 오래 걸릴지 진짜 몰랐네요 ㅎㅎ\n받긴 받았으니 잘 사용하겠습니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "13개월 넘게 걸려 수령, 예상보다 훨씬 긴 지연",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체가 아닌 극심한 배송·발송 지연에 대한 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-25"
+    },
+    "106092": {
+      "id": "106092",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "잘 받았어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106092/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 18:04:21",
+      "views": "0",
+      "content": "생각보다 일찍 받아 좋아요.\n품질이야 시즌 1 양말 구입해서 신어봤으니 말할 필요 없을거 같아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/1e35760f60e3fe47f9dcd667f0d91c0d.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "생각보다 일찍 받았고 시즌1 경험상 품질은 검증됨",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 빠름 만족+기존 시즌 착용 경험 기반 품질 신뢰 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-25"
+    },
+    "106090": {
+      "id": "106090",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106090/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-24 18:03:30",
+      "views": "0",
+      "content": "생각보다 일찍 받아 좋아요.\n품질이야 시즌 1 양말 구입해서 신어봤으니 말할 필요 없을거 같아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/24/2749f50170ffda746a598cbd9b9316da.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "생각보다 일찍 받았고 시즌1 경험상 품질은 검증됨",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 빠름 만족+기존 시즌 착용 경험 기반 품질 신뢰 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-25"
     }
   },
   "daily_logs": [
@@ -143245,9 +143472,21 @@
         "106049",
         "105935"
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "count": 6,
+      "new_ids": [
+        "106126",
+        "106099",
+        "106098",
+        "106093",
+        "106092",
+        "106090"
+      ]
     }
   ],
-  "last_updated": "2026-08-24 17:45:53",
+  "last_updated": "2026-08-25 08:00:44",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
