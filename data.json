@@ -139647,6 +139647,334 @@
         ]
       },
       "crawled_date": "2026-08-25"
+    },
+    "106355": {
+      "id": "106355",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "여름용도 개발해주세요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106355/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-26 07:57:58",
+      "views": "0",
+      "content": "사용해보니 마음에 쏙 듭니다. 다만, 날씨가 더울때는 사용하기에는 너무 두꺼워서 사용을 하지 않고 있습니다. 여름용으로도 개발해주세요. 운동시 및 땀이 많은 여름에도 사용이가능한 모자가 필요합니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사용해보니 마음에 쏙 든다",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "천이 두꺼워 더운 날엔 쓸 수 없어 여름용 개발 요청",
+            "hashtags": [
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만족 표현과 두께로 인한 계절 한계 불만이 함께 있어 긍정·부정 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106353": {
+      "id": "106353",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "카키브라운 60 58로 교환or 판매가능",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106353/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-26 06:15:22",
+      "views": "0",
+      "content": "58로 교환하거나 판매가능합니다\n커톡 yisyoon",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "카키브라운 60을 58과 교환 또는 판매 희망",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 사이즈 교환·판매 제안으로 불만 사유 언급 없음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106323": {
+      "id": "106323",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "오늘 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106323/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-25 20:08:36",
+      "views": "0",
+      "content": "너무 귀엽고 예쁘네요.    판매할 때 화면에서 본 것보다 색상이 더 예쁘게 잘 나온것 같아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/25/ff98a88f6a2bd4957c34550dc3c98f8f.jpg"
+      ],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "귀엽고 화면보다 색상이 더 예쁘게 나왔다",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상 칭찬이 구체적이라 #색상만 부여, '예쁘다'에는 #디자인 미부여",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106318": {
+      "id": "106318",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "챠콜그레이 60인데 56으로 교환원해요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106318/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-25 19:25:50",
+      "views": "0",
+      "content": "둘둘칠공-일오구공입니다.\n작은 사이즈로 교환 원하시는 분이 많아서 어려울 듯 하지만 일단 올려 봅니다,\n수선을 문의하니 원래 큰 모자라고...\n모자를 쓰면 캡이 바람개비처럼 휘휘 돌아가요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "챠콜그레이 60을 56과 교환 희망",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "모자가 원래 크게 나와 착용 시 캡이 돌아간다",
+            "hashtags": [
+              "#사이즈",
+              "#핏"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 교환 요청(행동)과 큰 사이즈·캡 돌아감(사유)을 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106261": {
+      "id": "106261",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "이제서야 후기를 남깁니다!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106261/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-25 15:56:00",
+      "views": "0",
+      "content": "받은 순간 솔직히 당혹감과 실망감을 감출수가 없었습니다.\n분명 새옷인데도 너무 많이 세탁해서 낡은듯한 느낌, 명쾌하지 못한  바랜듯한 색감, 은은하게 예쁜 파스텔 계열이 아니고 무겁고 탁한 색감, 두꺼운 천, 안감이 별로 시원하지 못하고, 70,80년대 나왔을법한 느낌의 천 두께 등등\n실물을 보지 못하고 화면으로 보는 단점의 한계인거 같네요!\n겸손을 무척 신뢰하지만,,, 이번옷은 많이 실망스러웠습니다.\n디자인도 중요하지만, 옷감이나 색감에도 신경을 써야할 필요를 느낍니다.\n공장장님을 무척 신뢰하고 좋아하기 때문에 솔직한 후기를 남깁니다!",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#재질",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "새 옷인데 낡고 바랜 듯한 탁한 색감, 두껍고 시원하지 않은 원단에 실망",
+            "hashtags": [
+              "#색상",
+              "#재질",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색감·원단·안감 등 상품 자체에 대한 구체적 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#재질",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106234": {
+      "id": "106234",
+      "product_name": "건",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "믿고 사는 라이 콜라보제품",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106234/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-25 12:34:55",
+      "views": "0",
+      "content": "넥카프 사서 아주 잘 이용하고 있어요. 주위에서 이쁘다고 칭찬도 많았구요. 지인들에게도 사줬는데 너무 포근하고 부드럽다고 좋아해요. 그래서 이번 제품도 망설임없이 구매했는데 역시 믿고 사는 상품입니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "넥카프가 포근하고 부드러워 만족, 콜라보 제품 재구매",
+            "hashtags": [
+              "#재질",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "촉감 칭찬과 망설임 없는 재구매 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106229": {
+      "id": "106229",
+      "product_name": "세종 펜레스트",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "세종펜레스트 고급져요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106229/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-25 12:14:22",
+      "views": "0",
+      "content": "기존 펜레스트와 다르지만 고급지고 무게도 있고 멋집니다!!!\n집에 하나/직장에 하나 이렇게 쓰고 있습니다.\n겸손몰 상품은 그냥 믿고 삽니다.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#무게감",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "고급스럽고 무게감 있어 집·직장에 각각 두고 사용",
+            "hashtags": [
+              "#퀄리티",
+              "#무게감",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급감·무게감 칭찬과 복수 구매·신뢰 재구매 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#무게감",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-26"
+    },
+    "106159": {
+      "id": "106159",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "발옷은 역시다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106159/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-25 09:47:00",
+      "views": "0",
+      "content": "토요일에 받았는데 배송완료가 어제 된걸로 되서 오늘 후기 남깁니다. 손빨래하고 자연건조 시키며 아껴 착용하는 발옷 맘껏착용해보자 해서 모두구입했습니다. 매일착용해도한달에 한번만세탁하면 됩니다 착용감 좋고 발도편하고 이쁘고 발옷은 역시 좋다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/25/9c69f6a182dcb1b7b0be0b3c83638d51.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/25/ee3839f493235b1977d705463c1aa005.jpeg"
+      ],
+      "hashtags": [
+        "#핏",
+        "#사용성",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "착용감 좋고 발이 편하며 세탁 주기도 길어 전 종류 구매",
+            "hashtags": [
+              "#핏",
+              "#사용성",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용감·관리 편의 칭찬과 전 품목 구매 언급, 배송완료 처리 언급은 불편 제기가 아니어서 제외",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#핏",
+          "#사용성",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-26"
     }
   },
   "daily_logs": [
@@ -143477,9 +143805,23 @@
         "106092",
         "106090"
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "count": 8,
+      "new_ids": [
+        "106355",
+        "106353",
+        "106323",
+        "106318",
+        "106261",
+        "106234",
+        "106229",
+        "106159"
+      ]
     }
   ],
-  "last_updated": "2026-08-25 08:00:44",
+  "last_updated": "2026-08-26 08:00:46",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
