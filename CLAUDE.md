@@ -35,6 +35,15 @@ git config --local --add credential.helper '!f() { echo username=withqnx; echo "
 ```
 push 403이 다시 나면 위 설정이 살아있는지 `git config --local --get-all credential.helper`로 확인.
 
+## 대시보드 Publish(저장) — 2026-08-25 수정
+저장 시 `Unexpected token '<' ... is not valid JSON` 이 뜨면 **Pages Function이 HTML 에러 페이지를 반환한 것**이다.
+원인이었던 것: `functions/api/publish.js` 의 base64 변환이 바이트를 하나씩 문자열에 이어붙여(수백만 회)
+data.json 이 6MB대로 커지자 **Worker CPU/메모리 한도를 초과**. 한도 초과는 `catch` 로 잡히지 않아
+Cloudflare 가 HTML 을 반환했다. → **GitHub blob API 를 `encoding: "utf-8"` 로 호출**해 base64 자체를 제거(수정 완료).
+- 진단법: `curl -X OPTIONS .../api/publish` 가 204 면 라우팅 정상. 작은 본문 POST 가 JSON 을 주면 함수는 살아있고,
+  큰 본문에서만 HTML 이면 CPU/메모리 한도 문제.
+- Cloudflare 환경변수: `GH_TOKEN`, `GH_REPO`, `GH_BRANCH`, `PUBLISH_PWD`(관리자 비번과 일치해야 함).
+
 ## 분류 방식 — Claude Code(구독) 전용 (2026-08-11~, 2026-08-24 확정)
 후기 분류는 **Anthropic API를 쓰지 않는다.** Claude Code(`claude -p` 헤드리스, 구독)로만 처리한다.
 - `crawl.py` 는 **기본값이 `CLASSIFY_MODE=claude`** → 수집만 하고 미분류로 저장.
