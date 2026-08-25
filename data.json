@@ -138512,45 +138512,38 @@
       ],
       "hashtags": [
         "#퀄리티",
-        "#사용성",
-        "#디자인"
+        "#사용성"
       ],
       "classification": {
         "segments": [
           {
             "category": "배송관련불편",
+            "sentiment": "negative",
             "summary": "배송이 오래 걸려 잊을 때쯤 도착한다고 농담조로 언급",
             "hashtags": [],
-            "confidence": 0.7
+            "confidence": 1
           },
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "종이 위를 미끄러지며 미세한 강약에 잉크량이 반응하는 필기감이 최고",
             "hashtags": [
               "#퀄리티",
               "#사용성"
             ],
-            "confidence": 0.9
-          },
-          {
-            "category": "부정",
-            "summary": "잡는 부분이 사각이라 그립감이 취약하고 펜촉 방향 조절이 안 됨",
-            "hashtags": [
-              "#사용성",
-              "#디자인"
-            ],
-            "confidence": 0.9
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "필기감 호평과 사각 그립·펜촉 방향 불만이 함께 있고, 배송 지연 언급은 농담조라 confidence 낮게 분리",
-        "confidence": 0.7,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#퀄리티",
           "#사용성",
           "#디자인"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-08-23"
     },
