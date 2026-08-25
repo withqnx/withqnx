@@ -37,14 +37,6 @@ async function gh(path, token, init = {}) {
   return res.json();
 }
 
-// 문자열 → base64 (UTF-8 안전)
-function toB64(str) {
-  const bytes = new TextEncoder().encode(str);
-  let bin = "";
-  for (const b of bytes) bin += String.fromCharCode(b);
-  return btoa(bin);
-}
-
 export async function onRequestPost({ request, env }) {
   try {
     const token  = env.GH_TOKEN;
@@ -86,9 +78,14 @@ export async function onRequestPost({ request, env }) {
     // 3) blobs
     const treeItems = [];
     for (const f of files) {
+      // base64 대신 utf-8 원문을 그대로 보낸다.
+      // 이전 base64 변환 함수는 바이트를 하나씩 문자열에 이어붙였는데(수백만 회),
+      // data.json 이 6MB 대로 커지면서 Worker CPU/메모리 한도를 초과했다.
+      // 한도 초과는 catch 로 잡히지 않아 Cloudflare 가 HTML 에러 페이지를 반환하고,
+      // 프론트에서는 "Unexpected token '<' ... is not valid JSON" 으로 보였다.
       const blob = await gh(`/repos/${repo}/git/blobs`, token, {
         method: "POST",
-        body: JSON.stringify({ content: toB64(f.content), encoding: "base64" }),
+        body: JSON.stringify({ content: f.content, encoding: "utf-8" }),
       });
       treeItems.push({ path: f.path, mode: "100644", type: "blob", sha: blob.sha });
     }
