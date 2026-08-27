@@ -140405,6 +140405,325 @@
         ]
       },
       "crawled_date": "2026-08-27"
+    },
+    "106575": {
+      "id": "106575",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "해바라기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106575/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 17:16:18",
+      "views": "0",
+      "content": "주방칼로 쓰기엔 딱 입니다.\n썰림도 좋고. Good!!!",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "주방칼로 쓰기 딱 좋고 썰림도 우수",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "썰림 성능 등 사용 만족을 구체적으로 언급한 상품 칭찬",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106572": {
+      "id": "106572",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "오늘 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106572/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-27 16:43:48",
+      "views": "0",
+      "content": "빨리 배송해주셔서 고맙습니당",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/27/03cd30ec050ae0fe8dc10a87b157431f.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "제품 수령 및 빠른 배송에 감사 인사",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 평가 없이 수령 알림과 배송 감사만 있어 단순수령",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106571": {
+      "id": "106571",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "펜들의 안식처~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106571/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-27 16:43:09",
+      "views": "0",
+      "content": "패킹도 신경 써줘서 여는 동안 설레임이 있었습니다. 생각보다 커서 펜들을 올려두기에 안성맞춤 입니다. 잘 사용할게요~~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/27/9f97ce93fb3854b42dc129fc2675ba8f.jpeg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "포장이 정성스럽고 크기가 커서 펜 보관에 적합",
+            "hashtags": [
+              "#사이즈",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "패킹 만족과 크기·용도 적합성을 언급한 만족 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106560": {
+      "id": "106560",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "최곱니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106560/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 15:29:28",
+      "views": "0",
+      "content": "겸손 양말 경험하고는 다른 양말은 손이 안갑니다.\n덧신까지 너무너무 좋아요\n무늬가 화려한 양말을 이제 아무렇지 않게\n양말 쟁여 놓고 보는 재미도 있습니다\n좋은 발옷 감사합니다",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#디자인",
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "양말 품질이 뛰어나 다른 양말을 못 신고 화려한 무늬도 만족, 재구매 의사",
+            "hashtags": [
+              "#퀄리티",
+              "#디자인",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "품질 극찬과 무늬 만족, 쟁여두고 싶다는 재구매 의사 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#디자인",
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106558": {
+      "id": "106558",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "세종필통 구매후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106558/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 15:24:04",
+      "views": "0",
+      "content": "세종필통 배송 잘 받았습니다. 그러나 만년필 세종이 도착하지 않아 아직 사용은 못해봤습니다. 만년필을 언제쯤 받을 수 있을지...연말에나 받는다는데 ㅠㅠ",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "필통은 받았으나 함께 주문한 만년필 배송이 연말까지 지연",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 자체 불만이 아니라 동반 주문 상품의 배송 지연 호소",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106552": {
+      "id": "106552",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "제품받았습니다!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106552/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 14:35:44",
+      "views": "0",
+      "content": "포스 장난 아닙니다 디자인에서 다른 칼들을 오징어 만들어 버리네요\n칼이 굉장히 날카로우니 다들 조심히 사용하세요~",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "디자인이 압도적이고 칼날이 매우 날카로움",
+            "hashtags": [
+              "#디자인",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인 우위를 강조하고 날카로운 성능을 긍정적으로 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106550": {
+      "id": "106550",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "제품받았습니다!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106550/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 14:33:15",
+      "views": "0",
+      "content": "발옷 품질을 와이프가 확인해 주었기에 이번에 제꺼까지 시켰는데요\n컬러감이 살짝 부끄럽지만 잘 신어 보겠습니다~",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#또사고싶다",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "아내가 검증한 품질을 믿고 본인 것까지 추가 구매",
+            "hashtags": [
+              "#퀄리티",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "컬러감이 다소 부담스럽다는 가벼운 아쉬움",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "품질 신뢰로 재구매했으나 색상은 부끄럽다는 약한 아쉬움을 분리",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#또사고싶다",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-08-28"
+    },
+    "106529": {
+      "id": "106529",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "모자 껑 사이즈불량(너무 큼)으로 반품 또는 다른 대책을 강구해주고 안해주시면다시는 겸공제품 구매하지 않을 예정임",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106529/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-27 12:08:03",
+      "views": "0",
+      "content": "대두(머리둘레62㎝)인 저로써는 이해가 안됩니다.\n[2025 겸손색안경] 쇠네모 [옵션:은/L(50)/색안경렌즈포함]은 제일 큰 사이즈로 주문했으나\n안녕 사이즈폭이 작아서 도저히 어울리지가 않아서 얼굴작은 지인에게 선물했었는데\n이번 껑모자는 깊이가 시중에는 없는 대두에게 어울리는 모자라고 홍보해서\n제일 큰 사이즈로 주문했는데\n이런 이모자는 사이즈둘레가 너무 커서 쓸수가 없네\n한국에 껑 62호사이즈가 맞는 대두가 몇이나 될까요?\n2번의 제품이 이렇게 실망을 주니\n세종-스테인리스촉 만년필도 2개가 주문했는데\n제품의 질이 실망스럽지는 안을련지?\n이번 껑모자는 저뿐만 아니라 많은 주문자들이 사이즈문제를 제기하고 있는데\n겸손몰 차원에서 대책을 강구해주시기를 바랍니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "대두용이라 홍보한 껑모자의 최대 사이즈 둘레가 지나치게 커서 착용 불가",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "이전 구매한 겸손색안경도 최대 사이즈 폭이 작아 착용하지 못함",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 불량으로 반품 또는 회사 차원의 대책 마련 요구",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "두 제품의 사이즈 불만(사유)과 반품·대책 요구(행동)를 각각 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-28"
     }
   },
   "daily_logs": [
@@ -144266,9 +144585,23 @@
         "106379",
         "106356"
       ]
+    },
+    {
+      "date": "2026-08-28",
+      "count": 8,
+      "new_ids": [
+        "106575",
+        "106572",
+        "106571",
+        "106560",
+        "106558",
+        "106552",
+        "106550",
+        "106529"
+      ]
     }
   ],
-  "last_updated": "2026-08-27 08:01:04",
+  "last_updated": "2026-08-28 08:00:53",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
