@@ -140724,6 +140724,483 @@
         ]
       },
       "crawled_date": "2026-08-28"
+    },
+    "106831": {
+      "id": "106831",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 흑진주 + 베개샘(록+청+흑) 팔아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106831/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-29 21:05:13",
+      "views": "0",
+      "content": "오래 기다려서 며칠전에 세종 흑진주 드디어 영접했는데\n펜이 너무 많아서, 잘 안 쓸거 같아서 양도하렵니다.\n세종 흑진주에 베개샘 검정잉크 약간 넣어서\n잘 나오는거 확인만했고 안써서 거의 새거에요. 다시 박스에 넣어둔 상태입니다.\n베개샘(록+청+흑)도 세종오기 기다렸다가 개봉한거라 새거라고 보시면 됩니다.\n2개 일괄 판매하구요. 배송비 포함 23만원에 팝니다.\n공 1 0 - 오칠23 - 오삼65\n팔리면 글 삭제하겠습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/16ccc90635ddeffc1cc86049a0e3bd80.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/7e73b987859ab74973b7a47142c1b885.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/da0816df63cc64be2105baa73da754a6.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/4208378012647f2dc925017ea3617e7f.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "세종 흑진주와 베개샘 잉크 일괄 양도 판매 글",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격·연락처를 적은 구매자 간 양도 판매 글",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106821": {
+      "id": "106821",
+      "product_name": "세종필통(2구)",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "세종 필통!!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106821/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-29 17:03:46",
+      "views": "0",
+      "content": "펜 2자루 안식처입니다. 클래식하면서도 내부가 부드러운 소재라 펜 보호에도 좋은 제품입니다. 그동안 거처가 없어 이곳저곳을 떠돌아 다녔는데 드디어 확실한 거처가 마련되었네요. 편안합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/b27fd83dda6a8e78b049390f13a2267e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/6687da3c17440f78427a7c14c807fb16.jpeg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "펜 2자루용 필통이 클래식하고 내부 소재가 부드러워 펜 보호에 좋음",
+            "hashtags": [
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "소재와 보호 기능을 구체적으로 칭찬한 만족 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106820": {
+      "id": "106820",
+      "product_name": "세종필통(2구)",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "세종필통 2구 빨강",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106820/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-29 16:29:45",
+      "views": "0",
+      "content": "붉은색이 강렬하면서도 촌스럽지 않네요.\n넣고 빼는게 부드럽고\n딱 맞아 고급스럽습니다.",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#사용성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "빨강 색감이 강렬하되 촌스럽지 않고 넣고 빼는 감이 부드러워 고급스러움",
+            "hashtags": [
+              "#색상",
+              "#사용성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상·사용감·완성도를 모두 칭찬",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#사용성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106817": {
+      "id": "106817",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "검은 진주? 은색 진주 아닌가요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106817/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-29 15:11:48",
+      "views": "0",
+      "content": "근데 색상이 유광검정인줄 알았는데\n거의 은색에 가까운 느낌이네요?\n그리고 클립이 없어서 책상에서 구르기 딱 좋겠네요.\n조심해서 사용해야 할듯 합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/29/a7bdf1dd7ad1b36a351980afd2deca65.jpeg"
+      ],
+      "hashtags": [
+        "#색상",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "유광검정인 줄 알았으나 은색에 가깝고 클립이 없어 굴러갈까 걱정",
+            "hashtags": [
+              "#색상",
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기대와 다른 색상과 클립 부재라는 상품 자체 불만",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106815": {
+      "id": "106815",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "이건 뭐 장난치는 것도 아니고 참나 일주일만에 커버 찢어짐",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106815/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-29 14:43:39",
+      "views": "0",
+      "content": "칼로 해도 튼튼하다고 하더니 ㅋ\n모서리부분 자리 정돈 한다고 몇번 긁으니 찢어지네요 ㅋ\n앞으로 펫관련 제품은 지양해주세요\n강아지도 보호자도 모두 상처 뿐이네요",
+      "images": [],
+      "hashtags": [
+        "#내구성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "튼튼하다는 설명과 달리 일주일 만에 커버가 찢어짐",
+            "hashtags": [
+              "#내구성",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "짧은 사용 기간 내 파손으로 내구성·품질에 강한 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106807": {
+      "id": "106807",
+      "product_name": "[독점 수입]라 리유뜨낭뜨 올리브오일",
+      "product_link": "https://nonohumble.com/product/독점-수입라-리유뜨낭뜨-올리브오일/400/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/178f19075b703ba5c308faa2fb1f33ce.png",
+      "title": "믿구 구매합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106807/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-29 10:08:31",
+      "views": "0",
+      "content": "블랙은 요리할때 밥 지을때 잘 사용하고 있어요 ^^",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "블랙 제품을 요리·밥 지을 때 잘 사용 중",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용 맥락이 있는 짧은 만족 후기라 중립이 아닌 긍정",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106781": {
+      "id": "106781",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "검은진주, 팬레스트 판매합니다.(미사용)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106781/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-28 18:40:56",
+      "views": "0",
+      "content": "가격은 원가격 + 택배비 입니다.\nboriunni@gmail.com\n으로 연락바랍니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/d56a4b574620985f7a656a464114faaf.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/52db67417bb59af69ae37c2917775fe2.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "미사용 검은진주와 펜레스트를 원가+택배비에 판매",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "연락처를 남긴 구매자 간 양도 판매 글",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106778": {
+      "id": "106778",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "구매 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106778/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-28 18:11:14",
+      "views": "0",
+      "content": "가볍고 색상이 좋으며, 필기 시 잉크의 흐름도 유연힙니다. 그런데 길이가, 사용에는 문제가 없으나, 약간 길었으면 하는 느낌입니다.",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#색상",
+        "#사용성",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "가볍고 색상이 좋으며 잉크 흐름이 유연함",
+            "hashtags": [
+              "#무게감",
+              "#색상",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "사용에 지장은 없으나 길이가 조금 더 길었으면 함",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 만족이나 길이에 대한 아쉬움이 별도로 언급됨",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#색상",
+          "#사용성",
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106677": {
+      "id": "106677",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종-맑은 순은",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106677/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-28 11:46:02",
+      "views": "0",
+      "content": "",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/6e8e5744b803398a72a66a9b5906a38e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/c883f4f0a9a77bb59ef3468493e638d3.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/a46cf79e53de2691d728ace0097cd414.jpeg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "제목만 있고 본문 없는 수령 알림성 후기",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "평가 내용이 전혀 없어 단순 수령으로 처리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106669": {
+      "id": "106669",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "모자사이즈",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106669/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-28 11:17:05",
+      "views": "0",
+      "content": "댓글로 달았다가 속이 상해서 후기에 다시 올립니다. 껑 62사이즈 말도 안되는 크구요 써보지 않고 신뢰를 통해 구입하는 모자를 어느정도 표준화된 모자 시이즈를 무시하고 이렇게 크게 만든 것은 분명 제작과정에 오류가 아닌가요? 대책 마련해 주십시오. 선결제하고 오랜시간 기다린 고객에 대한 배러가 필요합니다. 많이 속상하고  실망했습니다. 겸손몰 담당자님 확인해 보시고 대책 마련해 주세요",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "모자 62 사이즈가 표준 대비 지나치게 커서 제작 오류를 지적하고 대책을 요구",
+            "hashtags": [
+              "#사이즈",
+              "#기획"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만이 명확하나 '대책 마련' 요구가 교환/반품 요청에 준하는지 애매",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#기획"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106646": {
+      "id": "106646",
+      "product_name": "건",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "건의 끝처리감이 별로예요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106646/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-28 10:04:58",
+      "views": "0",
+      "content": "자르는 선이 바르지 않고 끝처리가 부족해요.\n겸속에서 판매하는건 최고 제품이고 민고 살수 있는것이라 생각하고 구매하는데 조금 끝처리가 조금 아쉽네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/ccdc0b7f6eab93f25b0befebd283a701.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/6655df5e85c98f703dff62e33d52915b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/f6cf2fab06e2b8b2f8256b6db893de5b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/915b08bc7c74e6c849f196cc62ab5060.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/08/28/4e5030d0abdf0690e0b332388e666bc0.jpg"
+      ],
+      "hashtags": [
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "재단선이 바르지 않고 끝처리가 부족해 아쉬움",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "마감 품질에 대한 상품 자체 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-08-30"
+    },
+    "106634": {
+      "id": "106634",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "좋은 칼. 명도.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106634/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-28 09:02:55",
+      "views": "0",
+      "content": "그립감, 절삭력 모두 최고 수준이네요.\n십년이상 쓴 익숙한 독일제 쌍둥이칼보다 이 칼이 더 편해요. 무게도 좋고요.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "그립감·절삭력·무게가 좋아 오래 쓴 독일제 칼보다 편함",
+            "hashtags": [
+              "#사용성",
+              "#퀄리티",
+              "#무게감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "성능과 무게를 구체적으로 칭찬한 만족 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#퀄리티",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-08-30"
     }
   },
   "daily_logs": [
@@ -144599,9 +145076,27 @@
         "106550",
         "106529"
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "count": 12,
+      "new_ids": [
+        "106831",
+        "106821",
+        "106820",
+        "106817",
+        "106815",
+        "106807",
+        "106781",
+        "106778",
+        "106677",
+        "106669",
+        "106646",
+        "106634"
+      ]
     }
   ],
-  "last_updated": "2026-08-28 08:00:53",
+  "last_updated": "2026-08-30 08:01:00",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
