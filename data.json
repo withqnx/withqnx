@@ -141201,6 +141201,86 @@
         ]
       },
       "crawled_date": "2026-08-30"
+    },
+    "106852": {
+      "id": "106852",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "맑은 순은은 잔기스가 많이 생겨요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106852/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-30 23:24:31",
+      "views": "0",
+      "content": "맑은 순은은 알루미늄이 코팅이 되어 있지않아 잔기스가 많이 생깁니다. 코팅되어 있는 녀석들은 필통안에 섞여서 부딪치는 환경에서 아무 문제가 없었어요. 금속의 특성한 한 번 생긴 기스는 복구가 되지 않으니 자칫 한 번의 실수가 큰 상처를 남기는 것 같습니다. 코팅이 언제까지 지속될지도 궁금하긴 하네요.\n배럴의 내구성 문제를 잘 고민해주시면 좋겠어요.",
+      "images": [],
+      "hashtags": [
+        "#내구성",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "맑은 순은 배럴이 코팅되지 않아 잔기스가 쉽게 생기고 복구가 안 됨 — 내구성 개선 요청",
+            "hashtags": [
+              "#내구성",
+              "#마감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "무코팅 알루미늄 배럴의 스크래치·내구성 문제를 구체적으로 지적한 상품 자체 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#내구성",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-08-31"
+    },
+    "106844": {
+      "id": "106844",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "마음에들어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106844/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-30 17:23:27",
+      "views": "0",
+      "content": "잊어버리고있다가 선물처럼 받았어요ㅎㅎ\n아직 여름이라 홑이불처럼 덮다가 가을되면 이불솜 하나 사려구요\n1인용침대인데도 베개커버 2개줘서 좋아요 일주일에 한 번씩 갈아줘야겠어요\n꽃 디자인이랑 고민하다가 심플한 큐피드로 주문했는데받고나니 또 꽃에 미련이 남네요...\n한 번 더 팔아주심 좋겠어요ㅎㅎ",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/08/30/62a0b49180ef2cea0536a95301eb1fb0.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "심플한 큐피드 디자인 만족, 1인용인데 베개커버 2개 구성이 좋음, 꽃 디자인 재판매 희망",
+            "hashtags": [
+              "#디자인",
+              "#구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인 선택 만족과 베개커버 2개 구성 칭찬이 담긴 상품 만족 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-08-31"
     }
   },
   "daily_logs": [
@@ -145094,9 +145174,17 @@
         "106646",
         "106634"
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "count": 2,
+      "new_ids": [
+        "106852",
+        "106844"
+      ]
     }
   ],
-  "last_updated": "2026-08-30 08:01:00",
+  "last_updated": "2026-08-31 08:00:26",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
