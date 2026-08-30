@@ -138517,6 +138517,13 @@
       "classification": {
         "segments": [
           {
+            "category": "배송관련불편",
+            "sentiment": "negative",
+            "summary": "배송이 오래 걸려 잊을 때쯤 도착한다고 농담조로 언급",
+            "hashtags": [],
+            "confidence": 1
+          },
+          {
             "category": "긍정",
             "sentiment": "positive",
             "summary": "종이 위를 미끄러지며 미세한 강약에 잉크량이 반응하는 필기감이 최고",
