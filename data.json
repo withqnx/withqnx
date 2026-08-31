@@ -141268,6 +141268,238 @@
         ]
       },
       "crawled_date": "2026-08-31"
+    },
+    "106991": {
+      "id": "106991",
+      "product_name": "발옷5종-시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "좋은 양말",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106991/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-31 23:05:34",
+      "views": "0",
+      "content": "겸손양말은 정말 너무너무 좋아요.\n여름에 신기 딱 좋은 착용감\n다음엔 밝은 색도 많이 만들어주세요.\n시즌3도 꼭 해주세요",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/31/b6c1b79f32e147f8b7b7113a625f6183.jpeg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "여름에 신기 좋은 착용감이라 매우 만족, 밝은 색상과 시즌3 요청",
+            "hashtags": [
+              "#사용성",
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용감 만족 표현과 색상 확대 요청이 담긴 상품 칭찬 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-09-01"
+    },
+    "106990": {
+      "id": "106990",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "맘에 들어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106990/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-31 23:02:33",
+      "views": "0",
+      "content": "지난번 제품보다 얇아져서 여름에도 이쁘게 신을 수 있어서 너무 좋아요. 남편이 착용감이 좋다고 대만족이에요. 양말 잘 만들어주신 라이에 감사드려요",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "이전보다 얇아져 여름에도 착용 가능하고 남편도 착용감에 대만족",
+            "hashtags": [
+              "#재질",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "두께 개선과 착용감을 근거로 든 명확한 만족 후기",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-01"
+    },
+    "106960": {
+      "id": "106960",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "껑",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106960/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-31 17:06:18",
+      "views": "0",
+      "content": "남편과 모자를 사러 가면 항상 모자가 작아서 문제 였어요. 그래서 제일 큰 사이즈인 62호로 주문했고 선물했는데, 이번에는  너무 커서 쓸 수가 없다고 하네요. 혹시 58호랑 교환 하실 분 계실까요?\n가지고 있는 모자 색상은 차콜그레이 입니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "차콜그레이 62호 모자를 58호와 교환할 구매자를 찾음",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "가장 큰 62호를 샀으나 너무 커서 착용 불가",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 사이즈 교환 요청(행동)과 사이즈가 커서 못 쓴다는 불만(사유)을 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-09-01"
+    },
+    "106949": {
+      "id": "106949",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "껑 모자",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106949/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-31 15:35:26",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "제목만 있는 단순 수령 후기",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "본문이 없어 상품 평가 내용을 알 수 없는 단순 후기",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-01"
+    },
+    "106917": {
+      "id": "106917",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "모자",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106917/page/1/",
+      "has_photo": false,
+      "written_at": "2026-08-31 13:11:18",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "제목만 있는 단순 수령 후기",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "본문이 없어 상품 평가 내용을 알 수 없는 단순 후기",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-01"
+    },
+    "106864": {
+      "id": "106864",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "이불 /침대패드 / 커버/ 베게 커버 1세트 반품 요구",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/106864/page/1/",
+      "has_photo": true,
+      "written_at": "2026-08-31 09:08:30",
+      "views": "0",
+      "content": "먼저 2세트를 잘 받았습니다\n첫번째 패드가 기존 퀸사이즈 침대에 맞지 않습니다\n침대커버도 빡빡하게 억지로 끼워들어갑니다\n패드가 맞지 않아서 전체 다 반품하고 싶지만\n1세트는 억지로 사용하겠지만\n1세트는 도저히 사용할 마음이 생기질 않습니다\n반품하고 싶습니다\n이번 이불 제품은 전체적으로 불만족입니다\n제가 반품할 주소를 알려주세요",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/31/6b9a96e797a87db4b3e222fc3ad08b76.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/31/7c34d55b7777524fbd9ae6ab9cfbaf5a.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/31/e6f836c463ab0c6890a21c2c79408b79.jpg",
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/08/31/536d68c640c9e55929330e10228b654b.jpg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "침구 1세트 반품을 요청하며 반품 주소 문의",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "패드가 퀸사이즈 침대에 맞지 않고 커버도 억지로 끼워야 해 전체적으로 불만족",
+            "hashtags": [
+              "#사이즈",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "회사에 반품을 요구하는 행동과 사이즈 불일치라는 상품 불만 사유를 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-01"
     }
   },
   "daily_logs": [
@@ -145169,9 +145401,21 @@
         "106852",
         "106844"
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "count": 6,
+      "new_ids": [
+        "106991",
+        "106990",
+        "106960",
+        "106949",
+        "106917",
+        "106864"
+      ]
     }
   ],
-  "last_updated": "2026-08-31 08:00:26",
+  "last_updated": "2026-09-01 08:00:39",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
