@@ -142249,6 +142249,132 @@
         ]
       },
       "crawled_date": "2026-09-02"
+    },
+    "107359": {
+      "id": "107359",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "수저받침대",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107359/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-02 23:31:23",
+      "views": "0",
+      "content": "만년필이 안와요. 그래서  수저를 올려봤어요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/02/1d6b477f9711d1b3a231b81b7ba4e4d0.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "함께 주문한 만년필이 도착하지 않아 받침대에 수저를 올려둠",
+            "hashtags": [],
+            "confidence": 0.7
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "만년필 미배송(지연)을 농담조로 언급한 것으로 보이나 상품 자체 평가가 없어 판단이 애매함",
+        "confidence": 0.7,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-03"
+    },
+    "107343": {
+      "id": "107343",
+      "product_name": "심지 추가",
+      "product_link": "https://nonohumble.com/product/심지-추가/265/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
+      "title": "추가심지",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107343/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-02 20:27:08",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "추가 심지 관련 단순 언급, 본문 없음",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문이 없고 제목만 있어 평가 내용이 없는 단순 후기",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-03"
+    },
+    "107337": {
+      "id": "107337",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "오랜 기다림 끝에 드디어 받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107337/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-02 18:40:25",
+      "views": "0",
+      "content": "지난 겨울 엄청난 고심끝에 결정해서 구매한 제품입니다.\n저한테는 결코  적은 돈이 아니라서 정말 큰맘 먹고 구매했습니다.\n그러나 오랜 기다림은 제가 이불을 주문 했다는 것 조차  잊어버리게만들어 주더군요. 🤣\n며칠전 배송을 시작 한다는 문자를 받고서야 제가 주문 했던 게 기억이 났습니다. 처음에 안 좋은 후기들이 보여서 받기 전부터 마음이 좀 심란 했는데 걱정했던 것과 달리 제품은 이상이 없어 보입니다\n침대 크기와 맞지 않다는 후기를 보고 걱정을 많이 했는데 저는 사이즈가 딱 맞습니다\n이불 색상에 대한 고민이 참 많았는데. 시중에 판매 하지 않는 색상과 디자인이라 과감하게 도전 해 보았습니다\n사진 보다 실물의 색상이 더 산뜻하고 이쁜 것 같습니다\n아직 이불솜을 넣지는 못 하고 급한 대로 먼저 사진을 찍어서 올려 봅니다.  한가지 아쉬운 점은 패드에 부착 된 밴드가 흰색이라서 미관상 보기가 좋지 않아 하지 않을 것 같습니다.\n아직 받지 못한 분들에게 긴 기다림에 도움이 되었으면 좋겠습니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/02/a26c33c60007afb2188985215e84dfa3.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/02/da2314bcf09f34f17f1b9eb511f74e06.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/02/d445384d40bac907b5609436072c0346.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/02/0711c6d90fc97c3f5c5d80729c1f3bd1.jpeg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#색상",
+        "#디자인",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "배송이 매우 오래 걸려 주문 사실조차 잊을 정도였음",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "침대에 사이즈가 딱 맞고 시중에 없는 색상·디자인이며 실물 색이 사진보다 산뜻함",
+            "hashtags": [
+              "#사이즈",
+              "#색상",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "패드에 부착된 밴드가 흰색이라 미관상 보기 좋지 않아 사용하지 않을 예정",
+            "hashtags": [
+              "#마감",
+              "#디자인"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "장기 배송 지연 불만, 사이즈·색상·디자인 만족, 밴드 색상 아쉬움이 각각 분리됨",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#색상",
+          "#디자인",
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-09-03"
     }
   },
   "daily_logs": [
@@ -146187,9 +146313,18 @@
         "107198",
         "107206"
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "count": 3,
+      "new_ids": [
+        "107359",
+        "107343",
+        "107337"
+      ]
     }
   ],
-  "last_updated": "2026-09-02 17:08:27",
+  "last_updated": "2026-09-03 08:00:27",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
