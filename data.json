@@ -141737,8 +141737,19 @@
       "images": [],
       "hashtags": [],
       "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "추가 제작·재판매 시기 문의",
+            "hashtags": [],
+            "confidence": 0.6
+          }
+        ],
         "needs_review": true,
-        "_v2": true
+        "reasoning": "후기가 아닌 재입고 문의로 6개 카테고리 규격 외 — 검토 큐로 보냄",
+        "confidence": 0.6,
+        "_v2": true,
+        "hashtags": []
       },
       "crawled_date": "2026-09-02"
     },
@@ -141991,6 +142002,250 @@
         "_v2": true,
         "hashtags": [
           "#내구성"
+        ]
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107301": {
+      "id": "107301",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "올 여름엔 별만 입고 다녀요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107301/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-02 16:01:14",
+      "views": "0",
+      "content": "올 여름엔 맨날 별티만 입고 다니니까 친구들이나 지인들이 니는 옷이 그것밖에 없냐고 물어봐요.\n너무 편하고 있어 보여서 매일매일 세탁해서 입고 다닌다고 했더니 다들 머냐고 물어봐요\n저의 별자리 사수자리 와 색깔이 이뻐서 황소자리를 샀는데\n황소자리는 입어보니 얼굴이 너무 칙칙해 보여서 얼굴이 뽀얀 친구에게 선물해 줬는데\n그 친구도 저 볼때마다 티셔츠 너무 편하고 좋타고 얘기해요.\n지금보니 다른 별자리도 다 이쁜데 두개만 구입한게 너무 후회돼요\n혹시나 여건이 된다면 이 디자인 그대로 한번만 더 겸공에서 텐밀희 해주시면 안될까요?",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#디자인",
+        "#또사고싶다",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "편하고 있어 보여 매일 착용, 주변에서도 호평하고 다른 별자리도 더 사고 싶음",
+            "hashtags": [
+              "#사용성",
+              "#디자인",
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "황소자리 색상이 얼굴을 칙칙해 보이게 해 선물로 넘김",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용 만족·재구매 희망(긍정)과 특정 색상 불만(부정)을 분리, 말미 재생산 요청은 긍정 세그먼트에 포함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#디자인",
+          "#또사고싶다",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107299": {
+      "id": "107299",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "너무 예뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107299/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-02 15:53:57",
+      "views": "0",
+      "content": "와~ 고퀄 입니다!\n실물이 너무 예뻐요~",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/09/02/81a1d4029d918a6ec6f402b87156ba31.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "고퀄리티에 실물이 더 예쁘다",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "'고퀄' 언급으로 #퀄리티만 부여, '예쁘다' 단독에는 #디자인 미부여",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107278": {
+      "id": "107278",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "드디어 도착~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107278/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-02 13:46:14",
+      "views": "0",
+      "content": "기다리던 제품이 드디어 도착했네요.\n글 쓸 일이없는 요즘.\n특별한 필기구로 좋은 글을 많이 써 보겠습니다.",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/09/02/7a5f60c1bb60e36294dffa9afded61f4.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "기다리던 필기구 도착 알림",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 알림과 사용 다짐만 있고 상품 평가 근거 없음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107265": {
+      "id": "107265",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107265/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-02 12:27:34",
+      "views": "0",
+      "content": "머리자체가너무커서야구모자들은쓸엄두도못내었는데이모자는잘들어가고고급스럽고소재가좋아겨울에많이쓰고다닙니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#퀄리티",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "머리가 큰데도 잘 맞고 고급스러우며 소재가 좋아 겨울에 자주 착용",
+            "hashtags": [
+              "#사이즈",
+              "#퀄리티",
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용 가능한 사이즈·고급스러움·소재 만족이 모두 명시됨",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#퀄리티",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107263": {
+      "id": "107263",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107263/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-02 12:25:19",
+      "views": "0",
+      "content": "박시하게연출하니멋스러움과세련되고고급스러워매우만족합니다.",
+      "images": [],
+      "hashtags": [
+        "#핏",
+        "#디자인",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "박시한 핏 연출이 멋스럽고 세련돼 매우 만족",
+            "hashtags": [
+              "#핏",
+              "#디자인",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "박시한 실루엣(핏)과 멋스러움·고급스러움에 대한 명확한 호평",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#핏",
+          "#디자인",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-02"
+    },
+    "107244": {
+      "id": "107244",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://cafe24img.poxo.com/nohumble/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "이뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107244/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-02 11:29:47",
+      "views": "0",
+      "content": "오자마자 빨아서 딸아이 방에 깔아줬는데!\n너무 예뻐요 @.@ 깔아보니 더 이쁘네요~\n아들것도 얼른 빨아서 깔아줘야 겠어요~\n제꺼는 못샀는데… 너무 아쉬워요 ㅠㅠ 재고 없나요?",
+      "images": [
+        "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/09/02/23d7a83ad15d5fff3bfc5810a4c6bd22.jpeg"
+      ],
+      "hashtags": [
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "세탁 후 깔아보니 더 예뻐 만족, 본인 것도 사지 못해 재고를 문의",
+            "hashtags": [
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "'예쁘다'는 단독이라 #디자인 미부여, 추가 구매 희망이 뚜렷해 #또사고싶다만 부여",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#또사고싶다"
         ]
       },
       "crawled_date": "2026-09-02"
@@ -145910,25 +146165,31 @@
     },
     {
       "date": "2026-09-02",
-      "count": 13,
+      "count": 19,
       "new_ids": [
-        "107207",
-        "107206",
-        "107204",
-        "107200",
-        "107198",
+        "107278",
         "107196",
-        "107148",
-        "107147",
-        "107132",
+        "107200",
         "107108",
-        "107107",
+        "107148",
+        "107244",
+        "107132",
+        "107299",
+        "107263",
+        "107301",
         "107068",
-        "107001"
+        "107207",
+        "107204",
+        "107107",
+        "107001",
+        "107265",
+        "107147",
+        "107198",
+        "107206"
       ]
     }
   ],
-  "last_updated": "2026-09-02 08:01:04",
+  "last_updated": "2026-09-02 17:08:27",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
