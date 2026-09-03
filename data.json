@@ -142383,6 +142383,321 @@
         "_relabeled": true
       },
       "crawled_date": "2026-09-03"
+    },
+    "107488": {
+      "id": "107488",
+      "product_name": "발옷5종-시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "좋아요.그런데",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107488/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-03 22:42:23",
+      "views": "0",
+      "content": "기다리던 발옷 제품을 받아보고 제품 자체는 추석 선물로 더 주문하고 싶을 만큼 마음에 들었습니다.\n하지만 첨부한 사진과 같이 발목 부분에 확연한 하자가 있어 문의를 남겼는데,\n겸손몰 측으로부터 \"하자가 아니다\"라는 답변을 받아 매우 당황스럽고 아쉽습니다.\n시선이 자주 가는 발목 위치에 있는 결함이라 실제 착용 시 상당히 거슬리는 상황입니다.\n이것이 하자가 아니라면 어떤 수준이어야 하자로 인정되는지 납득하기 어렵습니다.\n이전 다른 상품(안경테 찍힘, 실 풀림 등) 문의 시에는 담당자께서 직접 문자나 전화로 친절하게 안내해 주시고\n신속히 해결해 주셨던 기억이 있습니다.\n그런데 이번 발옷 건은 왜 담당자 연결 없이 단순 답변으로만 처리되는지도 의문입니다.\n담당자분께서 직접 전화(콜백)를 주시어 원만한 후속 조치(교환)를 진행해 주시길 강력히 요청합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/03/4f158ccba08d8d3911451e5dd253ad48.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/03/2fa2b61f7161a1c9c875853fa20c56a3.jpg"
+      ],
+      "hashtags": [
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "발목 부분에 하자가 있는데 하자가 아니라는 답변에 납득이 안 감",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "교환/반품",
+            "summary": "담당자 콜백을 통한 교환 처리 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 하자 불만과 교환 요청 행동을 분리",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107487": {
+      "id": "107487",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "총 4장 구매.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107487/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-03 22:16:20",
+      "views": "0",
+      "content": "아.. 반팔인데 정작 여름에 더워 못 입겠어요 ㅜㅜ\n재질이 톡톡하고 두꺼운 편리 뱃살 티 안나게하고 등등의\n장점으로 더움을 참아야하는 ㅜㅜ",
+      "images": [],
+      "hashtags": [
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "재질이 두꺼워 여름에 착용하기 덥다",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "두꺼운 재질로 인한 착용 불편 지적",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107486": {
+      "id": "107486",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "보들보들~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107486/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-03 22:12:02",
+      "views": "0",
+      "content": "달항아리 받았는데 색감은 원했던 색상은 아니었지만\n정말 보드라워요~\n재질이 보드라워서 그런지 에어컨 밑에서 덮으면 냉감이불처럼 차가워지면서 부들부들~~\n다만 침대 커버가 사이즈가 많이 작네요?????\n그것 빼곤 만족스러워요!",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#사이즈",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "원하던 색상이 아니고 침대커버 사이즈가 작음",
+            "hashtags": [
+              "#색상",
+              "#사이즈"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "category": "긍정",
+            "summary": "재질이 부드럽고 냉감 있어 만족",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상/사이즈 아쉬움과 재질 만족이 함께 언급되어 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#사이즈",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107479": {
+      "id": "107479",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "좋아요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107479/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-03 20:04:48",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "이유 없는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문 없이 짧은 호평만 있음",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107478": {
+      "id": "107478",
+      "product_name": "[독점 수입] 메종 브레몽 1830 발사믹 식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "맛최고",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107478/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-03 20:03:25",
+      "views": "0",
+      "content": "이것만먹어도최고!!!",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "맛이 최고라는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "맛에 대한 구체적 호평이나 해당 해시태그 없음",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107472": {
+      "id": "107472",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "저도 기대에 못미치는..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107472/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-03 17:40:06",
+      "views": "0",
+      "content": "개봉만하고 써보진 않았는데\n플라스틱 같은 질감이 되게 고급스러운 느낌이 아니에요.\n총수가 너무 설레발쳐서 기대에 못 미치는 듯요. 🤣",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "개봉만 했지만 플라스틱 같은 질감이라 고급스럽지 않고 기대에 못 미침",
+            "hashtags": [
+              "#퀄리티",
+              "#재질"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용은 안했지만 질감/퀄리티에 대한 실망 표현",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107402": {
+      "id": "107402",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "너무 부드럽네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107402/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-03 11:00:30",
+      "views": "0",
+      "content": "천이 무척 부드럽고 고아요 만족해요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/03/fdcb1e6fb051a139b0f7bba02b902ff1.jpeg"
+      ],
+      "hashtags": [
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "천이 부드럽고 좋음",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질에 대한 명확한 만족",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-04"
+    },
+    "107401": {
+      "id": "107401",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "고아요~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107401/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-03 10:58:26",
+      "views": "0",
+      "content": "100수라 너무 부드럽고 고아요 … 근데 쫌 무거운감이 있긴하네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/03/1efaa102bc442bb6b578e3ff0b260908.jpeg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "100수 원단이라 부드럽고 좋음",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "약간 무거운 느낌이 있음",
+            "hashtags": [
+              "#무게감"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질 만족과 무게감 아쉬움을 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-09-04"
     }
   },
   "daily_logs": [
@@ -146330,9 +146645,23 @@
         "107343",
         "107337"
       ]
+    },
+    {
+      "date": "2026-09-04",
+      "count": 8,
+      "new_ids": [
+        "107488",
+        "107487",
+        "107486",
+        "107479",
+        "107478",
+        "107472",
+        "107402",
+        "107401"
+      ]
     }
   ],
-  "last_updated": "2026-09-03 08:00:27",
+  "last_updated": "2026-09-04 08:01:01",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
