@@ -143120,6 +143120,152 @@
         ]
       },
       "crawled_date": "2026-09-05"
+    },
+    "107663": {
+      "id": "107663",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "60을 62로 교환하실분",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107663/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-06 04:49:04",
+      "views": "0",
+      "content": "60사이즈를 62로 교환하실분 있으시면 알려주세요.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "60사이즈를 62사이즈로 교환할 상대 구함",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자간 사이즈 교환 상대를 찾는 게시물로 양도/거래에 해당",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-06"
+    },
+    "107661": {
+      "id": "107661",
+      "product_name": "발옷(5종) 시즌2",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "발옷(주말) 사용후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107661/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-06 00:58:39",
+      "views": "0",
+      "content": "이것은 양말이 아니라 발을 안온하게 감싸주는 옷입니다. 발옷의 조용한 감촉과 편안한 신축성은 경이롭기만 하여 신을 때마다 탄복하는 마음이 솟아납니다. 그리고 주말을 즐기는데 알맞은 디자인 덕에 마음은 연신 흐뭇합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/7aae77b8868ba85e0ca40f928d8b9152.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/89d29b247468de0504697361f1a4f510.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/c67fd92c2519bfb17385330c1d883d39.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/79dc9a6f25a933d7bba453ffb79687cf.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/a4dc55e36256d3b5dcbaf1a87630a0b0.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "부드러운 감촉과 신축성, 주말에 어울리는 디자인에 만족",
+            "hashtags": [
+              "#재질",
+              "#디자인"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "촉감·신축성(재질)과 디자인에 대한 구체적 칭찬이 있어 단순 긍정 이상으로 판단",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#재질",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-09-06"
+    },
+    "107658": {
+      "id": "107658",
+      "product_name": "[독점 수입] 메종 브레몽 1830 발사믹 식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "전 위스키가 배달 온 줄 알았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107658/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-05 22:04:55",
+      "views": "0",
+      "content": "포장이 너무 고급스러워서..\n순간 위스키 인줄 알았습니다.\n아직 맛을 못봐서.. 맛에 대한 평가하기는 좀 그렇지만..\n선물용으로 구매해도 너무 좋을 만큼 패키지가 고급스러워요.\n솔직히 너무 고급스러워... 뜯지도 못하겠네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/05/c401d6a5e7e87a9b56341e45a385233e.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/05/d2bb6517abe45d09be42c4732883eff8.jpg"
+      ],
+      "hashtags": [
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "포장이 고급스러워 선물용으로도 손색없다고 만족",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 맛 평가는 없지만 고급스러운 패키지 구성에 대한 명확한 만족 표현",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-09-06"
+    },
+    "107638": {
+      "id": "107638",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "고생은 하셨지만 마무리는 슬프네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107638/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-05 14:14:44",
+      "views": "0",
+      "content": "진짜 너무 실망한거는 세종 패키징... 성의없이 색깔 동그라미 스티커 붙여서 구분하게 왔는데... 그마저도 거의 다 떨어져서 뽑기하는 기분으로 열어봤음. 선물하려고 하나는 두개를 시켰는데 도대체 뭔 박스에 뭐가 들어있는지 알 수 없어서 결국 다 뜯어봐야했음. 원가 최대한 허리띠 조여서 만든건 이해 하는데 저 스티커로 색 구분하는건 정말 너무 실망스러웠음. 좀 잘 붙여서 주던가. 어떤건 비닐 패키징 안에 붙어있고 어떤거는 밖에 붙여놨다가 다 떨어져 있어서 갸차의 괴로움과 비닐 까진걸 선물해야 하는 고통을 선사해줬음... 고생하신 건 아는데 이건 성의의 영역이라 좀 많이 실망했다는 말 하고 싶었음... 나 너무 스트레스 받았거든요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/05/1c8568970b7b7ee115d4d4d0c699dca9.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "구분용 스티커가 부실하게 붙어있어 내용물 확인이 어렵고 포장 상태에 실망",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 자체가 아닌 패키징(포장) 불량에 대한 불만으로 배송관련불편 카테고리에 해당",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-06"
     }
   },
   "daily_logs": [
@@ -147098,9 +147244,19 @@
         "107522",
         "107515"
       ]
+    },
+    {
+      "date": "2026-09-06",
+      "count": 4,
+      "new_ids": [
+        "107663",
+        "107661",
+        "107658",
+        "107638"
+      ]
     }
   ],
-  "last_updated": "2026-09-05 08:01:10",
+  "last_updated": "2026-09-06 08:00:37",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
