@@ -143268,6 +143268,45 @@
         "hashtags": []
       },
       "crawled_date": "2026-09-06"
+    },
+    "107677": {
+      "id": "107677",
+      "product_name": "독점-수입-메종-브레몽-1830-발사믹-식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "세상에... 이런 맛이.....",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107677/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-06 11:46:09",
+      "views": "0",
+      "content": "받았을 때 포장도 너무 고급지고....\n향이 얼마나 기가 막힌지....\n맛에 조화는 끝내주네요....\n20 년 산이 이럴진데..... 30 년 산은 어떨까요...\n같이 사기를 잘한 것 같아요.....",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/df7032d43c1a9ef1488533a9183d479b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/06/82915d0b2c6d62ccd5a5467660a523a8.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "포장, 향, 맛 모두 만족스럽다는 후기",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "포장·향·맛에 대한 전반적 만족 표현으로 긍정 단일 세그먼트, 품질 관련 태그만 애매하게 적용",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-07"
     }
   },
   "daily_logs": [
@@ -147256,9 +147295,16 @@
         "107658",
         "107638"
       ]
+    },
+    {
+      "date": "2026-09-07",
+      "count": 1,
+      "new_ids": [
+        "107677"
+      ]
     }
   ],
-  "last_updated": "2026-09-06 08:00:37",
+  "last_updated": "2026-09-07 08:00:16",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
