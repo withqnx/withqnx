@@ -143307,6 +143307,210 @@
         ]
       },
       "crawled_date": "2026-09-07"
+    },
+    "107948": {
+      "id": "107948",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "만족하며 쓰고 있습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107948/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 21:36:44",
+      "views": "0",
+      "content": "베개에 비하여 필기감이 월등합니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "필기감이 이전 제품보다 좋다는 만족 후기",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감 언급은 사용성 관련 만족 표현",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107761": {
+      "id": "107761",
+      "product_name": "[독점 수입]라 리유뜨낭뜨 올리브오일",
+      "product_link": "https://nonohumble.com/product/독점-수입라-리유뜨낭뜨-올리브오일/400/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/178f19075b703ba5c308faa2fb1f33ce.png",
+      "title": "밥 지을때 몇방울 소중하게 ..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107761/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 11:31:14",
+      "views": "0",
+      "content": "블랙 먼저 개봉해서 밥 지을때 몇 방울씩 넣어서 맛나게 잘 먹고 있어요.\n볶음등에도..  향이 좀 진합니다.\n용기 넘 맘에 들어요^^",
+      "images": [],
+      "hashtags": [
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "맛과 향, 용기 디자인에 만족하며 잘 사용 중",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 사용 만족과 용기에 대한 긍정적 언급",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107724": {
+      "id": "107724",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "잘 사용하고 있어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107724/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 09:26:37",
+      "views": "0",
+      "content": "믿고 사는 겸손몰!",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "이유 없는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 사유 없는 단순 신뢰 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107714": {
+      "id": "107714",
+      "product_name": "베개 파인라이너 (여분 심지 1개 포함)",
+      "product_link": "https://nonohumble.com/product/베개-파인라이너-여분-심지-1개-포함/264/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/993a17c31f2d6a1ebaad82456ef3a049.png",
+      "title": "베게 파인라이너, 뚜껑",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107714/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 09:10:20",
+      "views": "0",
+      "content": "뚜껑에 살짝 깨져서 금이 가 있느데, AS가능한가요?",
+      "images": [],
+      "hashtags": [
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "뚜껑에 금이 간 불량 발생",
+            "hashtags": [
+              "#내구성"
+            ],
+            "confidence": 0.85
+          },
+          {
+            "category": "교환/반품",
+            "summary": "파손 부위 AS 가능 여부 문의",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 파손 사유와 AS 요청 행동을 별도 segment로 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107713": {
+      "id": "107713",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "너무 예쁘네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107713/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 08:57:08",
+      "views": "0",
+      "content": "좋은 제품 만드시느라 노고가 크셨겠습니다. 너무 예쁘고 마음에 듭니다. 감사히 잘쓰겠습니다!",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "예쁘고 마음에 든다는 단순 호평",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "예쁘다 위주의 단순 호평으로 디자인 해시태그 미부여",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107712": {
+      "id": "107712",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 스테인리스 촉, 펜레스트",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107712/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 08:54:39",
+      "views": "0",
+      "content": "펜레스트가 같이 오지 않았는데 별도 배송하나요?",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "펜레스트 미동봉으로 별도 배송 여부 문의",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구성품 누락 및 배송 관련 문의",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-08"
     }
   },
   "daily_logs": [
@@ -147302,9 +147506,21 @@
       "new_ids": [
         "107677"
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "count": 6,
+      "new_ids": [
+        "107948",
+        "107761",
+        "107724",
+        "107714",
+        "107713",
+        "107712"
+      ]
     }
   ],
-  "last_updated": "2026-09-07 08:00:16",
+  "last_updated": "2026-09-08 08:00:35",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
