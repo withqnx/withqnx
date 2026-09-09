@@ -143308,103 +143308,61 @@
       },
       "crawled_date": "2026-09-07"
     },
-    "107948": {
-      "id": "107948",
+    "107712": {
+      "id": "107712",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "만족하며 쓰고 있습니다.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107948/page/1/",
+      "title": "세종 스테인리스 촉, 펜레스트",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107712/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-07 21:36:44",
+      "written_at": "2026-09-07 08:54:39",
       "views": "0",
-      "content": "베개에 비하여 필기감이 월등합니다.",
-      "images": [],
-      "hashtags": [
-        "#사용성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "필기감이 이전 제품보다 좋다는 만족 후기",
-            "hashtags": [
-              "#사용성"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "필기감 언급은 사용성 관련 만족 표현",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-09-08"
-    },
-    "107761": {
-      "id": "107761",
-      "product_name": "[독점 수입]라 리유뜨낭뜨 올리브오일",
-      "product_link": "https://nonohumble.com/product/독점-수입라-리유뜨낭뜨-올리브오일/400/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/178f19075b703ba5c308faa2fb1f33ce.png",
-      "title": "밥 지을때 몇방울 소중하게 ..",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107761/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-07 11:31:14",
-      "views": "0",
-      "content": "블랙 먼저 개봉해서 밥 지을때 몇 방울씩 넣어서 맛나게 잘 먹고 있어요.\n볶음등에도..  향이 좀 진합니다.\n용기 넘 맘에 들어요^^",
-      "images": [],
-      "hashtags": [
-        "#구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "맛과 향, 용기 디자인에 만족하며 잘 사용 중",
-            "hashtags": [
-              "#구성"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "제품 사용 만족과 용기에 대한 긍정적 언급",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#구성"
-        ]
-      },
-      "crawled_date": "2026-09-08"
-    },
-    "107724": {
-      "id": "107724",
-      "product_name": "해바라기",
-      "product_link": "https://nonohumble.com/product/해바라기/302/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
-      "title": "잘 사용하고 있어요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107724/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-07 09:26:37",
-      "views": "0",
-      "content": "믿고 사는 겸손몰!",
+      "content": "펜레스트가 같이 오지 않았는데 별도 배송하나요?",
       "images": [],
       "hashtags": [],
       "classification": {
         "segments": [
           {
-            "category": "중립/단순수령",
-            "summary": "이유 없는 짧은 호평",
+            "category": "배송관련불편",
+            "summary": "펜레스트 미동봉으로 별도 배송 여부 문의",
             "hashtags": [],
-            "confidence": 0.9
+            "confidence": 0.8
           }
         ],
         "needs_review": false,
-        "reasoning": "구체적 사유 없는 단순 신뢰 표현",
-        "confidence": 0.9,
+        "reasoning": "구성품 누락 및 배송 관련 문의",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107713": {
+      "id": "107713",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "너무 예쁘네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107713/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 08:57:08",
+      "views": "0",
+      "content": "좋은 제품 만드시느라 노고가 크셨겠습니다. 너무 예쁘고 마음에 듭니다. 감사히 잘쓰겠습니다!",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "예쁘고 마음에 든다는 단순 호평",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "예쁘다 위주의 단순 호평으로 디자인 해시태그 미부여",
+        "confidence": 0.8,
         "_v2": true,
         "hashtags": []
       },
@@ -143452,401 +143410,83 @@
       },
       "crawled_date": "2026-09-08"
     },
-    "107713": {
-      "id": "107713",
-      "product_name": "와",
-      "product_link": "https://nonohumble.com/product/와/377/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
-      "title": "너무 예쁘네요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107713/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-07 08:57:08",
-      "views": "0",
-      "content": "좋은 제품 만드시느라 노고가 크셨겠습니다. 너무 예쁘고 마음에 듭니다. 감사히 잘쓰겠습니다!",
-      "images": [],
-      "hashtags": [],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "예쁘고 마음에 든다는 단순 호평",
-            "hashtags": [],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "예쁘다 위주의 단순 호평으로 디자인 해시태그 미부여",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": []
-      },
-      "crawled_date": "2026-09-08"
-    },
-    "107712": {
-      "id": "107712",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "세종 스테인리스 촉, 펜레스트",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107712/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-07 08:54:39",
-      "views": "0",
-      "content": "펜레스트가 같이 오지 않았는데 별도 배송하나요?",
-      "images": [],
-      "hashtags": [],
-      "classification": {
-        "segments": [
-          {
-            "category": "배송관련불편",
-            "summary": "펜레스트 미동봉으로 별도 배송 여부 문의",
-            "hashtags": [],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "구성품 누락 및 배송 관련 문의",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": []
-      },
-      "crawled_date": "2026-09-08"
-    },
-    "108215": {
-      "id": "108215",
-      "product_name": "별",
-      "product_link": "https://nonohumble.com/product/별/341/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
-      "title": "잘입고있어요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108215/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-08 22:11:32",
-      "views": "0",
-      "content": "휘뚜루마뚜루 티3장과 출시했던 니트로 한 여름 빼고\n손이 제일 많이 갔던것 같네요\n앞으로도 좋은제품 기대하겠습니다",
-      "images": [],
-      "hashtags": [
-        "#사용성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "옷을 자주 손이 가는 만큼 만족하며 착용 중",
-            "hashtags": [
-              "#사용성"
-            ],
-            "confidence": 0.75
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "구체적 사유(자주 손이 감)가 있어 단순수령이 아닌 긍정으로 분류",
-        "confidence": 0.75,
-        "_v2": true,
-        "hashtags": [
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108212": {
-      "id": "108212",
+    "107724": {
+      "id": "107724",
       "product_name": "해바라기",
       "product_link": "https://nonohumble.com/product/해바라기/302/",
       "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
-      "title": "잘받았습니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108212/page/1/",
+      "title": "잘 사용하고 있어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107724/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-08 22:08:13",
+      "written_at": "2026-09-07 09:26:37",
       "views": "0",
-      "content": "앞서 구매한 칼도 잘 쓰고 있었습니다만\n새로 구매한 해바라기 칼도 무척 만족하고 잘 사용하고 있습니다\n쌍둥이니 셀러****보다  훨씬 가볍고 견고합니다",
+      "content": "믿고 사는 겸손몰!",
       "images": [],
-      "hashtags": [
-        "#무게감",
-        "#내구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "새로 산 칼이 쌍둥이 셀러 제품보다 가볍고 견고해 만족",
-            "hashtags": [
-              "#무게감",
-              "#내구성"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "비교 우위(가벼움, 견고함)를 명확히 언급",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#무게감",
-          "#내구성"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108208": {
-      "id": "108208",
-      "product_name": "펫방석",
-      "product_link": "https://nonohumble.com/product/펫방석/350/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
-      "title": "큼직해서 꿀잠을 자는 제품",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108208/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-08 22:01:07",
-      "views": "0",
-      "content": "방석위 오르락 내리락 할때 애견의 관절에 무리가 되는 물컹함\n방석 충전재가 너무물러 사람이 한번씩 밟고 넘어지는 경험이 있었습니다 역시 애견들도 슬개골 수술경험이 있는지라\n비틀거리는 모습경험 합니다 참고바랍니다",
-      "images": [],
-      "hashtags": [
-        "#재질"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "부정",
-            "summary": "방석 충전재가 너무 물러 반려견이 비틀거리는 문제",
-            "hashtags": [
-              "#재질"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "제품 충전재(재질) 자체의 결함을 지적한 상품 불만",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#재질"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108191": {
-      "id": "108191",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "멋진 작품!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108191/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 20:38:02",
-      "views": "0",
-      "content": "드뎌! 세종펜을 받았습니다. 조금 더 배송을 기다리셔야 하는 분들께는 자랑질같아 죄송합니다...\n세종펜을 출시하자마자 주문했는데도 먼저 받으시고 상품평을 올리신 분들이 많으신 것을 보면 주문량이 굉장한가봐요.\n무슨색을 고를지 고민하다가 실버와 블랙으로 주문했어요. 워낙 만년필 사용을 좋아하는지라 펜촉이 수명을 다하면 이어서 다른제품으로 사용해왔는데 세종은 그럴 수 없거든요. 그래서 처음부터 두자루를 주문했는데... 둘다 너무 예뻐서 감동먹었어요.\n잉크를 넣고 글씨를 써보니 사각거리는 만년필 특유의 느낌과 잉크의 농도가 느껴지는 글씨가 완전 멋져요. 두자루 모두 각각 다른 색의 잉크를 넣고 손길 가는데로 사용하려구요.\n펜레스트와도 멋진 조화를 이루구요. 데스크 위가 고오급 스러워졌습니다.\n멋진 만년필 선물해주셔서 정말 감사드립니다!! ^^",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f656c29109ece47df0a30efaeed9381e.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f0eef22248bfa9203007c7ef907ed309.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/e8e84e4cc50ad392710b791ab0056a9a.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/02916fba616a6c571ac07f08016c48bd.jpg"
-      ],
-      "hashtags": [
-        "#색상",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "실버·블랙 두 자루 모두 만족스럽고 필기감과 잉크 느낌이 좋음",
-            "hashtags": [
-              "#색상",
-              "#퀄리티"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "색상 선택 및 전반적 만족감을 구체적으로 표현",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108190": {
-      "id": "108190",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "멋진 작품!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108190/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 20:13:19",
-      "views": "0",
-      "content": "드뎌!! 세종펜을 받았어요. 조금 더 기다리셔야 하는 분들께는 자랑질같아 죄송합니다!\n멋지네요. 가벼운 펜만 사용하던 제게는 살짝 무게감이 느껴집니다만 값어치라고 생각하렵니다.\n설레는 마음으로 잉크를 넣고 첫 글씨를 써보니... 오오 만년필 특유의 사각거림과 잉크농도가 느껴지는 글씨들! 완전 멋져요!! 게다가 펜은 손에 착 안기는 느낌이 기가 막힙니다!!\n데스크 위를 빛내줄 작품을 만났어요.\n멋진 펜을 선물해주셔서 넘넘 감사합니다!! ^^",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/954199454748978011df8b432676775b.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/5b84e0c374698d4698b9dbf8a86779b8.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/8a6682db38e69ca8c9852a5b38ddb81a.jpg"
-      ],
-      "hashtags": [
-        "#무게감",
-        "#사용성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "무게감이 있지만 값어치로 느껴지고 필기감이 만족스러움",
-            "hashtags": [
-              "#무게감",
-              "#사용성"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "무게감과 필기감에 대한 구체적 긍정 평가",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#무게감",
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108189": {
-      "id": "108189",
-      "product_name": "세종 펜레스트",
-      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
-      "title": "멋진 작품!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108189/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 19:51:47",
-      "views": "0",
-      "content": "세종펜을 주문하며 세트로 주문했어요. 문구류 장식품을 좋아하는지라 그냥 넘어갈 수 없더군요. 서예나 캘리그라피를 쓸때 문진(?)으로도 사용할 수 있겠어요. 표면이 코팅처리되어 미끄럽지 않아요. 펜을 올려 놓으면 안정감있게 고정됩니다. 데스크를 빛내줄 작품입니다.",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/9268a9023c5ae4a14eba37ba83c27d8a.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f195a02e3b3a06ff2243853333cf55d7.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/a44beb96f1f02d86b8a02666c5d551b1.jpg"
-      ],
-      "hashtags": [
-        "#퀄리티",
-        "#사용성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "펜 세트를 문진으로도 활용 가능하고 표면 코팅으로 안정적 고정됨",
-            "hashtags": [
-              "#퀄리티",
-              "#사용성"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "표면 마감과 사용상 안정감에 대한 구체적 만족 표현",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108185": {
-      "id": "108185",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "검은진주 도착",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108185/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 19:07:40",
-      "views": "0",
-      "content": "후기에 단차 안 맞은 경우가 있던데 그런 일 없이 딱 맞아 떨어지네요\n만년필 보고만 있어도 기분 좋게 예쁘게 잘 뽑혔습니다\n다만 스테인리스 촉 발표 후 맑은순은을 생각하다 검은진주의 고급진 어두운 색감에\n검은진주를 주문한 것인데 실물은 사진의 안내와 색감이 다릅니다\n사진은 검은 바탕에 금속빛을 머금은 느낌인데 실제 제품은 금속에 살짝 어두운 광이 들은 것 같은 느낌?\n다른 후기에도 있는 걸 보니 제 눈에만 그렇게 보이는 건 아닌 것 같네요\n사진과 실물이 동일했으면 저는 맑은순은을 주문 했을겁니다.\n다음에는 실물 제품과 최대한 동일한 촬영이든 편집이든 반영해서 보여주시면 좋겠습니다\n손글씨를 너무 안 쓰는 시대이다 보니 글씨가 나빠진 건 슬프지만\n소장님 터치로 살짝 사각거리면서 부드럽게 필기되는게 기분이 좋아요.\n잉크는 펠리칸 4001 브릴리언트 블랙",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f2bce4346398af42a8ff3a07c87b8be6.jpeg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/82d2d2672a0e001fe3fb9aabdb14d647.jpeg"
-      ],
-      "hashtags": [
-        "#사용성",
-        "#색상"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "단차 없이 딱 맞고 필기감이 부드럽고 좋음",
-            "hashtags": [
-              "#사용성"
-            ],
-            "confidence": 0.8
-          },
-          {
-            "category": "부정",
-            "summary": "사진과 실물의 색감(검은진주)이 다르게 느껴짐",
-            "hashtags": [
-              "#색상"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "제품 상태 만족과 색상 불일치 불만이 함께 있어 별도 segment로 분리",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#사용성",
-          "#색상"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108160": {
-      "id": "108160",
-      "product_name": "와",
-      "product_link": "https://nonohumble.com/product/와/377/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
-      "title": "세종 맘년필에 딱 입니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108160/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 17:25:42",
-      "views": "0",
-      "content": "너무 맘에 듭니다",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/3d22dbc914c2852384a5dfad7982e2b0.jpeg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/c987e792833e1ecc8295f15305bec236.jpeg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/2b0f86e087d478b4dc589e2246c27187.jpeg"
-      ],
       "hashtags": [],
       "classification": {
         "segments": [
           {
             "category": "중립/단순수령",
-            "summary": "너무 맘에 든다는 짧은 호평",
+            "summary": "이유 없는 짧은 호평",
             "hashtags": [],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "이유 없는 짧은 호평으로 단순수령 처리, hashtags 규칙상 빈 배열",
+        "reasoning": "구체적 사유 없는 단순 신뢰 표현",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": []
       },
-      "crawled_date": "2026-09-09"
+      "crawled_date": "2026-09-08"
     },
-    "108090": {
-      "id": "108090",
+    "107761": {
+      "id": "107761",
+      "product_name": "[독점 수입]라 리유뜨낭뜨 올리브오일",
+      "product_link": "https://nonohumble.com/product/독점-수입라-리유뜨낭뜨-올리브오일/400/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/178f19075b703ba5c308faa2fb1f33ce.png",
+      "title": "밥 지을때 몇방울 소중하게 ..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107761/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-07 11:31:14",
+      "views": "0",
+      "content": "블랙 먼저 개봉해서 밥 지을때 몇 방울씩 넣어서 맛나게 잘 먹고 있어요.\n볶음등에도..  향이 좀 진합니다.\n용기 넘 맘에 들어요^^",
+      "images": [],
+      "hashtags": [
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "맛과 향, 용기 디자인에 만족하며 잘 사용 중",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 사용 만족과 용기에 대한 긍정적 언급",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-09-08"
+    },
+    "107948": {
+      "id": "107948",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "잉크번짐",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108090/page/1/",
+      "title": "만족하며 쓰고 있습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/107948/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-08 14:54:36",
+      "written_at": "2026-09-07 21:36:44",
       "views": "0",
-      "content": "세종 만년필로 글을 쓰면 깔끔하지가 않고 좀 번지는 것 같습니다. 매번 번지는 것은 아니고 종이에 따라 차이는 있으나, 일반 A4 용지에 쓸 때 잉크흐름으로 인해 글자가  퍼지는 경우가 많습니다. 원래 그렇게 디자인 된 것인지, 제 것만 그런지 궁금합니다.",
+      "content": "베개에 비하여 필기감이 월등합니다.",
       "images": [],
       "hashtags": [
         "#사용성"
@@ -143854,8 +143494,8 @@
       "classification": {
         "segments": [
           {
-            "category": "부정",
-            "summary": "종이에 따라 잉크가 번져 깔끔하지 않음",
+            "category": "긍정",
+            "summary": "필기감이 이전 제품보다 좋다는 만족 후기",
             "hashtags": [
               "#사용성"
             ],
@@ -143863,140 +143503,14 @@
           }
         ],
         "needs_review": false,
-        "reasoning": "필기 시 잉크 번짐이라는 사용상 문제를 지적",
+        "reasoning": "필기감 언급은 사용성 관련 만족 표현",
         "confidence": 0.8,
         "_v2": true,
         "hashtags": [
           "#사용성"
         ]
       },
-      "crawled_date": "2026-09-09"
-    },
-    "108086": {
-      "id": "108086",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "기다림 끝에 만난 세종",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108086/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 14:12:29",
-      "views": "0",
-      "content": "1년만에 만난 기념으로 사진을 남겨둡니다. 만듬세가 만족스럽습니다.\n필기감은 아직까진 손에 익지 않아서 그런지 쓰던 펜들에 비하면 좀 더 길이들어야 할것같네요.\n금촉과 스텐드, 잉크도 얼른 받아서 책상 한켠을 든든히 채워줄수있으면 좋을것 같습니다.",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f514c45b26ce36a6b5d423fa8e21c077.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/2c49c24db6e03e196bae59fac6002c79.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/4e423b9ffbe1a8144f28e8cdf6da8491.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/914bedfeaf658ec6d1ac4488967aa465.jpg"
-      ],
-      "hashtags": [
-        "#마감",
-        "#사용성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "1년 기다린 세종 만년필의 만듬새에 만족, 필기감은 적응 필요",
-            "hashtags": [
-              "#마감",
-              "#사용성"
-            ],
-            "confidence": 0.75
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "만족감이 주된 내용이며 필기감 적응은 경미한 언급으로 별도 부정 segment로 분리하지 않음",
-        "confidence": 0.75,
-        "_v2": true,
-        "hashtags": [
-          "#마감",
-          "#사용성"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108077": {
-      "id": "108077",
-      "product_name": "[독점 수입] 메종 브레몽 1830 발사믹 식초",
-      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
-      "title": "정말 맛이 업그레이드 되는군요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108077/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 13:38:57",
-      "views": "0",
-      "content": "훈제연어와 함께 먹어보고 아이스크림에도 올려먹어 봤는데 모든 음식들의 풍미가 업그레이드 되는것이 감동이었습니다 30년산 100ml가 너무 비싼거 아닌가 물음표를 가졌었는데 먹는순간 돈이 1도 안 아까운  느낌표였습니다  ^^  혹시 고민하시면서 후기보시는분 계시다면 무조건 사십시오 절대 후회 안합니다  포장도 너무 고급져서 선물하기도 정말 좋아요 ^^",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/f5293964338d145e65e1cf0de6302138.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/3dcea663c450b8701a9ebabd4fbe2767.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/c5f70ae3aff990d184d1e54004bb9557.jpg"
-      ],
-      "hashtags": [
-        "#가격",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "비싼 가격이 아깝지 않을 만큼 풍미가 업그레이드되고 포장도 고급스러움",
-            "hashtags": [
-              "#가격",
-              "#퀄리티"
-            ],
-            "confidence": 0.85
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "가격 대비 만족과 포장 품질에 대한 구체적 언급",
-        "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#가격",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-09-09"
-    },
-    "108030": {
-      "id": "108030",
-      "product_name": "와",
-      "product_link": "https://nonohumble.com/product/와/377/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
-      "title": "너무 이쁘고 고급스럽고 완전 만족이에요!",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108030/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-08 09:57:04",
-      "views": "0",
-      "content": "정말 만년필 받기 전까지 수저받침으로 쓸수 있을듯요 ㅎ ㅎ 앞으로도 좋은 작품같은 물품 기대할께요~ ㅎ ㅎ",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/153cb887c111357c83789b0d9d3c5f6b.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/08/52f2b2637c92e1c9752d8eba66470b8f.jpg"
-      ],
-      "hashtags": [
-        "#디자인"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "너무 이쁘고 고급스러워 완전 만족",
-            "hashtags": [
-              "#디자인"
-            ],
-            "confidence": 0.75
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "'예쁘다' 단독이 아닌 '고급스럽다'가 함께 언급되어 디자인 태그 부여",
-        "confidence": 0.75,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ]
-      },
-      "crawled_date": "2026-09-09"
+      "crawled_date": "2026-09-08"
     },
     "108013": {
       "id": "108013",
@@ -144056,199 +143570,21 @@
       },
       "crawled_date": "2026-09-09"
     },
-    "108423": {
-      "id": "108423",
-      "product_name": "독점-수입-메종-브레몽-1830-발사믹-식초",
-      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
-      "title": "깊고 진한 맛.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108423/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-09 21:08:13",
-      "views": "0",
-      "content": "와!  기대 이상입니다. 두병 살껄~~~~~~",
-      "images": [],
-      "hashtags": [],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "맛이 기대 이상으로 좋아 두 병 살 걸 그랬다는 후기",
-            "hashtags": [],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "구체적 이유(기대 이상)가 있는 짧은 호평이라 단순수령이 아닌 긍정으로 분류",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": []
-      },
-      "crawled_date": "2026-09-10"
-    },
-    "108421": {
-      "id": "108421",
-      "product_name": "세종필통(2구)",
-      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
-      "title": "필통",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108421/page/1/",
+    "108030": {
+      "id": "108030",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "너무 이쁘고 고급스럽고 완전 만족이에요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108030/page/1/",
       "has_photo": true,
-      "written_at": "2026-09-09 20:26:54",
+      "written_at": "2026-09-08 09:57:04",
       "views": "0",
-      "content": "세종 도착 후 하루뒤에 도착한 필통  스크래치 걱정 한 숨 덜었네요",
+      "content": "정말 만년필 받기 전까지 수저받침으로 쓸수 있을듯요 ㅎ ㅎ 앞으로도 좋은 작품같은 물품 기대할께요~ ㅎ ㅎ",
       "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/8ac0bf12e067dcb2c6e367baf9174f49.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/00072f518ac07b6b67f77d8898ededc9.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/36153cd7e520ffb5e78f3af2c0c708d5.jpg"
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/153cb887c111357c83789b0d9d3c5f6b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/52f2b2637c92e1c9752d8eba66470b8f.jpg"
       ],
-      "hashtags": [
-        "#마감"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "하루 뒤 도착했지만 스크래치 없이 와서 안심",
-            "hashtags": [
-              "#마감"
-            ],
-            "confidence": 0.7
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "수령 사실과 함께 표면 상태(스크래치 없음)에 대한 만족 이유가 있어 긍정으로 분류, 다소 애매해 confidence 낮음",
-        "confidence": 0.7,
-        "_v2": true,
-        "hashtags": [
-          "#마감"
-        ]
-      },
-      "crawled_date": "2026-09-10"
-    },
-    "108420": {
-      "id": "108420",
-      "product_name": "세종-스테인리스촉",
-      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "만족합니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108420/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-09 20:24:06",
-      "views": "0",
-      "content": "10개월의 기다림.. 충분합니다 금촉도 아주 기대 됩니다",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/ab8728cec4f1d657e0211fd21fd90dd1.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/a4d0809e82acc7e53f7042a7e76aab2d.jpg"
-      ],
-      "hashtags": [],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "10개월 기다림이 아깝지 않고 금촉도 기대된다는 후기",
-            "hashtags": [],
-            "confidence": 0.7
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "아직 실사용 평가가 아닌 기대감 위주라 긍정이지만 확신도는 낮게 설정",
-        "confidence": 0.7,
-        "_v2": true,
-        "hashtags": []
-      },
-      "crawled_date": "2026-09-10"
-    },
-    "108416": {
-      "id": "108416",
-      "product_name": "짐버 오리지널",
-      "product_link": "https://nonohumble.com/product/짐버-오리지널/408/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/9a7544151cfd7d7888c90e4de3df8c8d.png",
-      "title": "만능 생강음료 짐버입니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108416/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-09 19:40:21",
-      "views": "0",
-      "content": "늦으면 매번 품절이라 한동안 구입 못했었는데\n이번에 방송을 보자마자 얼른 구입했습니다\n생강음료가 이렇게 맛있을 수 있다는 느낌을 준 짐버입니다\n전혀 파손이 안생기게 톤튼한 포장으로 잘 도착했구요\n기한이 12월 10일인 할인된 상품을 저렴하게 구입했습니다\nHot, Ice 어떻게 먹든, 물이나 탄산수나 어디에 타 먹든\n잘 어울리는 짐버입니다\n선물포장백까지 동봉되어 있어 선물하기도 좋아요",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/fbf01df6c7b1ed0ca23986753ceb7c0f.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/09/39c3b2f6698adb78b2e4d5009c16dd66.jpg"
-      ],
-      "hashtags": [
-        "#가격",
-        "#구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "맛있고 파손 없이 튼튼하게 포장되어 도착, 할인가 구매와 선물포장 구성에 만족",
-            "hashtags": [
-              "#가격",
-              "#구성"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "제품 맛, 포장 상태, 가격, 구성 모두에 대한 명확한 호평이라 긍정으로 분류",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#가격",
-          "#구성"
-        ]
-      },
-      "crawled_date": "2026-09-10"
-    },
-    "108409": {
-      "id": "108409",
-      "product_name": "세종필통(1구 붓)",
-      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
-      "title": "핸드백 속에 넣고 다니기 좋아요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108409/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-09 18:25:12",
-      "views": "0",
-      "content": "아담하고 넘 예뻐요~~펜2자루 정도 들어갑니다~작은 해드백 속에도 쏘옥~~데일리 필통입니다...",
-      "images": [],
-      "hashtags": [
-        "#사이즈"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "작은 핸드백에도 쏙 들어가는 아담한 크기와 예쁜 디자인의 데일리 필통",
-            "hashtags": [
-              "#사이즈"
-            ],
-            "confidence": 0.8
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "크기(아담함, 핸드백 수납)에 대한 구체적 언급이 있어 #사이즈 태그, 디자인 언급은 단독 '예쁘다' 수준이라 태그 제외",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#사이즈"
-        ]
-      },
-      "crawled_date": "2026-09-10"
-    },
-    "108408": {
-      "id": "108408",
-      "product_name": "껑",
-      "product_link": "https://nonohumble.com/product/껑/352/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
-      "title": "이뻐요~~",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108408/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-09 18:19:16",
-      "views": "0",
-      "content": "이쁩니다!!!!얼굴이 작아 보여요~~가을과 겨울에 어떤 옷이든 잘 어울릴거 같아요",
-      "images": [],
       "hashtags": [
         "#디자인"
       ],
@@ -144256,55 +143592,511 @@
         "segments": [
           {
             "category": "긍정",
-            "summary": "예쁘고 얼굴이 작아 보이며 가을/겨울 어떤 옷에도 잘 어울림",
+            "sentiment": "positive",
+            "summary": "너무 이쁘고 고급스러워 완전 만족",
             "hashtags": [
               "#디자인"
             ],
-            "confidence": 0.8
+            "confidence": 1
           }
         ],
         "needs_review": false,
-        "reasoning": "얼굴이 작아보인다, 옷과 잘 어울린다는 구체적 이유가 있어 단독 '예쁘다'가 아니므로 #디자인 태그 부여",
-        "confidence": 0.8,
+        "reasoning": "'예쁘다' 단독이 아닌 '고급스럽다'가 함께 언급되어 디자인 태그 부여",
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#디자인"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108077": {
+      "id": "108077",
+      "product_name": "[독점 수입] 메종 브레몽 1830 발사믹 식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "정말 맛이 업그레이드 되는군요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108077/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 13:38:57",
+      "views": "0",
+      "content": "훈제연어와 함께 먹어보고 아이스크림에도 올려먹어 봤는데 모든 음식들의 풍미가 업그레이드 되는것이 감동이었습니다 30년산 100ml가 너무 비싼거 아닌가 물음표를 가졌었는데 먹는순간 돈이 1도 안 아까운  느낌표였습니다  ^^  혹시 고민하시면서 후기보시는분 계시다면 무조건 사십시오 절대 후회 안합니다  포장도 너무 고급져서 선물하기도 정말 좋아요 ^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f5293964338d145e65e1cf0de6302138.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/3dcea663c450b8701a9ebabd4fbe2767.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/c5f70ae3aff990d184d1e54004bb9557.jpg"
+      ],
+      "hashtags": [
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "비싼 가격이 아깝지 않을 만큼 풍미가 업그레이드되고 포장도 고급스러움",
+            "hashtags": [
+              "#가격",
+              "#퀄리티"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격 대비 만족과 포장 품질에 대한 구체적 언급",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#가격",
+          "#퀄리티"
         ]
       },
-      "crawled_date": "2026-09-10"
+      "crawled_date": "2026-09-09"
     },
-    "108405": {
-      "id": "108405",
+    "108086": {
+      "id": "108086",
       "product_name": "세종-스테인리스촉",
       "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
       "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
-      "title": "겉에 상처가 있습니다",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108405/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-09 17:58:38",
+      "title": "기다림 끝에 만난 세종",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108086/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 14:12:29",
       "views": "0",
-      "content": "지금 발견하여 부랴부랴 올립니다.\n떨어뜨리지 않았고 소중히 사용 중인 와중에 발견하였습니다.\n우둘투둘 만져집니다.\n상처가 움푹 파인 느낌이고요.",
+      "content": "1년만에 만난 기념으로 사진을 남겨둡니다. 만듬세가 만족스럽습니다.\n필기감은 아직까진 손에 익지 않아서 그런지 쓰던 펜들에 비하면 좀 더 길이들어야 할것같네요.\n금촉과 스텐드, 잉크도 얼른 받아서 책상 한켠을 든든히 채워줄수있으면 좋을것 같습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f514c45b26ce36a6b5d423fa8e21c077.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/2c49c24db6e03e196bae59fac6002c79.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/4e423b9ffbe1a8144f28e8cdf6da8491.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/914bedfeaf658ec6d1ac4488967aa465.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "1년 기다린 세종 만년필의 만듬새에 만족, 필기감은 적응 필요",
+            "hashtags": [
+              "#마감",
+              "#사용성"
+            ],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만족감이 주된 내용이며 필기감 적응은 경미한 언급으로 별도 부정 segment로 분리하지 않음",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#사용성"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108090": {
+      "id": "108090",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "잉크번짐",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108090/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-08 14:54:36",
+      "views": "0",
+      "content": "세종 만년필로 글을 쓰면 깔끔하지가 않고 좀 번지는 것 같습니다. 매번 번지는 것은 아니고 종이에 따라 차이는 있으나, 일반 A4 용지에 쓸 때 잉크흐름으로 인해 글자가  퍼지는 경우가 많습니다. 원래 그렇게 디자인 된 것인지, 제 것만 그런지 궁금합니다.",
       "images": [],
       "hashtags": [
-        "#마감"
+        "#사용성"
       ],
       "classification": {
         "segments": [
           {
             "category": "부정",
-            "summary": "떨어뜨리지 않고 소중히 사용했는데 표면에 우둘투둘한 상처(파인 흠집) 발견",
+            "summary": "종이에 따라 잉크가 번져 깔끔하지 않음",
             "hashtags": [
-              "#마감"
+              "#사용성"
             ],
             "confidence": 0.8
           }
         ],
         "needs_review": false,
-        "reasoning": "배송 중 파손이 아닌 사용 중 발견된 표면 마감 결함이라 배송관련불편이 아닌 부정으로 분류",
+        "reasoning": "필기 시 잉크 번짐이라는 사용상 문제를 지적",
         "confidence": 0.8,
         "_v2": true,
         "hashtags": [
-          "#마감"
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108160": {
+      "id": "108160",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "세종 맘년필에 딱 입니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108160/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 17:25:42",
+      "views": "0",
+      "content": "너무 맘에 듭니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/3d22dbc914c2852384a5dfad7982e2b0.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/c987e792833e1ecc8295f15305bec236.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/2b0f86e087d478b4dc589e2246c27187.jpeg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "너무 맘에 든다는 짧은 호평",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "이유 없는 짧은 호평으로 단순수령 처리, hashtags 규칙상 빈 배열",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108185": {
+      "id": "108185",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "검은진주 도착",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108185/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 19:07:40",
+      "views": "0",
+      "content": "후기에 단차 안 맞은 경우가 있던데 그런 일 없이 딱 맞아 떨어지네요\n만년필 보고만 있어도 기분 좋게 예쁘게 잘 뽑혔습니다\n다만 스테인리스 촉 발표 후 맑은순은을 생각하다 검은진주의 고급진 어두운 색감에\n검은진주를 주문한 것인데 실물은 사진의 안내와 색감이 다릅니다\n사진은 검은 바탕에 금속빛을 머금은 느낌인데 실제 제품은 금속에 살짝 어두운 광이 들은 것 같은 느낌?\n다른 후기에도 있는 걸 보니 제 눈에만 그렇게 보이는 건 아닌 것 같네요\n사진과 실물이 동일했으면 저는 맑은순은을 주문 했을겁니다.\n다음에는 실물 제품과 최대한 동일한 촬영이든 편집이든 반영해서 보여주시면 좋겠습니다\n손글씨를 너무 안 쓰는 시대이다 보니 글씨가 나빠진 건 슬프지만\n소장님 터치로 살짝 사각거리면서 부드럽게 필기되는게 기분이 좋아요.\n잉크는 펠리칸 4001 브릴리언트 블랙",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f2bce4346398af42a8ff3a07c87b8be6.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/82d2d2672a0e001fe3fb9aabdb14d647.jpeg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "단차 없이 딱 맞고 필기감이 부드럽고 좋음",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "category": "부정",
+            "summary": "사진과 실물의 색감(검은진주)이 다르게 느껴짐",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 상태 만족과 색상 불일치 불만이 함께 있어 별도 segment로 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108189": {
+      "id": "108189",
+      "product_name": "세종 펜레스트",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "멋진 작품!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108189/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 19:51:47",
+      "views": "0",
+      "content": "세종펜을 주문하며 세트로 주문했어요. 문구류 장식품을 좋아하는지라 그냥 넘어갈 수 없더군요. 서예나 캘리그라피를 쓸때 문진(?)으로도 사용할 수 있겠어요. 표면이 코팅처리되어 미끄럽지 않아요. 펜을 올려 놓으면 안정감있게 고정됩니다. 데스크를 빛내줄 작품입니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/9268a9023c5ae4a14eba37ba83c27d8a.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f195a02e3b3a06ff2243853333cf55d7.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/a44beb96f1f02d86b8a02666c5d551b1.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "펜 세트를 문진으로도 활용 가능하고 표면 코팅으로 안정적 고정됨",
+            "hashtags": [
+              "#퀄리티",
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "표면 마감과 사용상 안정감에 대한 구체적 만족 표현",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108190": {
+      "id": "108190",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "멋진 작품!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108190/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 20:13:19",
+      "views": "0",
+      "content": "드뎌!! 세종펜을 받았어요. 조금 더 기다리셔야 하는 분들께는 자랑질같아 죄송합니다!\n멋지네요. 가벼운 펜만 사용하던 제게는 살짝 무게감이 느껴집니다만 값어치라고 생각하렵니다.\n설레는 마음으로 잉크를 넣고 첫 글씨를 써보니... 오오 만년필 특유의 사각거림과 잉크농도가 느껴지는 글씨들! 완전 멋져요!! 게다가 펜은 손에 착 안기는 느낌이 기가 막힙니다!!\n데스크 위를 빛내줄 작품을 만났어요.\n멋진 펜을 선물해주셔서 넘넘 감사합니다!! ^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/954199454748978011df8b432676775b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/5b84e0c374698d4698b9dbf8a86779b8.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/8a6682db38e69ca8c9852a5b38ddb81a.jpg"
+      ],
+      "hashtags": [
+        "#무게감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "무게감이 있지만 값어치로 느껴지고 필기감이 만족스러움",
+            "hashtags": [
+              "#무게감",
+              "#사용성"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "무게감과 필기감에 대한 구체적 긍정 평가",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108191": {
+      "id": "108191",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "멋진 작품!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108191/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-08 20:38:02",
+      "views": "0",
+      "content": "드뎌! 세종펜을 받았습니다. 조금 더 배송을 기다리셔야 하는 분들께는 자랑질같아 죄송합니다...\n세종펜을 출시하자마자 주문했는데도 먼저 받으시고 상품평을 올리신 분들이 많으신 것을 보면 주문량이 굉장한가봐요.\n무슨색을 고를지 고민하다가 실버와 블랙으로 주문했어요. 워낙 만년필 사용을 좋아하는지라 펜촉이 수명을 다하면 이어서 다른제품으로 사용해왔는데 세종은 그럴 수 없거든요. 그래서 처음부터 두자루를 주문했는데... 둘다 너무 예뻐서 감동먹었어요.\n잉크를 넣고 글씨를 써보니 사각거리는 만년필 특유의 느낌과 잉크의 농도가 느껴지는 글씨가 완전 멋져요. 두자루 모두 각각 다른 색의 잉크를 넣고 손길 가는데로 사용하려구요.\n펜레스트와도 멋진 조화를 이루구요. 데스크 위가 고오급 스러워졌습니다.\n멋진 만년필 선물해주셔서 정말 감사드립니다!! ^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f656c29109ece47df0a30efaeed9381e.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/f0eef22248bfa9203007c7ef907ed309.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/e8e84e4cc50ad392710b791ab0056a9a.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/08/02916fba616a6c571ac07f08016c48bd.jpg"
+      ],
+      "hashtags": [
+        "#색상",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "실버·블랙 두 자루 모두 만족스럽고 필기감과 잉크 느낌이 좋음",
+            "hashtags": [
+              "#색상",
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상 선택 및 전반적 만족감을 구체적으로 표현",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108208": {
+      "id": "108208",
+      "product_name": "펫방석",
+      "product_link": "https://nonohumble.com/product/펫방석/350/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/2da5bd533157eeb0066f2c0bf7a6da0a.png",
+      "title": "큼직해서 꿀잠을 자는 제품",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108208/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-08 22:01:07",
+      "views": "0",
+      "content": "방석위 오르락 내리락 할때 애견의 관절에 무리가 되는 물컹함\n방석 충전재가 너무물러 사람이 한번씩 밟고 넘어지는 경험이 있었습니다 역시 애견들도 슬개골 수술경험이 있는지라\n비틀거리는 모습경험 합니다 참고바랍니다",
+      "images": [],
+      "hashtags": [
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "방석 충전재가 너무 물러 반려견이 비틀거리는 문제",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 충전재(재질) 자체의 결함을 지적한 상품 불만",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108212": {
+      "id": "108212",
+      "product_name": "해바라기",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "잘받았습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108212/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-08 22:08:13",
+      "views": "0",
+      "content": "앞서 구매한 칼도 잘 쓰고 있었습니다만\n새로 구매한 해바라기 칼도 무척 만족하고 잘 사용하고 있습니다\n쌍둥이니 셀러****보다  훨씬 가볍고 견고합니다",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "새로 산 칼이 쌍둥이 셀러 제품보다 가볍고 견고해 만족",
+            "hashtags": [
+              "#무게감",
+              "#내구성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "비교 우위(가벼움, 견고함)를 명확히 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#내구성"
+        ]
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108215": {
+      "id": "108215",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "잘입고있어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108215/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-08 22:11:32",
+      "views": "0",
+      "content": "휘뚜루마뚜루 티3장과 출시했던 니트로 한 여름 빼고\n손이 제일 많이 갔던것 같네요\n앞으로도 좋은제품 기대하겠습니다",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "옷을 자주 손이 가는 만큼 만족하며 착용 중",
+            "hashtags": [
+              "#사용성"
+            ],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 사유(자주 손이 감)가 있어 단순수령이 아닌 긍정으로 분류",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#사용성"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-09"
+    },
+    "108280": {
+      "id": "108280",
+      "product_name": "세종필통(2구)",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "정말 만족합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108280/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-09 12:02:47",
+      "views": "0",
+      "content": "세종 만년필을 구매 후 세종 필통까지 구매 했습니다.\n평소 와이프것도 같이 구매 해서 매번 같이 구매했습니다.\n이번 세종 필통을 보더니 와이프가 너무 좋아 합니다.\n정말 만듬새가 다릅니다.\n여러개를 구매해 구박 받았는데, 이번엔 세종필통을 받아 보고서는\n너무 너무 이쁘다고 좋아 합니다.\n좋은 제품 감사히 잘 쓰겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "만듬새가 다르게 좋고 예뻐서 아내도 매우 만족",
+            "hashtags": [
+              "#퀄리티",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "품질(만듬새)과 디자인(예쁨)에 대한 구체적 호평이 명확해 confidence 높게 설정",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티",
+          "#디자인"
         ]
       },
       "crawled_date": "2026-09-10"
@@ -144361,42 +144153,260 @@
       },
       "crawled_date": "2026-09-10"
     },
-    "108280": {
-      "id": "108280",
-      "product_name": "세종필통(2구)",
-      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
-      "title": "정말 만족합니다.",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108280/page/1/",
+    "108405": {
+      "id": "108405",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "겉에 상처가 있습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108405/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-09 12:02:47",
+      "written_at": "2026-09-09 17:58:38",
       "views": "0",
-      "content": "세종 만년필을 구매 후 세종 필통까지 구매 했습니다.\n평소 와이프것도 같이 구매 해서 매번 같이 구매했습니다.\n이번 세종 필통을 보더니 와이프가 너무 좋아 합니다.\n정말 만듬새가 다릅니다.\n여러개를 구매해 구박 받았는데, 이번엔 세종필통을 받아 보고서는\n너무 너무 이쁘다고 좋아 합니다.\n좋은 제품 감사히 잘 쓰겠습니다.",
+      "content": "지금 발견하여 부랴부랴 올립니다.\n떨어뜨리지 않았고 소중히 사용 중인 와중에 발견하였습니다.\n우둘투둘 만져집니다.\n상처가 움푹 파인 느낌이고요.",
       "images": [],
       "hashtags": [
-        "#퀄리티",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "떨어뜨리지 않고 소중히 사용했는데 표면에 우둘투둘한 상처(파인 흠집) 발견",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 중 파손이 아닌 사용 중 발견된 표면 마감 결함이라 배송관련불편이 아닌 부정으로 분류",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#마감"
+        ]
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108408": {
+      "id": "108408",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "이뻐요~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108408/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-09 18:19:16",
+      "views": "0",
+      "content": "이쁩니다!!!!얼굴이 작아 보여요~~가을과 겨울에 어떤 옷이든 잘 어울릴거 같아요",
+      "images": [],
+      "hashtags": [
         "#디자인"
       ],
       "classification": {
         "segments": [
           {
             "category": "긍정",
-            "summary": "만듬새가 다르게 좋고 예뻐서 아내도 매우 만족",
+            "summary": "예쁘고 얼굴이 작아 보이며 가을/겨울 어떤 옷에도 잘 어울림",
             "hashtags": [
-              "#퀄리티",
               "#디자인"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "얼굴이 작아보인다, 옷과 잘 어울린다는 구체적 이유가 있어 단독 '예쁘다'가 아니므로 #디자인 태그 부여",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108409": {
+      "id": "108409",
+      "product_name": "세종필통(1구 붓)",
+      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
+      "title": "핸드백 속에 넣고 다니기 좋아요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108409/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-09 18:25:12",
+      "views": "0",
+      "content": "아담하고 넘 예뻐요~~펜2자루 정도 들어갑니다~작은 해드백 속에도 쏘옥~~데일리 필통입니다...",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "작은 핸드백에도 쏙 들어가는 아담한 크기와 예쁜 디자인의 데일리 필통",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "크기(아담함, 핸드백 수납)에 대한 구체적 언급이 있어 #사이즈 태그, 디자인 언급은 단독 '예쁘다' 수준이라 태그 제외",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108416": {
+      "id": "108416",
+      "product_name": "짐버 오리지널",
+      "product_link": "https://nonohumble.com/product/짐버-오리지널/408/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/9a7544151cfd7d7888c90e4de3df8c8d.png",
+      "title": "만능 생강음료 짐버입니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108416/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-09 19:40:21",
+      "views": "0",
+      "content": "늦으면 매번 품절이라 한동안 구입 못했었는데\n이번에 방송을 보자마자 얼른 구입했습니다\n생강음료가 이렇게 맛있을 수 있다는 느낌을 준 짐버입니다\n전혀 파손이 안생기게 톤튼한 포장으로 잘 도착했구요\n기한이 12월 10일인 할인된 상품을 저렴하게 구입했습니다\nHot, Ice 어떻게 먹든, 물이나 탄산수나 어디에 타 먹든\n잘 어울리는 짐버입니다\n선물포장백까지 동봉되어 있어 선물하기도 좋아요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/fbf01df6c7b1ed0ca23986753ceb7c0f.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/39c3b2f6698adb78b2e4d5009c16dd66.jpg"
+      ],
+      "hashtags": [
+        "#가격",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "맛있고 파손 없이 튼튼하게 포장되어 도착, 할인가 구매와 선물포장 구성에 만족",
+            "hashtags": [
+              "#가격",
+              "#구성"
             ],
             "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "품질(만듬새)과 디자인(예쁨)에 대한 구체적 호평이 명확해 confidence 높게 설정",
+        "reasoning": "제품 맛, 포장 상태, 가격, 구성 모두에 대한 명확한 호평이라 긍정으로 분류",
         "confidence": 0.9,
         "_v2": true,
         "hashtags": [
-          "#퀄리티",
-          "#디자인"
+          "#가격",
+          "#구성"
         ]
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108420": {
+      "id": "108420",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "만족합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108420/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-09 20:24:06",
+      "views": "0",
+      "content": "10개월의 기다림.. 충분합니다 금촉도 아주 기대 됩니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/ab8728cec4f1d657e0211fd21fd90dd1.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/a4d0809e82acc7e53f7042a7e76aab2d.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "10개월 기다림이 아깝지 않고 금촉도 기대된다는 후기",
+            "hashtags": [],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "아직 실사용 평가가 아닌 기대감 위주라 긍정이지만 확신도는 낮게 설정",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108421": {
+      "id": "108421",
+      "product_name": "세종필통(2구)",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "필통",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108421/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-09 20:26:54",
+      "views": "0",
+      "content": "세종 도착 후 하루뒤에 도착한 필통  스크래치 걱정 한 숨 덜었네요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/8ac0bf12e067dcb2c6e367baf9174f49.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/00072f518ac07b6b67f77d8898ededc9.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/09/36153cd7e520ffb5e78f3af2c0c708d5.jpg"
+      ],
+      "hashtags": [
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "하루 뒤 도착했지만 스크래치 없이 와서 안심",
+            "hashtags": [
+              "#마감"
+            ],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 사실과 함께 표면 상태(스크래치 없음)에 대한 만족 이유가 있어 긍정으로 분류, 다소 애매해 confidence 낮음",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#마감"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-10"
+    },
+    "108423": {
+      "id": "108423",
+      "product_name": "독점-수입-메종-브레몽-1830-발사믹-식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "깊고 진한 맛.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108423/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-09 21:08:13",
+      "views": "0",
+      "content": "와!  기대 이상입니다. 두병 살껄~~~~~~",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "맛이 기대 이상으로 좋아 두 병 살 걸 그랬다는 후기",
+            "hashtags": [],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 이유(기대 이상)가 있는 짧은 호평이라 단순수령이 아닌 긍정으로 분류",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": []
       },
       "crawled_date": "2026-09-10"
     }
