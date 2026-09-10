@@ -143592,20 +143592,22 @@
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "너무 이쁘고 고급스러워 완전 만족",
             "hashtags": [
               "#디자인"
             ],
-            "confidence": 0.75
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "'예쁘다' 단독이 아닌 '고급스럽다'가 함께 언급되어 디자인 태그 부여",
-        "confidence": 0.75,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#디자인"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-09-09"
     },
@@ -143677,22 +143679,24 @@
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "1년 기다린 세종 만년필의 만듬새에 만족, 필기감은 적응 필요",
             "hashtags": [
               "#마감",
               "#사용성"
             ],
-            "confidence": 0.75
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "만족감이 주된 내용이며 필기감 적응은 경미한 언급으로 별도 부정 segment로 분리하지 않음",
-        "confidence": 0.75,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#마감",
           "#사용성"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-09-09"
     },
@@ -144039,20 +144043,22 @@
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "옷을 자주 손이 가는 만큼 만족하며 착용 중",
             "hashtags": [
               "#사용성"
             ],
-            "confidence": 0.75
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "구체적 사유(자주 손이 감)가 있어 단순수령이 아닌 긍정으로 분류",
-        "confidence": 0.75,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#사용성"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-09-09"
     },
@@ -144317,16 +144323,18 @@
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "10개월 기다림이 아깝지 않고 금촉도 기대된다는 후기",
             "hashtags": [],
-            "confidence": 0.7
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "아직 실사용 평가가 아닌 기대감 위주라 긍정이지만 확신도는 낮게 설정",
-        "confidence": 0.7,
+        "confidence": 1,
         "_v2": true,
-        "hashtags": []
+        "hashtags": [],
+        "_relabeled": true
       },
       "crawled_date": "2026-09-10"
     },
@@ -144353,20 +144361,22 @@
         "segments": [
           {
             "category": "긍정",
+            "sentiment": "positive",
             "summary": "하루 뒤 도착했지만 스크래치 없이 와서 안심",
             "hashtags": [
               "#마감"
             ],
-            "confidence": 0.7
+            "confidence": 1
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "수령 사실과 함께 표면 상태(스크래치 없음)에 대한 만족 이유가 있어 긍정으로 분류, 다소 애매해 confidence 낮음",
-        "confidence": 0.7,
+        "confidence": 1,
         "_v2": true,
         "hashtags": [
           "#마감"
-        ]
+        ],
+        "_relabeled": true
       },
       "crawled_date": "2026-09-10"
     },
