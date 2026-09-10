@@ -144409,6 +144409,277 @@
         "hashtags": []
       },
       "crawled_date": "2026-09-10"
+    },
+    "108571": {
+      "id": "108571",
+      "product_name": "심지-추가",
+      "product_link": "https://nonohumble.com/product/심지-추가/265/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
+      "title": "파인 라이너",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108571/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-11 07:35:44",
+      "views": "0",
+      "content": "",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "summary": "제목만 있고 본문 없음",
+            "hashtags": [],
+            "confidence": 0.6
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "본문 없이 제목뿐이라 실질적 내용 판단 불가",
+        "confidence": 0.6,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108542": {
+      "id": "108542",
+      "product_name": "틈-트로피컬",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "신발이  참 예쁩니다만..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108542/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-10 17:34:06",
+      "views": "0",
+      "content": "신발 참 예쁩니다만\n엘노어는 사이즈가 참 이상합니다.\n지난번 겸손구두는 사이즈가 커도 너무  크더니만\n슬리퍼는 사이즈가 작은 듯 합니다\n바닥면과 위 덮개면의 박음질 부분을  자세히 설명하고 사이를 선택하게 했으면 좋았을텐데.. 혹 제가 놓친걸까요?\n평소 제 사이로 다른 신발은 여유있게 신는데로 불구하고 이 신발은 뒷꿈치가 신발밖으로 많이 나옵니다.\n자주 신으면 늘어나서발이 쏙 들어가려나요..요것만 빼고는 너무 예쁘고 고급스럽고 편안합니다\n지난번 구두가 신발장에 고이 잠자고 있습니다.\n수선하려니 만만치가 않네요 . 혹 구매하실분 안계실까요?\n남자구두 동틀녁 감색 260\n여자 낮은구두 깊음밤 먹색 260",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#디자인",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "슬리퍼 사이즈가 이상하고 뒤꿈치가 밖으로 나옴",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "category": "긍정",
+            "summary": "예쁘고 고급스럽고 편안함",
+            "hashtags": [
+              "#디자인",
+              "#사용성"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "category": "양도/거래",
+            "summary": "이전 구매한 구두를 판매하고 싶다며 사이즈·색상 정보 공유",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만, 제품 만족, 개인간 판매 의사가 각각 별도 내용으로 분리됨",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#디자인",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108540": {
+      "id": "108540",
+      "product_name": "[독점 수입] 메종 브레몽 1830 발사믹 식초",
+      "product_link": "https://nonohumble.com/product/독점-수입-메종-브레몽-1830-발사믹-식초/392/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202608/2fc9eb5cf2b909cac1e82acc12bc8dc7.png",
+      "title": "더 구매원합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108540/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-10 17:24:34",
+      "views": "0",
+      "content": "온가족이 매일 샐러드에 먹는중이예요\n더 구매해서 쟁여두고싶은 제품입니다.\n구매하게 해주세요",
+      "images": [],
+      "hashtags": [
+        "#또사고싶다"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "온 가족이 매일 먹을 정도로 만족하며 재구매·재입고 희망",
+            "hashtags": [
+              "#또사고싶다"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "명확한 만족 표현과 재구매 의사",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#또사고싶다"
+        ]
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108531": {
+      "id": "108531",
+      "product_name": "틈-트로피컬",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "짧지만 자주 신을게요~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108531/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-10 16:40:12",
+      "views": "0",
+      "content": "방금 “파파야” 받아서 신어 보았습니다. 260mm 인데 잘 맞구요, 착용감 좋네요. 주의사항 준수하며 오래도록 예쁘고, 멋지게 신겠습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/10/c7d202345959012db8c6b033a702ec5b.jpeg"
+      ],
+      "hashtags": [
+        "#사이즈",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "사이즈가 잘 맞고 착용감이 좋음",
+            "hashtags": [
+              "#사이즈",
+              "#사용성"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적인 사이즈·착용감 만족 언급",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#사용성"
+        ]
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108492": {
+      "id": "108492",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "이쯤되면 제작진-디자이너 역량부족입니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108492/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-10 12:38:06",
+      "views": "0",
+      "content": "Ball cap을 니트로 만들면 내부에 잡아주는 골격이 있더라도 약간의 신축성이 있을 것을 고려해서 사이즈를 잡았어야 합니다. 챙은 얼굴이 작아 보이는 효과를 노렸다고 하더라도 챙 내부 소재를 고려해서 사이즈를 정했어야 합니다. 챙이 무거워 모자가 앞으로 쏠립니다.  챙 사이즈가 이 보다 약간 작아도 좋다고 생각합니다.  저는 사이즈를 꽉 끼게 잡아 주문했는데도 사이즈가  커 당황스럽습니다. 모자 둘레 뿐만 아니라 챙 문제까지 고려하면 이거 수리 안됩니다",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "니트 소재 볼캡의 챙 무게와 사이즈 설계에 대한 강한 불만",
+            "hashtags": [
+              "#사이즈",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 설계·사이즈에 대한 구체적이고 명확한 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108476": {
+      "id": "108476",
+      "product_name": "세종-스테인리스촉",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 검은진주+펜레스트",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108476/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-10 11:39:21",
+      "views": "0",
+      "content": "하나는 사용하려고 개봉한 사진이고\n미개봉 상품입니다.\n구매 원하시면 메일주세요.\npeviolet@naver.com",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/10/e6e26d66027e6a2eb06a25afc501623c.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/10/20d2009b5c5447d9e8ffa22f7c8ec504.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/10/783b9a56d7154302f35a4a3ae489e860.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "미개봉 상품 판매 희망, 연락처 제공",
+            "hashtags": [],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 판매 게시물로 명확함",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-11"
+    },
+    "108466": {
+      "id": "108466",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "와 색상 문제 제기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108466/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-10 11:04:31",
+      "views": "0",
+      "content": "저는 와 녹색, 회색, 청색 3개를 주문해 어제 배송 받았습니다. 그런데 처음에 뉴공에 선보였던 시제품보다 고풍스러운 멋이 떨어지는 것 같았습니다. 특히 청색의 경우, 색상이 밋밋하고 가벼운 것 같아 다소 실망했습니다. 감사합니다.",
+      "images": [],
+      "hashtags": [
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "실제 색상이 시제품보다 고풍스러움이 떨어지고 밋밋하며 가벼워 실망",
+            "hashtags": [
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상 품질에 대한 구체적 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-09-11"
     }
   },
   "daily_logs": [
@@ -148450,9 +148721,22 @@
         "108348",
         "108280"
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "count": 7,
+      "new_ids": [
+        "108571",
+        "108542",
+        "108540",
+        "108531",
+        "108492",
+        "108476",
+        "108466"
+      ]
     }
   ],
-  "last_updated": "2026-09-10 08:01:06",
+  "last_updated": "2026-09-11 08:00:46",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
