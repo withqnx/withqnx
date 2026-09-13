@@ -145642,6 +145642,330 @@
         ]
       },
       "crawled_date": "2026-09-13"
+    },
+    "108827": {
+      "id": "108827",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "오랫만에 나를 위한 선물~!! 매우 만족",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108827/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-14 01:33:20",
+      "views": "0",
+      "content": "겸손몰 보다가 전통기와 형태의 펜거치대를 예약 판매하는 것을 보고\n평소 책상 위가 허전하다 싶었던지 무엇에 홀린 듯 팬거치대를 구매하였음.\n팬거치대가 오면 만년필이나 볼펜을 어떻게 올려놓을까 상상을 하면서 기대하였는데\n구매하면 1~2주 안에는 바로 발송이 되는 줄 알았는데...\n알고 보니 예약판매라 3개월 넘게 기다리게 되었음ㅜㅜ (너무 오래걸림)\n기다림에 지치고 지쳐 그만 취소버튼을 눌러 버릴까 하였지만\n그때마다 기와모양의 팬거치대가 아른아른거려 취소는 포기하고\n무작정 기다리기로 하였음. 그러다 심지어 구매한 것도 잊어 버림. (마치 물린 주식 잊고 살듯이 있었음ㅋㅋ)\n갑자기 배송한다는 문자를 보고 급기분이 좋아져서\n택배 도착하기만을 오매불망 기다리던 중 집에 도착하였다는 문자받고\n집에서 택배상자는 뜯는 것만을 생각하며 집으로 바로 고고(후배녀석이 밥사준다고 했는데 패스함).\n근데 집에 도착하자 택배상자를 찾았으나 보이지 않는 것임(급실망함).\n배송이 잘못되었나 생각하면서 집안 여기저기를 찾아보던 중\n남편에게 온 택배상자는 본인의 물건처럼 뜯는 와이프가 있다는\n생각이 머리를 스치면서 와아프에게 물어보니\n본인 것이 아니길래 구석에 던져놓았다는 말을 듣고 마침내 나의 팬거치대와 첫 만남 ㅋ\n지금까지는 제품받기까지 셀레임이었고 구체적으로 제품에 대해서 리뷰해보면,\n1. 포장 = 베리굿\n☆\n☆\n☆\n☆\n포장은 기대 안 했는데 너무 좋아서 깜짝 놀람\n박스 종이가 매우 고급짐 그리고 박스 안을 열면 다시 투명한 포장용기 안에 들어 있는데\n이대로 디피해도 좋을 듯함.\n다만, 3개 중에 1개는 중앙에 있지 못하고 살짝 옆으로 이동해 있어서 아쉬움.\n고정이 100% 안되는 듯함.\n2. 만듦세 = 베리베리굿\n☆\n☆ ☆ ☆\n☆\n한국 전통기와의 곡선미와 문양을 디테일하게 잘살림.\n검은색이라서 칙칙할 줄 알았는데 광택감과 마감처리가 좋아서 고급져보임.\n검은색 안에서도 앞에서부터 뒤까지 명도나 채도의 변화가 있는 점이 매우 좋음.\n다만, 팬거치대면 무게감이 좀 더 나갔으면 좋겠는데 가벼운 점이 아쉬움.\n도자기 소재라서 그런듯함.\n3. 활용도 = 베리굿\n☆ ☆ ☆\n☆\n실물로 보면 오묘하고 고즈넉한 분위기가 좋음.\n아마 전통기와 모양이라서 그런듯함.  서재나 책상에서 오브제로 두어도 매우 훌룡함.\n다만, 오브제로 하려면 전통기와와 어울리는 만년필을 추가로 구매해야할 듯함.\n청자처럼 오묘한 색상이 추가로 있었으면 좋겠음.\n무게도 좀더 무거웠으면 좋겠다는 생각임.\n다른분들 구매하시는데 도움 되시라고 자세히 올림.\n사진도 찍어서 올릴려고 하였는데 어울리는 만년필이 없어서 생략(사실 약간 귀찮음 ㅋ)\n나중에 이쁘게 찍어서 추가로 올리겠음.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "예약판매 특성상 3개월 넘게 기다려 배송이 매우 지연됨",
+            "hashtags": [],
+            "confidence": 0.85
+          },
+          {
+            "category": "긍정",
+            "summary": "포장이 고급스럽고 정성스러워 만족스러움",
+            "hashtags": [
+              "#퀄리티"
+            ],
+            "confidence": 0.8
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "예약판매 장기 지연에 대한 불만과 포장 품질 만족을 별도 segment로 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108823": {
+      "id": "108823",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "제품 받자마자 와!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108823/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-13 23:06:01",
+      "views": "0",
+      "content": "엄청 작은 상자 이게 뭐지? 하고 열어봤다가 나온 감탄사가 와!\n제품이름이랑 똑같았어요 ㅋㅋ\n궁궐이랑 한옥의 기와는 볼 때 마다 신기하고 멋진 느낌이었는데 기와를 펜레스트로 만들다니~~ 매일 옆에 두고 볼 수 있다니 !\n무조건 사야해~~ 오늘 받고 보니 너무 잘 한 일이었고 다른 색깔도 살 걸 하는 후회가 ...\n너무 예쁘고 영롱해서 사진을 안 찍을 수가 없고 후기도 안 쓸 수가 없어요\n좋은 제품 만들어 주셔서 진짜 고맙습니다 ~\n겸손몰의 안목 진짜 대단합니다\n아 그리고 저 포장상자 까지 ! 뚜껑의 와 그림 감동입니다 ㅠㅠ",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/37249fde3aaba37a2e191d323787a989.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/1a5f61249dd0c8cbc2ef7c05f088dfb6.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/07ee844c8ec5948dce82eb228325d96c.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/560315f88b03e6f9a30e07735ab95287.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/5d25dc1afc952613bce1b2f7d54c77cb.jpeg"
+      ],
+      "hashtags": [
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "기와를 펜레스트로 표현한 디자인에 감탄하며 만족",
+            "hashtags": [
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "디자인에 대한 명확한 칭찬 위주의 단일 긍정 리뷰",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108821": {
+      "id": "108821",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "실물이 더 이뻐요~^^",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108821/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-13 22:34:54",
+      "views": "0",
+      "content": "총 5종 모두 왔어요~^^\n사진으로 봤을 때부터 고급스러운 느낌이 들어서 기대했는데, 실제로 받아보니 더 만족스러웠어요.\n전통 기와의 곡선과 형태를 이렇게 감각적으로 표현한 게 정말 인상적입니다. 색감도 깊이감이 있고 은은한 광택이 더해져서 보는 각도마다 느낌이 조금씩 달라요.\n특히 그라데이션이 들어간 그린, 레드도 맘에들지만\n청기와 느낌 쨍한 파랑 모두 각각의 매력이 있어서 하나만 고르기 어려울 정도예요.\n투명 케이스와 패키지도 제품과 잘 어울려서 전체적으로 완성도가 높아 보입니다. 책상이나 거실에 두니 작은 오브제 하나만으로도 공간 분위기가 확 살아나는 것 같아요.\n한국적인 소재를 촌스럽지 않고 현대적으로 재해석한 점이 가장 마음에 들었습니다.\n선물용으로도 흔하지 않으면서 의미가 있어, 교수님께 선물하려고 주문했어요.\n사진보다 실물이 훨씬 예쁘고, 손에 들었을 때 느껴지는 묵직한 존재감도 좋았습니다.  만족합니다~ : )",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/c6d91d146552e31582a9763a52443973.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/13/b044a126cefce29715581b976f4fc247.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#색상",
+        "#퀄리티",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색상·재질감·무게감 모두 만족스러운 고급스러운 제품",
+            "hashtags": [
+              "#디자인",
+              "#색상",
+              "#퀄리티",
+              "#무게감"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색감, 광택, 무게감 등 다양한 만족 포인트를 언급한 긍정 리뷰",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#디자인",
+          "#색상",
+          "#퀄리티",
+          "#무게감"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108820": {
+      "id": "108820",
+      "product_name": "세종필통(1구)",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "진짜 잘 만들었네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108820/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-13 22:31:36",
+      "views": "0",
+      "content": "남색+검정 조합으로 구매했습니다\n눕혀놓아도 예쁘고 특히 안에 넣어놓은 파인라이너 꺼낼 때 필통 속을 앞으로 당겨서 꺼낼 수 있는 거 아이디어 너무 좋아요 !\n사용할 때 마다 편리해서 감탄하고 있어요~\n사진에 있는 다른 색상들도 계속 아른거리네요 더 샀어야했다 ㅋㅋㅋ",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "필통 사용 아이디어와 색상 조합이 만족스러움",
+            "hashtags": [
+              "#사용성",
+              "#색상"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용성과 디자인 아이디어에 대한 명확한 칭찬",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#사용성",
+          "#색상"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108810": {
+      "id": "108810",
+      "product_name": "[2025 겸손색안경] 쇠칠각",
+      "product_link": "https://nonohumble.com/product/2025-겸손색안경-쇠칠각/216/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202505/79b549ee62fc55bb1f2111b8b5128449.png",
+      "title": "단 한번도 안쓰게 됨 ㅠㅠ",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108810/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-13 20:09:09",
+      "views": "0",
+      "content": "<\n꽃/L(51)/황/색안경 렌즈 포함>\n역시 이런건 직접 써보고 구입해야 하나봐요..\n무겁고 디자인도 그저그렇고..\n받고 그대로 서랍에만 있네요..\n와이프도 구입했는데.. 와이프는 괜찮은것 같다고 하면서도 한번도 사용을 안하네요..\n음.. 저희한텐 잘 안맞는 제품이었네요..",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "무겁고 디자인이 별로여서 한 번도 사용하지 않음",
+            "hashtags": [
+              "#무게감",
+              "#디자인"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 자체(무게, 디자인)에 대한 명확한 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#무게감",
+          "#디자인"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108808": {
+      "id": "108808",
+      "product_name": "[2025 겸손색안경] 작은쇠동글",
+      "product_link": "https://nonohumble.com/product/2025-겸손색안경-작은쇠동글/179/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202505/f9b0f6e0daf3fa23bae710250516efcc.png",
+      "title": "작은 쇠 동글 금S 선글라스 판매합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108808/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-13 18:34:28",
+      "views": "0",
+      "content": "안경집 선글라스 안경닦이 있어요.\n설 전에 받은 거 같은데.. 한 번도 쓰고 외출을 못했네요.\n안 어울려서 ㅠㅠ\n이만 마음 접고 어울리는 분께 보내드리고자 합니다.\n택배비 3천원 별도\n문자주세요 공일공 사오삼하나 공사오사",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "양도/거래",
+            "summary": "미사용 선글라스를 택배비 별도로 판매함",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "안 어울려서 한 번도 착용하지 못함",
+            "hashtags": [],
+            "confidence": 0.75
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "양도(판매) 행동과 안 어울린다는 사유를 별도 segment로 분리",
+        "confidence": 0.75,
+        "_v2": true,
+        "hashtags": []
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108801": {
+      "id": "108801",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "저) 카키브라운/60호 , 차콜그레이/60호 -> 님) 58호 교환 원해요 (잠실)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108801/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-13 16:21:38",
+      "views": "0",
+      "content": "저는 카키브라운/60호 , 차콜그레이/60호 가지고 있어요\n너무 커서 둘 다 58호로 교환 원합니다\n지역은 잠실이구요\n댓글 주시면 카톡 링크 열게요!",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "교환/반품",
+            "summary": "60호 제품 2개를 58호로 교환 요청",
+            "hashtags": [],
+            "confidence": 0.9
+          },
+          {
+            "category": "부정",
+            "summary": "사이즈가 너무 커서 맞지 않음",
+            "hashtags": [
+              "#사이즈"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 행동과 사이즈가 크다는 불만 사유를 분리",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#사이즈"
+        ]
+      },
+      "crawled_date": "2026-09-14"
+    },
+    "108785": {
+      "id": "108785",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "궁금합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108785/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-13 10:14:48",
+      "views": "0",
+      "content": "기다린 보람이  있고 받는순간 뭔가 큰선물을 받은기분이더라고요~~ㅋ\n여름용 인가요?ㅋ\n솜 끼워서 덮는줄 알고 ㅋ 지퍼있나하고 찾앗는데 읍네요 ㅋㅋ\n혹... ㅋ 싱글 반품 된거 있나요?\n구매하고 싶네요~~",
+      "images": [],
+      "hashtags": [
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "지퍼가 있는 줄 알았는데 없어서 아쉬움, 반품 재고 문의",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.6
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "제품 구성에 대한 가벼운 불만과 재고 문의가 섞여 있어 분류가 애매함",
+        "confidence": 0.6,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-09-14"
     }
   },
   "daily_logs": [
@@ -149732,9 +150056,23 @@
         "108756",
         "108750"
       ]
+    },
+    {
+      "date": "2026-09-14",
+      "count": 8,
+      "new_ids": [
+        "108827",
+        "108823",
+        "108821",
+        "108820",
+        "108810",
+        "108808",
+        "108801",
+        "108785"
+      ]
     }
   ],
-  "last_updated": "2026-09-13 08:01:08",
+  "last_updated": "2026-09-14 08:00:58",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
