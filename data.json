@@ -146277,6 +146277,84 @@
         ]
       },
       "crawled_date": "2026-09-15"
+    },
+    "109102": {
+      "id": "109102",
+      "product_name": "100수",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "보들보들 아주 기분 좋은 침구",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109102/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-15 13:35:10",
+      "views": "0",
+      "content": "늦게 왔다는 거 빼곤\n너무 좋은 기분을 주는 명품 침구세트 입니다.\n보들보들 합니다 ㅋㅋㅋ",
+      "images": [],
+      "hashtags": [
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "배송관련불편",
+            "summary": "배송이 늦게 도착함",
+            "hashtags": [],
+            "confidence": 0.8
+          },
+          {
+            "category": "긍정",
+            "summary": "보들보들하고 만족스러운 침구세트",
+            "hashtags": [
+              "#재질"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 지연 불편과 제품 자체 만족을 별도 segment로 분리",
+        "confidence": 0.8,
+        "_v2": true,
+        "hashtags": [
+          "#재질"
+        ]
+      },
+      "crawled_date": "2026-09-16"
+    },
+    "109058": {
+      "id": "109058",
+      "product_name": "심지 추가",
+      "product_link": "https://nonohumble.com/product/심지-추가/265/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
+      "title": "이 상품 추가 구매 관련",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109058/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-15 10:01:39",
+      "views": "0",
+      "content": "리필 심은 추가로 구매가 가능해야 하지 않을까요?\n너무 펜이 아깝자나요\n다른곳에서 구입이 가능한지요?\n어떤 상품을 구입해야 딱 맞는 상품인지 궁금합니다",
+      "images": [],
+      "hashtags": [
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "리필심 추가 구매가 불가능해 아쉬움, 어떤 상품이 맞는지 문의",
+            "hashtags": [
+              "#구성"
+            ],
+            "confidence": 0.6
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "단순 불만이 아니라 구매 가능 여부를 묻는 문의성 내용이 섞여 있어 표준 카테고리와 애매하게 걸침",
+        "confidence": 0.6,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ]
+      },
+      "crawled_date": "2026-09-16"
     }
   },
   "daily_logs": [
@@ -150394,9 +150472,17 @@
         "108855",
         "108833"
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "count": 2,
+      "new_ids": [
+        "109102",
+        "109058"
+      ]
     }
   ],
-  "last_updated": "2026-09-15 08:00:43",
+  "last_updated": "2026-09-16 08:00:20",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
