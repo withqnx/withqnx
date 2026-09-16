@@ -6,7 +6,7 @@
 
 import requests
 from bs4 import BeautifulSoup
-import json, os, re, time
+import json, os, re, sys, time
 from datetime import datetime, date
 
 try:
@@ -43,11 +43,15 @@ HEADERS = {
 
 # ── 상세 페이지 파싱 ──────────────────────────────────
 def parse_detail(url: str) -> dict:
+    """상세 페이지를 파싱한다. 반환값의 ok=False 는 '요청 실패'(본문을 못 봤다)라는 뜻이고,
+    ok=True + content="" 는 '실제로 본문이 비어 있다'는 뜻이다. 둘을 반드시 구분해야
+    요청 실패한 후기가 빈 본문으로 영구 확정되는 일을 막을 수 있다."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=12)
         resp.raise_for_status()
-    except Exception:
-        return {"content": "", "images": [], "product_name": "", "product_link": ""}
+    except Exception as e:
+        return {"ok": False, "error": str(e), "content": "", "images": [],
+                "product_name": "", "product_link": ""}
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -160,8 +164,14 @@ def parse_detail(url: str) -> dict:
             r"이전\s*\[.*?\]\s*다음",
             r"관련글 모음",
         ]
+        # 줄 경계를 넘어 지워야 하는 패턴에만 DOTALL 을 준다.
+        # (예전엔 "SHIPPING"/"결제" 가 들어간 모든 패턴에 DOTALL 이 걸려,
+        #  본문 중간에 "SHIPPING TO : ..." 가 끼면 r"SHIPPING TO\s*:.*" 의 .* 가
+        #  그 뒤 본문 전체를 먹어치웠다. 이제 이 패턴은 한 줄만 지운다.)
+        DOTALL_PATTERNS = {r"본 결제 창은.*?마시기 바랍니다\."}
         for pat in noise_patterns:
-            content = re.sub(pat, "", content, flags=re.IGNORECASE | re.DOTALL if "SHIPPING" in pat or "결제" in pat else re.IGNORECASE)
+            flags = re.IGNORECASE | (re.DOTALL if pat in DOTALL_PATTERNS else 0)
+            content = re.sub(pat, "", content, flags=flags)
 
         content = re.sub(r"^\[[\w._]+\.(jpg|jpeg|png|gif|webp)\](\s*,\s*\[[\w._]+\.(jpg|jpeg|png|gif|webp)\])*\s*$",
                         "", content, flags=re.MULTILINE)
@@ -190,6 +200,7 @@ def parse_detail(url: str) -> dict:
             images.append(src)
 
     return {
+        "ok": True,
         "content": content,
         "images": images,
         "raw_html": resp.text,
@@ -340,20 +351,57 @@ def probe_last_page(start: int = 10) -> int:
 
 
 # ── 목록 파싱 ─────────────────────────────────────────
-def parse_list(page: int) -> list:
+def is_notice_row(row, use_number_heuristic: bool = True) -> bool:
+    """공지 고정글 행이면 True. 공지를 한 번 수집해버리면 그 뒤로는 매일 목록 첫 행에서
+    '기수집'으로 걸려 영구 0건이 되므로 목록 단계에서 걸러낸다.
+    판별: (1) tr/td 의 class·id 에 notice 가 있거나 (2) 번호 칸이 숫자가 아닌 행."""
+    classes = " ".join(row.get("class", []) or []) + " " + (row.get("id") or "")
+    if "notice" in classes.lower():
+        return True
+
+    num_td = row.select_one("td:nth-child(1)")
+    if num_td is None:
+        return False
+    if "notice" in " ".join(num_td.get("class", []) or []).lower():
+        return True
+    if not use_number_heuristic:
+        return False
+    # 번호 칸이 "공지"/아이콘/빈칸 등 숫자가 아니면 공지로 본다.
+    return not num_td.get_text(strip=True).isdigit()
+
+
+def parse_list(page: int) -> tuple:
+    """(items, stats) 를 돌려준다.
+    stats.fetched=False 면 요청 자체가 실패한 것이고, fetched=True·articles=0 이면
+    HTML 은 받았는데 글을 한 건도 못 찾은 것(= 파싱 실패 의심)이다. 둘을 구분해야
+    크롤 실패를 '새 후기 없음'으로 오해하지 않는다."""
     url = f"{BOARD_URL}?board_no=4&page={page}"
+    stats = {"fetched": False, "error": "", "rows": 0, "notices": 0, "articles": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=12)
         resp.raise_for_status()
     except Exception as e:
         print(f"  [오류] 페이지 {page}: {e}")
-        return []
+        stats["error"] = str(e)
+        return [], stats
 
+    stats["fetched"] = True
     soup = BeautifulSoup(resp.text, "html.parser")
     items = []
 
-    for row in soup.select("table tbody tr"):
+    rows = soup.select("table tbody tr")
+    stats["rows"] = len(rows)
+    # 번호 칸 휴리스틱은 1열이 실제로 '번호' 칸일 때만 쓴다.
+    # (스킨이 바뀌어 1열이 체크박스 등이 되면 전 행이 공지로 오판돼 0건이 되므로)
+    first_tds = [r.select_one("td:nth-child(1)") for r in rows]
+    use_number_heuristic = any(td is not None and td.get_text(strip=True).isdigit()
+                               for td in first_tds)
+    for row in rows:
         try:
+            if is_notice_row(row, use_number_heuristic):
+                stats["notices"] += 1
+                continue
+
             title_td = row.select_one("td:nth-child(3)")
             if not title_td:
                 continue
@@ -407,10 +455,11 @@ def parse_list(page: int) -> list:
                 "has_photo": has_photo, "written_at": written_at, "views": views,
                 "content": "", "images": [], "hashtags": [], "classification": {},
             })
+            stats["articles"] += 1
         except Exception:
             continue
 
-    return items
+    return items, stats
 
 
 # ── 데이터 IO ─────────────────────────────────────────
@@ -421,8 +470,14 @@ def load_data() -> dict:
     return {"reviews": {}, "daily_logs": [], "last_updated": ""}
 
 def save_data(data: dict):
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
+    # 원자적 저장: 같은 디렉터리의 임시파일에 다 쓴 뒤 os.replace 로 바꿔치기한다.
+    # 곧바로 open(w) 하면 6MB 를 쓰는 도중 죽었을 때 data.json 이 통째로 날아간다.
+    tmp = DATA_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, DATA_FILE)
     print(f"  💾 저장 완료: {DATA_FILE}")
 
 
@@ -435,8 +490,11 @@ def main():
 
     data = load_data()
     existing_ids = set(data["reviews"].keys())
+    # 제외 대상(다스뵈이다/점빵) id — 매 실행 상세 페이지를 다시 요청하지 않으려고 기록해둔다.
+    excluded_ids = set(data.get("excluded_ids", []))
     today_str = date.today().isoformat()
     new_ids = []
+    failed_details = []   # 상세 요청 실패 → 저장하지 않고 다음 실행에서 재시도
 
     # ── 잔액 부족으로 중단됐던 경우: 미분류 후기 먼저 처리 ──
     if data.get("api_exhausted"):
@@ -490,26 +548,51 @@ def main():
         print(f"⚙️  [업데이트 모드] 기존 {len(existing_ids)}건 — 새 후기만 수집")
 
     api_exhausted = False  # 이번 실행에서 잔액 부족 발생 여부
+    crawl_error = ""       # 치명적 크롤 오류(있으면 마지막에 exit 1)
 
     for page in range(1, max_pages + 1):
         print(f"\n📄 페이지 {page} 수집 중...")
-        items = parse_list(page)
-        if not items:
-            print("  항목 없음 → 중단")
+        items, stats = parse_list(page)
+
+        if not stats["fetched"]:
+            # HTTP 오류·해외IP 차단 등 — '새 후기 없음'으로 넘기면 안 된다.
+            crawl_error = f"페이지 {page} 요청 실패: {stats['error']}"
+            break
+
+        if stats["articles"] == 0:
+            if page == 1:
+                # 첫 페이지에서 글을 한 건도 못 찾음 = 게시판 파싱 실패로 간주한다.
+                # (해외IP 차단 안내 페이지·로그인 요구·게시판 HTML 구조 변경 등이
+                #  전부 '빈 목록'으로 수렴해 조용히 정상 종료되던 경로)
+                crawl_error = (
+                    f"게시판 파싱 실패 — 첫 페이지에서 글을 한 건도 찾지 못했습니다. "
+                    f"(테이블 행 {stats['rows']}개 중 공지로 판정 {stats['notices']}개) "
+                    f"해외IP 차단·로그인 요구·게시판 HTML 구조 변경을 확인하세요."
+                )
+            else:
+                print("  항목 없음 → 마지막 페이지로 판단, 중단")
             break
 
         stop = False
+        page_new = 0   # 이 페이지에서 새로 만난 글 수(0이면 더 볼 게 없다)
         for item in items:
             pid = item["id"]
-            if pid in existing_ids:
-                print(f"  ✓ 기수집 글 발견 (#{pid}) → 중단")
-                stop = True
-                break
+            if pid in existing_ids or pid in excluded_ids:
+                continue   # 기수집/제외 대상 → 조용히 건너뛴다
+            page_new += 1
 
             pname = item["product_name"] or "?"
             print(f"  → #{pid} [{pname}] {item['title'][:28]}...")
 
             detail = parse_detail(item["review_link"])
+            if not detail.get("ok"):
+                # 요청 실패를 빈 본문으로 저장하면 그 id 가 기수집으로 굳어 영영 재시도되지 않는다.
+                # 저장하지 않고 넘겨서 다음 실행에 다시 시도한다.
+                print(f"     ⚠️  상세 요청 실패 → 저장 안 함(다음 실행에서 재시도): {detail.get('error','')}")
+                failed_details.append(pid)
+                time.sleep(DELAY)
+                continue
+
             item["content"] = detail["content"]
             item["images"]  = detail["images"]
 
@@ -521,6 +604,9 @@ def main():
 
             if "다스뵈이다" in item["product_name"] or "점빵" in item["product_name"]:
                 print(f"     ⏭  다스뵈이다 점빵 → 제외")
+                # 제외 id 를 남겨둬야 다음 실행에서 상세 페이지를 또 요청하지 않는다.
+                # (reviews 에 스텁을 넣으면 대시보드·보고서가 후기 건수로 세므로 별도 목록에 둔다)
+                excluded_ids.add(pid)
                 continue
 
             if not item["content"]:
@@ -581,6 +667,12 @@ def main():
         if stop:
             break
 
+        # 공지 고정글 하나 때문에 첫 행에서 멈추던 문제를 피하려고,
+        # '그 페이지의 글이 전부 기수집'일 때만 중단한다.
+        if page_new == 0:
+            print(f"  ✓ 이 페이지 글 {stats['articles']}건이 모두 기수집 → 중단")
+            break
+
     # 잔액 부족 플래그 저장
     if api_exhausted:
         data["api_exhausted"] = True
@@ -589,17 +681,33 @@ def main():
         data.pop("api_exhausted", None)
         data["api_exhausted_at"] = None
 
+    if excluded_ids:
+        data["excluded_ids"] = sorted(excluded_ids)
+
     if new_ids:
         log = next((l for l in data["daily_logs"] if l["date"] == today_str), None)
         if log:
             merged = set(log.get("new_ids",[])) | set(new_ids)
-            log["new_ids"] = list(merged)
+            log["new_ids"] = sorted(merged)   # 실행마다 순서가 바뀌면 무의미한 diff 가 생긴다
             log["count"] = len(merged)
         else:
             data["daily_logs"].append({"date":today_str,"count":len(new_ids),"new_ids":new_ids})
         print(f"\n✅ 새로 수집: {len(new_ids)}개")
-    else:
+    elif not crawl_error:
         print("\n✅ 새 후기 없음")
+
+    if failed_details:
+        print(f"⚠️  상세 요청 실패 {len(failed_details)}건은 저장하지 않았습니다"
+              f"(다음 실행에서 재시도): {failed_details}")
+
+    if crawl_error:
+        # 크롤이 죽었는데 exit 0 으로 끝나면 무인 실행(launchd)에서 아무도 모른다.
+        print(f"\n{'='*55}")
+        print(f"❌ 크롤 실패 — {crawl_error}")
+        print(f"   이번 실행에서 수집한 {len(new_ids)}건만 저장하고 실패로 종료합니다.")
+        print(f"{'='*55}")
+        save_data(data)
+        sys.exit(1)
 
     data["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     save_data(data)

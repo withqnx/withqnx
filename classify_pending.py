@@ -33,8 +33,21 @@ def find_claude() -> str:
 
 
 def is_unclassified(rv: dict) -> bool:
+    if rv.get("excluded"):   # 제외 대상(다스뵈이다/점빵) 은 분류 대상이 아니다
+        return False
     clf = rv.get("classification") or {}
     return not clf.get("segments")
+
+
+def save_data(data: dict):
+    """원자적 저장: 같은 디렉터리의 임시파일에 다 쓴 뒤 os.replace 로 바꿔치기한다.
+    곧바로 open(w) 하면 6MB 를 쓰는 도중 죽었을 때 data.json 이 통째로 날아간다."""
+    tmp = DATA_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, DATA_FILE)
 
 
 def build_prompt(batch: list) -> str:
@@ -160,8 +173,7 @@ def main():
         return
 
     data["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    save_data(data)
     print(f"\n💾 저장 완료: {DATA_FILE} (분류 {done}/{len(batch)}건)")
 
 

@@ -5,23 +5,40 @@ from datetime import date
 
 ROOT=os.path.dirname(os.path.abspath(__file__)); os.chdir(ROOT)
 d=json.load(open("data.json")); groups=json.load(open("groups.json")); revs=list(d["reviews"].values())
-MIG={"제품관련불편":"부정","교환요청":"교환/반품","반품요청":"교환/반품","추가구매":"긍정","추가구매희망":"긍정"}
+# 구버전/오분류 카테고리 → 표준 카테고리 매핑
+# ('또사고싶다'·'#또사고싶다'는 재구매 의사 → 긍정, '추가구매'와 동일 취급)
+MIG={"교환요청":"교환/반품","반품요청":"교환/반품","반품":"교환/반품","추가구매":"긍정",
+     "또사고싶다":"긍정","#또사고싶다":"긍정"}
 CATS6=["긍정","부정","양도/거래","교환/반품","중립/단순수령","배송관련불편"]
-def cat_of(s): return MIG.get(s.get("category"),s.get("category"))
+OTHER="기타"                    # 해시태그가 category 칸에 잘못 들어간 소수 세그먼트(#기획·#사용성·#구성 등)
+CATS=CATS6+[OTHER]              # 집계·도넛에 쓰는 전체 범주(어떤 세그먼트도 누락되지 않게)
+def cat_of(s):
+    c=MIG.get(s.get("category"),s.get("category"))
+    return c if c in CATS6 else OTHER
 STAT=["베개","사각","펜레스트","파인라이너","세종","베개집","베개샘"]
 def is_mun(r): return any(k in r.get("product_name","") for k in STAT)
 
+def is_subin(r): return "수빈" in r.get("product_name","")
+
 cat=collections.Counter(); pos_ex=collections.Counter(); neg_ex=collections.Counter()
+neg_core=collections.Counter()      # 문구+수빈 제외 = 7~12장 '구조적 이슈' 서사의 모집단
+sb_tag=collections.Counter(); SB_POS=SB_NEG=0
 for r in revs:
-    mun=is_mun(r)
+    mun=is_mun(r); sb=is_subin(r)
     for s in (r.get("classification") or {}).get("segments") or []:
         c=cat_of(s)
-        if c in CATS6: cat[c]+=1
-        if not mun:
-            for h in s.get("hashtags",[]):
-                if h=="#배송": continue
+        cat[c]+=1   # cat_of가 미지 범주를 '기타'로 보내므로 누락되는 세그먼트가 없다
+        if sb:
+            if c=="긍정": SB_POS+=1
+            elif c=="부정": SB_NEG+=1
+        for h in s.get("hashtags",[]):
+            if h=="#배송": continue
+            if not mun:
                 if c=="긍정": pos_ex[h]+=1
                 elif c=="부정": neg_ex[h]+=1
+            if c=="부정":
+                if not mun and not sb: neg_core[h]+=1
+                if sb: sb_tag[h]+=1
 dates=sorted([r.get("written_at","") for r in revs if re.match(r"\d{4}",r.get("written_at",""))])
 date_from,date_to=dates[0][:10],dates[-1][:10]; TOTAL=len(revs)
 SUM=sum(cat.values()); POS=cat["긍정"]; NEG=cat["부정"]
@@ -34,7 +51,7 @@ def ff(w,fn):
     b=base64.b64encode(open(os.path.join(ROOT,"fonts",fn),"rb").read()).decode()
     return f"@font-face{{font-family:'Paperlogy';font-weight:{w};src:url('data:font/ttf;base64,{b}') format('truetype');}}"
 FONTS="\n".join([ff(w,fn) for w,fn in [(300,"Paperlogy-3Light.ttf"),(400,"Paperlogy-4Regular.ttf"),(500,"Paperlogy-5Medium.ttf"),(600,"Paperlogy-6SemiBold.ttf"),(700,"Paperlogy-7Bold.ttf"),(800,"Paperlogy-8ExtraBold.ttf"),(900,"Paperlogy-9Black.ttf")]])
-CC={"긍정":"#60a5fa","부정":"#ef4444","중립/단순수령":"#22c55e","양도/거래":"#16a34a","교환/반품":"#fb923c","배송관련불편":"#c084fc"}
+CC={"긍정":"#60a5fa","부정":"#ef4444","중립/단순수령":"#22c55e","양도/거래":"#16a34a","교환/반품":"#fb923c","배송관련불편":"#c084fc",OTHER:"#6b7280"}
 GOLD="#cc9166"; TODAY=date.today().isoformat()
 
 def donut(segs):
@@ -58,8 +75,6 @@ def gaugelist(rows):
         out+=f'<div class="gg-row"><div class="gg-l">{label}</div><div class="gg-bar"><div class="gg-pos" style="width:{p:.0f}%"></div><div class="gg-pct">{p:.0f}%</div></div><div class="gg-cnt">긍 {pos}·부 {neg}</div></div>'
     return f'<div class="gaugelist">{out}</div>'
 
-# 키워드별 수빈+문구 제외 전체 부정 건수 (맥락용)
-KWTOTAL={"#사이즈":231,"#내구성":66,"#재질":83,"#마감":100,"#사용성":77,"#퀄리티":42}
 KW={
 "#사이즈":[("겸손구두",88,['평소 신는 치수인데 크게 나옴 — 한 치수 작게 교환 요청','복숭아뼈가 신발 라인에 닿아 통증','뒤꿈치가 헐렁해 보호대로도 해결 안 됨']),
   ("2025 색안경",50,['얼굴 평수 예측이 빗나감 — 57도 부족·54는 후회','54·57 잘못 골라 맞교환·양도 빈번','작은 얼굴엔 너무 크게 느껴짐']),
@@ -86,14 +101,16 @@ KW={
   ("2024 색안경",4,['마감·완성도가 기대 미달','이음새가 정교하지 못함']),
   ("여름니트",3,['"가격 대비 최악"','어깨 솔기가 터짐','양산 품질 실망'])],
 }
+# 키워드별 '문구+수빈 제외' 부정 건수 — 7~12장은 수빈을 뺀 구조적 이슈를 다루므로 모집단이 neg_core다.
+KWTOTAL={t:neg_core[t] for t in KW}
 KWHEAD={"#사이즈":"치수와 핏이 안 맞는다","#내구성":"오래 못 가고 변형된다","#재질":"소재·촉감이 기대와 다르다","#마감":"마무리 디테일이 거칠다","#사용성":"쓰고 입기 불편하다","#퀄리티":"전반적 완성도가 아쉽다"}
 KWNOTE={
-"#사이즈":"사이즈는 수빈과 무관하게 <b>전 제품군 통틀어 1위</b>(231건) 불만이다. 신발·안경처럼 <b>착용해 봐야 아는 품목</b>에 집중된다. 구두는 \"평소보다 크게 나온다\"가 일관돼 표기 기준만 내려도 해결되고, 색안경은 얼굴 평수 편차가 커 실측·핏 가이드가 답이다.",
-"#내구성":"수빈(전체의 62%)을 빼면 66건. 퍼자마·발옷·별의 <b>'첫 세탁 직후' 변형</b>이 공통점이다. 출고 전 세탁 테스트로 걸러낼 수 있는 결함이며, 구두에선 \"하루 만에 앞 가죽이 터졌다\"는 사례도 있다.",
-"#재질":"수빈 제외 83건. <b>'딱딱함'과 '까끌거림' 두 갈래</b>다. 지갑·구두는 가죽이 단단해 사용을 방해하고, 여름니트는 두껍고 까칠해 계절감을 해친다. 소재 불량이 아니라 <b>'그 제품에 맞는 소재인가'</b>의 문제다.",
-"#마감":"수빈 제외 100건. 무게중심이 <b>'별(티셔츠)'</b>로 쏠린다. 오버록 노출·거친 이음새가 \"이 가격에?\"라는 실망을 부른다. <b>검수 강화만으로</b> 막을 수 있어 비용 대비 효과가 가장 크다.",
-"#사용성":"수빈 제외 77건. 핵심은 <b>'소재 경직성'</b>이다. 지갑은 딱딱해 여닫기·수납을 방해하고, 구두는 단단한 가죽이 뼈에 닿는다. 주방가위마저 손잡이 설계로 손이 아프다. <b>쓰기 불편하면 재구매로 안 이어진다.</b>",
-"#퀄리티":"수빈 제외 42건. 1위는 <b>별(티셔츠)</b>. 봉제·완성도 불만이 누적돼 \"다신 안 산다\"로 이어진다. 개별 수정이 아니라 <b>완성도 기준 자체</b>를 다시 세워야 풀린다.",
+"#사이즈":"사이즈는 수빈과 무관하게 <b>전 제품군 통틀어 1위</b>({n}건) 불만이다. 신발·안경처럼 <b>착용해 봐야 아는 품목</b>에 집중된다. 구두는 \"평소보다 크게 나온다\"가 일관돼 표기 기준만 내려도 해결되고, 색안경은 얼굴 평수 편차가 커 실측·핏 가이드가 답이다.",
+"#내구성":"수빈을 빼면 {n}건. 퍼자마·발옷·별의 <b>'첫 세탁 직후' 변형</b>이 공통점이다. 출고 전 세탁 테스트로 걸러낼 수 있는 결함이며, 구두에선 \"하루 만에 앞 가죽이 터졌다\"는 사례도 있다.",
+"#재질":"수빈 제외 {n}건. <b>'딱딱함'과 '까끌거림' 두 갈래</b>다. 지갑·구두는 가죽이 단단해 사용을 방해하고, 여름니트는 두껍고 까칠해 계절감을 해친다. 소재 불량이 아니라 <b>'그 제품에 맞는 소재인가'</b>의 문제다.",
+"#마감":"수빈 제외 {n}건. 무게중심이 <b>'별(티셔츠)'</b>로 쏠린다. 오버록 노출·거친 이음새가 \"이 가격에?\"라는 실망을 부른다. <b>검수 강화만으로</b> 막을 수 있어 비용 대비 효과가 가장 크다.",
+"#사용성":"수빈 제외 {n}건. 핵심은 <b>'소재 경직성'</b>이다. 지갑은 딱딱해 여닫기·수납을 방해하고, 구두는 단단한 가죽이 뼈에 닿는다. 주방가위마저 손잡이 설계로 손이 아프다. <b>쓰기 불편하면 재구매로 안 이어진다.</b>",
+"#퀄리티":"수빈 제외 {n}건. 1위는 <b>별(티셔츠)</b>. 봉제·완성도 불만이 누적돼 \"다신 안 산다\"로 이어진다. 개별 수정이 아니라 <b>완성도 기준 자체</b>를 다시 세워야 풀린다.",
 }
 KWQUOTE={
 "#사이즈":("구두·운동화 모두 275를 신어서 275를 주문했는데 신어보니 크네요. 270으로 교환 가능할까요?","겸손구두 후기"),
@@ -117,7 +134,7 @@ S.append(f"""<section class="slide cover">
 S.append(f"""<section class="slide"><div class="sno">01</div><h2>분석 개요와 방법</h2>
   <div class="cols">
     <p>본 보고서는 겸손몰 '상품 사용후기' <b>{TOTAL:,}건</b>({date_from}~{date_to})을 AI로 분류·태깅해 집계·해석한 것이다. 별점의 이분법을 넘어, 한 후기 안의 여러 의견을 <b>의미 단위로 분리</b>해 카테고리와 키워드를 부여했다. "디자인은 예쁜데 사이즈가 작다"는 '긍정·#디자인'과 '부정·#사이즈'로 나뉜다.</p>
-    <p>카테고리는 <b>6종</b>(긍정·부정·중립·양도/거래·교환/반품·배송), 키워드는 <b>14종</b>(#사이즈 #재질 #마감 #디자인 #사용성 등)으로 세분했다. 키워드 집계는 성격이 다른 <b>만년필·문구류를 제외</b>한 수치이며, 분석 내내 반복 확인된 사실 하나 — <b>'수빈'(수건·가운)이 부정 평가의 큰 몫을 단독으로 차지</b>한다는 점을 미리 밝혀 둔다.</p>
+    <p>카테고리는 <b>6종</b>(긍정·부정·중립·양도/거래·교환/반품·배송, 어느 쪽에도 안 드는 소수는 '기타'), 키워드는 <b>14종</b>(#사이즈 #재질 #마감 #디자인 #사용성 등)으로 세분했다. 키워드 집계는 성격이 다른 <b>만년필·문구류를 제외</b>한 수치이며, 분석 내내 반복 확인된 사실 하나 — <b>'수빈'(수건·가운)이 부정 평가의 큰 몫을 단독으로 차지</b>한다는 점을 미리 밝혀 둔다.</p>
   </div>
 </section>""")
 
@@ -135,7 +152,7 @@ S.append(f"""<section class="slide"><div class="sno">02</div><h2>핵심 요약</
 # 4 분포
 S.append(f"""<section class="slide"><div class="sno">03</div><h2>전체 반응 분포</h2>
   <div class="split">
-    <div class="donutwrap">{donut([(c,cat[c],CC[c]) for c in CATS6])}</div>
+    <div class="donutwrap">{donut([(c,cat[c],CC[c]) for c in CATS if cat[c]])}</div>
     <div class="rtext">
       {statrow([(f"{POS:,}","긍정",CC['긍정'],f"{POS/SUM*100:.0f}%"),(f"{NEG:,}","부정",CC['부정'],f"{NEG/SUM*100:.0f}%"),(f"{POS/NEG:.1f}배","긍/부",GOLD,"만족 우위")])}
       <p>긍정이 부정의 두 배를 넘지만, 주목할 건 <b>그 밖의 신호</b>다. '양도/거래'({cat['양도/거래']})와 '교환/반품'({cat['교환/반품']})이 각각 300건을 넘는데, 이면엔 \"내게 안 맞아서\"라는 <b>사이즈 사유</b>가 깔려 있다. 동시에 활발한 양도 시장은 제품 수요와 리세일 가치의 방증이기도 하다.</p>
@@ -192,7 +209,7 @@ for i,tag in enumerate(["#사이즈","#내구성","#재질","#마감","#사용�
         <div class="kwleft"><div class="pgrid2">{cards}</div></div>
         <div class="kwright">
           <div class="bigstat"><div class="bs-n" style="color:{CC['부정']}">{KWTOTAL[tag]}<span>건</span></div><div class="bs-l">수빈·문구 제외 부정 건수</div></div>
-          <p class="note">{KWNOTE[tag]}</p>
+          <p class="note">{KWNOTE[tag].format(n=KWTOTAL[tag])}</p>
           <div class="quote">“{q}”<span class="qsrc">— {src}</span></div>
         </div>
       </div>
@@ -200,7 +217,7 @@ for i,tag in enumerate(["#사이즈","#내구성","#재질","#마감","#사용�
 
 # 14 수빈
 S.append(f"""<section class="slide"><div class="sno">13</div><h2>집중 분석 — '수빈'이라는 단일 변수</h2>
-  {statrow([("73%","제품군 부정 비율",CC['부정'],"긍 88·부 234"),("4관왕","내구성·재질·마감·퀄리티 1위",GOLD,"모든 핵심 불만"),("62%","#내구성 중 수빈 비중",CC['부정'],"150 / 240건")])}
+  {statrow([(f"{SB_NEG/max(SB_POS+SB_NEG,1)*100:.0f}%","제품군 부정 비율",CC['부정'],f"긍 {SB_POS}·부 {SB_NEG}"),("4관왕","내구성·재질·마감·퀄리티 1위",GOLD,"모든 핵심 불만"),(f"{sb_tag['#내구성']/max(neg_ex['#내구성'],1)*100:.0f}%","#내구성 중 수빈 비중",CC['부정'],f"{sb_tag['#내구성']} / {neg_ex['#내구성']}건")])}
   <div class="cols">
     <p>수빈은 부정 #내구성 150·#재질 77·#마감 35·#퀄리티 67에서 모두 <b>제품군 1위</b>다. 불만 양상은 한 곳으로 수렴한다 — <b>'세탁하면 보풀이 일고 먼지가 난다'</b>. "세탁할수록 악화", "오래된 수건 같다", "발걸레로도 좀…"이라는 표현에, 받자마자 석유 냄새 호소까지 반복된다.</p>
     <p>이는 관리 부주의가 아닌 <b>원단·원사 자체의 문제</b>다. 수빈은 '제품 전반의 약점'이 아니라 <b>독립적으로 분리해 다룰 단일 결함</b>. 소재만 교체해도 내구성은 절반 이하, 재질·퀄리티도 큰 폭으로 준다 — <b class="gold">가장 적은 노력으로 가장 큰 개선</b>이 가능한 지점이다.</p>
@@ -214,7 +231,7 @@ for r in revs:
     mn_n+=1
     for s in (r.get("classification") or {}).get("segments") or []:
         c=cat_of(s)
-        if c in CATS6: mc[c]+=1
+        mc[c]+=1
         if c=="긍정":
             for h in s.get("hashtags",[]): mp[h]+=1
 mpm=mp.most_common(1)[0][1]
@@ -351,5 +368,19 @@ HTML=f"<!DOCTYPE html><html lang=ko><head><meta charset=UTF-8>{CSS}</head><body>
 open("_report.html","w",encoding="utf-8").write(HTML)
 print(f"HTML: {len(S)}슬라이드")
 out=f"겸손몰_후기분석_report_{date.today().strftime('%Y%m%d')}.pdf"
-subprocess.run(["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome","--headless","--disable-gpu","--no-pdf-header-footer",f"--print-to-pdf={os.path.join(ROOT,out)}","file://"+os.path.join(ROOT,"_report.html")],capture_output=True)
-print(out)
+outpath=os.path.join(ROOT,out)
+if os.path.exists(outpath): os.remove(outpath)   # 이전 실행 결과가 성공으로 오인되지 않게
+CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+if not os.path.exists(CHROME):
+    raise SystemExit(f"❌ PDF 생성 실패 — Chrome을 찾을 수 없습니다: {CHROME}")
+p=subprocess.run([CHROME,"--headless","--disable-gpu","--no-pdf-header-footer",
+                  f"--print-to-pdf={outpath}","file://"+os.path.join(ROOT,"_report.html")],
+                 capture_output=True,text=True)
+if p.returncode!=0:
+    raise SystemExit(f"❌ PDF 생성 실패 — Chrome 종료코드 {p.returncode}\n{(p.stderr or p.stdout or '').strip()[-2000:]}")
+if not os.path.exists(outpath):
+    raise SystemExit(f"❌ PDF 생성 실패 — 출력 파일이 없습니다: {out}\n{(p.stderr or '').strip()[-2000:]}")
+size=os.path.getsize(outpath)
+if size<50_000:   # 정상 보고서는 수 MB. 수십 KB면 렌더가 깨진 것.
+    raise SystemExit(f"❌ PDF 생성 실패 — 파일이 비정상적으로 작습니다({size:,} bytes): {out}\n{(p.stderr or '').strip()[-2000:]}")
+print(f"{out} ({size/1024/1024:.1f} MB)")

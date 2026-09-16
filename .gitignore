@@ -19,3 +19,7 @@ debug_html/
 __pycache__/
 .DS_Store
 /tmp/
+
+# 보고서 생성 산출물
+_report.html
+겸손몰_후기분석_report_*.pdf

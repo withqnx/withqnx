@@ -3,7 +3,8 @@ name: 빌드 & Cloudflare 배포 (Publish/수정 시)
 # 데이터·그룹·템플릿이 push 되면 자동으로 빌드 + 배포.
 # - 관리자 Publish → Function이 PAT로 커밋 → 이 워크플로우 트리거
 # - index.html 직접 수정 push → 이 워크플로우 트리거
-# (daily_crawl 의 봇 커밋은 GITHUB_TOKEN 이라 이 워크플로우를 트리거하지 않음 → 중복 배포 없음)
+# - 로컬 auto_crawl.sh 의 크롤 커밋 push → 이 워크플로우 트리거
+#   (daily_crawl.yml 은 해외 IP라 0건만 수집해 2026-09 삭제됨)
 
 on:
   push:
@@ -14,6 +15,8 @@ on:
       - 'tags.json'
       - 'index.html'
       - 'functions/**'
+      - 'deploy_nas.py'   # 빌드 스크립트 자체
+      - 'fonts/**'        # deploy_nas.py 가 HTML에 임베드하는 폰트
 
 permissions:
   contents: read
