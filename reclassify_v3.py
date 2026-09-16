@@ -52,6 +52,16 @@ def run_claude_measured(prompt: str):
     return env.get("result") or "", env.get("usage") or {}, env.get("total_cost_usd"), elapsed
 
 
+def save(data):
+    """배치마다 원자적으로 저장한다. 39배치를 다 끝내야 저장하면
+    중간에 끊길 때 전부 날아간다."""
+    tmp = DATA_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.flush(); os.fsync(f.fileno())
+    os.replace(tmp, DATA_FILE)
+
+
 def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         data = json.load(f)
@@ -77,7 +87,13 @@ def main():
 
     for i in range(0, len(targets), BATCH):
         batch = targets[i:i + BATCH]
-        raw, usage, cost, elapsed = run_claude_measured(build_prompt(batch))
+        try:
+            raw, usage, cost, elapsed = run_claude_measured(build_prompt(batch))
+        except Exception as e:
+            # 한 배치가 실패해도 나머지는 계속한다. 실패분은 표시가 남아 다음 실행에서 재시도된다.
+            print(f"  ❌ 배치 {i//BATCH+1} 실패: {str(e)[:160]}")
+            failed += len(batch)
+            continue
         tin  += usage.get("input_tokens", 0)
         tout += usage.get("output_tokens", 0)
         tcache_r += usage.get("cache_read_input_tokens", 0)
@@ -103,7 +119,11 @@ def main():
             rv["classification"] = clf
             rv["hashtags"] = clf.get("tags", [])
             done += 1
-        print(f"  배치 {i//BATCH+1}: {len(batch)}건 · {elapsed:.0f}초")
+        if not DRY:
+            save(data)
+        remaining = sum(1 for rv in reviews.values()
+                        if (rv.get("classification") or {}).get("reclassify_pending"))
+        print(f"  배치 {i//BATCH+1}: {len(batch)}건 · {elapsed:.0f}초 · 남은 대상 {remaining}건")
 
     wall = time.time() - t_start
     print(f"\n{'─'*52}")
@@ -128,11 +148,7 @@ def main():
     if DRY:
         print("\n[DRY-RUN] 저장 안 함")
         return
-    tmp = DATA_FILE + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.flush(); os.fsync(f.fileno())
-    os.replace(tmp, DATA_FILE)
+    save(data)
     print(f"\n💾 저장 완료: {DATA_FILE}")
 
 
