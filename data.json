@@ -145985,200 +145985,43 @@
       },
       "crawled_date": "2026-09-14"
     },
-    "109047": {
-      "id": "109047",
+    "108833": {
+      "id": "108833",
       "product_name": "별",
       "product_link": "https://nonohumble.com/product/별/341/",
       "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
-      "title": "상품관련",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109047/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-15 02:37:24",
-      "views": "0",
-      "content": "겸공 물품은 공장장의 칸칸함으로 제작되어 믿고 구매하는데...\n바느질 뒤처리가 이렇게 싸구려 옷처럼 처리하다니\n요즘 베트남에서 사온 옷들도 이러지 않는데...\n한번 세탁한 상태인데 우연히 발견\n실망스럽네요~~~\n실오라기가 거의다 삐져나와 너덜거리네요~~~",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/15/64a7a69b51ae5d69b5a0bd673561d3ae.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/15/d3515ae935ec8e8c09ad076236c2b613.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/15/2c81efadfac6edb65129ae58c7020c9d.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/15/9e4cc522e3b74b2efa140344d4570140.jpg",
-        "https://nonohumble.com/file_data/nohumble/2026/09/15/113bdcc6bb7ad5802d92ee1e4b9f2f70.jpg"
-      ],
-      "hashtags": [
-        "#마감",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "부정",
-            "summary": "세탁 후 바느질 마감이 부실해 실밥이 삐져나옴",
-            "hashtags": [
-              "#마감",
-              "#퀄리티"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "봉제 마감 불량에 대한 명확한 상품 불만",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#마감",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-09-15"
-    },
-    "109008": {
-      "id": "109008",
-      "product_name": "와",
-      "product_link": "https://nonohumble.com/product/와/377/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
-      "title": "너무 예뻐요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109008/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-14 17:26:30",
-      "views": "0",
-      "content": "귀한 기와 문양으로 만든 작품 입니다",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/14/ade1940911b4de78fedc34976b3961c4.jpg"
-      ],
-      "hashtags": [
-        "#디자인"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "기와 문양 디자인이 예쁘다는 호평",
-            "hashtags": [
-              "#디자인"
-            ],
-            "confidence": 0.7
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "문양 언급이 있어 단순 '예쁘다'와 달리 디자인 태그 부여, 다만 짧아 애매",
-        "confidence": 0.7,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ]
-      },
-      "crawled_date": "2026-09-15"
-    },
-    "109003": {
-      "id": "109003",
-      "product_name": "와",
-      "product_link": "https://nonohumble.com/product/와/377/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
-      "title": "와 적색이 왔네요",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109003/page/1/",
-      "has_photo": true,
-      "written_at": "2026-09-14 17:05:23",
-      "views": "0",
-      "content": "적색이라고 되어 있으나 실물로 보니 자주색과 어두운 적색사이에 색들이 퍼져있는 모습이 고급스럽습니다. 대충 올려도 흘러내리지 않는 만년필 거치대 대만족!",
-      "images": [
-        "https://nonohumble.com/file_data/nohumble/2026/09/14/6a11f9dcc9a1100781521a4cfc208815.png"
-      ],
-      "hashtags": [
-        "#색상",
-        "#퀄리티"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "색상이 고급스럽고 만년필 거치대에 만족",
-            "hashtags": [
-              "#색상",
-              "#퀄리티"
-            ],
-            "confidence": 0.9
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "색상과 품질에 대한 구체적 만족 표현",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#퀄리티"
-        ]
-      },
-      "crawled_date": "2026-09-15"
-    },
-    "108913": {
-      "id": "108913",
-      "product_name": "껑",
-      "product_link": "https://nonohumble.com/product/껑/352/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
-      "title": "인생 모자를 찾음",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108913/page/1/",
+      "title": "사이즈가 커서요. 교환 가능할까요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108833/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-14 13:02:18",
+      "written_at": "2026-09-14 08:27:48",
       "views": "0",
-      "content": "남편이 얼굴형이 동글동글해서..\n어울리는 캡모자를 찾기 어려운데.\n아주 찰떡으로 어울립니다. ^^",
+      "content": "사이즈가 너무커서요 교환가느왈까요?",
       "images": [],
       "hashtags": [
-        "#핏"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "긍정",
-            "summary": "동글한 얼굴형에 캡모자가 잘 어울려 만족",
-            "hashtags": [
-              "#핏"
-            ],
-            "confidence": 0.85
-          }
-        ],
-        "needs_review": false,
-        "reasoning": "얼굴형에 맞는 착용감(핏)에 대한 만족 표현",
-        "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#핏"
-        ]
-      },
-      "crawled_date": "2026-09-15"
-    },
-    "108880": {
-      "id": "108880",
-      "product_name": "틈-트로피컬",
-      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
-      "title": "신발밑창 고무냄새가 나는 것",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108880/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-14 11:19:17",
-      "views": "0",
-      "content": "가죽이 아니라 밑창에서 합성고무 특유의 냄새가 강하게 나는데 원래 이렇게 나는 건가요? 신으면서 냄새가 사라지겠죠. 참고로  발볼이 넓고 발등이 높은 분들에겐 한 사이즈 정도 더 큰 것이 나을 듯 합니다. 디자인에 대한 설명은 충분한데 사이즈선택할 때 발길이와 함께 발볼, 발등높이에 따른 정보를 세심하게 전해주셨으면 좋겠습니다.",
-      "images": [],
-      "hashtags": [
-        "#재질",
         "#사이즈"
       ],
       "classification": {
         "segments": [
           {
             "category": "부정",
-            "summary": "밑창에서 합성고무 냄새가 강하게 나고 발볼 넓은 사람은 큰 사이즈 필요",
+            "summary": "사이즈가 너무 커서 불만",
             "hashtags": [
-              "#재질",
               "#사이즈"
             ],
             "confidence": 0.85
+          },
+          {
+            "category": "교환/반품",
+            "summary": "사이즈 문제로 교환 요청",
+            "hashtags": [],
+            "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "재질 냄새 문제와 사이즈 관련 불만이 함께 서술됨",
+        "reasoning": "사유(사이즈 불만)와 행동(교환 요청)을 별도 segment로 분리",
         "confidence": 0.85,
         "_v2": true,
         "hashtags": [
-          "#재질",
           "#사이즈"
         ]
       },
@@ -146236,47 +146079,242 @@
       },
       "crawled_date": "2026-09-15"
     },
-    "108833": {
-      "id": "108833",
-      "product_name": "별",
-      "product_link": "https://nonohumble.com/product/별/341/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
-      "title": "사이즈가 커서요. 교환 가능할까요?",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108833/page/1/",
+    "108880": {
+      "id": "108880",
+      "product_name": "틈-트로피컬",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "신발밑창 고무냄새가 나는 것",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108880/page/1/",
       "has_photo": false,
-      "written_at": "2026-09-14 08:27:48",
+      "written_at": "2026-09-14 11:19:17",
       "views": "0",
-      "content": "사이즈가 너무커서요 교환가느왈까요?",
+      "content": "가죽이 아니라 밑창에서 합성고무 특유의 냄새가 강하게 나는데 원래 이렇게 나는 건가요? 신으면서 냄새가 사라지겠죠. 참고로  발볼이 넓고 발등이 높은 분들에겐 한 사이즈 정도 더 큰 것이 나을 듯 합니다. 디자인에 대한 설명은 충분한데 사이즈선택할 때 발길이와 함께 발볼, 발등높이에 따른 정보를 세심하게 전해주셨으면 좋겠습니다.",
       "images": [],
       "hashtags": [
+        "#재질",
         "#사이즈"
       ],
       "classification": {
         "segments": [
           {
             "category": "부정",
-            "summary": "사이즈가 너무 커서 불만",
+            "summary": "밑창에서 합성고무 냄새가 강하게 나고 발볼 넓은 사람은 큰 사이즈 필요",
             "hashtags": [
+              "#재질",
               "#사이즈"
             ],
             "confidence": 0.85
-          },
-          {
-            "category": "교환/반품",
-            "summary": "사이즈 문제로 교환 요청",
-            "hashtags": [],
-            "confidence": 0.9
           }
         ],
         "needs_review": false,
-        "reasoning": "사유(사이즈 불만)와 행동(교환 요청)을 별도 segment로 분리",
+        "reasoning": "재질 냄새 문제와 사이즈 관련 불만이 함께 서술됨",
         "confidence": 0.85,
         "_v2": true,
         "hashtags": [
+          "#재질",
           "#사이즈"
         ]
       },
       "crawled_date": "2026-09-15"
+    },
+    "108913": {
+      "id": "108913",
+      "product_name": "껑",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "인생 모자를 찾음",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/108913/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-14 13:02:18",
+      "views": "0",
+      "content": "남편이 얼굴형이 동글동글해서..\n어울리는 캡모자를 찾기 어려운데.\n아주 찰떡으로 어울립니다. ^^",
+      "images": [],
+      "hashtags": [
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "동글한 얼굴형에 캡모자가 잘 어울려 만족",
+            "hashtags": [
+              "#핏"
+            ],
+            "confidence": 0.85
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "얼굴형에 맞는 착용감(핏)에 대한 만족 표현",
+        "confidence": 0.85,
+        "_v2": true,
+        "hashtags": [
+          "#핏"
+        ]
+      },
+      "crawled_date": "2026-09-15"
+    },
+    "109003": {
+      "id": "109003",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "와 적색이 왔네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109003/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-14 17:05:23",
+      "views": "0",
+      "content": "적색이라고 되어 있으나 실물로 보니 자주색과 어두운 적색사이에 색들이 퍼져있는 모습이 고급스럽습니다. 대충 올려도 흘러내리지 않는 만년필 거치대 대만족!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/14/6a11f9dcc9a1100781521a4cfc208815.png"
+      ],
+      "hashtags": [
+        "#색상",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "summary": "색상이 고급스럽고 만년필 거치대에 만족",
+            "hashtags": [
+              "#색상",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "색상과 품질에 대한 구체적 만족 표현",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#색상",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-15"
+    },
+    "109008": {
+      "id": "109008",
+      "product_name": "와",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "너무 예뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109008/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-14 17:26:30",
+      "views": "0",
+      "content": "귀한 기와 문양으로 만든 작품 입니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/14/ade1940911b4de78fedc34976b3961c4.jpg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "긍정",
+            "sentiment": "positive",
+            "summary": "기와 문양 디자인이 예쁘다는 호평",
+            "hashtags": [
+              "#디자인",
+              "#기획"
+            ],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "문양 언급이 있어 단순 '예쁘다'와 달리 디자인 태그 부여, 다만 짧아 애매",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#디자인"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-15"
+    },
+    "109047": {
+      "id": "109047",
+      "product_name": "별",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "상품관련",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109047/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-15 02:37:24",
+      "views": "0",
+      "content": "겸공 물품은 공장장의 칸칸함으로 제작되어 믿고 구매하는데...\n바느질 뒤처리가 이렇게 싸구려 옷처럼 처리하다니\n요즘 베트남에서 사온 옷들도 이러지 않는데...\n한번 세탁한 상태인데 우연히 발견\n실망스럽네요~~~\n실오라기가 거의다 삐져나와 너덜거리네요~~~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/15/64a7a69b51ae5d69b5a0bd673561d3ae.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/15/d3515ae935ec8e8c09ad076236c2b613.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/15/2c81efadfac6edb65129ae58c7020c9d.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/15/9e4cc522e3b74b2efa140344d4570140.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/15/113bdcc6bb7ad5802d92ee1e4b9f2f70.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "category": "부정",
+            "summary": "세탁 후 바느질 마감이 부실해 실밥이 삐져나옴",
+            "hashtags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "confidence": 0.9
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "봉제 마감 불량에 대한 명확한 상품 불만",
+        "confidence": 0.9,
+        "_v2": true,
+        "hashtags": [
+          "#마감",
+          "#퀄리티"
+        ]
+      },
+      "crawled_date": "2026-09-15"
+    },
+    "109058": {
+      "id": "109058",
+      "product_name": "심지 추가",
+      "product_link": "https://nonohumble.com/product/심지-추가/265/",
+      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
+      "title": "이 상품 추가 구매 관련",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109058/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-15 10:01:39",
+      "views": "0",
+      "content": "리필 심은 추가로 구매가 가능해야 하지 않을까요?\n너무 펜이 아깝자나요\n다른곳에서 구입이 가능한지요?\n어떤 상품을 구입해야 딱 맞는 상품인지 궁금합니다",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "category": "중립/단순수령",
+            "sentiment": "neutral",
+            "summary": "",
+            "hashtags": [],
+            "confidence": 1
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "단순 불만이 아니라 구매 가능 여부를 묻는 문의성 내용이 섞여 있어 표준 카테고리와 애매하게 걸침",
+        "confidence": 1,
+        "_v2": true,
+        "hashtags": [
+          "#구성"
+        ],
+        "_relabeled": true
+      },
+      "crawled_date": "2026-09-16"
     },
     "109102": {
       "id": "109102",
@@ -146316,42 +146354,6 @@
         "_v2": true,
         "hashtags": [
           "#재질"
-        ]
-      },
-      "crawled_date": "2026-09-16"
-    },
-    "109058": {
-      "id": "109058",
-      "product_name": "심지 추가",
-      "product_link": "https://nonohumble.com/product/심지-추가/265/",
-      "product_img": "https://nonohumble.com//nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
-      "title": "이 상품 추가 구매 관련",
-      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109058/page/1/",
-      "has_photo": false,
-      "written_at": "2026-09-15 10:01:39",
-      "views": "0",
-      "content": "리필 심은 추가로 구매가 가능해야 하지 않을까요?\n너무 펜이 아깝자나요\n다른곳에서 구입이 가능한지요?\n어떤 상품을 구입해야 딱 맞는 상품인지 궁금합니다",
-      "images": [],
-      "hashtags": [
-        "#구성"
-      ],
-      "classification": {
-        "segments": [
-          {
-            "category": "부정",
-            "summary": "리필심 추가 구매가 불가능해 아쉬움, 어떤 상품이 맞는지 문의",
-            "hashtags": [
-              "#구성"
-            ],
-            "confidence": 0.6
-          }
-        ],
-        "needs_review": true,
-        "reasoning": "단순 불만이 아니라 구매 가능 여부를 묻는 문의성 내용이 섞여 있어 표준 카테고리와 애매하게 걸침",
-        "confidence": 0.6,
-        "_v2": true,
-        "hashtags": [
-          "#구성"
         ]
       },
       "crawled_date": "2026-09-16"
