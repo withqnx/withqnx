@@ -52519,47 +52519,24 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2025/03/08/b6917207892ce54203efdbb6e33c73ec.jpg"
       ],
-      "hashtags": [
-        "#내구성"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
-            "aspect": "상품",
-            "sentiment": "중립",
-            "intent": "교환·반품",
-            "tags": [
-              "#내구성"
-            ],
-            "summary": "교환 상품 불량, 재교환/반품 요청",
-            "confidence": 0.95,
-            "category": "교환/반품"
-          },
-          {
-            "aspect": "배송·포장",
+            "aspect": "응대·소통",
             "sentiment": "부정",
-            "intent": "없음",
+            "intent": "교환·반품",
             "tags": [],
-            "summary": "교환 상품 오류 배송",
-            "confidence": 0.9,
-            "category": "배송관련불편"
+            "summary": "교환 요청한 발옷을 확인만 하고 그대로 재발송했으며 문제없다고 판단했으면 사전 연락도 없었던 점에 항의, 재교환·반품을 요청",
+            "confidence": 0.85,
+            "category": "교환/반품"
           }
         ],
-        "confidence": 0.9,
         "needs_review": false,
-        "reasoning": "교환 신청 후 받은 상품이 동일한 불량품(올 풀림)이었고, 재교환/반품을 요청하는 글. 교환/반품 카테고리에 상품 불만(내구성)과 배송관련불편(잘못된 상품 배송)을 함께 분류.",
-        "hashtags": [
-          "#내구성"
-        ],
-        "_v2": true,
-        "_v3": true,
-        "tags": [
-          "#내구성"
-        ],
-        "reclassify_pending": [
-          "문의 의도 가능",
-          "응대·소통 대상 가능"
-        ]
+        "reasoning": "AS 처리 과정 자체에 대한 불만으로 응대·소통 aspect로 분류",
+        "confidence": 0.85,
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "70"
@@ -61639,25 +61616,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
-            "summary": "",
-            "confidence": 1,
-            "category": "부정"
+            "summary": "제목만 있고 본문 내용이 없어 구체적 판단 불가",
+            "confidence": 0.4,
+            "category": "중립/단순수령"
           }
         ],
-        "confidence": 1,
-        "needs_review": false,
-        "reasoning": "제목만 있고 본문이 비어있어 의도를 파악할 수 없음. 검토자의 확인 필요.",
-        "hashtags": [],
-        "_v2": true,
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "본문 없이 제목만 존재해 내용 파악 불가",
+        "confidence": 0.4,
         "tags": [],
-        "reclassify_pending": [
-          "요약 없음"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "83"
@@ -64074,22 +64045,16 @@
             "sentiment": "중립",
             "intent": "없음",
             "tags": [],
-            "summary": "내용 없음",
-            "confidence": 1,
+            "summary": "제목과 본문에 실질적 내용이 없어 판단 불가",
+            "confidence": 0.3,
             "category": "중립/단순수령"
           }
         ],
-        "confidence": 1,
-        "needs_review": false,
-        "reasoning": "제목과 본문이 실질적 내용 없이 빈 상태. 수령 여부나 의견 파악 불가능하지만 후기로 제출된 상태이므로 중립/단순수령으로 분류.",
-        "hashtags": [],
-        "_v2": true,
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "내용 없음",
+        "confidence": 0.3,
         "tags": [],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "42"
@@ -72767,36 +72732,29 @@
       "content": "대학교 들어가는 아들에게 선물했어요.\n얇아서 너무 좋습니다.\n다른 제품 또 만들어 주세요.\n만년필 필통 사신분들 부럽습니다....",
       "images": [],
       "hashtags": [
-        "#디자인"
+        "#선물"
       ],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
             "sentiment": "긍정",
-            "intent": "없음",
+            "intent": "재구매희망",
             "tags": [
-              "#디자인"
+              "#선물"
             ],
-            "summary": "얇은 디자인 만족",
-            "confidence": 0.9,
+            "summary": "대학 입학하는 아들에게 선물했고 얇아서 만족하며 신제품과 만년필 필통 구매를 희망",
+            "confidence": 0.75,
             "category": "긍정"
           }
         ],
-        "confidence": 0.9,
-        "needs_review": false,
-        "reasoning": "상품의 '얇음'을 긍정적으로 평가했고, 추가 구매 희망('다른 제품')을 표현했으나 이는 #또사고싶다 대신 긍정 감정의 연장선. 구체적인 형태 언급으로 #디자인 태그 적용.",
-        "hashtags": [
-          "#디자인"
-        ],
-        "_v2": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "선물 목적 긍정 후기에 추가 구매 희망 표현 포함",
+        "confidence": 0.75,
         "tags": [
-          "#디자인"
+          "#선물"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "68"
@@ -75801,22 +75759,16 @@
             "sentiment": "중립",
             "intent": "없음",
             "tags": [],
-            "summary": "단순 수령",
-            "confidence": 1,
+            "summary": "내용이 없어 판단 불가",
+            "confidence": 0.3,
             "category": "중립/단순수령"
           }
         ],
-        "confidence": 1,
-        "needs_review": false,
-        "reasoning": "제목이 '. .'이고 본문이 비어있어 의도를 파악하기 어려움. 극도로 짧은 표현으로 실제 의견 파악 불가능.",
-        "hashtags": [],
-        "_v2": true,
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "내용 없음",
+        "confidence": 0.3,
         "tags": [],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "72"
@@ -94872,9 +94824,10 @@
         "https://nonohumble.com/file_data/nohumble/2025/08/04/5f765abb4f9585070f46942bf47c4042.jpg"
       ],
       "hashtags": [
-        "#재질",
         "#내구성",
-        "#기획"
+        "#재질",
+        "#사이즈",
+        "#선물"
       ],
       "classification": {
         "segments": [
@@ -94883,33 +94836,26 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#재질",
               "#내구성",
-              "#기획"
+              "#재질",
+              "#사이즈",
+              "#선물"
             ],
-            "summary": "보풀 없음, 흡수성 우수",
-            "confidence": 0.95,
+            "summary": "수빈타올 4종을 모두 구매, 보풀이 거의 없고 흡수성·촉감이 뛰어나며 길이도 넉넉해 매우 만족, 나머지는 지인 선물용으로 사용 예정",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
-        "confidence": 0.95,
         "needs_review": false,
-        "reasoning": "상품 품질 전반에 대한 명확한 만족. 보풀 문제 개선, 흡수성, 부드러움, 길이 등 구체적 장점 언급. 회사의 문제 대응에 대한 신뢰도 표현.",
-        "hashtags": [
-          "#재질",
-          "#내구성",
-          "#기획"
-        ],
-        "_v2": true,
-        "_v3": true,
+        "reasoning": "여러 긍정 속성(보풀·흡수성·촉감·길이)을 하나의 상품 긍정 세그먼트로 통합",
+        "confidence": 0.85,
         "tags": [
-          "#재질",
           "#내구성",
-          "#기획"
+          "#재질",
+          "#사이즈",
+          "#선물"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "83"
@@ -101070,26 +101016,20 @@
       "classification": {
         "segments": [
           {
-            "aspect": "상품",
+            "aspect": "응대·소통",
             "sentiment": "중립",
-            "intent": "없음",
+            "intent": "문의",
             "tags": [],
-            "summary": "기술적 문의",
-            "confidence": 1,
-            "category": "중립/단순수령"
+            "summary": "본인이 작성한 글을 삭제하고 싶으나 삭제가 안 돼 관리자에게 삭제를 요청",
+            "confidence": 0.8,
+            "category": "문의"
           }
         ],
-        "confidence": 1,
         "needs_review": false,
-        "reasoning": "상품 평가가 아닌 글 삭제 기술 문제 보고. 분류 불확실하여 중립으로 처리하되 검토 필요.",
-        "hashtags": [],
-        "_v2": true,
-        "_relabeled": true,
-        "_v3": true,
+        "reasoning": "제품과 무관한 게시글 관리 요청",
+        "confidence": 0.8,
         "tags": [],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-05-15",
       "product_id": "159"
@@ -169066,44 +169006,40 @@
       ],
       "hashtags": [
         "#색상",
-        "#디자인",
-        "#퀄리티"
+        "#디자인"
       ],
       "classification": {
         "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "박스 포장이 고급스러워 언박싱 경험이 좋았음",
+            "confidence": 0.85,
+            "category": "긍정"
+          },
           {
             "aspect": "상품",
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
               "#색상",
-              "#디자인",
-              "#퀄리티"
+              "#디자인"
             ],
-            "summary": "포장 퀄리티가 남다르고 실물 색감과 유니크한 디자인이 사진보다 훨씬 예쁨",
-            "confidence": 0.9,
+            "summary": "실물 색감이 사진보다 예쁘고 유니크한 디자인에 만족, 만년필 세트 도착을 기대",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "포장·색감·디자인 전반을 칭찬한 긍정 후기(포장 칭찬이므로 배송관련불편 아님)",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#디자인",
-          "#퀄리티"
-        ],
-        "_v3": true,
+        "reasoning": "포장 칭찬과 상품 디자인·색상 칭찬을 분리",
+        "confidence": 0.85,
         "tags": [
           "#색상",
-          "#디자인",
-          "#퀄리티"
+          "#디자인"
         ],
-        "reclassify_pending": [
-          "혼합 누락 의심",
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-02",
       "product_id": "377"
@@ -169222,31 +169158,39 @@
       "images": [
         "https://cafe24img.poxo.com/nohumble/file_data/nohumble/2026/09/02/23d7a83ad15d5fff3bfc5810a4c6bd22.jpeg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#첫인상"
+      ],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
             "sentiment": "긍정",
-            "intent": "재구매희망",
-            "tags": [],
-            "summary": "세탁 후 깔아보니 더 예뻐 만족, 본인 것도 사지 못해 재고를 문의",
-            "confidence": 0.9,
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "딸 방에 깔아보니 예뻐서 아들 방에도 깔아줄 예정",
+            "confidence": 0.85,
             "category": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [],
+            "summary": "본인 것도 구매하고 싶어 재고 여부를 문의",
+            "confidence": 0.85,
+            "category": "문의"
           }
         ],
         "needs_review": false,
-        "reasoning": "'예쁘다'는 단독이라 #디자인 미부여, 추가 구매 희망이 뚜렷해 #또사고싶다만 부여",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#또사고싶다"
+        "reasoning": "긍정 평가와 재고 문의를 분리",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
         ],
-        "_v3": true,
-        "tags": [],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-02",
       "product_id": "349"
@@ -169265,7 +169209,6 @@
       "images": [],
       "hashtags": [
         "#핏",
-        "#디자인",
         "#퀄리티"
       ],
       "classification": {
@@ -169276,32 +169219,21 @@
             "intent": "없음",
             "tags": [
               "#핏",
-              "#디자인",
               "#퀄리티"
             ],
-            "summary": "박시한 핏 연출이 멋스럽고 세련돼 매우 만족",
-            "confidence": 0.9,
+            "summary": "박시하게 연출하니 세련되고 고급스러워 매우 만족",
+            "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "박시한 실루엣(핏)과 멋스러움·고급스러움에 대한 명확한 호평",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#핏",
-          "#디자인",
-          "#퀄리티"
-        ],
-        "_v3": true,
+        "reasoning": "핏과 고급스러움에 대한 구체적 언급으로 태그 부여",
+        "confidence": 0.8,
         "tags": [
           "#핏",
-          "#디자인",
           "#퀄리티"
         ],
-        "reclassify_pending": [
-          "#퀄리티 오적용(순수 감정 표현)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-02",
       "product_id": "341"
@@ -169456,21 +169388,22 @@
       "images": [],
       "hashtags": [
         "#사용성",
-        "#디자인",
-        "#색상"
+        "#첫인상",
+        "#색상",
+        "#선물"
       ],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
             "sentiment": "긍정",
-            "intent": "재구매희망",
+            "intent": "없음",
             "tags": [
               "#사용성",
-              "#디자인"
+              "#첫인상"
             ],
-            "summary": "편하고 있어 보여 매일 착용, 주변에서도 호평하고 다른 별자리도 더 사고 싶음",
-            "confidence": 0.9,
+            "summary": "별자리 티셔츠가 편하고 있어보여 매일 입고 다님",
+            "confidence": 0.8,
             "category": "긍정"
           },
           {
@@ -169478,33 +169411,33 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [
-              "#색상"
+              "#색상",
+              "#선물"
             ],
-            "summary": "황소자리 색상이 얼굴을 칙칙해 보이게 해 선물로 넘김",
-            "confidence": 0.9,
+            "summary": "황소자리 색상이 본인 얼굴톤과 안 맞아 친구에게 선물함",
+            "confidence": 0.8,
             "category": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [],
+            "summary": "다른 별자리 디자인들도 예뻐 보여 동일 디자인의 재판매(재생산)를 요청",
+            "confidence": 0.75,
+            "category": "긍정"
           }
         ],
-        "needs_review": false,
-        "reasoning": "착용 만족·재구매 희망(긍정)과 특정 색상 불만(부정)을 분리, 말미 재생산 요청은 긍정 세그먼트에 포함",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#사용성",
-          "#디자인",
-          "#또사고싶다",
-          "#색상"
-        ],
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "긍정/부정/재구매희망 세 조합으로 분리",
+        "confidence": 0.75,
         "tags": [
           "#사용성",
-          "#디자인",
-          "#색상"
+          "#첫인상",
+          "#색상",
+          "#선물"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-02",
       "product_id": "341"
@@ -169644,27 +169577,20 @@
       "classification": {
         "segments": [
           {
-            "aspect": "상품",
-            "sentiment": "중립",
+            "aspect": "배송·포장",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [],
-            "summary": "",
-            "confidence": 1,
-            "category": "중립/단순수령"
+            "summary": "만년필이 아직 배송되지 않아 수저받침대로 임시 사용 중이라는 지연 불만을 유머로 표현",
+            "confidence": 0.7,
+            "category": "배송관련불편"
           }
         ],
-        "needs_review": false,
-        "reasoning": "만년필 미배송(지연)을 농담조로 언급한 것으로 보이나 상품 자체 평가가 없어 판단이 애매함",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [],
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "배송 지연에 대한 우회적 표현",
+        "confidence": 0.7,
         "tags": [],
-        "reclassify_pending": [
-          "요약 없음",
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-03",
       "product_id": "377"
@@ -170017,46 +169943,51 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/03/2fa2b61f7161a1c9c875853fa20c56a3.jpg"
       ],
       "hashtags": [
+        "#선물",
         "#마감"
       ],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#마감"
+              "#선물"
             ],
-            "summary": "발목 부분에 하자가 있는데 하자가 아니라는 답변에 납득이 안 감",
-            "confidence": 0.9,
-            "category": "부정"
+            "summary": "발옷 제품 자체는 마음에 들어 추석 선물로 추가 구매 의향",
+            "confidence": 0.8,
+            "category": "긍정"
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "발목 부분에 확연한 하자가 있는데 '하자가 아니다'라는 답변을 받아 교환을 요청",
+            "confidence": 0.85,
+            "category": "교환/반품"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
             "intent": "교환·반품",
             "tags": [],
-            "summary": "담당자 콜백을 통한 교환 처리 요청",
-            "confidence": 0.9,
+            "summary": "이전에는 담당자가 직접 연락해 해결해줬는데 이번엔 단순 답변만 받아 불만이며 담당자 전화 연결과 교환 진행을 요청",
+            "confidence": 0.8,
             "category": "교환/반품"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 하자 불만과 교환 요청 행동을 분리",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#마감"
-        ],
-        "_v3": true,
+        "reasoning": "제품 자체 긍정, 하자 관련 교환 요청, 응대 방식 불만을 각각 분리",
+        "confidence": 0.8,
         "tags": [
+          "#선물",
           "#마감"
         ],
-        "reclassify_pending": [
-          "문의 의도 가능",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-04",
       "product_id": "383"
@@ -170233,25 +170164,18 @@
             "tags": [
               "#퀄리티"
             ],
-            "summary": "사용할수록 고급스러움이 느껴지는 티셔츠",
-            "confidence": 0.9,
+            "summary": "사용할수록 고급스러움이 느껴지는 별 티셔츠에 만족",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "고급스러움이라는 품질 관련 구체적 만족 사유 존재",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티"
-        ],
-        "_v3": true,
+        "reasoning": "고급스러움에 대한 구체적 언급으로 퀄리티 태그 부여",
+        "confidence": 0.85,
         "tags": [
           "#퀄리티"
         ],
-        "reclassify_pending": [
-          "#퀄리티 오적용(순수 감정 표현)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-05",
       "product_id": "341"
@@ -170602,21 +170526,16 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [],
-            "summary": "구분용 스티커가 부실하게 붙어있어 내용물 확인이 어렵고 포장 상태에 실망",
+            "summary": "세종 패키징 구분용 색깔 스티커가 다 떨어져 내용물을 알 수 없어 다 뜯어봐야 했고, 선물용으로는 특히 실망스러웠음",
             "confidence": 0.9,
             "category": "배송관련불편"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 자체가 아닌 패키징(포장) 불량에 대한 불만으로 배송관련불편 카테고리에 해당",
+        "reasoning": "포장 마감/구성에 대한 불만이므로 배송·포장 aspect, 태그 없음",
         "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [],
-        "_v3": true,
         "tags": [],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-06",
       "product_id": "316"
@@ -170636,37 +170555,24 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/05/c401d6a5e7e87a9b56341e45a385233e.jpg",
         "https://nonohumble.com/file_data/nohumble/2026/09/05/d2bb6517abe45d09be42c4732883eff8.jpg"
       ],
-      "hashtags": [
-        "#구성"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
-            "aspect": "상품",
+            "aspect": "배송·포장",
             "sentiment": "긍정",
             "intent": "없음",
-            "tags": [
-              "#구성"
-            ],
-            "summary": "포장이 고급스러워 선물용으로도 손색없다고 만족",
+            "tags": [],
+            "summary": "포장이 고급스러워 위스키인 줄 착각할 정도, 선물용으로도 좋을 것 같음",
             "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 맛 평가는 없지만 고급스러운 패키지 구성에 대한 명확한 만족 표현",
+        "reasoning": "맛 평가는 유보한 채 포장 칭찬만 있음",
         "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#구성"
-        ],
-        "_v3": true,
-        "tags": [
-          "#구성"
-        ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-09-06",
       "product_id": "392"
@@ -170737,29 +170643,30 @@
       "views": "0",
       "content": "60사이즈를 62로 교환하실분 있으시면 알려주세요.",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#사이즈"
+      ],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
             "sentiment": "중립",
             "intent": "양도·거래",
-            "tags": [],
-            "summary": "60사이즈를 62사이즈로 교환할 상대 구함",
-            "confidence": 0.9,
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "60사이즈를 62사이즈와 맞교환할 구매자를 찾음",
+            "confidence": 0.95,
             "category": "양도/거래"
           }
         ],
         "needs_review": false,
-        "reasoning": "구매자간 사이즈 교환 상대를 찾는 게시물로 양도/거래에 해당",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [],
-        "_v3": true,
-        "tags": [],
-        "reclassify_pending": [
-          "문의 의도 가능"
-        ]
+        "reasoning": "구매자간 사이즈 맞교환 요청",
+        "confidence": 0.95,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true
       },
       "crawled_date": "2026-09-06",
       "product_id": "352"
@@ -170779,37 +170686,33 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/06/df7032d43c1a9ef1488533a9183d479b.jpg",
         "https://nonohumble.com/file_data/nohumble/2026/09/06/82915d0b2c6d62ccd5a5467660a523a8.jpg"
       ],
-      "hashtags": [
-        "#퀄리티"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "포장이 고급스러움",
+            "confidence": 0.8,
+            "category": "긍정"
+          },
           {
             "aspect": "상품",
             "sentiment": "긍정",
             "intent": "없음",
-            "tags": [
-              "#퀄리티"
-            ],
-            "summary": "포장, 향, 맛 모두 만족스럽다는 후기",
+            "tags": [],
+            "summary": "20년산의 향과 맛의 조화가 뛰어나 만족하며 30년산도 기대됨",
             "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "포장·향·맛에 대한 전반적 만족 표현으로 긍정 단일 세그먼트, 품질 관련 태그만 애매하게 적용",
+        "reasoning": "맛에는 해당 태그가 없어 태그 미부여",
         "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티"
-        ],
-        "_v3": true,
-        "tags": [
-          "#퀄리티"
-        ],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-09-07",
       "product_id": "392"
@@ -171205,8 +171108,7 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/08/c5f70ae3aff990d184d1e54004bb9557.jpg"
       ],
       "hashtags": [
-        "#가격",
-        "#퀄리티"
+        "#가격"
       ],
       "classification": {
         "segments": [
@@ -171215,31 +171117,29 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#가격",
-              "#퀄리티"
+              "#가격"
             ],
-            "summary": "비싼 가격이 아깝지 않을 만큼 풍미가 업그레이드되고 포장도 고급스러움",
+            "summary": "30년산이 비싸다고 생각했으나 맛본 후 가격이 전혀 아깝지 않을 만큼 풍미가 훌륭함",
             "confidence": 0.85,
+            "category": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "포장이 고급스러워 선물용으로도 좋음",
+            "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "가격 대비 만족과 포장 품질에 대한 구체적 언급",
-        "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#가격",
-          "#퀄리티"
-        ],
-        "_v3": true,
+        "reasoning": "가격 대비 만족과 포장 칭찬 분리",
+        "confidence": 0.8,
         "tags": [
-          "#가격",
-          "#퀄리티"
+          "#가격"
         ],
-        "reclassify_pending": [
-          "#퀄리티 오적용(순수 감정 표현)",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-09",
       "product_id": "392"
@@ -171310,37 +171210,24 @@
       "views": "0",
       "content": "세종 만년필로 글을 쓰면 깔끔하지가 않고 좀 번지는 것 같습니다. 매번 번지는 것은 아니고 종이에 따라 차이는 있으나, 일반 A4 용지에 쓸 때 잉크흐름으로 인해 글자가  퍼지는 경우가 많습니다. 원래 그렇게 디자인 된 것인지, 제 것만 그런지 궁금합니다.",
       "images": [],
-      "hashtags": [
-        "#사용성"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
             "aspect": "상품",
             "sentiment": "부정",
-            "intent": "없음",
-            "tags": [
-              "#사용성"
-            ],
-            "summary": "종이에 따라 잉크가 번져 깔끔하지 않음",
+            "intent": "문의",
+            "tags": [],
+            "summary": "세종 만년필 잉크가 A4 용지에서 자주 번지는 현상이 있어 디자인 특성인지 개별 불량인지 문의",
             "confidence": 0.8,
-            "category": "부정"
+            "category": "문의"
           }
         ],
         "needs_review": false,
-        "reasoning": "필기 시 잉크 번짐이라는 사용상 문제를 지적",
+        "reasoning": "결함 여부를 묻는 문의성 후기",
         "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#사용성"
-        ],
-        "_v3": true,
-        "tags": [
-          "#사용성"
-        ],
-        "reclassify_pending": [
-          "문의 의도 가능"
-        ]
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-09-09",
       "product_id": "316"
@@ -171528,28 +171415,19 @@
               "#무게감",
               "#사용성"
             ],
-            "summary": "무게감이 있지만 값어치로 느껴지고 필기감이 만족스러움",
-            "confidence": 0.8,
+            "summary": "세종펜의 무게감과 필기감, 손에 착 감기는 그립감이 만족스러움",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "무게감과 필기감에 대한 구체적 긍정 평가",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#무게감",
-          "#사용성"
-        ],
-        "_v3": true,
+        "reasoning": "무게감과 그립감(사용성)에 대한 구체적 언급",
+        "confidence": 0.85,
         "tags": [
           "#무게감",
           "#사용성"
         ],
-        "reclassify_pending": [
-          "혼합 누락 의심",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-09",
       "product_id": "316"
@@ -171585,27 +171463,19 @@
               "#색상",
               "#퀄리티"
             ],
-            "summary": "실버·블랙 두 자루 모두 만족스럽고 필기감과 잉크 느낌이 좋음",
-            "confidence": 0.8,
+            "summary": "실버·블랙 두 자루 모두 색상이 예쁘고 필기감도 좋아 데스크가 고급스러워짐",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "색상 선택 및 전반적 만족감을 구체적으로 표현",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#퀄리티"
-        ],
-        "_v3": true,
+        "reasoning": "색상 선택 만족과 고급스러움 평가",
+        "confidence": 0.85,
         "tags": [
           "#색상",
           "#퀄리티"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-09",
       "product_id": "316"
@@ -171680,27 +171550,19 @@
               "#무게감",
               "#내구성"
             ],
-            "summary": "새로 산 칼이 쌍둥이 셀러 제품보다 가볍고 견고해 만족",
+            "summary": "해바라기 칼이 타 브랜드보다 가볍고 견고해 만족",
             "confidence": 0.9,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "비교 우위(가벼움, 견고함)를 명확히 언급",
+        "reasoning": "타 브랜드 대비 무게감과 내구성 비교 평가",
         "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#무게감",
-          "#내구성"
-        ],
-        "_v3": true,
         "tags": [
           "#무게감",
           "#내구성"
         ],
-        "reclassify_pending": [
-          "혼합 누락 의심"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-09",
       "product_id": "302"
@@ -171763,8 +171625,7 @@
       "content": "세종 만년필을 구매 후 세종 필통까지 구매 했습니다.\n평소 와이프것도 같이 구매 해서 매번 같이 구매했습니다.\n이번 세종 필통을 보더니 와이프가 너무 좋아 합니다.\n정말 만듬새가 다릅니다.\n여러개를 구매해 구박 받았는데, 이번엔 세종필통을 받아 보고서는\n너무 너무 이쁘다고 좋아 합니다.\n좋은 제품 감사히 잘 쓰겠습니다.",
       "images": [],
       "hashtags": [
-        "#퀄리티",
-        "#디자인"
+        "#퀄리티"
       ],
       "classification": {
         "segments": [
@@ -171773,31 +171634,20 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#퀄리티",
-              "#디자인"
+              "#퀄리티"
             ],
-            "summary": "만듬새가 다르게 좋고 예뻐서 아내도 매우 만족",
-            "confidence": 0.9,
+            "summary": "세종 필통의 만듬새가 뛰어나 아내도 매우 만족",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "품질(만듬새)과 디자인(예쁨)에 대한 구체적 호평이 명확해 confidence 높게 설정",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#디자인"
-        ],
-        "_v3": true,
+        "reasoning": "만듬새에 대한 구체적 언급으로 퀄리티 태그",
+        "confidence": 0.85,
         "tags": [
-          "#퀄리티",
-          "#디자인"
+          "#퀄리티"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-10",
       "product_id": "374"
@@ -171830,8 +171680,8 @@
               "#색상",
               "#디자인"
             ],
-            "summary": "색상과 디자인이 어디에도 빠짐없이 예쁨",
-            "confidence": 0.9,
+            "summary": "색상과 디자인 모두 만족스러움",
+            "confidence": 0.85,
             "category": "긍정"
           },
           {
@@ -171839,34 +171689,34 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [
-              "#사용성",
+              "#사용성"
+            ],
+            "summary": "뚜껑을 잘못 잠그면 그림이 안 맞아 정렬 표시가 있으면 좋겠다는 아쉬움",
+            "confidence": 0.8,
+            "category": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
               "#구성"
             ],
-            "summary": "잠금이 조금만 어긋나도 그림이 안 맞고, 잉크가 별도 구매라 아쉬움",
+            "summary": "잉크가 별도 구매 품목이라 소량이라도 포함되면 좋겠다는 아쉬움",
             "confidence": 0.8,
             "category": "부정"
           }
         ],
         "needs_review": false,
-        "reasoning": "칭찬과 아쉬운 점이 명확히 구분되어 있어 긍정/부정 segment로 분리",
+        "reasoning": "긍정 평가와 두 가지 개선 아쉬움을 분리",
         "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#디자인",
-          "#사용성",
-          "#구성"
-        ],
-        "_v3": true,
         "tags": [
           "#색상",
           "#디자인",
           "#사용성",
           "#구성"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-10",
       "product_id": "316"
@@ -171928,7 +171778,7 @@
       "content": "이쁩니다!!!!얼굴이 작아 보여요~~가을과 겨울에 어떤 옷이든 잘 어울릴거 같아요",
       "images": [],
       "hashtags": [
-        "#디자인"
+        "#첫인상"
       ],
       "classification": {
         "segments": [
@@ -171937,27 +171787,20 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인"
+              "#첫인상"
             ],
-            "summary": "예쁘고 얼굴이 작아 보이며 가을/겨울 어떤 옷에도 잘 어울림",
+            "summary": "제품이 예쁘고 얼굴이 작아보이는 효과가 있어 만족",
             "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "얼굴이 작아보인다, 옷과 잘 어울린다는 구체적 이유가 있어 단독 '예쁘다'가 아니므로 #디자인 태그 부여",
+        "reasoning": "근거 있는 외관 만족이나 표준 태그 중 첫인상에 가장 근접",
         "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ],
-        "_v3": true,
         "tags": [
-          "#디자인"
+          "#첫인상"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-10",
       "product_id": "352"
@@ -172022,8 +171865,7 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/09/39c3b2f6698adb78b2e4d5009c16dd66.jpg"
       ],
       "hashtags": [
-        "#가격",
-        "#구성"
+        "#가격"
       ],
       "classification": {
         "segments": [
@@ -172032,30 +171874,29 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#가격",
-              "#구성"
+              "#가격"
             ],
-            "summary": "맛있고 파손 없이 튼튼하게 포장되어 도착, 할인가 구매와 선물포장 구성에 만족",
-            "confidence": 0.9,
+            "summary": "짐버가 다양한 음용법에 잘 어울리고 맛있으며 할인가로 저렴하게 구매해 만족",
+            "confidence": 0.8,
+            "category": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "파손 없이 튼튼한 포장으로 도착했고 선물포장백도 동봉되어 선물용으로 좋음",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 맛, 포장 상태, 가격, 구성 모두에 대한 명확한 호평이라 긍정으로 분류",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#가격",
-          "#구성"
-        ],
-        "_v3": true,
+        "reasoning": "가격 만족과 포장 칭찬 분리",
+        "confidence": 0.8,
         "tags": [
-          "#가격",
-          "#구성"
+          "#가격"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-10",
       "product_id": "408"
@@ -172116,38 +171957,24 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/09/00072f518ac07b6b67f77d8898ededc9.jpg",
         "https://nonohumble.com/file_data/nohumble/2026/09/09/36153cd7e520ffb5e78f3af2c0c708d5.jpg"
       ],
-      "hashtags": [
-        "#마감"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
-            "aspect": "상품",
+            "aspect": "배송·포장",
             "sentiment": "긍정",
             "intent": "없음",
-            "tags": [
-              "#마감"
-            ],
-            "summary": "하루 뒤 도착했지만 스크래치 없이 와서 안심",
-            "confidence": 1,
+            "tags": [],
+            "summary": "필통이 스크래치 없이 안전하게 도착해 안심",
+            "confidence": 0.7,
             "category": "긍정"
           }
         ],
-        "needs_review": false,
-        "reasoning": "수령 사실과 함께 표면 상태(스크래치 없음)에 대한 만족 이유가 있어 긍정으로 분류, 다소 애매해 confidence 낮음",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [
-          "#마감"
-        ],
-        "_relabeled": true,
-        "_v3": true,
-        "tags": [
-          "#마감"
-        ],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "needs_review": true,
+        "reasoning": "짧지만 포장 상태 관련 안도 표현",
+        "confidence": 0.7,
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-09-10",
       "product_id": "374"
@@ -172212,25 +172039,18 @@
             "tags": [
               "#색상"
             ],
-            "summary": "실제 색상이 시제품보다 고풍스러움이 떨어지고 밋밋하며 가벼워 실망",
-            "confidence": 0.9,
+            "summary": "시제품보다 색상의 고풍스러움이 떨어지고 특히 청색이 밋밋하고 가벼워 보여 실망",
+            "confidence": 0.85,
             "category": "부정"
           }
         ],
         "needs_review": false,
-        "reasoning": "색상 품질에 대한 구체적 불만",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상"
-        ],
-        "_v3": true,
+        "reasoning": "색상 품질에 대한 구체적 실망 표현",
+        "confidence": 0.85,
         "tags": [
           "#색상"
         ],
-        "reclassify_pending": [
-          "혼합 누락 의심"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-11",
       "product_id": "377"
@@ -172425,8 +172245,7 @@
       "images": [],
       "hashtags": [
         "#사이즈",
-        "#디자인",
-        "#사용성"
+        "#디자인"
       ],
       "classification": {
         "segments": [
@@ -172437,8 +172256,8 @@
             "tags": [
               "#사이즈"
             ],
-            "summary": "슬리퍼 사이즈가 이상하고 뒤꿈치가 밖으로 나옴",
-            "confidence": 0.9,
+            "summary": "엘노어 슬리퍼 사이즈가 작아 뒷꿈치가 신발 밖으로 나오며 부위별 사이즈 설명이 부족했다는 아쉬움",
+            "confidence": 0.85,
             "category": "부정"
           },
           {
@@ -172446,10 +172265,9 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인",
-              "#사용성"
+              "#디자인"
             ],
-            "summary": "예쁘고 고급스럽고 편안함",
+            "summary": "사이즈 문제를 제외하면 예쁘고 고급스럽고 편안함",
             "confidence": 0.8,
             "category": "긍정"
           },
@@ -172457,30 +172275,22 @@
             "aspect": "상품",
             "sentiment": "중립",
             "intent": "양도·거래",
-            "tags": [],
-            "summary": "이전 구매한 구두를 판매하고 싶다며 사이즈·색상 정보 공유",
-            "confidence": 0.9,
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "사이즈가 안 맞아 신지 않는 겸손구두를 다른 구매자에게 양도하고 싶어함",
+            "confidence": 0.8,
             "category": "양도/거래"
           }
         ],
         "needs_review": false,
-        "reasoning": "사이즈 불만, 제품 만족, 개인간 판매 의사가 각각 별도 내용으로 분리됨",
+        "reasoning": "사이즈 불만, 디자인 만족, 양도 의사를 각각 분리",
         "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#사이즈",
-          "#디자인",
-          "#사용성"
-        ],
-        "_v3": true,
         "tags": [
           "#사이즈",
-          "#디자인",
-          "#사용성"
+          "#디자인"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-11",
       "product_id": "384"
@@ -172542,22 +172352,16 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [],
-            "summary": "포장 스티커·테이프가 떨어져 있는 등 포장 상태 불량",
+            "summary": "케이스와 병의 스티커, 선물용 쇼핑백 테이프가 모두 떨어져 있어 포장 마감 상태에 실망, 선물용으로는 가치가 훼손될 수 있음",
             "confidence": 0.85,
             "category": "배송관련불편"
           }
         ],
         "needs_review": false,
-        "reasoning": "박스/케이스/포장재 손상에 대한 명확한 배송·포장 불편 사례",
+        "reasoning": "포장 마감 불량에 대한 불만",
         "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [],
-        "_v3": true,
         "tags": [],
-        "reclassify_pending": [
-          "혼합 누락 의심",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "392"
@@ -172579,25 +172383,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [],
-            "summary": "",
-            "confidence": 1,
-            "category": "중립/단순수령"
+            "summary": "물량이 많다고 안내됐는데 500ml가 금방 품절되어 속상함",
+            "confidence": 0.8,
+            "category": "부정"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 자체 불만이 아니라 품절/구매 기회 상실에 대한 불만으로 표준 카테고리에 명확히 맞지 않음",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [],
-        "_relabeled": true,
-        "_v3": true,
+        "reasoning": "재고/품절에 대한 아쉬움 표현, 특정 태그 대상 아님",
+        "confidence": 0.8,
         "tags": [],
-        "reclassify_pending": [
-          "요약 없음"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "400"
@@ -172622,8 +172420,8 @@
       ],
       "hashtags": [
         "#퀄리티",
-        "#무게감",
-        "#디자인"
+        "#마감",
+        "#사용성"
       ],
       "classification": {
         "segments": [
@@ -172633,34 +172431,23 @@
             "intent": "없음",
             "tags": [
               "#퀄리티",
-              "#무게감",
-              "#디자인"
+              "#마감",
+              "#사용성"
             ],
-            "summary": "세종 스테인리스촉 필기감과 각인 퀄리티에 매우 만족",
-            "confidence": 0.9,
+            "summary": "세종 스테인리스촉의 곤룡포각인 마감이 섬세하고 그립감·필기감도 뛰어나 매우 만족",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "필기감, 무게감, 각인 디자인에 대한 상세하고 명확한 긍정 후기",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티",
-          "#무게감",
-          "#디자인"
-        ],
-        "_v3": true,
+        "reasoning": "여러 긍정 속성을 하나의 상품 긍정 세그먼트로 통합",
+        "confidence": 0.85,
         "tags": [
           "#퀄리티",
-          "#무게감",
-          "#디자인"
+          "#마감",
+          "#사용성"
         ],
-        "reclassify_pending": [
-          "혼합 누락 의심",
-          "#퀄리티 오적용(순수 감정 표현)",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "316"
@@ -172687,23 +172474,16 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [],
-            "summary": "발사믹 제품 만족",
-            "confidence": 1,
+            "summary": "발사믹 시리즈도 좋지만 김어준 총수가 더 마음에 듦",
+            "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "특정 인물 언급 등 맥락이 섞여 있어 순수 제품 평가인지 다소 애매",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [],
-        "_relabeled": true,
-        "_v3": true,
+        "reasoning": "맛 비교 평가로 표준 태그 대상 아님",
+        "confidence": 0.8,
         "tags": [],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상",
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "392"
@@ -172845,7 +172625,8 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/11/4bc894cf551b457a5ef6d380c6bc7297.jpeg"
       ],
       "hashtags": [
-        "#디자인"
+        "#색상",
+        "#사용성"
       ],
       "classification": {
         "segments": [
@@ -172854,27 +172635,22 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인"
+              "#색상",
+              "#사용성"
             ],
-            "summary": "편하고 예쁜 착화감",
-            "confidence": 0.8,
+            "summary": "신발이 편하고 예쁘며, 블랙 대신 컬러 버전도 살 걸 하는 아쉬움",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "편하고 예쁘다는 복합적 긍정 표현으로 디자인 태그 부여",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ],
-        "_v3": true,
+        "reasoning": "착화감과 색상 선택에 대한 언급",
+        "confidence": 0.85,
         "tags": [
-          "#디자인"
+          "#색상",
+          "#사용성"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "384"
@@ -172933,7 +172709,8 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/11/2feb475bb10b2c8067aeee76e8eacfe2.jpeg"
       ],
       "hashtags": [
-        "#디자인"
+        "#선물",
+        "#첫인상"
       ],
       "classification": {
         "segments": [
@@ -172942,27 +172719,22 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인"
+              "#선물",
+              "#첫인상"
             ],
-            "summary": "만년필이 예뻐서 선물용으로도 구매",
+            "summary": "만년필이 예뻐서 선물용으로 여러 개 구매, 받는 사람도 좋아할 것으로 기대",
             "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "디자인에 대한 명확한 칭찬",
+        "reasoning": "선물 목적 구매와 외관 만족",
         "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ],
-        "_v3": true,
         "tags": [
-          "#디자인"
+          "#선물",
+          "#첫인상"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "316"
@@ -173340,8 +173112,7 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/11/fb676d1e87f6944dfc84e6d0e92103a8.jpg"
       ],
       "hashtags": [
-        "#퀄리티",
-        "#기획"
+        "#퀄리티"
       ],
       "classification": {
         "segments": [
@@ -173350,31 +173121,20 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [
-              "#퀄리티",
-              "#기획"
+              "#퀄리티"
             ],
-            "summary": "실내화 모양이 찌그러진 채 펴지지 않음",
-            "confidence": 1,
+            "summary": "실내화가 찌그러진 채 펴지지 않는 등 품질에 실망했고, 반복된 실망 경험과 현장 의견 미반영에 대한 불만으로 앞으로 구매를 중단하겠다는 의사를 밝힘",
+            "confidence": 0.7,
             "category": "부정"
           }
         ],
-        "needs_review": false,
-        "reasoning": "제품 결함 불만과 브랜드 전반에 대한 실망감이 뒤섞여 있어 판단이 다소 애매함",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [
+        "needs_review": true,
+        "reasoning": "강한 불만과 이탈(구매 중단) 의사가 담긴 리뷰로 검토 필요",
+        "confidence": 0.7,
+        "tags": [
           "#퀄리티"
         ],
-        "_relabeled": true,
-        "_v3": true,
-        "tags": [
-          "#퀄리티",
-          "#기획"
-        ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상",
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-12",
       "product_id": "384"
@@ -173613,7 +173373,7 @@
       "images": [],
       "hashtags": [
         "#디자인",
-        "#퀄리티"
+        "#사용성"
       ],
       "classification": {
         "segments": [
@@ -173624,8 +173384,8 @@
             "tags": [
               "#디자인"
             ],
-            "summary": "세종 촉의 디자인이 고급스럽고 마음에 든다",
-            "confidence": 1,
+            "summary": "세종 스테인리스촉의 디자인이 베개보다 고급스러움",
+            "confidence": 0.85,
             "category": "긍정"
           },
           {
@@ -173633,30 +173393,21 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [
-              "#퀄리티"
+              "#사용성"
             ],
-            "summary": "필기감이 다소 거칠고 사각거리며 캡 닫는 느낌이 매끄럽지 않다",
-            "confidence": 1,
+            "summary": "세종의 필기감과 잉크 흐름이 베개보다 아쉽고 캡을 닫을 때 느낌도 매끄럽지 못했으나 최근 개선되었다고 함",
+            "confidence": 0.75,
             "category": "부정"
           }
         ],
-        "needs_review": false,
-        "reasoning": "두 제품(세종/베개)을 비교하는 장문의 복합적 리뷰로 감성 판단이 애매함",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [
-          "#디자인",
-          "#퀄리티"
-        ],
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "두 제품 비교 리뷰를 디자인 긍정/필기감 아쉬움으로 분리",
+        "confidence": 0.75,
         "tags": [
           "#디자인",
-          "#퀄리티"
+          "#사용성"
         ],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-13",
       "product_id": "316"
@@ -173749,30 +173500,28 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
-            "intent": "양도·거래",
+            "sentiment": "긍정",
+            "intent": "없음",
             "tags": [],
-            "summary": "",
-            "confidence": 1,
-            "category": "양도/거래"
+            "summary": "기다린 보람이 있을 만큼 큰 선물을 받은 기분",
+            "confidence": 0.75,
+            "category": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [],
+            "summary": "여름용 제품인지, 지퍼가 있는지, 싱글 사이즈 반품 재고가 있는지 문의",
+            "confidence": 0.8,
+            "category": "문의"
           }
         ],
-        "needs_review": false,
-        "reasoning": "제품 구성에 대한 가벼운 불만과 재고 문의가 섞여 있어 분류가 애매함",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [
-          "#구성"
-        ],
-        "_relabeled": true,
-        "_v3": true,
+        "needs_review": true,
+        "reasoning": "긍정 소감과 다수의 문의사항을 분리",
+        "confidence": 0.75,
         "tags": [],
-        "reclassify_pending": [
-          "요약 없음",
-          "문의 의도 가능",
-          "#선물 신설 태그 대상",
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-14",
       "product_id": "349"
@@ -173881,7 +173630,7 @@
       "images": [],
       "hashtags": [
         "#무게감",
-        "#디자인"
+        "#첫인상"
       ],
       "classification": {
         "segments": [
@@ -173891,29 +173640,21 @@
             "intent": "없음",
             "tags": [
               "#무게감",
-              "#디자인"
+              "#첫인상"
             ],
-            "summary": "무겁고 디자인이 별로여서 한 번도 사용하지 않음",
-            "confidence": 0.9,
+            "summary": "무겁고 디자인도 별로라 한 번도 안 쓰고 서랍에 방치, 부부 모두 안 맞는 제품이었다고 함",
+            "confidence": 0.85,
             "category": "부정"
           }
         ],
         "needs_review": false,
-        "reasoning": "제품 자체(무게, 디자인)에 대한 명확한 불만",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#무게감",
-          "#디자인"
-        ],
-        "_v3": true,
+        "reasoning": "무거움과 디자인 불만이 뚜렷하나 구체적 형태 지적이 없어 첫인상으로 분류",
+        "confidence": 0.85,
         "tags": [
           "#무게감",
-          "#디자인"
+          "#첫인상"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-14",
       "product_id": "216"
@@ -173985,7 +173726,9 @@
         "#디자인",
         "#색상",
         "#퀄리티",
-        "#무게감"
+        "#무게감",
+        "#첫인상",
+        "#선물"
       ],
       "classification": {
         "segments": [
@@ -173997,34 +173740,27 @@
               "#디자인",
               "#색상",
               "#퀄리티",
-              "#무게감"
+              "#무게감",
+              "#첫인상",
+              "#선물"
             ],
-            "summary": "색상·재질감·무게감 모두 만족스러운 고급스러운 제품",
+            "summary": "전통 기와 형태를 감각적으로 재해석한 펜레스트 5종, 색감·완성도·묵직함 모두 만족스러워 교수님 선물용으로 구매",
             "confidence": 0.9,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "색감, 광택, 무게감 등 다양한 만족 포인트를 언급한 긍정 리뷰",
+        "reasoning": "디자인·색상·완성도·선물 언급이 모두 구체적 근거를 갖춰 명확히 태깅",
         "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#디자인",
-          "#색상",
-          "#퀄리티",
-          "#무게감"
-        ],
-        "_v3": true,
         "tags": [
           "#디자인",
           "#색상",
           "#퀄리티",
-          "#무게감"
+          "#무게감",
+          "#첫인상",
+          "#선물"
         ],
-        "reclassify_pending": [
-          "#퀄리티 오적용(순수 감정 표현)",
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-14",
       "product_id": "377"
@@ -174048,7 +173784,8 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/13/5d25dc1afc952613bce1b2f7d54c77cb.jpeg"
       ],
       "hashtags": [
-        "#디자인"
+        "#디자인",
+        "#첫인상"
       ],
       "classification": {
         "segments": [
@@ -174057,27 +173794,40 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인"
+              "#디자인",
+              "#첫인상"
             ],
-            "summary": "기와를 펜레스트로 표현한 디자인에 감탄하며 만족",
+            "summary": "기와 모양을 펜레스트로 구현한 디자인에 감탄, 예쁘고 영롱해 사진과 후기를 남길 정도",
+            "confidence": 0.9,
+            "category": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [],
+            "summary": "구매를 잘했다고 느끼며 다른 색깔도 살 걸 하는 후회, 추가 구매 의향",
+            "confidence": 0.8,
+            "category": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "포장상자 뚜껑의 그림 디테일까지 감동적이었다는 평가",
             "confidence": 0.9,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "디자인에 대한 명확한 칭찬 위주의 단일 긍정 리뷰",
-        "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#디자인"
-        ],
-        "_v3": true,
+        "reasoning": "다른 색깔 후회 표현을 추가구매 의사로 보아 재구매희망 세그먼트로 분리",
+        "confidence": 0.8,
         "tags": [
-          "#디자인"
+          "#디자인",
+          "#첫인상"
         ],
-        "reclassify_pending": [
-          "#디자인 오적용(근거 없는 예쁘다)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-14",
       "product_id": "377"
@@ -174094,9 +173844,7 @@
       "views": "0",
       "content": "겸손몰 보다가 전통기와 형태의 펜거치대를 예약 판매하는 것을 보고\n평소 책상 위가 허전하다 싶었던지 무엇에 홀린 듯 팬거치대를 구매하였음.\n팬거치대가 오면 만년필이나 볼펜을 어떻게 올려놓을까 상상을 하면서 기대하였는데\n구매하면 1~2주 안에는 바로 발송이 되는 줄 알았는데...\n알고 보니 예약판매라 3개월 넘게 기다리게 되었음ㅜㅜ (너무 오래걸림)\n기다림에 지치고 지쳐 그만 취소버튼을 눌러 버릴까 하였지만\n그때마다 기와모양의 팬거치대가 아른아른거려 취소는 포기하고\n무작정 기다리기로 하였음. 그러다 심지어 구매한 것도 잊어 버림. (마치 물린 주식 잊고 살듯이 있었음ㅋㅋ)\n갑자기 배송한다는 문자를 보고 급기분이 좋아져서\n택배 도착하기만을 오매불망 기다리던 중 집에 도착하였다는 문자받고\n집에서 택배상자는 뜯는 것만을 생각하며 집으로 바로 고고(후배녀석이 밥사준다고 했는데 패스함).\n근데 집에 도착하자 택배상자를 찾았으나 보이지 않는 것임(급실망함).\n배송이 잘못되었나 생각하면서 집안 여기저기를 찾아보던 중\n남편에게 온 택배상자는 본인의 물건처럼 뜯는 와이프가 있다는\n생각이 머리를 스치면서 와아프에게 물어보니\n본인 것이 아니길래 구석에 던져놓았다는 말을 듣고 마침내 나의 팬거치대와 첫 만남 ㅋ\n지금까지는 제품받기까지 셀레임이었고 구체적으로 제품에 대해서 리뷰해보면,\n1. 포장 = 베리굿\n☆\n☆\n☆\n☆\n포장은 기대 안 했는데 너무 좋아서 깜짝 놀람\n박스 종이가 매우 고급짐 그리고 박스 안을 열면 다시 투명한 포장용기 안에 들어 있는데\n이대로 디피해도 좋을 듯함.\n다만, 3개 중에 1개는 중앙에 있지 못하고 살짝 옆으로 이동해 있어서 아쉬움.\n고정이 100% 안되는 듯함.\n2. 만듦세 = 베리베리굿\n☆\n☆ ☆ ☆\n☆\n한국 전통기와의 곡선미와 문양을 디테일하게 잘살림.\n검은색이라서 칙칙할 줄 알았는데 광택감과 마감처리가 좋아서 고급져보임.\n검은색 안에서도 앞에서부터 뒤까지 명도나 채도의 변화가 있는 점이 매우 좋음.\n다만, 팬거치대면 무게감이 좀 더 나갔으면 좋겠는데 가벼운 점이 아쉬움.\n도자기 소재라서 그런듯함.\n3. 활용도 = 베리굿\n☆ ☆ ☆\n☆\n실물로 보면 오묘하고 고즈넉한 분위기가 좋음.\n아마 전통기와 모양이라서 그런듯함.  서재나 책상에서 오브제로 두어도 매우 훌룡함.\n다만, 오브제로 하려면 전통기와와 어울리는 만년필을 추가로 구매해야할 듯함.\n청자처럼 오묘한 색상이 추가로 있었으면 좋겠음.\n무게도 좀더 무거웠으면 좋겠다는 생각임.\n다른분들 구매하시는데 도움 되시라고 자세히 올림.\n사진도 찍어서 올릴려고 하였는데 어울리는 만년필이 없어서 생략(사실 약간 귀찮음 ㅋ)\n나중에 이쁘게 찍어서 추가로 올리겠음.",
       "images": [],
-      "hashtags": [
-        "#퀄리티"
-      ],
+      "hashtags": [],
       "classification": {
         "segments": [
           {
@@ -174104,36 +173852,34 @@
             "sentiment": "부정",
             "intent": "없음",
             "tags": [],
-            "summary": "예약판매 특성상 3개월 넘게 기다려 배송이 매우 지연됨",
-            "confidence": 0.85,
+            "summary": "예약판매로 3개월 넘게 기다려야 해 배송이 너무 오래 걸렸다는 불만",
+            "confidence": 0.9,
             "category": "배송관련불편"
           },
           {
-            "aspect": "상품",
+            "aspect": "배송·포장",
             "sentiment": "긍정",
             "intent": "없음",
-            "tags": [
-              "#퀄리티"
-            ],
-            "summary": "포장이 고급스럽고 정성스러워 만족스러움",
-            "confidence": 0.8,
+            "tags": [],
+            "summary": "박스 종이 재질과 투명 포장용기 등 포장 품질이 기대 이상으로 고급스러움",
+            "confidence": 0.9,
             "category": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "3개 중 1개가 포장 안에서 중앙에 위치하지 못하고 살짝 치우쳐 있었음",
+            "confidence": 0.6,
+            "category": "배송관련불편"
           }
         ],
-        "needs_review": false,
-        "reasoning": "예약판매 장기 지연에 대한 불만과 포장 품질 만족을 별도 segment로 분리",
-        "confidence": 0.8,
-        "_v2": true,
-        "hashtags": [
-          "#퀄리티"
-        ],
-        "_v3": true,
-        "tags": [
-          "#퀄리티"
-        ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "needs_review": true,
+        "reasoning": "본문이 마지막 문장에서 잘려 포장 치우침 언급의 전체 맥락 확인 필요",
+        "confidence": 0.6,
+        "tags": [],
+        "_v3": true
       },
       "crawled_date": "2026-09-14",
       "product_id": "377"
@@ -174318,7 +174064,7 @@
       "content": "남편이 얼굴형이 동글동글해서..\n어울리는 캡모자를 찾기 어려운데.\n아주 찰떡으로 어울립니다. ^^",
       "images": [],
       "hashtags": [
-        "#핏"
+        "#첫인상"
       ],
       "classification": {
         "segments": [
@@ -174327,27 +174073,20 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#핏"
+              "#첫인상"
             ],
-            "summary": "동글한 얼굴형에 캡모자가 잘 어울려 만족",
-            "confidence": 0.85,
+            "summary": "동글동글한 얼굴형 남편에게 캡모자가 찰떡같이 잘 어울려 인생 모자를 찾았다고 함",
+            "confidence": 0.8,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "얼굴형에 맞는 착용감(핏)에 대한 만족 표현",
-        "confidence": 0.85,
-        "_v2": true,
-        "hashtags": [
-          "#핏"
-        ],
-        "_v3": true,
+        "reasoning": "구체적 디자인 근거 없이 잘 어울린다는 평가라 첫인상으로 분류",
+        "confidence": 0.8,
         "tags": [
-          "#핏"
+          "#첫인상"
         ],
-        "reclassify_pending": [
-          "#선물 신설 태그 대상"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-15",
       "product_id": "352"
@@ -174368,7 +174107,7 @@
       ],
       "hashtags": [
         "#색상",
-        "#퀄리티"
+        "#사용성"
       ],
       "classification": {
         "segments": [
@@ -174378,29 +174117,21 @@
             "intent": "없음",
             "tags": [
               "#색상",
-              "#퀄리티"
+              "#사용성"
             ],
-            "summary": "색상이 고급스럽고 만년필 거치대에 만족",
+            "summary": "적색이 자주색과 어두운 적색 사이의 고급스러운 색감이고, 만년필이 흘러내리지 않아 만족",
             "confidence": 0.9,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "색상과 품질에 대한 구체적 만족 표현",
+        "reasoning": "색감 표현과 사용 편의성 모두 구체적으로 언급되어 명확",
         "confidence": 0.9,
-        "_v2": true,
-        "hashtags": [
-          "#색상",
-          "#퀄리티"
-        ],
-        "_v3": true,
         "tags": [
           "#색상",
-          "#퀄리티"
+          "#사용성"
         ],
-        "reclassify_pending": [
-          "#퀄리티 오적용(순수 감정 표현)"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-15",
       "product_id": "377"
@@ -174420,8 +174151,7 @@
         "https://nonohumble.com/file_data/nohumble/2026/09/14/ade1940911b4de78fedc34976b3961c4.jpg"
       ],
       "hashtags": [
-        "#디자인",
-        "#기획"
+        "#디자인"
       ],
       "classification": {
         "segments": [
@@ -174430,30 +174160,20 @@
             "sentiment": "긍정",
             "intent": "없음",
             "tags": [
-              "#디자인",
-              "#기획"
+              "#디자인"
             ],
-            "summary": "기와 문양 디자인이 예쁘다는 호평",
-            "confidence": 1,
+            "summary": "귀한 기와 문양으로 만든 작품 같아 예쁘다는 평가",
+            "confidence": 0.85,
             "category": "긍정"
           }
         ],
         "needs_review": false,
-        "reasoning": "문양 언급이 있어 단순 '예쁘다'와 달리 디자인 태그 부여, 다만 짧아 애매",
-        "confidence": 1,
-        "_v2": true,
-        "hashtags": [
+        "reasoning": "기와 문양이라는 구체적 패턴 언급이 있어 디자인 태그 적용",
+        "confidence": 0.85,
+        "tags": [
           "#디자인"
         ],
-        "_relabeled": true,
-        "_v3": true,
-        "tags": [
-          "#디자인",
-          "#기획"
-        ],
-        "reclassify_pending": [
-          "reasoning이 애매함을 인정"
-        ]
+        "_v3": true
       },
       "crawled_date": "2026-09-15",
       "product_id": "377"
