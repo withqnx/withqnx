@@ -30,14 +30,18 @@ DRY = "--dry-run" in sys.argv
 
 def run_claude_measured(prompt: str):
     """claude -p 를 JSON 출력으로 돌려 본문과 사용량을 함께 받는다."""
-    cmd = [find_claude(), "-p", prompt, "--output-format", "json"]
+    cmd = [find_claude(), "-p", "--output-format", "json"]
     t0 = time.time()
-    res = subprocess.run(cmd, capture_output=True, text=True, timeout=1800, env=claude_env())
+    # 프롬프트는 stdin 으로. 배치 40건이면 30KB 가 넘는다.
+    res = subprocess.run(cmd, input=prompt, capture_output=True, text=True,
+                         timeout=1800, env=claude_env())
     elapsed = time.time() - t0
     if res.returncode != 0:
-        raise RuntimeError(f"claude -p 실패(rc={res.returncode})\n"
-                           f"  stdout: {res.stdout.strip()[:400]}\n"
-                           f"  stderr: {res.stderr.strip()[:400]}")
+        dump = "/tmp/nonohumble_reclassify_error.txt"
+        with open(dump, "w", encoding="utf-8") as f:
+            f.write(f"rc={res.returncode}\n\n--- stdout ---\n{res.stdout}\n\n--- stderr ---\n{res.stderr}")
+        raise RuntimeError(f"claude -p 실패(rc={res.returncode}). 전체 출력: {dump}\n"
+                           f"  stdout 앞부분: {res.stdout.strip()[:300]}")
     try:
         env = json.loads(res.stdout)
     except json.JSONDecodeError:

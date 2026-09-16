@@ -79,10 +79,13 @@ def claude_env() -> dict:
 
 
 def run_claude(prompt: str) -> str:
-    cmd = [find_claude(), "-p", prompt, "--output-format", "text"]
+    # 프롬프트는 argv 가 아니라 stdin 으로 넘긴다. 배치 40건이면 30KB 가 넘어
+    # 명령줄 인자로 넘기면 환경에 따라 깨진다.
+    cmd = [find_claude(), "-p", "--output-format", "text"]
     if CLAUDE_MODEL:
         cmd += ["--model", CLAUDE_MODEL]
-    res = subprocess.run(cmd, capture_output=True, text=True, timeout=600, env=claude_env())
+    res = subprocess.run(cmd, input=prompt, capture_output=True, text=True,
+                         timeout=600, env=claude_env())
     if res.returncode != 0:
         # stdout 에도 실패 이유가 담긴다("Not logged in" 등) → 둘 다 남긴다
         raise RuntimeError(
