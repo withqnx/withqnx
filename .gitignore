@@ -23,3 +23,4 @@ __pycache__/
 # 보고서 생성 산출물
 _report.html
 겸손몰_후기분석_report_*.pdf
+reclass_targets.json

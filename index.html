@@ -42,6 +42,7 @@
     --cat-resale:   #16a34a;   /* 양도/거래 - 진초록 */
     --cat-exchange: #fb923c;   /* 교환/반품 - 주황 */
     --cat-shipping: #c084fc;   /* 배송관련불편 - 보라 */
+    --cat-inquiry:  #cc9166;   /* 문의 - 골드 (v3 의도 축) */
 
     --font-display: 'Playfair Display', 'Paperlogy', ui-serif, Georgia, serif;
     --font-body: 'Paperlogy', 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
@@ -419,13 +420,24 @@
   }
 
   /* ───── Today List ───── */
+  /* ── 상품 썸네일 (원본이 최대 2MB — 반드시 loading="lazy" 로 넣을 것) ── */
+  .unit-thumb {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .unit-thumb-cell {
+    width: 40px; height: 40px; flex: 0 0 40px;
+    border-radius: 4px; overflow: hidden;
+    background: var(--pewter);
+  }
+  .unit-thumb-cell.lg { width: 56px; height: 56px; flex-basis: 56px; }
+
   .today-list { list-style: none; }
   .today-list li {
     border-bottom: 1px solid var(--pewter);
     padding: 16px 0;
     display: grid;
-    grid-template-columns: 180px 1fr auto;
-    gap: 24px;
+    grid-template-columns: 40px 180px 1fr auto;
+    gap: 16px;
     align-items: center;
     transition: background .15s;
   }
@@ -471,6 +483,7 @@
   .tag-양도\/거래   { color: var(--cat-resale);   border-color: rgba(22,163,74,.3);  background: rgba(22,163,74,.06); }
   .tag-교환\/반품   { color: var(--cat-exchange); border-color: rgba(251,146,60,.3); background: rgba(251,146,60,.06); }
   .tag-배송관련불편 { color: var(--cat-shipping); border-color: rgba(192,132,252,.3); background: rgba(192,132,252,.06); }
+  .tag-문의         { color: var(--cat-inquiry);  border-color: rgba(204,145,102,.35); background: rgba(204,145,102,.07); }
   .tag-미분류       { color: var(--silver);       border-color: var(--ash); background: var(--pewter); }
 
   .hash-tag {
@@ -602,6 +615,7 @@
   .fill-양도\/거래   { background: var(--cat-resale); }
   .fill-교환\/반품   { background: var(--cat-exchange); }
   .fill-배송관련불편 { background: var(--cat-shipping); }
+  .fill-문의         { background: var(--cat-inquiry); }
   .fill-기타         { background: var(--stone); }
 
   .bar-count {
@@ -2068,7 +2082,7 @@
 let DATA = null;
 let GROUPS = [];
 let RELABELS = {};
-let currentUnitProducts = null;
+let currentUnitPids = null;   // Set(상품번호) — 선택된 그룹/상품. null 이면 전체.
 let currentUnitName = null;
 let currentFilter = null;
 let photosVisible = true;  // 사진 탭 진입 시 기본 보이기
@@ -2098,7 +2112,111 @@ function escapeJsAttr(s) {
   return escapeHtml(String(s ?? "").replace(/\\/g, "\\\\").replace(/'/g, "\\'"));
 }
 
-const CATEGORIES = ["긍정","부정","중립/단순수령","양도/거래","교환/반품","배송관련불편"];
+// ── 제품 식별: cafe24 상품번호(product_id) ──────────────────────────
+// 제품명 문자열은 같은 상품이 "겸손 지우산"/"겸손-지우산" 두 갈래로 갈린다(크롤러의 슬러그 폴백).
+// product_link 의 /product/<슬러그>/<상품번호>/ 에 있는 상품번호만이 믿을 수 있는 키다.
+const PRODUCT_ID_RE = /\/product\/[^/]+\/(\d+)\//;
+let PRODUCTS = {};      // { product_id: {name, img, aliases[]} }  ← products.json
+let NAME_TO_PID = {};   // 제품명·별칭 → 상품번호 (이름으로만 적힌 옛 groups.json 을 읽는 다리)
+let GROUP_PIDS = {};    // group.id → Set(상품번호)
+
+// 썸네일 URL 정규화: 도메인이 두 번 박힌 깨진 URL(=404)을 실제로 200 나오는 형태로.
+function normalizeImgUrl(u) {
+  if (!u) return "";
+  const s = String(u).trim();
+  const dup = /^(?:https?:)?\/\/+nonohumble\.com\/+nonohumble\.com\//i;
+  if (dup.test(s)) return s.replace(dup, "https://nonohumble.com/");
+  const bare = /^\/+nonohumble\.com\//i;
+  if (bare.test(s)) return s.replace(bare, "https://nonohumble.com/");
+  if (s.startsWith("//")) return "https:" + s;
+  return s;
+}
+function getPid(r) {
+  if (!r) return "";
+  if (r.product_id) return String(r.product_id);
+  const m = PRODUCT_ID_RE.exec(r.product_link || "");
+  return m ? m[1] : "";
+}
+function unslugify(n) {
+  if (!n) return "";
+  try { n = decodeURIComponent(n); } catch (e) { /* 디코딩 실패하면 원문 그대로 */ }
+  return n.replace(/-/g, " ").replace(/\s+/g, " ").trim();
+}
+function isSlugLike(n) { return /\S-\S/.test(n || ""); }
+
+// products.json 이 있으면 그걸 쓰고, 없으면(마이그레이션 전) DATA 에서 즉석으로 만든다.
+// → data.json 이 아직 옛 형식이어도 대시보드는 상품번호 기준으로 동작한다.
+function buildProductIndex() {
+  PRODUCTS = {};
+  const embedded = window.__EMBEDDED_PRODUCTS__ || null;
+  if (embedded) Object.entries(embedded).forEach(([pid, p]) => {
+    PRODUCTS[String(pid)] = { name: p.name || "", img: normalizeImgUrl(p.img), aliases: p.aliases || [] };
+  });
+
+  const names = {}, imgs = {};
+  Object.values(DATA.reviews || {}).forEach(r => {
+    const pid = getPid(r);
+    if (!pid) return;
+    const nm = (r.product_name || "").trim();
+    if (nm) { names[pid] = names[pid] || {}; names[pid][nm] = (names[pid][nm] || 0) + 1; }
+    const im = normalizeImgUrl(r.product_img);
+    if (im) { imgs[pid] = imgs[pid] || {}; imgs[pid][im] = (imgs[pid][im] || 0) + 1; }
+  });
+  const top = o => (Object.entries(o || {}).sort((a, b) => b[1] - a[1] || b[0].length - a[0].length)[0] || [""])[0];
+  Object.keys(names).forEach(pid => {
+    const seen = Object.keys(names[pid]);
+    const proper = Object.fromEntries(Object.entries(names[pid]).filter(([n]) => !isSlugLike(n)));
+    // 정식 표시명(하이픈 없는 쪽) 우선, 하나도 없으면 슬러그를 풀어 쓴다.
+    const canonical = Object.keys(proper).length ? top(proper) : unslugify(top(names[pid]));
+    const p = PRODUCTS[pid] || (PRODUCTS[pid] = { name: "", img: "", aliases: [] });
+    if (!p.name) p.name = canonical;
+    if (!p.img) p.img = top(imgs[pid]);
+    p.aliases = [...new Set([...(p.aliases || []), ...seen.filter(n => n !== p.name)])];
+  });
+
+  NAME_TO_PID = {};
+  Object.entries(PRODUCTS).forEach(([pid, p]) => {
+    [p.name, ...(p.aliases || [])].forEach(n => { if (n) NAME_TO_PID[n] = pid; });
+  });
+}
+
+// 그룹은 이제 "상품번호 여러 개를 묶는 상위 개념"이다.
+// 새 형식 product_ids 를 우선 쓰고, 이름 배열만 있는 옛 groups.json 도 그대로 읽는다.
+function rebuildGroupIndex() {
+  GROUP_PIDS = {};
+  GROUPS.forEach(g => {
+    const s = new Set();
+    (g.product_ids || []).forEach(p => s.add(String(p)));
+    (g.products || []).forEach(n => { const pid = NAME_TO_PID[n]; if (pid) s.add(pid); });
+    GROUP_PIDS[g.id] = s;
+  });
+}
+function groupPids(g) { return GROUP_PIDS[g.id] || new Set(); }
+function groupOfReview(r) {
+  const pid = getPid(r);
+  if (!pid) return null;
+  return GROUPS.find(g => GROUP_PIDS[g.id] && GROUP_PIDS[g.id].has(pid)) || null;
+}
+function getProductName(r) {
+  const p = PRODUCTS[getPid(r)];
+  return (p && p.name) || r.product_name || "(상품명 없음)";
+}
+function getProductImg(r) {
+  const p = PRODUCTS[getPid(r)];
+  return normalizeImgUrl((p && p.img) || r.product_img || "");
+}
+// 화면에 보여줄 단위 이름: 그룹에 속하면 그룹 이름, 아니면 상품 대표명
+function getUnitName(r) { const g = groupOfReview(r); return g ? g.name : getProductName(r); }
+function isGroupedReview(r) { return !!groupOfReview(r); }
+// 상품 썸네일 한 조각. 경로는 tiny 지만 실제로는 최대 2MB 원본이라 loading="lazy" 는 필수.
+function thumbTag(src, alt, cls) {
+  const u = normalizeImgUrl(src);
+  if (!u) return "";
+  return `<img class="${cls}" src="${escapeHtml(u)}" alt="${escapeHtml(alt || "")}"` +
+         ` loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">`;
+}
+
+const CATEGORIES =["긍정","부정","중립/단순수령","양도/거래","교환/반품","배송관련불편","문의"];
 // 태그 목록: tags.json에서 로드 (없으면 기본값)
 let HASHTAGS = window.__EMBEDDED_TAGS__ || ["#사이즈","#색상","#핏","#마감","#재질","#내구성","#디자인","#가격","#구성","#기획"];
 
@@ -2147,12 +2265,25 @@ const CAT_MIGRATE = {
 };
 
 // segments 배열 정규화: 카테고리 매핑 + #배송 제거 + 중립 단독 규칙
+// v3 3축(aspect/sentiment/intent)에서 기존 카테고리를 계산한다. taxonomy.py 의 derive_category 와 같은 순서.
+function deriveCategory(s) {
+  const intent = s.intent || "없음", aspect = s.aspect || "상품", sent = s.sentiment || "중립";
+  if (intent === "양도·거래") return "양도/거래";
+  if (intent === "교환·반품") return "교환/반품";
+  if (intent === "문의")      return "문의";
+  if (aspect === "배송·포장" && sent === "부정") return "배송관련불편";
+  if (sent === "긍정") return "긍정";
+  if (sent === "부정") return "부정";
+  return "중립/단순수령";
+}
+
 function normalizeSegments(segments) {
   if (!Array.isArray(segments)) return segments;
   let segs = segments.map(s => {
-    const newCat = CAT_MIGRATE[s.category] || s.category;
-    const newHashtags = (s.hashtags || []).filter(h => h !== "#배송");
-    return { ...s, category: newCat, hashtags: newHashtags };
+    // v3 는 tags, v2 는 hashtags. v3 면 카테고리를 3축에서 계산한다.
+    const tags = (s.tags || s.hashtags || []).filter(h => h !== "#배송");
+    const newCat = s.aspect ? deriveCategory(s) : (CAT_MIGRATE[s.category] || s.category);
+    return { ...s, category: newCat, hashtags: tags, tags: tags };
   });
   // 중립 단독 규칙: 다른 카테고리와 함께 있으면 중립 제외
   const hasOther = segs.some(s => s.category !== "중립/단순수령");
@@ -2165,6 +2296,7 @@ function normalizeSegments(segments) {
       // 같은 카테고리는 hashtags 합치고 첫 번째 유지
       const idx = merged.findIndex(m => m.category === s.category);
       merged[idx].hashtags = [...new Set([...(merged[idx].hashtags || []), ...(s.hashtags || [])])];
+      merged[idx].tags = merged[idx].hashtags;
     } else {
       seen.add(s.category);
       merged.push(s);
@@ -2303,25 +2435,26 @@ function importRelabels(event) {
 }
 
 // ── 그룹 헬퍼 ──
-function getDisplayName(productName) {
-  if (!productName) return "(상품명 없음)";
-  for (const g of GROUPS) {
-    if (g.products.includes(productName)) return g.name;
-  }
-  return productName;
-}
+// 단위(unit) = 그룹 하나 또는 그룹에 안 묶인 상품 하나. 식별은 전부 상품번호(pids)로 한다.
 function getAllDisplayUnits() {
-  const reviews = Object.values(DATA.reviews);
-  const products = [...new Set(reviews.map(r => r.product_name).filter(Boolean))];
-  const groupedProducts = new Set();
-  GROUPS.forEach(g => g.products.forEach(p => groupedProducts.add(p)));
+  const usedPids = [...new Set(Object.values(DATA.reviews).map(getPid).filter(Boolean))];
+  const grouped = new Set();
   const units = [];
-  GROUPS.forEach(g => units.push({
-    name: g.name, isGroup: true, products: g.products, releaseDate: g.releaseDate
-  }));
-  products.filter(p => !groupedProducts.has(p)).sort().forEach(p =>
-    units.push({ name: p, isGroup: false, products: [p] })
-  );
+  GROUPS.forEach(g => {
+    const pids = [...groupPids(g)];
+    pids.forEach(p => grouped.add(p));
+    units.push({
+      name: g.name, isGroup: true, pids, releaseDate: g.releaseDate,
+      img: pids.map(p => PRODUCTS[p] && PRODUCTS[p].img).find(Boolean) || ""
+    });
+  });
+  usedPids.filter(p => !grouped.has(p))
+    .map(p => ({ pid: p, name: (PRODUCTS[p] && PRODUCTS[p].name) || p }))
+    .sort((a, b) => a.name.localeCompare(b.name, "ko"))
+    .forEach(p => units.push({
+      name: p.name, isGroup: false, pids: [p.pid],
+      img: (PRODUCTS[p.pid] && PRODUCTS[p.pid].img) || ""
+    }));
   return units;
 }
 
@@ -2403,6 +2536,16 @@ async function loadData() {
       }
     } catch (e) { /* 기본값 유지 */ }
   }
+  // products.json 시도 (없어도 동작 — DATA 에서 즉석으로 상품 색인을 만든다)
+  if (!window.__EMBEDDED_PRODUCTS__) {
+    try {
+      const resp = await fetch("products.json?" + Date.now());
+      if (resp.ok) {
+        const p = await resp.json();
+        if (p && typeof p === "object") window.__EMBEDDED_PRODUCTS__ = p;
+      }
+    } catch (e) { /* 없으면 없는 대로 */ }
+  }
   if (window.__EMBEDDED_DATA__) {
     DATA = window.__EMBEDDED_DATA__;
     init();
@@ -2428,6 +2571,9 @@ function showNoData() {
 }
 
 function init() {
+  // 상품번호 색인 → 그룹 색인 순서로 다시 세운다(그룹 색인이 상품 별칭 표를 쓴다).
+  buildProductIndex();
+  rebuildGroupIndex();
   const reviews = Object.values(DATA.reviews);
   document.getElementById("last-updated").textContent = (DATA.last_updated || "—").split(" ")[0];
   document.getElementById("total-count").textContent = reviews.length + "건";
@@ -2464,12 +2610,7 @@ function renderOverview(reviews) {
   // ── 최근 2주 후기 제품 ──
   const twoWeeksAgo = new Date(); twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
   const recentReviews = reviews.filter(r => r.written_at && new Date(r.written_at) >= twoWeeksAgo);
-  const recentProductNames = new Set(recentReviews.map(r => r.product_name).filter(Boolean));
-  const recentGroupNames = new Set();
-  recentProductNames.forEach(pName => {
-    const group = GROUPS.find(g => g.products.includes(pName));
-    recentGroupNames.add(group ? group.name : pName);
-  });
+  const recentGroupNames = new Set(recentReviews.filter(r => getPid(r)).map(getUnitName));
   const recentEl = document.getElementById("stat-recent-products");
   if (recentGroupNames.size === 0) {
     recentEl.innerHTML = `<span style="color:var(--stone);font-size:13px">최근 2주 후기 없음</span>`;
@@ -2484,7 +2625,8 @@ function renderOverview(reviews) {
   const MIN_REVIEWS = 10;
   const hasCat = (r, cat) => getReviewSegments(r).some(s => s.category === cat);
   const groupStats = GROUPS.map(g => {
-    const gR = reviews.filter(r => g.products.includes(r.product_name));
+    const pids = groupPids(g);
+    const gR = reviews.filter(r => pids.has(getPid(r)));
     if (gR.length < MIN_REVIEWS) return null;
     const pos = gR.filter(r => hasCat(r, "긍정")).length;
     const neg = gR.filter(r => hasCat(r, "부정")).length;
@@ -2559,9 +2701,10 @@ function renderOverview(reviews) {
     const summary = segs.map(s => s.summary).filter(Boolean).join(" · ");
     const tags = getReviewHashtags(r).map(h => `<span class="hash-tag">${h}</span>`).join("");
     const catTags = segs.map(s => `<span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>`).join(" ");
-    const displayName = getDisplayName(r.product_name);
-    const isGroup = displayName !== r.product_name;
-    return `<li><div class="today-product ${isGroup?'is-group':''}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div><div class="today-title"><a onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
+    const displayName = getUnitName(r);
+    const isGroup = isGroupedReview(r);
+    const thumb = thumbTag(getProductImg(r), displayName, "unit-thumb");
+    return `<li><div class="unit-thumb-cell">${thumb}</div><div class="today-product${isGroup?'is-group':''}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div><div class="today-title"><a onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
   }).join("");
   document.getElementById("today-list").innerHTML = html;
 }
@@ -2597,13 +2740,14 @@ function renderProductSelector(reviews) {
   const allBtn = `<button class="product-btn active" onclick="selectUnit(null, this)">All</button>`;
   const btns = units.map(u => {
     const label = u.isGroup ? `◆ ${u.name}` : u.name;
-    return `<button class="product-btn" onclick='selectUnit(${JSON.stringify(u.products)}, this, ${JSON.stringify(u.name)})'>${label}</button>`;
+    const call = `selectUnit(${JSON.stringify(u.pids)}, this, ${JSON.stringify(u.name)})`;
+    return `<button class="product-btn" onclick='${escapeHtml(call)}'>${escapeHtml(label)}</button>`;
   }).join("");
   sel.innerHTML = allBtn + btns;
 }
 
-function selectUnit(products, btn, name) {
-  currentUnitProducts = products;
+function selectUnit(pids, btn, name) {
+  currentUnitPids = pids ? new Set(pids.map(String)) : null;
   currentUnitName = name || null;
   currentFilter = null;
   document.getElementById("filter-clear").style.display = "none";
@@ -2667,8 +2811,8 @@ function renderHashtagStats(reviews, focusCategory) {
 
 function applyFilters() {
   // 현재 unit + 현재 filter 조합으로 후기 + 차트 갱신
-  const baseAll = currentUnitProducts
-    ? Object.values(DATA.reviews).filter(r => currentUnitProducts.includes(r.product_name))
+  const baseAll = currentUnitPids
+    ? Object.values(DATA.reviews).filter(r => currentUnitPids.has(getPid(r)))
     : Object.values(DATA.reviews);
 
   let filtered = baseAll;
@@ -2809,7 +2953,9 @@ function renderReviewsList(reviews) {
         </div>
         <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${rightTag}</div>
       </div>
-      <div class="review-item-meta">${escapeHtml(getDisplayName(r.product_name))} · ${(r.written_at||"").slice(0,10)}</div>
+      <div class="review-item-meta">
+        <span class="unit-thumb-cell" style="width:20px;height:20px;flex-basis:20px;display:inline-block;vertical-align:-5px;margin-right:6px">${thumbTag(getProductImg(r), "", "unit-thumb")}</span>
+        ${escapeHtml(getUnitName(r))} · ${(r.written_at||"").slice(0,10)}</div>
       ${summary || tags ? `<div class="review-item-summary">${summary} ${tags}</div>` : ""}
     </div>`;
   }).join("");
@@ -2828,7 +2974,9 @@ function renderGroups() {
   }
   const reviews = Object.values(DATA.reviews);
   const html = GROUPS.map(g => {
-    const groupReviews = reviews.filter(r => g.products.includes(r.product_name));
+    const pids = [...groupPids(g)];
+    const pidSet = groupPids(g);
+    const groupReviews = reviews.filter(r => pidSet.has(getPid(r)));
     const afterRelease = g.releaseDate
       ? groupReviews.filter(r => (r.written_at||"").slice(0,10) >= g.releaseDate)
       : groupReviews;
@@ -2856,12 +3004,16 @@ function renderGroups() {
         <div class="group-ratio-labels"><span style="margin:0 auto;color:var(--ash)">긍부정 데이터 없음</span></div>
       </div>`;
 
-    return `<div class="group-card" draggable="true" data-group-id="${g.id}">
+    // 카드 썸네일·상품 목록은 상품번호 기준. 이름 표기 차이는 여기서 자연히 사라진다.
+    const pidNames = pids.map(p => (PRODUCTS[p] && PRODUCTS[p].name) || p);
+    const coverImg = pids.map(p => PRODUCTS[p] && PRODUCTS[p].img).find(Boolean) || "";
+    return `<div class="group-card" draggable="true" data-group-id="${escapeHtml(g.id)}">
       <div class="group-drag-handle" title="드래그해서 순서 변경">⋮⋮</div>
-      <div class="group-card-name">${g.name}</div>
-      <div class="group-card-date">${g.releaseDate || "출시일 미정"}</div>
+      <div class="unit-thumb-cell lg" style="margin-bottom:8px">${thumbTag(coverImg, g.name, "unit-thumb")}</div>
+      <div class="group-card-name">${escapeHtml(g.name)}</div>
+      <div class="group-card-date">${escapeHtml(g.releaseDate || "출시일 미정")}</div>
       <div class="group-card-products">
-        ${g.products.length}개 상품 · ${g.products.slice(0,3).join(", ")}${g.products.length>3?" 외":""}
+        ${pids.length}개 상품 · ${escapeHtml(pidNames.slice(0,3).join(", "))}${pids.length>3?" 외":""}
       </div>
       <div class="group-stats">
         <div><div class="group-stat-num pos">${positive}</div><div class="group-stat-label">긍정</div></div>
@@ -2938,13 +3090,17 @@ function openGroupModal(groupId) {
   document.getElementById("group-name-input").value = g ? g.name : "";
   document.getElementById("group-date-input").value = g ? (g.releaseDate || "") : "";
 
-  const products = [...new Set(Object.values(DATA.reviews)
-    .map(r => r.product_name).filter(Boolean))].sort();
-  const selected = new Set(g ? g.products : []);
-  document.getElementById("product-checklist").innerHTML = products.map(p => `
+  // 체크박스는 상품번호 단위다 — 표기가 갈렸던 상품이 목록에 두 번 나오지 않는다.
+  const pids = [...new Set(Object.values(DATA.reviews).map(getPid).filter(Boolean))]
+    .map(p => ({ pid: p, name: (PRODUCTS[p] && PRODUCTS[p].name) || p,
+                 img: (PRODUCTS[p] && PRODUCTS[p].img) || "" }))
+    .sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  const selected = g ? groupPids(g) : new Set();
+  document.getElementById("product-checklist").innerHTML = pids.map(p => `
     <label class="product-check">
-      <input type="checkbox" value="${p.replace(/"/g,'&quot;')}" ${selected.has(p)?"checked":""}>
-      ${p}
+      <input type="checkbox" value="${escapeHtml(p.pid)}" ${selected.has(p.pid)?"checked":""}>
+      <span class="unit-thumb-cell" style="width:24px;height:24px;flex-basis:24px;display:inline-block;vertical-align:-7px;margin-right:6px">${thumbTag(p.img, "", "unit-thumb")}</span>
+      ${escapeHtml(p.name)} <span style="color:var(--ash);font-size:10px">#${escapeHtml(p.pid)}</span>
     </label>
   `).join("");
   document.getElementById("group-modal-overlay").classList.add("open");
@@ -2964,13 +3120,22 @@ function saveGroup() {
   if (!name) { alert("그룹 이름을 입력해주세요"); return; }
   if (checked.length === 0) { alert("상품을 1개 이상 선택해주세요"); return; }
 
+  // product_ids 가 정본. products(이름 배열)는 옛 형식을 읽는 도구(build_report.py 등)를 위해
+  // 대표명 + 별칭을 모두 펼쳐 함께 써 준다.
+  const productIds = checked.map(String);
+  const productNames = [...new Set(productIds.flatMap(p => {
+    const e = PRODUCTS[p];
+    return e ? [e.name, ...(e.aliases || [])].filter(Boolean) : [];
+  }))];
+
   if (editingGroupId) {
     const g = GROUPS.find(x => x.id === editingGroupId);
-    g.name = name; g.releaseDate = releaseDate; g.products = checked;
+    g.name = name; g.releaseDate = releaseDate;
+    g.product_ids = productIds; g.products = productNames;
   } else {
     GROUPS.push({
       id: "g" + Date.now(),
-      name, releaseDate, products: checked,
+      name, releaseDate, product_ids: productIds, products: productNames,
     });
   }
   saveLocal();
@@ -3140,8 +3305,8 @@ function renderQuickReviewCard() {
     `<span class="tag tag-${CSS.escape(s.category)}">${s.category}${s.summary?` · ${s.summary}`:''}</span>`
   ).join("");
 
-  const displayName = getDisplayName(r.product_name);
-  const isGroup = displayName !== r.product_name;
+  const displayName = getUnitName(r);
+  const isGroup = isGroupedReview(r);
 
   container.innerHTML = `
     <!-- 좌측: 후기 본문 -->
@@ -3149,7 +3314,7 @@ function renderQuickReviewCard() {
       <div class="quick-progress">
         <span class="current">${reviewQueueIdx + 1}</span> / ${reviewQueue.length}
       </div>
-      <div class="quick-product">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
+      <div class="quick-product"><span class="unit-thumb-cell" style="width:22px;height:22px;flex-basis:22px;display:inline-block;vertical-align:-6px;margin-right:6px">${thumbTag(getProductImg(r), "", "unit-thumb")}</span>${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
       <div class="quick-title">${escapeHtml(r.title)}</div>
       <div class="quick-meta">
         <span>${(r.written_at||"").slice(0,10)}</span>
@@ -3350,7 +3515,7 @@ function renderPhotosSelect(reviews) {
   const units = getAllDisplayUnits();
   units.forEach(u => {
     const opt = document.createElement("option");
-    opt.value = u.products.join("|");
+    opt.value = u.pids.join("|");
     opt.textContent = u.isGroup ? `◆ ${u.name}` : u.name;
     sel.appendChild(opt);
   });
@@ -3358,10 +3523,10 @@ function renderPhotosSelect(reviews) {
 function renderPhotos() {
   const container = document.getElementById("photo-container");
   const selected = document.getElementById("photos-product-select").value;
-  const selectedProducts = selected ? selected.split("|") : null;
+  const selectedPids = selected ? new Set(selected.split("|")) : null;
   const reviews = Object.values(DATA.reviews);
-  const filtered = selectedProducts
-    ? reviews.filter(r => selectedProducts.includes(r.product_name) && r.images?.length)
+  const filtered = selectedPids
+    ? reviews.filter(r => selectedPids.has(getPid(r)) && r.images?.length)
     : reviews.filter(r => r.images?.length);
 
   if (filtered.length === 0) {
@@ -3377,8 +3542,8 @@ function renderPhotos() {
 
   function renderCard(r) {
     const isHidden = hiddenPhotos.has(r.id);
-    const displayName = getDisplayName(r.product_name);
-    const isGroup = displayName !== r.product_name;
+    const displayName = getUnitName(r);
+    const isGroup = isGroupedReview(r);
     const mainSrc = r.images[0];
     const escTitle = escapeHtml(r.title);
 
@@ -3404,7 +3569,7 @@ function renderPhotos() {
       </div>
       ${thumbs}
       <div class="photo-card-info">
-        <div class="photo-card-product ${isGroup?'':'is-product'}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
+        <div class="photo-card-product ${isGroup?'':'is-product'}"><span class="unit-thumb-cell" style="width:18px;height:18px;flex-basis:18px;display:inline-block;vertical-align:-4px;margin-right:5px">${thumbTag(getProductImg(r), "", "unit-thumb")}</span>${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
         <div class="photo-card-title" onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</div>
         <div class="photo-card-meta">${(r.written_at||"").slice(0,10)} · ${r.images.length}장</div>
       </div>
@@ -3418,12 +3583,14 @@ function renderPhotos() {
   // 기본: 그룹/상품별로 묶어서 보여줌 (체크박스 제거됨)
   const units = getAllDisplayUnits();
   const sections = units.map(u => {
-    const unitReviews = filtered.filter(r => u.products.includes(r.product_name));
+    const upids = new Set(u.pids);
+    const unitReviews = filtered.filter(r => upids.has(getPid(r)));
     if (unitReviews.length === 0) return "";
     const photoCount = unitReviews.reduce((sum, r) => sum + (r.images?.length||0), 0);
     const label = u.isGroup ? `◆ ${u.name}` : u.name;
     return `<div style="margin-bottom:48px">
-      <div class="photo-section-title">${escapeHtml(label)}</div>
+      <div class="photo-section-title" style="display:flex;align-items:center;gap:8px">
+        <span class="unit-thumb-cell">${thumbTag(u.img, u.name, "unit-thumb")}</span>${escapeHtml(label)}</div>
       <div class="photo-section-meta">${photoCount}장 · ${unitReviews.length}개 후기</div>
       ${renderGallery(unitReviews)}
     </div>`;
@@ -3472,11 +3639,12 @@ function openModal(id) {
   const segs = getReviewSegments(r);
   document.getElementById("modal-title").textContent = r.title;
   const tags = getReviewHashtags(r).map(h => `<span class="hash-tag">${h}</span>`).join("");
-  const displayName = getDisplayName(r.product_name);
-  const isGroup = displayName !== r.product_name;
+  const displayName = getUnitName(r);
+  const isGroup = isGroupedReview(r);
+  const prodName = getProductName(r);
   document.getElementById("modal-meta").innerHTML = `
     <span class="tag tag-${CSS.escape(cat)}">${cat}</span>
-    <span class="modal-meta-item">${isGroup?'◆ ':''}${escapeHtml(displayName)}${isGroup?` <span class="dim">(${escapeHtml(r.product_name)})</span>`:''}</span>
+    <span class="modal-meta-item"><span class="unit-thumb-cell" style="width:20px;height:20px;flex-basis:20px;display:inline-block;vertical-align:-5px;margin-right:5px">${thumbTag(getProductImg(r), "", "unit-thumb")}</span>${isGroup?'◆ ':''}${escapeHtml(displayName)}${isGroup?` <span class="dim">(${escapeHtml(prodName)})</span>`:''} <span class="dim">#${escapeHtml(getPid(r))}</span></span>
     <span class="modal-meta-item">${(r.written_at||"").slice(0,10)}</span>
     <span class="modal-meta-item">조회 ${r.views || 0}</span>
     ${tags}

@@ -34,6 +34,42 @@ CLASSIFY_MODE = os.environ.get("CLASSIFY_MODE", "claude").strip().lower()
 
 _ARTICLE_ID_RE = re.compile(r"/article/[^/]+/\d+/(\d+)/?")
 
+# ── 제품 식별: cafe24 상품번호 ────────────────────────
+# 제품명 문자열은 같은 상품이 "겸손 지우산"/"겸손-지우산" 두 갈래로 갈린다(URL 슬러그 폴백).
+# product_link 의 /product/<슬러그>/<상품번호>/ 에 있는 상품번호만이 믿을 수 있는 키다.
+_PRODUCT_ID_RE = re.compile(r"/product/[^/]+/(\d+)/")
+
+# 썸네일 URL 에 도메인이 두 번 박히는 버그(실측: 깨진 URL=404, 중복 제거하면 200).
+_IMG_DUP_DOMAIN_RE = re.compile(r"^(?:https?:)?//+nonohumble\.com/+nonohumble\.com/", re.I)
+_IMG_BARE_DUP_RE = re.compile(r"^/+nonohumble\.com/", re.I)
+
+
+def extract_product_id(link: str) -> str:
+    m = _PRODUCT_ID_RE.search(link or "")
+    return m.group(1) if m else ""
+
+
+def normalize_product_img(url: str) -> str:
+    """상품 썸네일 URL 정규화: 도메인 중복 제거 + 프로토콜 보정."""
+    if not url:
+        return ""
+    u = url.strip()
+    if _IMG_DUP_DOMAIN_RE.match(u):
+        return _IMG_DUP_DOMAIN_RE.sub("https://nonohumble.com/", u)
+    if _IMG_BARE_DUP_RE.match(u):
+        return _IMG_BARE_DUP_RE.sub("https://nonohumble.com/", u)
+    if u.startswith("//"):
+        return "https:" + u
+    return u
+
+
+def unslugify(name: str) -> str:
+    """슬러그 폴백으로 뽑은 이름(겸손-지우산)을 최소한 읽을 수 있게 되돌린다."""
+    if not name:
+        return ""
+    from urllib.parse import unquote
+    return re.sub(r"\s+", " ", unquote(name).replace("-", " ")).strip()
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -51,7 +87,7 @@ def parse_detail(url: str) -> dict:
         resp.raise_for_status()
     except Exception as e:
         return {"ok": False, "error": str(e), "content": "", "images": [],
-                "product_name": "", "product_link": ""}
+                "product_name": "", "product_link": "", "product_id": ""}
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -68,13 +104,15 @@ def parse_detail(url: str) -> dict:
                 break
 
     if not detail_product_name:
+        # 폴백: URL 슬러그에서 이름을 만든다. 정식 표시명(①)이 우선이고 이건 최후 수단이라
+        # 하이픈을 공백으로 되돌리고 URL 디코딩해 최소한 읽을 수 있게 만든다.
         for a in soup.find_all("a", href=True):
             m = re.search(r"/product/([^/?]+)/\d+/?", a["href"])
             if m:
                 from urllib.parse import unquote
                 cand = unquote(m.group(1))
                 if cand and "detail" not in cand:
-                    detail_product_name = cand
+                    detail_product_name = unslugify(cand)
                     detail_product_link = (BASE_URL + a["href"]) if a["href"].startswith("/") else a["href"]
                     break
 
@@ -206,37 +244,73 @@ def parse_detail(url: str) -> dict:
         "raw_html": resp.text,
         "product_name": detail_product_name,
         "product_link": detail_product_link,
+        "product_id": extract_product_id(detail_product_link),
     }
 
 
 CLASSIFY_SYSTEM = """당신은 쇼핑몰 후기 분류 전문가입니다. 후기를 분석해 아래 형식의 JSON만 반환하세요. 다른 텍스트 없이 JSON만.
 
-카테고리 6개:
-- 긍정: 상품 만족·칭찬
-- 부정: 상품 자체 불만 (배송 문제 제외)
-- 중립/단순수령: 단순 수령 알림, 이유 없는 짧은 호평 (단독만 가능, hashtags 반드시 빈 배열)
-- 양도/거래: 구매자끼리 양도·판매
-- 교환/반품: 회사에 교환·환불 요청
-- 배송관련불편: 박스손상·지연·오배송·포장 문제
+후기 하나를 segment 여러 개로 나눕니다. 각 segment는 3개 축을 모두 가집니다.
 
-해시태그 14개 (해당하는 것만):
-#사이즈 #핏 #색상 #마감 #재질 #내구성 #디자인 #퀄리티 #가격 #구성 #기획 #무게감 #또사고싶다 #사용성
+■ 축1 aspect (무엇에 대한 말인가)
+- 상품: 제품 자체 — 품질/소재/사이즈/디자인/사용감
+- 배송·포장: 배송 속도/지연/박스 상태/오배송/누락/포장 (칭찬도 여기)
+- 응대·소통: 상담/문자/공지/AS 안내/답변/연락
+판단이 서지 않으면 상품.
 
-규칙:
-- 중립/단순수령은 단독만, hashtags는 반드시 []
-- 행동(양도/교환)과 사유(불만)는 별도 segment로 분리
-- #배송 태그 절대 사용 금지
-- "예쁘다" 단독에는 #디자인 붙이지 않음
-- confidence: 0.9=명확, 0.8=약간 애매, 0.7 이하=많이 애매
+■ 축2 sentiment
+- 긍정 / 부정 / 중립(평가 없음. 단순 수령 알림, 사실 진술, 질문만 있는 경우)
+
+■ 축3 intent (무엇을 하려 하나)
+- 없음: 평가만 함
+- 교환·반품: 회사에 교환/환불/AS 요청
+- 양도·거래: 구매자끼리 양도/판매/맞교환
+- 문의: 질문·확인 요청 (재고, 사용법, 배송 시점, AS 가능 여부)
+- 재구매희망: 재판매 요청, 추가 구매 의사
+교환·반품과 양도·거래는 상대가 회사냐 다른 구매자냐로 가른다.
+"AS 되나요?"는 문의, "AS 해주세요"는 교환·반품.
+
+■ tags — aspect가 "상품"일 때만. 아래 13개 밖의 태그를 절대 만들지 마세요.
+#사이즈  표기 치수/규격 ("M인데 L 같아요") — 옷의 핏감은 제외
+#핏      의류 실루엣/기장/어깨라인 — 단순 크기 문제는 제외
+#색상    색의 호불호/기대 일치 — 단순 색 언급은 제외
+#마감    봉제선/이음새/마감처리. 구체적 부위가 나와야 함 — 막연한 "퀄리티"는 제외
+#재질    원단/소재/촉감
+#내구성  튼튼함/약함, 사용 후 변형
+#디자인  구체적 형태/실루엣/패턴/디테일만 — "예쁘다" 단독에는 붙이지 않음
+#퀄리티  다른 태그로 분해 안 되는 종합 평가 단독일 때만 — 마감/재질이 함께 나오면 그쪽을 씀
+#가격    비싸다/싸다/가성비
+#구성    포켓/세트/부속품
+#기획    상품 설명의 약속을 인용하거나 반박할 때만 ("OO하다더니") — 단순 "좋아요"는 제외
+#무게감  무거움/가벼움
+#사용성  조립/설명 난이도, 사용 편의, 그립감
+규칙: #배송 금지(배송·포장 aspect가 대신함). 배송·포장과 응대·소통에는 태그를 붙이지 않음. 헷갈리면 안 붙임.
+
+■ segment 나누는 기준
+(aspect, sentiment, intent) 조합이 다르면 나누고, 같으면 하나로 합쳐 태그를 모읍니다.
+"사이즈 안 맞아 교환해주세요" → {상품,부정,교환·반품,[#사이즈]} 한 개 (쪼개지 마세요)
+"배송 늦었지만 물건은 좋아요" → {배송·포장,부정,없음} + {상품,긍정,[태그]}
+"케이스 언제 받나요?" → {배송·포장,중립,문의}
+"포장이 꼼꼼했어요" → {배송·포장,긍정,없음}
+"상담 답변이 늦네요" → {응대·소통,부정,없음}
+
+■ confidence — 헷갈리면 정직하게 낮추세요. 자신감 과장 금지.
+0.9~1.0 명확 / 0.8~0.9 약간의 여지 / 0.8 미만 애매함
+reasoning에 "애매/헷갈림/불확실" 같은 말을 쓰면 후처리가 confidence를 강제로 낮춥니다.
+확신이 있으면 그런 말을 쓰지 말고, 애매하면 숫자를 낮추세요.
+
+■ summary는 반드시 채우세요(빈 문자열 금지). 사람이 후기를 안 열어보고도 판단할 수 있어야 합니다.
 
 반환 형식:
 {
   "segments": [
-    {"category": "긍정", "summary": "한 줄 요약", "hashtags": ["#디자인"], "confidence": 0.9}
+    {"aspect": "상품", "sentiment": "부정", "intent": "교환·반품",
+     "tags": ["#사이즈"], "summary": "평소 치수인데 크게 나와 교환 요청", "confidence": 0.9}
   ],
   "needs_review": false,
   "reasoning": "판단 근거 한 줄"
-}"""
+}
+"""
 
 class APIExhaustedError(Exception):
     """Anthropic API 잔액 부족 시 발생하는 예외"""
@@ -428,19 +502,22 @@ def parse_list(page: int) -> tuple:
                     product_link = (BASE_URL+h) if h.startswith("/") else h
                 if img:
                     s = img.get("src","")
-                    product_img = (BASE_URL+s) if s.startswith("/") else s
+                    # (BASE_URL+s) 로 붙이면 "nonohumble.com//nonohumble.com/..." 처럼
+                    # 도메인이 두 번 박혀 404 가 된다 → 정규화해서 저장한다.
+                    product_img = normalize_product_img((BASE_URL+s) if s.startswith("/") else s)
                     product_name = img.get("alt","").strip()
                     if not product_name:
                         product_name = img.get("title","").strip()
                 if not product_name and a:
                     product_name = a.get_text(strip=True)
                 if not product_name and product_link:
+                    # 슬러그 폴백 — 하이픈을 공백으로 되돌려 읽을 수 있게 한다.
                     m = re.search(r"/product/([^/?]+)/\d+/?", product_link)
                     if m:
                         from urllib.parse import unquote
                         cand = unquote(m.group(1))
                         if cand and "detail" not in cand:
-                            product_name = cand
+                            product_name = unslugify(cand)
 
             has_photo = bool(title_td.find("img", src=lambda s: s and "attach" in s))
             date_td = row.select_one("td:nth-child(6)")
@@ -450,6 +527,7 @@ def parse_list(page: int) -> tuple:
 
             items.append({
                 "id": post_id, "product_name": product_name,
+                "product_id": extract_product_id(product_link),
                 "product_link": product_link, "product_img": product_img,
                 "title": title, "review_link": review_link,
                 "has_photo": has_photo, "written_at": written_at, "views": views,
@@ -601,6 +679,11 @@ def main():
                 print(f"     📌 상품명 보강: '{detail['product_name']}'")
             if not item["product_link"] and detail.get("product_link"):
                 item["product_link"] = detail["product_link"]
+            # 상품번호는 1급 식별자다 — 목록에서 못 뽑았으면 상세에서 반드시 보강한다.
+            if not item.get("product_id"):
+                item["product_id"] = detail.get("product_id") or extract_product_id(item["product_link"])
+                if item["product_id"]:
+                    print(f"     📌 상품번호 보강: {item['product_id']}")
 
             if "다스뵈이다" in item["product_name"] or "점빵" in item["product_name"]:
                 print(f"     ⏭  다스뵈이다 점빵 → 제외")

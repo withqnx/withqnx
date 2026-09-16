@@ -17,6 +17,7 @@ import json, os, re, sys, shutil, subprocess
 from datetime import datetime
 
 from crawl import CLASSIFY_SYSTEM  # 분류 기준 단일 출처
+import taxonomy as T                # 3축 스키마·검증 단일 출처
 
 DATA_FILE = os.environ.get("DATA_FILE", "data.json")
 BATCH_LIMIT = int(os.environ.get("CLASSIFY_BATCH_LIMIT", "40"))   # 1회 실행당 최대 처리 건수
@@ -24,8 +25,6 @@ CONTENT_MAX = 800                                                 # 후기 본�
 CLAUDE_MODEL = os.environ.get("CLASSIFY_CLAUDE_MODEL", "").strip()  # 비우면 Claude Code 기본 모델
 DRY_RUN = "--dry-run" in sys.argv
 
-# 분류 가이드 v2 의 6개 카테고리. 이 외 값이 나오면 통계가 오염되므로 검토 큐로 보낸다.
-VALID_CATEGORIES = {"긍정", "부정", "중립/단순수령", "양도/거래", "교환/반품", "배송관련불편"}
 
 
 def find_claude() -> str:
@@ -106,25 +105,8 @@ def parse_json_obj(raw: str) -> dict:
 
 
 def postprocess(clf: dict) -> dict:
-    """crawl.classify_review 와 동일한 후처리(최소 confidence·해시태그 합집합·_v2)."""
-    segs = clf.get("segments", []) or []
-    if segs:
-        min_conf = min(s.get("confidence", 0.9) for s in segs)
-        clf["confidence"] = min_conf
-        clf["needs_review"] = min_conf < 0.8
-    clf["_v2"] = True
-    # 규격 외 카테고리(모델이 해시태그를 카테고리 칸에 넣는 등)는 사람이 보게 검토 큐로
-    off_spec = [s.get("category") for s in segs if s.get("category") not in VALID_CATEGORIES]
-    if off_spec:
-        clf["needs_review"] = True
-        clf["off_spec_categories"] = off_spec
-    all_tags = []
-    for s in segs:
-        for t in s.get("hashtags", []):
-            if t not in all_tags:
-                all_tags.append(t)
-    clf["hashtags"] = all_tags
-    return clf
+    """3축 스키마 검증·파생 카테고리 계산은 taxonomy 가 단일 출처다."""
+    return T.postprocess(clf)
 
 
 def main():
@@ -159,9 +141,11 @@ def main():
             continue
         clf = postprocess(clf)
         rv["classification"] = clf
-        rv["hashtags"] = clf.get("hashtags", [])
+        rv["hashtags"] = clf.get("tags", [])
         done += 1
-        cats = ", ".join(s.get("category", "?") for s in clf["segments"])
+        cats = ", ".join(f'{s.get("aspect","?")}/{s.get("sentiment","?")}'
+                         + (f'/{s["intent"]}' if s.get("intent") not in (None, "없음") else "")
+                         for s in clf["segments"])
         flag = "⚠️검토" if clf.get("needs_review") else "✅"
         print(f"  {flag} #{rid} [{cats}]")
 

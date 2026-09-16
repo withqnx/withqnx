@@ -15,6 +15,7 @@ from datetime import datetime
 DATA_FILE = "data.json"
 TAGS_FILE = "tags.json"
 GROUPS_FILE = "groups.json"
+PRODUCTS_FILE = "products.json"
 TEMPLATE = "index.html"
 FONTS_DIR = "fonts"
 OUTPUT_NAME = "겸손몰 후기 분석.html"
@@ -77,6 +78,15 @@ def main():
         groups = None
         print("▶ groups.json 없음 → 브라우저 기본값 사용")
 
+    # products.json 로드 (없으면 null — 대시보드가 data.json 에서 즉석으로 상품 색인을 만든다)
+    if os.path.exists(PRODUCTS_FILE):
+        with open(PRODUCTS_FILE, "r", encoding="utf-8") as f:
+            products = json.load(f)
+        print(f"▶ products.json 로드: {len(products)}개 상품(상품번호 기준)")
+    else:
+        products = None
+        print("▶ products.json 없음 → data.json 에서 즉석 생성")
+
     # api_exhausted 상태 확인
     api_exhausted = data.get("api_exhausted", False)
     api_exhausted_at = data.get("api_exhausted_at") or ""
@@ -95,9 +105,11 @@ def main():
     data_json = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     tags_json = json.dumps(tags, ensure_ascii=False).replace("</", "<\\/")
     groups_json = json.dumps(groups, ensure_ascii=False).replace("</", "<\\/") if groups is not None else "null"
+    products_json = json.dumps(products, ensure_ascii=False).replace("</", "<\\/") if products is not None else "null"
     inject = f"""<script>
 window.__EMBEDDED_TAGS__ = {tags_json};
 window.__EMBEDDED_GROUPS__ = {groups_json};
+window.__EMBEDDED_PRODUCTS__ = {products_json};
 window.__EMBEDDED_DATA__ = {data_json};
 window.__BUILD_TIME__ = "{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}";
 window.__API_EXHAUSTED__ = {str(api_exhausted).lower()};
