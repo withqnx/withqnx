@@ -501,6 +501,12 @@
   }
   .hash-tag:hover { background: var(--slate); color: var(--white); }
 
+  /* 재분류 대기 표시: 제목 우상단에 붙는 작은 점. 눈에 띄지 않게 */
+  .reclass-dot {
+    font-size: 7px; line-height: 1; color: #e3b341;
+    vertical-align: super; margin-left: 2px; cursor: help;
+  }
+
   .review-badge {
     display: inline-flex;
     background: var(--gold);
@@ -2265,6 +2271,13 @@ const CAT_MIGRATE = {
 };
 
 // segments 배열 정규화: 카테고리 매핑 + #배송 제거 + 중립 단독 규칙
+// 재분류 대기 후기에 붙는 작은 점. 사유는 title 속성으로만 보여준다.
+function reclassDot(r) {
+  const why = r?.classification?.reclassify_pending;
+  if (!why || !why.length) return '';
+  return `<sup class="reclass-dot" title="재분류 대기: ${escapeHtml(why.join(', '))}">\u25CF</sup>`;
+}
+
 // v3 3축(aspect/sentiment/intent)에서 기존 카테고리를 계산한다. taxonomy.py 의 derive_category 와 같은 순서.
 function deriveCategory(s) {
   const intent = s.intent || "없음", aspect = s.aspect || "상품", sent = s.sentiment || "중립";
@@ -2704,7 +2717,7 @@ function renderOverview(reviews) {
     const displayName = getUnitName(r);
     const isGroup = isGroupedReview(r);
     const thumb = thumbTag(getProductImg(r), displayName, "unit-thumb");
-    return `<li><div class="unit-thumb-cell">${thumb}</div><div class="today-product${isGroup?'is-group':''}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div><div class="today-title"><a onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
+    return `<li><div class="unit-thumb-cell">${thumb}</div><div class="today-product${isGroup?'is-group':''}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div><div class="today-title"><a onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</a>${reclassDot(r)}${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
   }).join("");
   document.getElementById("today-list").innerHTML = html;
 }
@@ -2947,7 +2960,7 @@ function renderReviewsList(reviews) {
     return `<div class="review-item" onclick="openModal('${escapeJsAttr(r.id)}')">
       <div class="review-item-header">
         <div class="review-item-title">
-          ${escapeHtml(r.title)}
+          ${escapeHtml(r.title)}${reclassDot(r)}
           ${needsReview ? '<span class="review-badge">Review</span>' : ''}
           ${isRelabeled ? '<span class="review-badge" style="background:var(--cat-positive)">Edited</span>' : ''}
         </div>
@@ -3315,7 +3328,7 @@ function renderQuickReviewCard() {
         <span class="current">${reviewQueueIdx + 1}</span> / ${reviewQueue.length}
       </div>
       <div class="quick-product"><span class="unit-thumb-cell" style="width:22px;height:22px;flex-basis:22px;display:inline-block;vertical-align:-6px;margin-right:6px">${thumbTag(getProductImg(r), "", "unit-thumb")}</span>${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
-      <div class="quick-title">${escapeHtml(r.title)}</div>
+      <div class="quick-title">${escapeHtml(r.title)}${reclassDot(r)}</div>
       <div class="quick-meta">
         <span>${(r.written_at||"").slice(0,10)}</span>
         <span>조회 ${r.views || 0}</span>

@@ -83,6 +83,11 @@ def main():
             for w in why:
                 why_stat[w] += 1
 
+        # 이미 v3 면 건너뛴다. 두 번 돌리면 intent 가 '없음'으로 되감겨 망가진다.
+        if clf.get("_v3"):
+            stat["이미 v3 (건너뜀)"] += 1
+            continue
+
         new_segs, failed = [], False
         for s in segs_v2:
             m = T.migrate_segment_v2(s)
@@ -93,6 +98,11 @@ def main():
 
         if failed or not new_segs:
             stat["기계변환 불가(재분류 대기)"] += 1
+            # 변환은 못 했어도 재분류 대상 표시는 반드시 남긴다.
+            # 이 건들이야말로 규격 외 값이라 가장 먼저 다시 봐야 한다.
+            if APPLY and why:
+                clf["reclassify_pending"] = why
+                rv["classification"] = clf
             continue
 
         for s in new_segs:
