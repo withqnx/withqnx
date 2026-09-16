@@ -17,6 +17,10 @@ APPLY = "--apply" in sys.argv
 Q_PAT  = re.compile(r"(가능한[가까]요|있나요|되나요|인가요|어떻게\s*(하|해)|문의|알려\s*주세요|궁금)")
 ADV    = re.compile(r"(그런데|근데|하지만|다만|아쉬운|아쉽|한 가지|단점|빼고는|말고는|것만 빼면)")
 CS_PAT = re.compile(r"(상담|응대|고객\s*센터|답변이|연락이|문자가|안내가)")
+PRETTY = re.compile(r"(예쁘|이쁘|예뻐|이뻐|예쁩|이쁩)")
+SHAPE  = re.compile(r"(패턴|라인|넥|실루엣|형태|모양|각|곡선|디테일|스티치|비율|기장|굽|테|프레임)")
+SATISF = re.compile(r"(만족|좋아요|좋습니다|감사합니다|잘\s*받았)")
+GIFT   = re.compile(r"(선물|생신|생일|드렸|사드|아버지|어머니|남편|아내|와이프|딸|아들|언니|친구)")
 
 
 def reasons_to_reclassify(rv, segs_v2):
@@ -40,6 +44,17 @@ def reasons_to_reclassify(rv, segs_v2):
         why.append("응대·소통 대상 가능")      # v2엔 담을 축이 없었다
     if ADV.search(rv.get("content") or "") and len(segs_v2) == 1:
         why.append("혼합 누락 의심")
+    body = rv.get("content") or ""
+    tags_all = {t for s in segs_v2 for t in (s.get("hashtags") or [])}
+    # 근거 없는 "예쁘다"가 #디자인으로 샌 것 → #첫인상 으로 가야 한다
+    if "#디자인" in tags_all and PRETTY.search(body) and not SHAPE.search(body):
+        why.append("#디자인 오적용(근거 없는 예쁘다)")
+    # "만족합니다" 류가 #퀄리티로 샌 것 → 태그 없음이 정답
+    if "#퀄리티" in tags_all and SATISF.search(body):
+        why.append("#퀄리티 오적용(순수 감정 표현)")
+    # 신설 태그라 기존 분류엔 존재할 수 없다
+    if GIFT.search(body):
+        why.append("#선물 신설 태그 대상")
     if T.HEDGE.search(clf.get("reasoning") or ""):
         why.append("reasoning이 애매함을 인정")
     return why
