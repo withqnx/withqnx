@@ -602,6 +602,7 @@
   .fill-양도\/거래   { background: var(--cat-resale); }
   .fill-교환\/반품   { background: var(--cat-exchange); }
   .fill-배송관련불편 { background: var(--cat-shipping); }
+  .fill-기타         { background: var(--stone); }
 
   .bar-count {
     font-size: 12px;
@@ -1956,6 +1957,7 @@
         <div class="panel-title">Review Distribution</div>
         <div class="panel-meta" id="dist-meta"></div>
         <div class="bar-chart" id="bar-chart"></div>
+        <div class="panel-meta" style="margin-top:10px;font-size:11px;color:var(--stone)">후기 1건이 여러 카테고리에 해당할 수 있어 합계가 100%를 넘습니다</div>
         <div class="hashtag-stats">
           <div class="panel-title" style="border:none;padding:0;margin-bottom:8px" id="hashtag-stats-title">자주 언급되는 키워드</div>
           <div class="hashtag-list" id="hashtag-stats"></div>
@@ -2081,6 +2083,20 @@ document.getElementById("today-date").textContent = new Date().toLocaleDateStrin
   timeZone: "Asia/Seoul",
   year: "numeric", month: "long", day: "numeric", weekday: "long"
 });
+
+// ── HTML 이스케이프 유틸 (저장형 XSS 방지) ──
+function escapeHtml(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+// onclick="fn('...')" 처럼 속성 안의 JS 문자열에 넣을 때: JS 이스케이프 후 HTML 이스케이프
+function escapeJsAttr(s) {
+  return escapeHtml(String(s ?? "").replace(/\\/g, "\\\\").replace(/'/g, "\\'"));
+}
 
 const CATEGORIES = ["긍정","부정","중립/단순수령","양도/거래","교환/반품","배송관련불편"];
 // 태그 목록: tags.json에서 로드 (없으면 기본값)
@@ -2459,8 +2475,8 @@ function renderOverview(reviews) {
     recentEl.innerHTML = `<span style="color:var(--stone);font-size:13px">최근 2주 후기 없음</span>`;
   } else {
     recentEl.innerHTML = [...recentGroupNames].map(name => {
-      const safeName = name.replace(/'/g, "\'");
-      return `<span class="recent-product-tag" onclick="jumpToGroupByName('${safeName}')" style="cursor:pointer">${name}</span>`;
+      const safeName = escapeJsAttr(name);
+      return `<span class="recent-product-tag" onclick="jumpToGroupByName('${safeName}')" style="cursor:pointer">${escapeHtml(name)}</span>`;
     }).join("");
   }
 
@@ -2505,8 +2521,8 @@ function renderOverview(reviews) {
     if (!sorted.length) { document.getElementById(elId).innerHTML = `<span style="color:var(--stone);font-size:12px">데이터 없음</span>`; return; }
     document.getElementById(elId).innerHTML = sorted.map((s,i) => {
       const pct = Math.round(s[sortKey]*100);
-      const safe = s.group.name.replace(/'/g, "\'");
-      return `<div class="top3-item" onclick="jumpToGroupByName('${safe}')"><span class="top3-rank">${i+1}</span><span class="top3-name">${s.group.name}</span><span class="top3-pct">${pct}%</span></div>`;
+      const safe = escapeJsAttr(s.group.name);
+      return `<div class="top3-item" onclick="jumpToGroupByName('${safe}')"><span class="top3-rank">${i+1}</span><span class="top3-name">${escapeHtml(s.group.name)}</span><span class="top3-pct">${pct}%</span></div>`;
     }).join("");
   };
   renderTop3("stat-pos-top3", "posRatio");
@@ -2545,7 +2561,7 @@ function renderOverview(reviews) {
     const catTags = segs.map(s => `<span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>`).join(" ");
     const displayName = getDisplayName(r.product_name);
     const isGroup = displayName !== r.product_name;
-    return `<li><div class="today-product ${isGroup?'is-group':''}">${isGroup?'◆ ':''}${displayName}</div><div class="today-title"><a onclick="openModal('${r.id}')">${r.title}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
+    return `<li><div class="today-product ${isGroup?'is-group':''}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div><div class="today-title"><a onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</a>${summary?`<div class="summary">${summary} ${tags}</div>`:""}</div><div>${catTags}</div></li>`;
   }).join("");
   document.getElementById("today-list").innerHTML = html;
 }
@@ -2708,17 +2724,24 @@ function applyFilters() {
 }
 
 function rerenderBarChart(baseAll) {
+  // 분모는 세그먼트 수가 아니라 후기 수(baseAll.length).
+  // 한 후기가 같은 카테고리 세그먼트를 여러 개 가져도 1건으로만 센다.
   const counts = {};
   CATEGORIES.forEach(c => counts[c] = 0);
+  counts["기타"] = 0;   // CATEGORIES에 없는 규격 외 카테고리는 여기로 합산
   baseAll.forEach(r => {
+    const catsOfReview = new Set();
     getReviewSegments(r).forEach(s => {
-      if (counts[s.category] !== undefined) counts[s.category]++;
+      catsOfReview.add(counts[s.category] !== undefined ? s.category : "기타");
     });
+    catsOfReview.forEach(c => counts[c]++);
   });
-  const total = Object.values(counts).reduce((a,b) => a+b, 0) || 1;
+  const total = baseAll.length || 1;
   document.getElementById("dist-meta").innerHTML = `${baseAll.length}건`;
 
-  const barHtml = CATEGORIES.map(cat => {
+  // 기타가 0건이면 행을 감춘다
+  const rows = counts["기타"] > 0 ? [...CATEGORIES, "기타"] : CATEGORIES;
+  const barHtml = rows.map(cat => {
     const count = counts[cat] || 0;
     const rawPct = count / total * 100;
     let pct = rawPct;
@@ -2777,16 +2800,16 @@ function renderReviewsList(reviews) {
     const rightTag = segs.length > 1
       ? segs.map(s => `<span class="tag tag-${CSS.escape(s.category)}">${s.category}</span>`).join(" ")
       : `<span class="tag tag-${CSS.escape(cat)}">${cat}</span>`;
-    return `<div class="review-item" onclick="openModal('${r.id}')">
+    return `<div class="review-item" onclick="openModal('${escapeJsAttr(r.id)}')">
       <div class="review-item-header">
         <div class="review-item-title">
-          ${r.title}
+          ${escapeHtml(r.title)}
           ${needsReview ? '<span class="review-badge">Review</span>' : ''}
           ${isRelabeled ? '<span class="review-badge" style="background:var(--cat-positive)">Edited</span>' : ''}
         </div>
         <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${rightTag}</div>
       </div>
-      <div class="review-item-meta">${getDisplayName(r.product_name)} · ${(r.written_at||"").slice(0,10)}</div>
+      <div class="review-item-meta">${escapeHtml(getDisplayName(r.product_name))} · ${(r.written_at||"").slice(0,10)}</div>
       ${summary || tags ? `<div class="review-item-summary">${summary} ${tags}</div>` : ""}
     </div>`;
   }).join("");
@@ -3126,12 +3149,12 @@ function renderQuickReviewCard() {
       <div class="quick-progress">
         <span class="current">${reviewQueueIdx + 1}</span> / ${reviewQueue.length}
       </div>
-      <div class="quick-product">${isGroup?'◆ ':''}${displayName}</div>
-      <div class="quick-title">${r.title}</div>
+      <div class="quick-product">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
+      <div class="quick-title">${escapeHtml(r.title)}</div>
       <div class="quick-meta">
         <span>${(r.written_at||"").slice(0,10)}</span>
         <span>조회 ${r.views || 0}</span>
-        <a href="${r.review_link}" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">원문 →</a>
+        <a href="${escapeHtml(r.review_link)}" target="_blank" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold)">원문 →</a>
       </div>
       <div class="quick-ai-suggestion">
         <div class="label">AI 추측</div>
@@ -3357,32 +3380,32 @@ function renderPhotos() {
     const displayName = getDisplayName(r.product_name);
     const isGroup = displayName !== r.product_name;
     const mainSrc = r.images[0];
-    const escTitle = r.title.replace(/"/g,'&quot;');
+    const escTitle = escapeHtml(r.title);
 
     // 썸네일 스트립 (이미지가 2장 이상일 때만)
     const thumbs = r.images.length > 1
       ? `<div class="photo-thumbs">${
           r.images.map((src, i) =>
-            `<img class="photo-thumb ${i===0?'active':''}" src="${src}"
-              onclick="switchMainPhoto(this, '${src.replace(/'/g,"\\'")}')"
+            `<img class="photo-thumb ${i===0?'active':''}" src="${escapeHtml(src)}"
+              onclick="switchMainPhoto(this, '${escapeJsAttr(src)}')"
               loading="lazy" onerror="this.style.display='none'">`
           ).join("")
         }</div>`
       : '';
 
-    return `<div class="photo-card" data-rid="${r.id}">
+    return `<div class="photo-card" data-rid="${escapeHtml(r.id)}">
       <div class="photo-main ${isHidden?'hidden':''}">
-        <button class="photo-toggle" onclick="togglePhotoCard('${r.id}')" title="가리기/보이기">
+        <button class="photo-toggle" onclick="togglePhotoCard('${escapeJsAttr(r.id)}')" title="가리기/보이기">
           ${isHidden ? '◎' : '◉'}
         </button>
-        <img src="${mainSrc}" alt="${escTitle}"
-          onclick="${isHidden?'':`openLightbox('${mainSrc.replace(/'/g,"\\'")}')`}"
+        <img src="${escapeHtml(mainSrc)}" alt="${escTitle}"
+          onclick="${isHidden?'':`openLightbox('${escapeJsAttr(mainSrc)}')`}"
           loading="lazy" onerror="this.parentElement.style.background='var(--pewter)'">
       </div>
       ${thumbs}
       <div class="photo-card-info">
-        <div class="photo-card-product ${isGroup?'':'is-product'}">${isGroup?'◆ ':''}${displayName}</div>
-        <div class="photo-card-title" onclick="openModal('${r.id}')">${r.title}</div>
+        <div class="photo-card-product ${isGroup?'':'is-product'}">${isGroup?'◆ ':''}${escapeHtml(displayName)}</div>
+        <div class="photo-card-title" onclick="openModal('${escapeJsAttr(r.id)}')">${escapeHtml(r.title)}</div>
         <div class="photo-card-meta">${(r.written_at||"").slice(0,10)} · ${r.images.length}장</div>
       </div>
     </div>`;
@@ -3400,7 +3423,7 @@ function renderPhotos() {
     const photoCount = unitReviews.reduce((sum, r) => sum + (r.images?.length||0), 0);
     const label = u.isGroup ? `◆ ${u.name}` : u.name;
     return `<div style="margin-bottom:48px">
-      <div class="photo-section-title">${label}</div>
+      <div class="photo-section-title">${escapeHtml(label)}</div>
       <div class="photo-section-meta">${photoCount}장 · ${unitReviews.length}개 후기</div>
       ${renderGallery(unitReviews)}
     </div>`;
@@ -3453,7 +3476,7 @@ function openModal(id) {
   const isGroup = displayName !== r.product_name;
   document.getElementById("modal-meta").innerHTML = `
     <span class="tag tag-${CSS.escape(cat)}">${cat}</span>
-    <span class="modal-meta-item">${isGroup?'◆ ':''}${displayName}${isGroup?` <span class="dim">(${r.product_name})</span>`:''}</span>
+    <span class="modal-meta-item">${isGroup?'◆ ':''}${escapeHtml(displayName)}${isGroup?` <span class="dim">(${escapeHtml(r.product_name)})</span>`:''}</span>
     <span class="modal-meta-item">${(r.written_at||"").slice(0,10)}</span>
     <span class="modal-meta-item">조회 ${r.views || 0}</span>
     ${tags}
@@ -3474,7 +3497,7 @@ function openModal(id) {
   } else { segBox.style.display = "none"; }
 
   const imgs = (r.images || []).map(src =>
-    `<img src="${src}" onclick="openLightbox('${src.replace(/'/g,"\\'")}')" loading="lazy" onerror="this.style.display='none'">`).join("");
+    `<img src="${escapeHtml(src)}" onclick="openLightbox('${escapeJsAttr(src)}')" loading="lazy" onerror="this.style.display='none'">`).join("");
   document.getElementById("modal-images").innerHTML = imgs;
 
   // 카테고리별 태그 선택 UI: 카테고리 활성화 시 그 아래에 태그 옵션 펼침
@@ -3534,13 +3557,16 @@ function saveRelabel() {
     "교환/반품":     "neutral",
     "배송관련불편":  "negative",
   };
+  // 기존 AI 요약 승계용 (같은 카테고리의 summary를 가져온다)
+  const oldSegs = DATA.reviews[modalReviewId]?.classification?.segments || [];
   const segments = activeRows.map(row => {
     const cat = row.dataset.cat;
     const hashtags = [...row.querySelectorAll(".relabel-tag-btn.active")].map(b => b.dataset.tag);
+    const existing = oldSegs.find(s => s.category === cat);
     return {
       category: cat,
       sentiment: sentMap[cat] || "neutral",
-      summary: "",
+      summary: existing?.summary || "",
       confidence: 1.0,
       hashtags: hashtags
     };
