@@ -112,6 +112,13 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
             return
+        # 이 서버는 로컬 미리보기용이다. 브라우저로 아무 웹사이트나 방문해도
+        # 그 페이지가 localhost:7878/publish 로 POST 해 data.json 을 덮어쓸 수
+        # 있었다(CSRF). 같은 출처에서 온 요청만 받는다.
+        if not self._origin_ok():
+            self._json(403, {"ok": False,
+                             "error": "허용되지 않은 출처입니다. 로컬 미리보기 페이지에서만 저장할 수 있습니다."})
+            return
         try:
             n    = int(self.headers.get("Content-Length", 0))
             body = json.loads(self.rfile.read(n))
@@ -171,8 +178,18 @@ class Handler(BaseHTTPRequestHandler):
             self._json(500, {"ok": False, "error": str(e)})
 
     # ── 헬퍼 ────────────────────────────────────────
+    ALLOWED_ORIGINS = ("http://localhost:7878", "http://127.0.0.1:7878", "null")
+
+    def _origin_ok(self):
+        origin = self.headers.get("Origin")
+        if origin is None:          # file:// 이나 도구에서 직접 호출 — Origin 자체가 없다
+            return True
+        return origin in self.ALLOWED_ORIGINS
+
     def _cors(self):
-        origin = self.headers.get("Origin") or "*"
+        origin = self.headers.get("Origin")
+        if origin not in self.ALLOWED_ORIGINS:
+            origin = "http://localhost:7878"
         self.send_header("Access-Control-Allow-Origin",  origin)
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.send_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS")

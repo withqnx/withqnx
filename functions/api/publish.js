@@ -54,6 +54,40 @@ export async function onRequestPost({ request, env }) {
       return json({ ok: false, error: "비밀번호가 일치하지 않습니다." }, 403);
     }
 
+    // ── 충돌 검사 ───────────────────────────────────────────────
+    // 관리자가 화면을 연 뒤에 크롤이 새 후기를 넣었다면, 그 화면의 스냅샷으로
+    // 통째로 덮어쓰는 순간 그 후기들이 사라진다. 브라우저가 읽은 data.json 의
+    // 버전 표식(ETag)을 같이 보내게 하고, 지금 배포된 것과 다르면 거부한다.
+    if (body.baseEtag) {
+      try {
+        const liveUrl = new URL("/data.json", request.url).toString();
+        const head = await fetch(liveUrl, { method: "HEAD", cf: { cacheTtl: 0 } });
+        const liveEtag = head.headers.get("etag") || "";
+        if (liveEtag && liveEtag !== body.baseEtag) {
+          return json({
+            ok: false,
+            conflict: true,
+            error: "이 화면을 연 뒤에 data.json 이 갱신됐습니다(크롤 또는 다른 관리자의 저장).",
+          }, 409);
+        }
+      } catch (e) {
+        // 검사 자체가 실패하면 저장을 막지는 않는다. 다만 커밋 메시지에 남긴다.
+        body._conflictCheckFailed = String(e).slice(0, 120);
+      }
+    }
+
+    // 후기 수가 줄어드는 저장은 사고일 가능성이 높다.
+    if (body.data && body.data.reviews && typeof body.baseReviewCount === "number") {
+      const incoming = Object.keys(body.data.reviews).length;
+      if (incoming < body.baseReviewCount) {
+        return json({
+          ok: false,
+          conflict: true,
+          error: `후기 수가 ${body.baseReviewCount}건에서 ${incoming}건으로 줄어듭니다. 저장하지 않았습니다.`,
+        }, 409);
+      }
+    }
+
     // 커밋할 파일 모으기
     const files = [];
     if (body.groups !== undefined && body.groups !== null) {

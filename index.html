@@ -2531,6 +2531,7 @@ function initGate() {
 // ── Admin ──────────────────────────────────────
 const ADMIN_PWD = '251111';
 let IS_ADMIN = sessionStorage.getItem('_nh_admin') === '1';
+let DATA_ETAG = "";   // 로드한 data.json 의 버전 표식
 
 function updateAdminState() {
   document.body.classList.toggle('admin-mode', IS_ADMIN);
@@ -2566,6 +2567,9 @@ async function loadData() {
   }
   try {
     const resp = await fetch("data.json?" + Date.now());
+    // Publish 충돌 검사용 버전 표식. 내가 읽은 뒤에 크롤이 끼어들었는지 서버가 판별한다.
+    // 버전 표식은 부가 기능이다. 없다고 대시보드가 멈추면 안 된다.
+    try { DATA_ETAG = resp.headers?.get("etag") || ""; } catch (e) { DATA_ETAG = ""; }
     if (!resp.ok) throw new Error();
     DATA = await resp.json();
     init();
@@ -3215,7 +3219,11 @@ async function publishAll() {
     if (relabel.hashtags) r.hashtags = relabel.hashtags;
   });
 
-  const payload = JSON.stringify({ groups: GROUPS, data: merged, pwd: ADMIN_PWD });
+  const payload = JSON.stringify({
+    groups: GROUPS, data: merged, pwd: ADMIN_PWD,
+    baseEtag: DATA_ETAG,                             // 내가 읽은 data.json 의 버전
+    baseReviewCount: Object.keys(DATA.reviews || {}).length,
+  });
 
   // 시도할 엔드포인트 (순서대로 폴백)
   const isHttp = location.protocol === 'http:' || location.protocol === 'https:';
@@ -3235,6 +3243,14 @@ async function publishAll() {
       });
       // Function이 없는 환경이면 405/404 → 다음 엔드포인트로
       if (r.status === 404 || r.status === 405) { lastErr = new Error('endpoint-missing'); continue; }
+      if (r.status === 409) {
+        const c = await r.json().catch(() => ({}));
+        setState('error', '충돌');
+        alert('저장하지 않았습니다.\n\n' + (c.error || '내가 화면을 연 뒤에 데이터가 바뀌었습니다.') +
+              '\n\n새로고침해서 최신 데이터를 받은 뒤 다시 수정해 주세요.\n지금 고친 내용은 이 브라우저에 남아 있습니다.');
+        setTimeout(() => setState(null, 'Publish'), 3500);
+        return;
+      }
       const res = await r.json();
       if (res.ok) {
         setState('success', ep.kind === 'cf' ? '✓ 저장됨 (배포 중)' : '✓ 배포 완료');
