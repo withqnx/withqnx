@@ -4266,12 +4266,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "코랄 색상을 추가로 주문할 수 있게 해달라는 요청",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -18348,14 +18349,15 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#사용성"
             ],
             "summary": "코받침을 집에서 쉽게 넓힐 수 있는 방법을 문의",
             "confidence": 0.8,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -19382,12 +19384,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "겸손안경을 이미 재구매(구매확정)했다고 언급",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -19473,12 +19476,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "여자친구를 위해 추가로 재판매를 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -19960,12 +19964,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 모델(쇠네모) 앵콜 판매를 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -20387,12 +20392,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "추가 주문 기회와 가족 선물용 추가 구매를 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -20967,12 +20973,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "판매를 한 번 더 진행해달라는 요청(아내도 구매 원함)",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -22442,12 +22449,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "와이프에게 뺏겨서 재구매를 원함",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -23051,12 +23059,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "제품을 하나 더 사고 싶고 다음 색안경 출시도 기다림",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -26530,12 +26539,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "반지갑도 더 신청하고 싶다는 아쉬움",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -32066,12 +32076,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 색상 추가 구매 가능 여부 문의",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -34124,12 +34135,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "케이스가 아직 도착하지 않아 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -35535,12 +35547,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "또 구매하고 싶다는 의사",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -35859,12 +35872,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "금촉 베개도 받고 싶다는 기대",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -35938,12 +35952,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "두 개만 주문한 것을 반성하며 더 사고 싶다는 의사",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -36171,12 +36186,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한정판이라 더이상 구매 불가능한데 다른 색도 더 살걸 하는 후회",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -36335,12 +36351,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "곧 배송될 가방도 기대된다는 의사",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -36810,12 +36827,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "재출시 시점이 언제인지 기다리고 있음",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -37898,12 +37916,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "내년에도 다시 진행해주길 바람",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -37950,12 +37969,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "시즌2가 나오면 또 구매하고 싶다는 의사",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -38290,12 +38310,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "구두가방을 안 산 것을 후회하고 다른 색상 추가 구매나 2차 판매를 희망함",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "배송·포장",
@@ -38388,12 +38409,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다음 출시 예정 제품(세종대왕)을 기대함",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -41779,12 +41801,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 컬러로 재구매하려 했으나 판매 종료되어 아쉬움",
             "confidence": 0.85,
-            "category": "부정"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -42158,12 +42181,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "쇠동글이 금을 추가로 구매하고 싶어함",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "응대·소통",
@@ -43603,12 +43627,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "케이스 미수령, 언제 받을 수 있는지 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -44079,12 +44104,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "케이스만 아직 미수령, 언제 보내는지 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -44911,12 +44937,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "퍼자마, 양말 같은 소모품은 재주문 가능하길 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -45532,12 +45559,13 @@
         "segments": [
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "케이스 제작 여부와 관련 공지가 없어 문의함",
             "confidence": 0.75,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -46739,12 +46767,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "선글라스는 받았으나 케이스 배송 일정 안내를 요청함",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -47537,12 +47566,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "색안경 케이스를 아직 받지 못해 수령 시점 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -48734,12 +48764,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "선글라스는 작년에 받았는데 케이스는 언제 오는지 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -49663,12 +49694,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "안경 케이스가 아직 오지 않아 언제 받을 수 있는지 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -49912,12 +49944,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "선글라스 케이스 배송 시기 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -50811,12 +50844,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "안경 케이스 배송 시점을 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -51982,12 +52016,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "와이프에게 뺏겨서 하나 더 구매하고 싶음",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -53820,12 +53855,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "추가로 더 구매(제작)하고 싶다는 후회 및 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -53894,12 +53930,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "앞으로도 계속 제작해달라는 바람",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -53957,12 +53994,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 살걸 후회하며 재구매 의향 표현",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -53995,12 +54033,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 많이 살걸 후회하며 재구매 의향",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -54162,12 +54201,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "앞으로도 겸손 셀렉션을 계속 구매하겠다는 의지",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -54782,12 +54822,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "선글라스케이스가 나중에 온다는 안내를 받았으나 소식이 없어 언제 오는지 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -58458,12 +58499,13 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "안경닦는 천이 아직 오지 않아 수령 시기를 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -61394,12 +61436,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "언제 다시 판매할지 몰라 아껴서 신겠다는 아쉬움",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -61738,12 +61781,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다시 재판매되면 더 구매하고 싶음",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -61932,12 +61976,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "선글라스를 같은 디자인이나 조금 다른 디자인으로 1~2년마다 다시 판매해달라는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -61975,12 +62020,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "부모님 것도 사고 싶었으나 못 사서 아쉬움, 다시 판매 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -61995,12 +62041,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "스카프, 수건, 만년필도 구매하려고 기다리는 중",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -63055,12 +63102,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 색상도 사고 싶은데 더 이상 구입할 수 없어 아쉬움, 여성용도 주문했으면 좋았을 것",
             "confidence": 0.85,
-            "category": "부정"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -66966,12 +67014,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "summary": "다음 세종 제품도 추가 구매 고려중",
             "confidence": 0.85,
             "tags": [],
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -68385,12 +68434,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "summary": "다음 제품인 세종의 빠른 출시를 기대",
             "confidence": 0.8,
             "tags": [],
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -80620,12 +80670,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "만년필 필통을 산 사람들이 부러워 구매를 원함",
             "confidence": 0.6,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -87364,12 +87415,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "18k 버전을 구매하지 않은 것을 아쉬워하며 추가 구매를 희망",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -88050,12 +88102,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "품질이 개선되면 향후 재구매할 의향을 밝힘",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -88099,12 +88152,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "금촉 버전을 사지 않은 것이 아쉬워 추가 구매를 희망함",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -89394,12 +89448,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "초록 펜레스트를 다시 만들어주면 구매하고 싶다는 희망",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -91477,12 +91532,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "스텐닙 백베개도 궁금해 함께 살 걸 그랬다는 아쉬움",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -92374,12 +92430,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "발옷을 하나만 산 것이 아쉬워 추가 구매를 원하고 다음 신제품도 기대함",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -92557,12 +92614,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "세종 시리즈 만년필이 나오면 재구매하고 싶다",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -97087,12 +97145,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "지난번 양말을 못 산 것이 후회된다",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -99317,12 +99376,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "스테인리스 버전을 함께 주문하지 않은 것이 아쉬워 추가 구매를 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -99449,12 +99509,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한 자루만 구입한 것이 아쉬워 추가 구매를 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -100148,14 +100209,15 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [
               "#색상"
             ],
             "summary": "주황 물결무늬 디자인을 더 구매하지 않은 것이 아쉬움",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -104304,12 +104366,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "벌크 잉크 형태로 계속 재구매하고 싶다는 의사",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -104521,14 +104584,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#사용성"
             ],
             "summary": "스포이드와 뚜껑 사용법을 몰라 어려움을 겪음",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -105120,12 +105184,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "양말처럼 니트도 재판매를 원함",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -105501,12 +105566,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "초록, 파랑 색상도 기대하며 추가 구매 의사를 밝힘",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -105653,12 +105719,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한정판이라 소진이 걱정되어 더 구매하지 못한 것을 후회함",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -111094,12 +111161,13 @@
         "segments": [
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "게시글 삭제가 되지 않아 도움 요청",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -111444,12 +111512,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "후기 게시판 업로드 오류 등 코드 문제 확인 요청",
             "confidence": 0.8,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -111524,14 +111593,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#사용성"
             ],
             "summary": "잉크 스포이드 주입이 어려워 다른 사용자들에게 요령 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           },
           {
             "aspect": "응대·소통",
@@ -118066,12 +118136,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 색상도 추가로 주문하고 싶다는 의사",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "배송·포장",
@@ -118220,14 +118291,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#사용성"
             ],
             "summary": "넥카프 매는 방법을 몰라 어렵다며 착용법 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -118314,12 +118386,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한 개만 주문한 것을 후회하며 추가 구매 의사",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -118921,12 +118994,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 색상도 구매하고 싶다는 아쉬움",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -119532,12 +119606,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "하나만 구매한 것을 후회하며 추가 구매 의사",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -120099,12 +120174,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "하나만 산 것이 아쉬워 재판매를 기다림",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -120191,12 +120267,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 구매할 방법을 찾다가 다량구매를 다짐함",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -125063,14 +125140,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [
               "#구성"
             ],
             "summary": "심(리필)이 다 소진되면 다시 구매하고 싶다는 후기",
             "confidence": 0.55,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -125782,21 +125860,23 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "검정색도 살 걸 후회할 만큼 만족, 더 구매하고 싶음",
             "confidence": 0.8,
-            "category": "부정"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "여분 심을 추가 구매할 수 있게 해달라는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -126762,12 +126842,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "네이비 사이즈100 추가구매 가능한지 문의",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -127229,12 +127310,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다시 구매할 수 있으면 좋겠다는 재구매 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -129468,12 +129550,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "남편이 하나 더 사고 싶어함",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -132716,12 +132799,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "판매 종료된 상품의 재판매를 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -137812,12 +137896,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "상품문의 게시판 오류로 여기에 대신 문의함",
             "confidence": 0.8,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -139627,12 +139712,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "심지 추가구매 가능 여부 확인",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -140604,12 +140690,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "재주문 가능 시기 문의 겸 희망",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -140902,12 +140989,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "하나 더 구매하고 싶어 가능 여부 문의",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -140951,12 +141039,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다음엔 선글라스로 재구매 희망",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -141002,12 +141091,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 사고 싶은데 구매가 안 되어 아쉬움",
             "confidence": 0.85,
-            "category": "부정"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -141147,12 +141237,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "본인 것도 샀으면 좋았을 것이라는 아쉬움, 추가 구매 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -141272,12 +141363,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "하나 더 사지 않은 것을 아쉬워하며 추가 구매 희망",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -141422,12 +141514,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "같은 제품을 한 번 더 재판매해달라는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -141646,14 +141739,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#사용성"
             ],
             "summary": "펜 심지를 넣는 방법이 어려워 부러질까 걱정되어 방향 문의",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -142269,12 +142363,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다음 안경 기획 시 재구매 의사가 있음",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -142564,12 +142659,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "연락처를 찾을 수 없어 문의 방법을 모름",
             "confidence": 0.85,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -142684,12 +142780,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "색안경도 구매하고 싶다는 의향",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -145774,12 +145871,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 모델도 추가 구매하고 싶은데 주문이 안 되어 재오픈을 희망함",
             "confidence": 0.8,
-            "category": "부정"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -147711,12 +147809,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다른 색상(호박)도 추가 주문했다",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -147832,12 +147931,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "다음 색안경도 무조건 구매하겠다는 재구매 의사",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -149501,12 +149601,13 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [],
             "summary": "피팅 가능한 안경점 안내를 요청, 주변 안경점에서 협조받지 못함",
             "confidence": 0.8,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -151506,12 +151607,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "재생산 요청",
             "confidence": 0.9,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -157065,12 +157167,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "챠콜 컬러 모자도 추가로 주문해 도착을 기대 중",
             "confidence": 0.8,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -157130,12 +157233,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "양말·수건 같은 생필품도 계속 구매할 수 있으면 좋겠다고 함",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -158060,12 +158164,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "해당 상품 재판매를 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -159755,12 +159860,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "제품을 추가로 구매하고 싶다는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -160051,12 +160157,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 주문하고 싶다는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -160335,12 +160442,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "색상별로 더 주문하고 싶다는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -160481,12 +160589,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "재판매(재입고)를 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -160586,12 +160695,13 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "더 구매하고 싶었으나 기회를 놓쳐 재구매 기회를 기다림",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -170629,12 +170739,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "완판된 이불세트를 다시 구매하고 싶어 재판매를 요청함",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -172971,12 +173082,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "두세트씩 사두지 못해 아쉬워 재판매를 부탁",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": false,
@@ -174058,12 +174170,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "세종 18K를 추가로 구매함",
             "confidence": 0.7,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -175302,12 +175415,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한번 더 재판매해달라는 요청",
             "confidence": 0.85,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           },
           {
             "aspect": "상품",
@@ -175852,12 +175966,13 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "하나 더 사고 싶다는 재구매 의사",
             "confidence": 0.75,
-            "category": "중립/단순수령"
+            "category": "긍정",
+            "_rule": "재구매희망=강한 긍정 (2026-09-22)"
           }
         ],
         "needs_review": true,
@@ -182813,14 +182928,15 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "문의",
             "tags": [
               "#마감"
             ],
             "summary": "종이에 따라 잉크가 번지는데 원래 그런 것인지 문의",
             "confidence": 0.65,
-            "category": "문의"
+            "category": "문의",
+            "_rule": "불만 없는 순수 문의=중립 (2026-09-22)"
           }
         ],
         "needs_review": true,
