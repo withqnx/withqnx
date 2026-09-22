@@ -26,3 +26,4 @@ _report.html
 reclass_targets.json
 _reclassify_all.sh
 _finish_reclassify.sh
+_rerun_all.sh

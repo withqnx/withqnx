@@ -67,8 +67,12 @@ def main():
         data = json.load(f)
     reviews = data["reviews"]
 
-    targets = [rv for rv in reviews.values()
-               if (rv.get("classification") or {}).get("reclassify_pending")]
+    if "--all" in sys.argv:
+        # 규칙이 바뀌면 일부만 다시 돌릴 수 없다. 절반만 새 규칙이면 지표가 섞인다.
+        targets = list(reviews.values())
+    else:
+        targets = [rv for rv in reviews.values()
+                   if (rv.get("classification") or {}).get("reclassify_pending")]
     if not targets:
         print("✅ 재분류 대상 없음. migrate_v3.py --apply 를 먼저 돌렸는지 확인하세요.")
         return
