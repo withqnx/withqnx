@@ -187762,6 +187762,260 @@
         "_v3": true
       },
       "crawled_date": "2026-09-23"
+    },
+    "110044": {
+      "id": "110044",
+      "product_name": "세종 스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "명절 연휴 전날 선물이 왔어요~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110044/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-23 21:38:04",
+      "views": "0",
+      "content": "고대하고 고대한 세종 만년필!!\n퇴근하고 눈앞에 보자마자 피로가 풀리는 정교함과 그립감!\n스스로에게 선물하는 만족감이 배가되는 연휴입니다.\n잘 간직하고 오래 오래 쓸랍니다.\n물론, 세종 18k를 즐거이 기다리며~~\n햅삐 추석!!!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/9829274732d1d1e665d1cf70bbfa5f5e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/db23adc6e316c015e0a74dafbaf613f7.jpeg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#퀄리티"
+            ],
+            "summary": "그립감과 정교함이 뛰어나 선물 받은 듯 만족스러움",
+            "confidence": 0.9,
+            "category": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "다른 제품(18k) 언급은 리뷰 대상 상품이 아니므로 segment로 만들지 않음",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성",
+          "#퀄리티"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-24"
+    },
+    "110036": {
+      "id": "110036",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 검은진주 &  펜레스트 판매합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110036/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-23 19:33:11",
+      "views": "0",
+      "content": "선물 드릴려고 구매했는데 그분도 이미 구매했다고 하셔서 개봉도 안하고 판매합니다;;;\n원가로 드릴 테니 필요하신 분 가져가세요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/1975ef962323cb31fe330a0926fb98f1.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/c6ea6a2b237d05fd14daabe52e9958c5.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "미개봉 제품을 원가에 판매한다며 구매자를 구함",
+            "confidence": 0.95,
+            "category": "양도/거래"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "선물 상대가 이미 구매해 미개봉 새상품을 다른 구매자에게 원가 양도",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-24"
+    },
+    "110014": {
+      "id": "110014",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "검은진주 +펜래스트 팝니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110014/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-23 14:45:28",
+      "views": "0",
+      "content": "실물이 궁금하여 비리 포장만 뜯어보고 바로 다시 상자에 보관 중인 새상품입니다.\n만년필 +펜레스트 같이 33만원에 판매 합니다.\n택배비 포함입니다.\n010-6531-5832 문자로 연락주세요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/6f9d788e5e7d9c7c77e40160e1612060.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/17ad05423ef14e2a299c7c6ad26dddda.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/c33cffb5eb45f7a55194b9342a4052f5.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/a03648d3301fe8472f0ac2111f156df0.jpeg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "미개봉 새상품 세트를 가격·연락처 명시하여 판매",
+            "confidence": 0.95,
+            "category": "양도/거래"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가격과 전화번호를 명시한 구매자 간 거래글",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-24"
+    },
+    "110012": {
+      "id": "110012",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "엄청나게 고급지군요!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110012/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-23 14:29:39",
+      "views": "0",
+      "content": "겨울에 칼바람 부는 날  패딩 말고 코드 입어야 할 때,  일반 머플러는 목만 보호할 수 있고 헤어가 다 망가지잖아요.\n드라이 열심히 하고 나가도 강풍에 다 망가져서 포기했던 경험들 다들 있으실 것 같습니다.\n\"건\" 제품 판매 시에 정말 딱 이거다 하고 주문했는데,\n받아보니 우아~ 색상 과 디자인이 사진에서 보던 것 이상으로 고급스럽네요.\n디자인이 엄청 고급스럽고 품이 딱 맞아서, 중요한 모임에도 고급 코트 와 함께 하면 정말 잘 어울리겠습니다.\n원단이 아주 촘촘하게 짜여져서 적당한 두께이지만 한겨울에도 매우 따뜻할 것 같구요.\n동봉해 주신 카드 내용처럼, 디자이너님의 오랜 고민과 정성이 모두 녹아난 제품인 것 같네요.\n백화점에 내놔도 충분히 잘 판매될 상품인데,  합리적인 가격에 훌륭한 제품을 만들어 주셔서 감사드립니다.\n구매 버튼을 누른 제 손꾸락도 칭찬해 주고 있습니다. ㅎㅎ\n추석 앞두고 수령했는데, 평안하고 풍성한 한가위 되시길 바랍니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/23/5c9a10ed84d31e2042436784975172f0.jpg"
+      ],
+      "hashtags": [
+        "#색상",
+        "#디자인",
+        "#재질",
+        "#핏",
+        "#기획",
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#색상",
+              "#디자인",
+              "#재질",
+              "#핏"
+            ],
+            "summary": "사진보다 고급스러운 색상·디자인과 촘촘한 원단, 잘 맞는 품으로 따뜻하고 고급스러움",
+            "confidence": 0.9,
+            "category": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#기획"
+            ],
+            "summary": "동봉된 카드 속 디자이너의 정성 설명이 실제 제품과 부합한다고 느낌",
+            "confidence": 0.85,
+            "category": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#가격",
+              "#퀄리티"
+            ],
+            "summary": "합리적인 가격에 백화점급 고급 품질이라 평가",
+            "confidence": 0.9,
+            "category": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "추석 전에 정상적으로 수령함",
+            "confidence": 0.85,
+            "category": "중립/단순수령"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 품질·디자인·동봉카드·가격에 대한 근거 있는 긍정 평가와 정상 수령 사실을 구분",
+        "confidence": 0.85,
+        "tags": [
+          "#색상",
+          "#디자인",
+          "#재질",
+          "#핏",
+          "#기획",
+          "#가격",
+          "#퀄리티"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-24"
+    },
+    "109957": {
+      "id": "109957",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "신발이 너무 불편해요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/109957/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-23 08:47:24",
+      "views": "0",
+      "content": "신발을 신어보고 엄청 당황했습니다.\n앞쪽으로 쏙 들어가지도 않고 신으면 뒤로 밀려요.\n슬리퍼도 이보다 편할 것 같아요.\n꼭 일본 나막신 신는 느낌입니다.\n푹신한 인솔을 넣었지만 신발이 딱딱하고 벗겨지려고 해요.\n걸을 때 벗겨지지 않게 하려고 발에 힘을 주고 걷게 됩니다.\n좋은 가죽을 쓰셨는지는 모르지만 샘플을 만든 후  한번도 신어보지 않고\n제품을 만들었나봐요.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#재질"
+            ],
+            "summary": "신발이 딱딱하고 뒤로 밀리며 벗겨지려 해 착용감이 매우 나쁨",
+            "confidence": 0.85,
+            "category": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환·반품 요청 없이 착용감 불편만 서술한 순수 불만",
+        "confidence": 0.85,
+        "tags": [
+          "#사용성",
+          "#재질"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-24"
     }
   },
   "daily_logs": [
@@ -191998,9 +192252,20 @@
         "109920",
         "109919"
       ]
+    },
+    {
+      "date": "2026-09-24",
+      "count": 5,
+      "new_ids": [
+        "110044",
+        "110036",
+        "110014",
+        "110012",
+        "109957"
+      ]
     }
   ],
-  "last_updated": "2026-09-23 08:05:47",
+  "last_updated": "2026-09-24 08:01:18",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
