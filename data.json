@@ -188016,6 +188016,192 @@
         "_v3": true
       },
       "crawled_date": "2026-09-24"
+    },
+    "110066": {
+      "id": "110066",
+      "product_name": "별",
+      "product_id": "341",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "옷은 손대지 마셨으면....",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110066/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-24 15:31:12",
+      "views": "0",
+      "content": "이쁘지도 않고 덥고.... 색도 별로네요... 그냥 후원차 샀으나 펜도 아직 못받았지만... 다른것은 비교적 괜찮았는데 이 옷은 정말 별루입니다... 올 여름 더워서 한번입고 입은적이 없네요 손이 안갑니다.",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#재질",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상",
+              "#재질",
+              "#색상"
+            ],
+            "summary": "예쁘지 않고 더워서 색도 별로라 거의 입지 않게 됨",
+            "confidence": 0.9,
+            "category": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "옷에 대한 명확한 부정 평가, 펜 미수령 언급은 이 후기가 달린 상품이 아니므로 제외",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상",
+          "#재질",
+          "#색상"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-25"
+    },
+    "110064": {
+      "id": "110064",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "후기 쓰러 왔다가 깜놀 (저도 사실 첨엔 똑같긴 했음)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110064/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-24 13:40:23",
+      "views": "0",
+      "content": "가죽이라 길들이는 시간이 필요합니다\n신다보면 착붙 되어요\n닳을까봐 조심조심 신으면 불편하실 겁니다\n저는 이제 적응 마친듯\n넘나 이쁘고 만족스럽습니다\n(이미 후기 쓰신 분들도 속는셈 치고 손해볼 것 없으니까\n제 글 믿고 한번 길들이는 시간 가져보세요 ㅎㅎ)",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#사용성",
+              "#첫인상"
+            ],
+            "summary": "가죽이라 길들이는 시간이 필요하지만 적응되면 편해지고 예뻐서 만족스러움",
+            "confidence": 0.85,
+            "category": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "초반 불편함을 언급하지만 결국 적응 후 만족한다는 긍정 평가",
+        "confidence": 0.85,
+        "tags": [
+          "#재질",
+          "#사용성",
+          "#첫인상"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-25"
+    },
+    "110061": {
+      "id": "110061",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "멋진 만년필입니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110061/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-24 11:48:00",
+      "views": "0",
+      "content": "잘 사용하겠습니다.\n앞으로도 멋진 만년필 기대합니다!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/24/3a2bf16016ce7426652fb29b23973db0.jpeg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "만년필이 멋져서 잘 사용하겠다며 만족",
+            "confidence": 0.9,
+            "category": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 근거 없는 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-25"
+    },
+    "110057": {
+      "id": "110057",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "정말 마음에 쏙 들어요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110057/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-24 10:43:27",
+      "views": "0",
+      "content": "잊고 기다렸는데 받자마자 넘 예뻐서 정말 기뻤어요. 입고 있던 원피스 위에 살짝 걸쳐보고 머리 위에 써 보기도 했는데  우아하고 단아하게 변신하며\n분위기가 확 살아요.  감사합니다.^^",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "summary": "오래 기다렸으나 선주문 후생산의 정상적인 수령 과정",
+            "confidence": 0.9,
+            "tags": [],
+            "category": "중립/단순수령"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상",
+              "#디자인"
+            ],
+            "summary": "받자마자 예뻐서 기뻤고 착용하니 우아하고 단아한 분위기가 살아남",
+            "confidence": 0.9,
+            "category": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기다림은 정상 과정이라 중립, 착용 후 디자인 효과에 대한 구체적 긍정 평가는 상품 세그먼트로 분리",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상",
+          "#디자인"
+        ],
+        "_v3": true
+      },
+      "crawled_date": "2026-09-25"
     }
   },
   "daily_logs": [
@@ -192263,9 +192449,19 @@
         "110012",
         "109957"
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "count": 4,
+      "new_ids": [
+        "110066",
+        "110064",
+        "110061",
+        "110057"
+      ]
     }
   ],
-  "last_updated": "2026-09-24 08:01:18",
+  "last_updated": "2026-09-25 08:00:59",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
