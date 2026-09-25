@@ -4,6 +4,7 @@
 외부 API를 쓰지 않는다. Claude Code 구독(claude -p)만 쓴다.
   python3 verify_sentiment.py --validate   정답지 100건으로 포착률 측정
   python3 verify_sentiment.py --apply      data.json 전체에 적용
+  python3 verify_sentiment.py --new        새로 분류된 것만 (매일 아침)
 """
 import json, os, re, subprocess, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -91,19 +92,23 @@ def validate():
     json.dump({"got": got, "truth": truth, "claude": claude_said},
               open(f"{SP}/verify_validate.json", "w"), ensure_ascii=False)
 
-def apply_all():
-    """전체 세그먼트를 2차 판정하고, 1차와 갈리는 건을 검토 큐로 보낸다.
-    기존 confidence 게이트는 지우지 않고 _conf_low 로 보존한다."""
+def apply_all(only_new=False):
+    """세그먼트를 2차 판정하고, 1차와 갈리는 건을 검토 큐로 보낸다.
+    기존 confidence 게이트는 지우지 않고 _conf_low 로 보존한다.
+    only_new=True 면 아직 2차 판정이 없는 세그먼트만 처리한다(매일 아침용)."""
     DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
     data = json.load(open(DATA))
     reviews = data["reviews"]
     items = []
     for rv in reviews.values():
         for i, sg in enumerate((rv.get("classification") or {}).get("segments") or [], 1):
+            if only_new and sg.get("verify"): continue
             items.append({"key": f"{rv['id']}#{i}", "product": rv.get("product_name") or "",
                           "content": rv.get("content") or "",
                           "target": (sg.get("summary") or "요약 없음") + f" [측면: {sg.get('aspect')}]"})
-    print(f"전체 세그먼트 {len(items)}개 · 배치 {BATCH} · {(len(items)+BATCH-1)//BATCH}회", flush=True)
+    if not items:
+        print("2차 판정할 새 세그먼트 없음.", flush=True); return
+    print(f"{'새 ' if only_new else '전체 '}세그먼트 {len(items)}개 · 배치 {BATCH} · {(len(items)+BATCH-1)//BATCH}회", flush=True)
     got, t0, done = {}, time.time(), 0
     for i in range(0, len(items), BATCH):
         chunk = items[i:i+BATCH]
@@ -150,4 +155,5 @@ def save(path, data):
 if __name__ == "__main__":
     if "--validate" in sys.argv: validate()
     elif "--apply" in sys.argv: apply_all()
+    elif "--new" in sys.argv: apply_all(only_new=True)
     else: print("사용법: --validate | --apply")

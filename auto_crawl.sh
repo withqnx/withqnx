@@ -57,6 +57,11 @@ if ! python3 classify_pending.py; then
   notify "겸손몰 후기 분류 실패 — 미분류(검토 큐)로 쌓임. 로그: $ERRLOG" "classify_pending.py 종료코드 비정상"
 fi
 
+echo "=== 감정 2차 판정 (구독) ==="
+if ! python3 verify_sentiment.py --new; then
+  echo "⚠️ 2차 판정 실패 — 1차 분류는 그대로 살아있다. 다음 실행에서 재시도."
+fi
+
 # 3) 실질 변경(후기 추가/분류 변경)이 있을 때만 커밋 + push(최대 3회 재시도)
 #    last_updated 타임스탬프만 바뀐 경우는 커밋하지 않는다(매일 빈 커밋·불필요 배포 방지)
 PUSHED=0
