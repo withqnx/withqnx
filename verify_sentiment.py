@@ -152,8 +152,83 @@ def save(path, data):
         json.dump(data, f, ensure_ascii=False, indent=2); f.flush(); os.fsync(f.fileno())
     os.replace(tmp, path)
 
+
+JUDGE = """당신은 쇼핑몰 후기의 «대목» 하나를 두고 두 판정자가 내린 서로 다른 답 중
+어느 쪽이 옳은지 고르는 심판입니다.
+
+판정 기준 — 글쓴이가 쓴 감정 «단어»보다 «이 글을 왜 썼는가»를 우선합니다.
+- 긍정: 제품·경험에 만족. 담백해도 만족이면 긍정. 재구매 의사는 가장 강한 긍정.
+        품절이 아쉽다는 말도 제품 만족의 표현이다.
+- 중립: 단순 수령 보고, 사실 서술, 또는 질문. 문제를 언급하더라도 묻는 것이
+        주된 의도면 중립이다.
+- 부정: 제품·서비스에 대한 불만·실망이 글의 주된 의도인 경우.
+
+두 답 중 하나를 고르세요. 항목마다 한 줄씩 `번호|A` 또는 `번호|B` 만 출력합니다.
+설명·머리말 없이 줄만 출력하세요."""
+
+def ask_judge(items):
+    lines = [JUDGE, ""]
+    for n, it in enumerate(items, 1):
+        lines += [f"[{n}] 제품: {it['product']}",
+                  f"    후기: {(it['content'] or '(본문 없음)')[:400]}",
+                  f"    대목: {it['target']}",
+                  f"    A: {it['A']}    B: {it['B']}", ""]
+    cmd = [find_claude(), "-p", "--output-format", "text"]
+    r = subprocess.run(cmd, input="\n".join(lines), capture_output=True,
+                       text=True, timeout=900, env=claude_env())
+    if r.returncode != 0:
+        raise RuntimeError(f"claude -p rc={r.returncode}: {(r.stdout or r.stderr)[:200]}")
+    out = {}
+    for m in re.finditer(r"^\s*\[?(\d+)\]?\s*\|\s*([AB])\s*$", r.stdout, re.M):
+        out[int(m.group(1))] = m.group(2)
+    return out
+
+def judge():
+    """검증셋에서 두 판정이 갈린 건만 심판에게 물어 채점한다."""
+    import random
+    V = json.load(open(f"{SP}/verify_validate.json"))
+    got, truth, first = V["got"], V["truth"], V["claude"]
+    samp = {rv["id"]: rv for rv in json.load(open(f"{SP}/sample100.json"))}
+    dis = [k for k in got if k in truth and got[k] != first[k]]
+    random.seed(11)
+    items = []
+    for k in dis:
+        rid, idx = k.split("#"); rv = samp[rid]; sg = rv["segments"][int(idx)-1]
+        flip = random.random() < 0.5          # 위치 편향 제거
+        A, B = (got[k], first[k]) if flip else (first[k], got[k])
+        items.append({"key": k, "product": rv["product"], "content": rv["content"],
+                      "target": (sg.get("summary") or "요약 없음") + f" [측면: {sg.get('aspect')}]",
+                      "A": A, "B": B, "A_is_2nd": flip})
+    print(f"갈린 {len(items)}건을 심판에게 물어본다 (A/B 위치는 무작위)", flush=True)
+    picks = {}
+    for i in range(0, len(items), BATCH):
+        chunk = items[i:i+BATCH]
+        res = ask_judge(chunk)
+        for kk, vv in res.items():
+            if 1 <= kk <= len(chunk): picks[chunk[kk-1]["key"]] = vv
+    right = pick2 = 0
+    rows = []
+    for it in items:
+        p = picks.get(it["key"])
+        if not p: continue
+        chosen = it["A"] if p == "A" else it["B"]
+        ok = chosen == truth[it["key"]]
+        right += ok
+        pick2 += (chosen == got[it["key"]])
+        rows.append((it["key"], truth[it["key"]], first[it["key"]], got[it["key"]], chosen, ok))
+    n = len(rows)
+    print("\n" + "─"*56)
+    print(f"심판 정확도 : {right}/{n} = {right/n*100:.0f}%")
+    print(f"  (참고) 1차를 그냥 믿었다면 : {sum(1 for r in rows if r[2]==r[1])}/{n}")
+    print(f"  (참고) 2차를 그냥 믿었다면 : {sum(1 for r in rows if r[3]==r[1])}/{n}")
+    print(f"  심판이 2차를 고른 비율     : {pick2}/{n}")
+    print("─"*56)
+    for k, t, f1, f2, ch, ok in rows:
+        print(f"  {'✅' if ok else '❌'} {k:12s} 정답 {t} / 1차 {f1} / 2차 {f2} → 심판 {ch}")
+
 if __name__ == "__main__":
     if "--validate" in sys.argv: validate()
     elif "--apply" in sys.argv: apply_all()
     elif "--new" in sys.argv: apply_all(only_new=True)
+    elif "--judge" in sys.argv: judge()
     else: print("사용법: --validate | --apply")

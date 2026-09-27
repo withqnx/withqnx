@@ -36,11 +36,30 @@ notify() {   # notify "<알림 문구>" "<로그 본문>"
   osascript -e "display notification \"$1\" with title \"NONOHUMBLE\"" 2>/dev/null
 }
 
+# 사람이 작업하다 남긴 미커밋 변경이 pull --rebase 를 막아 크롤이 통째로 멈추는 사고가
+# 세 번 났다(2026-09-19~22, 09-26~28). 그래서 먼저 치워두고 당기고 되돌려 놓는다.
+STASHED=0
+if ! git diff --quiet || ! git diff --cached --quiet; then
+  if git stash push -q -m "auto_crawl $(date '+%F %T')" 2>/dev/null; then
+    STASHED=1
+    echo "ℹ️  미커밋 변경을 stash 에 치워두고 진행한다(끝나면 되돌린다)."
+  fi
+fi
+
 # 최신 동기화 — 실패하면(충돌 등) 리베이스 중단 상태가 남아 이후 커밋·push가 전부 실패한다.
 if ! PULL_OUT=$(git pull --rebase origin main 2>&1); then
   git rebase --abort 2>/dev/null   # 리베이스 잔재를 남기지 않는다
+  [ "$STASHED" = 1 ] && git stash pop -q 2>/dev/null
   notify "겸손몰 git pull(rebase) 실패 — 수동 확인 필요. 로그: $ERRLOG" "$PULL_OUT"
   exit 1
+fi
+
+# 치워둔 변경 되돌리기. 충돌하면 stash 에 그대로 남겨두고 알린다(잃지 않는다).
+if [ "$STASHED" = 1 ]; then
+  if ! git stash pop -q 2>/dev/null; then
+    notify "겸손몰 stash 되돌리기 충돌 — 'git stash list' 확인 필요. 크롤은 계속 진행한다." "stash pop conflict"
+    git checkout --theirs . 2>/dev/null || true
+  fi
 fi
 
 # 1) 크롤링 (수집만, 분류 안 함)
