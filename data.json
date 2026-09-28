@@ -202928,6 +202928,524 @@
         "disagree": false
       },
       "crawled_date": "2026-09-28"
+    },
+    "110334": {
+      "id": "110334",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "차콜그레이 62-> 60 교환하실분 계실까요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110334/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 00:32:50",
+      "views": "0",
+      "content": "오늘 개봉해서 써보니 조금 크네요 혹시 교환하실분 계실까요?\n010 삼465 4335  인천입니다",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "양도·거래",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "차콜그레이 62를 개봉 후 신어보니 커서 60사이즈로 교환하실 분을 찾음(연락처 명시)",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "사이즈가 커서 다른 구매자와 교환 원하며 전화번호를 남겨 양도·거래로 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110331": {
+      "id": "110331",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "아쉽네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110331/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-28 23:14:14",
+      "views": "0",
+      "content": "시즌1때 남편꺼 구매해서 잘신어 시즌2는 남편꺼 내꺼 두개 총 3세트 구매했는데\n5개를 신고 다녔는데 하나같이 다 하루만에 보풀이 심하게 생겼네요.\n발바닥 폭신하고 무봉제라 발은 참 편한데 하루만에 보풀이라니\n이번에 원단에 문제가 있는거 같습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/979ae0e33db7850839af59a58e3caf72.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/02e12fd5993e0d8b76ab8f3e22c861d0.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/e39e740e2a22cd86a4ac384ce94f5bc0.jpg"
+      ],
+      "hashtags": [
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "시즌2 제품 5개를 신었는데 하루 만에 보풀이 심하게 생겨 원단 문제로 추정",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "반복적 보풀 발생을 서술만 하고 별도 요청은 없어 내구성 태그·intent 없음으로 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110327": {
+      "id": "110327",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "Size 교환하실분 계실까요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110327/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 22:05:31",
+      "views": "0",
+      "content": "제 껑은 60 size 인데 좀 크네요,, 58 size로 교환하실분 계실까요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "양도·거래",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "60사이즈가 커서 58사이즈로 교환하실 분을 찾음",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "다른 구매자에게 교환을 제안하는 말투로 양도·거래 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110321": {
+      "id": "110321",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "발옷 시즌2",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110321/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 20:51:33",
+      "views": "0",
+      "content": "발에 걸리는 느낌이 없어서 편안함을 느꼈습니다. 촉감도 부드럽고 발을 밀착되지만 조이는 느낌이 약해 거부감이 없습니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#사용성"
+            ],
+            "summary": "발에 걸리는 느낌 없이 편안하고 촉감이 부드러우며 조이지 않아 만족",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "촉감(재질)과 편안한 착용감(사용성)을 구체적으로 언급한 긍정 후기",
+        "confidence": 0.85,
+        "tags": [
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110301": {
+      "id": "110301",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "발볼이 씹혀서 불편해요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110301/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-28 17:50:30",
+      "views": "0",
+      "content": "9/18 배달받아 기쁜 마음으로 신었는데, 양쪽발볼이 타이트하네요. 특히 오른쪽발볼은 박음질부분과 겹쳐서 발볼이 씹히네요. 발볼을 조금 넓게 수선할수 있나요?",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/c7af7374bd2859b7a939df2f09ec6b53.jpg"
+      ],
+      "hashtags": [
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "양쪽 발볼이 타이트하고 오른쪽은 박음질 부분과 겹쳐 씹혀 수선 가능 여부 문의",
+            "confidence": 0.85,
+            "category": "교환/반품",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "본인이 겪은 하자를 서술한 뒤 의문형으로 물었으므로 교환·반품으로 판정",
+        "confidence": 0.85,
+        "tags": [
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110256": {
+      "id": "110256",
+      "product_name": "100수",
+      "product_id": "349",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "분더컴머는 제품을 이해하고 만드시길 바랍니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110256/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 16:00:29",
+      "views": "0",
+      "content": "그동안 분더컴머가 판매하는 제품 모두 구매했습니다.\n잠옷, 수건 모두 한번을 그냥 안넘어가고 교환을 해야하는 불편함이 있었는데 그래도 그럴수 있지 하고 참았습니다.\n근데 이번에 이불은 너무 어이가 없고 화가나서 그냥 넘길수가 없네요.\n이불패드를 샀는데 세로 사이즈가 200으로 명시되어 판매했습니다.\n세탁 후 재보니 193,4 가 나왔습니다.\n처음 교환문의를 남겼을때 답변으로 쓴 글과 교환완료 후 문자 내용이 사이즈+3,-3은 정상 범주로 본다는겁니다.\n이게 무슨 그지같은 소리인지.+는 몰라도 -3이 정상이면 사이즈를 왜 정해놓습니까?!\n제가 이불패드만 집에 몇개가 있습니다. 모두 다 200보다 넘어요. 작은 사이즈가 단 하나도 없습니다.\n근데 무슨 저런 개떡같은 소리를 하는지.\n교환해서 온것도 결국 사이즈 작습니다.\n그래도 불편하면 반품요청 하라는데, 참 무책임한 소리를 잘도 하십니다.\n제품에 대해서 이해하고 만들고 판매하세요.\n디자인이랑 재료만 좋으면 뭐합니까?\n결과물이 계속 문제 투성인데.\n베개커버도 지퍼를 끝까지 안하고 중간정도 부터 만들어놔서 베개 집어 넣을라면 안간힘을 다 써야 집어 넣을 수 있습니다.\n공장장하고 의리로 참는것도 한계가 있어요.\n후제작이라 6개월 넘게 지나서 받는 제품이 맨날 문제있어서 교환요청 하고 사진 찍어서 올리라 하고..\n왜 제품 검수를 고객이 하게 만듭니까?오랜시간 만들면 그만큼 제품 검수도 제대로 해야지.\n겸손몰 담당자도 이부분 신경 써 주세요.\n판매만 하고 끝내고 이런 클레임 무시하면 앞으로 판매율 떨어질겁니다.\n공장장하고 의리로 사는것도 한계가 있어요.\n이거 말고 분더컴머 츄렉스, 꽃난방 다 샀는데.\n앞으로 분더컴머 제품은 이제 안삽니다.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#마감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "이불패드 세로 200 표기인데 세탁 후 193.4로 측정돼 사이즈 불일치",
+            "confidence": 0.85,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "사이즈 -3까지 정상 범주라는 교환 답변에 납득하지 못함",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#마감",
+              "#사용성"
+            ],
+            "summary": "베개커버 지퍼가 끝까지 달리지 않아 베개를 넣기 힘듦",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "후제작으로 오래 기다린 제품마다 문제가 있어 고객이 검수·교환요청을 반복해야 함에 불만, 클레임 무시 시 판매율 하락 경고",
+            "confidence": 0.8,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "이불패드 사이즈 불일치, 교환 응대 불만, 베개커버 제작 결함, 검수 프로세스에 대한 불만이 각각 다른 축으로 명확히 구분됨",
+        "confidence": 0.8,
+        "tags": [
+          "#사이즈",
+          "#마감",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110237": {
+      "id": "110237",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "생각보다 아쉽네요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110237/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 15:25:05",
+      "views": "0",
+      "content": "생각보다 아쉽네요.\n전 바닥이 진짜 폭삭할줄알았는데\n역시 어준님의 말을 100퍼센트 믿으면 안되네요.\n여름옷도 폭삭속았는데",
+      "images": [],
+      "hashtags": [
+        "#기획"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#기획"
+            ],
+            "summary": "바닥이 폭삭할 줄 알았는데 기대(설명)와 달라 실망",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 설명/기대에 대한 반박이므로 #기획 태그, 다른 제품(여름옷) 언급은 무시",
+        "confidence": 0.85,
+        "tags": [
+          "#기획"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110223": {
+      "id": "110223",
+      "product_name": "해바라기",
+      "product_id": "302",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "좋습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110223/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 14:19:09",
+      "views": "0",
+      "content": "좋은칼.. 아껴쓰는중 ㅎㅎㅎㅎ  그런데 좋은것 같습니다.\n무겁지도 않고요.",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상",
+              "#무게감"
+            ],
+            "summary": "좋은 칼이라 만족하며 무겁지 않아 좋음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평(첫인상)과 구체적 무게감 언급이 함께 있어 두 태그 부여",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상",
+          "#무게감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110192": {
+      "id": "110192",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "62->60으로 교환원해요  (차콜)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110192/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-28 12:19:11",
+      "views": "0",
+      "content": "저희 신랑 대두인데 크네요 ㅠ\n62를 60으로 교환 원합니다  차콜그레이입니다",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "신랑 머리가 커서 62사이즈가 커 60사이즈로 교환 요청",
+            "confidence": 0.9,
+            "category": "교환/반품",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "회사 대상 교환 요청으로 명확히 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-09-29"
+    },
+    "110123": {
+      "id": "110123",
+      "product_name": "틈-클래식",
+      "product_id": "385",
+      "product_link": "https://nonohumble.com/product/틈-클래식/385/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/161915c3f090c3aa17f05e8d229e0e81.png",
+      "title": "틈 구매하신 분들 공감하십니까?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110123/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-28 08:53:30",
+      "views": "0",
+      "content": "겸공몰에서 종종 물건 구매하고,\n아직도 기다리고 있는 주문들이 많습니다.\n이번 틈 슬리퍼도 오래 기다려서 받았는데,\n헐~~ 이게 뭡니까??\n1. 클래식 : 딱딱하고 무겁고 나막신 느낌,\n가격만큼 좋아보이지도 않고,  신어보고 샀다면\n이건 그냥 넘어 가겠슴\n2. 트로피컬 : 받고 바로 열어보고 드뎌 착! 해봤더니,\n응? 발이 끝까지 안들어가네?\n슬리퍼 정사이즈는 원래 커야되는거 아님??\ntassel로 조정해보려니, 전혀 상관없고\ntassel은 그냥 장식.\n이상하다 이럴리가 하고 신고 걸어보는데\n우와, 양발 안쪽으로 발이 쏠려 걷기도 힘들고\n뭔 슬리퍼가 나막신처럼 딱딱하고 무거운데\n놀라운건 미끄러움.  뒤뚱뒤뚱 걷게되고\n무릎에 온 힘을 주며 걷기되니 짜증 확 올라옴.\n신고 걸을수가 없음.  앞 가죽도 모양 안잡힘.\n이 가격에 이 기간 기다려서 받은게 겨우\n이 정도의 불량품??  바로 반품 신청함.\n이건 겸공몰 믿고 선결제하고 몇달 기다린\n겸공고객에 대한 배신임.\n지난번 수건도 검정찌꺼기 떨어져서 환불했는데,\n앞으로 겸공몰 이용은 기다리는 물건 받고 탈퇴해야겠슴.\n겸공몰 관리자들은\n구매후기 꼼꼼 읽어보시고,\n믿고 선결제하고 오래 기다리는 고객들에게\n이런식으로 할거면 운영하지 마시오~!!\n샘플 만들어서 한달이상 신어보고 이게 정말 고객들이\n신을만한 슬리퍼인지 검증하고 만들어야하는거 아닙니까\n관상용 슬리퍼였나??\n빠른 환불조치 바랍니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/a7ef7b117555c2769fc7f3034e0a367c.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/28/c536de148dbd4407ef910f657fe0f0b0.jpg"
+      ],
+      "hashtags": [
+        "#무게감",
+        "#가격",
+        "#디자인",
+        "#사이즈",
+        "#마감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#무게감",
+              "#가격",
+              "#디자인"
+            ],
+            "summary": "클래식 모델이 딱딱하고 무겁고 나막신 같아 가격 대비 아쉬움",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈",
+              "#마감",
+              "#사용성"
+            ],
+            "summary": "트로피컬 모델은 발이 끝까지 안 들어가고 미끄러워 걷기 힘들어 반품 신청 및 환불 요청",
+            "confidence": 0.85,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오래 기다린 고객에게 충분히 검증되지 않은 제품을 판매한다며 겸공몰 운영 전반에 항의",
+            "confidence": 0.8,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "슬리퍼 두 모델의 품질 불만과 반품 요청, 회사 운영 방식에 대한 불만이 별개 축으로 구분됨",
+        "confidence": 0.8,
+        "tags": [
+          "#무게감",
+          "#가격",
+          "#디자인",
+          "#사이즈",
+          "#마감",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-29"
     }
   },
   "daily_logs": [
@@ -207202,9 +207720,25 @@
         "110088",
         "110082"
       ]
+    },
+    {
+      "date": "2026-09-29",
+      "count": 10,
+      "new_ids": [
+        "110334",
+        "110331",
+        "110327",
+        "110321",
+        "110301",
+        "110256",
+        "110237",
+        "110223",
+        "110192",
+        "110123"
+      ]
     }
   ],
-  "last_updated": "2026-09-28 08:21:56",
+  "last_updated": "2026-09-29 08:02:18",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
