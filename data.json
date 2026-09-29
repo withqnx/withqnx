@@ -202572,8 +202572,25 @@
       "images": [],
       "hashtags": [],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "상품이 아닌 운영자·방송 태도에 대한 정치적 불만으로 재구매 거부 표명",
+            "confidence": 0.6,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품·배송 언급 없이 정치적 이유로 구매 중단을 선언한 글이라 aspect 판단이 애매함",
+        "confidence": 0.6,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
       },
       "crawled_date": "2026-09-28"
     },
@@ -202592,8 +202609,25 @@
       "images": [],
       "hashtags": [],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "상품이 아닌 운영자·방송 태도에 대한 정치적 불만으로 재구매 거부 표명",
+            "confidence": 0.6,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품·배송 언급 없이 정치적 이유로 구매 중단을 선언한 글이라 aspect 판단이 애매함",
+        "confidence": 0.6,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
       },
       "crawled_date": "2026-09-28"
     },
@@ -203446,6 +203480,508 @@
         "disagree": false
       },
       "crawled_date": "2026-09-29"
+    },
+    "110466": {
+      "id": "110466",
+      "product_name": "발옷5종 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "주말5종 중 4종만 배송이 되었습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110466/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-30 06:33:10",
+      "views": "0",
+      "content": "상품명:  발옷(5종)시즌2\n주문번호: 20260519-0098606\n주문자명: 하경호\n주문자전화번호 :010-8584-5361\n문의내용:  발옷 시즌2 주문 2건 배송이 잘 되었습니다\n하지만  주말(5종) 상품 중 1종이 빠진채로 4종만 배송이 되었고\n배송 문제 문의로 1종이 배송 되었지만\n그 제품이 주말 5종 제품에서 빠진 1종이  아니라 다른 제품이 배송되었습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/30/5994e4e89f59c9bd591295852adef1a9.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/30/f4335cab2849af19af5c23ac2d2f6749.png",
+        "https://nonohumble.com/file_data/nohumble/2026/09/30/b95a5b850202c1bc74a16da645dc85b2.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [],
+            "summary": "5종 세트 중 1종 누락, 재발송도 빠진 제품이 아닌 다른 제품이 와서 바로잡기 요청",
+            "confidence": 0.95,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "누락에 이어 오배송까지 실제 불편이 있고 회사에 시정을 요구함",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110450": {
+      "id": "110450",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "와우~~! 신발 오늘 받았어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110450/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 20:46:28",
+      "views": "0",
+      "content": "슬리퍼가기대이상입니다.\n상자가 고급지네요.",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "슬리퍼가 기대 이상",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "상자가 고급스러움",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 호평과 포장 호평이 각각 명시됨",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110446": {
+      "id": "110446",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "발이 너무 조여요!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110446/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 19:39:47",
+      "views": "0",
+      "content": "제가 발이 통통한 편이긴한데 그래도 너무 할 정도로 폭이 좁습니다\n사이즈 딱 맞는 운동화도 이렇게까지 발을 조인적은 없어요\n가죽이라 어느정도 늘어날 걸 예상한다고 해도 슬리퍼라 하기엔 너무너무 심하게 발이 조입니다\n우리가 사용하던 제품의 단점, 불편함, 부족함을 잘 짚어주고 상품에 대한 기획력(공장장의 아이디어)이 탁월해서 늘 좋은마음으로 기다리지만 정작 상품의 완성도에서 빌견되는 부족함이 아쉬움을 자아내네요.\n상품을 빨리 배송해달라 조르거나 가격으로 불만을 표하는 것도 아닌데 실착 부분에서의 테스트가 부족한 느낌입니다.\n업체들이 조금 더 믿음과 응원에 부응해줬으면 좋겠네요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "슬리퍼 폭이 너무 좁아 발이 심하게 조이고 실착 테스트 부족이 아쉽다는 의견",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "폭이 좁아 조인다는 치수 불만이고 교환 요청은 없음",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110444": {
+      "id": "110444",
+      "product_name": "[2026겸손색안경] 진한렌즈",
+      "product_id": "368",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-진한렌즈/368/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/684c445015df0da3d6a96c73a6572a4f.jpg",
+      "title": "드뎌 왔네요. 두번째 썬그리 메밀이.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110444/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-29 19:29:45",
+      "views": "0",
+      "content": "품질 좋은거야 두 말 하면 잔소리.\n가볍고 편안합니다.\n이 두개로 10년에서 20년은 가능하겠어요^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/c2acef3e57f1f136ed284bb472c656f7.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/4ac683fef9e1479461b235b19a5ab57e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/2029a613eba29fd7434d1d194b7371ee.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#무게감",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#무게감",
+              "#내구성"
+            ],
+            "summary": "품질이 좋고 가볍고 편하며 오래 쓸 수 있겠다는 호평",
+            "confidence": 0.92,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "두 번째 제품을 드디어 수령",
+            "confidence": 0.92,
+            "category": "중립/단순수령",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "수령 사실은 중립, 제품은 품질·무게·내구성 호평",
+        "confidence": 0.92,
+        "tags": [
+          "#퀄리티",
+          "#무게감",
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110439": {
+      "id": "110439",
+      "product_name": "[2026겸손색안경] 진한렌즈",
+      "product_id": "368",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-진한렌즈/368/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/684c445015df0da3d6a96c73a6572a4f.jpg",
+      "title": "좋습니다 👍",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110439/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-29 18:35:48",
+      "views": "0",
+      "content": "겸손색안경 3번째 구입했어요.\n이번 뿔네모(51) 수수도 만족합니다!\n겸손색안경/안경은 장시간 착용해도 피로하지 않아 좋습니다. 이번에도 고맙습니다!!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/20f681d6c8af4b74874f7c24aa06e62c.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/e12c3eed3590df178a606129e0f6b6e7.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/123d53fd97ab83276e52ee78701cbde3.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/69e23881272ef10c3c4b6a8d45a258e7.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#첫인상"
+            ],
+            "summary": "세 번째 구매, 장시간 착용해도 피로하지 않아 만족",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "이미 3번째 구매한 것에 대한 만족 후기로 추가 구매 요청은 없음",
+        "confidence": 0.93,
+        "tags": [
+          "#사용성",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110378": {
+      "id": "110378",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "블루브라운 60호 필요하신 분",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110378/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-29 12:06:24",
+      "views": "0",
+      "content": "블루브라운 60호 구매했는데 너무 커서 반품 교환도 안되서 혹시 필요 하신 분 계시면\n구매가+착불 택배비로 판매합니다.\n부산이면 가까우면 배달도 가능할 거 같네요.\n댓글 달아 주시면 연락드릴께요.\n전 여분으로 구매한 마나님꺼 58호가 딱 맞고 너무 이쁘서 사용할 예정입니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/353651d5a3093db3190c0b50c2a92c42.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/1c0adcb85158c902e72dbbd0969e507d.JPG"
+      ],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "양도·거래",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "60호가 너무 커서 구매가+착불로 다른 구매자에게 판매",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상대가 다른 구매자이므로 양도·거래이고 사유는 사이즈",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110363": {
+      "id": "110363",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "흠....",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110363/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 10:29:36",
+      "views": "0",
+      "content": "겸손몰 쇼핑중 첨으로 접하는 불만족 ..크기가 상상 이상입니다.교환이 안되니 어찌할 바를 모르겠네요",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "크기가 예상보다 훨씬 커서 불만, 교환이 안 돼 난감",
+            "confidence": 0.8,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불일치를 서술하고 교환 불가를 호소해 교환·반품으로 판단",
+        "confidence": 0.8,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110361": {
+      "id": "110361",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "맘에 들어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110361/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 10:26:40",
+      "views": "0",
+      "content": "모자 크기가 아주 쬐끔만 더 컸으면 하지만 전체적으로 맘에 들어요",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "전체적으로 마음에 든다",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "모자 크기가 조금 더 컸으면 하는 아쉬움",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 만족과 사이즈에 대한 경미한 아쉬움이 함께 있음",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상",
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110359": {
+      "id": "110359",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "넘 고급스러워요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110359/page/1/",
+      "has_photo": false,
+      "written_at": "2026-09-29 10:20:40",
+      "views": "0",
+      "content": "티셔츠 에 실망했는데  다른건 다 좋았어요.\n특히 이건 너무 고급스럽고 이쁘네요.\n백화점에서 사면 절대 이가격 못살거같아요.\n다만 모자는 색상이나 질은 너무 좋은데 사이즈가 좀 안맞네요.  양말도 기대되고\n오늘 소개한 머플러와 장갑도 넘 맘에 들어요. 또 구매하려고요.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#가격"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#가격"
+            ],
+            "summary": "매우 고급스럽고 예쁘며 백화점이면 이 가격에 못 산다",
+            "confidence": 0.88,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [],
+            "summary": "또 구매하려고 함",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문에 여러 제품(티셔츠·모자·양말)이 섞여 있어 후기 대상 상품 부분만 분류하고 나머지는 제외함",
+        "confidence": 0.7,
+        "spec_problems": [
+          "reasoning이 애매함을 인정 → confidence 강제 하향"
+        ],
+        "tags": [
+          "#퀄리티",
+          "#가격"
+        ],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
+    },
+    "110347": {
+      "id": "110347",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "여름양말 보풀",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110347/page/1/",
+      "has_photo": true,
+      "written_at": "2026-09-29 09:41:17",
+      "views": "0",
+      "content": "최근 신기시작했는데 보풀이 일어납니다\n양말에 보풀이는 건 보도듣도 못했습니다.\n남색발등격자 외에도 오늘 흰색신고 30분정도 산책해보니 그것도 그래요.\n보풀 암일은건 너무 잠깐 신어서인가봅니다.\n첫번째 양말때 너무 만족해서 여름양말도사고 발목긴것도 샀는데\n발목긴것도 그렇다는 후기가 있어 염려됩니다\n인터넷에서 구입하는 가격이 훨씬 낮은 양말도 이정도는 아닙니다.\n반팔도 3장이나 샀다가 디자인도 컬러도 별로이고\n특히\n여름에입기 너무두껍고\n뻣뻣해서 입지도 못하고\n옷장에 쟁여놓고 볼때마다 후회중입니다. 가격도 비싼데.\n출연자들 좋다고 극찬하며 난리치더니 완전 홈쇼핑 쇼호스트들이네요.\n주문해놓은 안경은 괜찮을런지...\n양말 반품해주던지 보풀 안이는 것으로 교환바랍니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/291a28c098c6bc15bb6afb305d8a829b.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/09/29/363bf75a0b9756e34ad17c753a9299d3.jpg"
+      ],
+      "hashtags": [
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "여름양말에 보풀이 일어나 반품 또는 보풀 없는 제품으로 교환 요청",
+            "confidence": 0.9,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "양말 보풀 하자를 서술하고 회사에 반품·교환을 요구함. 반팔 등 다른 제품 언급은 제외함",
+        "confidence": 0.9,
+        "tags": [
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-09-30"
     }
   },
   "daily_logs": [
@@ -207736,9 +208272,25 @@
         "110192",
         "110123"
       ]
+    },
+    {
+      "date": "2026-09-30",
+      "count": 10,
+      "new_ids": [
+        "110466",
+        "110450",
+        "110446",
+        "110444",
+        "110439",
+        "110378",
+        "110363",
+        "110361",
+        "110359",
+        "110347"
+      ]
     }
   ],
-  "last_updated": "2026-09-29 08:02:18",
+  "last_updated": "2026-09-30 08:00:48",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
