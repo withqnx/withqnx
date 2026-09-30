@@ -27031,13 +27031,14 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "부정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "수건도 추가로 결제함",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "부정",
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           },
           {
             "aspect": "상품",
@@ -44850,10 +44851,11 @@
             "summary": "다른 컬러로 재구매하려 했으나 판매 종료되어 아쉬움",
             "confidence": 0.9,
             "category": "긍정",
-            "verify": "부정"
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "판매 종료에 대한 아쉬움은 제품 만족을 전제로 함",
         "confidence": 0.9,
         "tags": [
@@ -44862,7 +44864,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "71"
@@ -45248,13 +45250,14 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "재구매희망",
             "tags": [],
             "summary": "쇠동글이 금 제품을 추가 구매하고 싶어 구매 가능한 방법을 문의",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           },
           {
             "aspect": "상품",
@@ -45267,13 +45270,13 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "회사에 추가구매 의사와 동시에 개인간 거래 요청을 함께 함",
         "confidence": 0.85,
         "tags": [],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "42"
@@ -129170,10 +129173,11 @@
             "summary": "남편 것도 추가로 구매 가능한지 문의",
             "confidence": 0.9,
             "category": "긍정",
-            "verify": "중립"
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "추가 구매 의사는 재구매희망으로 긍정 처리",
         "confidence": 0.9,
         "tags": [
@@ -129181,7 +129185,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "179"
@@ -134107,22 +134111,23 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "재구매희망",
             "tags": [],
             "summary": "네이비 색상 사이즈100 추가구매 가능 여부 문의",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "추가구매 의사는 재구매희망이며 규칙상 긍정",
         "confidence": 0.85,
         "tags": [],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "150"
@@ -140089,10 +140094,11 @@
             "summary": "3개를 살 걸 그랬다며 추가구매 아쉬움 표현",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "부정"
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "규칙6 적용, 다른 제품(만년필) 비교는 근거 서술로 간주",
         "confidence": 0.85,
         "tags": [
@@ -140100,7 +140106,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "264"
@@ -140242,10 +140248,11 @@
             "summary": "추가구매를 원하나 판매 종료되어 재판매를 희망함",
             "confidence": 0.8,
             "category": "긍정",
-            "verify": "중립"
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "판매 종료 아쉬움은 제품 만족에서 비롯(규칙6)",
         "confidence": 0.8,
         "tags": [
@@ -140254,7 +140261,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "302"
@@ -140784,13 +140791,14 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "부정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "L44, L45 사이즈가 재발매되면 재구매하고 싶음",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "부정",
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           },
           {
             "aspect": "상품",
@@ -140803,7 +140811,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈 불만, 재구매 희망, 구매자간 거래 요청을 분리",
         "confidence": 0.85,
         "tags": [
@@ -140811,7 +140819,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "196"
@@ -149307,10 +149315,11 @@
             "summary": "더 사고 싶으나 품절로 구매하지 못해 아쉽다는 의사",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "부정"
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품 만족과 품절에 대한 아쉬움(판매종료 대상)은 긍정으로 판정",
         "confidence": 0.85,
         "tags": [
@@ -149320,7 +149329,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "264"
@@ -190676,10 +190685,11 @@
             "summary": "꽃 디자인에 미련이 남아 추가 판매를 희망",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "중립"
+            "verify": "중립",
+            "_gold": "이석원 2026-09-30 (재구매희망 애매 10건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "구성 만족과 다른 디자인 추가구매 희망을 분리, 재구매희망은 긍정",
         "confidence": 0.85,
         "tags": [
@@ -190688,7 +190698,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-08-31",
       "product_id": "349"
