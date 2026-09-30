@@ -128,23 +128,58 @@ def apply_all(only_new=False):
     print(f"\n판정 {done}/{len(items)} · {time.time()-t0:.0f}초")
     print(f"불일치 후기 {dis}건 · 검토 큐 {nr}건 / {len(reviews)}건")
 
+def auto_ok_type(sg):
+    """1·2차가 갈려도 사람이 볼 필요 없는 유형이면 그 이름, 아니면 None.
+    두 판정기가 애초에 다른 기준을 쓰게 만들어져 생기는 구조적 불일치라 1차(규칙)를 따른다.
+    이석원 승인 2026-09-30. 재구매희망은 v3.4 예외를 지켜보는 중이라 항상 사람에게 올린다."""
+    a, b = sg.get("sentiment"), sg.get("verify")
+    intent, aspect = sg.get("intent") or "없음", sg.get("aspect")
+    if intent == "재구매희망":
+        return None
+    if intent in ("교환·반품", "양도·거래", "문의"):
+        return "의도가_분류결정"      # 파생 카테고리가 의도로 정해져 감정이 갈려도 숫자 불변
+    if aspect == "배송·포장" and a == "중립" and b == "긍정":
+        return "배송_기다림서술"      # "오래 기다렸지만 좋다" — 제품 칭찬은 다른 대목에 있음
+    if intent == "제품제안":
+        return "제품제안"             # 제안 자체는 중립, 칭찬은 다른 대목에 있음
+    if intent == "없음" and a == "부정" and b == "중립":
+        return "작은불만_부정유지"    # 작은 불만도 제품 문제를 말했으면 부정
+    return None
+
+
+def mark_review(clf):
+    """세그먼트별 판정을 보고 disagree(원래 불일치)·needs_review(사람이 볼 것)를 다시 계산."""
+    dis = need = False
+    for sg in clf.get("segments") or []:
+        sg.pop("_auto_ok", None)
+        v = sg.get("verify")
+        if not v or v == sg.get("sentiment") or sg.get("_gold"):
+            continue
+        dis = True
+        t = auto_ok_type(sg)
+        if t:
+            sg["_auto_ok"] = t
+        else:
+            need = True
+    clf["disagree"] = dis
+    clf["needs_review"] = need
+
+
 def write_back(data, got):
     for rv in data["reviews"].values():
         clf = rv.get("classification") or {}
         segs = clf.get("segments") or []
         if not segs: continue
-        dis = False; any_v = False
+        any_v = False
         for i, sg in enumerate(segs, 1):
             v = got.get(f"{rv['id']}#{i}")
             if not v: continue
             any_v = True
             sg["verify"] = v
-            if v != sg.get("sentiment"): dis = True
         if not any_v: continue
         if "_conf_low" not in clf:
             clf["_conf_low"] = bool(clf.get("needs_review"))
-        clf["disagree"] = dis
-        clf["needs_review"] = dis
+        mark_review(clf)
 
 def save(path, data):
     tmp = path + ".tmp"
