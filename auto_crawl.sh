@@ -1,6 +1,6 @@
 #!/bin/bash
-# Mac 로그인(켤 때) 트리거 → 크롤링(수집만) → Claude Code 분류 → 배포 → 대기 → 홈페이지 오픈
-# launchd(com.nonohumble.crawl, RunAtLoad)가 실행
+# 매일 08:00 → git pull → 크롤링(수집만) → Claude Code 분류 → 감정 2차 판정 → push → 배포 대기
+# launchd(com.nonohumble.crawl, StartCalendarInterval 08:00)가 실행
 # 분류: Anthropic API 키 대신 Claude Code(구독)로 처리 (classify_pending.py)
 
 export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -78,7 +78,7 @@ fi
 
 echo "=== 감정 2차 판정 (구독) ==="
 if ! python3 verify_sentiment.py --new; then
-  echo "⚠️ 2차 판정 실패 — 1차 분류는 그대로 살아있다. 다음 실행에서 재시도."
+  notify "겸손몰 감정 2차 판정 실패 — 1차 분류는 살아있고 다음 실행에서 재시도. 로그: $ERRLOG" "verify_sentiment.py --new 종료코드 비정상"
 fi
 
 # 3) 실질 변경(후기 추가/분류 변경)이 있을 때만 커밋 + push(최대 3회 재시도)

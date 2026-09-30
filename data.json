@@ -4556,13 +4556,14 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "재구매희망",
             "summary": "코랄 색상을 추가로 주문하고 싶다는 재구매 희망",
             "confidence": 0.85,
             "tags": [],
-            "category": "긍정",
-            "verify": "긍정"
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           }
         ],
         "needs_review": false,
@@ -24179,7 +24180,8 @@
             "summary": "와이프에게 뺏겨 다시 판매해달라며 재구매 희망",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (애정 표현=칭찬 판정)"
           }
         ],
         "needs_review": false,
@@ -69657,13 +69659,14 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "재구매희망",
             "tags": [],
             "summary": "재구매할 수 있게 해달라고 요청함",
             "confidence": 0.95,
-            "category": "긍정",
-            "verify": "긍정"
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           }
         ],
         "needs_review": false,
@@ -74709,7 +74712,8 @@
             "summary": "부드럽고 포근한 품질이 좋다고 평가",
             "confidence": 0.9,
             "category": "긍정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           },
           {
             "aspect": "상품",
@@ -74721,7 +74725,8 @@
             "summary": "보풀 이슈가 생각보다 심하지 않았다",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           },
           {
             "aspect": "상품",
@@ -74733,7 +74738,8 @@
             "summary": "컬러가 많아 보풀이 더 잘 보이고 앞뒤 컬러 차이로 비침·구김 문제가 있다",
             "confidence": 0.85,
             "category": "부정",
-            "verify": "부정"
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           },
           {
             "aspect": "상품",
@@ -74745,7 +74751,8 @@
             "summary": "색상이 기대만큼 예쁘지 않다",
             "confidence": 0.8,
             "category": "부정",
-            "verify": "부정"
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           },
           {
             "aspect": "상품",
@@ -74757,7 +74764,8 @@
             "summary": "단일 컬러로 나오면 계속 구매할 의향이 있다",
             "confidence": 0.8,
             "category": "긍정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           }
         ],
         "needs_review": false,
@@ -137924,28 +137932,30 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#사이즈"
             ],
             "summary": "본인 얼굴에 비해 살짝 작아 보임",
             "confidence": 0.8,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "부정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "한 단계 큰 사이즈로 추가 구매하고 싶어함",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "긍정"
+            "category": "부정",
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈 아쉬움과 추가구매 의사가 섞인 후기, 재구매희망은 긍정으로 판정",
         "confidence": 0.8,
         "tags": [
@@ -137953,7 +137963,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "216"
@@ -155641,13 +155651,14 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "재구매희망",
             "tags": [],
             "summary": "추가 구매를 하고 싶다는 후기",
             "confidence": 0.9,
-            "category": "긍정",
-            "verify": "긍정"
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_gold": "이석원 2026-09-30 (재구매희망 후보 5건 점검)"
           }
         ],
         "needs_review": false,
