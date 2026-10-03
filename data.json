@@ -206395,6 +206395,219 @@
         "disagree": false
       },
       "crawled_date": "2026-10-03"
+    },
+    "110969": {
+      "id": "110969",
+      "product_name": "세종 스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종만년필 드뎌 도착!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110969/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-03 16:17:26",
+      "views": "0",
+      "content": "주문 11개월만에 세종만년필이 드디어 도착 했어요~\n역시 고급스럽고 멋진 만년필입니다.\n추가 주문한 2개는 1달을 더 기다려야한다니..\n그리고 세종잉크는 언제나 올런지 ^^\n즐거운 기다림이 줄줄이네요~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/03/fcb72c9af532c7f241179c72690565a4.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/03/91ab10e855b50fcd12f81415049c74f2.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "고급스럽고 멋진 만년필이라고 호평",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "주문 11개월 만에 도착, 추가 주문분은 1달 더 대기 예정(선주문 후생산의 정상 과정)",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [],
+            "summary": "세종잉크는 언제 오는지 문의(분할배송을 이해한 말투)",
+            "confidence": 0.85,
+            "category": "문의",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본품은 수령해 호평, 기다림은 중립, 잉크 입고 시점은 불만 없는 문의라 중립",
+        "confidence": 0.85,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-04"
+    },
+    "110968": {
+      "id": "110968",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "세종펜레스트 도착!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110968/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-03 16:12:14",
+      "views": "0",
+      "content": "세종만년필과 펜레스트가 드디어 주문 11개월만에 드디어 도착 했어요~\n두제품 모두 고급스럽고 품질이 좋습니다~^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/03/15f08bd0afaed6beb278efd232f43947.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/03/2c1f5fff9061b4a985745b776d73ba6a.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "만년필과 펜레스트 모두 고급스럽고 품질이 좋다고 평가",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "주문 11개월 만에 드디어 도착(정상적인 기다림)",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "품질 호평과 단순 수령 사실 서술",
+        "confidence": 0.95,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-04"
+    },
+    "110958": {
+      "id": "110958",
+      "product_name": "세종필통(1구)",
+      "product_id": "375",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "너~~~~~무 마음에 들어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110958/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-03 13:12:40",
+      "views": "0",
+      "content": "두개사길 잘했어요~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/03/f7ff8ab39d5f4cd59945f30cd74028b9.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "너무 마음에 들어 두 개 산 것을 잘했다고 만족",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평이라 첫인상. 두 개를 산 것에 만족하는 추가구매 만족 표현으로 재구매희망·긍정 처리",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-04"
+    },
+    "110943": {
+      "id": "110943",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "목 뒤가 시려울 때!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110943/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-03 09:05:39",
+      "views": "0",
+      "content": "오늘 목 뒤에 냉기가 느껴져서 진짜 가을이 왔구나 싶었어요. 일교차가 큰 요즘 외투로 뭘 챙길까 고민하다 눈에 띈 건!! 드디어 개시했는데 너~~~무 알맞는 용도여서 감동입니다.^^ 부드럽고 톡톡하고, 가디건이나 트렌치는 부담스러운데 가볍게 두르니 이리 좋습니다. ㅎㅎ",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#사용성"
+            ],
+            "summary": "부드럽고 톡톡하며 가볍게 두르기 좋아 용도에 감동",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "촉감과 사용 편의를 구체적으로 칭찬한 긍정 후기",
+        "confidence": 0.93,
+        "tags": [
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-04"
     }
   },
   "daily_logs": [
@@ -210756,9 +210969,19 @@
         "110728",
         "110723"
       ]
+    },
+    {
+      "date": "2026-10-04",
+      "count": 4,
+      "new_ids": [
+        "110969",
+        "110968",
+        "110958",
+        "110943"
+      ]
     }
   ],
-  "last_updated": "2026-10-03 08:01:29",
+  "last_updated": "2026-10-04 08:00:21",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
