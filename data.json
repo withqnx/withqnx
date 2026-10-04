@@ -206608,6 +206608,417 @@
         "disagree": false
       },
       "crawled_date": "2026-10-04"
+    },
+    "111019": {
+      "id": "111019",
+      "product_name": "세종 스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "네분의 세종이 모두 왔소이다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111019/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-04 22:59:46",
+      "views": "0",
+      "content": "",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/bb593fd1c1b79d93218a2e7f32f2dda8.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/1bbc409e3fe2bf46882a7f5b9491af94.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/53dda4686b41c4fdf52a0f01a2e843d1.JPG"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "세종 시리즈 네 종을 모두 받아 만족하는 듯한 짧은 인사",
+            "confidence": 0.8,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문이 없고 제목만으로 수령 기쁨을 표현해 상품 긍정으로 보되 근거가 약함",
+        "confidence": 0.8,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111018": {
+      "id": "111018",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "좋소...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111018/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-04 22:55:10",
+      "views": "0",
+      "content": "그냥 좋소....",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/ecef4c82d2c3a1aa27f9998bd5746f25.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "근거 없이 그냥 좋다는 호평",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 전반적 호평이라 #첫인상",
+        "confidence": 0.95,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111017": {
+      "id": "111017",
+      "product_name": "와",
+      "product_id": "377",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "와~~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111017/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-04 22:52:14",
+      "views": "0",
+      "content": "",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/6e8027d7d46394c1cf3b99c176a9e1d0.jpg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "제목의 감탄사뿐이며 평가 내용 없음",
+            "confidence": 0.7,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문 없이 '와~~~' 감탄만 있어 평가 대상·방향이 불분명",
+        "confidence": 0.7,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111010": {
+      "id": "111010",
+      "product_name": "세종필통(1구 붓)",
+      "product_id": "376",
+      "product_link": "https://nonohumble.com/product/세종필통1구-붓/376/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/c963731c89bee4f39f3514d63dd9ed1a.png",
+      "title": "잘받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111010/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-04 18:56:16",
+      "views": "0",
+      "content": "아내 박사학위 받아서 선물로 주려고 구매 했습니다.\n만년필은 1년 가까이 기다리는 중이고 받은지 꽤 되는데, 오늘 아내가\n뜯지 않은 박스 확인한다고 뜯어서 이벤트는 날라갔네요...\n도대체 만년필은 언제 옵니까...\n1년이 되어 갑니다.",
+      "images": [],
+      "hashtags": [
+        "#선물"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#선물"
+            ],
+            "summary": "아내 박사학위 기념 선물로 구매",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "중립"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "부정",
+            "intent": "문의",
+            "tags": [],
+            "summary": "만년필이 1년 가까이 오지 않아 언제 오는지 독촉하며 문의",
+            "confidence": 0.9,
+            "category": "문의",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "선물 구매와, 만년필 미수령에 대한 독촉성 문의(부속품 규칙 3의 질책 포함)로 분리",
+        "confidence": 0.85,
+        "tags": [
+          "#선물"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111008": {
+      "id": "111008",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "수박270->수박265 교환하고 싶어요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111008/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-04 17:24:28",
+      "views": "0",
+      "content": "다만 깔창이 너무 평평해서 편하지도 않고 발이 안쪽으로 계속 쏠려서 많이 아쉽네요.\n발바닥 굴곡에 맞춰서 깔창부분을 만들었으면 훨씬 좋았을거 같습니다.\n사이즈이슈가 있을거 같아서 265,270 두개 주문했는데\n저한테는 265 딱 맞게 신는게 더 맞네요.\n수박270(제꺼)을 265(님꺼)로 교환하실분 계실까요?\n집안에서 테스트로 신어보기만 했습니다.\n010-2079-4211",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/9113fbb5fbd7d4d2d264454cd35ebe6a.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/b753b154eb90f8e436c8c5b433888a0e.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "깔창이 평평해 편하지 않고 발이 안쪽으로 쏠림, 굴곡 맞춘 깔창 제안",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "270 대신 265가 맞아 다른 구매자와 맞교환 희망(연락처 명시)",
+            "confidence": 0.95,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목은 교환 같지만 본문은 다른 구매자에게 맞교환을 구하는 것이라 양도·거래(전화번호 명시)로 판정",
+        "confidence": 0.85,
+        "tags": [
+          "#사용성",
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111001": {
+      "id": "111001",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "막내에게 선물",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111001/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-04 14:48:59",
+      "views": "0",
+      "content": "전업 자녀, 막내에게 선물한 슬리퍼..\n오래 기다린 시간 덕에 귀하고 소중한 슬리퍼..\n어서 취업해서 이걸 실내화로 신었으면 하는 바램을 가져본다 ㅎ",
+      "images": [],
+      "hashtags": [
+        "#선물"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#선물"
+            ],
+            "summary": "막내에게 선물한 슬리퍼, 귀하고 소중하다고 표현",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오래 기다린 끝에 수령, 정상 과정",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "선물 및 호평, 기다림은 정상 과정이라 중립",
+        "confidence": 0.9,
+        "tags": [
+          "#선물"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "111000": {
+      "id": "111000",
+      "product_name": "해바라기",
+      "product_id": "302",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "오래기다릴만함",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111000/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-04 14:47:01",
+      "views": "0",
+      "content": "처음으로 칼을 구입함..\n근 1년 반을 기다려 받았는데..\n너무 잘 들어서 손도 많이 베고(살짝), 요리를 하고 채를 써는 것에 취미가 생김..\n그래 난 솜씨가 없는 게 아니라 도구가 문제였던 거야!!\n자신감도 생김 ㅎ\n뉴공, 너무나 고맙습니다..\n좋은 상품 선별해서 알려주셔서..\n오늘도 주문한 여름 양말, 바지 등을 기다리면서 ㅋ",
+      "images": [],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "칼이 매우 잘 들어 요리에 자신감과 취미가 생김",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "1년 반을 기다려 받았고 다른 주문도 기다리는 중",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "좋은 상품을 선별해 소개해준 것에 감사",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제품 호평, 기다림은 정상, 상품 선별에 대한 감사 표현",
+        "confidence": 0.85,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
+    },
+    "110997": {
+      "id": "110997",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "제품 성형 확인바랍니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/110997/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-04 12:53:24",
+      "views": "0",
+      "content": "주문한 상품중 왼쪽은 성형이 양호한데 비해 오른쪽은 앞쪽이 찌그러진 상태의 성형이라 미관상도 나쁘고 신었을때 발 상단이 걸리는 ㅂㄷㆍㄹ편감이 있네요..보내주는 사진 보시고 이 현상의 윈인과 해결점 부탁드립니다..연락주세요..",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/66bb43555e14f6563e771c52836e5e36.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/220ebea932532f7f545416186a064b5f.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/3751bcadc68e3b1bd46a25b0c807b4aa.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/04/6594531da2359ebc33a1a7f669300323.jpg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#마감",
+              "#사용성"
+            ],
+            "summary": "오른쪽 제품 앞쪽이 찌그러진 성형으로 미관상 나쁘고 신을 때 발등이 걸려 원인과 해결 요청",
+            "confidence": 0.9,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본인이 겪은 성형 불량을 서술하고 회사에 해결을 요청해 교환·반품",
+        "confidence": 0.9,
+        "tags": [
+          "#마감",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-05"
     }
   },
   "daily_logs": [
@@ -210979,9 +211390,23 @@
         "110958",
         "110943"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "count": 8,
+      "new_ids": [
+        "111019",
+        "111018",
+        "111017",
+        "111010",
+        "111008",
+        "111001",
+        "111000",
+        "110997"
+      ]
     }
   ],
-  "last_updated": "2026-10-04 08:00:21",
+  "last_updated": "2026-10-05 08:00:28",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
