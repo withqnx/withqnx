@@ -207019,6 +207019,213 @@
         "disagree": false
       },
       "crawled_date": "2026-10-05"
+    },
+    "111058": {
+      "id": "111058",
+      "product_name": "세종 스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "필기감 Good 👍",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111058/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-06 07:39:22",
+      "views": "0",
+      "content": "필기감 매우 좋아서 세종만년필만 쓰고 있어요. 초록색 볼 수록 진하게 좋아요. 아직 황금연두, 블랙진주? 는 기다리는 중이에요. 필기감 너무 흡족해서 상품후기를 안쓸 수 없네요. 감사합니다.~~",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#색상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "필기감이 매우 좋고 흡족해 후기를 남김",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#색상"
+            ],
+            "summary": "초록색이 볼수록 진하고 좋음",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "다른 색상은 아직 기다리는 중",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감 호평은 근거 없는 전반 호평이라 #첫인상, 색상 칭찬은 #색상 분리, 다른 색 대기는 정상 대기라 중립",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상",
+          "#색상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-06"
+    },
+    "111029": {
+      "id": "111029",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "잘 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111029/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-05 15:37:37",
+      "views": "0",
+      "content": "녹두로 덧경+케이스까지 잘 받았습니다.\n무엇 하나 맘에 안드는 것이 없네요.\n아주 가볍고 색상도 너무 이쁘네요.\n나머지 제품도 설레이며 기다려 보겠습니다.\n역시 망설임없이 구매하시라. 그래야 빠르다.",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#색상",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#무게감"
+            ],
+            "summary": "아주 가볍다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#색상"
+            ],
+            "summary": "색상이 너무 예쁘다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "맘에 안 드는 것이 하나도 없음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "덧경과 케이스를 받았고 나머지 제품은 기다리는 중",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가벼움·색상·전반 만족을 나누고, 수령 및 나머지 대기는 정상 과정이라 중립",
+        "confidence": 0.9,
+        "tags": [
+          "#무게감",
+          "#색상",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-06"
+    },
+    "111024": {
+      "id": "111024",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "좋아요~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111024/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-05 08:46:55",
+      "views": "0",
+      "content": "발 볼이 넓어서 크게 주문했어요.\n슬리퍼인데도 클래식해보이고 발가락 안보여서\n다양한 장소에서 신을거 같아요~\n저의 못난이 발을 감춰져서 맘 편히 신어욧ㅎ",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/05/bd5c260262cfbabda710465a7f756002.jpeg"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#디자인"
+            ],
+            "summary": "슬리퍼인데 클래식해 보이고 발가락이 안 보여 다양한 장소에서 신기 좋음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "맘 편히 신을 수 있어 만족",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "발 볼 때문에 크게 주문한 것은 사실 서술이고 불만이 없어, 디자인 호평과 전반 만족으로 분류",
+        "confidence": 0.85,
+        "tags": [
+          "#디자인",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-06"
     }
   },
   "daily_logs": [
@@ -211404,9 +211611,18 @@
         "111000",
         "110997"
       ]
+    },
+    {
+      "date": "2026-10-06",
+      "count": 3,
+      "new_ids": [
+        "111058",
+        "111029",
+        "111024"
+      ]
     }
   ],
-  "last_updated": "2026-10-05 08:00:28",
+  "last_updated": "2026-10-06 08:00:23",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
