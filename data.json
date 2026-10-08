@@ -208723,6 +208723,618 @@
         "disagree": false
       },
       "crawled_date": "2026-10-08"
+    },
+    "111630": {
+      "id": "111630",
+      "product_name": "발옷5종 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "양말이 작아 발가락이 압박되어 불편해요!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111630/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-09 07:31:36",
+      "views": "0",
+      "content": "제일 큰 사이즈인 250 ~ 290",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "가장 큰 사이즈(250~290)인데도 작아 발가락이 압박되어 불편",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목에 사이즈가 작아 불편하다는 불만이 명시됨; 교환 요청 언급은 없음",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111627": {
+      "id": "111627",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "배송 빠릅니다. 상품 만족합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111627/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-09 02:44:55",
+      "views": "0",
+      "content": "배송 빠릅니다. 상품 만족합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/09/0165867a63b0e5ed12dee17d937b79bf.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "배송이 빠르다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "상품에 만족",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "배송 호평과 근거 없는 상품 만족 표현",
+        "confidence": 0.95,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111624": {
+      "id": "111624",
+      "product_name": "와",
+      "product_id": "377",
+      "product_link": "https://nonohumble.com/product/와/377/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/8a975d93f9291ab524a86fbee1d302ea.png",
+      "title": "잘 받았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111624/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-09 01:14:58",
+      "views": "0",
+      "content": "생각했던것 보다 크고 이쁘네요.",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈",
+              "#첫인상"
+            ],
+            "summary": "생각보다 크고 예쁘다",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "크기와 외관에 대한 긍정 평가; 크기가 기대보다 크다는 것을 호평으로 해석",
+        "confidence": 0.85,
+        "tags": [
+          "#사이즈",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111622": {
+      "id": "111622",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "실물이 훨씬 고급스럽네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111622/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-09 00:19:10",
+      "views": "0",
+      "content": "기대했던것 보다 훨씬 예쁘고 고급스러워서\n대 만족 입니다 ,오래 가다린 보람이 있어요",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#첫인상"
+            ],
+            "summary": "기대보다 예쁘고 고급스러워 대만족",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오래 기다린 보람이 있다",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "배송_기다림서술"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "고급스럽다는 만듦새 호평, 기다림은 선주문 후생산의 정상 과정이라 중립",
+        "confidence": 0.95,
+        "tags": [
+          "#퀄리티",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111619": {
+      "id": "111619",
+      "product_name": "세종필통(1구)",
+      "product_id": "375",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "세종필통",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111619/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 22:50:26",
+      "views": "0",
+      "content": "잘 받았어요. 너무 예쁩니다.\n가보로 내리물림 할 예정입니다.",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "너무 예뻐서 가보로 물려줄 예정",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평과 애정 표현",
+        "confidence": 0.95,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111617": {
+      "id": "111617",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "일년여 만에 받아보는군요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111617/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 22:28:47",
+      "views": "0",
+      "content": "은은하니 좋네요. 필기감도 부드럽고.\n좋은 종이를 찾아봐야겠어요.\n안그래도 악필인데 번지기까지 하니까 ㅎㅎ\n다음엔 한지를 이용한 만년필북 같은건 출시 어떨까요 ㅎㅎ",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질"
+            ],
+            "summary": "은은하고 필기감이 부드러워 좋다",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "종이에 따라 번지는 점을 언급하며 좋은 종이를 찾아보겠다고 함",
+            "confidence": 0.75,
+            "category": "문의",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "한지를 이용한 만년필북 출시를 제안",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "일년여 만에 수령",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감 호평, 번짐은 종이 탓으로 보며 불만 아님, 신제품 제안, 긴 대기는 정상 과정이라 중립",
+        "confidence": 0.75,
+        "tags": [
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111604": {
+      "id": "111604",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "멋진 제품이군요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111604/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-08 19:36:53",
+      "views": "0",
+      "content": "덧경 메밀 51 네모 구입했는데\n기간은 오래걸렸지만\n만듬새며 구성이며 아주 맘에 듭니다.\n겸선몰 앞으로도 대박나시고 멋진 아이템 발굴해서 많이 소개해 주셔요\n쫄지마!! 김어준 뉴스공장! !!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/08/07daae90a53171b5025df9b901045008.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#구성"
+            ],
+            "summary": "만듦새와 구성이 아주 마음에 든다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "기간은 오래 걸렸다",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "쇼핑몰의 번창과 좋은 아이템 소개를 응원",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": true,
+        "reasoning": "상품 호평, 긴 소요는 정상 과정이라 중립, 쇼핑몰 응원은 긍정 소통으로 처리",
+        "confidence": 0.85,
+        "tags": [
+          "#퀄리티",
+          "#구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111596": {
+      "id": "111596",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "만족 ^^ 대만족",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111596/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 18:16:58",
+      "views": "0",
+      "content": "용과, 블루베리 두 켤레 주문했는데\n크기도 맞춘듯 딱이고",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈",
+              "#첫인상"
+            ],
+            "summary": "크기가 딱 맞고 대만족",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 적합과 전반적 만족",
+        "confidence": 0.95,
+        "tags": [
+          "#사이즈",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111556": {
+      "id": "111556",
+      "product_name": "해바라기",
+      "product_id": "302",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "역시 장인의 작품 .. 너무 좋습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111556/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 15:33:30",
+      "views": "0",
+      "content": "장인의 손길로 만든 ..\n결재하고 근 일년여 걸려\n올해 초 상품 배송 받고 ...\n근 십개월 사용 중입니다.",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#내구성"
+            ],
+            "summary": "장인의 작품으로 약 10개월째 잘 사용 중",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "결제 후 약 1년 걸려 수령",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "장기 사용 만족과 만듦새 호평, 긴 대기는 정상 과정이라 중립",
+        "confidence": 0.9,
+        "tags": [
+          "#퀄리티",
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111521": {
+      "id": "111521",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "양말은 역시 좋네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111521/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 13:18:13",
+      "views": "0",
+      "content": "전에 양말 했을때도 사서 잘 신고 있는데 조금 두꺼운 감이 있어서 여름용으로 나왔으면 좋겠다고 생각했었는데\n이번에 얇은 것으로 나와서 바로 구매해서 신었더니 역시 좋네요\n이번에 살때는 어머니꺼도 같이 사드렸는데 어머니꺼는 이번달 말에 온다네요\n잘 신고 있습니다",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#선물"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "기존 양말에 만족해 얇은 신제품을 바로 구매했고 역시 좋다",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "이전엔 여름용 얇은 양말 출시를 바랐으나 이미 출시되어 구매함",
+            "confidence": 0.8,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "어머니 것은 이번 달 말 도착 예정",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#선물"
+            ],
+            "summary": "어머니 것도 함께 구매",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재구매와 만족은 긍정, 과거 제안은 이미 반영되어 중립, 분할 도착은 정상 과정",
+        "confidence": 0.8,
+        "tags": [
+          "#첫인상",
+          "#선물"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-09"
+    },
+    "111501": {
+      "id": "111501",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "우와!!~~~~~ 우와!!!~~~~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/111501/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-08 10:44:32",
+      "views": "0",
+      "content": "우와!!~~~~~ 우와!!!~~~~~ 우와!!~~~",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "감탄사로 만족을 표현",
+            "confidence": 0.8,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체적 근거 없이 감탄만 있는 호평",
+        "confidence": 0.8,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-09"
     }
   },
   "daily_logs": [
@@ -213157,9 +213769,26 @@
         "111307",
         "111283"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "count": 11,
+      "new_ids": [
+        "111630",
+        "111627",
+        "111624",
+        "111622",
+        "111619",
+        "111617",
+        "111604",
+        "111596",
+        "111556",
+        "111521",
+        "111501"
+      ]
     }
   ],
-  "last_updated": "2026-10-08 08:00:47",
+  "last_updated": "2026-10-09 08:00:36",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
