@@ -18,7 +18,7 @@ META = f"{HERE}/product_meta.json"
 CATS = ["의류", "패션잡화", "문구", "생활", "식품", "공예"]
 SENT = ["긍정", "중립", "부정"]
 INTENTS = ["교환·반품", "문의", "제품제안", "재구매희망", "양도·거래"]
-EXCLUDE_NAME = re.compile(r"추가 ?구매|추가구매|심지 추가|준비중")
+EXCLUDE_NAME = re.compile(r"추가 ?구매|추가구매|준비중")   # 심지 추가는 소속 파인라이너로 센다(2026-10-11 이석원)
 QUOTE = 150
 
 
