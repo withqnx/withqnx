@@ -85,6 +85,10 @@ def load_roster():
     return roster
 
 
+# 같은 파트너가 노트마다 다르게 적힌 경우 — 정본(브레인 노트)이 통일될 때까지 대시보드에서만 묶는다(2026-10-11).
+PARTNER_ALIAS = {"H2C": "H2C 하경록 대표", "박종진": "박종진 소장", "아라크나인": "아라크나인 김은우"}
+
+
 def roster_to_meta(roster):
     """명부를 레포에 둘 수 있는 평평한 형태로: 상품id → 제품 정보(또는 집계 제외 None)."""
     out = {}
@@ -97,7 +101,8 @@ def roster_to_meta(roster):
         out[pid] = {"key": info["key"], "name": info["name"], "num": info["num"], "pilot": info["pilot"],
                     "mall": info["mall"], "status": fm.get("status", "판매종료" if info["pilot"] else ""),
                     "season": fm.get("season", ""),
-                    "partners": partner if isinstance(partner, list) else ([partner] if partner else []),
+                    "partners": list(dict.fromkeys(PARTNER_ALIAS.get(x, x) for x in
+                                                   (partner if isinstance(partner, list) else ([partner] if partner else [])))),
                     "cats": [c for c in (fm.get("tags") or []) if c in CATS]}
     return out
 
