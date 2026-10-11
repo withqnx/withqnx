@@ -85,8 +85,9 @@ def load_roster():
     return roster
 
 
-# 같은 파트너가 노트마다 다르게 적힌 경우 — 정본(브레인 노트)이 통일될 때까지 대시보드에서만 묶는다(2026-10-11).
-PARTNER_ALIAS = {"H2C": "H2C 하경록 대표", "박종진": "박종진 소장", "아라크나인": "아라크나인 김은우"}
+# 파트너 표기는 브레인 노트가 정본(척척이가 2026-10-11 «회사 + 대표 한 명»으로 통일, frontmatter_sync.py PARTNER_CANON).
+# 다시 어긋나는 표기가 생겼을 때만 여기에 임시로 넣는다.
+PARTNER_ALIAS = {}
 
 
 def roster_to_meta(roster):
