@@ -9,6 +9,7 @@
 import json, os, re, subprocess, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from classify_pending import claude_env, find_claude
+from taxonomy import derive_category
 
 SP = "/private/tmp/claude-501/-Volumes-Mall-new--DATA-NONOHUMBLE-REVIEW/d7f023e1-5fe8-456a-84b2-a7d29e89bc8f/scratchpad"
 BATCH = int(os.environ.get("VERIFY_BATCH", "30"))
@@ -147,8 +148,33 @@ def auto_ok_type(sg):
     return None
 
 
+def decided_type(sg):
+    """이석원이 유형별로 정한 감정(2026-10-11 확인판). (유형 이름, 정해진 감정) 또는 None.
+    정해진 감정이 1차와 다르면 1차를 그 값으로 바꾼다."""
+    a, b = sg.get("sentiment"), sg.get("verify")
+    intent, aspect = sg.get("intent") or "없음", sg.get("aspect")
+    if intent == "재구매희망":
+        return None
+    if aspect == "배송·포장" and a == "중립" and b == "부정":
+        return "배송기간_서술", "중립"      # "오래 기다렸다"는 사실 서술은 보통
+    if aspect == "배송·포장" and a == "긍정" and b == "중립":
+        return "잘받았다_인사", "중립"
+    if intent != "없음" or aspect != "상품":
+        return None
+    if a == "중립" and b == "긍정":
+        return "단점_받아들임", "중립"      # "빳빳하지만 길들 것 같다"
+    if a == "긍정" and b == "중립":
+        return "사실만_서술", "중립"        # "공장장 사인이 들어 있었다"
+    if a == "부정" and b == "긍정":
+        return "칭찬속_작은아쉬움", "부정"
+    if b == "부정" and a in ("중립", "긍정"):
+        return "가벼운_불편", "부정"        # "그립감이 애매해 적응 중"
+    return None
+
+
 def mark_review(clf):
-    """세그먼트별 판정을 보고 disagree(원래 불일치)·needs_review(사람이 볼 것)를 다시 계산."""
+    """세그먼트별 판정을 보고 disagree(원래 불일치)·needs_review(사람이 볼 것)를 다시 계산.
+    이석원이 정한 유형이면 그 감정으로 정리하고(_decided에 원래 1차를 남김), 나머지만 사람에게 올린다."""
     dis = need = False
     for sg in clf.get("segments") or []:
         sg.pop("_auto_ok", None)
@@ -159,8 +185,20 @@ def mark_review(clf):
         t = auto_ok_type(sg)
         if t:
             sg["_auto_ok"] = t
-        else:
+            continue
+        d = decided_type(sg)
+        if not d:
             need = True
+            continue
+        name, val = d
+        if val == sg.get("sentiment"):
+            sg["_auto_ok"] = name
+        else:
+            sg["_decided"] = {"rule": name, "from": sg.get("sentiment")}
+            sg["sentiment"] = val
+            sg["category"] = derive_category(sg)
+            if val != v:
+                sg["_auto_ok"] = name
     clf["disagree"] = dis
     clf["needs_review"] = need
 

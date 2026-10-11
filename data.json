@@ -4922,10 +4922,11 @@
             "summary": "맨살에 입기엔 거칠거칠해 이너 착용을 권장",
             "confidence": 0.85,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "디자인 호평과 재질 관련 불편을 분리",
         "confidence": 0.85,
         "tags": [
@@ -7328,18 +7329,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#구성"
             ],
             "summary": "공장장 싸인이 동봉되어 옴",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "여러 속성에 대한 구체적 호평을 분리",
         "confidence": 0.85,
         "tags": [
@@ -8890,15 +8895,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#선물"
             ],
             "summary": "친구와 올케에게 선물용으로 각각 다른 색상을 주문함",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -8913,7 +8922,7 @@
             "verify": "부정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "마감·선물 호평과 체형상 핏 불만을 분리",
         "confidence": 0.85,
         "tags": [
@@ -16579,18 +16588,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#구성"
             ],
             "summary": "응원 카드가 동봉되어 있었음",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품 착용감과 동봉품 평가를 분리",
         "confidence": 0.85,
         "tags": [
@@ -25221,7 +25234,8 @@
             "summary": "새 제품이라 빳빳하지만 길들면 나아질 것으로 기대",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -25258,7 +25272,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "정치 관련 서술은 제외, 나머지는 제품/배송 관련 세부 평가로 분리",
         "confidence": 0.8,
         "tags": [
@@ -25295,13 +25309,17 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "배송에 만족한다는 제목대로 무리없이 수령",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "잘받았다_인사",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -25317,7 +25335,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제목에서 배송 만족을 명시해 별도 세그먼트로 분리",
         "confidence": 0.85,
         "tags": [
@@ -28874,7 +28892,8 @@
             "summary": "바지 끈 조절 방식보다 고무줄이 더 편할 것 같다는 의견",
             "confidence": 0.8,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           },
           {
             "aspect": "상품",
@@ -28889,7 +28908,7 @@
             "verify": "부정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제목의 예쁘다와 본문의 두 가지 아쉬움을 분리",
         "confidence": 0.8,
         "tags": [
@@ -35202,7 +35221,8 @@
             "summary": "사이즈가 작은 편이나 본인 체구에는 적당함",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -35229,7 +35249,7 @@
             "_auto_ok": "제품제안"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "여러 속성을 각각 서술해 세분화, 각 축은 본문에 명시됨",
         "confidence": 0.8,
         "tags": [
@@ -35680,16 +35700,20 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "짧게 잘 받았다는 후기",
             "confidence": 0.7,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "잘받았다_인사",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "본문 내용이 없어 판단 근거 부족",
         "confidence": 0.7,
         "tags": [],
@@ -35917,7 +35941,8 @@
             "summary": "네모난 모양이 파지법에 다소 어색하지만 불편하지는 않음",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -35932,7 +35957,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "여러 세부 평가를 각각 분리, 완화된 불편은 중립으로 판정",
         "confidence": 0.75,
         "tags": [
@@ -38518,16 +38543,17 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [],
             "summary": "출시 전 검증을 강화해 실망 후기를 줄여달라는 피드백",
             "confidence": 0.8,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_gold": "이석원 2026-10-11 (확인판 하나씩)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품별 상반된 평가와 회사에 대한 정책적 피드백을 분리",
         "confidence": 0.8,
         "tags": [
@@ -38536,7 +38562,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "65"
@@ -40888,7 +40914,8 @@
             "summary": "안경집은 아직 미수령, 3월 배송 예정이라 분할배송으로 이해하고 기다리는 중",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -40902,7 +40929,7 @@
             "_auto_ok": "제품제안"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "본품 만족, 부속품 대기(분할배송 이해), 후속 시즌 제안을 분리",
         "confidence": 0.75,
         "tags": [
@@ -48725,10 +48752,11 @@
             "summary": "3개월 넘게 기다려 받음, 해외주문보다 오래 걸렸다는 언급",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "약속 위반 등 구체적 불편 서술 없이 대기 기간만 언급",
         "confidence": 0.75,
         "tags": [],
@@ -52708,10 +52736,11 @@
             "summary": "오래 쓰면 가죽 표면이 어떻게 변할지 기대된다고 서술",
             "confidence": 0.7,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제목(만년필)과 본문(지갑) 내용이 어긋나 대상 상품 판단이 애매함",
         "confidence": 0.7,
         "tags": [
@@ -53000,10 +53029,11 @@
             "summary": "기대만큼 대단하진 않지만 제법 잘 나온 편이라고 평가",
             "confidence": 0.7,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "재질에 대한 담담한 평가와 마감/구성/가격에 대한 긍정 평가, 총평이 구분됨",
         "confidence": 0.7,
         "tags": [
@@ -55065,7 +55095,8 @@
             "summary": "처음이라 뻣뻣하지만 시간이 지나면 부드러워질 것이라는 기대",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -55080,7 +55111,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "선물 경험담과 재질 평가, 향후 기대를 분리",
         "confidence": 0.8,
         "tags": [
@@ -55670,18 +55701,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#첫인상"
             ],
             "summary": "디자인이 예뻐서 보관하며 감상만 하는 중",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "실사용 불편함과 디자인 만족이 함께 서술됨",
         "confidence": 0.85,
         "tags": [
@@ -57643,16 +57678,20 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "안경에 이어 케이스까지 오늘 잘 받았다는 안내",
             "confidence": 0.9,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "잘받았다_인사",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "분할배송된 부속품을 무사히 받았다는 긍정 후기",
         "confidence": 0.9,
         "tags": [],
@@ -59620,7 +59659,8 @@
             "summary": "몇 달 기다려서 받았다",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -59633,7 +59673,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "정상 대기 후 판매 게시글",
         "confidence": 0.85,
         "tags": [],
@@ -61653,10 +61693,11 @@
             "summary": "255 사이즈 구입 공지를 보고 재구매를 고려하는 것으로 보임",
             "confidence": 0.45,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_gold": "이석원 2026-10-11 (확인판 하나씩)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "두번째 문장이 문법적으로 불완전해 의도 파악이 애매함",
         "confidence": 0.45,
         "tags": [
@@ -61665,7 +61706,7 @@
         ],
         "_v3": true,
         "_conf_low": true,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "71"
@@ -63182,10 +63223,11 @@
             "summary": "정사이즈인데 살짝 헐렁해 쿠션패드로 보완",
             "confidence": 0.85,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "만족 요소와 사이즈 헐거움을 구분",
         "confidence": 0.85,
         "tags": [
@@ -63898,7 +63940,8 @@
             "summary": "배송이 늦어져 계절에 안 맞게 신게 됨",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -63937,7 +63980,7 @@
             "verify": "부정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "지연은 중립, 보풀·가격·설명 부족 불만을 각각 분리",
         "confidence": 0.75,
         "tags": [
@@ -66141,7 +66184,8 @@
             "summary": "가격이 비싸 많이 구매하지 못함",
             "confidence": 0.85,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           },
           {
             "aspect": "상품",
@@ -66154,7 +66198,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "가격 불만과 재구매 희망을 별도 축으로 분리",
         "confidence": 0.85,
         "tags": [
@@ -67776,18 +67820,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#첫인상"
             ],
             "summary": "브랜드를 애정하며 다음엔 더 좋은 제품을 기대함",
             "confidence": 0.75,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "하자를 서술한 뒤 원인을 묻는 질문이라 부정+문의로 판정",
         "confidence": 0.75,
         "tags": [
@@ -68714,15 +68762,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#구성"
             ],
             "summary": "장지갑으로 쓸 수 있고 핸드폰도 수납 가능",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -68748,7 +68800,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "상대는 회사가 아닌 다른 구매자이므로 양도·거래로 판정",
         "confidence": 0.8,
         "tags": [
@@ -71009,10 +71061,11 @@
             "summary": "보풀 이슈 후기를 보고 확인했으나 처음 세탁 시 조금 보였을 뿐 크게 문제되지 않음",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "다각도 호평과 보풀에 대한 유보적 평가를 분리",
         "confidence": 0.8,
         "tags": [
@@ -71235,15 +71288,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#선물"
             ],
             "summary": "결혼기념일 선물로 부부가 함께 구매함",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -71258,7 +71315,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "긴 대기는 정상 과정이라 중립",
         "confidence": 0.85,
         "tags": [
@@ -72289,7 +72346,8 @@
             "summary": "추가 주문은 5일 차이인데 배송은 3개월 텀",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -72305,7 +72363,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "주문-배송 텀 언급은 독촉 없이 담백해 중립 처리",
         "confidence": 0.75,
         "tags": [
@@ -75753,7 +75811,8 @@
             "summary": "두 번째 주문한 제품을 3개월 이상 차이로 받았다",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -75792,7 +75851,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "수령 간격(중립), 초기 하자, 개선된 사용감, 전반적 만족을 분리",
         "confidence": 0.8,
         "tags": [
@@ -77374,10 +77433,11 @@
             "summary": "다른 후기 힌트로 뚜껑 닫은 채 여는 방법을 알게 되어 무리없이 사용",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "배송 지연은 있었지만 제품 사용감에 매우 만족",
         "confidence": 0.75,
         "tags": [
@@ -77489,10 +77549,11 @@
             "summary": "향후 출시될 홈가운도 기대됨",
             "confidence": 0.7,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "보풀 언급에도 재구매 의사를 밝혀 긍정으로 판단",
         "confidence": 0.7,
         "tags": [
@@ -79847,7 +79908,8 @@
             "summary": "만년필 컬렉션이 하나씩 늘어난다는 소감",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -79862,7 +79924,7 @@
             "verify": "부정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "냄새는 마감 태그로 분류되는 품질 이슈",
         "confidence": 0.75,
         "tags": [
@@ -81599,15 +81661,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#무게감"
             ],
             "summary": "손잡이 부분이 묵직함",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -81622,7 +81688,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "질감 서술이 호불호 판단없이 특징만 나열되어 중립 처리",
         "confidence": 0.75,
         "tags": [
@@ -83947,10 +84013,11 @@
             "summary": "가격 부담으로 하나만 구매해 아쉬움",
             "confidence": 0.8,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "색상 만족과 가격 부담을 분리",
         "confidence": 0.8,
         "tags": [
@@ -88026,18 +88093,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#사용성"
             ],
             "summary": "젓가락, 숟가락 받침대로 활용 중",
             "confidence": 0.8,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "첫인상 호평과 실사용 용도를 분리",
         "confidence": 0.8,
         "tags": [
@@ -88660,15 +88731,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#사용성"
             ],
             "summary": "그립감이 애매해 아직 적응 중이고 본체 분리도 적응 중",
             "confidence": 0.8,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "중립"
+            }
           },
           {
             "aspect": "상품",
@@ -88684,18 +88759,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#사용성"
             ],
             "summary": "잉크가 잘 나오지만 심하게 흔들면 흘러나올 수 있어 조심해야 함",
             "confidence": 0.8,
-            "category": "긍정",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "수령 사실, 적응 중인 사용감, 사양 불일치, 잉크 특성을 분리",
         "confidence": 0.75,
         "tags": [
@@ -89363,7 +89442,8 @@
             "summary": "사이즈가 커게 나와 정사이즈로도 넉넉함",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -89400,7 +89480,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "장단점이 뒤섞인 신발 후기, 각 서술을 축별로 분리",
         "confidence": 0.75,
         "tags": [
@@ -89978,13 +90058,14 @@
           },
           {
             "aspect": "응대·소통",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "없음",
             "tags": [],
             "summary": "제작 전 사이즈 변경 요청이 반영됨",
             "confidence": 0.75,
-            "category": "중립/단순수령",
-            "verify": "긍정"
+            "category": "긍정",
+            "verify": "긍정",
+            "_gold": "이석원 2026-10-11 (확인판 하나씩)"
           },
           {
             "aspect": "상품",
@@ -90008,7 +90089,8 @@
             "summary": "겸손 구두는 정사이즈임",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -90023,7 +90105,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "배송 정상 대기, 사이즈 변경 응대, 제품 만족을 분리",
         "confidence": 0.75,
         "tags": [
@@ -92607,7 +92689,8 @@
             "summary": "주문 후 10개월 만에 받음",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -92634,7 +92717,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "동봉 안내문 관련 헷갈림은 상품 aspect의 #사용성으로 분류, 이미 해결된 사안이라 문의 아닌 없음",
         "confidence": 0.7,
         "spec_problems": [
@@ -93296,18 +93379,22 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#디자인"
             ],
             "summary": "부드러운 금속펜이라는 모순적 매력을 표현",
             "confidence": 0.55,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "매우 짧고 함축적인 문구라 해석의 여지가 큼",
         "confidence": 0.55,
         "tags": [
@@ -93540,7 +93627,8 @@
             "summary": "처음 여는 게 조금 버벅였지만 문제없이 사용",
             "confidence": 0.7,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           },
           {
             "aspect": "상품",
@@ -93578,7 +93666,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "버벅임은 경미한 부정으로, 나머지는 사용성 관련 긍정",
         "confidence": 0.7,
         "tags": [
@@ -93645,10 +93733,11 @@
             "summary": "여는 방법을 몰랐으나 동봉된 설명서 QR코드에서 해결책을 찾음",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "동봉 안내문 관련 사용성 이슈이나 본인이 해결해 중립으로 처리",
         "confidence": 0.75,
         "tags": [
@@ -93702,7 +93791,8 @@
             "summary": "뒤꿈치를 덜 잡아주지만 전통 신발의 선을 살린 특성으로 이해",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -93718,7 +93808,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "핏 지적을 특성으로 수용하는 뉘앙스라 중립 처리",
         "confidence": 0.75,
         "tags": [
@@ -101961,18 +102051,22 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#사이즈"
             ],
             "summary": "컴팩트한 사이즈로 기대되나 아직 사용 전",
             "confidence": 0.7,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사용 전 상태라 평가 근거가 약함",
         "confidence": 0.7,
         "tags": [
@@ -103937,10 +104031,11 @@
             "summary": "주변 선물용으로 추가 구매함",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "만족·대기·선물목적 구매를 분리",
         "confidence": 0.8,
         "tags": [
@@ -104608,7 +104703,8 @@
             "summary": "6개월 만에 제품을 받음",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "배송·포장",
@@ -104621,7 +104717,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "본품은 받았고 부속품 수령 시점을 묻는 담백한 문의",
         "confidence": 0.85,
         "tags": [],
@@ -105461,19 +105557,24 @@
             "confidence": 0.95,
             "tags": [],
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#구성"
             ],
             "summary": "펜레스트가 동봉되어 있음",
             "confidence": 0.8,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -105536,7 +105637,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "여러 관찰(구성·무게감·색상·디자인)을 각각 분리, 필기감 차이는 중립적 서술",
         "confidence": 0.75,
         "tags": [
@@ -106862,15 +106963,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#사이즈"
             ],
             "summary": "생각보다 크게(왕큼) 나옴",
             "confidence": 0.7,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -106904,7 +107009,8 @@
             "summary": "안쪽 실밥 정리가 덜 된 부분이 있으나 큰 문제로 여기지 않음",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -106919,7 +107025,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "재질·사이즈·마감을 세분화, 추가구매 아쉬움은 재구매희망",
         "confidence": 0.7,
         "tags": [
@@ -109171,10 +109277,11 @@
             "summary": "만년필 좋아하는 지인에게 선물하려고 구매해둠",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "퀄리티 긍정과 선물 목적 구분",
         "confidence": 0.85,
         "tags": [
@@ -110495,10 +110602,11 @@
             "summary": "겨울 주문, 한여름에 수령했고 몇 개월 더 기다려야 함",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "약속 위반·연락두절 등 실제 불편 서술 없이 선주문 특성상 기다림",
         "confidence": 0.8,
         "tags": [],
@@ -110532,10 +110640,11 @@
             "summary": "만년필은 1년 만에 수령, 베개샘은 아직 미수령으로 기다리는 중",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "실제 불편 서술 없이 선주문 특성상 기다림",
         "confidence": 0.8,
         "tags": [],
@@ -111487,18 +111596,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#선물"
             ],
             "summary": "나머지 디자인은 지인 선물용으로 구매",
             "confidence": 0.8,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "보풀·촉감·길이·선물용도를 각각 분리, 모두 명시적 근거 있음",
         "confidence": 0.8,
         "tags": [
@@ -111728,15 +111841,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#선물"
             ],
             "summary": "가족에게 선물하려고 구매",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -111751,7 +111868,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "촉감·선물용도·전반적 호평을 분리",
         "confidence": 0.8,
         "tags": [
@@ -114247,10 +114364,11 @@
             "summary": "후원 목적으로 구매했다며 응원 메시지",
             "confidence": 0.55,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품 자체에 대한 구체적 평가가 없어 판단 근거 부족",
         "confidence": 0.55,
         "tags": [],
@@ -116205,10 +116323,11 @@
             "summary": "95사이즈인데 작게 느껴짐, 본인 체형 탓으로 돌림",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "불만이나 요청 없이 사이즈 소감만 서술",
         "confidence": 0.75,
         "tags": [
@@ -120254,10 +120373,11 @@
             "summary": "여름이 다 지나서야 제품을 받음",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "선주문 후생산 정상 과정으로 간주",
         "confidence": 0.85,
         "tags": [
@@ -120293,10 +120413,11 @@
             "summary": "여름이 다 지나서야 제품을 받음",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "단순 수령 시점 언급",
         "confidence": 0.9,
         "tags": [],
@@ -122558,10 +122679,11 @@
             "summary": "배송에 4개월 넘게 소요됨",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "색상 아쉬움과 디자인·소재·핏 만족, 정상 대기 기간을 구분",
         "confidence": 0.9,
         "tags": [
@@ -122644,10 +122766,11 @@
             "summary": "배송에 4개월 넘게 소요됨",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "색상·디자인·소재·핏 만족과 재구매 의향, 정상 대기 기간을 구분",
         "confidence": 0.9,
         "tags": [
@@ -122920,10 +123043,11 @@
             "summary": "조금 더 빨리 왔으면 올여름에 입을 수 있었을 거란 아쉬움",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "포장에 대한 긍정과 시즌 내 수령 못한 아쉬움(약속 위반은 아님)을 분리",
         "confidence": 0.85,
         "tags": [],
@@ -132936,7 +133060,8 @@
             "summary": "오래 기다린 끝에 수령함",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -132951,7 +133076,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "'끈끈한 느낌' 등 일부 문장이 불완전해 정확한 긍부정 판단이 어려움",
         "confidence": 0.7,
         "tags": [
@@ -134820,7 +134945,8 @@
             "summary": "생각보다 묵직한 첫인상",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -134835,7 +134961,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "대기 언급은 중립, 무게감은 호불호 불명확해 중립 처리",
         "confidence": 0.8,
         "tags": [
@@ -135458,7 +135584,8 @@
             ],
             "sentiment": "중립",
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -135472,7 +135599,7 @@
             "_auto_ok": "의도가_분류결정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "오타로 인한 세그먼트 재정리 필요",
         "confidence": 0.9,
         "spec_problems": [
@@ -139853,10 +139980,11 @@
             "summary": "검정 심지를 주문했으나 녹색으로 와서 그냥 사용하기로 함",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "초기 인상, 실제 사용감, 색상 오배송 수용이 섞인 후기",
         "confidence": 0.75,
         "tags": [
@@ -140637,16 +140765,20 @@
         "segments": [
           {
             "aspect": "배송·포장",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "기다리는 과정 자체를 재미있게 느낌",
             "confidence": 0.65,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "잘받았다_인사",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "단순 대기 사실을 넘어 긍정적 감상을 표현해 중립/긍정 경계가 애매함",
         "confidence": 0.65,
         "tags": [],
@@ -140884,18 +141016,22 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#퀄리티"
             ],
             "summary": "연근을 썰어보면 절단면 질감이 다르다는 품질 평가",
             "confidence": 0.6,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "칼 제품으로 추정되나 문맥이 짧아 긍/부정 방향이 애매함",
         "confidence": 0.6,
         "tags": [
@@ -141008,15 +141144,19 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#무게감"
             ],
             "summary": "예상보다 묵직한 느낌",
             "confidence": 0.9,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -141083,7 +141223,7 @@
             "_auto_ok": "작은불만_부정유지"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "세그먼트가 많지만 각 축이 본문에 명시되어 있어 감점하지 않음(규칙8)",
         "confidence": 0.8,
         "tags": [
@@ -147305,16 +147445,17 @@
           },
           {
             "aspect": "배송·포장",
-            "sentiment": "부정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "택배 오배송으로 못 받을까 걱정했으나 결국 무사히 도착",
             "confidence": 0.85,
-            "category": "배송관련불편",
-            "verify": "긍정"
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_gold": "이석원 2026-10-11 (확인판 하나씩)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품 만족평과 실제 오배송 사건(실질 불편)을 분리",
         "confidence": 0.85,
         "tags": [
@@ -147324,7 +147465,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-05-15",
       "product_id": "216"
@@ -156818,15 +156959,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#퀄리티"
             ],
             "summary": "퀄리티가 좋다고 평가",
             "confidence": 0.9,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "상품",
@@ -156839,7 +156984,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "구매자간 교환 요청, 이메일 명시로 양도·거래",
         "confidence": 0.9,
         "tags": [
@@ -163978,15 +164123,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#핏"
             ],
             "summary": "모델 같은 몸매가 아니라 다소 어색하게 느껴짐",
             "confidence": 0.7,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "중립"
+            }
           },
           {
             "aspect": "상품",
@@ -164062,7 +164211,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "핏·사용성·색상·재질에 대해 항목별로 호불호가 명확히 나뉨",
         "confidence": 0.7,
         "tags": [
@@ -165819,10 +165968,11 @@
             "summary": "M사이즈인데 예상보다 커서 편안하게 느껴짐(농담조)",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "농담조 서술로 사이즈가 크다는 지적과 편안함이 혼재해 감정 판단이 애매",
         "confidence": 0.7,
         "spec_problems": [
@@ -167332,7 +167482,8 @@
             "summary": "배송이 오래 걸려 주문 색상을 잊을 정도였음",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -167380,7 +167531,7 @@
             "verify": "중립"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "제품 만족, 재구매, 사이트 기능 제안이 함께 있음",
         "confidence": 0.75,
         "tags": [
@@ -168148,7 +168299,8 @@
             "summary": "자주 입어서 일 년 후 낡을까 걱정됨",
             "confidence": 0.75,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           },
           {
             "aspect": "상품",
@@ -168162,7 +168314,7 @@
             "_auto_ok": "제품제안"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "만족·재구매 의사와 내구성 우려, 재판매 요청이 섞여 있음",
         "confidence": 0.75,
         "tags": [
@@ -168766,7 +168918,8 @@
             "summary": "오래 기다려 지친 상태로 제품을 수령함",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -168781,7 +168934,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "기다림에 대한 중립 서술과 제품 평가가 분리됨",
         "confidence": 0.8,
         "tags": [
@@ -174874,7 +175027,8 @@
             "summary": "사이즈가 생각보다 작지만 펜을 올려놓기에는 문제없다는 평가",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -174901,7 +175055,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈 중립, 스크래치 우려 해소는 마감 태그, 자기 선물 만족은 선물 태그",
         "confidence": 0.8,
         "tags": [
@@ -174941,10 +175095,11 @@
             "summary": "소장용으로 구입했으나 실사용하게 되었다는 후기",
             "confidence": 0.7,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "구체적 평가 근거 없이 사용 경위만 서술해 태그 없이 중립 처리",
         "confidence": 0.7,
         "tags": [],
@@ -175156,10 +175311,11 @@
             "summary": "어깨선이 봉긋 올라와 어깨깡패처럼 보임",
             "confidence": 0.9,
             "category": "부정",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "어깨 실루엣에 대한 명확한 불만",
         "confidence": 0.9,
         "tags": [
@@ -178776,7 +178932,8 @@
             "summary": "반년 기다려 수령, 다음엔 조금 빠르길 기대",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -178791,7 +178948,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "정상 대기 언급과 재구매 의사를 분리, 규칙6에 따라 긍정",
         "confidence": 0.85,
         "tags": [
@@ -184208,10 +184365,11 @@
             "summary": "필기감은 다소 딱딱한 편이지만 괜찮음",
             "confidence": 0.8,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "외관 호평, 잉크 유지력 호평, 필기감은 담백한 평가로 각각 분리",
         "confidence": 0.8,
         "tags": [
@@ -185525,18 +185683,22 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#사용성"
             ],
             "summary": "자주 쓰다보니 잉크가 금방 떨어져 리필이 필요함",
             "confidence": 0.75,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "중립"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "외관 만족과 사용 특성 언급을 분리, 후자는 불만이라기보단 담백한 서술",
         "confidence": 0.75,
         "tags": [
@@ -186183,7 +186345,8 @@
             "summary": "가죽이라 여름엔 덥지만 겨울엔 따뜻할 것 같음",
             "confidence": 0.85,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -186211,7 +186374,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈·재질·사용성·첫인상 네 축이 각각 다른 톤으로 서술됨",
         "confidence": 0.85,
         "tags": [
@@ -187829,7 +187992,7 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#무게감",
@@ -187837,8 +188000,12 @@
             ],
             "summary": "모자가 살짝 무겁지만 재질이 두툼해서 그런 듯함",
             "confidence": 0.85,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "중립"
+            }
           },
           {
             "aspect": "상품",
@@ -187853,7 +188020,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈·색상·무게감은 평가 없는 사실 서술, 마지막에 만족감을 명시",
         "confidence": 0.85,
         "tags": [
@@ -196707,7 +196874,8 @@
             "summary": "잉크가 기존보다 묽은 느낌이지만 사용에 나쁘지 않음",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           },
           {
             "aspect": "상품",
@@ -196731,10 +196899,11 @@
             "summary": "용기 내구성이 받쳐준다면 재사용하고 싶다는 기대",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "긍정"
+            "verify": "긍정",
+            "_auto_ok": "단점_받아들임"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "세종 잉크 기대 언급은 다른 제품이라 제외",
         "confidence": 0.75,
         "tags": [
@@ -200777,18 +200946,22 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#첫인상"
             ],
             "summary": "제목에서 예쁘다는 평가, 본문은 의미 파악이 어려운 문구",
             "confidence": 0.5,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "본문이 노래 가사 형태라 실제 제품 평가 근거가 불명확",
         "confidence": 0.5,
         "tags": [
@@ -201978,7 +202151,7 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "부정",
             "intent": "없음",
             "tags": [
               "#핏",
@@ -201986,11 +202159,15 @@
             ],
             "summary": "기대가 컸는데 착용감·핏·질감은 평균 수준",
             "confidence": 0.7,
-            "category": "중립/단순수령",
-            "verify": "부정"
+            "category": "부정",
+            "verify": "부정",
+            "_decided": {
+              "rule": "가벼운_불편",
+              "from": "중립"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "'평균'이라는 표현은 뚜렷한 호오 없이 담백한 평가로 판단",
         "confidence": 0.7,
         "tags": [
@@ -202076,7 +202253,8 @@
             "summary": "배송이 빠를 거라 생각했으나 그렇지 않았음",
             "confidence": 0.75,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "상품",
@@ -202093,7 +202271,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "가벼운 어조의 배송 지연 언급은 실제 불편 서술이 아니라 중립, 제품은 강한 긍정",
         "confidence": 0.75,
         "tags": [
@@ -202142,16 +202320,20 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [],
             "summary": "계절용 같지만 사계절 내내 신을 계획",
             "confidence": 0.8,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "사이즈 고민은 확정적 불만이 아니라 담백한 서술로 중립 처리",
         "confidence": 0.7,
         "tags": [
@@ -207204,15 +207386,19 @@
         "segments": [
           {
             "aspect": "상품",
-            "sentiment": "긍정",
+            "sentiment": "중립",
             "intent": "없음",
             "tags": [
               "#선물"
             ],
             "summary": "아내 박사학위 기념 선물로 구매",
             "confidence": 0.85,
-            "category": "긍정",
-            "verify": "중립"
+            "category": "중립/단순수령",
+            "verify": "중립",
+            "_decided": {
+              "rule": "사실만_서술",
+              "from": "긍정"
+            }
           },
           {
             "aspect": "배송·포장",
@@ -207225,7 +207411,7 @@
             "verify": "부정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "선물 구매와, 만년필 미수령에 대한 독촉성 문의(부속품 규칙 3의 질책 포함)로 분리",
         "confidence": 0.85,
         "tags": [
@@ -209520,7 +209706,8 @@
             "summary": "기간은 오래 걸렸다",
             "confidence": 0.9,
             "category": "중립/단순수령",
-            "verify": "부정"
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
           },
           {
             "aspect": "응대·소통",
@@ -209533,7 +209720,7 @@
             "verify": "긍정"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "상품 호평, 긴 소요는 정상 과정이라 중립, 쇼핑몰 응원은 긍정 소통으로 처리",
         "confidence": 0.85,
         "tags": [
@@ -210603,10 +210790,11 @@
             "summary": "언제 다시 구매할 수 있는지 문의",
             "confidence": 0.85,
             "category": "긍정",
-            "verify": "중립"
+            "verify": "중립",
+            "_gold": "이석원 2026-10-11 (확인판 하나씩)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "맛을 칭찬하며 재구매 의사를 밝혀 긍정",
         "confidence": 0.85,
         "tags": [
@@ -210614,7 +210802,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-10-10"
     },
