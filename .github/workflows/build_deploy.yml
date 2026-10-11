@@ -47,6 +47,7 @@ jobs:
         run: |
           mkdir -p .cf_deploy
           python intel/render.py --site .cf_deploy/index.html   # 첫 화면 = 새 대시보드
+          mkdir -p .cf_deploy/fonts && cp fonts/Paperlogy-4Regular.ttf fonts/Paperlogy-5Medium.ttf fonts/Paperlogy-6SemiBold.ttf fonts/Paperlogy-7Bold.ttf .cf_deploy/fonts/   # 옛 디자인 글꼴
           # 관리자 화면·Publish 함수는 2026-10-11 이석원 지시로 내렸다(배포하지 않음)
           rm -rf functions   # wrangler는 작업 폴더의 functions/를 자동으로 올리므로 CI 작업본에서 지운다
           # fetch failed 등 일시 오류 대비 — 최대 3회 재시도

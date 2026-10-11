@@ -1,37 +1,27 @@
 <title>겸손몰 후기 인텔리전스</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap">
 <style>
-/* 레이아웃: 왼쪽 목차 + 오른쪽 한 줄 본문. 위에서 아래로 «요약 → 먼저 볼 것 → 근거» 순서. 청자(靑瓷)빛 강조 한 가지. */
+/* 옛 대시보드 디자인 시스템(검은 바탕·금색 강조·Paperlogy·Playfair Display)을 그대로 쓰되, 글자 크기와 대비는 읽기 쉬운 수준을 유지한다.
+   레이아웃: 왼쪽 목차 + 오른쪽 한 줄 본문, 위에서 아래로 «요약 → 먼저 볼 것 → 근거». 한 가지 테마(어두움)로 고정. */
+@font-face{font-family:'Paperlogy';font-weight:400;src:url('fonts/Paperlogy-4Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Paperlogy';font-weight:500;src:url('fonts/Paperlogy-5Medium.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Paperlogy';font-weight:600;src:url('fonts/Paperlogy-6SemiBold.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Paperlogy';font-weight:700;src:url('fonts/Paperlogy-7Bold.ttf') format('truetype');font-display:swap}
 :root{
-  --bg:#f4f6f5; --surface:#ffffff; --sunken:#eef2f0;
-  --ink:#15201c; --ink-2:#3f4c48; --ink-3:#5d6a66; --line:#d9e0dd; --line-2:#c5cfcb;
-  --accent:#1d6b5c; --accent-ink:#ffffff; --accent-soft:#e1efea;
-  --good:#2a78d6; --neutral:#a3aba8; --bad:#d8413f;
-  --good-soft:#e3eefb; --bad-soft:#fbe7e6;
-  --heat-0:#f3f5f4; --heat-1:#f7d5d2; --heat-2:#eea39d; --heat-3:#e0675f; --heat-4:#b83430;
-  --font-display:'Gowun Batang','Nanum Myeongjo',AppleMyungjo,ui-serif,Georgia,serif;
-  --font-body:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  color-scheme:dark;
+  --bg:#000000; --surface:#121317; --sunken:#1c1d22;
+  --ink:#e2e3e9; --ink-2:#acafb9; --ink-3:#8c8f9c; --line:#1c1d22; --line-2:#2c2e35;
+  --accent:#cc9166; --accent-ink:#000000; --accent-soft:#241a12;
+  --good:#60a5fa; --neutral:#6e717d; --bad:#ef4444;
+  --good-soft:#12223a; --bad-soft:#3a1414;
+  --heat-0:#121317; --heat-1:#3d1a1a; --heat-2:#6e2424; --heat-3:#b03131; --heat-4:#ef4444;
+  --font-display:'Playfair Display','Paperlogy',ui-serif,Georgia,serif;
+  --font-body:'Paperlogy','Inter','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
   --fs-xs:12.5px; --fs-sm:13.5px; --fs-md:15px; --fs-lg:17px; --fs-xl:22px; --fs-2xl:30px; --fs-3xl:40px;
   --r:10px; --gap:16px;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0f1312; --surface:#171c1b; --sunken:#1d2321;
-  --ink:#eef3f1; --ink-2:#bdc7c3; --ink-3:#95a19c; --line:#2a3331; --line-2:#3a4542;
-  --accent:#62c4ad; --accent-ink:#0b1210; --accent-soft:#1a2e29;
-  --good:#3f8de8; --neutral:#65706c; --bad:#e86a67;
-  --good-soft:#18263a; --bad-soft:#3a1d1c;
-  --heat-0:#1b2120; --heat-1:#4a2523; --heat-2:#7a302d; --heat-3:#b3403b; --heat-4:#e8736e;
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0f1312; --surface:#171c1b; --sunken:#1d2321;
-  --ink:#eef3f1; --ink-2:#bdc7c3; --ink-3:#95a19c; --line:#2a3331; --line-2:#3a4542;
-  --accent:#62c4ad; --accent-ink:#0b1210; --accent-soft:#1a2e29;
-  --good:#3f8de8; --neutral:#65706c; --bad:#e86a67;
-  --good-soft:#18263a; --bad-soft:#3a1d1c;
-  --heat-0:#1b2120; --heat-1:#4a2523; --heat-2:#7a302d; --heat-3:#b3403b; --heat-4:#e8736e;
-  color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--fs-md);line-height:1.65;
@@ -62,7 +52,7 @@ main{min-width:0;padding-inline:clamp(16px,4vw,48px);padding-block:32px 72px}
 .wrap{max-width:1120px;display:flex;flex-direction:column;gap:28px}
 .head{display:flex;flex-direction:column;gap:6px}
 .eyebrow{font-size:var(--fs-sm);color:var(--ink-3)}
-h1{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:700;line-height:1.3;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:500;line-height:1.3;margin:0;letter-spacing:-.015em;text-wrap:balance}
 h2{font-size:var(--fs-lg);font-weight:600;margin:0;line-height:1.4;text-wrap:balance}
 h3{font-size:var(--fs-md);font-weight:600;margin:0}
 .lead{font-size:var(--fs-lg);color:var(--ink-2);max-width:62ch;margin:0}
@@ -182,7 +172,7 @@ tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .heat td{width:44px;min-width:44px;height:34px;text-align:center;border-radius:5px;border:0;padding:0;font-variant-numeric:tabular-nums;font-weight:600;cursor:default}
 .heat td.h0{background:var(--heat-0);color:var(--ink-3);font-weight:400}
 .heat td.h1{background:var(--heat-1);color:var(--ink)} .heat td.h2{background:var(--heat-2);color:var(--ink)}
-.heat td.h3{background:var(--heat-3);color:#fff} .heat td.h4{background:var(--heat-4);color:#fff}
+.heat td.h3{background:var(--heat-3);color:#fff} .heat td.h4{background:var(--heat-4);color:#000}
 .legend-heat{display:flex;align-items:center;gap:4px;font-size:var(--fs-xs);color:var(--ink-3)}
 .legend-heat i{width:22px;height:12px;border-radius:3px;display:inline-block}
 
