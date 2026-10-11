@@ -145,8 +145,11 @@ def main():
                 "n": 0, "sent": [0, 0, 0], "tags": collections.Counter(), "neg": collections.Counter(),
                 "intent": collections.Counter(), "series": collections.defaultdict(lambda: [0, 0, 0, 0]),
                 "first": "9999", "last": "0000", "pos_q": [], "neg_q": [], "pid": pid,
+                "pos": collections.Counter(), "imgs": collections.Counter(), "tq": collections.defaultdict(list),
             }
         p["mall"].add(info["mall"])
+        if r.get("product_img"):
+            p["imgs"][r["product_img"]] += 1
         p["n"] += 1
         d = r.get("written_at") or ""
         p["first"], p["last"] = min(p["first"], d), max(p["last"], d)
@@ -163,6 +166,10 @@ def main():
                 p["tags"][t] += 1; tag_all[t] += 1
                 if si == 2:
                     p["neg"][t] += 1; tag_neg[t] += 1
+                if si == 0:
+                    p["pos"][t] += 1
+                if si in (0, 2) and s.get("summary"):   # 세분류별 대표 요약(좋음/나쁨)
+                    p["tq"][(t, si)].append((len(r.get("content") or "") > 60, d[:10], s["summary"], r.get("review_link", "")))
             it = s.get("intent")
             if it in INTENTS:
                 p["intent"][it] += 1
@@ -200,6 +207,14 @@ def main():
         p["mall"] = sorted(p["mall"])
         p["tags"] = dict(p["tags"].most_common())
         p["neg"] = dict(p["neg"].most_common())
+        p["pos"] = dict(p["pos"].most_common())
+        p["img"] = p["imgs"].most_common(1)[0][0] if p["imgs"] else ""
+        ex = {}
+        for (t, si), lst in p["tq"].items():
+            lst.sort(reverse=True)
+            ex.setdefault(t, {})["g" if si == 0 else "b"] = [{"s": x[2], "link": x[3]} for x in lst[:2]]
+        p["tex"] = ex
+        del p["imgs"], p["tq"]
         p["intent"] = dict(p["intent"])
         p["series"] = [[m] + v for m, v in sorted(p["series"].items()) if m]
         p["first"], p["last"] = p["first"][:10], p["last"][:10]

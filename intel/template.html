@@ -194,6 +194,32 @@ tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .plist button:focus-visible{outline:3px solid var(--accent);border-radius:3px}
 .plist .n{text-align:right;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .empty{padding:28px 8px;text-align:center;color:var(--ink-3)}
+.thumb{border-radius:8px;object-fit:cover;background:var(--sunken);flex:0 0 auto;vertical-align:middle;border:1px solid var(--line)}
+.thumb.ph{display:inline-block}
+.pc-txt{display:flex;flex-direction:column;min-width:0;line-height:1.35}
+.rank .pname button,.plist button{display:inline-flex;align-items:center;gap:8px}
+.phead{display:flex;gap:18px;align-items:center}
+.phead .thumb{border-radius:14px}
+.insight{background:var(--accent-soft);border-radius:var(--r);padding:18px 22px;display:flex;flex-direction:column;gap:8px}
+.insight h2{font-size:var(--fs-md);color:var(--ink-2)}
+.insight ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:var(--fs-lg);line-height:1.55}
+.ld{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.ld-top{display:grid;grid-template-columns:76px minmax(0,1fr) 40px;gap:10px;align-items:center;font-size:var(--fs-sm)}
+.ld-name{font-weight:600;font-size:var(--fs-md)}
+.ld-bar{height:12px;background:var(--sunken);border-radius:4px;overflow:hidden;display:block}
+.ld-bar i{display:block;height:100%;border-radius:0 4px 4px 0}
+.ld-bar i.g{background:var(--good)} .ld-bar i.b{background:var(--bad)}
+.ld-n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.ld-ex{display:block;margin:3px 0 0 86px;font-size:var(--fs-sm);color:var(--ink-3);text-decoration:none}
+.ld-ex:hover{color:var(--accent);text-decoration:underline}
+.pgrid .plist li{grid-template-columns:minmax(0,1fr) 64px 40px}
+.plist button{min-width:0;max-width:100%}
+.plist .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.linkbtn{all:unset;cursor:pointer;color:var(--ink)}
+.linkbtn:hover{text-decoration:underline;text-underline-offset:3px}
+.linkbtn:focus-visible{outline:3px solid var(--accent);border-radius:4px}
+h2 .dot{vertical-align:1px}
+@media (max-width:620px){.ld-ex{margin-left:0}.phead .thumb{width:64px;height:64px}}
 
 @media (max-width:960px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}.cols{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:820px){
@@ -246,10 +272,7 @@ tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
         <button class="tab" data-view="requests">고객 요청<span class="badge" id="b-requests"></span></button>
         <button class="tab" data-view="queue">확인 대기<span class="badge warn" id="b-queue"></span></button>
       </nav>
-      <nav class="menu" aria-label="관리">
-        <div class="menu-label">관리</div>
-        <a class="tab" href="admin.html" style="text-decoration:none">분류 고치기<span class="badge">관리자</span></a>
-      </nav>
+
     </div>
     <div class="rail-foot" id="rail-foot"></div>
   </aside>
@@ -295,6 +318,37 @@ const MIN_N = 40;   // 비율로 줄 세울 때 최소 후기 수
 const mallLink = p => p.pid ? `https://nonohumble.com/product/detail.html?product_no=${p.pid}` : '';
 const label = p => p.pilot ? p.name : p.name;
 const numChip = p => `<span class="chip no">${p.pilot ? '파일럿' : esc(p.num)}</span>`;
+const thumb = (p, size = 44) => p.img ? `<img class="thumb" src="${esc(p.img)}" width="${size}" height="${size}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.style.visibility='hidden'">` : `<span class="thumb ph" style="width:${size}px;height:${size}px" aria-hidden="true"></span>`;
+// 세분류(태그)별 칭찬·불만
+function tagStats(pos, neg) {
+  return [...new Set([...Object.keys(pos || {}), ...Object.keys(neg || {})])].map(k => ({ k, name: tagName(k), g: (pos || {})[k] || 0, b: (neg || {})[k] || 0 }));
+}
+const jo = (w, a, b) => { const c = w.charCodeAt(w.length - 1); return (c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28) ? a : b; };
+function insights(rows) {
+  const out = [];
+  const G = rows.filter(r => r.g).sort((a, b) => b.g - a.g), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b);
+  const gT = G.reduce((a, r) => a + r.g, 0), bT = B.reduce((a, r) => a + r.b, 0);
+  if (G.length) out.push(G[1] ? `칭찬은 «${G[0].name}»${jo(G[0].name, '과', '와')} «${G[1].name}» 이야기에 가장 많습니다. 둘을 합치면 칭찬의 ${pct(G[0].g + G[1].g, gT)}%입니다.` : `칭찬은 «${G[0].name}» 이야기에 가장 많습니다.`);
+  if (B.length) { const sh = pct(B[0].b, bT);
+    out.push(sh >= 35 ? `불만은 «${B[0].name}»에 몰려 있습니다. 불만의 ${sh}%가 이 이야기입니다.` : (B[1] ? `불만은 «${B[0].name}»(${B[0].b}개), «${B[1].name}»(${B[1].b}개) 등으로 흩어져 있습니다.` : `불만은 «${B[0].name}» 이야기에서 나옵니다.`)); }
+  const split = rows.filter(r => r.g >= 5 && r.b >= 5 && r.b / (r.g + r.b) >= .35 && r.b / (r.g + r.b) <= .65).sort((a, b) => (b.g + b.b) - (a.g + a.b))[0];
+  if (split) out.push(`«${split.name}»${jo(split.name, '은', '는')} 칭찬 ${split.g}개, 불만 ${split.b}개로 사람마다 평가가 갈립니다.`);
+  const bad = rows.filter(r => r.b >= 5 && r.b / (r.g + r.b) > .65 && r !== B[0]).sort((a, b) => b.b - a.b)[0];
+  if (bad) out.push(`«${bad.name}» 이야기가 나오면 ${pct(bad.b, bad.g + bad.b)}%가 불만입니다.`);
+  const good = rows.filter(r => r.g >= 10 && r.g / (r.g + r.b) >= .9 && r !== G[0]).sort((a, b) => b.g - a.g)[0];
+  if (good) out.push(`«${good.name}»${jo(good.name, '은', '는')} 거의 칭찬만 받습니다(칭찬 ${good.g}개, 불만 ${good.b}개).`);
+  return out.length ? out : ['세분류가 붙은 이야기가 아직 적어서 정리할 만한 흐름이 없습니다.'];
+}
+function likeDislike(rows, ex, n = 6) {
+  const G = rows.filter(r => r.g).sort((a, b) => b.g - a.g).slice(0, n), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b).slice(0, n);
+  const max = Math.max(1, ...G.map(r => r.g), ...B.map(r => r.b));
+  const list = (arr, k, cls) => arr.length ? `<ul class="ld">${arr.map(r => { const e = ((ex || {})[r.k] || {})[k] || [];
+    return `<li><div class="ld-top"><span class="ld-name">${esc(r.name)}</span><span class="ld-bar"><i class="${cls}" style="width:${r[k] / max * 100}%"></i></span><span class="ld-n">${fmt(r[k])}</span></div>${e[0] ? `<a class="ld-ex" href="${esc(e[0].link)}" target="_blank" rel="noopener">“${esc(e[0].s)}”</a>` : ''}</li>`; }).join('')}</ul>` : '<p class="muted">아직 없습니다.</p>';
+  return `<div class="cols">
+    <section class="panel" aria-labelledby="h-like"><div class="panel-head"><h2 id="h-like"><i class="dot g"></i> 마음에 든 점</h2><span class="small muted">세분류별 칭찬 개수</span></div>${list(G, 'g', 'g')}</section>
+    <section class="panel" aria-labelledby="h-dislike"><div class="panel-head"><h2 id="h-dislike"><i class="dot b"></i> 마음에 안 든 점</h2><span class="small muted">세분류별 불만 개수</span></div>${list(B, 'b', 'b')}</section></div>`;
+}
+const insightBox = rows => `<section class="insight" aria-labelledby="h-ins"><h2 id="h-ins">한눈에 보는 인사이트</h2><ul>${insights(rows).map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
 
 const sbar = (s, h) => {
   const t = s[0] + s[1] + s[2] || 1;
@@ -368,7 +422,7 @@ function vOverview() {
   const tags = M.tags.map(k => ({ name: tagName(k), all: M.tag_all[k] || 0, neg: M.tag_neg[k] || 0 })).sort((a, b) => b.neg - a.neg).slice(0, 8);
   const tmax = Math.max(...tags.map(x => x.all));
   const topBad = worst[0];
-  const rankRow = (p, v, why) => `<li><div class="pname"><button data-open="${esc(p.key)}">${esc(label(p))}</button><span class="why">${why}</span></div>${sbar(p.sent)}<span class="pct">${v}%</span></li>`;
+  const rankRow = (p, v, why) => `<li><div class="pname"><button data-open="${esc(p.key)}">${thumb(p, 28)} ${esc(label(p))}</button><span class="why">${why}</span></div>${sbar(p.sent)}<span class="pct">${v}%</span></li>`;
   return `
   <header class="head"><div class="eyebrow">${esc(M.updated?.slice(0, 10))} 아침 기준 · 매일 08:00 새로 모읍니다</div>
     <h1>후기 속 이야기의 ${pct(t[2], T)}%가 불만입니다</h1>
@@ -414,37 +468,32 @@ function vProducts() {
 }
 function renderPTable() {
   const rows = productRows(), el = $('#ptable'); if (!el) return;
-  el.innerHTML = rows.length ? `<div class="tbl-wrap"><table><caption class="sr">제품별 후기 반응</caption><thead><tr><th scope="col">제품</th><th scope="col" class="r">후기</th><th scope="col">반응</th><th scope="col" class="r">불만</th><th scope="col" class="hide-sm">주된 불만</th><th scope="col" class="r hide-sm">마지막 후기</th></tr></thead><tbody>${rows.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${numChip(p)}<b>${esc(label(p))}</b></div></td><td class="r">${fmt(p.n)}</td><td style="min-width:130px">${sbar(p.sent)}</td><td class="r">${badShare(p)}%</td><td class="hide-sm">${topNeg(p, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td class="r hide-sm muted">${esc(p.last)}</td></tr>`).join('')}</tbody></table></div>${keyRow()}`
+  const tops = (o, n) => Object.keys(o || {}).slice(0, n);
+  el.innerHTML = rows.length ? `<div class="tbl-wrap"><table><caption class="sr">제품별 후기 반응</caption><thead><tr><th scope="col">제품</th><th scope="col" class="r">후기</th><th scope="col">마음에 든 점</th><th scope="col">마음에 안 든 점</th><th scope="col" class="hide-sm">반응</th></tr></thead><tbody>${rows.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p)}<div class="pc-txt"><b>${esc(label(p))}</b><span class="small muted">${p.pilot ? '파일럿' : esc(p.num)}${p.cats[0] ? ' · ' + esc(p.cats[0]) : ''}</span></div></div></td><td class="r">${fmt(p.n)}</td><td>${tops(p.pos, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td>${tops(p.neg, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td class="hide-sm" style="min-width:110px">${sbar(p.sent, 10)}</td></tr>`).join('')}</tbody></table></div>${keyRow()}`
     : `<div class="empty">찾는 제품이 없습니다. 찾기 칸을 비우거나 분류를 «전체»로 바꿔 보세요.</div>`;
 }
 
 // ── 보기: 제품 상세 ──
+const backBtn = (go, t) => `<button class="back" data-go="${go}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>${t}</button>`;
 function vProduct(key) {
   const p = byKey[key]; if (!p) return `<p>제품을 찾을 수 없습니다.</p>`;
-  const t = total(p);
-  const tagRows = Object.keys(p.tags).slice(0, 8).map(k => ({ name: tagName(k), all: p.tags[k], neg: p.neg[k] || 0 }));
-  const tmax = Math.max(1, ...tagRows.map(r => r.all));
+  const t = total(p), rows = tagStats(p.pos, p.neg);
   const req = Object.entries(p.intent).sort((a, b) => b[1] - a[1]);
   const q = (arr, cls) => arr.length ? arr.map(x => `<div class="quote ${cls}"><span class="s">${esc(x.s)}</span><span class="c">“${esc(x.c)}${x.c.length >= 150 ? '…' : ''}”</span><span class="m">${esc(x.d)} · <a href="${esc(x.link)}" target="_blank" rel="noopener">원문 보기</a></span></div>`).join('') : '<p class="muted">해당하는 후기가 없습니다.</p>';
   return `
-  <button class="back" data-go="products"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>제품 목록</button>
-  <header class="head"><div class="facts">${numChip(p)}${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}${p.cats.map(c => `<span class="chip">${esc(c)}</span>`).join('')}</div>
+  ${backBtn('products', '제품 목록')}
+  <header class="phead">${thumb(p, 96)}<div class="head">
+    <div class="facts">${numChip(p)}${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}${p.cats.map(c => `<button class="chip" data-cat="${esc(c)}" style="cursor:pointer">${esc(c)}</button>`).join('')}</div>
     <h1>${esc(label(p))}</h1>
-    <p class="lead">${p.partners.length ? '함께 만든 곳: ' + p.partners.map(esc).join(', ') : (p.pilot ? '텐밀희 이전 파일럿이라 번호와 파트너사가 없습니다.' : '파트너사 정보가 명부에 없습니다.')}</p>
-    <p class="small muted">겸손몰 등록명: ${p.mall.map(esc).join(' · ')}${mallLink(p) ? ` · <a href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰에서 보기</a>` : ''}</p></header>
-  <section class="figures" aria-label="${esc(p.name)} 주요 숫자">
-    <div class="fig"><span class="k">후기</span><span class="v">${fmt(p.n)}<small>건</small></span><span class="d">${esc(p.first)} ~ ${esc(p.last)}</span></div>
-    <div class="fig"><span class="k">좋았다는 이야기</span><span class="v">${goodShare(p)}<small>%</small></span><span class="d">${fmt(p.sent[0])}개 / 전체 ${fmt(t)}개</span></div>
-    <div class="fig ${badShare(p) >= 35 ? 'alert' : ''}"><span class="k">불만</span><span class="v">${badShare(p)}<small>%</small></span><span class="d">${fmt(p.sent[2])}개 · 보통 ${pct(p.sent[1], t)}%</span></div>
-    <div class="fig"><span class="k">고객 요청</span><span class="v">${fmt(req.reduce((a, r) => a + r[1], 0))}<small>건</small></span><span class="d"><a href="#requests" data-req-prod="${esc(p.key)}">요청 목록 보기</a></span></div>
-  </section>
+    <p class="small muted" style="margin:0">후기 ${fmt(p.n)}건 · ${esc(p.first)} ~ ${esc(p.last)}${p.partners.length ? ' · 함께 만든 곳 ' + p.partners.map(esc).join(', ') : ''}${mallLink(p) ? ` · <a href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰에서 보기</a>` : ''}</p></div></header>
+  ${insightBox(rows)}
+  ${likeDislike(rows, p.tex)}
   <div class="cols">
-    <section class="panel" aria-labelledby="h-good"><h2 id="h-good">좋았던 점</h2><div class="quotes">${q(p.pos_q, 'g')}</div></section>
-    <section class="panel" aria-labelledby="h-bad"><h2 id="h-bad">아쉬운 점</h2><div class="quotes">${q(p.neg_q, 'b')}</div></section>
+    <section class="panel" aria-labelledby="h-good"><h2 id="h-good">좋았다는 후기</h2><div class="quotes">${q(p.pos_q, 'g')}</div></section>
+    <section class="panel" aria-labelledby="h-bad"><h2 id="h-bad">아쉬웠다는 후기</h2><div class="quotes">${q(p.neg_q, 'b')}</div></section>
   </div>
-  <section class="panel" aria-labelledby="h-ptags"><div class="panel-head"><div><h2 id="h-ptags">자주 나온 주제</h2><p class="small muted">회색은 전체, 빨강은 그중 불만</p></div></div>${tagRows.length ? hbars(tagRows, tmax) : '<p class="muted">주제 표시가 없습니다.</p>'}</section>
   <section class="panel" aria-labelledby="h-req"><h2 id="h-req">고객이 요청한 것</h2><div class="seg">${req.length ? req.map(([k, v]) => `<button data-req-prod="${esc(p.key)}" data-req-type="${esc(k)}">${esc(INT_LABEL[k] || k)}<span class="c">${fmt(v)}</span></button>`).join('') : '<span class="muted">요청이 없습니다.</span>'}</div></section>
-  <section class="panel" aria-labelledby="h-pm"><div class="panel-head"><h2 id="h-pm">달마다 들어온 이야기</h2>${keyRow()}</div>${monthChart(p.series)}</section>
+  <section class="panel" aria-labelledby="h-pm"><div class="panel-head"><div><h2 id="h-pm">달마다 들어온 이야기</h2><p class="small muted">전체 이야기 ${fmt(t)}개 중 좋음 ${goodShare(p)}% · 보통 ${pct(p.sent[1], t)}% · 나쁨 ${badShare(p)}%</p></div>${keyRow()}</div>${monthChart(p.series)}</section>
   ${compass()}`;
 }
 
@@ -463,19 +512,48 @@ function vIssues() {
 }
 
 // ── 보기: 분류별 ──
-function vCategories() {
+function catGroups() {
   const cats = {};
   P.filter(p => !p.pilot).forEach(p => (p.cats.length ? p.cats : ['분류 없음']).forEach(c => (cats[c] = cats[c] || []).push(p)));
-  const order = Object.entries(cats).sort((a, b) => b[1].reduce((s, p) => s + p.n, 0) - a[1].reduce((s, p) => s + p.n, 0));
+  return cats;
+}
+function catAgg(ps) {
+  const pos = {}, neg = {}, ex = {}, best = {};
+  ps.forEach(p => {
+    Object.entries(p.pos || {}).forEach(([k, v]) => pos[k] = (pos[k] || 0) + v);
+    Object.entries(p.neg || {}).forEach(([k, v]) => neg[k] = (neg[k] || 0) + v);
+    Object.entries(p.tex || {}).forEach(([k, e]) => ['g', 'b'].forEach(s => {   // 대표 요약은 그 세분류가 가장 많은 제품에서
+      const v = (s === 'g' ? p.pos : p.neg)[k] || 0;
+      if (e[s] && v > (best[k + s] || 0)) { best[k + s] = v; (ex[k] = ex[k] || {})[s] = e[s].map(x => ({ ...x, s: `${p.name} · ${x.s}` })); }
+    }));
+  });
+  return { pos, neg, ex };
+}
+function vCategories() {
+  const order = Object.entries(catGroups()).sort((a, b) => b[1].reduce((s, p) => s + p.n, 0) - a[1].reduce((s, p) => s + p.n, 0));
   return `
   <header class="head"><div class="eyebrow">분류 ${order.length}개</div><h1>분류별 반응</h1>
-    <p class="lead">분류는 브레인 제품 노트에 적힌 값을 따릅니다. 제품 이름을 누르면 자세히 볼 수 있습니다.</p></header>
+    <p class="lead">분류 이름을 누르면 그 분류에서 무엇이 마음에 들었고 무엇이 아쉬웠는지 볼 수 있습니다.</p></header>
   <div class="pgrid">${order.map(([c, ps]) => {
-    const s = ps.reduce((a, p) => [a[0] + p.sent[0], a[1] + p.sent[1], a[2] + p.sent[2]], [0, 0, 0]);
-    const n = ps.reduce((a, p) => a + p.n, 0);
-    return `<section class="panel" aria-labelledby="c-${esc(c)}"><div class="panel-head"><h2 id="c-${esc(c)}">${esc(c)}</h2><span class="small muted num">후기 ${fmt(n)}건 · 불만 ${pct(s[2], s[0] + s[1] + s[2])}%</span></div>${sbar(s, 14)}
-      <ul class="plist">${ps.sort((a, b) => b.n - a.n).map(p => `<li><button data-open="${esc(p.key)}">${esc(p.name)}</button>${sbar(p.sent, 10)}<span class="n">${fmt(p.n)}</span></li>`).join('')}</ul></section>`;
-  }).join('')}</div>${keyRow()}`;
+    const a = catAgg(ps), n = ps.reduce((x, p) => x + p.n, 0);
+    const g = Object.entries(a.pos).sort((x, y) => y[1] - x[1]).slice(0, 2).map(x => tagName(x[0])), b = Object.entries(a.neg).sort((x, y) => y[1] - x[1]).slice(0, 2).map(x => tagName(x[0]));
+    return `<section class="panel"><div class="panel-head"><h2><button class="linkbtn" data-cat="${esc(c)}">${esc(c)}</button></h2><span class="small muted num">제품 ${ps.length}개 · 후기 ${fmt(n)}건</span></div>
+      <div class="small">${g.length ? `<span class="muted">마음에 든 점</span> ${g.map(x => `<span class="chip good">${esc(x)}</span>`).join(' ')}` : ''}</div>
+      <div class="small">${b.length ? `<span class="muted">마음에 안 든 점</span> ${b.map(x => `<span class="chip bad">${esc(x)}</span>`).join(' ')}` : ''}</div>
+      <ul class="plist">${ps.sort((x, y) => y.n - x.n).slice(0, 6).map(p => `<li><button data-open="${esc(p.key)}">${thumb(p, 26)}<span class="nm">${esc(p.name)}</span></button>${sbar(p.sent, 8)}<span class="n">${fmt(p.n)}</span></li>`).join('')}</ul>
+      <button class="more" data-cat="${esc(c)}" style="align-self:flex-start">${esc(c)} 자세히 보기</button></section>`;
+  }).join('')}</div>`;
+}
+function vCategory(c) {
+  const ps = (catGroups()[c] || []).sort((a, b) => b.n - a.n); if (!ps.length) return '<p>분류를 찾을 수 없습니다.</p>';
+  const a = catAgg(ps), rows = tagStats(a.pos, a.neg), n = ps.reduce((x, p) => x + p.n, 0);
+  return `
+  ${backBtn('categories', '분류 목록')}
+  <header class="head"><div class="eyebrow">분류 · 제품 ${ps.length}개 · 후기 ${fmt(n)}건</div><h1>${esc(c)}</h1></header>
+  ${insightBox(rows)}
+  ${likeDislike(rows, a.ex)}
+  <section class="panel"><h2>${esc(c)} 제품</h2><div class="tbl-wrap" style="border:0"><table><thead><tr><th>제품</th><th class="r">후기</th><th>마음에 든 점</th><th>마음에 안 든 점</th></tr></thead><tbody>${ps.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p, 36)}<b>${esc(p.name)}</b></div></td><td class="r">${fmt(p.n)}</td><td>${Object.keys(p.pos || {}).slice(0, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '—'}</td><td>${Object.keys(p.neg || {}).slice(0, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '—'}</td></tr>`).join('')}</tbody></table></div></section>
+  ${compass()}`;
 }
 
 // ── 보기: 파트너사별 ──
@@ -541,22 +619,23 @@ const VIEWS = { overview: vOverview, products: vProducts, issues: vIssues, categ
 let current = 'overview', openKey = null;
 function go(view, key = null, push = true) {
   current = view; openKey = key; hideTip();
-  document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-current', b.dataset.view === (view === 'product' ? 'products' : view) ? 'page' : 'false'));
-  $('#view').innerHTML = view === 'product' ? vProduct(key) : VIEWS[view]();
+  document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-current', b.dataset.view === (view === 'product' ? 'products' : view === 'category' ? 'categories' : view) ? 'page' : 'false'));
+  $('#view').innerHTML = view === 'product' ? vProduct(key) : view === 'category' ? vCategory(key) : VIEWS[view]();
   if (view === 'products') renderPTable();
   if (view === 'requests') renderReq();
-  if (push) { try { history.replaceState(null, '', '#' + (view === 'product' ? 'products' : view)); } catch (e) {} }
-  try { localStorage.setItem('intel-view', view === 'product' ? 'products' : view); } catch (e) {}
+  if (push) { try { history.replaceState(null, '', '#' + (view === 'product' ? 'products' : view === 'category' ? 'categories' : view)); } catch (e) {} }
+  try { localStorage.setItem('intel-view', view === 'product' ? 'products' : view === 'category' ? 'categories' : view); } catch (e) {}
   scrollTo({ top: 0 });
   $('#main').focus({ preventScroll: true });
 }
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-view],[data-go],[data-open],[data-req-prod],[data-rt],#r-more,#q-more');
+  const t = e.target.closest('[data-view],[data-go],[data-open],[data-cat],[data-req-prod],[data-rt],#r-more,#q-more');
   if (!t) return;
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.go) { e.preventDefault(); return go(t.dataset.go); }
   if (t.dataset.reqProd !== undefined) { e.preventDefault(); st.reqProd = t.dataset.reqProd; st.reqType = t.dataset.reqType || ''; st.reqQ = ''; st.reqShow = 40; return go('requests'); }
   if (t.dataset.open) return go('product', t.dataset.open);
+  if (t.dataset.cat) return go('category', t.dataset.cat);
   if (t.dataset.rt !== undefined) { st.reqType = t.dataset.rt; st.reqShow = 40; document.querySelectorAll('[data-rt]').forEach(b => b.setAttribute('aria-pressed', b === t)); return renderReq(); }
   if (t.id === 'r-more') { st.reqShow += 40; return renderReq(); }
   if (t.id === 'q-more') { st.qShow += 40; return go('queue', null, false); }

@@ -36,7 +36,6 @@ jobs:
 
       - name: 대시보드 HTML 빌드
         run: |
-          python deploy_nas.py                 # 관리자 화면(옛 대시보드, 분류 고치기·Publish)
           python intel/build_data.py           # 새 대시보드 데이터(data.json + intel/product_meta.json)
 
       - name: Cloudflare Pages 배포
@@ -47,8 +46,7 @@ jobs:
         run: |
           mkdir -p .cf_deploy
           python intel/render.py --site .cf_deploy/index.html   # 첫 화면 = 새 대시보드
-          cp "겸손몰 후기 분석.html" .cf_deploy/admin.html        # 관리자 화면
-          cp -r functions .cf_deploy/functions
+          # 관리자 화면·Publish 함수는 2026-10-11 이석원 지시로 내렸다(배포하지 않음)
           # fetch failed 등 일시 오류 대비 — 최대 3회 재시도
           for i in 1 2 3; do
             echo "▶ 배포 시도 $i/3"
