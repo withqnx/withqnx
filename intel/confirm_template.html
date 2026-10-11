@@ -1,0 +1,181 @@
+<title>후기 반영 확인판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* 레이아웃: 한 줄 본문, 위에서 아래로 «1 기준 확인 → 2 하나씩 고르기 → 3 대시보드 이전». 각 단계 끝에 큰 확인 버튼 하나. 청자빛 강조. */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --sunken:#eef2f0;
+  --ink:#15201c; --ink-2:#3f4c48; --ink-3:#5d6a66; --line:#d9e0dd; --line-2:#c5cfcb;
+  --accent:#1d6b5c; --accent-ink:#ffffff; --accent-soft:#e1efea;
+  --good:#2a78d6; --neutral:#5f6966; --bad:#c9383a;
+  --good-soft:#e3eefb; --neutral-soft:#eceeed; --bad-soft:#fbe7e6;
+  --font-display:'Gowun Batang','Nanum Myeongjo',AppleMyungjo,ui-serif,Georgia,serif;
+  --font-body:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --fs-xs:12.5px; --fs-sm:13.5px; --fs-md:15px; --fs-lg:17px; --fs-xl:21px; --fs-2xl:29px; --r:12px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1312; --surface:#171c1b; --sunken:#1d2321;
+  --ink:#eef3f1; --ink-2:#bdc7c3; --ink-3:#95a19c; --line:#2a3331; --line-2:#3a4542;
+  --accent:#62c4ad; --accent-ink:#0b1210; --accent-soft:#1a2e29;
+  --good:#5b9eec; --neutral:#9aa4a0; --bad:#ec7a77;
+  --good-soft:#18263a; --neutral-soft:#242b29; --bad-soft:#3a1d1c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1312; --surface:#171c1b; --sunken:#1d2321;
+  --ink:#eef3f1; --ink-2:#bdc7c3; --ink-3:#95a19c; --line:#2a3331; --line-2:#3a4542;
+  --accent:#62c4ad; --accent-ink:#0b1210; --accent-soft:#1a2e29;
+  --good:#5b9eec; --neutral:#9aa4a0; --bad:#ec7a77;
+  --good-soft:#18263a; --neutral-soft:#242b29; --bad-soft:#3a1d1c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--fs-md);line-height:1.65;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.page{max-width:780px;margin:0 auto;padding-inline:clamp(16px,4vw,32px);padding-block:32px 96px;display:flex;flex-direction:column;gap:24px}
+h1{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:700;line-height:1.3;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:var(--fs-xl);font-weight:700;margin:0;line-height:1.35}
+.lead{font-size:var(--fs-lg);color:var(--ink-2);margin:0}
+.muted{color:var(--ink-3)} .small{font-size:var(--fs-sm)}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;display:flex;flex-direction:column;gap:16px}
+.step.done{border-color:color-mix(in srgb,var(--accent) 60%,var(--line))}
+.step-head{display:flex;gap:12px;align-items:flex-start}
+.num{flex:0 0 32px;height:32px;border-radius:50%;background:var(--sunken);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step.done .num{background:var(--accent);color:var(--accent-ink)}
+.step-head p{margin:4px 0 0;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;font-size:var(--fs-sm)}
+th{white-space:nowrap;text-align:left;font-weight:600;color:var(--ink-2);padding:8px 6px;border-bottom:1px solid var(--line-2)}
+td{padding:10px 6px;border-top:1px solid var(--line);vertical-align:middle}
+td.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tname{font-weight:600;font-size:var(--fs-md)}
+.v{font-weight:600;padding:1px 9px;border-radius:99px;font-size:var(--fs-xs);white-space:nowrap}
+.v.좋음{background:var(--good-soft)} .v.보통{background:var(--neutral-soft)} .v.나쁨{background:var(--bad-soft)}
+.seg{display:inline-flex;gap:4px;flex-wrap:nowrap}
+.seg button{min-width:48px;min-height:38px;padding:4px 10px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;font-weight:600;font-size:var(--fs-sm)}
+.seg button:hover{background:var(--sunken)}
+.seg button[aria-pressed="true"].좋음{background:var(--good);border-color:transparent;color:var(--accent-ink)}
+.seg button[aria-pressed="true"].보통{background:var(--neutral);border-color:transparent;color:var(--accent-ink)}
+.seg button[aria-pressed="true"].나쁨{background:var(--bad);border-color:transparent;color:var(--accent-ink)}
+.seg button[aria-pressed="true"].each{background:var(--accent);border-color:transparent;color:var(--accent-ink)}
+.go{min-height:52px;padding:10px 22px;border-radius:12px;border:0;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:var(--fs-lg);cursor:pointer;align-self:flex-start}
+.go:disabled{opacity:.45;cursor:not-allowed}
+.go.ok{background:var(--sunken);color:var(--ink);border:1.5px solid var(--accent)}
+.note{font-size:var(--fs-sm);color:var(--ink-2);background:var(--sunken);border-radius:10px;padding:12px 14px}
+.item{border-top:1px solid var(--line);padding:14px 0;display:flex;flex-direction:column;gap:8px}
+.item:first-of-type{border-top:0}
+.item .s{font-weight:600}
+.item .t{color:var(--ink-2);font-size:var(--fs-sm)}
+.item .m{font-size:var(--fs-xs);color:var(--ink-3)}
+.save{font-size:var(--fs-xs);color:var(--ink-3)}
+.warn{background:var(--bad-soft);border-radius:10px;padding:12px 14px;font-size:var(--fs-sm)}
+ul.do{margin:0;padding-left:1.2em;color:var(--ink-2);font-size:var(--fs-sm)}
+@media (max-width:620px){.seg{flex-wrap:wrap} .step{padding:18px 16px} h1{font-size:25px} .hide-sm{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="page">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <div class="small muted">겸손몰 후기 · 리뷰쟁이 확인 요청</div>
+    <h1>세 가지만 확인해 주세요</h1>
+    <p class="lead">척척이를 통해 받은 답을 미리 채워 두었습니다. 맞으면 단계마다 확인 버튼만 누르시면 되고, 다르면 바꾼 뒤 누르세요. 누르는 즉시 저장되고, 리뷰쟁이가 그 내용대로 반영합니다.</p>
+    <div class="save" id="save" aria-live="polite">저장 연결 중…</div>
+    <div id="notice"></div>
+  </header>
+
+  <section class="step" id="s1" aria-labelledby="h1s">
+    <div class="step-head"><span class="num">1</span><div><h2 id="h1s">애매한 후기의 유형별 기준</h2><p>AI 판정 두 번이 갈린 후기를 유형마다 이렇게 셉니다. «바뀌는 수»는 지금 판정에서 실제로 바뀌는 개수입니다.</p></div></div>
+    <div style="overflow-x:auto"><table><thead><tr><th>유형</th><th class="r">건수</th><th>기준</th><th class="r hide-sm">바뀌는 수</th></tr></thead><tbody id="ttable"></tbody></table></div>
+    <div class="note" id="s1note"></div>
+    <button class="go" id="ok1">이 기준으로 반영해도 좋습니다</button>
+  </section>
+
+  <section class="step" id="s2" aria-labelledby="h2s">
+    <div class="step-head"><span class="num">2</span><div><h2 id="h2s">하나씩 고를 후기</h2><p>유형으로 묶기 어려운 후기입니다. 한 건씩 좋음·보통·나쁨을 골라 주세요.</p></div></div>
+    <div id="items"></div>
+    <div class="small muted" id="s2count"></div>
+  </section>
+
+  <section class="step" id="s3" aria-labelledby="h3s">
+    <div class="step-head"><span class="num">3</span><div><h2 id="h3s">대시보드를 새 디자인으로 옮기기</h2><p>9/30에 만든 새 시안을 실제 사이트(nonohumble-review.pages.dev)로 옮깁니다. «지금 형태 좋다, 디테일은 같이 손보자»는 답을 받았습니다.</p></div></div>
+    <ul class="do">
+      <li>화면 7개(한눈에·제품별·불만 지도·분류별·파트너사별·고객 요청·확인 대기)를 그대로 옮기고, 매일 아침 새 후기가 들어오면 자동으로 갱신되게 합니다.</li>
+      <li>후기를 고치고 저장하는 지금의 관리자 기능은 그대로 남깁니다.</li>
+      <li>옛 디자인은 git 기록에 남아 언제든 되돌릴 수 있습니다. 3~5시간 걸립니다.</li>
+    </ul>
+    <p class="small" style="margin:0"><a href="https://claude.ai/artifact/JLYfjSCF1f8q83sqis4L7y" target="_blank" rel="noopener">새 시안 다시 보기</a></p>
+    <button class="go" id="ok3">옮기기 시작해도 좋습니다</button>
+  </section>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+const TYPES = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const id = k => k.replace('#', '-');
+const choice = Object.fromEntries(TYPES.map(t => [t.id, t.dec]));
+const each = TYPES.flatMap(t => t.dec === 'each' ? t.items : []);
+const labels = {};
+let ok1 = null, ok3 = null, db = null;
+const chains = {};
+function write(path, fn) {
+  if (!db) return;
+  $('#save').textContent = '저장 중…';
+  chains[path] = (chains[path] || Promise.resolve()).then(fn).then(
+    () => $('#save').textContent = '저장됨 · ' + new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }),
+    () => $('#save').textContent = '저장하지 못했습니다. 잠시 뒤 다시 눌러 주세요.');
+}
+function render() {
+  $('#ttable').innerHTML = TYPES.map(t => {
+    const c = choice[t.id];
+    const changes = c === 'each' ? '—' : t.items.filter(x => x.first !== c).length;
+    const opts = t.id === 'other' ? [['each', '하나씩']] : [['좋음', '좋음'], ['보통', '보통'], ['나쁨', '나쁨'], ['each', '하나씩']];
+    return `<tr><td><div class="tname">${esc(t.name)}</div><div class="small muted">예: ${esc(t.items[0].summary)}</div></td><td class="r">${t.items.length}</td>
+      <td><div class="seg" role="group" aria-label="${esc(t.name)} 기준">${opts.map(([v, l]) => `<button class="${v}" aria-pressed="${c === v}" data-type="${t.id}" data-v="${v}">${l}</button>`).join('')}</div></td><td class="r hide-sm">${changes}</td></tr>`;
+  }).join('');
+  const total = TYPES.filter(t => choice[t.id] !== 'each').reduce((a, t) => a + t.items.length, 0);
+  const ch = TYPES.filter(t => choice[t.id] !== 'each').reduce((a, t) => a + t.items.filter(x => x.first !== choice[t.id]).length, 0);
+  $('#s1note').textContent = `${total}개 대목이 이 기준으로 정해지고, 그중 ${ch}개의 판정이 바뀝니다. 새로 들어오는 후기도 같은 기준으로 자동 정리됩니다. 정해진 후기는 확인 대기 목록에서 빠집니다.`;
+  const b1 = $('#ok1'); b1.className = 'go' + (ok1 ? ' ok' : ''); b1.textContent = ok1 ? '확인함 · 기준을 바꾸면 다시 눌러 주세요' : '이 기준으로 반영해도 좋습니다';
+  $('#s1').classList.toggle('done', !!ok1);
+
+  const list = TYPES.flatMap(t => choice[t.id] === 'each' ? t.items : []);
+  $('#items').innerHTML = list.map(x => `<div class="item"><span class="s">${esc(x.summary)}</span><span class="t">“${esc(x.text)}${x.text.length >= 260 ? '…' : ''}”</span>
+    <span class="m">${esc(x.product)} · ${esc(x.date)} · 처음 판정 ${esc(x.first)} / 다시 본 판정 ${esc(x.second)} · <a href="${esc(x.link)}" target="_blank" rel="noopener">원문 보기</a></span>
+    <div class="seg" role="group" aria-label="이 후기 판정">${['좋음', '보통', '나쁨'].map(v => `<button class="${v}" aria-pressed="${labels[id(x.key)] === v}" data-item="${id(x.key)}" data-v="${v}">${v}</button>`).join('')}</div></div>`).join('') || '<p class="muted">하나씩 고를 후기가 없습니다.</p>';
+  const done = list.filter(x => labels[id(x.key)]).length;
+  $('#s2count').textContent = list.length ? `${list.length}건 중 ${done}건 고름` : '';
+  $('#s2').classList.toggle('done', list.length > 0 && done === list.length);
+
+  const b3 = $('#ok3'); b3.className = 'go' + (ok3 ? ' ok' : ''); b3.textContent = ok3 ? '확인함 · 리뷰쟁이가 옮기기 시작합니다' : '옮기기 시작해도 좋습니다';
+  $('#s3').classList.toggle('done', !!ok3);
+}
+render();
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.type) {
+    choice[b.dataset.type] = b.dataset.v;
+    if (ok1) { ok1 = null; write('approve/criteria', () => db.doc('approve/criteria').set({ ok: false, choices: choice, at: new Date().toISOString() })); }
+    render(); return;
+  }
+  if (b.dataset.item) {
+    labels[b.dataset.item] = b.dataset.v; render();
+    write('labels/' + b.dataset.item, () => db.doc('labels/' + b.dataset.item).set({ sentiment: b.dataset.v, at: new Date().toISOString() })); return;
+  }
+  if (b.id === 'ok1') { ok1 = { at: new Date().toISOString() }; render(); write('approve/criteria', () => db.doc('approve/criteria').set({ ok: true, choices: choice, at: ok1.at })); return; }
+  if (b.id === 'ok3') { ok3 = { at: new Date().toISOString() }; render(); write('approve/dashboard', () => db.doc('approve/dashboard').set({ ok: true, at: ok3.at })); }
+});
+(async () => {
+  try { db = window.claude?.use ? await window.claude.use('db') : null; } catch (e) { db = null; }
+  if (!db) { $('#save').textContent = '저장 기능을 쓸 수 없습니다'; $('#notice').innerHTML = '<div class="warn">이 화면에서는 고른 내용이 리뷰쟁이에게 전달되지 않습니다. claude.ai에 로그인한 상태에서 열어 주세요.</div>'; return; }
+  $('#save').textContent = '연결됨 · 누르는 즉시 저장됩니다';
+  db.collection('approve').onSnapshot(s => {
+    s.docs.forEach(d => { const x = d.data() || {};
+      if (d.id === 'criteria') { if (x.choices) Object.assign(choice, x.choices); ok1 = x.ok ? { at: x.at } : null; }
+      if (d.id === 'dashboard') ok3 = x.ok ? { at: x.at } : null; });
+    render();
+  });
+  db.collection('labels').onSnapshot(s => { s.docs.forEach(d => { const x = d.data(); if (x && x.sentiment) labels[d.id] = x.sentiment; }); render(); });
+})();
+})();
+</script>

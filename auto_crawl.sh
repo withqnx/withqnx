@@ -81,6 +81,11 @@ if ! python3 verify_sentiment.py --new; then
   notify "겸손몰 감정 2차 판정 실패 — 1차 분류는 살아있고 다음 실행에서 재시도. 로그: $ERRLOG" "verify_sentiment.py --new 종료코드 비정상"
 fi
 
+# 2.5) 새 대시보드용 제품 명부 갱신 — 브레인 명부가 NAS에만 있어 이 맥에서만 가능. 바뀌었을 때만 커밋된다.
+if [ -d "/Volumes/Mall(new)/DATA/10MH_BRAIN/_tools" ]; then
+  python3 intel/build_data.py --meta >/dev/null 2>&1 || echo "⚠️ 제품 명부 갱신 실패 — 이전 명부로 계속"
+fi
+
 # 3) 실질 변경(후기 추가/분류 변경)이 있을 때만 커밋 + push(최대 3회 재시도)
 #    last_updated 타임스탬프만 바뀐 경우는 커밋하지 않는다(매일 빈 커밋·불필요 배포 방지)
 PUSHED=0
@@ -98,6 +103,9 @@ fi
 # groups.json 도 함께 커밋한다(변경됐을 때만) — data.json 만 올리면 그룹 정보가 어긋난다
 if ! git diff --quiet groups.json 2>/dev/null; then
   git add groups.json; STAGED=1
+fi
+if ! git diff --quiet intel/product_meta.json 2>/dev/null; then
+  git add intel/product_meta.json; STAGED=1
 fi
 if [ "$STAGED" -eq 1 ]; then
   git commit -m "🤖 Auto crawl $(date '+%Y-%m-%d %H:%M')" >/dev/null 2>&1
