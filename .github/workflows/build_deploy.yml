@@ -18,6 +18,7 @@ on:
       - 'deploy_nas.py'   # 빌드 스크립트 자체
       - 'fonts/**'        # deploy_nas.py 가 HTML에 임베드하는 폰트
       - 'intel/**'        # 새 대시보드(첫 화면) 빌드 스크립트·템플릿·제품 명부
+      - '.github/workflows/build_deploy.yml'   # 배포 방식이 바뀌면 바로 다시 배포
 
 permissions:
   contents: read
