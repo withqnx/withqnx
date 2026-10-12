@@ -12,6 +12,8 @@
    "(주)DS리테일"
   ],
   "pilot": false,
+  "sale_end": "2025-03-07",
+  "sale_start": "2025-02-25",
   "season": "3",
   "status": "판매종료"
  },
@@ -30,6 +32,8 @@
    "플랜비"
   ],
   "pilot": false,
+  "sale_end": "2025-03-07",
+  "sale_start": "2025-02-25",
   "season": "3",
   "status": "판매종료"
  },
@@ -46,12 +50,16 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-03-07",
+  "sale_start": "2025-02-25",
   "season": "3",
   "status": "판매종료"
  },
  "106": null,
  "12": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 리얼레더 가방 남성용",
   "key": "PRE 겸손 리얼레더 가방 남성용",
   "mall": "겸손 리얼레더 가방 남성용",
@@ -61,11 +69,15 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
  "13": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 한지 가방 남성용",
   "key": "PRE 겸손 한지 가방 남성용",
   "mall": "겸손 한지 가방 남성용",
@@ -75,11 +87,15 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
  "14": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 한지 가방 여성용",
   "key": "PRE 겸손 한지 가방 여성용",
   "mall": "겸손 한지 가방 여성용",
@@ -89,11 +105,15 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
  "15": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 리얼레더 가방 남성용",
   "key": "PRE 겸손 리얼레더 가방 남성용",
   "mall": "[2차 예약구매] 겸손 리얼레더 가방 남성용",
@@ -103,6 +123,8 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -119,6 +141,8 @@
    "디자인오월 이진아"
   ],
   "pilot": false,
+  "sale_end": "2025-05-30",
+  "sale_start": "2025-05-20",
   "season": "4",
   "status": "판매종료"
  },
@@ -135,6 +159,8 @@
    "디자인오월 이진아"
   ],
   "pilot": false,
+  "sale_end": "2025-05-30",
+  "sale_start": "2025-05-20",
   "season": "4",
   "status": "판매종료"
  },
@@ -151,11 +177,15 @@
    "디자인오월 이진아"
   ],
   "pilot": false,
+  "sale_end": "2025-05-30",
+  "sale_start": "2025-05-20",
   "season": "4",
   "status": "판매종료"
  },
  "17": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 한지 가방 여성용",
   "key": "PRE 겸손 한지 가방 여성용",
   "mall": "[2차 예약구매] 겸손 한지 가방 여성용",
@@ -165,6 +195,8 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -181,11 +213,15 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-06-08",
+  "sale_start": "2025-05-27",
   "season": "4",
   "status": "판매종료"
  },
  "18": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 리얼레더 가방 남성용",
   "key": "PRE 겸손 리얼레더 가방 남성용",
   "mall": "[3차 예약구매] 겸손 리얼레더 가방 남성용",
@@ -195,6 +231,8 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -211,11 +249,15 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-06-08",
+  "sale_start": "2025-05-27",
   "season": "4",
   "status": "판매종료"
  },
  "20": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 한지 가방 여성용",
   "key": "PRE 겸손 한지 가방 여성용",
   "mall": "[3차 예약구매] 겸손 한지 가방 여성용",
@@ -225,6 +267,8 @@
    "앨리스마샤 곽창훈"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -241,6 +285,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-06-08",
+  "sale_start": "2025-05-27",
   "season": "4",
   "status": "판매종료"
  },
@@ -257,6 +303,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-06-08",
+  "sale_start": "2025-05-27",
   "season": "4",
   "status": "판매종료"
  },
@@ -273,11 +321,15 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-06-08",
+  "sale_start": "2025-05-27",
   "season": "4",
   "status": "판매종료"
  },
  "24": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 울 코트 남성용",
   "key": "PRE 겸손 울 코트 남성용",
   "mall": "겸손 울 코트 남성용 - 다크카키",
@@ -287,12 +339,16 @@
    "까이에 김아영"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
  "25": null,
  "26": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 트위드 코트 남성용",
   "key": "PRE 겸손 트위드 코트 남성용",
   "mall": "겸손 트위드 코트 남성용 - 네이비",
@@ -302,6 +358,8 @@
    "까이에 김아영"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -320,6 +378,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-06-20",
+  "sale_start": "2025-06-10",
   "season": "4",
   "status": "판매종료"
  },
@@ -338,11 +398,15 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-06-20",
+  "sale_start": "2025-06-10",
   "season": "4",
   "status": "판매종료"
  },
  "27": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 트위드 잠바 남성용",
   "key": "PRE 겸손 트위드 잠바 남성용",
   "mall": "겸손 트위드 잠바 남성용",
@@ -352,11 +416,15 @@
    "까이에 김아영"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
  "28": {
-  "cats": [],
+  "cats": [
+   "파일럿"
+  ],
   "group": "PRE 겸손 트위드 잠바 여성용",
   "key": "PRE 겸손 트위드 잠바 여성용",
   "mall": "겸손 트위드 잠바 여성용",
@@ -366,6 +434,8 @@
    "까이에 김아영"
   ],
   "pilot": true,
+  "sale_end": "",
+  "sale_start": "",
   "season": "",
   "status": "판매종료"
  },
@@ -382,6 +452,8 @@
    "까이에 김아영"
   ],
   "pilot": false,
+  "sale_end": "2025-07-06",
+  "sale_start": "2025-06-23",
   "season": "4",
   "status": "판매종료"
  },
@@ -398,6 +470,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2025-07-06",
+  "sale_start": "2025-06-23",
   "season": "4",
   "status": "판매종료"
  },
@@ -414,6 +488,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2025-07-06",
+  "sale_start": "2025-06-23",
   "season": "4",
   "status": "판매종료"
  },
@@ -432,6 +508,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-07-06",
+  "sale_start": "2025-06-23",
   "season": "4",
   "status": "판매종료"
  },
@@ -450,6 +528,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-07-06",
+  "sale_start": "2025-06-23",
   "season": "4",
   "status": "판매종료"
  },
@@ -467,6 +547,8 @@
    "그림 홍성담 화가"
   ],
   "pilot": false,
+  "sale_end": "2024-05-03",
+  "sale_start": "2024-04-30",
   "season": "1",
   "status": "판매종료"
  },
@@ -483,6 +565,8 @@
    "명도산업 임정신 명인"
   ],
   "pilot": false,
+  "sale_end": "2025-07-18",
+  "sale_start": "2025-07-08",
   "season": "4",
   "status": "판매종료"
  },
@@ -499,6 +583,8 @@
    "디자인오월 이진아"
   ],
   "pilot": false,
+  "sale_end": "2024-05-10",
+  "sale_start": "2024-05-05",
   "season": "1",
   "status": "판매종료"
  },
@@ -517,6 +603,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2025-11-30",
+  "sale_start": "2025-11-11",
   "season": "5",
   "status": "판매종료"
  },
@@ -534,6 +622,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2025-11-30",
+  "sale_start": "2025-11-11",
   "season": "5",
   "status": "판매종료"
  },
@@ -550,6 +640,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-05-17",
+  "sale_start": "2024-05-14",
   "season": "1",
   "status": "판매종료"
  },
@@ -566,6 +658,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-05-17",
+  "sale_start": "2024-05-14",
   "season": "1",
   "status": "판매종료"
  },
@@ -582,6 +676,8 @@
    "까이에 김아영"
   ],
   "pilot": false,
+  "sale_end": "2025-11-28",
+  "sale_start": "2025-11-18",
   "season": "5",
   "status": "판매종료"
  },
@@ -598,6 +694,8 @@
    "까이에 김아영"
   ],
   "pilot": false,
+  "sale_end": "2025-11-28",
+  "sale_start": "2025-11-18",
   "season": "5",
   "status": "판매종료"
  },
@@ -614,6 +712,8 @@
    "분더캄머 신혜영"
   ],
   "pilot": false,
+  "sale_end": "2026-01-04",
+  "sale_start": "2025-12-09",
   "season": "5",
   "status": "판매종료"
  },
@@ -631,6 +731,8 @@
    "분더캄머 신혜영"
   ],
   "pilot": false,
+  "sale_end": "2026-01-04",
+  "sale_start": "2025-12-09",
   "season": "5",
   "status": "판매종료"
  },
@@ -647,6 +749,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2026-01-04",
+  "sale_start": "2025-12-16",
   "season": "5",
   "status": "판매종료"
  },
@@ -663,6 +767,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2026-01-04",
+  "sale_start": "2025-12-16",
   "season": "5",
   "status": "판매종료"
  },
@@ -679,6 +785,8 @@
    "명도산업 임정신 명인"
   ],
   "pilot": false,
+  "sale_end": "2024-05-24",
+  "sale_start": "2024-05-21",
   "season": "1",
   "status": "판매종료"
  },
@@ -695,6 +803,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2026-04-20",
+  "sale_start": "2026-04-07",
   "season": "6",
   "status": "판매종료"
  },
@@ -711,6 +821,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2026-04-20",
+  "sale_start": "2026-04-07",
   "season": "6",
   "status": "판매종료"
  },
@@ -727,6 +839,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2026-04-20",
+  "sale_start": "2026-04-07",
   "season": "6",
   "status": "판매종료"
  },
@@ -743,6 +857,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2026-04-20",
+  "sale_start": "2026-04-07",
   "season": "6",
   "status": "판매종료"
  },
@@ -760,6 +876,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2026-05-03",
+  "sale_start": "2026-04-21",
   "season": "6",
   "status": "판매종료"
  },
@@ -777,6 +895,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2026-05-03",
+  "sale_start": "2026-04-21",
   "season": "6",
   "status": "판매종료"
  },
@@ -794,6 +914,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2026-05-03",
+  "sale_start": "2026-04-21",
   "season": "6",
   "status": "판매종료"
  },
@@ -810,6 +932,8 @@
    "정보원"
   ],
   "pilot": false,
+  "sale_end": "2026-05-03",
+  "sale_start": "2026-04-21",
   "season": "6",
   "status": "판매종료"
  },
@@ -826,6 +950,8 @@
    "분더캄머 신혜영"
   ],
   "pilot": false,
+  "sale_end": "2026-05-18",
+  "sale_start": "2026-05-06",
   "season": "6",
   "status": "판매종료"
  },
@@ -843,6 +969,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2026-06-08",
+  "sale_start": "2026-05-19",
   "season": "6",
   "status": "판매종료"
  },
@@ -859,6 +987,8 @@
    "엘노어 김미혜"
   ],
   "pilot": false,
+  "sale_end": "2026-06-14",
+  "sale_start": "2026-05-26",
   "season": "6",
   "status": "판매종료"
  },
@@ -875,6 +1005,8 @@
    "엘노어 김미혜"
   ],
   "pilot": false,
+  "sale_end": "2026-06-14",
+  "sale_start": "2026-05-26",
   "season": "6",
   "status": "판매종료"
  },
@@ -891,6 +1023,8 @@
    "분더캄머 신혜영"
   ],
   "pilot": false,
+  "sale_end": "2026-07-05",
+  "sale_start": "2026-06-16",
   "season": "6",
   "status": "판매종료"
  },
@@ -907,6 +1041,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2024-06-09",
+  "sale_start": "2024-06-04",
   "season": "1",
   "status": "판매종료"
  },
@@ -924,6 +1060,8 @@
    "메종브레몽"
   ],
   "pilot": false,
+  "sale_end": "2026-09-07",
+  "sale_start": "2026-08-07",
   "season": "오밀희",
   "status": "판매종료"
  },
@@ -943,6 +1081,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2026-08-31",
+  "sale_start": "2026-08-11",
   "season": "7",
   "status": "판매종료"
  },
@@ -960,6 +1100,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2026-08-30",
+  "sale_start": "2026-08-11",
   "season": "7",
   "status": "판매종료"
  },
@@ -976,6 +1118,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2024-06-09",
+  "sale_start": "2024-06-04",
   "season": "1",
   "status": "판매종료"
  },
@@ -993,6 +1137,8 @@
    "라 리유뜨낭뜨"
   ],
   "pilot": false,
+  "sale_end": "2026-09-11",
+  "sale_start": "2026-08-21",
   "season": "오밀희",
   "status": "판매종료"
  },
@@ -1010,6 +1156,8 @@
    "플랜비"
   ],
   "pilot": false,
+  "sale_end": "2026-09-20",
+  "sale_start": "2026-09-01",
   "season": "7",
   "status": "판매종료"
  },
@@ -1027,6 +1175,8 @@
    "플랜비"
   ],
   "pilot": false,
+  "sale_end": "2026-09-20",
+  "sale_start": "2026-09-01",
   "season": "7",
   "status": "판매종료"
  },
@@ -1044,6 +1194,8 @@
    "짐버"
   ],
   "pilot": false,
+  "sale_end": "2026-09-15",
+  "sale_start": "2026-08-28",
   "season": "오밀희",
   "status": "판매종료"
  },
@@ -1061,6 +1213,8 @@
    "짐버"
   ],
   "pilot": false,
+  "sale_end": "2026-09-15",
+  "sale_start": "2026-08-28",
   "season": "오밀희",
   "status": "판매종료"
  },
@@ -1077,10 +1231,28 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2024-06-09",
+  "sale_start": "2024-06-04",
   "season": "1",
   "status": "판매종료"
  },
  "411": null,
+ "414": {
+  "cats": [
+   "식품"
+  ],
+  "group": "0004 겸손죽",
+  "key": "P414",
+  "mall": "겸손죽",
+  "name": "겸손죽",
+  "num": "0004",
+  "partners": [],
+  "pilot": false,
+  "sale_end": "2026-10-07",
+  "sale_start": "2026-10-02",
+  "season": "오밀희",
+  "status": "active"
+ },
  "415": {
   "cats": [
    "문구"
@@ -1094,6 +1266,8 @@
    "아라크나인 김은우"
   ],
   "pilot": false,
+  "sale_end": "",
+  "sale_start": "2026-10-06",
   "season": "7",
   "status": "active"
  },
@@ -1110,7 +1284,25 @@
    "아라크나인 김은우"
   ],
   "pilot": false,
+  "sale_end": "",
+  "sale_start": "2026-10-06",
   "season": "7",
+  "status": "active"
+ },
+ "417": {
+  "cats": [
+   "식품"
+  ],
+  "group": "0004 겸손죽",
+  "key": "P417",
+  "mall": "겸손죽 (5팩)",
+  "name": "겸손죽 (5팩)",
+  "num": "0004",
+  "partners": [],
+  "pilot": false,
+  "sale_end": "2026-10-07",
+  "sale_start": "2026-10-02",
+  "season": "오밀희",
   "status": "active"
  },
  "42": {
@@ -1126,6 +1318,8 @@
    "H2C"
   ],
   "pilot": false,
+  "sale_end": "2024-06-09",
+  "sale_start": "2024-06-04",
   "season": "1",
   "status": "판매종료"
  },
@@ -1142,6 +1336,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-06-15",
+  "sale_start": "2024-06-11",
   "season": "1",
   "status": "판매종료"
  },
@@ -1158,6 +1354,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-06-15",
+  "sale_start": "2024-06-11",
   "season": "1",
   "status": "판매종료"
  },
@@ -1174,6 +1372,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-06-15",
+  "sale_start": "2024-06-11",
   "season": "1",
   "status": "판매종료"
  },
@@ -1190,6 +1390,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-06-15",
+  "sale_start": "2024-06-11",
   "season": "1",
   "status": "판매종료"
  },
@@ -1206,6 +1408,8 @@
    "두칸 최충훈"
   ],
   "pilot": false,
+  "sale_end": "2024-06-15",
+  "sale_start": "2024-06-11",
   "season": "1",
   "status": "판매종료"
  },
@@ -1224,6 +1428,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2024-07-06",
+  "sale_start": "2024-06-18",
   "season": "1",
   "status": "판매종료"
  },
@@ -1242,6 +1448,8 @@
    "오우거"
   ],
   "pilot": false,
+  "sale_end": "2024-07-06",
+  "sale_start": "2024-06-18",
   "season": "1",
   "status": "판매종료"
  },
@@ -1258,6 +1466,8 @@
    "분더캄머 신혜영"
   ],
   "pilot": false,
+  "sale_end": "2024-09-16",
+  "sale_start": "2024-09-10",
   "season": "2",
   "status": "판매종료"
  },
@@ -1274,6 +1484,8 @@
    "지평도예 한기석"
   ],
   "pilot": false,
+  "sale_end": "2024-09-26",
+  "sale_start": "2024-09-24",
   "season": "2",
   "status": "판매종료"
  },
@@ -1290,6 +1502,8 @@
    "아라크나인 김은우"
   ],
   "pilot": false,
+  "sale_end": "2024-10-07",
+  "sale_start": "2024-10-01",
   "season": "2",
   "status": "판매종료"
  },
@@ -1306,6 +1520,8 @@
    "아라크나인 김은우"
   ],
   "pilot": false,
+  "sale_end": "2024-10-07",
+  "sale_start": "2024-10-01",
   "season": "2",
   "status": "판매종료"
  },
@@ -1322,6 +1538,8 @@
    "아라크나인 김은우"
   ],
   "pilot": false,
+  "sale_end": "2024-10-07",
+  "sale_start": "2024-10-01",
   "season": "2",
   "status": "판매종료"
  },
@@ -1338,6 +1556,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2024-10-21",
+  "sale_start": "2024-10-15",
   "season": "2",
   "status": "판매종료"
  },
@@ -1354,6 +1574,8 @@
    "엘노어 김미혜"
   ],
   "pilot": false,
+  "sale_end": "2024-11-04",
+  "sale_start": "2024-10-29",
   "season": "2",
   "status": "판매종료"
  },
@@ -1370,6 +1592,8 @@
    "엘노어 김미혜"
   ],
   "pilot": false,
+  "sale_end": "2024-11-04",
+  "sale_start": "2024-10-29",
   "season": "2",
   "status": "판매종료"
  },
@@ -1386,6 +1610,8 @@
    "엘노어 김미혜"
   ],
   "pilot": false,
+  "sale_end": "2024-11-04",
+  "sale_start": "2024-10-29",
   "season": "2",
   "status": "판매종료"
  },
@@ -1403,6 +1629,8 @@
    "충무타올"
   ],
   "pilot": false,
+  "sale_end": "2025-01-03",
+  "sale_start": "2024-12-24",
   "season": "3",
   "status": "판매종료"
  },
@@ -1420,6 +1648,8 @@
    "충무타올"
   ],
   "pilot": false,
+  "sale_end": "2025-01-03",
+  "sale_start": "2024-12-24",
   "season": "3",
   "status": "판매종료"
  },
@@ -1437,6 +1667,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2025-01-10",
+  "sale_start": "2024-12-31",
   "season": "3",
   "status": "판매종료"
  },
@@ -1454,6 +1686,8 @@
    "박종진 소장"
   ],
   "pilot": false,
+  "sale_end": "2025-01-10",
+  "sale_start": "2024-12-31",
   "season": "3",
   "status": "판매종료"
  },
@@ -1470,6 +1704,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2025-01-31",
+  "sale_start": "2025-01-21",
   "season": "3",
   "status": "판매종료"
  },
@@ -1486,6 +1722,8 @@
    "라이 이청청"
   ],
   "pilot": false,
+  "sale_end": "2025-01-31",
+  "sale_start": "2025-01-21",
   "season": "3",
   "status": "판매종료"
  }

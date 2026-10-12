@@ -207,6 +207,16 @@ tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .plist .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .sibs{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .sibs .chip{min-height:34px;padding:3px 12px 3px 4px}
+.period{display:flex;gap:6px;flex-wrap:wrap;align-self:flex-end;margin-bottom:-8px}
+.period button{min-height:36px;padding:5px 14px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm)}
+.period button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+mark{background:var(--accent);color:var(--accent-ink);border-radius:3px;padding:0 2px}
+.row-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.donebtn{min-height:32px;padding:3px 12px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;font-size:var(--fs-xs);color:var(--ink-2)}
+.donebtn[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.item.done{opacity:.5}
+.toggle{min-height:40px;padding:6px 14px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;font-size:var(--fs-sm);color:var(--ink-2);align-self:flex-end}
+.toggle[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .linkbtn{all:unset;cursor:pointer;color:var(--ink)}
 .linkbtn:hover{text-decoration:underline;text-underline-offset:3px}
 .linkbtn:focus-visible{outline:3px solid var(--accent);border-radius:4px}
@@ -258,6 +268,7 @@ h2 .dot{vertical-align:1px}
         <button class="tab" data-view="issues">불만 지도</button>
         <button class="tab" data-view="categories">분류별</button>
         <button class="tab" data-view="partners">파트너사별</button>
+        <button class="tab" data-view="search">후기 검색</button>
       </nav>
       <nav class="menu" aria-label="할 일">
         <div class="menu-label">할 일</div>
@@ -306,7 +317,42 @@ const total = p => p.sent[0] + p.sent[1] + p.sent[2];
 const badShare = p => pct(p.sent[2], total(p));
 const goodShare = p => pct(p.sent[0], total(p));
 const topNeg = (p, k = 1) => Object.keys(p.neg || {}).slice(0, k);
-const MIN_N = 40;   // 비율로 줄 세울 때 최소 후기 수
+const PERIODS = [['30', '최근 30일'], ['90', '최근 90일'], ['365', '최근 1년'], ['all', '전체 기간']];
+let period = 'all';
+const minN = () => ({ '30': 3, '90': 8, '365': 20, all: 40 })[period];   // 비율로 줄 세울 때 최소 후기 수
+// ── 기간 거르기: D.R(후기 축약 목록)으로 상품별 숫자를 다시 센다 ──
+const TAGS = M.tags, INTS = M.intents || [];
+const BASE = P.map(p => ({ n: p.n, sent: p.sent, pos: p.pos, neg: p.neg, tags: p.tags, intent: p.intent }));
+const ANCHOR = (M.updated || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
+const ymdMinus = days => { const d = new Date(ANCHOR + 'T00:00:00'); d.setDate(d.getDate() - days); return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate(); };
+const cutoff = () => period === 'all' ? 0 : ymdMinus(+period);
+const inPeriod = d => period === 'all' || +String(d).replace(/-/g, '') >= cutoff();
+const periodLabel = () => PERIODS.find(x => x[0] === period)[1];
+const sortObj = o => Object.fromEntries(Object.entries(o).sort((a, b) => b[1] - a[1]));
+function applyPeriod() {
+  if (period === 'all') { P.forEach((p, i) => Object.assign(p, BASE[i])); return; }
+  const c = cutoff(), acc = P.map(() => ({ n: 0, sent: [0, 0, 0], pos: {}, neg: {}, tags: {}, intent: {} }));
+  for (const r of D.R) {
+    if (r[1] < c) continue;
+    const a = acc[r[0]]; a.n++;
+    for (const sg of r[5]) {
+      a.sent[sg[0]]++;
+      for (const ti of sg[1]) { const t = TAGS[ti]; a.tags[t] = (a.tags[t] || 0) + 1; if (sg[0] === 0) a.pos[t] = (a.pos[t] || 0) + 1; if (sg[0] === 2) a.neg[t] = (a.neg[t] || 0) + 1; }
+      if (sg[2] >= 0) { const k = INTS[sg[2]]; a.intent[k] = (a.intent[k] || 0) + 1; }
+    }
+  }
+  P.forEach((p, i) => { const a = acc[i]; Object.assign(p, { n: a.n, sent: a.sent, pos: sortObj(a.pos), neg: sortObj(a.neg), tags: sortObj(a.tags), intent: a.intent }); });
+}
+const visible = p => period === 'all' || p.n > 0;
+const periodBar = () => `<div class="period" role="group" aria-label="기간">${PERIODS.map(([v, l]) => `<button data-period="${v}" aria-pressed="${period === v}">${l}</button>`).join('')}</div>`;
+const reviewLink = id => `https://nonohumble.com/article/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/${id}/`;
+const ymdStr = n => { const d = String(n); return `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6)}`; };
+// 판매 시작 표시: 월 → [판매번호 이름…]
+function launchesOf(ps) {
+  const m = {}, seen = new Set();
+  ps.forEach(p => { if (!p.sale_start || seen.has(p.group)) return; seen.add(p.group); const k = p.sale_start.slice(0, 7); (m[k] = m[k] || []).push(p.pilot ? p.name : `${p.num} ${p.group.replace(/^\d+\s+/, '')}`); });
+  return m;
+}
 const mallLink = p => p.pid ? `https://nonohumble.com/product/detail.html?product_no=${p.pid}` : '';
 const label = p => p.pilot ? p.name : p.name;
 const numChip = p => `<span class="chip no">${p.pilot ? '파일럿' : esc(p.num)}</span>`;
@@ -362,7 +408,7 @@ const hideTip = () => tip.classList.remove('on');
 function monthChart(rows, opt = {}) {
   const data = rows.slice(-(opt.last || 24));
   if (!data.length) return '<p class="muted">기록이 없습니다.</p>';
-  const W = 760, H = 230, L = 40, R = 8, T = 12, B = 34;
+  const W = 760, H = 240, L = 40, R = 8, T = 22, B = 34, launches = opt.launches || {};
   const tot = data.map(r => r[2] + r[3] + r[4]);
   const max = Math.max(...tot, 1);
   const step = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000].find(s => max / s <= 5) || 1000;
@@ -371,7 +417,7 @@ function monthChart(rows, opt = {}) {
   const y = v => T + (H - T - B) * (1 - v / top);
   let g = '';
   for (let v = 0; v <= top; v += step) g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
-  const every = Math.ceil(data.length / 12);
+  const every = Math.max(1, Math.ceil(data.length / 8));
   data.forEach((r, i) => {
     const x = L + i * bw + (bw - bar) / 2; let base = 0;
     const segs = [[r[2], 'var(--good)'], [r[3], 'var(--neutral)'], [r[4], 'var(--bad)']];
@@ -382,21 +428,23 @@ function monthChart(rows, opt = {}) {
       return isTop ? `<path d="M${x},${y1 + h} v${-(h - 3)} q0,-3 3,-3 h${bar - 6} q3,0 3,3 v${h - 3} z" fill="${c}"/>` : `<rect x="${x}" y="${y1}" width="${bar}" height="${Math.max(h, 0)}" fill="${c}"/>`;
     }).join('');
     const [yy, mm] = r[0].split('-');
-    const lbl = (i % every === 0) ? `<text x="${x + bar / 2}" y="${H - B + 17}" text-anchor="middle">${(i === 0 || mm === '01' || (i >= every && data[i - every][0].slice(0, 4) !== yy)) ? yy.slice(2) + '년 ' : ''}${+mm}월</text>` : '';
-    g += `<g class="mbar" data-i="${i}">${parts}<rect x="${L + i * bw}" y="${T}" width="${bw}" height="${H - T - B}" fill="transparent"/></g>${lbl}`;
+    const lbl = (i % every === 0) ? `<text x="${x + bar / 2}" y="${H - B + 17}" text-anchor="middle">${yy.slice(2)}.${+mm}</text>` : '';
+    const ln = launches[r[0]] ? `<circle cx="${x + bar / 2}" cy="${T - 11}" r="4.5" fill="var(--accent)"/><line x1="${x + bar / 2}" x2="${x + bar / 2}" y1="${T - 6}" y2="${H - B}" stroke="var(--accent)" stroke-opacity=".35" stroke-dasharray="2 3"/>` : '';
+    g += `${ln}<g class="mbar" data-i="${i}">${parts}<rect x="${L + i * bw}" y="0" width="${bw}" height="${H - B}" fill="transparent"/></g>${lbl}`;
   });
   const id = 'c' + Math.random().toString(36).slice(2, 7);
   setTimeout(() => {
     const svg = document.getElementById(id); if (!svg) return;
     svg.querySelectorAll('.mbar').forEach(el => {
       const r = data[+el.dataset.i], t = r[2] + r[3] + r[4];
-      const html = `<b>${r[0].replace('-', '년 ')}월</b><br>후기 ${fmt(r[1])}건 · 언급 ${fmt(t)}개<br>좋음 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 나쁨 ${fmt(r[4])} (${pct(r[4], t)}%)`;
+      const html = `<b>${r[0].replace('-', '년 ')}월</b><br>후기 ${fmt(r[1])}건 · 이야기 ${fmt(t)}개<br>좋음 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 나쁨 ${fmt(r[4])} (${pct(r[4], t)}%)${launches[r[0]] ? `<br><span style="color:var(--accent)">● 판매 시작: ${launches[r[0]].map(esc).join(', ')}</span>` : ''}`;
       el.addEventListener('mousemove', e => showTip(html, e.clientX, e.clientY));
       el.addEventListener('mouseleave', hideTip);
     });
   });
   const summary = data.map(r => `${r[0]} 좋음 ${r[2]} 보통 ${r[3]} 나쁨 ${r[4]}`).join(', ');
-  return `<div class="chart"><svg id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="월별 언급 수. ${esc(summary)}">${g}</svg></div>`;
+  const lnote = Object.keys(launches).some(k => data.some(r => r[0] === k)) ? '<p class="small muted" style="margin:4px 0 0"><span style="color:var(--accent)">●</span> 금색 점은 판매 시작 달입니다(브레인 노트에 판매 시작일이 적힌 것만). 점이 있는 달에 마우스를 올리면 무엇이 시작됐는지 나옵니다.</p>' : '';
+  return lnote + `<div class="chart"><svg id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="월별 언급 수. ${esc(summary)}">${g}</svg></div>`;
 }
 
 function hbars(rows, max) {
@@ -405,41 +453,49 @@ function hbars(rows, max) {
 
 // ── 보기: Overview ──
 function vOverview() {
-  const t = M.monthly.reduce((a, r) => [a[0] + r[2], a[1] + r[3], a[2] + r[4]], [0, 0, 0]);
-  const T = t[0] + t[1] + t[2];
-  const last = M.monthly[M.monthly.length - 1] || ['', 0];
-  const big = P.filter(p => p.n >= MIN_N && !p.pilot);
+  const live = P.filter(p => p.n > 0);
+  const pos = {}, neg = {};
+  live.forEach(p => { for (const [k, v] of Object.entries(p.pos || {})) pos[k] = (pos[k] || 0) + v; for (const [k, v] of Object.entries(p.neg || {})) neg[k] = (neg[k] || 0) + v; });
+  const rows = tagStats(pos, neg), ex = catAgg(live).ex;
+  const G = rows.filter(r => r.g).sort((a, b) => b.g - a.g), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b);
+  const sent = live.reduce((a, p) => [a[0] + p.sent[0], a[1] + p.sent[1], a[2] + p.sent[2]], [0, 0, 0]);
+  const n = live.reduce((a, p) => a + p.n, 0);
+  const req = D.todo.filter(r => r.i !== '양도·거래' && inPeriod(r.d)).length;
+  const big = live.filter(p => p.n >= minN() && !p.pilot);
   const worst = [...big].sort((a, b) => badShare(b) - badShare(a)).slice(0, 6);
   const best = [...big].sort((a, b) => goodShare(b) - goodShare(a)).slice(0, 6);
-  const tags = M.tags.map(k => ({ name: tagName(k), all: M.tag_all[k] || 0, neg: M.tag_neg[k] || 0 })).sort((a, b) => b.neg - a.neg).slice(0, 8);
-  const tmax = Math.max(...tags.map(x => x.all));
-  const topBad = worst[0];
   const rankRow = (p, v, why) => `<li><div class="pname"><button data-open="${esc(p.key)}">${thumb(p, 28)} ${esc(label(p))}</button><span class="why">${why}</span></div>${sbar(p.sent)}<span class="pct">${v}%</span></li>`;
+  // 최근 2주 새 불만(기간 선택과 상관없이 늘 최근)
+  const c14 = ymdMinus(14), fresh = [];
+  for (const r of D.R) { if (r[1] < c14) continue; r[5].forEach(sg => { if (sg[0] === 2 && sg[3]) fresh.push({ r, s: sg[3], t: sg[1].map(ti => tagName(TAGS[ti])) }); }); }
+  fresh.sort((a, b) => b.r[1] - a.r[1]);
+  const h1 = G.length && B.length ? `칭찬은 «${esc(G[0].name)}», 불만은 «${esc(B[0].name)}» 이야기에 가장 많습니다` : '이 기간에 들어온 후기가 없습니다';
   return `
-  <header class="head"><div class="eyebrow">${esc(M.updated?.slice(0, 10))} 아침 기준 · 매일 08:00 새로 모읍니다</div>
-    <h1>후기 속 이야기의 ${pct(t[2], T)}%가 불만입니다</h1>
-    <p class="lead">가장 먼저 볼 상품은 <b>${esc(topBad.name)}</b>입니다. 이야기의 ${badShare(topBad)}%가 불만이고, 가장 많이 나온 불만은 «${esc(tagName(topNeg(topBad)[0] || ''))}»입니다.</p></header>
+  <header class="head"><div class="eyebrow">${esc(periodLabel())} · ${esc(ANCHOR)} 아침 기준 · 매일 08:00 새로 모읍니다</div>
+    <h1>${h1}</h1></header>
   <section class="figures" aria-label="주요 숫자">
-    <div class="fig"><span class="k">분석한 후기</span><span class="v">${fmt(M.reviews)}<small>건</small></span><span class="d">한 후기 안의 칭찬·불만을 나눠 이야기 ${fmt(T)}개로 셉니다</span></div>
-    <div class="fig"><span class="k">좋았다는 이야기</span><span class="v">${pct(t[0], T)}<small>%</small></span><span class="d">보통 ${pct(t[1], T)}% · 나쁨 ${pct(t[2], T)}%</span></div>
-    <div class="fig"><span class="k">${+last[0].slice(5)}월에 새로 들어온 후기</span><span class="v">${fmt(last[1])}<small>건</small></span><span class="d">${esc(last[0].replace('-', '년 '))}월 1일부터</span></div>
-    <div class="fig alert"><span class="k">사람이 확인할 후기</span><span class="v">${fmt(M.queue)}<small>건</small></span><span class="d"><a href="#queue" data-go="queue">확인 대기로 가기</a></span></div>
+    <div class="fig"><span class="k">후기</span><span class="v">${fmt(n)}<small>건</small></span><span class="d">${esc(periodLabel())} · 상품 ${live.length}개</span></div>
+    <div class="fig"><span class="k">불만 이야기</span><span class="v">${fmt(sent[2])}<small>개</small></span><span class="d">칭찬 ${fmt(sent[0])}개 · 보통 ${fmt(sent[1])}개</span></div>
+    <div class="fig"><span class="k">고객 요청</span><span class="v">${fmt(req)}<small>건</small></span><span class="d"><a href="#requests" data-go="requests">교환·문의·제안 보기</a></span></div>
+    <div class="fig ${M.queue ? 'alert' : ''}"><span class="k">사람이 확인할 후기</span><span class="v">${fmt(M.queue)}<small>건</small></span><span class="d"><a href="#queue" data-go="queue">확인 대기로 가기</a></span></div>
   </section>
-  ${compass()}
+  ${n ? insightBox(rows) + likeDislike(rows, ex) : ''}
+  <section class="panel" aria-labelledby="h-fresh"><div class="panel-head"><div><h2 id="h-fresh">최근 2주 새로 들어온 불만</h2><p class="small muted">${esc(ymdStr(c14))} 이후 · 기간 선택과 상관없이 늘 최근 것을 보여 줍니다</p></div><span class="small muted">${fmt(fresh.length)}개</span></div>
+    ${fresh.length ? `<div class="list">${fresh.slice(0, 8).map(x => { const p = P[x.r[0]]; return `<div class="item"><span class="when">${esc(ymdStr(x.r[1]))}</span><div class="what"><div class="meta"><button class="chip" data-open="${esc(p.key)}" style="cursor:pointer">${thumb(p, 18)} ${esc(p.name)}</button>${x.t.map(t => `<span class="chip bad">${esc(t)}</span>`).join('')}</div><span class="sum">${esc(x.s)}</span><a class="src" href="${reviewLink(x.r[4])}" target="_blank" rel="noopener">원문 보기</a></div></div>`; }).join('')}</div>${fresh.length > 8 ? `<p class="small muted" style="margin:0">나머지 ${fmt(fresh.length - 8)}개는 «후기 검색»에서 기간을 «최근 30일»로 두고 찾을 수 있습니다.</p>` : ''}` : '<div class="empty">최근 2주 동안 새로 들어온 불만이 없습니다.</div>'}</section>
   <div class="cols">
-    <section class="panel" aria-labelledby="h-worst"><div class="panel-head"><h2 id="h-worst">불만 비율이 높은 상품</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
-      <ol class="rank">${worst.map(p => rankRow(p, badShare(p), `나쁨 ${fmt(p.sent[2])}개 · 주로 ${topNeg(p, 2).map(tagName).map(esc).join(', ') || '—'}`)).join('')}</ol>${keyRow()}</section>
-    <section class="panel" aria-labelledby="h-best"><div class="panel-head"><h2 id="h-best">칭찬 비율이 높은 상품</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
-      <ol class="rank">${best.map(p => rankRow(p, goodShare(p), `좋음 ${fmt(p.sent[0])}개 · 후기 ${fmt(p.n)}건`)).join('')}</ol>${keyRow()}</section>
+    <section class="panel" aria-labelledby="h-worst"><div class="panel-head"><h2 id="h-worst">불만 비율이 높은 상품</h2><span class="small muted">후기 ${minN()}건 이상</span></div>
+      ${worst.length ? `<ol class="rank">${worst.map(p => rankRow(p, badShare(p), `나쁨 ${fmt(p.sent[2])}개 · 주로 ${topNeg(p, 2).map(tagName).map(esc).join(', ') || '—'}`)).join('')}</ol>${keyRow()}` : '<div class="empty">이 기간에 후기가 충분한 상품이 없습니다.</div>'}</section>
+    <section class="panel" aria-labelledby="h-best"><div class="panel-head"><h2 id="h-best">칭찬 비율이 높은 상품</h2><span class="small muted">후기 ${minN()}건 이상</span></div>
+      ${best.length ? `<ol class="rank">${best.map(p => rankRow(p, goodShare(p), `좋음 ${fmt(p.sent[0])}개 · 후기 ${fmt(p.n)}건`)).join('')}</ol>${keyRow()}` : '<div class="empty">이 기간에 후기가 충분한 상품이 없습니다.</div>'}</section>
   </div>
-  <section class="panel" aria-labelledby="h-month"><div class="panel-head"><div><h2 id="h-month">달마다 들어온 이야기</h2><p class="small muted">최근 24개월 · 막대에 마우스를 올리면 숫자가 나옵니다</p></div>${keyRow()}</div>${monthChart(M.monthly)}</section>
-  <section class="panel" aria-labelledby="h-tags"><div class="panel-head"><div><h2 id="h-tags">어떤 점에서 불만이 나오나</h2><p class="small muted">회색은 그 주제가 나온 전체 횟수, 빨강은 그중 불만입니다</p></div><a href="#issues" data-go="issues" class="small">상품별로 보기</a></div>${hbars(tags, tmax)}</section>`;
+  <section class="panel" aria-labelledby="h-month"><div class="panel-head"><div><h2 id="h-month">달마다 들어온 이야기</h2><p class="small muted">최근 24개월 · 기간 선택과 상관없이 늘 같은 범위 · 막대에 마우스를 올리면 숫자가 나옵니다</p></div>${keyRow()}</div>${monthChart(M.monthly, { launches: launchesOf(P) })}</section>
+  ${compass()}`;
 }
 
 // ── 보기: 제품별 ──
 const st = { q: '', cat: '', sort: 'n', pilot: false, reqType: '', reqProd: '', reqQ: '', reqShow: 40, qShow: 40 };
 function productRows() {
-  let rows = P.filter(p => (st.pilot || !p.pilot) && (!st.cat || p.cats.includes(st.cat)) &&
+  let rows = P.filter(p => visible(p) && (st.pilot || !p.pilot) && (!st.cat || p.cats.includes(st.cat)) &&
     (!st.q || (p.name + ' ' + p.num + ' ' + p.mall.join(' ') + ' ' + p.partners.join(' ')).toLowerCase().includes(st.q.toLowerCase())));
   const s = { n: (a, b) => b.n - a.n, bad: (a, b) => (b.n >= 10) - (a.n >= 10) || badShare(b) - badShare(a), good: (a, b) => (b.n >= 10) - (a.n >= 10) || goodShare(b) - goodShare(a), last: (a, b) => b.last.localeCompare(a.last), num: (a, b) => a.num.localeCompare(b.num) }[st.sort];
   return rows.sort(s);
@@ -482,17 +538,17 @@ function vProduct(key) {
   ${insightBox(rows)}
   ${likeDislike(rows, p.tex)}
   <div class="cols">
-    <section class="panel" aria-labelledby="h-good"><h2 id="h-good">좋았다는 후기</h2><div class="quotes">${q(p.pos_q, 'g')}</div></section>
-    <section class="panel" aria-labelledby="h-bad"><h2 id="h-bad">아쉬웠다는 후기</h2><div class="quotes">${q(p.neg_q, 'b')}</div></section>
+    <section class="panel" aria-labelledby="h-good"><h2 id="h-good">좋았다는 후기</h2><span class="small muted">전체 기간 대표</span><div class="quotes">${q(p.pos_q, 'g')}</div></section>
+    <section class="panel" aria-labelledby="h-bad"><h2 id="h-bad">아쉬웠다는 후기</h2><span class="small muted">전체 기간 대표</span><div class="quotes">${q(p.neg_q, 'b')}</div></section>
   </div>
   <section class="panel" aria-labelledby="h-req"><h2 id="h-req">고객이 요청한 것</h2><div class="seg">${req.length ? req.map(([k, v]) => `<button data-req-prod="${esc(p.key)}" data-req-type="${esc(k)}">${esc(INT_LABEL[k] || k)}<span class="c">${fmt(v)}</span></button>`).join('') : '<span class="muted">요청이 없습니다.</span>'}</div></section>
-  <section class="panel" aria-labelledby="h-pm"><div class="panel-head"><div><h2 id="h-pm">달마다 들어온 이야기</h2><p class="small muted">전체 이야기 ${fmt(t)}개 중 좋음 ${goodShare(p)}% · 보통 ${pct(p.sent[1], t)}% · 나쁨 ${badShare(p)}%</p></div>${keyRow()}</div>${monthChart(p.series)}</section>
+  <section class="panel" aria-labelledby="h-pm"><div class="panel-head"><div><h2 id="h-pm">달마다 들어온 이야기</h2><p class="small muted">전체 이야기 ${fmt(t)}개 중 좋음 ${goodShare(p)}% · 보통 ${pct(p.sent[1], t)}% · 나쁨 ${badShare(p)}%</p></div>${keyRow()}</div>${monthChart(p.series, { launches: launchesOf([p]) })}</section>
   ${compass()}`;
 }
 
 // ── 보기: 불만 지도 ──
 function vIssues() {
-  const prods = P.filter(p => p.n >= 30 && !p.pilot).sort((a, b) => b.n - a.n);
+  const prods = P.filter(p => p.n >= (period === 'all' ? 30 : minN()) && !p.pilot).sort((a, b) => b.n - a.n);
   const tags = M.tags.filter(t => (M.tag_neg[t] || 0) > 0).sort((a, b) => (M.tag_neg[b] || 0) - (M.tag_neg[a] || 0)).slice(0, 12);
   const cls = v => v === 0 ? 'h0' : v < 5 ? 'h1' : v < 15 ? 'h2' : v < 40 ? 'h3' : 'h4';
   return `
@@ -507,7 +563,7 @@ function vIssues() {
 // ── 보기: 분류별 ──
 function catGroups() {
   const cats = {};
-  P.filter(p => !p.pilot).forEach(p => (p.cats.length ? p.cats : ['분류 없음']).forEach(c => (cats[c] = cats[c] || []).push(p)));
+  P.filter(p => visible(p)).forEach(p => (p.cats.length ? p.cats : ['분류 없음']).forEach(c => (cats[c] = cats[c] || []).push(p)));
   return cats;
 }
 function catAgg(ps) {
@@ -552,7 +608,7 @@ function vCategory(c) {
 // ── 보기: 파트너사별 ──
 function vPartners() {
   const map = {};
-  P.forEach(p => p.partners.forEach(x => (map[x] = map[x] || []).push(p)));   // 파일럿 협력사도 포함
+  P.filter(visible).forEach(p => p.partners.forEach(x => (map[x] = map[x] || []).push(p)));   // 파일럿 협력사도 포함
   const list = Object.entries(map).sort((a, b) => a[0].localeCompare(b[0], 'ko'));
   return `
   <header class="head"><div class="eyebrow">파트너사 ${list.length}곳</div><h1>파트너사별 상품</h1>
@@ -561,35 +617,76 @@ function vPartners() {
 }
 
 // ── 보기: 고객 요청 ──
+// 처리 표시는 서버 저장소가 없어 이 브라우저(localStorage)에만 남는다.
+const doneKey = r => `${r.id}|${r.i}|${r.s}`;
+let DONE = new Set(); try { DONE = new Set(JSON.parse(localStorage.getItem('intel-done') || '[]')); } catch (e) {}
+const saveDone = () => { try { localStorage.setItem('intel-done', JSON.stringify([...DONE])); } catch (e) {} };
 function reqRows() {
-  return D.todo.filter(r => (!st.reqType || r.i === st.reqType) && (!st.reqProd || r.p === st.reqProd) &&
-    (!st.reqQ || (r.s + ' ' + (byKey[r.p]?.name || '')).includes(st.reqQ)));
+  return D.todo.filter(r => inPeriod(r.d) && (st.reqType ? r.i === st.reqType : r.i !== '양도·거래') && (!st.reqProd || r.p === st.reqProd) &&
+    (st.showDone || !DONE.has(doneKey(r))) && (!st.reqQ || (r.s + ' ' + (byKey[r.p]?.name || '')).includes(st.reqQ)));
 }
 function vRequests() {
-  const cnt = {}; D.todo.forEach(r => { if (!st.reqProd || r.p === st.reqProd) cnt[r.i] = (cnt[r.i] || 0) + 1; });
-  const types = ['교환·반품', '문의', '제품제안', '재구매희망', '양도·거래'];
-  const all = Object.values(cnt).reduce((a, b) => a + b, 0);
+  const cnt = {}; D.todo.forEach(r => { if (inPeriod(r.d) && (!st.reqProd || r.p === st.reqProd)) cnt[r.i] = (cnt[r.i] || 0) + 1; });
+  const types = ['교환·반품', '문의', '제품제안', '재구매희망'];
+  const all = types.reduce((a, t) => a + (cnt[t] || 0), 0);
+  const nd = D.todo.filter(r => inPeriod(r.d) && r.i !== '양도·거래' && DONE.has(doneKey(r))).length;
   return `
-  <header class="head"><div class="eyebrow">요청 ${fmt(D.todo.length)}건 · 최근 것부터</div><h1>고객 요청</h1>
-    <p class="lead">후기 속에 들어 있는 교환·문의·제안·재판매 요청을 모았습니다. 원문 보기를 누르면 겸손몰 게시글이 열립니다.</p></header>
+  <header class="head"><div class="eyebrow">${esc(periodLabel())} · 최근 것부터</div><h1>고객 요청</h1>
+    <p class="lead">후기 속에 들어 있는 교환·문의·제안·재판매 요청입니다. 처리한 요청은 «처리함»을 눌러 목록에서 치우세요.</p></header>
   <div class="seg" role="group" aria-label="요청 종류">
-    <button data-rt="" aria-pressed="${!st.reqType}">전체<span class="c">${fmt(all)}</span></button>
+    <button data-rt="" aria-pressed="${!st.reqType}">회사가 볼 요청 전체<span class="c">${fmt(all)}</span></button>
     ${types.map(t => `<button data-rt="${esc(t)}" aria-pressed="${st.reqType === t}">${esc(INT_LABEL[t])}<span class="c">${fmt(cnt[t] || 0)}</span></button>`).join('')}
+    <button data-rt="양도·거래" aria-pressed="${st.reqType === '양도·거래'}" title="구매자끼리 사고파는 글이라 기본 목록에서는 뺐습니다">구매자끼리 거래<span class="c">${fmt(cnt['양도·거래'] || 0)}</span></button>
   </div>
   <div class="tools">
-    <label class="field">제품<select id="r-prod"><option value="">모든 상품</option>${P.filter(p => p.intent && Object.keys(p.intent).length).sort((a, b) => a.num.localeCompare(b.num)).map(p => `<option value="${esc(p.key)}" ${st.reqProd === p.key ? 'selected' : ''}>${esc(p.pilot ? '파일럿 ' + p.name : p.num + ' ' + p.name)}</option>`).join('')}</select></label>
+    <label class="field">상품<select id="r-prod"><option value="">모든 상품</option>${P.filter(p => p.intent && Object.keys(p.intent).length).sort((a, b) => a.num.localeCompare(b.num)).map(p => `<option value="${esc(p.key)}" ${st.reqProd === p.key ? 'selected' : ''}>${esc(p.pilot ? '파일럿 ' + p.name : p.num + ' ' + p.name)}</option>`).join('')}</select></label>
     <label class="field">찾기<input id="r-q" type="search" placeholder="요약에 들어간 말" value="${esc(st.reqQ)}"></label>
+    <button class="toggle" id="r-done" aria-pressed="${!!st.showDone}">처리한 것도 보기${nd ? ` (${fmt(nd)})` : ''}</button>
   </div>
+  <p class="small muted" style="margin:0">«처리함» 표시는 지금 이 브라우저에만 저장됩니다. 다른 컴퓨터나 다른 사람과는 공유되지 않습니다.</p>
   <section class="panel" aria-live="polite"><div id="rlist"></div></section>`;
 }
 function renderReq() {
   const el = $('#rlist'); if (!el) return;
   const rows = reqRows();
   el.innerHTML = rows.length ? `<p class="small muted" style="margin:0">${fmt(rows.length)}건</p><div class="list">${rows.slice(0, st.reqShow).map(r => {
-    const p = byKey[r.p];
-    return `<div class="item"><span class="when">${esc(r.d)}</span><div class="what"><div class="meta"><span class="chip">${esc(INT_LABEL[r.i])}</span>${p ? `<button class="chip" data-open="${esc(p.key)}" style="cursor:pointer">${esc(p.name)}</button>` : ''}${r.v === 2 ? '<span class="chip bad">불만 섞임</span>' : ''}</div><span class="sum">${esc(r.s)}</span><a class="src" href="${esc(r.link)}" target="_blank" rel="noopener">원문 보기</a></div></div>`;
+    const p = byKey[r.p], k = doneKey(r), done = DONE.has(k);
+    return `<div class="item ${done ? 'done' : ''}"><span class="when">${esc(r.d)}</span><div class="what"><div class="meta"><span class="chip">${esc(INT_LABEL[r.i])}</span>${p ? `<button class="chip" data-open="${esc(p.key)}" style="cursor:pointer">${thumb(p, 18)} ${esc(p.name)}</button>` : ''}${r.v === 2 ? '<span class="chip bad">불만 섞임</span>' : ''}</div><span class="sum">${esc(r.s)}</span><span class="row-actions"><a class="src" href="${esc(r.link)}" target="_blank" rel="noopener">원문 보기</a><button class="donebtn" data-done="${esc(k)}" aria-pressed="${done}">${done ? '✓ 처리함 · 되돌리기' : '처리함'}</button></span></div></div>`;
   }).join('')}</div>${rows.length > st.reqShow ? `<button class="more" id="r-more">${fmt(Math.min(40, rows.length - st.reqShow))}건 더 보기</button>` : ''}`
-    : `<div class="empty">조건에 맞는 요청이 없습니다. 요청 종류를 «전체»로 바꾸거나 찾기 칸을 비워 보세요.</div>`;
+    : `<div class="empty">조건에 맞는 요청이 없습니다. 요청 종류를 바꾸거나, 기간을 넓히거나, «처리한 것도 보기»를 켜 보세요.</div>`;
+}
+
+// ── 보기: 후기 검색 ──
+function vSearch() {
+  return `
+  <header class="head"><div class="eyebrow">후기 ${fmt(D.R.length)}건의 제목·본문에서 찾기 · ${esc(periodLabel())}</div><h1>후기 검색</h1>
+    <p class="lead">찾을 말을 넣으면 후기 원문에서 바로 찾습니다. 위의 기간 선택도 함께 적용됩니다.</p></header>
+  <div class="tools" role="search">
+    <label class="field">찾을 말<input id="s-q" type="search" placeholder="예: 보풀, 사이즈, 배송" value="${esc(st.sq || '')}"></label>
+    <div class="seg" role="group" aria-label="감정으로 거르기">${[['', '모든 후기'], ['2', '불만이 있는 후기'], ['0', '칭찬이 있는 후기']].map(([v, l]) => `<button data-ss="${v}" aria-pressed="${(st.ss || '') === v}">${l}</button>`).join('')}</div>
+  </div>
+  <section class="panel" aria-live="polite"><div id="slist"></div></section>`;
+}
+function renderSearch() {
+  const el = $('#slist'); if (!el) return;
+  const q = (st.sq || '').trim(), ql = q.toLowerCase();
+  if (q.length < 2) { el.innerHTML = '<div class="empty">두 글자 이상 넣어 주세요.</div>'; return; }
+  const c = cutoff(), hits = [];
+  for (const r of D.R) {
+    if (r[1] < c) continue;
+    const txt = r[2] + ' — ' + r[3], i = txt.toLowerCase().indexOf(ql);
+    if (i < 0) continue;
+    if (st.ss && !r[5].some(sg => String(sg[0]) === st.ss)) continue;
+    hits.push([r, i, txt]);
+  }
+  hits.sort((a, b) => b[0][1] - a[0][1]);
+  const snip = (t, i) => { const a = Math.max(0, i - 50), b = Math.min(t.length, i + q.length + 90); return (a ? '…' : '') + esc(t.slice(a, i)) + '<mark>' + esc(t.slice(i, i + q.length)) + '</mark>' + esc(t.slice(i + q.length, b)) + (b < t.length ? '…' : ''); };
+  const show = st.sShow || 30;
+  el.innerHTML = hits.length ? `<p class="small muted" style="margin:0">«${esc(q)}» ${fmt(hits.length)}건</p><div class="list">${hits.slice(0, show).map(([r, i, t]) => {
+    const p = P[r[0]], ss = new Set(r[5].map(sg => sg[0]));
+    return `<div class="item"><span class="when">${esc(ymdStr(r[1]))}</span><div class="what"><div class="meta"><button class="chip" data-open="${esc(p.key)}" style="cursor:pointer">${thumb(p, 18)} ${esc(p.name)}</button>${ss.has(2) ? '<span class="chip bad">불만 있음</span>' : ''}${ss.has(0) ? '<span class="chip good">칭찬 있음</span>' : ''}</div><span class="sum">${snip(t, i)}</span><a class="src" href="${reviewLink(r[4])}" target="_blank" rel="noopener">원문 보기</a></div></div>`;
+  }).join('')}</div>${hits.length > show ? `<button class="more" id="s-more">${fmt(Math.min(30, hits.length - show))}건 더 보기</button>` : ''}`
+    : `<div class="empty">«${esc(q)}»이(가) 들어간 후기가 없습니다. 다른 말로 찾거나 기간을 «전체 기간»으로 바꿔 보세요.</div>`;
 }
 
 // ── 보기: 확인 대기 ──
@@ -608,21 +705,27 @@ function vQueue() {
 }
 
 // ── 라우팅 ──
-const VIEWS = { overview: vOverview, products: vProducts, issues: vIssues, categories: vCategories, partners: vPartners, requests: vRequests, queue: vQueue };
+const VIEWS = { overview: vOverview, products: vProducts, issues: vIssues, categories: vCategories, partners: vPartners, search: vSearch, requests: vRequests, queue: vQueue };
 let current = 'overview', openKey = null;
 function go(view, key = null, push = true) {
   current = view; openKey = key; hideTip();
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-current', b.dataset.view === (view === 'product' ? 'products' : view === 'category' ? 'categories' : view) ? 'page' : 'false'));
-  $('#view').innerHTML = view === 'product' ? vProduct(key) : view === 'category' ? vCategory(key) : VIEWS[view]();
+  $('#view').innerHTML = (view === 'queue' ? '' : periodBar()) + (view === 'product' ? vProduct(key) : view === 'category' ? vCategory(key) : VIEWS[view]());
   if (view === 'products') renderPTable();
   if (view === 'requests') renderReq();
+  if (view === 'search') { renderSearch(); const q = $('#s-q'); if (q && st.sq) { q.focus(); q.selectionStart = q.selectionEnd = q.value.length; } }
   if (push) { try { history.replaceState(null, '', '#' + (view === 'product' ? 'products' : view === 'category' ? 'categories' : view)); } catch (e) {} }
   scrollTo({ top: 0 });
   $('#main').focus({ preventScroll: true });
 }
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-view],[data-go],[data-open],[data-cat],[data-req-prod],[data-rt],#r-more,#q-more');
+  const t = e.target.closest('[data-view],[data-go],[data-open],[data-cat],[data-req-prod],[data-rt],[data-period],[data-done],[data-ss],#r-more,#q-more,#s-more,#r-done');
   if (!t) return;
+  if (t.dataset.period) { period = t.dataset.period; applyPeriod(); return go(current, openKey, false); }
+  if (t.dataset.done) { DONE.has(t.dataset.done) ? DONE.delete(t.dataset.done) : DONE.add(t.dataset.done); saveDone(); return renderReq(); }
+  if (t.dataset.ss !== undefined) { st.ss = t.dataset.ss; st.sShow = 30; document.querySelectorAll('[data-ss]').forEach(b => b.setAttribute('aria-pressed', b === t)); return renderSearch(); }
+  if (t.id === 's-more') { st.sShow = (st.sShow || 30) + 30; return renderSearch(); }
+  if (t.id === 'r-done') { st.showDone = !st.showDone; st.reqShow = 40; return go('requests', null, false); }
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.go) { e.preventDefault(); return go(t.dataset.go); }
   if (t.dataset.reqProd !== undefined) { e.preventDefault(); st.reqProd = t.dataset.reqProd; st.reqType = t.dataset.reqType || ''; st.reqQ = ''; st.reqShow = 40; return go('requests'); }
@@ -639,6 +742,7 @@ document.addEventListener('input', e => {
   const id = e.target.id;
   if (id === 'f-q') { st.q = e.target.value; renderPTable(); }
   if (id === 'r-q') { st.reqQ = e.target.value.trim(); st.reqShow = 40; renderReq(); }
+  if (id === 's-q') { st.sq = e.target.value; st.sShow = 30; clearTimeout(window.__sqT); window.__sqT = setTimeout(renderSearch, 200); }
 });
 document.addEventListener('change', e => {
   const id = e.target.id;
@@ -650,7 +754,7 @@ document.addEventListener('change', e => {
 
 $('#brand-sub').textContent = `후기 ${fmt(M.reviews)}건 · ${M.updated?.slice(0, 10)} 기준`;
 $('#b-products').textContent = P.filter(p => !p.pilot).length;
-$('#b-requests').textContent = fmt(D.todo.length);
+$('#b-requests').textContent = fmt(D.todo.filter(r => r.i !== '양도·거래').length);
 $('#b-queue').textContent = fmt(M.queue);
 $('#rail-foot').innerHTML = `매일 08:00 겸손몰 게시판에서 새 후기를 모아 AI가 분류합니다.<br>테스트·추가구매 상품 ${fmt(M.excluded)}건은 뺐습니다.<br>${esc(M.built)} 갱신`;
 // 들어오면 언제나 Overview부터(이석원 2026-10-13). 마지막 화면을 기억해 다시 열지 않는다.

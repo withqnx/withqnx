@@ -16,7 +16,7 @@ BRAIN = "/Volumes/Mall(new)/DATA/10MH_BRAIN"
 TSV = f"{BRAIN}/_tools/mall_products.tsv"
 META = f"{HERE}/product_meta.json"
 PILOT_TSV = f"{BRAIN}/_tools/pilot_partners.tsv"   # 파일럿은 노트가 없어 협력사를 여기서 읽는다(척척이 관리)
-CATS = ["의류", "패션잡화", "신발", "문구", "생활", "식품", "장인"]   # 품목 7종(2026-10-12 이석원 확정, 브레인 노트 tags)
+CATS = ["의류", "패션잡화", "신발", "문구", "생활", "식품", "장인", "파일럿"]   # 품목 7종(2026-10-12 이석원 확정, 브레인 노트 tags)
 SENT = ["긍정", "중립", "부정"]
 INTENTS = ["교환·반품", "문의", "제품제안", "재구매희망", "양도·거래"]
 EXCLUDE_NAME = re.compile(r"추가 ?구매|추가구매|준비중")   # 심지 추가는 소속 파인라이너로 센다(2026-10-11 이석원)
@@ -120,7 +120,8 @@ def roster_to_meta(roster):
                     "season": fm.get("season", ""),
                     "partners": list(dict.fromkeys(PARTNER_ALIAS.get(x, x) for x in
                                                    (partner if isinstance(partner, list) else ([partner] if partner else [])))),
-                    "cats": [c for c in (fm.get("tags") or []) if c in CATS]}
+                    "cats": [c for c in (fm.get("tags") or []) if c in CATS],
+                    "sale_start": str(fm.get("sale_start", "") or ""), "sale_end": str(fm.get("sale_end", "") or "")}
     return out
 
 
@@ -143,6 +144,7 @@ def main():
     monthly = collections.defaultdict(lambda: [0, 0, 0, 0])   # 후기수, 좋음, 보통, 나쁨(언급)
     tag_all, tag_neg = collections.Counter(), collections.Counter()
     todo, queue = [], []
+    rev_rows = []   # (상품 key, 후기) — 기간 거르기·원문 검색용 축약 목록을 만든다
     n_seg = 0
 
     for r in reviews.values():
@@ -158,12 +160,14 @@ def main():
         clf = r.get("classification") or {}
         segs = clf.get("segments") or []
         key = info["key"]
+        rev_rows.append((key, r))
         p = prods.get(key)
         if not p:
             p = prods[key] = {
                 "key": key, "group": info.get("group", key), "name": info["name"], "num": info["num"], "pilot": info["pilot"],
                 "mall": set(), "status": info["status"], "season": info["season"],
                 "partners": info["partners"], "cats": info["cats"],
+                "sale_start": info.get("sale_start", ""), "sale_end": info.get("sale_end", ""),
                 "n": 0, "sent": [0, 0, 0], "tags": collections.Counter(), "neg": collections.Counter(),
                 "intent": collections.Counter(), "series": collections.defaultdict(lambda: [0, 0, 0, 0]),
                 "first": "9999", "last": "0000", "pos_q": [], "neg_q": [], "pid": pid,
@@ -255,7 +259,25 @@ def main():
         "tag_all": dict(tag_all), "tag_neg": dict(tag_neg),
         "monthly": [[m] + monthly[m] for m in months],
     }
-    bundle = {"meta": meta, "products": out, "todo": todo, "queue": queue}
+    # 기간 거르기·원문 검색용 후기 목록(축약): [상품 순번, YYYYMMDD, 제목, 본문, 후기 id, [[감정 0/1/2, [세분류 순번…], 의도 순번 또는 -1, 요약(최근 120일만)]…]]
+    pidx = {p["key"]: i for i, p in enumerate(out)}
+    tags_order = meta["tags"]; tix = {t: i for i, t in enumerate(tags_order)}
+    recent = (datetime.now().toordinal() - 120)
+    R = []
+    for key, r in rev_rows:
+        d = (r.get("written_at") or "")[:10]
+        try:
+            ordn = datetime.strptime(d, "%Y-%m-%d").toordinal()
+        except ValueError:
+            ordn = 0
+        segs = []
+        for sg in (r.get("classification") or {}).get("segments") or []:
+            si = SENT.index(sg.get("sentiment")) if sg.get("sentiment") in SENT else 1
+            it = INTENTS.index(sg["intent"]) if sg.get("intent") in INTENTS else -1
+            segs.append([si, [tix[t] for t in sg.get("tags") or [] if t in tix], it] + ([sg.get("summary", "")] if ordn >= recent else []))
+        R.append([pidx[key], int(d.replace("-", "") or 0), (r.get("title") or "")[:80], re.sub(r"\s+", " ", r.get("content") or ""), r["id"], segs])
+    meta["intents"] = INTENTS
+    bundle = {"meta": meta, "products": out, "todo": todo, "queue": queue, "R": R}
     path = f"{HERE}/intel_data.json"
     json.dump(bundle, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"제품 {len(out)} · 집계 후기 {meta['reviews']}/{len(reviews)} · 언급 {n_seg} · "
