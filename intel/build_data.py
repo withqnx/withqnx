@@ -15,6 +15,7 @@ PROJ = os.path.dirname(HERE)
 BRAIN = "/Volumes/Mall(new)/DATA/10MH_BRAIN"
 TSV = f"{BRAIN}/_tools/mall_products.tsv"
 META = f"{HERE}/product_meta.json"
+PILOT_TSV = f"{BRAIN}/_tools/pilot_partners.tsv"   # 파일럿은 노트가 없어 협력사를 여기서 읽는다(척척이 관리)
 CATS = ["의류", "패션잡화", "문구", "생활", "식품", "공예"]
 SENT = ["긍정", "중립", "부정"]
 INTENTS = ["교환·반품", "문의", "제품제안", "재구매희망", "양도·거래"]
@@ -46,8 +47,21 @@ def note_index():
     return idx
 
 
+def pilot_partners():
+    out = {}
+    if os.path.exists(PILOT_TSV):
+        for line in open(PILOT_TSV, encoding="utf-8"):
+            if line.startswith("#") or not line.strip():
+                continue
+            c = [unicodedata.normalize("NFC", x).strip() for x in line.rstrip("\n").split("\t")]
+            if len(c) >= 3 and c[2]:
+                out[c[0]] = [x.strip() for x in c[2].split("·") if x.strip()]
+    return out
+
+
 def load_roster():
     notes = note_index()
+    pilots = pilot_partners()
     roster = {}
     for line in open(TSV, encoding="utf-8"):
         if line.startswith("#") or not line.strip():
@@ -66,7 +80,7 @@ def load_roster():
                 continue
             base = re.sub(r"\s*-\s*\S+$", "", base)          # 색상 꼬리 제거
             roster[pid] = {"key": f"PRE {base}", "name": base, "num": "PRE", "pilot": True,
-                           "mall": name, "fm": {}, "group": f"PRE {base}"}
+                           "mall": name, "fm": {"partner": pilots.get(pid, [])}, "group": f"PRE {base}"}
             continue
         if note in ("—", "-", ""):
             roster[pid] = None

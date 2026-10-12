@@ -57,7 +57,9 @@
   "mall": "겸손 리얼레더 가방 남성용",
   "name": "겸손 리얼레더 가방 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -69,7 +71,9 @@
   "mall": "겸손 한지 가방 남성용",
   "name": "겸손 한지 가방 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -81,7 +85,9 @@
   "mall": "겸손 한지 가방 여성용",
   "name": "겸손 한지 가방 여성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -93,7 +99,9 @@
   "mall": "[2차 예약구매] 겸손 리얼레더 가방 남성용",
   "name": "겸손 리얼레더 가방 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -153,7 +161,9 @@
   "mall": "[2차 예약구매] 겸손 한지 가방 여성용",
   "name": "겸손 한지 가방 여성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -181,7 +191,9 @@
   "mall": "[3차 예약구매] 겸손 리얼레더 가방 남성용",
   "name": "겸손 리얼레더 가방 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -209,7 +221,9 @@
   "mall": "[3차 예약구매] 겸손 한지 가방 여성용",
   "name": "겸손 한지 가방 여성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "앨리스마샤 곽창훈"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -269,7 +283,9 @@
   "mall": "겸손 울 코트 남성용 - 다크카키",
   "name": "겸손 울 코트 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "까이에 김아영"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -282,7 +298,9 @@
   "mall": "겸손 트위드 코트 남성용 - 네이비",
   "name": "겸손 트위드 코트 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "까이에 김아영"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -330,7 +348,9 @@
   "mall": "겸손 트위드 잠바 남성용",
   "name": "겸손 트위드 잠바 남성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "까이에 김아영"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
@@ -342,7 +362,9 @@
   "mall": "겸손 트위드 잠바 여성용",
   "name": "겸손 트위드 잠바 여성용",
   "num": "PRE",
-  "partners": [],
+  "partners": [
+   "까이에 김아영"
+  ],
   "pilot": true,
   "season": "",
   "status": "판매종료"
