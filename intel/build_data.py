@@ -66,7 +66,7 @@ def load_roster():
                 continue
             base = re.sub(r"\s*-\s*\S+$", "", base)          # 색상 꼬리 제거
             roster[pid] = {"key": f"PRE {base}", "name": base, "num": "PRE", "pilot": True,
-                           "mall": name, "fm": {}}
+                           "mall": name, "fm": {}, "group": f"PRE {base}"}
             continue
         if note in ("—", "-", ""):
             roster[pid] = None
@@ -80,8 +80,9 @@ def load_roster():
             path = notes.get(max(cand, key=score)) if cand else None
         fm = frontmatter(path) if path else {}
         title = re.sub(r"^\d+\s+", "", note)
-        roster[pid] = {"key": note, "name": title, "num": note.split(" ")[0], "pilot": False,
-                       "mall": name, "fm": fm}
+        # 한 줄 = 겸손몰 상세페이지(상품 id) 하나(2026-10-12 이석원). 같은 제품 노트끼리는 group으로 묶어 상세에서 서로 잇는다.
+        roster[pid] = {"key": f"P{pid}", "name": re.sub(r"\s+", " ", name).strip(), "num": note.split(" ")[0], "pilot": False,
+                       "mall": name, "fm": fm, "group": note}
     return roster
 
 
@@ -99,7 +100,7 @@ def roster_to_meta(roster):
             continue
         fm = info["fm"]
         partner = fm.get("partner")
-        out[pid] = {"key": info["key"], "name": info["name"], "num": info["num"], "pilot": info["pilot"],
+        out[pid] = {"key": info["key"], "group": info["group"], "name": info["name"], "num": info["num"], "pilot": info["pilot"],
                     "mall": info["mall"], "status": fm.get("status", "판매종료" if info["pilot"] else ""),
                     "season": fm.get("season", ""),
                     "partners": list(dict.fromkeys(PARTNER_ALIAS.get(x, x) for x in
@@ -145,7 +146,7 @@ def main():
         p = prods.get(key)
         if not p:
             p = prods[key] = {
-                "key": key, "name": info["name"], "num": info["num"], "pilot": info["pilot"],
+                "key": key, "group": info.get("group", key), "name": info["name"], "num": info["num"], "pilot": info["pilot"],
                 "mall": set(), "status": info["status"], "season": info["season"],
                 "partners": info["partners"], "cats": info["cats"],
                 "n": 0, "sent": [0, 0, 0], "tags": collections.Counter(), "neg": collections.Counter(),

@@ -205,6 +205,8 @@ tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .pgrid .plist li{grid-template-columns:minmax(0,1fr) 64px 40px}
 .plist button{min-width:0;max-width:100%}
 .plist .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.sibs{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sibs .chip{min-height:34px;padding:3px 12px 3px 4px}
 .linkbtn{all:unset;cursor:pointer;color:var(--ink)}
 .linkbtn:hover{text-decoration:underline;text-underline-offset:3px}
 .linkbtn:focus-visible{outline:3px solid var(--accent);border-radius:4px}
@@ -476,6 +478,7 @@ function vProduct(key) {
     <div class="facts">${numChip(p)}${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}${p.cats.map(c => `<button class="chip" data-cat="${esc(c)}" style="cursor:pointer">${esc(c)}</button>`).join('')}</div>
     <h1>${esc(label(p))}</h1>
     <p class="small muted" style="margin:0">후기 ${fmt(p.n)}건 · ${esc(p.first)} ~ ${esc(p.last)}${p.partners.length ? ' · 함께 만든 곳 ' + p.partners.map(esc).join(', ') : ''}${mallLink(p) ? ` · <a href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰에서 보기</a>` : ''}</p></div></header>
+  ${(() => { const sb = P.filter(x => x.group === p.group && x.key !== p.key).sort((a, b) => b.n - a.n); return sb.length ? `<nav class="sibs" aria-label="같은 제품의 다른 상세페이지"><span class="small muted">같은 제품의 다른 상세페이지</span>${sb.map(x => `<button class="chip" data-open="${esc(x.key)}" style="cursor:pointer">${thumb(x, 20)} ${esc(x.name)} · ${fmt(x.n)}건</button>`).join('')}</nav>` : ''; })()}
   ${insightBox(rows)}
   ${likeDislike(rows, p.tex)}
   <div class="cols">
