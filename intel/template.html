@@ -253,7 +253,7 @@ h2 .dot{vertical-align:1px}
     <div class="navs">
       <nav class="menu" aria-label="분석">
         <div class="menu-label">분석</div>
-        <button class="tab" data-view="overview">한눈에</button>
+        <button class="tab" data-view="overview">Overview</button>
         <button class="tab" data-view="products">상품별<span class="badge" id="b-products"></span></button>
         <button class="tab" data-view="issues">불만 지도</button>
         <button class="tab" data-view="categories">분류별</button>
@@ -340,7 +340,7 @@ function likeDislike(rows, ex, n = 6) {
     <section class="panel" aria-labelledby="h-like"><div class="panel-head"><h2 id="h-like"><i class="dot g"></i> 마음에 든 점</h2><span class="small muted">세분류별 칭찬 개수</span></div>${list(G, 'g', 'g')}</section>
     <section class="panel" aria-labelledby="h-dislike"><div class="panel-head"><h2 id="h-dislike"><i class="dot b"></i> 마음에 안 든 점</h2><span class="small muted">세분류별 불만 개수</span></div>${list(B, 'b', 'b')}</section></div>`;
 }
-const insightBox = rows => `<section class="insight" aria-labelledby="h-ins"><h2 id="h-ins">한눈에 보는 인사이트</h2><ul>${insights(rows).map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
+const insightBox = rows => `<section class="insight" aria-labelledby="h-ins"><h2 id="h-ins">핵심 인사이트</h2><ul>${insights(rows).map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
 
 const sbar = (s, h) => {
   const t = s[0] + s[1] + s[2] || 1;
@@ -403,7 +403,7 @@ function hbars(rows, max) {
   return `<div class="hbars">${rows.map(r => `<div class="hbar"><span>${esc(r.name)}</span><div class="track" role="img" aria-label="${esc(r.name)}: 전체 ${r.all}개 중 나쁨 ${r.neg}개"><i class="all" style="width:${r.all / max * 100}%"></i><i class="neg" style="width:${r.neg / max * 100}%"></i></div><span class="v">나쁨 ${fmt(r.neg)}<span class="muted"> / ${fmt(r.all)}</span></span></div>`).join('')}</div>`;
 }
 
-// ── 보기: 한눈에 ──
+// ── 보기: Overview ──
 function vOverview() {
   const t = M.monthly.reduce((a, r) => [a[0] + r[2], a[1] + r[3], a[2] + r[4]], [0, 0, 0]);
   const T = t[0] + t[1] + t[2];
@@ -552,7 +552,7 @@ function vCategory(c) {
 // ── 보기: 파트너사별 ──
 function vPartners() {
   const map = {};
-  P.filter(p => !p.pilot).forEach(p => p.partners.forEach(x => (map[x] = map[x] || []).push(p)));
+  P.forEach(p => p.partners.forEach(x => (map[x] = map[x] || []).push(p)));   // 파일럿 협력사도 포함
   const list = Object.entries(map).sort((a, b) => a[0].localeCompare(b[0], 'ko'));
   return `
   <header class="head"><div class="eyebrow">파트너사 ${list.length}곳</div><h1>파트너사별 상품</h1>
@@ -617,7 +617,6 @@ function go(view, key = null, push = true) {
   if (view === 'products') renderPTable();
   if (view === 'requests') renderReq();
   if (push) { try { history.replaceState(null, '', '#' + (view === 'product' ? 'products' : view === 'category' ? 'categories' : view)); } catch (e) {} }
-  try { localStorage.setItem('intel-view', view === 'product' ? 'products' : view === 'category' ? 'categories' : view); } catch (e) {}
   scrollTo({ top: 0 });
   $('#main').focus({ preventScroll: true });
 }
@@ -654,8 +653,7 @@ $('#b-products').textContent = P.filter(p => !p.pilot).length;
 $('#b-requests').textContent = fmt(D.todo.length);
 $('#b-queue').textContent = fmt(M.queue);
 $('#rail-foot').innerHTML = `매일 08:00 겸손몰 게시판에서 새 후기를 모아 AI가 분류합니다.<br>테스트·추가구매 상품 ${fmt(M.excluded)}건은 뺐습니다.<br>${esc(M.built)} 갱신`;
-let start = (location.hash || '').slice(1);
-if (!VIEWS[start]) { try { start = localStorage.getItem('intel-view') || ''; } catch (e) { start = ''; } }
-go(VIEWS[start] ? start : 'overview', null, false);
+// 들어오면 언제나 Overview부터(이석원 2026-10-13). 마지막 화면을 기억해 다시 열지 않는다.
+go('overview', null, true);
 })();
 </script>
