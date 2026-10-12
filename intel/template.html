@@ -254,7 +254,7 @@ h2 .dot{vertical-align:1px}
       <nav class="menu" aria-label="분석">
         <div class="menu-label">분석</div>
         <button class="tab" data-view="overview">한눈에</button>
-        <button class="tab" data-view="products">상세페이지별<span class="badge" id="b-products"></span></button>
+        <button class="tab" data-view="products">상품별<span class="badge" id="b-products"></span></button>
         <button class="tab" data-view="issues">불만 지도</button>
         <button class="tab" data-view="categories">분류별</button>
         <button class="tab" data-view="partners">파트너사별</button>
@@ -348,7 +348,7 @@ const sbar = (s, h) => {
   return `<div class="sbar" role="img" aria-label="${a}" title="${a}" ${h ? `style="height:${h}px"` : ''}>${s.map((v, i) => v ? `<i class="${SK[i]}" style="width:${v / t * 100}%"></i>` : '').join('')}</div>`;
 };
 const keyRow = () => `<div class="key" aria-hidden="true">${SENT.map((s, i) => `<span><i class="dot ${SK[i]}"></i>${s}</span>`).join('')}</div>`;
-const compass = () => `<div class="compass" role="note"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5 13.3 13.3 8.5 15.5 10.7 10.7Z" fill="currentColor"/></svg><div><b>후기는 나침반이지 자가 아닙니다.</b> 후기는 쓰고 싶은 사람만 쓰기 때문에 %의 절대 크기는 믿기 어렵습니다. 상세페이지끼리 비교하거나 달마다 흐름을 볼 때 쓰세요.</div></div>`;
+const compass = () => `<div class="compass" role="note"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5 13.3 13.3 8.5 15.5 10.7 10.7Z" fill="currentColor"/></svg><div><b>후기는 나침반이지 자가 아닙니다.</b> 후기는 쓰고 싶은 사람만 쓰기 때문에 %의 절대 크기는 믿기 어렵습니다. 상품끼리 비교하거나 달마다 흐름을 볼 때 쓰세요.</div></div>`;
 
 // ── 툴팁 ──
 const tip = $('#tip');
@@ -418,7 +418,7 @@ function vOverview() {
   return `
   <header class="head"><div class="eyebrow">${esc(M.updated?.slice(0, 10))} 아침 기준 · 매일 08:00 새로 모읍니다</div>
     <h1>후기 속 이야기의 ${pct(t[2], T)}%가 불만입니다</h1>
-    <p class="lead">가장 먼저 볼 상세페이지는 <b>${esc(topBad.name)}</b>입니다. 이야기의 ${badShare(topBad)}%가 불만이고, 가장 많이 나온 불만은 «${esc(tagName(topNeg(topBad)[0] || ''))}»입니다.</p></header>
+    <p class="lead">가장 먼저 볼 상품은 <b>${esc(topBad.name)}</b>입니다. 이야기의 ${badShare(topBad)}%가 불만이고, 가장 많이 나온 불만은 «${esc(tagName(topNeg(topBad)[0] || ''))}»입니다.</p></header>
   <section class="figures" aria-label="주요 숫자">
     <div class="fig"><span class="k">분석한 후기</span><span class="v">${fmt(M.reviews)}<small>건</small></span><span class="d">한 후기 안의 칭찬·불만을 나눠 이야기 ${fmt(T)}개로 셉니다</span></div>
     <div class="fig"><span class="k">좋았다는 이야기</span><span class="v">${pct(t[0], T)}<small>%</small></span><span class="d">보통 ${pct(t[1], T)}% · 나쁨 ${pct(t[2], T)}%</span></div>
@@ -427,13 +427,13 @@ function vOverview() {
   </section>
   ${compass()}
   <div class="cols">
-    <section class="panel" aria-labelledby="h-worst"><div class="panel-head"><h2 id="h-worst">불만 비율이 높은 상세페이지</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
+    <section class="panel" aria-labelledby="h-worst"><div class="panel-head"><h2 id="h-worst">불만 비율이 높은 상품</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
       <ol class="rank">${worst.map(p => rankRow(p, badShare(p), `나쁨 ${fmt(p.sent[2])}개 · 주로 ${topNeg(p, 2).map(tagName).map(esc).join(', ') || '—'}`)).join('')}</ol>${keyRow()}</section>
-    <section class="panel" aria-labelledby="h-best"><div class="panel-head"><h2 id="h-best">칭찬 비율이 높은 상세페이지</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
+    <section class="panel" aria-labelledby="h-best"><div class="panel-head"><h2 id="h-best">칭찬 비율이 높은 상품</h2><span class="small muted">후기 ${MIN_N}건 이상</span></div>
       <ol class="rank">${best.map(p => rankRow(p, goodShare(p), `좋음 ${fmt(p.sent[0])}개 · 후기 ${fmt(p.n)}건`)).join('')}</ol>${keyRow()}</section>
   </div>
   <section class="panel" aria-labelledby="h-month"><div class="panel-head"><div><h2 id="h-month">달마다 들어온 이야기</h2><p class="small muted">최근 24개월 · 막대에 마우스를 올리면 숫자가 나옵니다</p></div>${keyRow()}</div>${monthChart(M.monthly)}</section>
-  <section class="panel" aria-labelledby="h-tags"><div class="panel-head"><div><h2 id="h-tags">어떤 점에서 불만이 나오나</h2><p class="small muted">회색은 그 주제가 나온 전체 횟수, 빨강은 그중 불만입니다</p></div><a href="#issues" data-go="issues" class="small">상세페이지별로 보기</a></div>${hbars(tags, tmax)}</section>`;
+  <section class="panel" aria-labelledby="h-tags"><div class="panel-head"><div><h2 id="h-tags">어떤 점에서 불만이 나오나</h2><p class="small muted">회색은 그 주제가 나온 전체 횟수, 빨강은 그중 불만입니다</p></div><a href="#issues" data-go="issues" class="small">상품별로 보기</a></div>${hbars(tags, tmax)}</section>`;
 }
 
 // ── 보기: 제품별 ──
@@ -447,38 +447,38 @@ function productRows() {
 function vProducts() {
   const cats = [...new Set(P.flatMap(p => p.cats))];
   return `
-  <header class="head"><div class="eyebrow">상세페이지 ${P.filter(p => !p.pilot).length}개 · 파일럿 ${P.filter(p => p.pilot).length}개</div><h1>상세페이지별 반응</h1>
-    <p class="lead">줄을 누르면 그 상세페이지의 좋았던 점과 아쉬운 점, 고객 요청을 볼 수 있습니다.</p></header>
+  <header class="head"><div class="eyebrow">상품 ${P.filter(p => !p.pilot).length}개 · 파일럿 ${P.filter(p => p.pilot).length}개</div><h1>상품별 반응</h1>
+    <p class="lead">줄을 누르면 그 상품의 좋았던 점과 아쉬운 점, 고객 요청을 볼 수 있습니다.</p></header>
   <div class="tools" role="search">
-    <label class="field">찾기<input id="f-q" type="search" placeholder="상세페이지·번호·파트너사" value="${esc(st.q)}"></label>
+    <label class="field">찾기<input id="f-q" type="search" placeholder="상품·번호·파트너사" value="${esc(st.q)}"></label>
     <label class="field">분류<select id="f-cat"><option value="">전체</option>${cats.map(c => `<option ${st.cat === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select></label>
     <label class="field">줄 세우기<select id="f-sort">${[['n', '후기 많은 순'], ['bad', '불만 비율 높은 순'], ['good', '칭찬 비율 높은 순'], ['last', '최근 후기 순'], ['num', '번호 순']].map(([v, t]) => `<option value="${v}" ${st.sort === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label>
     <label class="field">파일럿<select id="f-pilot"><option value="0">빼고 보기</option><option value="1" ${st.pilot ? 'selected' : ''}>함께 보기</option></select></label>
   </div>
   <div id="ptable"></div>
-  <p class="small muted">비율로 줄 세울 때는 후기 10건 미만 상세페이지를 뒤로 보냅니다. 후기가 적으면 한두 건에 비율이 크게 흔들리기 때문입니다.</p>`;
+  <p class="small muted">비율로 줄 세울 때는 후기 10건 미만 상품을 뒤로 보냅니다. 후기가 적으면 한두 건에 비율이 크게 흔들리기 때문입니다.</p>`;
 }
 function renderPTable() {
   const rows = productRows(), el = $('#ptable'); if (!el) return;
   const tops = (o, n) => Object.keys(o || {}).slice(0, n);
-  el.innerHTML = rows.length ? `<div class="tbl-wrap"><table><caption class="sr">상세페이지별 후기 반응</caption><thead><tr><th scope="col">상세페이지</th><th scope="col" class="r">후기</th><th scope="col">마음에 든 점</th><th scope="col">마음에 안 든 점</th><th scope="col" class="hide-sm">반응</th></tr></thead><tbody>${rows.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p)}<div class="pc-txt"><b>${esc(label(p))}</b><span class="small muted">${p.pilot ? '파일럿' : esc(p.num)}${p.cats[0] ? ' · ' + esc(p.cats[0]) : ''}</span></div></div></td><td class="r">${fmt(p.n)}</td><td>${tops(p.pos, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td>${tops(p.neg, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td class="hide-sm" style="min-width:110px">${sbar(p.sent, 10)}</td></tr>`).join('')}</tbody></table></div>${keyRow()}`
-    : `<div class="empty">찾는 상세페이지가 없습니다. 찾기 칸을 비우거나 분류를 «전체»로 바꿔 보세요.</div>`;
+  el.innerHTML = rows.length ? `<div class="tbl-wrap"><table><caption class="sr">상품별 후기 반응</caption><thead><tr><th scope="col">상품</th><th scope="col" class="r">후기</th><th scope="col">마음에 든 점</th><th scope="col">마음에 안 든 점</th><th scope="col" class="hide-sm">반응</th></tr></thead><tbody>${rows.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p)}<div class="pc-txt"><b>${esc(label(p))}</b><span class="small muted">${p.pilot ? '파일럿' : esc(p.num)}${p.cats[0] ? ' · ' + esc(p.cats[0]) : ''}</span></div></div></td><td class="r">${fmt(p.n)}</td><td>${tops(p.pos, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td>${tops(p.neg, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td class="hide-sm" style="min-width:110px">${sbar(p.sent, 10)}</td></tr>`).join('')}</tbody></table></div>${keyRow()}`
+    : `<div class="empty">찾는 상품이 없습니다. 찾기 칸을 비우거나 분류를 «전체»로 바꿔 보세요.</div>`;
 }
 
 // ── 보기: 제품 상세 ──
 const backBtn = (go, t) => `<button class="back" data-go="${go}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>${t}</button>`;
 function vProduct(key) {
-  const p = byKey[key]; if (!p) return `<p>상세페이지를 찾을 수 없습니다.</p>`;
+  const p = byKey[key]; if (!p) return `<p>상품을 찾을 수 없습니다.</p>`;
   const t = total(p), rows = tagStats(p.pos, p.neg);
   const req = Object.entries(p.intent).sort((a, b) => b[1] - a[1]);
   const q = (arr, cls) => arr.length ? arr.map(x => `<div class="quote ${cls}"><span class="s">${esc(x.s)}</span><span class="c">“${esc(x.c)}${x.c.length >= 150 ? '…' : ''}”</span><span class="m">${esc(x.d)} · <a href="${esc(x.link)}" target="_blank" rel="noopener">원문 보기</a></span></div>`).join('') : '<p class="muted">해당하는 후기가 없습니다.</p>';
   return `
-  ${backBtn('products', '상세페이지 목록')}
+  ${backBtn('products', '상품 목록')}
   <header class="phead">${thumb(p, 96)}<div class="head">
     <div class="facts">${numChip(p)}${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}${p.cats.map(c => `<button class="chip" data-cat="${esc(c)}" style="cursor:pointer">${esc(c)}</button>`).join('')}</div>
     <h1>${esc(label(p))}</h1>
     <p class="small muted" style="margin:0">후기 ${fmt(p.n)}건 · ${esc(p.first)} ~ ${esc(p.last)}${p.partners.length ? ' · 함께 만든 곳 ' + p.partners.map(esc).join(', ') : ''}${mallLink(p) ? ` · <a href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰에서 보기</a>` : ''}</p></div></header>
-  ${(() => { const sb = P.filter(x => x.group === p.group && x.key !== p.key).sort((a, b) => b.n - a.n); return sb.length ? `<nav class="sibs" aria-label="같은 아이템의 다른 상세페이지"><span class="small muted">같은 아이템의 다른 상세페이지</span>${sb.map(x => `<button class="chip" data-open="${esc(x.key)}" style="cursor:pointer">${thumb(x, 20)} ${esc(x.name)} · ${fmt(x.n)}건</button>`).join('')}</nav>` : ''; })()}
+  ${(() => { const sb = P.filter(x => x.group === p.group && x.key !== p.key).sort((a, b) => b.n - a.n); return sb.length ? `<nav class="sibs" aria-label="같은 아이템의 다른 상품"><span class="small muted">같은 아이템의 다른 상품</span>${sb.map(x => `<button class="chip" data-open="${esc(x.key)}" style="cursor:pointer">${thumb(x, 20)} ${esc(x.name)} · ${fmt(x.n)}건</button>`).join('')}</nav>` : ''; })()}
   ${insightBox(rows)}
   ${likeDislike(rows, p.tex)}
   <div class="cols">
@@ -496,10 +496,10 @@ function vIssues() {
   const tags = M.tags.filter(t => (M.tag_neg[t] || 0) > 0).sort((a, b) => (M.tag_neg[b] || 0) - (M.tag_neg[a] || 0)).slice(0, 12);
   const cls = v => v === 0 ? 'h0' : v < 5 ? 'h1' : v < 15 ? 'h2' : v < 40 ? 'h3' : 'h4';
   return `
-  <header class="head"><div class="eyebrow">후기 30건 이상 상세페이지 ${prods.length}개 · 불만 주제 ${tags.length}개</div><h1>어떤 상세페이지에서 어떤 불만이 나왔나</h1>
-    <p class="lead">칸의 숫자는 그 상세페이지에서 그 주제로 나온 불만의 개수입니다. 진할수록 많습니다. 이름을 누르면 자세히 볼 수 있습니다.</p></header>
+  <header class="head"><div class="eyebrow">후기 30건 이상 상품 ${prods.length}개 · 불만 주제 ${tags.length}개</div><h1>어떤 상품에서 어떤 불만이 나왔나</h1>
+    <p class="lead">칸의 숫자는 그 상품에서 그 주제로 나온 불만의 개수입니다. 진할수록 많습니다. 이름을 누르면 자세히 볼 수 있습니다.</p></header>
   <div class="legend-heat" aria-hidden="true">적음 <i style="background:var(--heat-0)"></i><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i><i style="background:var(--heat-4)"></i> 많음 <span style="margin-left:10px">(0 · 1–4 · 5–14 · 15–39 · 40 이상)</span></div>
-  <div class="tbl-wrap" style="border:0;background:none"><table class="heat"><caption class="sr">상세페이지별 불만 주제 개수</caption><thead><tr><th></th>${tags.map(t => `<th scope="col">${esc(tagName(t))}</th>`).join('')}</tr></thead>
+  <div class="tbl-wrap" style="border:0;background:none"><table class="heat"><caption class="sr">상품별 불만 주제 개수</caption><thead><tr><th></th>${tags.map(t => `<th scope="col">${esc(tagName(t))}</th>`).join('')}</tr></thead>
   <tbody>${prods.map(p => `<tr data-open="${esc(p.key)}" tabindex="0"><th scope="row" class="p">${esc(p.name)}</th>${tags.map(t => { const v = p.neg[t] || 0; return `<td class="${cls(v)}" title="${esc(p.name)} · ${esc(tagName(t))} 불만 ${v}개">${v || '·'}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
   ${compass()}`;
 }
@@ -530,7 +530,7 @@ function vCategories() {
   <div class="pgrid">${order.map(([c, ps]) => {
     const a = catAgg(ps), n = ps.reduce((x, p) => x + p.n, 0);
     const g = Object.entries(a.pos).sort((x, y) => y[1] - x[1]).slice(0, 2).map(x => tagName(x[0])), b = Object.entries(a.neg).sort((x, y) => y[1] - x[1]).slice(0, 2).map(x => tagName(x[0]));
-    return `<section class="panel"><div class="panel-head"><h2><button class="linkbtn" data-cat="${esc(c)}">${esc(c)}</button></h2><span class="small muted num">상세페이지 ${ps.length}개 · 후기 ${fmt(n)}건</span></div>
+    return `<section class="panel"><div class="panel-head"><h2><button class="linkbtn" data-cat="${esc(c)}">${esc(c)}</button></h2><span class="small muted num">상품 ${ps.length}개 · 후기 ${fmt(n)}건</span></div>
       <div class="small">${g.length ? `<span class="muted">마음에 든 점</span> ${g.map(x => `<span class="chip good">${esc(x)}</span>`).join(' ')}` : ''}</div>
       <div class="small">${b.length ? `<span class="muted">마음에 안 든 점</span> ${b.map(x => `<span class="chip bad">${esc(x)}</span>`).join(' ')}` : ''}</div>
       <ul class="plist">${ps.sort((x, y) => y.n - x.n).slice(0, 6).map(p => `<li><button data-open="${esc(p.key)}">${thumb(p, 26)}<span class="nm">${esc(p.name)}</span></button>${sbar(p.sent, 8)}<span class="n">${fmt(p.n)}</span></li>`).join('')}</ul>
@@ -542,10 +542,10 @@ function vCategory(c) {
   const a = catAgg(ps), rows = tagStats(a.pos, a.neg), n = ps.reduce((x, p) => x + p.n, 0);
   return `
   ${backBtn('categories', '분류 목록')}
-  <header class="head"><div class="eyebrow">분류 · 상세페이지 ${ps.length}개 · 후기 ${fmt(n)}건</div><h1>${esc(c)}</h1></header>
+  <header class="head"><div class="eyebrow">분류 · 상품 ${ps.length}개 · 후기 ${fmt(n)}건</div><h1>${esc(c)}</h1></header>
   ${insightBox(rows)}
   ${likeDislike(rows, a.ex)}
-  <section class="panel"><h2>${esc(c)} 상세페이지</h2><div class="tbl-wrap" style="border:0"><table><thead><tr><th>상세페이지</th><th class="r">후기</th><th>마음에 든 점</th><th>마음에 안 든 점</th></tr></thead><tbody>${ps.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p, 36)}<b>${esc(p.name)}</b></div></td><td class="r">${fmt(p.n)}</td><td>${Object.keys(p.pos || {}).slice(0, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '—'}</td><td>${Object.keys(p.neg || {}).slice(0, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '—'}</td></tr>`).join('')}</tbody></table></div></section>
+  <section class="panel"><h2>${esc(c)} 상품</h2><div class="tbl-wrap" style="border:0"><table><thead><tr><th>상품</th><th class="r">후기</th><th>마음에 든 점</th><th>마음에 안 든 점</th></tr></thead><tbody>${ps.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p, 36)}<b>${esc(p.name)}</b></div></td><td class="r">${fmt(p.n)}</td><td>${Object.keys(p.pos || {}).slice(0, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '—'}</td><td>${Object.keys(p.neg || {}).slice(0, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '—'}</td></tr>`).join('')}</tbody></table></div></section>
   ${compass()}`;
 }
 
@@ -555,8 +555,8 @@ function vPartners() {
   P.filter(p => !p.pilot).forEach(p => p.partners.forEach(x => (map[x] = map[x] || []).push(p)));
   const list = Object.entries(map).sort((a, b) => a[0].localeCompare(b[0], 'ko'));
   return `
-  <header class="head"><div class="eyebrow">파트너사 ${list.length}곳</div><h1>파트너사별 상세페이지</h1>
-    <p class="lead">한 아이템을 여러 곳이 함께 만든 경우가 많아서, 파트너사별 후기 수는 더하지 않고 상세페이지만 나열합니다.</p></header>
+  <header class="head"><div class="eyebrow">파트너사 ${list.length}곳</div><h1>파트너사별 상품</h1>
+    <p class="lead">한 아이템을 여러 곳이 함께 만든 경우가 많아서, 파트너사별 후기 수는 더하지 않고 상품만 나열합니다.</p></header>
   <div class="pgrid">${list.map(([x, ps]) => `<section class="panel"><h2>${esc(x)}</h2><ul class="plist">${ps.sort((a, b) => b.n - a.n).map(p => `<li><button data-open="${esc(p.key)}">${esc(p.name)}</button>${sbar(p.sent, 10)}<span class="n">${fmt(p.n)}</span></li>`).join('')}</ul></section>`).join('')}</div>${keyRow()}`;
 }
 
@@ -577,7 +577,7 @@ function vRequests() {
     ${types.map(t => `<button data-rt="${esc(t)}" aria-pressed="${st.reqType === t}">${esc(INT_LABEL[t])}<span class="c">${fmt(cnt[t] || 0)}</span></button>`).join('')}
   </div>
   <div class="tools">
-    <label class="field">제품<select id="r-prod"><option value="">모든 상세페이지</option>${P.filter(p => p.intent && Object.keys(p.intent).length).sort((a, b) => a.num.localeCompare(b.num)).map(p => `<option value="${esc(p.key)}" ${st.reqProd === p.key ? 'selected' : ''}>${esc(p.pilot ? '파일럿 ' + p.name : p.num + ' ' + p.name)}</option>`).join('')}</select></label>
+    <label class="field">제품<select id="r-prod"><option value="">모든 상품</option>${P.filter(p => p.intent && Object.keys(p.intent).length).sort((a, b) => a.num.localeCompare(b.num)).map(p => `<option value="${esc(p.key)}" ${st.reqProd === p.key ? 'selected' : ''}>${esc(p.pilot ? '파일럿 ' + p.name : p.num + ' ' + p.name)}</option>`).join('')}</select></label>
     <label class="field">찾기<input id="r-q" type="search" placeholder="요약에 들어간 말" value="${esc(st.reqQ)}"></label>
   </div>
   <section class="panel" aria-live="polite"><div id="rlist"></div></section>`;
