@@ -213285,6 +213285,282 @@
         "disagree": false
       },
       "crawled_date": "2026-10-14"
+    },
+    "112362": {
+      "id": "112362",
+      "product_name": "틈 트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "날씬하게 만들어 나에게는 안맞아서 관상용",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112362/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-14 20:44:05",
+      "views": "0",
+      "content": "날씬하게 만들어 나에게는 안맞아서 관상용 되었음",
+      "images": [],
+      "hashtags": [
+        "#핏"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#핏"
+            ],
+            "summary": "날씬하게 만들어져 본인에게 맞지 않아 관상용이 됨",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "핏이 맞지 않아 착용 못 하고 관상용이 됐다는 평가",
+        "confidence": 0.85,
+        "tags": [
+          "#핏"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-15"
+    },
+    "112342": {
+      "id": "112342",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "혹시 뿔네모(호박)49 사이즈로 교환원하시는분",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112342/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-14 16:57:57",
+      "views": "0",
+      "content": "제가 49사이즈를 주문했더니\n저에게 좀크네요ㅠㅋ\n47사이즈 가지고 계신분들중\n교환원하시는 분 계실까요?\n다른 색상도 상관없습니다\n010-3230-1178",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "양도·거래",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "49 사이즈가 커서 47 사이즈 보유자와 맞교환 희망(색상 무관)",
+            "confidence": 0.93,
+            "category": "양도/거래",
+            "verify": "중립",
+            "_auto_ok": "의도가_분류결정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상대가 다른 구매자이고 연락처를 명시해 양도·거래, 사이즈가 커서 부정",
+        "confidence": 0.93,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-15"
+    },
+    "112308": {
+      "id": "112308",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "좀 실망이네요..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112308/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-14 13:51:56",
+      "views": "0",
+      "content": "기대가 커서 그런지 어제 11개월만에 받아서 써 보니 저랑은 안 맞네요.\n잉크가 끊김없이 잘 써지고 뚜껑도 맞아서 양품인데,\n필감이 제가 생각했던 필감이 아니네요..\n부드러운 편이 아니고 좀 거친 편인데, 사각거림도 좋은 쪽이 아니라서 이도저도 아닌 듯 싶어요.\n알리에서 무료로 받은 진하오59이 더 부드럽게 잘 써지고, 사각거림은 라미가 더 나아서.. 비싼 장식용으로 될 수 있을 듯 하네요.\n길들여서 사용하면 나아질 수 있을지 모르겠지만, 오랜 시간이 필요할 듯 싶어서 그 동안 참고 쓸지 의문이네요..\n뚜껑이 꽉 껴져서 닙이 잘 마르진 않을 듯 하네요.\n일주일 안 써보고 놔 봐야겠네요.\n암튼 전 기대이하라 아쉽네요.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "11개월 만에 수령(선주문 후생산의 정상 과정)",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#재질"
+            ],
+            "summary": "필감이 거칠고 사각거림도 아쉬워 기대 이하, 장식용이 될 듯",
+            "confidence": 0.92,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "잉크가 끊김 없이 나오고 뚜껑도 잘 맞는 양품",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 사실은 중립, 필감 불만이 중심이고 마감·양품 여부는 긍정으로 분리",
+        "confidence": 0.85,
+        "tags": [
+          "#재질",
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-15"
+    },
+    "112301": {
+      "id": "112301",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "구멍났음",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112301/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-14 13:13:01",
+      "views": "0",
+      "content": "받고나서 보관하다 이번에 신어 봤는데\n두 군데 이런식으로 구멍이 났네요.\n꿰메는 수 밖에 없겠죠?",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/14/059035c0377ea254f339141ed903f3ca.jpg"
+      ],
+      "hashtags": [
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "문의",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "착용 후 두 군데 구멍이 나서 꿰매야 하는지 문의",
+            "confidence": 0.8,
+            "category": "문의",
+            "verify": "중립",
+            "_auto_ok": "의도가_분류결정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "하자를 서술한 뒤 수선 방법을 묻는 글이라 부정, 교환 요청은 없어 문의",
+        "confidence": 0.8,
+        "tags": [
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-15"
+    },
+    "112276": {
+      "id": "112276",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "시즌3도 진행하여 주십시요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112276/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-14 10:18:05",
+      "views": "0",
+      "content": "시즌3도 진행하여 주십시요",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "시즌3도 진행해 달라는 요청",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "후속 시즌 제작 요구라 제품제안, 감정 없음",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-15"
+    },
+    "112275": {
+      "id": "112275",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "시즌3도 진행하여 주십시요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112275/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-14 10:16:45",
+      "views": "0",
+      "content": "시즌3도 잰행하여 주십시요",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "시즌3도 진행해 달라는 요청",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "후속 시즌 제작 요구라 제품제안, 감정 없음",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-15"
     }
   },
   "daily_logs": [
@@ -217829,9 +218105,21 @@
         "112094",
         "112063"
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "count": 6,
+      "new_ids": [
+        "112362",
+        "112342",
+        "112308",
+        "112301",
+        "112276",
+        "112275"
+      ]
     }
   ],
-  "last_updated": "2026-10-14 08:00:31",
+  "last_updated": "2026-10-15 08:00:31",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
