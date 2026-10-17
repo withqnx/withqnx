@@ -214358,10 +214358,49 @@
       "views": "0",
       "content": "남편은 녹두 44, 저는 수수 38  동글이 .\n드디어 금일 수령했어요.\n착용한걸 본 고딩아이는 독립운동가 삘 난다고 해서 빵 터졌답니다.\n어찌나 가볍고 렌즈 사이즈도 안경, 덧경 케이스도 유니크합니다.\n담주면 결기 25주년인데 기념템으로 잘 쓸께요.",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#무게감",
+        "#구성",
+        "#디자인"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#무게감",
+              "#구성",
+              "#디자인"
+            ],
+            "summary": "가볍고 렌즈 사이즈, 안경·덧경 케이스가 유니크해 만족",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "드디어 금일 수령",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령은 중립, 가벼움·케이스 디자인은 긍정 상품 평가",
+        "confidence": 0.9,
+        "tags": [
+          "#무게감",
+          "#구성",
+          "#디자인"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214378,10 +214417,33 @@
       "views": "0",
       "content": "맛있고 상품 보내주셔서 감사합니다.",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#첫인상"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "좋은 품질이라며 감사 표현",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 전반 호평",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214401,10 +214463,43 @@
         "https://nonohumble.com/file_data/nohumble/2026/10/16/30f5f1c6a6dc8934bbb001b1f78e2450.jpg",
         "https://nonohumble.com/file_data/nohumble/2026/10/16/b6a7c1d4a9bae15391e577bff12a49e6.jpg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#첫인상"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "첫 만년필, 기대 이상으로 마음에 듦",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [],
+            "summary": "거의 1년 만에 도착, 잉크 도착 시점을 모르겠다고 언급",
+            "confidence": 0.8,
+            "category": "문의",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본품 수령 후 부속품(잉크) 대기 상태를 담백하게 언급, 독촉 없음",
+        "confidence": 0.8,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214421,10 +214516,46 @@
       "views": "0",
       "content": "흙미덧경51배송받았는데 얼굴보다 안경이 커서 한치수또는 두치수 작은 안경으로 교환 원합니다\n안경이 작아서 큰안경 필요하신분 연락바랍니다.",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#사이즈"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "얼굴보다 안경이 커서 49 또는 47로 교환 원함",
+            "confidence": 0.8,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "큰 안경이 필요한 분은 연락 바람",
+            "confidence": 0.8,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목은 교환 원함이나 본문에 구매자 대상 연락 요청이 섞여 있어 판단이 갈림",
+        "confidence": 0.7,
+        "spec_problems": [
+          "reasoning이 애매함을 인정 → confidence 강제 하향"
+        ],
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214444,10 +214575,36 @@
         "https://nonohumble.com/file_data/nohumble/2026/10/16/7fbaf4d0dbfae18a5103de9d86e2fa86.JPG",
         "https://nonohumble.com/file_data/nohumble/2026/10/16/617adee2065ece810d9d91c3103ec64f.JPG"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#내구성",
+        "#퀄리티"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#내구성",
+              "#퀄리티"
+            ],
+            "summary": "두 번 착용만에 원단이 훼손돼 품질 불만, 생산 시 참고 요청",
+            "confidence": 0.8,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "원단 손상 불만이나 교환 요청 없이 제작 참고용 제언이라 intent가 흔들림",
+        "confidence": 0.8,
+        "tags": [
+          "#내구성",
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214467,10 +214624,33 @@
         "https://nonohumble.com/file_data/nohumble/2026/10/16/e70a34cf947c09766ba5dc2e208ae501.jpeg",
         "https://nonohumble.com/file_data/nohumble/2026/10/16/b1905374d929983df275c59fdd31a68c.jpeg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#첫인상"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "예쁘고 아주 만족",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평",
+        "confidence": 0.95,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214487,10 +214667,43 @@
       "views": "0",
       "content": "와이프꺼 제꺼 두 개 구매했고 잘 받았네요. 그런데 걸치게 되면 목이 가렵네요. 만질 때도 살짝 거친 느낌은 있습니다. 과연 사용하게 될지 모르겠습니다.",
       "images": [],
-      "hashtags": [],
+      "hashtags": [
+        "#재질"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#재질"
+            ],
+            "summary": "걸치면 목이 가렵고 촉감이 거칠어 사용 여부 미지수",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "두 개 잘 받음",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령은 중립, 촉감 불만은 재질 부정",
+        "confidence": 0.9,
+        "tags": [
+          "#재질"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
     },
@@ -214509,12 +214722,655 @@
       "images": [
         "https://nonohumble.com/file_data/nohumble/2026/10/16/5eb538b72cf6866f3206ed93a1dd341a.jpg"
       ],
-      "hashtags": [],
+      "hashtags": [
+        "#첫인상"
+      ],
       "classification": {
-        "needs_review": true,
-        "_v2": true
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "깔끔해서 마음에 듦",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
       },
       "crawled_date": "2026-10-17"
+    },
+    "112683": {
+      "id": "112683",
+      "product_name": "2026겸손색안경 테덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "덧경 뿔네모 44 사이즈 47로 교환하실 분(다른색 가능)",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112683/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-18 06:05:17",
+      "views": "0",
+      "content": "너무 밝은색 아니라면 색상무관 47사이즈 교환 원합니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/18/03d000b17a448f1797b851c9be4b6cd3.jpeg"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "44 사이즈를 47로 구매자끼리 교환 원함, 색상 무관",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "제목에서 '교환하실 분'으로 다른 구매자 대상 맞교환",
+        "confidence": 0.9,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112682": {
+      "id": "112682",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "아주아주 아주아주",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112682/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-18 00:24:14",
+      "views": "0",
+      "content": "아주아주 아주아주 좋아요",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "매우 좋다는 전반 호평",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "근거 없는 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112677": {
+      "id": "112677",
+      "product_name": "세종필통(2구)",
+      "product_id": "374",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "역시나~겸손몰",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112677/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 22:08:04",
+      "views": "0",
+      "content": "세종 레드 필통 그립감 만듬새. 역시. 최고네요.\n기다림도. 잊고있었는데. 늘. 좋은 선물 받는. 기쁨    겸손몰. 수고로움덕입니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/b9db32d7bf2d9b072358f12867b60a7e.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#마감"
+            ],
+            "summary": "세종 필통의 그립감과 만듦새가 최고",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "기다림을 잊고 있다가 좋은 선물을 받는 기쁨",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "배송_기다림서술"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "그립감은 사용성, 만듦새 호평은 퀄리티로 볼 수도 있으나 구체 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성",
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112674": {
+      "id": "112674",
+      "product_name": "세종필통(2구)",
+      "product_id": "374",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "세종필통 빨강",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112674/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 21:42:17",
+      "views": "0",
+      "content": "베개때보다 조금 더 부드러운 느낌\n근데 아래가 뚫려 있어서 거꾸로 들고 꺼내야 하는 점이 아쉽네요ㅠ\n이번 금속 필통 기다렸다 살 걸 그랬나 싶은 생각이 들었지만 사이드에 각인도 멋있고 가죽이 고급져서 만족합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/2c52736041bd9c6d90327da0d5a1f51e.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/e68b30f604d8e1bf605334bb52d5cc97.jpg"
+      ],
+      "hashtags": [
+        "#재질",
+        "#디자인",
+        "#퀄리티",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#디자인",
+              "#퀄리티"
+            ],
+            "summary": "부드러운 느낌, 각인이 멋있고 가죽이 고급져 만족",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "아래가 뚫려 있어 거꾸로 들고 꺼내야 해서 아쉬움",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "칭찬과 불편을 나눠 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#재질",
+          "#디자인",
+          "#퀄리티",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112663": {
+      "id": "112663",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "장인의 숨결이 느껴집니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112663/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 16:24:02",
+      "views": "0",
+      "content": "무게감이 있어서 정말 고급 지고 디테일에 놀랐습니다",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/c33694ad4ade1f2ce8c2e7ea7c81edfc.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/7d3307f3f3d809cab61e16a4f636dc61.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/bbb95ecea9f748ac59627d252a43e13b.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/7e1ad3abe642c63e74c3c00f176a63b0.jpeg"
+      ],
+      "hashtags": [
+        "#무게감",
+        "#퀄리티",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#무게감",
+              "#퀄리티",
+              "#디자인"
+            ],
+            "summary": "무게감과 디테일이 고급스러워 놀람",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구체 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#무게감",
+          "#퀄리티",
+          "#디자인"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112661": {
+      "id": "112661",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "장인의 숨결이 느껴지는 것 같습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112661/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 16:22:40",
+      "views": "0",
+      "content": "충분히 같이가 있는 만년필 입니다. 장인의 손길이 느껴지는 같아 갑으로 물려주려고 합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/f5c6c20c2ad20e874c1e2633e180e2bf.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/a5859dabdb50c730c47f9f46acdc4077.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/bf3b8ba4bb883905a714ad42d60c1d00.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/1515a1c637ee79375d3857e577bd3f7b.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "가치 있는 만년필로 장인의 손길이 느껴져 물려주려 함",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만듦새 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112660": {
+      "id": "112660",
+      "product_name": "세종필통(1구)",
+      "product_id": "375",
+      "product_link": "https://nonohumble.com/product/세종필통1구/375/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/d4b13b1109caccf4420617cab46b41d9.png",
+      "title": "너무 고급 지네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112660/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 16:18:24",
+      "views": "0",
+      "content": "장인의 숨결이 느껴지는 것 같아 감동입니다. 너무 고급 지네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/8290e7f5ec6dda04b692bef21c0c1a84.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/b28083b336c0908ab79761bca6300821.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/d37ea6fbf9efbbf5031bc22257734d9d.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/b73a3e72be837ace0666c0c32b042ef0.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/05e4982fd6a98d74bb83b0185b4a296d.jpeg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "장인의 숨결이 느껴지고 고급스러워 감동",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만듦새 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112656": {
+      "id": "112656",
+      "product_name": "세종필통(2구)",
+      "product_id": "374",
+      "product_link": "https://nonohumble.com/product/세종필통2구/374/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/896e0bc582f2d33b18c99b1025277f9a.png",
+      "title": "세종필통- 이뻐요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112656/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-17 15:10:58",
+      "views": "0",
+      "content": "드디어 도착.. 이뻐요. 이제 여기 담을 세종이 빨리와야하는데..",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/17/b1d35a6493b140b376113a0331fad135.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "필통이 예쁨",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "드디어 도착, 담을 세종 만년필이 오길 기다리는 중",
+            "confidence": 0.85,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필통 수령은 중립, 세종 대기는 정상 과정이며 독촉 없음",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112653": {
+      "id": "112653",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "껑 차콜그레이 62호 판매합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112653/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-17 14:30:06",
+      "views": "0",
+      "content": "껑 차콜그레이 62호 새것 그대로 판매합니다.\n택배비는 제가 부담합니다.\n010-4852-영사이육으로 연락 바랍니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "껑 차콜그레이 62호 새것 판매, 연락처 명시",
+            "confidence": 0.95,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 대상 판매글",
+        "confidence": 0.95,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112652": {
+      "id": "112652",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "난 대두 작아!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112652/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-17 14:24:47",
+      "views": "0",
+      "content": "어마어마하게 큰건 안만드시나",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "머리 큰 사람을 위한 더 큰 사이즈 출시 요구",
+            "confidence": 0.85,
+            "category": "중립/단순수령",
+            "verify": "부정",
+            "_auto_ok": "제품제안"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "대두라 작다며 더 큰 제품을 만들어 달라는 제안",
+        "confidence": 0.85,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112648": {
+      "id": "112648",
+      "product_name": "해바라기",
+      "product_id": "302",
+      "product_link": "https://nonohumble.com/product/해바라기/302/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202506/de1b0d0eff45e9781aaf43cbd4ef80d7.png",
+      "title": "스윽슥~스윽슥~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112648/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-17 12:22:48",
+      "views": "0",
+      "content": "그냥 힘 안줘도 잘리는 느낌.\n식재료 잘릴때 소리가 달라요.",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "힘 안 줘도 잘 잘리고 식재료 자를 때 소리가 다름",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용감 호평",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112644": {
+      "id": "112644",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "뿔네모 흑미 47에서 44 사이즈로 교환 하실 분 계실까요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112644/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-17 09:57:54",
+      "views": "0",
+      "content": "제가 가지고 있는 건 뿔네모 흑미 44 사이즈입니다.\n뿔네모 흑미 47 사이즈 가지고 계신 분 중에 교환 원하시는 분 계실까요..~",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "뿔네모 흑미 44를 47과 맞교환할 구매자 모집",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자끼리 맞교환 요청",
+        "confidence": 0.9,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
+    },
+    "112643": {
+      "id": "112643",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "이번에는 실망",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112643/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-17 09:44:22",
+      "views": "0",
+      "content": "지난번에 너무 만족해서 구매했는데요 이번 거는 실망이네요 먼저 번거는 착 달라붙고 늘어나지도 않고 돌아가지도 않았는데 신었을 때 착 감기지도 않고 신발 벗을 때마다 벗겨져 가지고 시장 양말 사서 신는 느낌입니다. 재질 자체는 좋은 거 같은데 너무 양말이 얇고 탄력이 없어서 그런 현상이 벌어지는 거 같습니다 겸손 공장에 후원한다고 생각하고 항상 물건을 사고 있지만 뭐 나름 사정이 있어서 이렇게 만드셨는지 모르겠는데 가격은 이 정도 품질에 합리적이지 않다고 생각합니다",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#재질",
+        "#가격",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#재질",
+              "#가격",
+              "#퀄리티"
+            ],
+            "summary": "양말이 얇고 탄력이 없어 벗겨지며 가격 대비 품질에 실망",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "이전 구매 대비 품질 저하 불만이 중심, 재질 자체는 좋다고 하나 두께·탄력 불만",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성",
+          "#재질",
+          "#가격",
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-18"
     }
   },
   "daily_logs": [
@@ -219107,9 +219963,28 @@
         "112522",
         "112510"
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "count": 13,
+      "new_ids": [
+        "112683",
+        "112682",
+        "112677",
+        "112674",
+        "112663",
+        "112661",
+        "112660",
+        "112656",
+        "112653",
+        "112652",
+        "112648",
+        "112644",
+        "112643"
+      ]
     }
   ],
-  "last_updated": "2026-10-17 08:00:09",
+  "last_updated": "2026-10-18 08:00:38",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
