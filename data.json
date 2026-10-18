@@ -215371,6 +215371,457 @@
         "disagree": false
       },
       "crawled_date": "2026-10-18"
+    },
+    "112714": {
+      "id": "112714",
+      "product_name": "2026겸손색안경 테덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "선물했어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112714/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 00:55:02",
+      "views": "0",
+      "content": "남편에게 선물했는데 맘에 든다네요. 첫날 주문해서 지난주에 받았는데 다초점렌즈로 맞추느라 일주일 안경원 보냈다가 오늘 받았어요. 여유분 덧경이 있음 좋겠어요. 추가로 덧경만 따로 판매 요청해 봅니다.\n덧경케이스에 기스가 좀 있어서 문의했더니 바로 맞교환해줬어요. 빠르게 대응해주셔서 좋았고요.",
+      "images": [],
+      "hashtags": [
+        "#선물",
+        "#첫인상",
+        "#구성",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#선물",
+              "#첫인상"
+            ],
+            "summary": "남편에게 선물했는데 마음에 들어 한다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#구성"
+            ],
+            "summary": "여유분 덧경을 따로 판매해 달라는 요청",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "덧경 케이스에 기스가 있어 문의 후 맞교환",
+            "confidence": 0.9,
+            "category": "교환/반품",
+            "verify": "중립",
+            "_auto_ok": "의도가_분류결정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "문의하자 바로 맞교환해 줘서 빠른 대응이 좋았다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "선물 만족, 덧경 단품 판매 제안, 케이스 기스는 교환 완료, 응대 칭찬으로 분할",
+        "confidence": 0.9,
+        "tags": [
+          "#선물",
+          "#첫인상",
+          "#구성",
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-19"
+    },
+    "112708": {
+      "id": "112708",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "1년 기다려서 받은게 이거라니…",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112708/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-18 20:21:56",
+      "views": "0",
+      "content": "같은 잉크로 파카51, 세종으로 써봤는데…\n파카51은 선명한 검은색 가는 글씨인데요…\n세종은 살짝 번져서 글씨 색이 흐리네요..\n거의 1년을 기다려서 받은게 이거라니…\n실망이 이만저만이 아닙니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "같은 잉크로 써보니 세종 펜은 번져서 글씨 색이 흐려 실망",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "약 1년을 기다려 받았다는 사실 서술 (불만의 대상은 제품)",
+            "confidence": 0.85,
+            "category": "중립/단순수령",
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기다림은 정상 과정이라 중립, 불만은 번짐 등 필기감 자체에 있음",
+        "confidence": 0.85,
+        "tags": [
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-19"
+    },
+    "112704": {
+      "id": "112704",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "수령 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112704/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-18 18:50:30",
+      "views": "0",
+      "content": "색상별로 하나씩 구매 했습니다.\n초록과 연두는 따로 임자가 있어서  간단히 자가 검수만 한 상태이고,\n진주는 뒤쪽 노브를 돌릴 때 주기적으로 뻑뻑한 저항감이 느껴져 받자마자 a/s 접수한 상태입니다.\n검은 진주를 기대 했는데 제 취향에는\n맑은 순은이 아주 깔끔한 게 더 좋아보이네요.\n겉 보기엔 고급져 보입니다. 그런데 좀 뚱뚱합니다. (뚱뚱하고 다리가 긴 공장장 체형인가...)\n순은 기준 뚜껑 안쪽도 조명이 비치게 해서 들여다보면 깔끔한 것이 기분도 상큼합니다.\n언젠가는 흘러나온 잉크에 얼룩이 지면 못 참을 것 같아요.ㅎㅎ\n그런데 또 한편으로는 뚜껑을 들여다 볼 때, 다른 색상과 달리 순은은 저렴한 양은 그릇 느낌이 들기도 하네요.\n티타늄이라는 금촉은 어떨지...\n전 만년필 애호가는 아닙니다.\n볼펜도 1.0을 선호하고 모나미 FX4000 1.0 같은 미끄러지듯 부드러운 필감을 좋아하는데,\n순은의 경우 누가 줬는지도, 모델명도 모르는 오래 된 파카보다는 좀 더 거친 느낌입니다. 더 사각거린다가 맞겠네요.\n제조를 모르기에 드는 생각일 수 있지만,\n기계로 찍어내는 제품이 아니고 깍아내는 제품이라 그런지 제품마다 마감적 차이가 좀 있네요.\n만듬새는 큰 차이 없이 정교하게 잘 만들어져 있습니다만,\n연두는 뚜껑의 열고 닫힘이 가장 부드럽습니다. 마지막 잠김에서도 힘 안들여도 부드럽게 맞물리고, 어느 위치로나 뚜껑을 들이밀어도 저항감 없이 회전을 시작합니다.\n초록, 진주는 뚜껑을 어느 위치로 밀어 넣어도 저항감 없이 잠금을 시작하는데, 마지막에는 힘을 좀 줘야 라인에 맞게 잠기고\n순은은 처음에 뚜껑을 체결할 때 뚜껑을 잠김 방향, 풀림 방향으로 한 차례 돌려줘야 뚜껑이 자리를 찾아 들어갑니다. 마지막에도 힘을 좀 줘야 딱 맞아 들어가네요.\n마지막으로 다음 카페에 초록의 경우 연마제 가루가 문양 사이 사이에 껴 있다는 후기가 있어서 자세히 들여다 봤더니,\n제 경우도 2개가 있더군요. 바늘로 살짝 건드리니 빠져나옵니다.\n간단 팁이었습니다.",
+      "images": [],
+      "hashtags": [
+        "#마감",
+        "#퀄리티",
+        "#디자인",
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "진주 색상 뒤쪽 노브가 주기적으로 뻑뻑해 A/S 접수",
+            "confidence": 0.9,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "겉보기에 고급스럽고 전반적으로 정교하게 잘 만들어짐",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#디자인"
+            ],
+            "summary": "전체적으로 좀 뚱뚱한 체형",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#재질"
+            ],
+            "summary": "순은은 뚜껑 안쪽이 저렴한 양은 그릇 느낌",
+            "confidence": 0.8,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "순은의 필감이 오래된 파카보다 거칠고 사각거림",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "깎아내는 제품이라 개체마다 뚜껑 체결감 등 마감 차이가 있음",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "중립",
+            "_auto_ok": "작은불만_부정유지"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문이 중간에 잘렸으나 확인되는 범위에서 대목별로 분할",
+        "confidence": 0.8,
+        "tags": [
+          "#마감",
+          "#퀄리티",
+          "#디자인",
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-19"
+    },
+    "112696": {
+      "id": "112696",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "드디어 받았네요.11개월만",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112696/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-18 15:57:22",
+      "views": "0",
+      "content": "충성심으로 주문한 만년필..\n너무 기대를 많이 했나봅니다.\n글씨를 쓸때 잉크가 좀 많이 나온다고 해야 할까요?\n가로선은 부드럽고 세로선은 뻑뻑하게 느껴져요.\n만년필 알지 못하는 사람이라 그려러니\n소장만 하려구요.\n얼마전 100엔에 산 만년필이 사용하긴 더 좋네요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/18/6b1a7b529901756f9e55ca5a90fa7b0b.jpg"
+      ],
+      "hashtags": [
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "11개월 만에 받았다는 수령 사실",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "잉크가 많이 나오고 세로선이 뻑뻑해 기대에 못 미쳐 소장만 하겠다",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기다림은 중립, 필기감 불만은 상품 부정 (100엔 만년필 비교는 타 제품 언급이라 제외)",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-19"
+    },
+    "112687": {
+      "id": "112687",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "최고의 안경과 덧경. 다음엔 메탈 덧경 만들어주세요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112687/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-18 10:38:18",
+      "views": "0",
+      "content": "오랜 기다림을 거쳐 드디어 받아본 덧경! 실제로 보니 마감과 재질이 정말 만족스럽네요. 이만한 안경과 덧경을 같이 사는데 가격도 정말 합리적입니다. 사이즈가 크다는 말이 있어 걱정했는데 대두라 전혀 문제 되지 않았습니다😅\n안경을 오래 써와서 선글라스는 쓰기 어렵다고 생각했는데 덧경으로 그 생각을 버리게 되어 정말 좋습니다. 다만 덧경 케이스의 무게를 줄이고 덧경 보호를 위해 케이스 안쪽 윗부분에도 고무를 덧댄다면 더 좋을 것 같네요.\n다음엔 메탈 소재 덧경으로 더욱 가볍고 멋지게 만들어주세요. 이제 매년 겸손안경만 기다려지네요. 늘 응원합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/18/6c221c1b2bccbf82bf1d5f1169071d79.jpeg"
+      ],
+      "hashtags": [
+        "#마감",
+        "#재질",
+        "#가격",
+        "#사이즈",
+        "#첫인상",
+        "#구성",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오랜 기다림 끝에 덧경을 받았다",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "배송_기다림서술"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#마감",
+              "#재질"
+            ],
+            "summary": "마감과 재질이 매우 만족스럽다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#가격"
+            ],
+            "summary": "안경과 덧경을 함께 사는 가격이 합리적",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "크다는 말에 걱정했으나 대두라 문제없었다",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "덧경 덕분에 선글라스에 대한 선입견이 사라져 매우 만족",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#구성",
+              "#무게감"
+            ],
+            "summary": "덧경 케이스 무게를 줄이고 안쪽 윗부분에도 고무를 덧대 달라",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#재질",
+              "#무게감"
+            ],
+            "summary": "다음엔 더 가볍고 멋진 메탈 소재 덧경을 만들어 달라",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "매년 겸손안경만 기다려질 만큼 만족하고 응원",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 호평에 개선·후속 제품 제안(중립)과 재구매 의사(긍정)를 분리",
+        "confidence": 0.9,
+        "tags": [
+          "#마감",
+          "#재질",
+          "#가격",
+          "#사이즈",
+          "#첫인상",
+          "#구성",
+          "#무게감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-19"
     }
   },
   "daily_logs": [
@@ -219982,9 +220433,20 @@
         "112644",
         "112643"
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "count": 5,
+      "new_ids": [
+        "112714",
+        "112708",
+        "112704",
+        "112696",
+        "112687"
+      ]
     }
   ],
-  "last_updated": "2026-10-18 08:00:38",
+  "last_updated": "2026-10-19 08:00:36",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
