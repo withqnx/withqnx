@@ -215822,6 +215822,621 @@
         "disagree": true
       },
       "crawled_date": "2026-10-19"
+    },
+    "112874": {
+      "id": "112874",
+      "product_name": "세종 스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 스테인레스 촉 박스에 색깔 표시가 없어요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112874/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-20 07:41:11",
+      "views": "0",
+      "content": "검은 진주랑 두가지 색깔 다 신청했는데 박스에 색깔 표기가 안되어 있어요\n확인할 수 있는 방법이 없나요?",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "부정",
+            "intent": "문의",
+            "tags": [],
+            "summary": "박스에 색상 표기가 없어 두 색상을 구분할 방법을 문의",
+            "confidence": 0.8,
+            "category": "문의",
+            "verify": "중립",
+            "_auto_ok": "의도가_분류결정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "포장 표기 부재라는 불편을 서술한 뒤 확인 방법을 물음",
+        "confidence": 0.8,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112871": {
+      "id": "112871",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "너무너무 맘에 듭니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112871/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-20 06:43:15",
+      "views": "0",
+      "content": "안경을 써야 생활할수 밖에 없는 사람으로 덧경의 아이디어는 최고인것 같아야 아니 최고 입니다. 대 만 족!!!! 2개씩 주문할걸 하는 아쉬움... 다음에 꼭 다시 기회가 주어지길... 바라봅니다. ㅎㅎㅎ\n한가지 작은 부편. ㅎㅎ 덧경 케이스,,, 조금 무게감이 느껴져서, 휴대성에서 가죽 소재면 어떨까???? ㅎㅎㅎ",
+      "images": [],
+      "hashtags": [
+        "#첫인상",
+        "#무게감",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "덧경 아이디어와 제품에 크게 만족, 2개씩 살걸 하는 아쉬움",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#무게감",
+              "#재질"
+            ],
+            "summary": "케이스가 다소 무거워 휴대성을 위해 가죽 소재 케이스를 제안",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "대만족과 재구매 의사는 긍정, 가죽 케이스는 제품제안으로 중립",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상",
+          "#무게감",
+          "#재질"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112868": {
+      "id": "112868",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "덧경 케이스 때문에 덧경이 스크래치가 날것같음",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112868/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-20 03:00:13",
+      "views": "0",
+      "content": "덧경 케이스에 덧경을 넣었을때 유격때문에 케이스를 닫을때 간섭되어 덧경이 손상될꺼 같아요\n유격르로 인해 케이스 한쪽을 치우칠때 케이스 뚜껑을 닫으면 덧경에 걸림",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/20/f1b5104368fc670e8866dfbb48ba70c5.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/20/af26c3b7470cdd9ed729910a07e25912.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/20/5f4e59592e55cdb9818adc43f350619f.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/20/0466b2ec7d364ea69b78cf3d5c4a5403.jpeg"
+      ],
+      "hashtags": [
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "케이스 유격 때문에 닫을 때 덧경이 걸려 스크래치가 날 것 같다는 우려",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "케이스 유격으로 인한 손상 우려를 지적",
+        "confidence": 0.9,
+        "tags": [
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112864": {
+      "id": "112864",
+      "product_name": "별",
+      "product_id": "341",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "옷 색상 달라서 반품",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112864/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 23:39:14",
+      "views": "0",
+      "content": "저는 이 옷 받자 마자 색상이 우리가 생각 하는 그런 색상이 아니여서 바로 반품했어요.\n교환만 된다고 해서 마음에 드는게 없어서 그냥 교환도 안했어요.\n원단 자체가 여름에 입기는 너무 두꺼웠고, 원단 질도 그렇게 좋아 보이지는 않았어요.\n지금 환불도 안된다고 하고 교환 받고 싶은 색상은 없고, 어떻게 해야 할지 모르겠네요.\n원단의 질이라도 좋으면 교환해서 잠옷이라도 입고 싶은데 그런 마음이 전혀 없네요.",
+      "images": [],
+      "hashtags": [
+        "#색상",
+        "#재질"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#색상",
+              "#재질"
+            ],
+            "summary": "색상이 기대와 달랐고 원단이 두껍고 질이 좋아 보이지 않아 반품",
+            "confidence": 0.92,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [],
+            "summary": "교환만 가능하고 환불이 안 된다는 정책에 곤란함을 호소",
+            "confidence": 0.88,
+            "category": "교환/반품",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "상품 하자 서술과 환불 불가 정책 불만이 함께 있음",
+        "confidence": 0.88,
+        "tags": [
+          "#색상",
+          "#재질"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112787": {
+      "id": "112787",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "뿔네모 덧경세트 44에서 47로 교환 구합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112787/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 12:36:19",
+      "views": "0",
+      "content": "뿔네모 덧경세트 44에서 47로 교환 구합니다\n흑미 1 녹두 1 가지고 있습니다  교환 원하시는분들 연락주세요\n010-7250-9807",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "뿔네모 덧경세트 44를 47로 맞교환할 구매자를 구함(연락처 명시)",
+            "confidence": 0.97,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "다른 구매자에게 맞교환 제안, 전화번호 명시",
+        "confidence": 0.97,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112776": {
+      "id": "112776",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "[사이즈 교환] 44 뿔네모 테 +덧경  47로 교환 원해요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112776/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 11:37:46",
+      "views": "0",
+      "content": "44 뿔네모 테 +덧경   ﻿ 47로 교환 원해요",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "44 뿔네모 테+덧경을 47로 교환 원함",
+            "confidence": 0.7,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "교환 상대가 회사인지 구매자인지 본문에 없으나 게시 형식상 맞교환 글로 보임",
+        "confidence": 0.7,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": true,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112773": {
+      "id": "112773",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "세종 펜레스트를 이용할까...와를 이용할까 고민되네요...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112773/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-19 11:27:53",
+      "views": "0",
+      "content": "제목처럼 이미 '와'를 구입한 상태이며...현재 '와'를 이용하여 라미 만년필을 올려놓고 사용 중에 있네요...\n그런데 '세종 펜레스트'를 받고 나니 '와'와 '세종 펜레스트' 중 어느 것을 사용할까 하는 고민에 빠져들었네요...^^;\n훈민정음 글자가 양각으로 새겨져 있어서 만녈필이나 필기구를 올려놔도 미끄러지지 않네요...\n무게감도 꽤 있어서...문진으로도 사용할 수 있을 것 같아서 좋네요...^^\n정말 구입 잘 했다고 생각되네요...^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/19/cc3ebba639cd9e6fe46d8ee5b4238779.JPEG"
+      ],
+      "hashtags": [
+        "#디자인",
+        "#무게감",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#디자인",
+              "#무게감",
+              "#첫인상"
+            ],
+            "summary": "훈민정음 양각이 미끄럼을 막고 묵직해 문진으로도 좋아 구입에 만족",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "양각 디자인과 무게감을 근거로 만족",
+        "confidence": 0.93,
+        "tags": [
+          "#디자인",
+          "#무게감",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112772": {
+      "id": "112772",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "필기감 너무 좋네요...^^",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112772/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-19 11:22:49",
+      "views": "0",
+      "content": "정말 오랫동안 기다리다 받았는데...\n받아 보니 색상도 너무 좋고, 무게도 묵직한 것이 너무 좋네요...\n검은진주로 주문했는데 생각했던 것보다 검은색이 더욱 멋지네요...\n진작 이럴 줄 알았으면 달빛초록도 하나 더 주문할 걸 하는 후회가 드네요...\n두껑도 스크류캡 형태라 돌리면서 열고...닫을 때도 역시 반대로 돌리면 잠기네요...\n한 가지 단점 아닌 단점은 마지막 조금 더 힘줘서 닫아야지만 곤룡포 문양이 자연스럽게 연결되네요...\n그리고 캡과 바디 사이의 간격이 아주 미세하게 뜨네요...\n머...이 정도는 오케이할 정도입니다...\n실제 잉크를 넣을 때도 피스톤 필러라 튜브를 돌린 후 넣는 게 너무 편하네요...\n그리고 필기도 다른 만년필에 비해 훨씬 부드럽게 적히네요...\n대단히 만족스럽다고 생각되네요...^^\n잘 구매했다 생각듭니다...^^",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/19/366c666412b6128e2b32aa7d255fd61e.JPEG"
+      ],
+      "hashtags": [
+        "#색상",
+        "#무게감",
+        "#사용성",
+        "#첫인상",
+        "#마감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오래 기다린 끝에 수령",
+            "confidence": 0.95,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#색상",
+              "#무게감",
+              "#사용성",
+              "#첫인상"
+            ],
+            "summary": "검은진주 색상과 묵직함, 스크류캡과 피스톤 필러 사용성, 부드러운 필기감에 대만족",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#마감"
+            ],
+            "summary": "캡 닫을 때 문양 연결에 힘이 필요하고 캡과 바디 사이가 미세하게 뜨나 감수할 수준",
+            "confidence": 0.82,
+            "category": "부정",
+            "verify": "긍정",
+            "_auto_ok": "칭찬속_작은아쉬움"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [],
+            "summary": "달빛초록도 하나 더 주문할걸 하는 후회",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 만족과 추가 구매 후회, 마감은 경미한 단점",
+        "confidence": 0.82,
+        "tags": [
+          "#색상",
+          "#무게감",
+          "#사용성",
+          "#첫인상",
+          "#마감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112770": {
+      "id": "112770",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "세상에나...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112770/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 11:12:58",
+      "views": "0",
+      "content": "모자가 넘 커요~~!!\n줄여서 사용해 보려 수선집 여기저기 찿아 보았으냐 모자 수선하는데 없어요~!!\n집에 그냥 방치해 놓고 있는데 사용하실분 무료로 배송해 드릴께요~~!!\n단 겸손 애청자 분 민주진영 지지 하시는 분~~!!",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "모자가 너무 크고 수선할 곳도 찾지 못함",
+            "confidence": 0.92,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "사용할 분께 무료로 배송해 주겠다며 나눔",
+            "confidence": 0.9,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만과 다른 구매자에게의 나눔 제안",
+        "confidence": 0.9,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112766": {
+      "id": "112766",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "3개월 만에 제품을 받았는데 작다...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112766/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 10:48:48",
+      "views": "0",
+      "content": "와이프 평소 사이즈데로 신청했는데, 작네요 ㅠㅠ 덴장...\n제조 장인들이 그냥 있는게 아니다.. 그 오랜 노하우는 기획, 설계, 제작, 마감, 배송, 대응 모든것에 걸쳐 있다. 쉬워보여도 쉬운게 아니다...",
+      "images": [],
+      "hashtags": [
+        "#사이즈"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "3개월 만에 제품 수령",
+            "confidence": 0.92,
+            "category": "중립/단순수령",
+            "verify": "부정",
+            "_auto_ok": "배송기간_서술"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "평소 사이즈로 주문했는데 작게 나옴",
+            "confidence": 0.88,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 불만은 명확하나 마지막 문장의 비꼬는 어조가 어느 대상을 향하는지 불분명",
+        "confidence": 0.88,
+        "tags": [
+          "#사이즈"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112750": {
+      "id": "112750",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "발이 불편합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112750/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 10:20:01",
+      "views": "0",
+      "content": "안녕하세요?  겸손몰 애용자 입니다.\n이번 슬리퍼 많이 실망했습니다. 아니 대 실망.\n남편과 저  기대 많이 했는데  발이 너무 불편합니다.\n우선 가죽이 너무 뻣뻣하고  발바닥이 쿠션을 넣었다고 하는데 딱딱하고 평편합니다.\n신발 전문가가 제작한 게 맞는지 의심했습니다. 김어준씨 한달 이상 신어보고 너무 편하다는 말  믿고 구매했는데   그것과 다른 재질인지 신발이 일단 딱딱해요.\n모양만 스타일시 하고 그 외는   신경 안 쓴 느낌입니다\n그러다 보니 자주 사용하지 못하고 잠깐  나갔다 올 때  신고 있는데 역시 발이 무겁고 아프네요.\n저만 그런지 궁금합니다.    소비자의 불만도 알고 있어야 할 거 같아   알려 드립니다.\n신을 때 마다 짜증이...",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#사용성"
+            ],
+            "summary": "가죽이 뻣뻣하고 깔창이 딱딱해 발이 불편해 대실망, 소비자 불만을 알리고자 작성",
+            "confidence": 0.95,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질과 착화 불편을 구체적으로 지적한 불만",
+        "confidence": 0.95,
+        "tags": [
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
+    },
+    "112746": {
+      "id": "112746",
+      "product_name": "틈-트로피컬",
+      "product_id": "384",
+      "product_link": "https://nonohumble.com/product/틈-트로피컬/384/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/a08fa0acb4aa0a808e292d7f264ef2fd.png",
+      "title": "남편이 불편한 슬리퍼라고 하네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/112746/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-19 10:13:43",
+      "views": "0",
+      "content": "안녕하세요?   겸공 팬입니다.\n제가 여간해서 이런 글 안 남기는데  참고 하시라고  몇 자 적습니다.\n남편이 이런 슬리퍼가 있냐고 발이  너무 불편해서 못신겠다고 합니다.\n가죽이 일단 너무 뻣뻣하고  신을 때 착화감이 발을 옥죄여서 힘이 들어간다고 하네요..\n혹시 김어준씨 샘플 신발하고 다른 재질인지 의심까지 했습니다.\n스타일만 앞세운건 아닌지 생각해 봅니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#사용성"
+            ],
+            "summary": "가죽이 뻣뻣하고 옥죄어 발이 불편해 신기 힘들다는 의견",
+            "confidence": 0.95,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질과 착화감 불편을 서술한 불만",
+        "confidence": 0.95,
+        "tags": [
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-20"
     }
   },
   "daily_logs": [
@@ -220444,9 +221059,27 @@
         "112696",
         "112687"
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "count": 12,
+      "new_ids": [
+        "112874",
+        "112871",
+        "112868",
+        "112864",
+        "112787",
+        "112776",
+        "112773",
+        "112772",
+        "112770",
+        "112766",
+        "112750",
+        "112746"
+      ]
     }
   ],
-  "last_updated": "2026-10-19 08:00:36",
+  "last_updated": "2026-10-20 08:00:49",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
