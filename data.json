@@ -211757,16 +211757,17 @@
           },
           {
             "aspect": "상품",
-            "sentiment": "중립",
+            "sentiment": "긍정",
             "intent": "재구매희망",
             "tags": [],
             "summary": "세종금촉을 다시 구매했다",
             "confidence": 0.8,
-            "category": "중립/단순수령",
-            "verify": "긍정"
+            "category": "긍정",
+            "verify": "긍정",
+            "_gold": "이석원 2026-10-22 (확인 대기)"
           }
         ],
-        "needs_review": true,
+        "needs_review": false,
         "reasoning": "스테인리스 촉 사용성 호평, 다른 제품(금촉) 언급은 곁가지이나 추가구매 사실이 있어 별도 표기",
         "confidence": 0.8,
         "tags": [
@@ -211774,7 +211775,7 @@
         ],
         "_v3": true,
         "_conf_low": false,
-        "disagree": true
+        "disagree": false
       },
       "crawled_date": "2026-10-12"
     },
