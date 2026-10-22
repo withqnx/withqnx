@@ -218045,6 +218045,1116 @@
         "disagree": true
       },
       "crawled_date": "2026-10-22"
+    },
+    "113238": {
+      "id": "113238",
+      "product_name": "겸손죽 5팩",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "짱짱",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113238/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-23 07:43:33",
+      "views": "0",
+      "content": "죽 매니아인데 진짜 맛있어요 !! 추천 꾸욱",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/889da60e5d7d5989e212617b49e42e93.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "죽이 진짜 맛있다며 추천",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "맛에 대한 근거 없는 호평",
+        "confidence": 0.95,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113229": {
+      "id": "113229",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "기다린보람은 충10000하다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113229/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-23 01:37:29",
+      "views": "0",
+      "content": "드디어 도착한 썬~ 글라스 덧경 혹은 클립온\n안경을 쓰는 사람들은 불편하지만 필요한, 렌즈ㅡ교체\n이제 벗어날 수 있어서 행복하네요\n기다리고 기다리던 안경과 덧경\n겸손은 힘들다......\n아니다...........\n겸손은 기다리는 게 더 힘들다 ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ\n가족들 것도 같이 살껄 후회 되네요............\n박스개봉 부터 제품개봉까지 123456789................................  하다가 에라 모르것다.\n﻿\n데모렌즈 빼고 제 눈 찾으러 갑니다... 쑝~~~~~~~~~~\n좋은 안경과 렌즈 감사합니다. 다음 시즌도 기대 할께요 !!!",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/1f0621d9e51dfa58ac2c2bc293e2c86d.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/68c561ff69bed4640d2c6023c60032f7.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/5559b228a064a507c3c214365553c25f.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/540ec3c97567fb045d97ed3c298be0f1.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/295c3107b938bb6456205ca82b8f4416.jpeg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오래 기다린 끝에 안경과 덧경 수령",
+            "confidence": 0.92,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "배송_기다림서술"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "기다린 보람이 있고 만족, 가족 것도 살걸 후회하며 다음 시즌 기대",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기다림은 중립, 만족과 '살걸' 후회는 재구매희망 긍정",
+        "confidence": 0.92,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113209": {
+      "id": "113209",
+      "product_name": "건",
+      "product_id": "353",
+      "product_link": "https://nonohumble.com/product/건/353/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/93b90b41f0bac386c8f523b6094a7982.png",
+      "title": "건 그레이브라운 판매합니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113209/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 20:36:53",
+      "views": "0",
+      "content": "건 (두건) 그레이브라운 색상 구매생각 있으신 분은\n연락주세요. 010-9776-9857\n택배비는 제가 부담합니다.",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "그레이브라운 건(두건)을 구매할 분께 판매",
+            "confidence": 0.97,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "다른 구매자에게 판매하는 양도·거래",
+        "confidence": 0.97,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113188": {
+      "id": "113188",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "아쉽",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113188/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-22 16:29:19",
+      "views": "0",
+      "content": "컨버터에 잉크 넣으려 하는데 분리가 안되요. 너무 뻑뻑한 거 같아요. 색상은 어둡고 진한 녹색이라 무게감이 있어요. 좀 밝은 톤이었으면 좋을 텐데, 글씨는 잉크를 묻혀서 써 보니 쓰기는 좋아요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/730fba622d0f444efbab84fecc77092a.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#색상",
+        "#무게감"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "컨버터가 뻑뻑해 분리가 안 됨",
+            "confidence": 0.88,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#색상",
+              "#무게감"
+            ],
+            "summary": "어둡고 진한 녹색이라 무겁게 느껴져 밝은 톤을 원함",
+            "confidence": 0.82,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "잉크를 묻혀 써보니 쓰기 좋음",
+            "confidence": 0.88,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용성·색상 불만과 필기감 칭찬이 섞여 대목별로 분리",
+        "confidence": 0.82,
+        "tags": [
+          "#사용성",
+          "#색상",
+          "#무게감"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113186": {
+      "id": "113186",
+      "product_name": "츄랙스",
+      "product_id": "379",
+      "product_link": "https://nonohumble.com/product/츄랙스/379/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/87d03ecdb4acbc0934846e754a65c290.png",
+      "title": "바지가 착 붙는게 핏이 예쁘네요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113186/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 16:15:08",
+      "views": "0",
+      "content": "생각보다 빨리 받아서 좋네요.   입으니 너무 편하고 예쁜 바지인데 ... 배송 기다리는 사이 허리 살이 좀 쪄서 . 살 좀 빼고 나서 잘 입고 다니겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#핏",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#핏",
+              "#사용성"
+            ],
+            "summary": "바지가 착 붙는 핏이 예쁘고 입으니 편함",
+            "confidence": 0.92,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "생각보다 빨리 받아 만족",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "핏·착용감 호평과 빠른 수령 긍정",
+        "confidence": 0.9,
+        "tags": [
+          "#핏",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113185": {
+      "id": "113185",
+      "product_name": "껑",
+      "product_id": "352",
+      "product_link": "https://nonohumble.com/product/껑/352/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/ad2c0e79dfcd0fcea6dcdc0fe533e338.png",
+      "title": "공장장 사이즈로 주문했는데... 너무너무 크네요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113185/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 15:59:38",
+      "views": "0",
+      "content": "사이즈가 커도 너무커서 교환문의 했더니 안된다기에 박스채 잘 모셔놓고 있는중...\n저도 대두라 공장장 사이즈 62호로 신청하면 되겠다 싶어 했는데... 잘 살피지 못한 실수...\n근데 공장장 머리크기 실화? 이건 커도 너무큰데?\n모자는 뭐 기본적으로 잘 만들어 진거 같아요.. 근데 이거 어디에 쓰지...난감하네...",
+      "images": [],
+      "hashtags": [
+        "#사이즈",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#사이즈"
+            ],
+            "summary": "공장장 사이즈 62호가 너무 커서 교환 문의했으나 거절됨",
+            "confidence": 0.92,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "교환 문의에 불가 답변을 받음",
+            "confidence": 0.82,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "모자 자체는 잘 만들어진 듯함",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사이즈 하자 서술로 교환·반품, 교환 거절 응대 불만, 만듦새는 긍정",
+        "confidence": 0.82,
+        "tags": [
+          "#사이즈",
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113178": {
+      "id": "113178",
+      "product_name": "100수",
+      "product_id": "349",
+      "product_link": "https://nonohumble.com/product/100수/349/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202512/7f1df398597181403f64ad81f2763d80.png",
+      "title": "다소 실망입니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113178/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 15:11:26",
+      "views": "0",
+      "content": "퀸사이즈 두세트 주문했어요. 날씨가 추워져서 구스다운속통에  사용하려는데 이불 커버 속부분  모서리에 연결고리가 없어요.ㅜㅜ\n매트리스커버도 다른 브랜드의 커버보다 사이즈가 작아서 우리집 침대 퀸사이즈에 사용하려는데 엄청 고생했어요. 손톱이 부러질듯 힘들게 잡아다녀서 겨우 씌웠어요.\n재구매 안합니다.\n고리 한개를 보내주시면 감사하겠습니다.",
+      "images": [],
+      "hashtags": [
+        "#구성",
+        "#사이즈",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "교환·반품",
+            "tags": [
+              "#구성"
+            ],
+            "summary": "이불 커버 속 모서리 연결고리가 없어 고리 발송 요청",
+            "confidence": 0.92,
+            "category": "교환/반품",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사이즈",
+              "#사용성"
+            ],
+            "summary": "매트리스커버가 작아 씌우기 매우 힘들었음",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "재구매하지 않겠다며 실망 표현",
+            "confidence": 0.88,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "부속품 누락·사이즈 불만, 재구매 거부",
+        "confidence": 0.88,
+        "tags": [
+          "#구성",
+          "#사이즈",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113175": {
+      "id": "113175",
+      "product_name": "겸손죽 (5팩)",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "겸손죽 최고에요!!!",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113175/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-22 14:43:53",
+      "views": "0",
+      "content": "오늘 오전에 받아서 점심때 바로 먹었습니다\n모두 맘에 들어요\n모든게 다 깔끔해요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/c10ce7c3c73b1368f2631ee6dfe703f0.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/0feabfc3862ee92bfa6abcf09a00fefc.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/32cac6c3b7a057be2d8bcfedf09715f7.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/236951edf3633c50e71a6245792be5d2.jpg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/0ca039fe2e1b98d87732dc1a416adc07.jpg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "죽이 모든 면에서 마음에 들고 깔끔",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "오전에 받아 점심에 바로 먹음, 깔끔한 포장",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반적 호평",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113173": {
+      "id": "113173",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종 만년필 좋아요. 잉크 흐름 어떠신가요?",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113173/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 14:02:21",
+      "views": "0",
+      "content": "거의 11개월을 기다리다 드디어 받아서 잘 사용하고 있습니다.\n만듦새도 훌륭하고 필기감도 부드럽게 아주 좋습니다.\n1주 정도 사용하고 있는데,\n제가 잉크는 그렇게 고급을 쓰지는 않는데요.\n파커 큉크 블루블랙, 이로지주쿠 신카이색, 라미 블루블랙, 라미 블랙 ...\n제가 주로 쓰는 이런 잉크를 넣어서 사용해보니,\n잉크 흐름이 너무 잘 나오는 것 같은 느낌입니다.\n노트나 A4 용지에 촉 끝을 대고 있으면 잘~~ 번지는 정도로..\n라미 만년필을 주로 쓰다가, 세종만년필로 새로 쓰다보니,\n잉크가 흐름이 너무 좋은것 같아요.\n가방에 넣어다니다 보면 손잡이 한글 문양있는 곳에 잉크가 번질 정도로요..\n제가 받은 것만 이런걸까요?\n조정이 가능할지 모르겠네요. 흐름이 덜 좋은 잉크로 바꿔봐야할지..",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#재질",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "약 11개월 기다려 수령",
+            "confidence": 0.93,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티",
+              "#재질"
+            ],
+            "summary": "만듦새가 훌륭하고 필기감이 부드러움",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "잉크 흐름이 너무 좋아 번지는데 개체 문제인지, 조정 가능한지 문의",
+            "confidence": 0.8,
+            "category": "문의",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "기다림 중립, 만듦새 긍정, 잉크 흐름은 사용법·사양 질문 성격이라 중립 문의",
+        "confidence": 0.8,
+        "tags": [
+          "#퀄리티",
+          "#재질",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113172": {
+      "id": "113172",
+      "product_name": "겸손죽 (5팩)",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "간장",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113172/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 13:59:53",
+      "views": "0",
+      "content": "두상자잘받았습니다.\n재료적절,포장적절,양도적절,참기름아주향이좋아요.\n한가지궁금해서후기남깁니다.\n흰죽은간혹어르신들이긴장으로간을하시기도하지만,죽을간장으로간을하지않잖아요\n진간장의조미풍미가강해서겸손죽에간장을공장장이강조를해조금넣고먹고있어요\n역시나간장의조미맛이입안가득하고참기름향을덮고뒷맛이간장맛으로남아요.\n윗지방에선간장으로간을하는가????\n전복죽이전복죽이아닌데,,,라는\n그래서나머지9팩은간장을안넣고....",
+      "images": [],
+      "hashtags": [
+        "#구성",
+        "#퀄리티",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#구성",
+              "#퀄리티"
+            ],
+            "summary": "재료·양·참기름 향이 적절하고 좋음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [],
+            "summary": "두 상자 잘 받았고 포장 적절",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "권장된 간장이 참기름 향을 덮고 뒷맛이 간장맛이라 아쉬워 나머지는 간장 없이 먹음",
+            "confidence": 0.82,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "전반 호평, 간장 곁들임 방식에는 아쉬움",
+        "confidence": 0.82,
+        "tags": [
+          "#구성",
+          "#퀄리티",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113162": {
+      "id": "113162",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "역시 좋아요..",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113162/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 13:30:51",
+      "views": "0",
+      "content": "역시 좋아요..\n명불 허전..\n베개도 괜찮지만.. 필기감은 한단계 진화한느낌이네..\n베개는 쓸때 약간 각진 느낌인데..\n세종은 브드럽다 한 느낌이 드네요.\n좋아요 완젼 좋아요.\n다만 다음 버전은.. 소재를 좀 바꾸는게..\n조금 미끄럽고.. 손 기름이 펜에 붇어서.. 조금 끈쩍하고 미끈한 느낌이 드네요..\n마치 기름 바른 금속을 만지는거 같아요..\n이 부분만 조금 수정이 되었으면 합니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#첫인상"
+            ],
+            "summary": "필기감이 한 단계 진화해 부드럽고 완전 좋음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "제품제안",
+            "tags": [
+              "#재질"
+            ],
+            "summary": "표면이 미끄럽고 손 기름이 묻어 끈적하니 다음 버전에서 소재 변경 요청",
+            "confidence": 0.85,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감 칭찬과 소재 아쉬움에 소재 변경 제안",
+        "confidence": 0.85,
+        "tags": [
+          "#재질",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113161": {
+      "id": "113161",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "가벼운데 선그리까지...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113161/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 13:19:51",
+      "views": "0",
+      "content": "지금은 안경점에 있습니다. 테만 썼을땐 너무 가벼워서 좋았는데..\n시력이 많이 좋지 않고 다촛점이라 어떻게 바뀔진 모르겠습니다.\n전 어두운 뿔테는 어울리지 않아서 호박색으로 구매했지만, 투명에 가까운 색상의 안경뿔테 원합니다. 박시동 쌤 안경테 색상처럼요.\n강력하게 요청드립니다. 제발요~~~\n글고 좋은 제품 고맙습니다 ^^",
+      "images": [],
+      "hashtags": [
+        "#무게감",
+        "#색상",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#무게감"
+            ],
+            "summary": "테만 썼을 땐 너무 가벼워 좋음",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#색상"
+            ],
+            "summary": "투명에 가까운 색상의 안경뿔테 출시 강력 요청",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "좋은 제품 감사",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "가벼움 호평, 없는 색상 요청은 제품제안",
+        "confidence": 0.85,
+        "tags": [
+          "#무게감",
+          "#색상",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113154": {
+      "id": "113154",
+      "product_name": "겸손죽 (5팩)",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "점심으로 맛있게 먹었어요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113154/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 12:55:05",
+      "views": "0",
+      "content": "동봉된 양념 다 넣고 먹었는데 하나도 안 짜고 맛있어요.  간장만 찍어먹어 봤는데 맛있어요. 참기름 냄새가 너무 좋습니다.\n새송이죽 같은 전복죽만 사먹었는데 진짜 전복 많아요.    전문점 전복죽 맛없다고 안 드시는 엄마가 너무 맛있다고 양도 딱 좋다고 만족하시고 드셨어요.\n냉동실에 많이 쟁여놓고 싶은데 공간이 너무 부족해요.  정기적으로 계속 판매해주세요.",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "짜지 않고 맛있고 전복이 많아 어머니도 만족, 쟁여두고 싶어 정기 판매 요청",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "칭찬과 더 사고 싶다는 의사가 있어 재구매희망 긍정",
+        "confidence": 0.93,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113143": {
+      "id": "113143",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "좋음 아주 좋음 가로,세로,대각선,원 다 부드러움",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113143/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-22 12:12:00",
+      "views": "0",
+      "content": "몇몇 분들이 가로로 쓸때 잘 안써진다고 해서 걱정했었는데\n아~~ 잘 써집니다.\n가로선, 세로선, 대각선은 물론이고 동그라미도 잘 그려집니다.\n완전 만족합니다.\n팬 뚜껑과 본체의 문양이 어떻게 이렇게 딱 맞는지 신기하네요\n다만 아쉬움이 있다면 뚜껑을 팬 뒤쪽에 끼울수가 없네요\n뚜껑을 열고 두기가 마땅치 않다는게 좀 아쉽습니다.\n저는 필통에 다시 넣어두고 사용하고 있습니다.\n만년필 몇개와 금촉까지 추가구매해놓고 걱정했었는데 걱정이 다 날라갔습니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/ded22d824bb420d2f4d2a6e51d688448.jpg"
+      ],
+      "hashtags": [
+        "#사용성",
+        "#디자인"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "가로·세로·대각선·원 모두 부드럽게 써져 완전 만족",
+            "confidence": 0.94,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#디자인"
+            ],
+            "summary": "뚜껑과 본체 문양이 딱 맞아 신기함",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "뚜껑을 펜 뒤쪽에 끼울 수 없어 두기 불편",
+            "confidence": 0.88,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "필기감·문양 호평, 뚜껑 거치 불편은 사용성 부정",
+        "confidence": 0.88,
+        "tags": [
+          "#사용성",
+          "#디자인"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113142": {
+      "id": "113142",
+      "product_name": "[2025 겸손색안경] 쇠네모",
+      "product_id": "227",
+      "product_link": "https://nonohumble.com/product/2025-겸손색안경-쇠네모/227/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202505/cbfa3be42e9bfb45d721d4db38e07d9d.png",
+      "title": "사용 후기",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113142/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-22 12:01:05",
+      "views": "0",
+      "content": "디자인은 개인취향이라 무난하고,\n내구성은 착용기간이 오래되지 않지만 괜찮은 편이며,\n착용감은 상당히 편안하여 우수한 수준임.",
+      "images": [],
+      "hashtags": [
+        "#디자인",
+        "#내구성",
+        "#사용성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [
+              "#디자인"
+            ],
+            "summary": "디자인은 개인취향이라 무난",
+            "confidence": 0.85,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "착용기간이 길지 않지만 내구성 괜찮은 편",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "착용감이 매우 편안해 우수",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "항목별 평가",
+        "confidence": 0.85,
+        "tags": [
+          "#디자인",
+          "#내구성",
+          "#사용성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113140": {
+      "id": "113140",
+      "product_name": "겸손죽 5팩",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "양이  좀  적긴한데...",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113140/page/2/",
+      "has_photo": false,
+      "written_at": "2026-10-22 11:41:49",
+      "views": "0",
+      "content": "맛이 깔끔하니  좋네요\n본@꺼를  많이  사먹는데   고급지고  집에서  만든것  같은  맛이예요.\n단점이라면  남자가  먹기엔  양이  적은듯해요.\n더  주문하려  했더니  주문이  안되네요.ㅠ ㅠ",
+      "images": [],
+      "hashtags": [
+        "#퀄리티",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "맛이 깔끔하고 고급스러우며 집에서 만든 맛",
+            "confidence": 0.92,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#구성"
+            ],
+            "summary": "남자가 먹기엔 양이 적음",
+            "confidence": 0.88,
+            "category": "부정",
+            "verify": "부정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [],
+            "summary": "더 주문하려 했으나 주문이 안 되어 아쉬움",
+            "confidence": 0.88,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "맛 칭찬과 추가 주문 의사는 긍정, 양은 아쉬움",
+        "confidence": 0.88,
+        "tags": [
+          "#퀄리티",
+          "#구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113139": {
+      "id": "113139",
+      "product_name": "세종 펜레스트",
+      "product_id": "317",
+      "product_link": "https://nonohumble.com/product/세종-펜레스트/317/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f46113b0623f3a0e622459dd8c55269b.jpg",
+      "title": "드디어 도착",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113139/page/2/",
+      "has_photo": true,
+      "written_at": "2026-10-22 11:33:46",
+      "views": "0",
+      "content": "미개봉으로 소장 하려고요.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/5b887c454b1e7a4582d0d7ca3675ce78.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/edd71088efd02bb44de4fc6a7a6ea957.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/82bc499edb2115621172529810e3e27f.JPG"
+      ],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "도착했고 미개봉으로 소장할 예정",
+            "confidence": 0.93,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "수령 사실만 언급",
+        "confidence": 0.93,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
+    },
+    "113138": {
+      "id": "113138",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "맑은 수은 도착",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113138/page/2/",
+      "has_photo": true,
+      "written_at": "2026-10-22 11:23:45",
+      "views": "0",
+      "content": "확실히 검은진주가 저에게는 더 좋은 만년필 같습니다.\n이번에 받은 맑은 수은은 뚜껑나사 부분이 작업을 막 끝낸듯\n거치를 느낌이라 구리스 하고 약간의 기름칠을 해서 닦아 내서\n돌리니 이제 부드럽게 돌려서 장착이 되더군요.\n만년필 하나하나 정성스럽게 작업 했다는 느낌이 드는군요.\n가장 중요한 필기감 너무 부드럽게 써지는 것도 기존 검은진주\n보다는 길드리는 맛이 떨어지는거 말고는 대체적으로\n만족 합니다. 일단 가격이 너무 저렴 하다는 인식 때문에\n가치가 살짝 떨어지는 감이 있습니다.\n좋은 만년필 만들어 주셔서 감사 합니다.",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/9236fafed8ece62901fee571f7371777.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/ef901801576961c06df7ef54c17381de.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/647092c58706e2ac17b8c300a1b22d33.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/777b736109cc78c9d761fffeff76a66c.JPG",
+        "https://nonohumble.com/file_data/nohumble/2026/10/22/fec6ca1a8cb27b8ee643a9035bd85fa0.JPG"
+      ],
+      "hashtags": [
+        "#마감",
+        "#퀄리티",
+        "#사용성",
+        "#가격"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#마감",
+              "#퀄리티"
+            ],
+            "summary": "뚜껑 나사부가 뻑뻑했지만 손질 후 부드러워졌고 정성스러운 작업 느낌",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성"
+            ],
+            "summary": "필기감이 매우 부드럽고 대체로 만족, 길들이는 맛은 덜함",
+            "confidence": 0.88,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#가격"
+            ],
+            "summary": "가격이 너무 저렴하다는 인식 때문에 가치가 다소 떨어져 보임",
+            "confidence": 0.8,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만족 위주, 나사부 거침과 저가 인식은 곁가지 아쉬움",
+        "confidence": 0.8,
+        "tags": [
+          "#마감",
+          "#퀄리티",
+          "#사용성",
+          "#가격"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-23"
     }
   },
   "daily_logs": [
@@ -222726,9 +223836,33 @@
         "113028",
         "113023"
       ]
+    },
+    {
+      "date": "2026-10-23",
+      "count": 18,
+      "new_ids": [
+        "113238",
+        "113229",
+        "113209",
+        "113188",
+        "113186",
+        "113185",
+        "113178",
+        "113175",
+        "113173",
+        "113172",
+        "113162",
+        "113161",
+        "113154",
+        "113143",
+        "113142",
+        "113140",
+        "113139",
+        "113138"
+      ]
     }
   ],
-  "last_updated": "2026-10-22 08:00:42",
+  "last_updated": "2026-10-23 08:00:51",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
