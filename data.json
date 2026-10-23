@@ -219155,6 +219155,590 @@
         "disagree": false
       },
       "crawled_date": "2026-10-23"
+    },
+    "113314": {
+      "id": "113314",
+      "product_name": "겸손죽 5팩",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "짱 맛있음",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113314/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-23 16:38:08",
+      "views": "0",
+      "content": "재료 아끼지 않은게 느껴짐. 넘 맛있어요~~",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/e6689d626424e40b5d9e3d0da34f07f5.jpg"
+      ],
+      "hashtags": [
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#퀄리티"
+            ],
+            "summary": "재료를 아끼지 않은 게 느껴지고 맛있다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "맛과 재료에 대한 명확한 호평",
+        "confidence": 0.95,
+        "tags": [
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113309": {
+      "id": "113309",
+      "product_name": "겸손죽 (5팩)",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "맛있고 알차요",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113309/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-23 15:58:33",
+      "views": "0",
+      "content": "울집 초딩이 ○죽 자주 사달라고 하는데 내용물이 더 알차고 밥알도 살아있고 맛있어요 날짜별로 5세트 주문해놨는데 냉장고에 들어갈 새 없이 금방 먹겠어요 정기배송 시킬까 봐요",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/093c92d7c05e865eb14e47ac07471f64.jpg"
+      ],
+      "hashtags": [
+        "#구성",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#구성",
+              "#퀄리티"
+            ],
+            "summary": "내용물이 알차고 밥알이 살아 있어 맛있고, 정기배송을 고려",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "만족과 함께 추가 구매·정기배송 의사",
+        "confidence": 0.93,
+        "tags": [
+          "#구성",
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113308": {
+      "id": "113308",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "기대 이상의 고오급 품질",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113308/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 15:17:02",
+      "views": "0",
+      "content": "여기에 사용 후기가 있네요. ㅋㅋㅋ\n이것도 모르고 방송 댓글에 적었네요.\nㅋㅋㅋ 의리로 구매했는데 (겸공 덕분에 힘든 윤석열 시기를 버틸 수 있어서)\n1. 안경을 써서 선글라스를 착용할 수 없었는데 덧경이 있어서 딱!!!\n2. 너무 가벼워서 좋다.\n3. 덧경 케이스가 있어서 보관이 좋다.\n참고로 안경가게 가서 렌즈를 넣었는데\n안경사님이 안경테가 너무 예쁘다고 여러 번 언급했습니다. (단순 인사치레는 아닌 것 같음)\n요즘 이 좋은 가을 날씨에 쓰고 다녀서 아주~~~ 좋습니다.\n섬세하게 기획하고 잘~만들어 주신 모든 분께 감사드립니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#무게감",
+        "#구성",
+        "#디자인",
+        "#퀄리티"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#사용성",
+              "#무게감",
+              "#구성",
+              "#디자인",
+              "#퀄리티"
+            ],
+            "summary": "덧경 덕에 안경 착용자도 선글라스를 쓸 수 있고, 가볍고 케이스 보관이 좋으며 안경테가 예쁘다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "사용성·무게·구성·디자인을 구체적으로 짚은 호평",
+        "confidence": 0.95,
+        "tags": [
+          "#사용성",
+          "#무게감",
+          "#구성",
+          "#디자인",
+          "#퀄리티"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113296": {
+      "id": "113296",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "발옷...너무 편하고 좋습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113296/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 13:58:51",
+      "views": "0",
+      "content": "더 살껄 하는 후회가 막심합니다\n신발이 좋다고 편한게 아니네요\n양말이 촥감기니 발도 너무너무 편안합니다\n발옷 시즌3 다시오길 기대해봅니다",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#사용성",
+              "#첫인상"
+            ],
+            "summary": "발을 감싸 편안해서 더 살걸 후회한다",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [],
+            "summary": "발옷 시즌3이 다시 나오길 기대",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "제품제안"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "후회 표현은 긍정 재구매, 후속 시즌 요청은 제품제안",
+        "confidence": 0.9,
+        "tags": [
+          "#사용성",
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113286": {
+      "id": "113286",
+      "product_name": "[2026겸손색안경] 테+덧경",
+      "product_id": "366",
+      "product_link": "https://nonohumble.com/product/2026겸손색안경-테덧경/366/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202604/9f2cb7eefd445784da1f597a5c6d25a5.jpg",
+      "title": "뿔네모 덧경세트 흑미 44에서 47로 교환 구합니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113286/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 13:32:24",
+      "views": "0",
+      "content": "뿔네모 덧경세트 흑미 44에서 47로 교환 구합니다\n010 칠250 구807 로 연락주세요",
+      "images": [],
+      "hashtags": [],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "양도·거래",
+            "tags": [],
+            "summary": "뿔네모 덧경세트 흑미 44를 47로 맞교환 구함",
+            "confidence": 0.97,
+            "category": "양도/거래",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "구매자 간 맞교환, 연락처 명시",
+        "confidence": 0.97,
+        "tags": [],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113284": {
+      "id": "113284",
+      "product_name": "별",
+      "product_id": "341",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "한 여름에도 시원했습니다",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113284/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 13:19:28",
+      "views": "0",
+      "content": "한 여름에도 땀은 나도 옷이 몸에 붙지 않고 아주 좋았습니다. 조금 아쉬운건 세탁기에 계속 빨았더니 실밥이 많이 터졌습니다.\n그게 조금 아쉬웠고 옷은 정말 편하고 좋습니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#첫인상",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#첫인상"
+            ],
+            "summary": "한여름에도 몸에 붙지 않고 편하고 좋다",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "세탁기로 계속 빨았더니 실밥이 많이 터졌다",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용감 호평과 세탁 후 실밥 터짐 불만을 나눠 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#재질",
+          "#첫인상",
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113283": {
+      "id": "113283",
+      "product_name": "별",
+      "product_id": "341",
+      "product_link": "https://nonohumble.com/product/별/341/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/f574a82b05cce303755cd183e106343f.png",
+      "title": "한여름에도 몸에 붙지않고 좋았습니다.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113283/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 13:18:13",
+      "views": "0",
+      "content": "한 여름에도 땀은 나도 옷이 몸에 붙지 않고 아주 좋았습니다. 조금 아쉬운건 세탁기에 계속 빨았더니 실밥이 많이 터졌습니다.\n그게 조금 아쉬웠고 옷은 정말 편하고 좋습니다.",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#첫인상",
+        "#내구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#첫인상"
+            ],
+            "summary": "한여름에도 몸에 붙지 않고 편하고 좋다",
+            "confidence": 0.93,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "부정",
+            "intent": "없음",
+            "tags": [
+              "#내구성"
+            ],
+            "summary": "세탁기로 계속 빨았더니 실밥이 많이 터졌다",
+            "confidence": 0.9,
+            "category": "부정",
+            "verify": "부정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "착용감 호평과 세탁 후 실밥 터짐 불만을 나눠 판정",
+        "confidence": 0.9,
+        "tags": [
+          "#재질",
+          "#첫인상",
+          "#내구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113277": {
+      "id": "113277",
+      "product_name": "발옷(5종) 시즌2",
+      "product_id": "383",
+      "product_link": "https://nonohumble.com/product/발옷5종-시즌2/383/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202605/57c65373b48e4b6447135498f05912c3.png",
+      "title": "도톰하고 폭신하고 너무 좋네요.",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113277/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 12:16:11",
+      "views": "0",
+      "content": "너무 좋네요! 이건 선물용으로도 손색없어요.\n양말 선물 많이 받아봤지만, 퀄리티가 다르군요.\n발이 폭신한 양말을 처음..",
+      "images": [],
+      "hashtags": [
+        "#재질",
+        "#퀄리티",
+        "#선물"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#재질",
+              "#퀄리티",
+              "#선물"
+            ],
+            "summary": "도톰하고 폭신하며 선물용으로도 손색없는 퀄리티",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "재질·퀄리티 호평, 선물 언급",
+        "confidence": 0.95,
+        "tags": [
+          "#재질",
+          "#퀄리티",
+          "#선물"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113270": {
+      "id": "113270",
+      "product_name": "심지 추가",
+      "product_id": "265",
+      "product_link": "https://nonohumble.com/product/심지-추가/265/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202506/759864a9768247cd1f88c3a6d3aa5896.png",
+      "title": "심지추가",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113270/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 11:55:20",
+      "views": "0",
+      "content": "만족하게 잘 사용하고 있는데 심지를 추가 구매할 수 있는지 궁금합니다\n구매가 안된다면 시중에서 판메되는 것이 호환되어 구매하면 사용할 수 있는지도 함께 알려주시면 감사하겠습니다",
+      "images": [],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "만족하며 잘 사용 중",
+            "confidence": 0.9,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "응대·소통",
+            "sentiment": "중립",
+            "intent": "문의",
+            "tags": [],
+            "summary": "심지 추가 구매 가능 여부와 시중 제품 호환 여부 문의",
+            "confidence": 0.9,
+            "category": "문의",
+            "verify": "중립"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "칭찬은 상품 긍정, 추가 구매·호환 질문은 불만 없는 문의",
+        "confidence": 0.9,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113264": {
+      "id": "113264",
+      "product_name": "세종-스테인리스촉",
+      "product_id": "316",
+      "product_link": "https://nonohumble.com/product/세종-스테인리스촉/316/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202511/1c36637e9214656edaa17b01677bd98d.jpg",
+      "title": "세종~~",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113264/page/1/",
+      "has_photo": false,
+      "written_at": "2026-10-23 10:58:21",
+      "views": "0",
+      "content": "필기감 정말 좋으네요.\n만년필의 세계 입문 이제 막했어요.\n여러 필기구들을 짧은 기간에 모아서 사용하고 있는데...\n저는 세종~~ 가장 맘에 듭니다.\n무게감, 그립감 뿐만 아니라 필기감도 최고입니다.\n다만, 한가지 굳이 아쉬운 점을 찾는다면..전용 필함을 구매하는 것이 좋겠다는 생각이 든다는 거에요.\n가방이나 여느 필통에서 다른 필기구들과 같이 구르게 하기에는 미안한 맘이 자꾸 들어서요~~\n필통들도 다 구매합니다~~\n한자루 더 구매했는데 얼마나 다행인지 모릅니다.\n행복하게 기다리는 중입니다.",
+      "images": [],
+      "hashtags": [
+        "#사용성",
+        "#무게감",
+        "#첫인상",
+        "#구성"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "재구매희망",
+            "tags": [
+              "#사용성",
+              "#무게감",
+              "#첫인상"
+            ],
+            "summary": "필기감·무게감·그립감이 최고여서 한 자루 더 구매",
+            "confidence": 0.95,
+            "category": "긍정",
+            "verify": "긍정"
+          },
+          {
+            "aspect": "상품",
+            "sentiment": "중립",
+            "intent": "제품제안",
+            "tags": [
+              "#구성"
+            ],
+            "summary": "전용 필함이 있으면 좋겠다는 제안",
+            "confidence": 0.88,
+            "category": "중립/단순수령",
+            "verify": "중립"
+          },
+          {
+            "aspect": "배송·포장",
+            "sentiment": "중립",
+            "intent": "없음",
+            "tags": [],
+            "summary": "추가 주문분을 행복하게 기다리는 중",
+            "confidence": 0.9,
+            "category": "중립/단순수령",
+            "verify": "긍정",
+            "_auto_ok": "배송_기다림서술"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "호평과 추가 구매, 필함 제안, 정상적인 기다림을 나눠 판정",
+        "confidence": 0.88,
+        "tags": [
+          "#사용성",
+          "#무게감",
+          "#첫인상",
+          "#구성"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": true
+      },
+      "crawled_date": "2026-10-24"
+    },
+    "113262": {
+      "id": "113262",
+      "product_name": "겸손죽 (5팩)",
+      "product_id": "414",
+      "product_link": "https://nonohumble.com/product/겸손죽-5팩/414/",
+      "product_img": "https://nonohumble.com/web/product/tiny/202610/eab286e9bda9747dae20924d0aa2d276.png",
+      "title": "👍👍👍👍👍👍👍",
+      "review_link": "https://nonohumble.com/article/상품-사용후기/4/113262/page/1/",
+      "has_photo": true,
+      "written_at": "2026-10-23 10:43:40",
+      "views": "0",
+      "content": "",
+      "images": [
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/06430438bb978fb37e2f40f5619d8a7e.jpeg",
+        "https://nonohumble.com/file_data/nohumble/2026/10/23/f2ab7aeb6ad142f53ffb48290212725f.jpeg"
+      ],
+      "hashtags": [
+        "#첫인상"
+      ],
+      "classification": {
+        "segments": [
+          {
+            "aspect": "상품",
+            "sentiment": "긍정",
+            "intent": "없음",
+            "tags": [
+              "#첫인상"
+            ],
+            "summary": "엄지 이모티콘만 남긴 호평",
+            "confidence": 0.85,
+            "category": "긍정",
+            "verify": "긍정"
+          }
+        ],
+        "needs_review": false,
+        "reasoning": "본문 없이 긍정 이모티콘뿐이라 근거 없는 호평으로 처리",
+        "confidence": 0.85,
+        "tags": [
+          "#첫인상"
+        ],
+        "_v3": true,
+        "_conf_low": false,
+        "disagree": false
+      },
+      "crawled_date": "2026-10-24"
     }
   },
   "daily_logs": [
@@ -223860,9 +224444,26 @@
         "113139",
         "113138"
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "count": 11,
+      "new_ids": [
+        "113314",
+        "113309",
+        "113308",
+        "113296",
+        "113286",
+        "113284",
+        "113283",
+        "113277",
+        "113270",
+        "113264",
+        "113262"
+      ]
     }
   ],
-  "last_updated": "2026-10-23 08:00:51",
+  "last_updated": "2026-10-24 08:00:40",
   "last_updated_v2": "2026-05-20T08:15:47.796730",
   "api_exhausted_at": null
 }
