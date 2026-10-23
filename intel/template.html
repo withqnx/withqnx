@@ -1,282 +1,259 @@
 <title>겸손몰 후기 인텔리전스</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
 <style>
-/* 옛 대시보드 디자인 시스템(검은 바탕·금색 강조·Paperlogy·Playfair Display). 칭찬=초록, 불만=빨강, 보통=회색.
-   레이아웃: 왼쪽 목차(+기간·비교) + 오른쪽 한 줄 본문. 세분류(무엇이 좋고 무엇이 문제인가)가 먼저, 비율은 뒤. */
+/* v5 한 화면 판(2026-10-23 이석원 원칙): 큰 숫자 왼쪽 위 · 가로로 넓게, 세로 스크롤 최소 · 한 페이지(탭 없음, 상세는 오른쪽 서랍)
+   · 문장 대신 짧은 라벨 · 촘촘하게 · 로고 작게. 디자인은 옛 대시보드 그대로(검은 바탕·금색·Paperlogy·Playfair). 칭찬=초록, 불만=빨강, 보통=회색, 갈림=노랑.
+   레이아웃: 위 필터 한 줄 → 숫자 한 줄(첫 칸이 가장 큼) → 세 칸(세분류 | 상품 표 | 최근 불만) → 두 칸(히트맵 | 월별) */
 @font-face{font-family:'Paperlogy';font-weight:400;src:url('fonts/Paperlogy-4Regular.ttf') format('truetype');font-display:swap}
 @font-face{font-family:'Paperlogy';font-weight:500;src:url('fonts/Paperlogy-5Medium.ttf') format('truetype');font-display:swap}
 @font-face{font-family:'Paperlogy';font-weight:600;src:url('fonts/Paperlogy-6SemiBold.ttf') format('truetype');font-display:swap}
 @font-face{font-family:'Paperlogy';font-weight:700;src:url('fonts/Paperlogy-7Bold.ttf') format('truetype');font-display:swap}
 :root{
   color-scheme:dark;
-  --bg:#000000; --surface:#121317; --sunken:#1c1d22;
-  --ink:#e8e9ee; --ink-2:#b4b7c1; --ink-3:#8f929f; --line:#1c1d22; --line-2:#2c2e35;
+  --bg:#000000; --surface:#121317; --sunken:#1c1d22; --raise:#18191e;
+  --ink:#e8e9ee; --ink-2:#b4b7c1; --ink-3:#8f929f; --line:#1f2026; --line-2:#2c2e35;
   --accent:#cc9166; --accent-ink:#000000; --accent-soft:#241a12;
   --good:#22c55e; --neutral:#6e717d; --bad:#ef4444; --mixed:#d4a017;
   --good-soft:#0f2a19; --bad-soft:#3a1414;
   --font-display:'Playfair Display','Paperlogy',ui-serif,Georgia,serif;
   --font-body:'Paperlogy','Inter','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
-  --fs-xs:13px; --fs-sm:14.5px; --fs-md:16px; --fs-lg:18.5px; --fs-xl:23px; --fs-2xl:30px; --fs-3xl:40px;
-  --r:10px; --gap:16px;
+  --fs-xs:12px; --fs-sm:13px; --fs-md:14px; --fs-lg:16px;
+  --r:8px; --gap:10px; --top:48px;
 }
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--fs-md);line-height:1.65;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--font-body);font-size:var(--fs-md);line-height:1.45;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
 a{color:var(--accent);text-underline-offset:3px}
 button,select,input{font:inherit;color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.muted{color:var(--ink-3)} .small{font-size:var(--fs-sm)}
+.muted{color:var(--ink-3)} .num{font-variant-numeric:tabular-nums}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
 
-.shell{display:grid;grid-template-columns:244px minmax(0,1fr);min-height:100%}
-.rail{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;overflow-y:auto;border-right:1px solid var(--line);background:var(--surface);padding:26px 14px 22px;display:flex;flex-direction:column;gap:20px}
-.brand{padding:0 10px}
-.brand .name{font-family:var(--font-display);font-size:var(--fs-xl);font-weight:700;line-height:1.25}
-.brand .sub{color:var(--ink-3);font-size:var(--fs-xs);margin-top:4px}
-.menu{display:flex;flex-direction:column;gap:2px}
-.menu-label{font-size:var(--fs-xs);color:var(--ink-3);padding:0 10px 6px;letter-spacing:.04em}
-.tab{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px;padding:8px 12px;border:0;border-radius:8px;background:none;text-align:left;cursor:pointer;color:var(--ink-2);font-size:var(--fs-md)}
-.tab:hover{background:var(--sunken);color:var(--ink)}
-.tab[aria-current="page"]{background:var(--accent-soft);color:var(--ink);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
-.tab .badge{font-size:var(--fs-xs);font-weight:600;padding:1px 8px;border-radius:99px;background:var(--sunken);color:var(--ink-2)}
-.tab .badge.warn{background:var(--bad-soft);color:var(--ink)}
-.periods{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 4px}
-.periods button{min-height:40px;border-radius:8px;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm)}
-.periods button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
-.rail-foot{margin-top:auto;padding:12px 10px 0;border-top:1px solid var(--line);font-size:var(--fs-xs);color:var(--ink-3);line-height:1.6}
+/* ── 위 필터 한 줄 ── */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line-2);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:7px;
+  display:flex;align-items:center;gap:14px;min-height:var(--top)}
+.logo{font-family:var(--font-display);font-weight:700;font-size:15px;white-space:nowrap;color:var(--ink-2)}
+.logo b{color:var(--accent);font-weight:700}
+.scope{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0;flex:1 1 auto;align-items:center}
+.scope::-webkit-scrollbar{display:none}
+.pill{min-height:30px;padding:3px 11px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm);white-space:nowrap}
+.pill:hover{color:var(--ink);border-color:var(--ink-3)}
+.pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.scope select{min-height:30px;padding:3px 8px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);color:var(--ink-2);font-size:var(--fs-sm);max-width:150px}
+.scope select.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.sep{width:1px;align-self:stretch;background:var(--line-2);flex:0 0 1px;margin-block:4px}
+.periods{display:flex;gap:2px;background:var(--bg);border:1px solid var(--line-2);border-radius:99px;padding:2px;flex:0 0 auto}
+.periods button{min-height:26px;padding:2px 10px;border:0;border-radius:99px;background:none;cursor:pointer;color:var(--ink-3);font-size:var(--fs-sm);white-space:nowrap}
+.periods button[aria-pressed="true"]{background:var(--sunken);color:var(--ink);font-weight:700}
+.search{flex:0 1 220px;min-width:120px}
+.search input{width:100%;min-height:32px;padding:4px 12px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);color:var(--ink);font-size:var(--fs-sm)}
+.search input::placeholder{color:var(--ink-3)}
+.icbtn{min-height:30px;min-width:30px;padding:3px 9px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm);white-space:nowrap}
+.icbtn.warn{background:var(--bad-soft);border-color:transparent;color:var(--ink);font-weight:600}
+.stamp{font-size:var(--fs-xs);color:var(--ink-3);white-space:nowrap}
 
-main{min-width:0;padding-inline:clamp(16px,4vw,48px);padding-block:30px 110px}
-.wrap{max-width:1160px;display:flex;flex-direction:column;gap:26px}
-.head{display:flex;flex-direction:column;gap:6px}
-.eyebrow{font-size:var(--fs-sm);color:var(--ink-3)}
-h1{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:500;line-height:1.3;margin:0;letter-spacing:-.015em;text-wrap:balance}
-h2{font-size:var(--fs-lg);font-weight:600;margin:0;line-height:1.4;text-wrap:balance}
-.lead{font-size:var(--fs-lg);color:var(--ink-2);max-width:66ch;margin:0}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.panel-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-.panel-head p{margin:0}
-.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+/* ── 본문 ── */
+.page{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 90px;display:flex;flex-direction:column;gap:var(--gap)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0;min-height:0}
+.ph{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex:0 0 auto}
+.ph h2{font-size:var(--fs-md);font-weight:700;margin:0;color:var(--ink);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.ph .meta{font-size:var(--fs-xs);color:var(--ink-3);white-space:nowrap}
+.scroll{overflow-y:auto;min-height:0;flex:1 1 auto;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent}
 
-.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
-.fig{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:flex;flex-direction:column;gap:4px}
-.fig .k{font-size:var(--fs-sm);color:var(--ink-2)}
-.fig .v{font-family:var(--font-display);font-size:var(--fs-3xl);line-height:1.1;font-weight:700;font-variant-numeric:tabular-nums}
-.fig .v small{font-family:var(--font-body);font-size:var(--fs-md);font-weight:500;color:var(--ink-2);margin-left:3px}
-.fig .d{font-size:var(--fs-sm);color:var(--ink-3)}
+/* 숫자 한 줄: 첫 칸이 가장 크다 */
+.kpis{display:grid;grid-template-columns:minmax(210px,1.7fr) repeat(6,minmax(0,1fr));gap:var(--gap)}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:0}
+.kpi .k{font-size:var(--fs-xs);color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .v{font-family:var(--font-display);font-size:26px;line-height:1.1;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.kpi .v small{font-family:var(--font-body);font-size:var(--fs-sm);font-weight:500;color:var(--ink-3);margin-left:2px}
+.kpi .d{font-size:var(--fs-xs);color:var(--ink-3);white-space:nowrap}
+.kpi.hero{background:var(--accent-soft);border-color:transparent;padding:10px 18px}
+.kpi.hero .v{font-size:46px;color:var(--ink)}
+.kpi.hero .k{color:var(--accent);font-weight:600;font-size:var(--fs-sm)}
+.kpi .v.g{color:var(--good)} .kpi .v.b{color:var(--bad)}
 
-/* 주간 증감(주식처럼) */
-.dl{display:inline-flex;align-items:center;gap:3px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dl{display:inline-flex;align-items:center;gap:2px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .dl.good{color:var(--good)} .dl.bad{color:var(--bad)} .dl.flat{color:var(--ink-3);font-weight:500}
-.wk{display:flex;gap:12px;flex-wrap:wrap;font-size:var(--fs-sm);color:var(--ink-2);align-items:center}
-.wk b{color:var(--ink);font-weight:600}
+.dl small{font-weight:500;opacity:.85}
 
-/* 반응 막대 */
-.sbar{display:flex;gap:2px;height:12px;border-radius:4px;overflow:hidden;min-width:80px;background:var(--sunken)}
-.sbar i{display:block;height:100%}
-.sbar i.g{background:var(--good)} .sbar i.n{background:var(--neutral)} .sbar i.b{background:var(--bad)}
-.key{display:flex;gap:14px;flex-wrap:wrap;font-size:var(--fs-sm);color:var(--ink-2)}
-.key span{display:inline-flex;align-items:center;gap:6px}
-.dot{width:10px;height:10px;border-radius:3px;display:inline-block;flex:0 0 10px}
-.dot.g{background:var(--good)} .dot.n{background:var(--neutral)} .dot.b{background:var(--bad)} .dot.m{background:var(--mixed)}
+/* 세 칸 */
+.main3{display:grid;grid-template-columns:minmax(240px,270px) minmax(0,1fr) minmax(280px,340px);gap:var(--gap);height:clamp(440px,calc(100vh - 190px),660px)}
+.stack{display:flex;flex-direction:column;gap:var(--gap);min-height:0}
+.stack>.panel{flex:1 1 0}
+.main2{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:var(--gap)}
 
-.rank{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.rank li{display:grid;grid-template-columns:minmax(0,1fr) 140px 54px;gap:14px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
-.rank li:first-child{border-top:0}
-.rank .pname{display:flex;flex-direction:column;min-width:0}
-.rank .pname button{all:unset;cursor:pointer;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:8px}
-.rank .pname button:hover{text-decoration:underline;text-underline-offset:3px}
-.rank .why{font-size:var(--fs-sm);color:var(--ink-3)}
-.rank .pct{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+/* 세분류 막대 */
+.ld{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.ld li{display:grid;grid-template-columns:66px minmax(0,1fr) 42px;gap:8px;align-items:center;font-size:var(--fs-sm)}
+.ld .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink-2)}
+.bar{height:10px;background:var(--sunken);border-radius:3px;overflow:hidden;display:block}
+.bar i{display:block;height:100%;border-radius:0 3px 3px 0}
+.bar i.g{background:var(--good)} .bar i.b{background:var(--bad)}
+.ld .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-3);font-size:var(--fs-xs)}
+.ld .ex{grid-column:2/-1;font-size:var(--fs-xs);color:var(--ink-3);margin-top:-2px;display:flex;gap:6px;align-items:flex-start}
 
-.chip{display:inline-flex;align-items:center;gap:5px;font-size:var(--fs-xs);padding:2px 9px;border-radius:99px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap;background:var(--surface)}
+.rsn{display:flex;flex-direction:column;gap:7px}
+.rsn>div{display:grid;grid-template-columns:86px minmax(0,1fr);gap:8px;align-items:baseline}
+.rsn .rk{font-size:var(--fs-sm);font-weight:600;white-space:nowrap}
+.rsn .rk small{display:block;font-weight:400;color:var(--ink-3);font-size:var(--fs-xs)}
+.rsn .rv{display:flex;flex-wrap:wrap;gap:4px}
+
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:var(--fs-xs);padding:1px 8px;border-radius:99px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap;background:var(--surface);line-height:1.6}
 .chip.no{font-weight:600;background:var(--sunken);border-color:transparent}
 .chip.bad{background:var(--bad-soft);border-color:transparent;color:var(--ink)}
 .chip.good{background:var(--good-soft);border-color:transparent;color:var(--ink)}
-button.chip{cursor:pointer}
+button.chip{cursor:pointer} button.chip:hover{border-color:var(--ink-3)}
+.dot{width:8px;height:8px;border-radius:2px;display:inline-block;flex:0 0 8px}
+.dot.g{background:var(--good)} .dot.n{background:var(--neutral)} .dot.b{background:var(--bad)} .dot.m{background:var(--mixed)}
 
-.chart{width:100%;overflow-x:auto}
-.chart svg{display:block;width:100%;height:auto;min-width:560px}
-.chart text{fill:var(--ink-3);font-size:12px;font-family:var(--font-body)}
-.chart .grid{stroke:var(--line);stroke-width:1}
-.tip{position:fixed;z-index:50;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 11px;border-radius:8px;font-size:var(--fs-sm);line-height:1.5;max-width:280px;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s}
-.tip.on{opacity:1;transform:none}
-
-.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
-.field{display:flex;flex-direction:column;gap:4px;font-size:var(--fs-xs);color:var(--ink-3)}
-.field input,.field select{min-height:42px;padding:8px 12px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);font-size:var(--fs-md);color:var(--ink);min-width:0}
-.field input{width:min(300px,100%)}
-.seg{display:flex;flex-wrap:wrap;gap:6px}
-.seg button{min-height:40px;padding:6px 14px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm)}
-.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
-
-.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+/* 상품 표 */
 table{border-collapse:collapse;width:100%;font-size:var(--fs-sm)}
-th{font-weight:600;color:var(--ink-2);text-align:left;padding:11px 12px;border-bottom:1px solid var(--line-2);white-space:nowrap;background:var(--surface)}
-td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:middle}
-td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
-tbody tr[data-open]{cursor:pointer}
-tbody tr[data-open]:hover td{background:var(--sunken)}
-tbody tr:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
-.pcell{display:flex;align-items:center;gap:10px;min-width:0}
-.pcell b{font-weight:600;font-size:var(--fs-md);color:var(--ink)}
-.pc-txt{display:flex;flex-direction:column;min-width:0;line-height:1.35}
+.pt th{position:sticky;top:0;z-index:1;background:var(--surface);font-weight:600;color:var(--ink-3);font-size:var(--fs-xs);text-align:left;padding:5px 6px;border-bottom:1px solid var(--line-2);white-space:nowrap}
+.pt th button{all:unset;cursor:pointer;display:inline-flex;gap:3px;align-items:center}
+.pt th button:hover,.pt th button[aria-pressed="true"]{color:var(--accent)}
+.pt td{padding:4px 6px;border-top:1px solid var(--line);vertical-align:middle;white-space:nowrap}
+.pt td.r,.pt th.r{text-align:right;font-variant-numeric:tabular-nums}
+.pt tbody tr{cursor:pointer}
+.pt tbody tr:hover td{background:var(--raise)}
+.pt tbody tr.sel td{background:var(--accent-soft)}
+.pcell{display:flex;align-items:center;gap:8px;min-width:0;max-width:220px}
+.pcell .nm{overflow:hidden;text-overflow:ellipsis;font-weight:600;color:var(--ink)}
+.pcell .no{font-size:var(--fs-xs);color:var(--ink-3);flex:0 0 auto}
+.sbar{display:flex;gap:1px;height:8px;border-radius:2px;overflow:hidden;width:60px;background:var(--sunken)}
+.sbar i{display:block;height:100%}
+.sbar i.g{background:var(--good)} .sbar i.n{background:var(--neutral)} .sbar i.b{background:var(--bad)}
+.ck{width:16px;height:16px;accent-color:var(--accent);cursor:pointer;vertical-align:middle}
 
-.list{display:flex;flex-direction:column}
-.item{display:grid;grid-template-columns:100px minmax(0,1fr);gap:16px;padding:15px 4px;border-top:1px solid var(--line)}
-.item:first-child{border-top:0}
-.item .when{font-size:var(--fs-sm);color:var(--ink-3);font-variant-numeric:tabular-nums}
-.item .what{display:flex;flex-direction:column;gap:6px;min-width:0}
-.item .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.item .sum{font-size:17.5px;line-height:1.55;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
-.more{align-self:center;min-height:42px;padding:8px 22px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;font-weight:600;color:var(--ink)}
-.verdict{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:var(--fs-sm);color:var(--ink-2)}
-.ext{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 28px;border-radius:7px;color:var(--ink-3);border:1px solid var(--line-2)}
-.ext:hover{color:var(--accent);border-color:var(--accent)}
-
-.back{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px 6px 10px;border-radius:99px;border:1px solid var(--line-2);background:var(--surface);cursor:pointer;color:var(--ink-2);font-size:var(--fs-sm)}
-.facts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.quotes{display:flex;flex-direction:column;gap:14px}
-.quote{border-left:3px solid var(--line-2);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:4px}
-.quote.g{border-left-color:var(--good)} .quote.b{border-left-color:var(--bad)}
-.quote .s{font-weight:600;font-size:17.5px;display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
-.quote .c{color:var(--ink-2);font-size:15.5px}
-.quote .m{font-size:var(--fs-xs);color:var(--ink-3)}
-
-.thumb{border-radius:9px;object-fit:cover;background:var(--sunken);flex:0 0 auto;vertical-align:middle;border:2px solid var(--line-2)}
+.thumb{border-radius:5px;object-fit:cover;background:var(--sunken);flex:0 0 auto;vertical-align:middle;border:2px solid var(--line-2)}
 .thumb.ph{display:inline-block}
-.phead{display:flex;gap:18px;align-items:center}
-.phead .thumb{border-radius:16px;border-width:4px}
-.insight{background:var(--accent-soft);border-radius:var(--r);padding:20px 24px;display:flex;flex-direction:column;gap:10px}
-.insight h2{font-size:var(--fs-md);color:var(--ink-2)}
-.insight ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:8px;font-size:19.5px;line-height:1.55}
-.ld{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
-.ld-top{display:grid;grid-template-columns:84px minmax(0,1fr) 44px;gap:10px;align-items:center}
-.ld-name{font-weight:600;font-size:17px}
-.ld-bar{height:13px;background:var(--sunken);border-radius:4px;overflow:hidden;display:block}
-.ld-bar i{display:block;height:100%;border-radius:0 4px 4px 0}
-.ld-bar i.g{background:var(--good)} .ld-bar i.b{background:var(--bad)}
-.ld-n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2);font-size:var(--fs-sm)}
-.ld-ex{display:flex;gap:6px;align-items:flex-start;margin:4px 0 0 94px;font-size:15.5px;color:var(--ink-2);line-height:1.5}
-.reasons{display:flex;flex-direction:column;gap:12px}
-.reason{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:baseline}
-.reason .rk{font-weight:600;font-size:17px}
-.reason .rk small{display:block;font-weight:400;color:var(--ink-3);font-size:var(--fs-sm)}
-.reason .rv{display:flex;flex-wrap:wrap;gap:6px}
-.reason .rv .chip{font-size:var(--fs-sm);padding:3px 10px}
 
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:var(--gap)}
-.ecard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
-.ecard h2 button{all:unset;cursor:pointer}
-.ecard h2 button:hover{text-decoration:underline;text-underline-offset:3px}
-.plist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.plist li{display:grid;grid-template-columns:minmax(0,1fr) 64px 40px;gap:10px;align-items:center;font-size:var(--fs-sm)}
-.plist button{all:unset;cursor:pointer;color:var(--ink);font-weight:500;display:inline-flex;align-items:center;gap:8px;min-width:0;max-width:100%}
-.plist button:hover{text-decoration:underline}
-.plist .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
-.plist .n{text-align:right;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.empty{padding:28px 8px;text-align:center;color:var(--ink-3)}
-.sibs{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.sibs .chip{min-height:34px;padding:3px 12px 3px 4px}
-mark{background:var(--accent);color:var(--accent-ink);border-radius:3px;padding:0 2px}
+/* 최근 불만 · 검색 결과 */
+.feed{display:flex;flex-direction:column}
+.fi{display:flex;flex-direction:column;gap:3px;padding:7px 2px;border-top:1px solid var(--line)}
+.fi:first-child{border-top:0}
+.fi .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--ink-3)}
+.fi .s{font-size:var(--fs-sm);color:var(--ink);display:flex;gap:6px;align-items:flex-start;justify-content:space-between}
+.ext{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex:0 0 22px;border-radius:5px;color:var(--ink-3);border:1px solid var(--line-2)}
+.ext:hover{color:var(--accent);border-color:var(--accent)}
+mark{background:var(--accent);color:var(--accent-ink);border-radius:2px;padding:0 2px}
+.more{align-self:center;min-height:30px;padding:3px 14px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;font-size:var(--fs-sm);color:var(--ink-2);margin-top:6px}
+.empty{padding:18px 6px;text-align:center;color:var(--ink-3);font-size:var(--fs-sm)}
 
-/* 히트맵 — 행: 상품·분류·파트너사, 열: 세분류. 색: 초록=칭찬 우세, 빨강=불만 우세, 노랑=갈림. 진할수록 이야기가 많음 */
-.hm-wrap{overflow-x:auto}
-.hm{border-collapse:separate;border-spacing:4px;font-size:var(--fs-sm);width:auto}
-.hm th{background:none;border:0;padding:4px 6px;color:var(--ink-2);font-weight:600;text-align:center;white-space:nowrap}
-.hm th.rl{text-align:left;min-width:180px;max-width:240px}
-.hm th.rl button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:230px}
+/* 히트맵 */
+.hm-wrap{overflow:auto;min-height:0}
+.hm{border-collapse:separate;border-spacing:3px;font-size:var(--fs-xs);width:auto}
+.hm th{background:none;padding:2px 4px;color:var(--ink-3);font-weight:600;text-align:center;white-space:nowrap}
+.hm th.rl{text-align:left;min-width:150px;max-width:200px}
+.hm th.rl button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:196px;font-size:var(--fs-sm)}
 .hm th.rl button:hover{text-decoration:underline}
-.hm td{width:62px;min-width:62px;height:40px;text-align:center;border-radius:7px;border:0;padding:0;font-variant-numeric:tabular-nums;font-weight:700;color:#fff;cursor:default}
+.hm th.rl.on button{color:var(--accent)}
+.hm td{width:44px;min-width:44px;height:26px;text-align:center;border-radius:4px;padding:0;font-variant-numeric:tabular-nums;font-weight:700;color:#fff}
 .hm td.z{background:var(--sunken);color:var(--ink-3);font-weight:400}
-.hm-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:var(--fs-sm);color:var(--ink-2);align-items:center}
-.hm-legend span{display:inline-flex;gap:6px;align-items:center}
+.seg{display:flex;gap:2px;background:var(--bg);border:1px solid var(--line-2);border-radius:99px;padding:2px}
+.seg button{min-height:22px;padding:1px 9px;border:0;border-radius:99px;background:none;cursor:pointer;color:var(--ink-3);font-size:var(--fs-xs)}
+.seg button[aria-pressed="true"]{background:var(--sunken);color:var(--ink);font-weight:700}
+.lg{display:flex;gap:10px;font-size:var(--fs-xs);color:var(--ink-3);align-items:center;white-space:nowrap}
+.lg span{display:inline-flex;gap:4px;align-items:center}
 
-/* 비교 */
-.cmpbtn{min-height:32px;padding:3px 12px;border-radius:99px;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;font-size:var(--fs-xs);color:var(--ink-2);white-space:nowrap}
-.cmpbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
-.cmpbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--ink);color:var(--bg);border-radius:14px;padding:10px 12px 10px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.6);max-width:calc(100vw - 32px)}
-.cmpbar b{font-weight:700}
-.cmpbar button{min-height:40px;padding:6px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+/* 월별 */
+.chart{width:100%;overflow-x:auto}
+.chart svg{display:block;width:100%;height:auto;min-width:420px}
+.chart text{fill:var(--ink-3);font-size:11px;font-family:var(--font-body)}
+.chart .grid{stroke:var(--line-2);stroke-width:1}
+.tip{position:fixed;z-index:60;pointer-events:none;background:var(--ink);color:var(--bg);padding:6px 9px;border-radius:6px;font-size:var(--fs-sm);line-height:1.45;max-width:280px;opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+
+/* 오른쪽 서랍(상품 상세·비교·확인 대기·용어) — 페이지를 떠나지 않는다 */
+.scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.55)}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:41;width:min(760px,100vw);background:var(--bg);border-left:1px solid var(--line-2);display:flex;flex-direction:column;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px);box-shadow:-20px 0 40px rgba(0,0,0,.5)}
+.drawer.wide{width:min(1180px,100vw)}
+.dh{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line-2);background:var(--surface)}
+.dh h2{margin:0;font-size:var(--fs-lg);font-weight:700;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.db{overflow-y:auto;padding:14px 16px 40px;display:flex;flex-direction:column;gap:var(--gap)}
+.db>*{flex:0 0 auto}
+.pd-head{display:flex;gap:14px;align-items:center}
+.pd-head .thumb{border-radius:10px;border-width:3px}
+.facts{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.mk{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--gap)}
+.mk .kpi .v{font-size:22px}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.ins{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px;font-size:var(--fs-md);color:var(--ink)}
+.quote{border-left:3px solid var(--line-2);padding:1px 0 1px 10px;display:flex;flex-direction:column;gap:2px}
+.quote.g{border-left-color:var(--good)} .quote.b{border-left-color:var(--bad)}
+.quote .s{font-weight:600;font-size:var(--fs-sm);display:flex;gap:6px;justify-content:space-between}
+.quote .c{color:var(--ink-2);font-size:var(--fs-sm)}
+.quote .m{font-size:var(--fs-xs);color:var(--ink-3)}
+.quotes{display:flex;flex-direction:column;gap:10px}
+.cgrid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:var(--gap);overflow-x:auto}
+.ccol{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.ccol h3{margin:0;font-size:var(--fs-xs);color:var(--ink-3);font-weight:500}
+.gl{margin:0;display:grid;grid-template-columns:130px minmax(0,1fr);gap:6px 14px;font-size:var(--fs-sm)}
+.gl dt{font-weight:700} .gl dd{margin:0;color:var(--ink-2)}
+
+.cmpbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:35;background:var(--ink);color:var(--bg);border-radius:12px;padding:7px 8px 7px 14px;display:flex;gap:8px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.6);font-size:var(--fs-sm);max-width:calc(100vw - 32px)}
+.cmpbar button{min-height:32px;padding:3px 12px;border-radius:8px;border:0;cursor:pointer;font-weight:700;font-size:var(--fs-sm)}
 .cmpbar .go{background:var(--accent);color:var(--accent-ink)}
 .cmpbar .clr{background:transparent;color:var(--bg);border:1px solid rgba(0,0,0,.25)}
-.cgrid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);gap:var(--gap);overflow-x:auto;padding-bottom:4px}
-.ccol{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.ccol h2{display:flex;gap:10px;align-items:center}
-.ccol h3{font-size:var(--fs-sm);color:var(--ink-3);margin:0;font-weight:500}
-.mini{display:flex;flex-direction:column;gap:6px}
-.mini div{display:grid;grid-template-columns:64px minmax(0,1fr) 30px;gap:8px;align-items:center;font-size:var(--fs-sm)}
-.mini i{display:block;height:10px;border-radius:3px}
 
-/* 가이드 */
-.guide dl{margin:0;display:grid;grid-template-columns:160px minmax(0,1fr);gap:12px 20px}
-.guide dt{font-weight:700;font-size:17px}
-.guide dd{margin:0;color:var(--ink-2);font-size:16.5px;line-height:1.6}
-.guide ol{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px;font-size:16.5px;color:var(--ink-2)}
-
-@media (max-width:960px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}.cols{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:820px){
-  .shell{grid-template-columns:minmax(0,1fr)}
-  .rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;height:auto;gap:8px;padding:12px 16px 8px;border-right:0;border-bottom:1px solid var(--line)}
-  .brand .sub,.menu-label,.rail-foot{display:none}
-  .brand{padding:0} .brand .name{font-size:var(--fs-lg)}
-  .navs{display:flex;overflow-x:auto;gap:2px;margin-inline:-16px;padding-inline:12px}
-  .menu{flex-direction:row;gap:2px}
-  .tab{white-space:nowrap;border-radius:0;min-height:44px;padding:8px 12px}
-  .tab[aria-current="page"]{background:none;box-shadow:inset 0 -3px 0 var(--accent)}
-  .periods{display:flex;overflow-x:auto;padding:0}
-  .periods button{min-height:34px;padding:4px 12px;white-space:nowrap}
-  main{padding-block:20px 110px}
-  h1{font-size:25px} .fig .v{font-size:32px}
-  .rank li{grid-template-columns:minmax(0,1fr) 80px 46px}
-  .item{grid-template-columns:minmax(0,1fr);gap:4px}
+@media (max-width:1280px){.kpis{grid-template-columns:minmax(190px,1.5fr) repeat(3,minmax(0,1fr))}.kpi.x{display:none}}
+@media (max-width:1100px){
+  .main3{grid-template-columns:minmax(240px,280px) minmax(0,1fr);height:auto}
+  .main3>.stack:first-child{height:clamp(440px,calc(100vh - 190px),640px)}
+  .main3>.tblp{height:clamp(440px,calc(100vh - 190px),640px)}
+  .main3>.feedp{grid-column:1/-1;max-height:420px}
+  .main2{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .top{flex-wrap:wrap;gap:8px}
+  .scope{order:3;flex:1 1 100%}
+  .search{flex:1 1 140px}
+  .stamp{display:none}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi.hero{grid-column:1/-1} .kpi.x{display:flex}
+  .main3{grid-template-columns:minmax(0,1fr)}
+  .main3>.stack:first-child,.main3>.tblp{height:auto}
+  .stack>.panel{flex:0 0 auto}
+  .kpi.hero .v{font-size:40px}
+  .main3>.tblp{max-height:520px}
   .hide-sm{display:none}
-  th,td{padding:10px 8px}
-  .reason{grid-template-columns:minmax(0,1fr);gap:6px}
-  .ld-ex{margin-left:0}
-  .guide dl{grid-template-columns:minmax(0,1fr);gap:4px}
-  .guide dd{margin-bottom:10px}
-  .phead .thumb{width:64px;height:64px}
+  .mk{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cols{grid-template-columns:minmax(0,1fr)}
+  .gl{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .gate{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
 .gate form{display:flex;flex-direction:column;gap:12px;width:min(300px,100%);text-align:center}
-.gate .name{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:700}
-.gate input{min-height:46px;padding:10px 14px;border-radius:10px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font-size:var(--fs-lg);text-align:center}
+.gate .name{font-family:var(--font-display);font-size:26px;font-weight:700}
+.gate input{min-height:44px;padding:10px 14px;border-radius:10px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font-size:var(--fs-lg);text-align:center}
 .gate input.err{border-color:var(--bad)}
-.gate button{min-height:46px;border-radius:10px;border:0;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:var(--fs-md);cursor:pointer}
+.gate button{min-height:44px;border-radius:10px;border:0;background:var(--accent);color:var(--accent-ink);font-weight:700;cursor:pointer}
 .gate .msg{min-height:1.4em;font-size:var(--fs-sm);color:var(--ink-2)}
 </style>
 
-<div class="shell">
-  <aside class="rail" aria-label="보기 선택">
-    <div class="brand"><div class="name">겸손몰 후기</div><div class="sub" id="brand-sub"></div></div>
-    <div class="navs">
-      <nav class="menu" aria-label="분석">
-        <div class="menu-label">분석</div>
-        <button class="tab" data-view="overview">Overview</button>
-        <button class="tab" data-view="products">상품별<span class="badge" id="b-products"></span></button>
-        <button class="tab" data-view="categories">분류별</button>
-        <button class="tab" data-view="partners">파트너사별</button>
-        <button class="tab" data-view="search">후기 검색</button>
-        <button class="tab" data-view="queue" id="t-queue" hidden>확인 대기<span class="badge warn" id="b-queue"></span></button>
-      </nav>
-      <nav class="menu" aria-label="도움말">
-        <div class="menu-label">도움말</div>
-        <button class="tab" data-view="guide">보는 법 · 용어</button>
-      </nav>
-    </div>
-    <div>
-      <div class="menu-label">기간</div>
-      <div class="periods" role="group" aria-label="기간" id="periods"></div>
-    </div>
-    <div class="rail-foot" id="rail-foot"></div>
-  </aside>
-  <main id="main" tabindex="-1"><div class="wrap" id="view"></div></main>
-</div>
+<header class="top">
+  <div class="logo">겸손몰 <b>후기</b></div>
+  <nav class="scope" id="scope" aria-label="범위"></nav>
+  <div class="periods" role="group" aria-label="기간" id="periods"></div>
+  <label class="search"><span class="sr">후기 검색</span><input id="q" type="search" placeholder="후기 검색" autocomplete="off"></label>
+  <button class="icbtn warn" id="queue-btn" hidden></button>
+  <button class="icbtn" id="help-btn" aria-label="보는 법 · 용어">?</button>
+  <span class="stamp" id="stamp"></span>
+</header>
+<main class="page" id="view"></main>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="d-title">
+  <div class="dh"><h2 id="d-title"></h2><button class="icbtn" id="d-close" aria-label="닫기">✕</button></div>
+  <div class="db" id="d-body"></div>
+</aside>
 <div class="cmpbar" id="cmpbar" hidden></div>
 <div class="tip" id="tip" role="status" aria-live="polite"></div>
-<div class="gate" id="gate" hidden><form id="gate-form" autocomplete="off"><div class="name">겸손몰 후기</div><label class="muted small" for="gate-input">비밀번호를 입력해 주세요</label><input id="gate-input" type="password" inputmode="text" required><button type="submit">들어가기</button><div class="msg" id="gate-msg" aria-live="polite"></div></form></div>
+<div class="gate" id="gate" hidden><form id="gate-form" autocomplete="off"><div class="name">겸손몰 후기</div><label class="muted" for="gate-input">비밀번호</label><input id="gate-input" type="password" inputmode="text" required><button type="submit">들어가기</button><div class="msg" id="gate-msg" aria-live="polite"></div></form></div>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -291,43 +268,44 @@ if (G) {
     document.getElementById('gate-form').addEventListener('submit', e => {
       e.preventDefault();
       if (inp.value === G.g || inp.value === G.a) { try { sessionStorage.setItem('_nh_gate', '1'); } catch (e) {} gate.hidden = true; }
-      else { inp.value = ''; inp.classList.add('err'); document.getElementById('gate-msg').textContent = '비밀번호가 맞지 않습니다. 다시 입력해 주세요.'; inp.focus(); }
+      else { inp.value = ''; inp.classList.add('err'); document.getElementById('gate-msg').textContent = '비밀번호가 맞지 않습니다.'; inp.focus(); }
     });
   }
 }
 const D = JSON.parse(document.getElementById('data').textContent);
 const M = D.meta, P = D.products;
 const byKey = Object.fromEntries(P.map(p => [p.key, p]));
+const PI = new Map(P.map((p, i) => [p, i]));
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = n => Number(n).toLocaleString('ko-KR');
 const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
 const SENT = ['칭찬', '보통', '불만'], SK = ['g', 'n', 'b'];
-const INT_LABEL = {'교환·반품':'교환·반품·AS', '문의':'문의', '제품제안':'제품 제안', '재구매희망':'다시 사고 싶음', '양도·거래':'구매자끼리 거래'};
+const INT_LABEL = {'교환·반품':'교환·AS', '문의':'문의', '제품제안':'제안', '재구매희망':'재구매', '양도·거래':'거래'};
+const INT_SUB = {'교환·반품':'바꾼 이유', '문의':'물은 것', '제품제안':'바꿔 달라', '재구매희망':'또 사는 이유'};
 const REASON_INTS = ['교환·반품', '문의', '제품제안', '재구매희망'];
 const tagName = t => t.replace(/^#/, '');
 const total = s => s[0] + s[1] + s[2];
 const goodShare = p => pct(p.sent[0], total(p.sent));
 const badShare = p => pct(p.sent[2], total(p.sent));
-const topNeg = (p, k = 1) => Object.keys(p.neg || {}).slice(0, k);
 const TAGS = M.tags, INTS = M.intents || [];
 const mallLink = p => p.pid ? `https://nonohumble.com/product/detail.html?product_no=${p.pid}` : '';
 const reviewLink = id => `https://nonohumble.com/article/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/${id}/`;
-const EXT_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const ext = href => href ? `<a class="ext" href="${esc(href)}" target="_blank" rel="noopener" aria-label="원문 보기" title="원문 보기">${EXT_SVG}</a>` : '';
-const ymdStr = n => { const d = String(n); return `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6)}`; };
+const EXT_SVG = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const ext = href => href ? `<a class="ext" href="${esc(href)}" target="_blank" rel="noopener" aria-label="원문" title="원문">${EXT_SVG}</a>` : '';
+const ymdStr = n => { const d = String(n); return `${d.slice(2, 4)}.${d.slice(4, 6)}.${d.slice(6)}`; };
 const jo = (w, a, b) => { const c = w.charCodeAt(w.length - 1); return (c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28) ? a : b; };
+const sortObj = o => Object.fromEntries(Object.entries(o).sort((a, b) => b[1] - a[1]));
 
-// ── 기간 ──
-const PERIODS = [['30', '최근 30일'], ['90', '최근 90일'], ['365', '최근 1년'], ['all', '전체 기간']];
-let period = 'all';
-const minN = () => ({ '30': 3, '90': 8, '365': 20, all: 40 })[period];
+// ── 상태 ──
+const PERIODS = [['30', '30일'], ['90', '90일'], ['365', '1년'], ['all', '전체']];
+const st = { period: 'all', scope: { t: 'all', k: '' }, sort: 'n', q: '', show: 40, hm: 'product', cmp: [] };
 const ANCHOR = (M.updated || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
 const ymdMinus = days => { const d = new Date(ANCHOR + 'T00:00:00'); d.setDate(d.getDate() - days); return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate(); };
-const cutoff = () => period === 'all' ? 0 : ymdMinus(+period);
-const periodLabel = () => PERIODS.find(x => x[0] === period)[1];
-const sortObj = o => Object.fromEntries(Object.entries(o).sort((a, b) => b[1] - a[1]));
-// 상품별 숫자를 고른 기간으로 다시 센다(D.R = 후기 축약 목록). it = 요청 종류 → 세분류 → 개수
+const cutoff = () => st.period === 'all' ? 0 : ymdMinus(+st.period);
+const periodLabel = () => ({ '30': '최근 30일', '90': '최근 90일', '365': '최근 1년', all: '전체 기간' })[st.period];
+
+// 고른 기간으로 상품별 숫자를 다시 센다(D.R = 후기 축약 목록). it = 요청 종류 → 세분류 → 개수
 function applyPeriod() {
   const c = cutoff(), acc = P.map(() => ({ n: 0, sent: [0, 0, 0], pos: {}, neg: {}, it: {}, itN: {} }));
   for (const r of D.R) {
@@ -342,6 +320,9 @@ function applyPeriod() {
   P.forEach((p, i) => { const a = acc[i]; Object.assign(p, { n: a.n, sent: a.sent, pos: sortObj(a.pos), neg: sortObj(a.neg), it: a.it, itN: a.itN }); });
 }
 const visible = p => p.n > 0;
+const inScope = p => st.scope.t === 'all' || (st.scope.t === 'cat' ? p.cats.includes(st.scope.k) : p.partners.includes(st.scope.k));
+const scoped = () => P.filter(p => visible(p) && inScope(p));
+const scopeLabel = () => st.scope.t === 'all' ? '전체' : st.scope.t === 'cat' ? st.scope.k : `파트너사 · ${st.scope.k}`;
 
 // ── 주간 증감: 이번 주 = 기준일 포함 최근 7일, 지난주 = 그 전 7일(기간 선택과 무관) ──
 const W0 = ymdMinus(6), W1 = ymdMinus(13);
@@ -352,16 +333,14 @@ for (const r of D.R) {
   cur ? w.n++ : w.np++;
   for (const sg of r[5]) { if (sg[0] === 0) cur ? w.g++ : w.gp++; if (sg[0] === 2) cur ? w.b++ : w.bp++; }
 }
-const PI = new Map(P.map((p, i) => [p, i]));
 const wkOf = ps => ps.reduce((a, p) => { const w = WK[PI.get(p)]; for (const k in a) a[k] += w[k]; return a; }, { g: 0, b: 0, gp: 0, bp: 0, n: 0, np: 0 });
 // 칭찬은 늘면 초록, 불만은 늘면 빨강
-function delta(cur, prev, upIsGood = true) {
+function delta(cur, prev, upIsGood = true, neutral = false) {
   const d = cur - prev;
   if (!d) return `<span class="dl flat" title="지난주와 같음">— 0</span>`;
-  const good = (d > 0) === upIsGood, p = prev ? `${d > 0 ? '+' : ''}${Math.round(d / prev * 100)}%` : '새로';
-  return `<span class="dl ${good ? 'good' : 'bad'}" title="지난주 ${prev} → 이번 주 ${cur}">${d > 0 ? '▲' : '▼'} ${Math.abs(d)} <small style="font-weight:500">(${p})</small></span>`;
+  const cls = neutral ? 'flat' : ((d > 0) === upIsGood ? 'good' : 'bad'), p = prev ? `${d > 0 ? '+' : ''}${Math.round(d / prev * 100)}%` : '새로';
+  return `<span class="dl ${cls}" title="지난주 ${prev} → 이번 주 ${cur}">${d > 0 ? '▲' : '▼'}${Math.abs(d)} <small>${p}</small></span>`;
 }
-const wkLine = w => `<div class="wk"><span>칭찬 <b>${fmt(w.g)}</b> ${delta(w.g, w.gp, true)}</span><span>불만 <b>${fmt(w.b)}</b> ${delta(w.b, w.bp, false)}</span></div>`;
 
 // ── 상태 색: 칭찬이 많으면 초록, 불만이 많으면 빨강, 진할수록 한쪽으로 쏠림 ──
 function tone(s) {
@@ -369,15 +348,13 @@ function tone(s) {
   const bal = (s[0] - s[2]) / t, k = Math.round(25 + 75 * Math.min(1, Math.abs(bal)));
   return `color-mix(in srgb, ${bal >= 0 ? 'var(--good)' : 'var(--bad)'} ${k}%, var(--line-2))`;
 }
-const thumb = (p, size = 44, s) => p.img
-  ? `<img class="thumb" src="${esc(p.img)}" width="${size}" height="${size}" loading="lazy" referrerpolicy="no-referrer" alt="" style="border-color:${tone(s || p.sent)}" onerror="this.style.visibility='hidden'">`
-  : `<span class="thumb ph" style="width:${size}px;height:${size}px;border-color:${tone(s || p.sent)}" aria-hidden="true"></span>`;
-const numChip = p => `<span class="chip no">${p.pilot ? '파일럿' : esc(p.num)}</span>`;
-const sbar = (s, h) => { const t = total(s) || 1; const a = `칭찬 ${pct(s[0], t)}%, 보통 ${pct(s[1], t)}%, 불만 ${pct(s[2], t)}%`;
-  return `<div class="sbar" role="img" aria-label="${a}" title="${a}" ${h ? `style="height:${h}px"` : ''}>${s.map((v, i) => v ? `<i class="${SK[i]}" style="width:${v / t * 100}%"></i>` : '').join('')}</div>`; };
-const keyRow = () => `<div class="key" aria-hidden="true">${SENT.map((s, i) => `<span><i class="dot ${SK[i]}"></i>${s}</span>`).join('')}</div>`;
+const thumb = (p, size = 28) => p.img
+  ? `<img class="thumb" src="${esc(p.img)}" width="${size}" height="${size}" loading="lazy" referrerpolicy="no-referrer" alt="" style="border-color:${tone(p.sent)}" onerror="this.style.visibility='hidden'">`
+  : `<span class="thumb ph" style="width:${size}px;height:${size}px;border-color:${tone(p.sent)}" aria-hidden="true"></span>`;
+const sbar = s => { const t = total(s) || 1, a = `칭찬 ${pct(s[0], t)}% · 보통 ${pct(s[1], t)}% · 불만 ${pct(s[2], t)}%`;
+  return `<div class="sbar" role="img" aria-label="${a}" title="${a}">${s.map((v, i) => v ? `<i class="${SK[i]}" style="width:${v / t * 100}%"></i>` : '').join('')}</div>`; };
 
-// ── 묶음(상품 여러 개) 합치기 ──
+// ── 묶음 합치기 ──
 function agg(ps) {
   const a = { n: 0, sent: [0, 0, 0], pos: {}, neg: {}, it: {}, itN: {}, ex: {} }, best = {};
   ps.forEach(p => {
@@ -387,369 +364,282 @@ function agg(ps) {
     for (const [k, v] of Object.entries(p.itN)) a.itN[k] = (a.itN[k] || 0) + v;
     for (const [k, o] of Object.entries(p.it)) { const t = a.it[k] = a.it[k] || {}; for (const [x, v] of Object.entries(o)) t[x] = (t[x] || 0) + v; }
     Object.entries(p.tex || {}).forEach(([k, e]) => ['g', 'b'].forEach(s => { const v = (s === 'g' ? p.pos : p.neg)[k] || 0;
-      if (e[s] && v > (best[k + s] || 0)) { best[k + s] = v; (a.ex[k] = a.ex[k] || {})[s] = ps.length > 1 ? e[s].map(x => ({ ...x, s: `${p.name} · ${x.s}` })) : e[s]; } }));
+      if (e[s] && v > (best[k + s] || 0)) { best[k + s] = v; (a.ex[k] = a.ex[k] || {})[s] = e[s]; } }));
   });
-  a.pos = sortObj(a.pos); a.neg = sortObj(a.neg); a.wk = wkOf(ps); a.ps = ps;
+  a.pos = sortObj(a.pos); a.neg = sortObj(a.neg); a.wk = wkOf(ps);
   return a;
 }
-const catGroups = () => { const m = {}; P.filter(visible).forEach(p => (p.cats.length ? p.cats : ['분류 없음']).forEach(c => (m[c] = m[c] || []).push(p))); return m; };
-const partnerGroups = () => { const m = {}; P.filter(visible).forEach(p => p.partners.forEach(x => (m[x] = m[x] || []).push(p))); return m; };
+const groupsBy = kind => { const m = {}; P.filter(visible).forEach(p => (kind === 'cat' ? (p.cats.length ? p.cats : ['분류 없음']) : p.partners).forEach(c => (m[c] = m[c] || []).push(p))); return m; };
 const tagStats = (pos, neg) => [...new Set([...Object.keys(pos || {}), ...Object.keys(neg || {})])].map(k => ({ k, name: tagName(k), g: (pos || {})[k] || 0, b: (neg || {})[k] || 0 }));
 
-// ── 인사이트(상품 상세에서만) ──
-function insights(rows) {
-  const out = [], G = rows.filter(r => r.g).sort((a, b) => b.g - a.g), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b);
-  const gT = G.reduce((a, r) => a + r.g, 0), bT = B.reduce((a, r) => a + r.b, 0);
-  if (G.length) out.push(G[1] ? `칭찬은 «${G[0].name}»${jo(G[0].name, '과', '와')} «${G[1].name}» 이야기에 가장 많습니다. 둘을 합치면 칭찬의 ${pct(G[0].g + G[1].g, gT)}%입니다.` : `칭찬은 «${G[0].name}» 이야기에 가장 많습니다.`);
-  if (B.length) { const sh = pct(B[0].b, bT); out.push(sh >= 35 ? `불만은 «${B[0].name}»에 몰려 있습니다. 불만의 ${sh}%가 이 이야기입니다.` : (B[1] ? `불만은 «${B[0].name}»(${B[0].b}개), «${B[1].name}»(${B[1].b}개) 등으로 흩어져 있습니다.` : `불만은 «${B[0].name}» 이야기에서 나옵니다.`)); }
-  const split = rows.filter(r => r.g >= 5 && r.b >= 5 && r.b / (r.g + r.b) >= .35 && r.b / (r.g + r.b) <= .65).sort((a, b) => (b.g + b.b) - (a.g + a.b))[0];
-  if (split) out.push(`«${split.name}»${jo(split.name, '은', '는')} 칭찬 ${split.g}개, 불만 ${split.b}개로 사람마다 평가가 갈립니다.`);
-  const bad = rows.filter(r => r.b >= 5 && r.b / (r.g + r.b) > .65 && r !== B[0]).sort((a, b) => b.b - a.b)[0];
-  if (bad) out.push(`«${bad.name}» 이야기가 나오면 ${pct(bad.b, bad.g + bad.b)}%가 불만입니다.`);
-  const good = rows.filter(r => r.g >= 10 && r.g / (r.g + r.b) >= .9 && r !== G[0]).sort((a, b) => b.g - a.g)[0];
-  if (good) out.push(`«${good.name}»${jo(good.name, '은', '는')} 거의 칭찬만 받습니다(칭찬 ${good.g}개, 불만 ${good.b}개).`);
-  return out.length ? out : ['이 기간에는 세분류가 붙은 이야기가 적어서 정리할 만한 흐름이 없습니다.'];
+// ── 조각들 ──
+function ldList(rows, k, n, ex) {
+  const arr = rows.filter(r => r[k]).sort((a, b) => b[k] - a[k]).slice(0, n), max = Math.max(1, ...arr.map(r => r[k]));
+  if (!arr.length) return '<div class="empty">없음</div>';
+  return `<ul class="ld">${arr.map(r => { const e = ex && ((ex[r.k] || {})[k] || [])[0];
+    return `<li title="${esc(r.name)} ${k === 'g' ? '칭찬' : '불만'} ${r[k]}${e ? ' · “' + esc(e.s) + '”' : ''}"><span class="nm">${esc(r.name)}</span><span class="bar"><i class="${k}" style="width:${r[k] / max * 100}%"></i></span><span class="n">${fmt(r[k])}</span>${ex && e ? `<span class="ex">“${esc(e.s)}” ${ext(e.link)}</span>` : ''}</li>`; }).join('')}</ul>`;
 }
-const insightBox = rows => `<section class="insight" aria-labelledby="h-ins"><h2 id="h-ins">핵심 인사이트</h2><ul>${insights(rows).map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
-function likeDislike(rows, ex, n = 6) {
-  const G = rows.filter(r => r.g).sort((a, b) => b.g - a.g).slice(0, n), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b).slice(0, n);
-  const max = Math.max(1, ...G.map(r => r.g), ...B.map(r => r.b));
-  const list = (arr, k) => arr.length ? `<ul class="ld">${arr.map(r => { const e = ((ex || {})[r.k] || {})[k] || [];
-    return `<li><div class="ld-top"><span class="ld-name">${esc(r.name)}</span><span class="ld-bar"><i class="${k}" style="width:${r[k] / max * 100}%"></i></span><span class="ld-n">${fmt(r[k])}</span></div>${e[0] ? `<span class="ld-ex">“${esc(e[0].s)}” ${ext(e[0].link)}</span>` : ''}</li>`; }).join('')}</ul>` : '<p class="muted">이 기간에는 없습니다.</p>';
-  return `<div class="cols">
-    <section class="panel" aria-labelledby="h-like"><div class="panel-head"><h2 id="h-like"><i class="dot g"></i> 마음에 든 점</h2><span class="small muted">세분류별 칭찬 개수</span></div>${list(G, 'g')}</section>
-    <section class="panel" aria-labelledby="h-dislike"><div class="panel-head"><h2 id="h-dislike"><i class="dot b"></i> 마음에 안 든 점</h2><span class="small muted">세분류별 불만 개수</span></div>${list(B, 'b')}</section></div>`;
-}
-// 교환·문의·제안·재구매가 어떤 세분류 때문이었나
-function reasons(a) {
+function reasonsHtml(a, n = 4) {
   const rows = REASON_INTS.filter(k => a.itN[k]).map(k => {
-    const tags = Object.entries(a.it[k] || {}).sort((x, y) => y[1] - x[1]).slice(0, 6);
+    const tags = Object.entries(a.it[k] || {}).sort((x, y) => y[1] - x[1]).slice(0, n);
     const cls = k === '교환·반품' ? 'bad' : k === '재구매희망' ? 'good' : '';
-    return `<div class="reason"><div class="rk">${esc(INT_LABEL[k])} ${fmt(a.itN[k])}건<small>${k === '교환·반품' ? '무엇 때문에 바꾸거나 고쳐 달라고 했나' : k === '문의' ? '무엇을 물었나' : k === '제품제안' ? '무엇을 바꿔 달라고 했나' : '무엇이 좋아서 또 사고 싶다고 했나'}</small></div>
-      <div class="rv">${tags.length ? tags.map(([t, v]) => `<span class="chip ${cls}">${esc(tagName(t))} ${fmt(v)}</span>`).join('') : '<span class="muted small">세분류 표시가 없는 이야기입니다</span>'}</div></div>`;
+    return `<div><div class="rk">${esc(INT_LABEL[k])} <span class="num">${fmt(a.itN[k])}</span><small>${INT_SUB[k]}</small></div><div class="rv">${tags.length ? tags.map(([t, v]) => `<span class="chip ${cls}">${esc(tagName(t))} ${fmt(v)}</span>`).join('') : '<span class="muted" style="font-size:var(--fs-xs)">세분류 없음</span>'}</div></div>`;
   });
-  return `<section class="panel" aria-labelledby="h-rsn"><div class="panel-head"><div><h2 id="h-rsn">교환·문의·제안은 무엇 때문이었나</h2><p class="small muted">후기 속 요청을 세분류로 나눴습니다. 처리 현황이 아니라 «왜»를 보는 칸입니다.</p></div></div>
-    ${rows.length ? `<div class="reasons">${rows.join('')}</div>` : '<p class="muted">이 기간에는 요청이 담긴 후기가 없습니다.</p>'}</section>`;
+  return rows.length ? `<div class="rsn">${rows.join('')}</div>` : '<div class="empty">없음</div>';
+}
+function kpi(k, v, unit, d, cls = '', vcls = '') {
+  return `<div class="kpi ${cls}"><span class="k">${k}</span><span class="v ${vcls}">${v}${unit ? `<small>${unit}</small>` : ''}</span>${d ? `<span class="d">${d}</span>` : ''}</div>`;
 }
 
 // ── 히트맵: 행 × 세분류. 셀 색 = 칭찬/불만 쏠림, 진하기 = 이야기 수 ──
-function heatmap(rows, title, sub, cols = 9) {
+function heatmap(rows, cols = 11) {
   rows = rows.filter(r => r.a.n > 0);
-  if (!rows.length) return '';
+  if (!rows.length) return '<div class="empty">없음</div>';
   const tot = {}; rows.forEach(r => tagStats(r.a.pos, r.a.neg).forEach(x => tot[x.k] = (tot[x.k] || 0) + x.g + x.b));
   const C = Object.keys(tot).sort((a, b) => tot[b] - tot[a]).slice(0, cols);
   const max = Math.max(1, ...rows.flatMap(r => C.map(c => (r.a.pos[c] || 0) + (r.a.neg[c] || 0))));
   const cell = (r, c) => { const g = r.a.pos[c] || 0, b = r.a.neg[c] || 0, t = g + b;
-    if (!t) return `<td class="z" title="${esc(r.label)} · ${esc(tagName(c))}: 이야기 없음">·</td>`;
+    if (!t) return `<td class="z">·</td>`;
     const bal = (g - b) / t, base = bal >= .2 ? 'var(--good)' : bal <= -.2 ? 'var(--bad)' : 'var(--mixed)', k = Math.round(30 + 65 * Math.sqrt(t / max));
     return `<td style="background:color-mix(in srgb, ${base} ${k}%, var(--sunken))" title="${esc(r.label)} · ${esc(tagName(c))}: 칭찬 ${g} · 불만 ${b}">${t}</td>`; };
-  return `<section class="panel" aria-labelledby="h-hm"><div class="panel-head"><div><h2 id="h-hm">${esc(title)}</h2><p class="small muted">${esc(sub)} 칸 숫자는 그 세분류 이야기 수, 칸에 마우스를 올리면 칭찬·불만이 나옵니다.</p></div></div>
-    <div class="hm-legend"><span><i class="dot g"></i>칭찬이 많은 세분류</span><span><i class="dot b"></i>불만이 많은 세분류</span><span><i class="dot m"></i>비슷하게 갈림</span><span class="muted">진할수록 이야기가 많음</span></div>
-    <div class="hm-wrap"><table class="hm"><caption class="sr">${esc(title)}</caption><thead><tr><th class="rl"></th>${C.map(c => `<th scope="col">${esc(tagName(c))}</th>`).join('')}</tr></thead>
-    <tbody>${rows.map(r => `<tr><th scope="row" class="rl"><button ${r.attr}>${r.thumb || ''}<span>${esc(r.label)}</span></button></th>${C.map(c => cell(r, c)).join('')}</tr>`).join('')}</tbody></table></div></section>`;
+  return `<div class="hm-wrap"><table class="hm"><thead><tr><th class="rl"></th>${C.map(c => `<th scope="col">${esc(tagName(c))}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(r => `<tr><th scope="row" class="rl${r.on ? ' on' : ''}"><button ${r.attr}>${r.thumb || ''}<span>${esc(r.label)}</span></button></th>${C.map(c => cell(r, c)).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
-// ── 툴팁·월별 차트 ──
+// ── 월별 차트 ──
 const tip = $('#tip');
-function showTip(html, x, y) { tip.innerHTML = html; tip.classList.add('on'); const r = tip.getBoundingClientRect(); let L = x + 14, T = y + 14;
-  if (L + r.width > innerWidth - 8) L = x - r.width - 14; if (T + r.height > innerHeight - 8) T = y - r.height - 14; tip.style.left = L + 'px'; tip.style.top = T + 'px'; }
+function showTip(html, x, y) { tip.innerHTML = html; tip.classList.add('on'); const r = tip.getBoundingClientRect(); let L = x + 12, T = y + 12;
+  if (L + r.width > innerWidth - 8) L = x - r.width - 12; if (T + r.height > innerHeight - 8) T = y - r.height - 12; tip.style.left = L + 'px'; tip.style.top = T + 'px'; }
 const hideTip = () => tip.classList.remove('on');
 function launchesOf(ps) { const m = {}, seen = new Set();
   ps.forEach(p => { if (!p.sale_start || seen.has(p.group)) return; seen.add(p.group); const k = p.sale_start.slice(0, 7); (m[k] = m[k] || []).push(p.pilot ? p.name : `${p.num} ${p.group.replace(/^\d+\s+/, '')}`); }); return m; }
+function seriesOf(ps) {
+  if (st.scope.t === 'all' && ps.length > 1) return M.monthly;
+  const m = {}; ps.forEach(p => (p.series || []).forEach(r => { const o = m[r[0]] = m[r[0]] || [r[0], 0, 0, 0, 0]; for (let i = 1; i < 5; i++) o[i] += r[i]; }));
+  return Object.values(m).sort((a, b) => a[0].localeCompare(b[0]));
+}
 function monthChart(rows, opt = {}) {
   const data = rows.slice(-(opt.last || 24));
-  if (!data.length) return '<p class="muted">기록이 없습니다.</p>';
-  const W = 760, H = 240, L = 40, R = 8, T = 22, B = 34, launches = opt.launches || {};
+  if (!data.length) return '<div class="empty">없음</div>';
+  const W = 640, H = opt.h || 210, L = 34, R = 6, T = 16, B = 26, launches = opt.launches || {};
   const max = Math.max(...data.map(r => r[2] + r[3] + r[4]), 1);
-  const step = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000].find(s => max / s <= 5) || 1000, top = Math.ceil(max / step) * step;
-  const bw = (W - L - R) / data.length, bar = Math.max(4, Math.min(28, bw - 4)), y = v => T + (H - T - B) * (1 - v / top);
+  const step = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000].find(s => max / s <= 4) || 1000, top = Math.ceil(max / step) * step;
+  const bw = (W - L - R) / data.length, bar = Math.max(4, Math.min(22, bw - 3)), y = v => T + (H - T - B) * (1 - v / top);
   let g = '';
-  for (let v = 0; v <= top; v += step) g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  for (let v = 0; v <= top; v += step) g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
   const every = Math.max(1, Math.ceil(data.length / 8));
   data.forEach((r, i) => {
     const x = L + i * bw + (bw - bar) / 2; let base = 0;
-    const segs = [[r[2], 'var(--good)'], [r[3], 'var(--neutral)'], [r[4], 'var(--bad)']];
-    const parts = segs.map(([v, c], k) => { if (!v) return ''; const y1 = y(base + v), h = y(base) - y1 - (base ? 2 : 0); base += v;
-      return segs.slice(k + 1).every(s => !s[0]) ? `<path d="M${x},${y1 + h} v${-(h - 3)} q0,-3 3,-3 h${bar - 6} q3,0 3,3 v${h - 3} z" fill="${c}"/>` : `<rect x="${x}" y="${y1}" width="${bar}" height="${Math.max(h, 0)}" fill="${c}"/>`; }).join('');
+    const parts = [[r[2], 'var(--good)'], [r[3], 'var(--neutral)'], [r[4], 'var(--bad)']].map(([v, c]) => { if (!v) return ''; const y1 = y(base + v), h = y(base) - y1; base += v; return `<rect x="${x}" y="${y1}" width="${bar}" height="${Math.max(h - .5, 0)}" fill="${c}"/>`; }).join('');
     const [yy, mm] = r[0].split('-');
-    const lbl = i % every === 0 ? `<text x="${x + bar / 2}" y="${H - B + 17}" text-anchor="middle">${yy.slice(2)}.${+mm}</text>` : '';
-    const ln = launches[r[0]] ? `<circle cx="${x + bar / 2}" cy="${T - 11}" r="4.5" fill="var(--accent)"/><line x1="${x + bar / 2}" x2="${x + bar / 2}" y1="${T - 6}" y2="${H - B}" stroke="var(--accent)" stroke-opacity=".35" stroke-dasharray="2 3"/>` : '';
+    const lbl = i % every === 0 ? `<text x="${x + bar / 2}" y="${H - B + 15}" text-anchor="middle">${yy.slice(2)}.${+mm}</text>` : '';
+    const ln = launches[r[0]] ? `<circle cx="${x + bar / 2}" cy="${T - 8}" r="3.5" fill="var(--accent)"/>` : '';
     g += `${ln}<g class="mbar" data-i="${i}">${parts}<rect x="${L + i * bw}" y="0" width="${bw}" height="${H - B}" fill="transparent"/></g>${lbl}`;
   });
   const id = 'c' + Math.random().toString(36).slice(2, 7);
   setTimeout(() => { const svg = document.getElementById(id); if (!svg) return;
     svg.querySelectorAll('.mbar').forEach(el => { const r = data[+el.dataset.i], t = r[2] + r[3] + r[4];
-      const html = `<b>${r[0].replace('-', '년 ')}월</b><br>후기 ${fmt(r[1])}건 · 이야기 ${fmt(t)}개<br>칭찬 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 불만 ${fmt(r[4])}${launches[r[0]] ? `<br><span style="color:var(--accent)">● 판매 시작: ${launches[r[0]].map(esc).join(', ')}</span>` : ''}`;
+      const html = `<b>${r[0].replace('-', '년 ')}월</b><br>후기 ${fmt(r[1])} · 이야기 ${fmt(t)}<br>칭찬 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 불만 ${fmt(r[4])}${launches[r[0]] ? `<br><span style="color:var(--accent)">● 판매 시작 ${launches[r[0]].map(esc).join(', ')}</span>` : ''}`;
       el.addEventListener('mousemove', e => showTip(html, e.clientX, e.clientY)); el.addEventListener('mouseleave', hideTip); }); });
-  const lnote = Object.keys(launches).some(k => data.some(r => r[0] === k)) ? '<p class="small muted" style="margin:0"><span style="color:var(--accent)">●</span> 금색 점은 판매 시작 달입니다. 마우스를 올리면 무엇이 시작됐는지 나옵니다.</p>' : '';
-  return lnote + `<div class="chart"><svg id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="월별 이야기 수">${g}</svg></div>`;
+  return `<div class="chart"><svg id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="월별 이야기 수">${g}</svg></div>`;
 }
 
-// ── 비교 ──
-let cmp = { type: null, keys: [] };
-const CMP_LABEL = { product: '상품', category: '분류', partner: '파트너사' };
-const inCmp = (type, key) => cmp.type === type && cmp.keys.includes(key);
-const cmpBtn = (type, key) => `<button class="cmpbtn" data-cmp-type="${type}" data-cmp-key="${esc(key)}" aria-pressed="${inCmp(type, key)}">${inCmp(type, key) ? '✓ 비교에 담음' : '+ 비교'}</button>`;
-function toggleCmp(type, key) {
-  if (cmp.type !== type) cmp = { type, keys: [] };
-  cmp.keys = cmp.keys.includes(key) ? cmp.keys.filter(k => k !== key) : cmp.keys.length >= 4 ? cmp.keys : [...cmp.keys, key];
-  if (!cmp.keys.length) cmp.type = null;
+// ── 상품 표 ──
+const SORTS = {
+  n: [(a, b) => b.n - a.n, '후기'],
+  good: [(a, b) => (b.n >= 10) - (a.n >= 10) || goodShare(b) - goodShare(a), '칭찬%'],
+  bad: [(a, b) => (b.n >= 10) - (a.n >= 10) || badShare(b) - badShare(a), '불만%'],
+  wkb: [(a, b) => { const A = WK[PI.get(a)], B = WK[PI.get(b)]; return (B.b - B.bp) - (A.b - A.bp) || B.b - A.b; }, '이번 주 불만'],
+};
+function tableHtml(ps) {
+  const rows = [...ps].sort(SORTS[st.sort][0]);
+  const th = (k, cls = '') => `<th scope="col" class="${cls}"><button data-sort="${k}" aria-pressed="${st.sort === k}">${SORTS[k][1]}${st.sort === k ? ' ▾' : ''}</button></th>`;
+  return rows.length ? `<table class="pt"><caption class="sr">상품별 후기</caption><thead><tr><th scope="col">상품</th>${th('n', 'r')}<th scope="col">반응</th>${th('good', 'r hide-sm')}${th('bad', 'r')}${th('wkb', 'r')}<th scope="col" class="hide-sm">주요 불만</th><th scope="col"><span class="sr">비교</span></th></tr></thead>
+    <tbody>${rows.map(p => { const w = WK[PI.get(p)], top = Object.keys(p.neg).slice(0, 1);
+      return `<tr data-open="${esc(p.key)}" tabindex="0" class="${st.cmp.includes(p.key) ? 'sel' : ''}"><td><div class="pcell">${thumb(p, 26)}<span class="nm" title="${esc(p.name)}">${esc(p.name)}</span><span class="no">${p.pilot ? '파일럿' : esc(p.num)}</span></div></td>
+      <td class="r">${fmt(p.n)}</td><td>${sbar(p.sent)}</td><td class="r hide-sm" style="color:var(--good)">${goodShare(p)}%</td><td class="r" style="color:${badShare(p) >= 30 ? 'var(--bad)' : 'var(--ink-2)'}">${badShare(p)}%</td>
+      <td class="r">${w.b || w.bp ? `${fmt(w.b)} ${delta(w.b, w.bp, false)}` : '<span class="muted">—</span>'}</td>
+      <td class="hide-sm">${top.map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td>
+      <td><input type="checkbox" class="ck" data-cmp="${esc(p.key)}" aria-label="${esc(p.name)} 비교에 담기" ${st.cmp.includes(p.key) ? 'checked' : ''}></td></tr>`; }).join('')}</tbody></table>` : '<div class="empty">없음</div>';
 }
+
+// ── 최근 불만 / 검색 결과 ──
+function feedHtml(ps) {
+  const set = new Set(ps.map(p => PI.get(p))), q = st.q.trim(), ql = q.toLowerCase();
+  if (q.length >= 2) {
+    const c = cutoff(), hits = [];
+    for (const r of D.R) { if (r[1] < c || !set.has(r[0])) continue; const txt = r[2] + ' — ' + r[3], i = txt.toLowerCase().indexOf(ql); if (i >= 0) hits.push([r, i, txt]); }
+    hits.sort((a, b) => b[0][1] - a[0][1]);
+    const snip = (t, i) => { const a = Math.max(0, i - 36), b = Math.min(t.length, i + q.length + 70); return (a ? '…' : '') + esc(t.slice(a, i)) + '<mark>' + esc(t.slice(i, i + q.length)) + '</mark>' + esc(t.slice(i + q.length, b)) + (b < t.length ? '…' : ''); };
+    return { title: `«${esc(q)}» 검색`, meta: `${fmt(hits.length)}건 · ${esc(periodLabel())}`, html: hits.length ? `<div class="feed">${hits.slice(0, st.show).map(([r, i, t]) => { const p = P[r[0]], ss = new Set(r[5].map(sg => sg[0]));
+      return `<div class="fi"><div class="row"><span class="num">${esc(ymdStr(r[1]))}</span><button class="chip" data-open="${esc(p.key)}">${esc(p.name)}</button>${ss.has(2) ? '<span class="chip bad">불만</span>' : ''}${ss.has(0) ? '<span class="chip good">칭찬</span>' : ''}</div><span class="s"><span>${snip(t, i)}</span>${ext(reviewLink(r[4]))}</span></div>`; }).join('')}</div>${hits.length > st.show ? `<button class="more" data-more>더 보기 · ${fmt(hits.length - st.show)}</button>` : ''}` : '<div class="empty">찾은 후기 없음</div>' };
+  }
+  const c14 = ymdMinus(13), fresh = [];
+  for (const r of D.R) { if (r[1] < c14 || !set.has(r[0])) continue; r[5].forEach(sg => { if (sg[0] === 2 && sg[3]) fresh.push({ r, s: sg[3], t: sg[1].map(ti => tagName(TAGS[ti])) }); }); }
+  fresh.sort((x, y) => y.r[1] - x.r[1]);
+  return { title: '<i class="dot b"></i>최근 2주 불만', meta: `${fmt(fresh.length)}개 · ${esc(ymdStr(c14))}~`, html: fresh.length ? `<div class="feed">${fresh.slice(0, st.show).map(x => { const p = P[x.r[0]];
+    return `<div class="fi"><div class="row"><span class="num">${esc(ymdStr(x.r[1]))}</span><button class="chip" data-open="${esc(p.key)}">${thumb(p, 14)} ${esc(p.name)}</button>${x.t.map(t => `<span class="chip bad">${esc(t)}</span>`).join('')}</div><span class="s"><span>${esc(x.s)}</span>${ext(reviewLink(x.r[4]))}</span></div>`; }).join('')}</div>${fresh.length > st.show ? `<button class="more" data-more>더 보기 · ${fmt(fresh.length - st.show)}</button>` : ''}` : '<div class="empty">없음</div>' };
+}
+function renderFeed() {
+  const f = feedHtml(scoped()), el = $('#feed'); if (!el) return;
+  $('#feed-title').innerHTML = f.title; $('#feed-meta').innerHTML = f.meta; el.innerHTML = f.html;
+}
+
+// ── 한 화면 ──
+function render() {
+  const ps = scoped(), a = agg(ps), rows = tagStats(a.pos, a.neg), w = a.wk, t = total(a.sent);
+  let hmRows;
+  if (st.hm === 'product') hmRows = [...ps].sort((x, y) => y.n - x.n).slice(0, 14).map(p => ({ label: p.name, attr: `data-open="${esc(p.key)}"`, thumb: thumb(p, 18), a: p }));
+  else { const gs = groupsBy(st.hm === 'cat' ? 'cat' : 'partner');
+    hmRows = Object.entries(gs).map(([k, g]) => ({ label: k, attr: `data-scope="${st.hm === 'cat' ? 'cat' : 'partner'}" data-key="${esc(k)}"`, a: agg(g), on: st.scope.k === k })).sort((x, y) => y.a.n - x.a.n).slice(0, 14); }
+  $('#view').innerHTML = `
+  <section class="kpis" aria-label="주요 숫자">
+    ${kpi(`후기 · ${esc(scopeLabel())}`, fmt(a.n), '건', `${esc(periodLabel())} · 상품 ${ps.length}`, 'hero')}
+    ${kpi('칭찬 비율', goodShare(a), '%', `칭찬 ${fmt(a.sent[0])} / 이야기 ${fmt(t)}`, '', 'g')}
+    ${kpi('불만 비율', badShare(a), '%', `불만 ${fmt(a.sent[2])}`, '', 'b')}
+    ${kpi('이번 주 새 후기', fmt(w.n), '건', `지난주 대비 ${delta(w.n, w.np, true, true)}`)}
+    ${kpi('이번 주 칭찬', fmt(w.g), '', `지난주 대비 ${delta(w.g, w.gp, true)}`, 'x')}
+    ${kpi('이번 주 불만', fmt(w.b), '', `지난주 대비 ${delta(w.b, w.bp, false)}`, 'x')}
+    ${kpi('교환·AS 요청', fmt(a.itN['교환·반품'] || 0), '', esc(periodLabel()), 'x')}
+  </section>
+  <div class="main3">
+    <div class="stack">
+      <section class="panel"><div class="ph"><h2><i class="dot g"></i>마음에 든 점</h2><span class="meta">세분류 · 칭찬 수</span></div><div class="scroll">${ldList(rows, 'g', 8)}</div></section>
+      <section class="panel"><div class="ph"><h2><i class="dot b"></i>마음에 안 든 점</h2><span class="meta">세분류 · 불만 수</span></div><div class="scroll">${ldList(rows, 'b', 8)}</div></section>
+      <section class="panel"><div class="ph"><h2>요청 사유</h2><span class="meta">요청 × 세분류</span></div><div class="scroll">${reasonsHtml(a, 3)}</div></section>
+    </div>
+    <section class="panel tblp"><div class="ph"><h2>상품</h2><span class="meta">${ps.length}개 · 줄 누르면 상세 · ☐ 비교</span></div><div class="scroll">${tableHtml(ps)}</div></section>
+    <section class="panel feedp"><div class="ph"><h2 id="feed-title"></h2><span class="meta" id="feed-meta"></span></div><div class="scroll" id="feed"></div></section>
+  </div>
+  <div class="main2">
+    <section class="panel"><div class="ph"><h2>세분류 히트맵</h2><div class="lg"><span><i class="dot g"></i>칭찬 우세</span><span><i class="dot b"></i>불만 우세</span><span><i class="dot m"></i>갈림</span>
+      <div class="seg" role="group" aria-label="히트맵 행">${[['product', '상품'], ['cat', '분류'], ['partner', '파트너사']].map(([v, l]) => `<button data-hm="${v}" aria-pressed="${st.hm === v}">${l}</button>`).join('')}</div></div></div>${heatmap(hmRows)}</section>
+    <section class="panel"><div class="ph"><h2>월별 이야기</h2><div class="lg">${SENT.map((s, i) => `<span><i class="dot ${SK[i]}"></i>${s}</span>`).join('')}<span><i class="dot" style="background:var(--accent);border-radius:50%"></i>판매 시작</span></div></div>${monthChart(seriesOf(ps), { launches: launchesOf(ps) })}</section>
+  </div>`;
+  renderFeed(); renderCmpBar();
+}
+
+// ── 상단 ──
+function renderTop() {
+  const cats = Object.keys(groupsBy('cat')).filter(c => c !== '분류 없음');
+  const partners = Object.entries(groupsBy('partner')).sort((a, b) => agg(b[1]).n - agg(a[1]).n).map(x => x[0]);
+  const on = (t, k) => st.scope.t === t && (t === 'all' || st.scope.k === k);
+  $('#scope').innerHTML = `<button class="pill" data-scope="all" aria-pressed="${on('all')}">전체</button>${cats.map(c => `<button class="pill" data-scope="cat" data-key="${esc(c)}" aria-pressed="${on('cat', c)}">${esc(c)}</button>`).join('')}
+    <span class="sep"></span><label><span class="sr">파트너사</span><select id="partner-sel" class="${st.scope.t === 'partner' ? 'on' : ''}"><option value="">파트너사</option>${partners.map(x => `<option ${on('partner', x) ? 'selected' : ''}>${esc(x)}</option>`).join('')}</select></label>`;
+  $('#periods').innerHTML = PERIODS.map(([v, l]) => `<button data-period="${v}" aria-pressed="${st.period === v}">${l}</button>`).join('');
+}
+
+// ── 서랍 ──
+let lastFocus = null;
+function openDrawer(title, body, wide = false) {
+  lastFocus = document.activeElement;
+  $('#d-title').innerHTML = title; $('#d-body').innerHTML = body;
+  const d = $('#drawer'); d.classList.toggle('wide', wide); d.hidden = false; $('#scrim').hidden = false;
+  $('#d-body').scrollTop = 0; $('#d-close').focus();
+}
+function closeDrawer() { $('#drawer').hidden = true; $('#scrim').hidden = true; hideTip(); if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+function insights(rows) {
+  const out = [], G = rows.filter(r => r.g).sort((a, b) => b.g - a.g), B = rows.filter(r => r.b).sort((a, b) => b.b - a.b);
+  const gT = G.reduce((a, r) => a + r.g, 0), bT = B.reduce((a, r) => a + r.b, 0);
+  if (G.length) out.push(G[1] ? `칭찬은 «${G[0].name}»${jo(G[0].name, '과', '와')} «${G[1].name}»에 몰림(칭찬의 ${pct(G[0].g + G[1].g, gT)}%)` : `칭찬은 «${G[0].name}»에 몰림`);
+  if (B.length) { const sh = pct(B[0].b, bT); out.push(sh >= 35 ? `불만의 ${sh}%가 «${B[0].name}»` : (B[1] ? `불만은 «${B[0].name}» ${B[0].b} · «${B[1].name}» ${B[1].b} 등으로 흩어짐` : `불만은 «${B[0].name}»`)); }
+  const split = rows.filter(r => r.g >= 5 && r.b >= 5 && r.b / (r.g + r.b) >= .35 && r.b / (r.g + r.b) <= .65).sort((a, b) => (b.g + b.b) - (a.g + a.b))[0];
+  if (split) out.push(`«${split.name}» 평가가 갈림(칭찬 ${split.g} · 불만 ${split.b})`);
+  const bad = rows.filter(r => r.b >= 5 && r.b / (r.g + r.b) > .65 && r !== B[0]).sort((a, b) => b.b - a.b)[0];
+  if (bad) out.push(`«${bad.name}» 이야기는 ${pct(bad.b, bad.g + bad.b)}%가 불만`);
+  const good = rows.filter(r => r.g >= 10 && r.g / (r.g + r.b) >= .9 && r !== G[0]).sort((a, b) => b.g - a.g)[0];
+  if (good) out.push(`«${good.name}»${jo(good.name, '은', '는')} 거의 칭찬만(칭찬 ${good.g} · 불만 ${good.b})`);
+  return out;
+}
+function productDrawer(key) {
+  const p = byKey[key]; if (!p) return;
+  const a = agg([p]), rows = tagStats(p.pos, p.neg), w = a.wk, ins = insights(rows);
+  const q = (arr, cls) => arr && arr.length ? arr.slice(0, 4).map(x => `<div class="quote ${cls}"><span class="s"><span>${esc(x.s)}</span>${ext(x.link)}</span><span class="c">“${esc(x.c)}${(x.c || '').length >= 150 ? '…' : ''}”</span><span class="m">${esc(x.d)}</span></div>`).join('') : '<div class="empty">없음</div>';
+  const sb = P.filter(x => x.group === p.group && x.key !== p.key).sort((x, y) => y.n - x.n);
+  openDrawer(esc(p.name), `
+    <div class="pd-head">${thumb(p, 64)}<div class="facts">
+      <span class="chip no">${p.pilot ? '파일럿' : esc(p.num)}</span>${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}
+      ${p.cats.map(c => `<button class="chip" data-scope="cat" data-key="${esc(c)}">${esc(c)}</button>`).join('')}
+      ${p.partners.map(x => `<button class="chip" data-scope="partner" data-key="${esc(x)}">${esc(x)}</button>`).join('')}
+      <span class="chip">${esc(p.first)} ~ ${esc(p.last)}</span>${mallLink(p) ? `<a class="chip" href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰 ↗</a>` : ''}</div></div>
+    <div class="mk">${kpi('후기', fmt(p.n), '건', esc(periodLabel()))}${kpi('칭찬 비율', goodShare(p), '%', '', '', 'g')}${kpi('불만 비율', badShare(p), '%', '', '', 'b')}${kpi('이번 주 칭찬', fmt(w.g), '', delta(w.g, w.gp, true))}${kpi('이번 주 불만', fmt(w.b), '', delta(w.b, w.bp, false))}</div>
+    ${sb.length ? `<div class="facts"><span class="muted" style="font-size:var(--fs-xs)">같은 아이템</span>${sb.map(x => `<button class="chip" data-open="${esc(x.key)}">${thumb(x, 14)} ${esc(x.name)} · ${fmt(x.n)}</button>`).join('')}</div>` : ''}
+    ${ins.length ? `<section class="panel"><div class="ph"><h2>요약</h2></div><ul class="ins">${ins.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>` : ''}
+    <div class="cols"><section class="panel"><div class="ph"><h2><i class="dot g"></i>마음에 든 점</h2></div>${ldList(rows, 'g', 6, p.tex)}</section><section class="panel"><div class="ph"><h2><i class="dot b"></i>마음에 안 든 점</h2></div>${ldList(rows, 'b', 6, p.tex)}</section></div>
+    <section class="panel"><div class="ph"><h2>요청 사유</h2></div>${reasonsHtml(a, 6)}</section>
+    <section class="panel"><div class="ph"><h2>월별 이야기</h2></div>${monthChart(p.series, { launches: launchesOf([p]), h: 180 })}</section>
+    <div class="cols"><section class="panel"><div class="ph"><h2>칭찬 후기</h2><span class="meta">전체 기간</span></div><div class="quotes">${q(p.pos_q, 'g')}</div></section><section class="panel"><div class="ph"><h2>불만 후기</h2><span class="meta">전체 기간</span></div><div class="quotes">${q(p.neg_q, 'b')}</div></section></div>`);
+}
+function compareDrawer() {
+  const es = st.cmp.map(k => byKey[k]).filter(Boolean).map(p => ({ p, a: agg([p]) }));
+  const mini = (o, k) => { const top = Object.entries(o).slice(0, 5), mx = Math.max(1, ...top.map(x => x[1]));
+    return top.length ? `<ul class="ld">${top.map(([t, v]) => `<li><span class="nm">${esc(tagName(t))}</span><span class="bar"><i class="${k}" style="width:${v / mx * 100}%"></i></span><span class="n">${v}</span></li>`).join('')}</ul>` : '<span class="muted" style="font-size:var(--fs-xs)">없음</span>'; };
+  openDrawer(`비교 · ${es.length}개`, `<div class="cgrid">${es.map(({ p, a }) => `<section class="ccol"><button class="chip" data-open="${esc(p.key)}" style="align-self:flex-start">${thumb(p, 18)} ${esc(p.name)}</button>
+      <div class="facts"><span class="chip no">후기 ${fmt(a.n)}</span><span class="chip good">칭찬 ${goodShare(p)}%</span><span class="chip bad">불만 ${badShare(p)}%</span></div>${sbar(a.sent)}
+      <div style="font-size:var(--fs-xs)" class="muted">이번 주 칭찬 ${fmt(a.wk.g)} ${delta(a.wk.g, a.wk.gp, true)} · 불만 ${fmt(a.wk.b)} ${delta(a.wk.b, a.wk.bp, false)}</div>
+      <h3>마음에 든 점</h3>${mini(a.pos, 'g')}<h3>마음에 안 든 점</h3>${mini(a.neg, 'b')}
+      <h3>교환·AS 사유</h3><div class="facts">${Object.entries((a.it || {})['교환·반품'] || {}).sort((x, y) => y[1] - x[1]).slice(0, 4).map(([t, v]) => `<span class="chip bad">${esc(tagName(t))} ${v}</span>`).join('') || '<span class="muted" style="font-size:var(--fs-xs)">없음</span>'}</div></section>`).join('')}</div>
+    <section class="panel"><div class="ph"><h2>세분류 히트맵</h2></div>${heatmap(es.map(({ p, a }) => ({ label: p.name, attr: `data-open="${esc(p.key)}"`, thumb: thumb(p, 18), a })), 14)}</section>`, true);
+}
+function queueDrawer() {
+  const S = { 긍정: '칭찬', 중립: '보통', 부정: '불만' };
+  openDrawer(`확인 대기 · ${fmt(D.queue.length)}`, D.queue.length ? `<div class="feed">${D.queue.map(r => { const p = byKey[r.p];
+    return `<div class="fi"><div class="row"><span class="num">${esc(r.d)}</span>${p ? `<button class="chip" data-open="${esc(p.key)}">${esc(p.name)}</button>` : ''}${ext(r.link)}</div>${r.segs.map(s => `<span class="s"><span>${esc(s.s)}</span><span class="facts"><span class="chip">${S[s.a] || esc(s.a)}</span>→<span class="chip">${S[s.b] || esc(s.b)}</span></span></span>`).join('')}<span class="muted" style="font-size:var(--fs-xs)">“${esc(r.c)}”</span></div>`; }).join('')}</div>` : '<div class="empty">없음</div>');
+}
+function helpDrawer() {
+  const T = [
+    ['상품', '겸손몰 상세페이지 하나. 표의 한 줄'], ['아이템', '같은 이름으로 부르는 물건. 상품 여럿을 묶음'],
+    ['분류', '의류·패션잡화·신발·문구·생활·식품·장인·파일럿'], ['파트너사', '함께 만든 곳. 한 아이템에 여럿일 수 있어 합산하지 않음'],
+    ['이야기', '후기 한 편 안의 칭찬·불만을 나눠 센 단위. 후기 수보다 많음'], ['칭찬 · 보통 · 불만', 'AI 판정. 초록 · 회색 · 빨강'],
+    ['세분류', '사이즈·내구성·재질·마감·디자인 등 이야기의 대상'], ['이번 주', '기준일 포함 최근 7일 vs 그 전 7일. 칭찬↑ 초록, 불만↑ 빨강'],
+    ['기간', '30일·90일·1년·전체. 숫자·표·히트맵에 적용. 최근 2주 불만·월별은 고정'], ['범위', '위쪽 분류·파트너사를 누르면 화면 전체가 그 범위로 바뀜'],
+    ['히트맵', '칸 숫자 = 이야기 수. 초록 칭찬 우세 · 빨강 불만 우세 · 노랑 갈림. 진할수록 많음'], ['썸네일 테두리', '칭찬·불만 쏠림. 진할수록 한쪽'],
+    ['요청 사유', '교환·문의·제안·재구매가 어떤 세분류에서 나왔나'], ['비교', '표 오른쪽 ☐로 2~4개를 담고 아래 «비교» 누름'],
+    ['갱신', '매일 08:00 겸손몰 게시판 수집 → AI 분류'],
+  ];
+  openDrawer('보는 법 · 용어', `<section class="panel"><dl class="gl">${T.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></section>
+    <section class="panel"><div class="ph"><h2>읽을 때</h2></div><ul class="ins"><li>후기는 쓰고 싶은 사람만 씀 → 상품끼리·주마다 견주는 용도</li><li>후기 10건 미만 상품은 비율 순위에서 뒤로</li><li>AI 판정이라 틀린 것이 섞일 수 있음 → 리뷰쟁이에게 알려 주세요</li><li>제외: 테스트·추가구매 상품 ${fmt(M.excluded)}건 · ${esc(M.built)} 갱신</li></ul></section>`);
+}
+
+// ── 비교 막대 ──
 function renderCmpBar() {
   const el = $('#cmpbar');
-  if (!cmp.keys.length || current === 'compare') { el.hidden = true; return; }
+  if (!st.cmp.length) { el.hidden = true; return; }
   el.hidden = false;
-  el.innerHTML = `<span>${CMP_LABEL[cmp.type]} <b>${cmp.keys.length}개</b> 담음${cmp.keys.length < 2 ? ' · 하나 더 고르세요' : ''}</span><button class="go" data-go="compare" ${cmp.keys.length < 2 ? 'disabled style="opacity:.5"' : ''}>비교하기</button><button class="clr" data-cmp-clear>비우기</button>`;
-}
-function entity(type, key) {
-  if (type === 'product') { const p = byKey[key]; return p && { label: p.name, thumb: thumb(p, 36), ps: [p], attr: `data-open="${esc(key)}"` }; }
-  const ps = (type === 'category' ? catGroups() : partnerGroups())[key] || [];
-  return { label: key, thumb: '', ps, attr: type === 'category' ? `data-cat="${esc(key)}"` : `data-partner="${esc(key)}"` };
-}
-function vCompare() {
-  if (cmp.keys.length < 2) return `<header class="head"><h1>비교</h1><p class="lead">상품별·분류별·파트너사별 화면에서 «+ 비교»를 눌러 두 개 이상 담으면 여기서 나란히 볼 수 있습니다.</p></header>`;
-  const es = cmp.keys.map(k => ({ k, e: entity(cmp.type, k) })).filter(x => x.e).map(x => ({ ...x.e, k: x.k, a: agg(x.e.ps) }));
-  const mini = (o, cls) => { const top = Object.entries(o).slice(0, 5), mx = Math.max(1, ...top.map(x => x[1]));
-    return top.length ? `<div class="mini">${top.map(([t, v]) => `<div><span>${esc(tagName(t))}</span><i style="width:${v / mx * 100}%;background:var(--${cls})"></i><span class="muted">${v}</span></div>`).join('')}</div>` : '<span class="muted small">없음</span>'; };
-  return `
-  ${backBtn(cmp.type === 'product' ? 'products' : cmp.type === 'category' ? 'categories' : 'partners', '목록으로')}
-  <header class="head"><div class="eyebrow">${esc(periodLabel())} · ${CMP_LABEL[cmp.type]} ${es.length}개</div><h1>${es.map(e => esc(e.label)).join(' · ')}</h1></header>
-  <div class="cgrid">${es.map(e => `<section class="ccol"><h2>${e.thumb}<button class="linkbtn" ${e.attr} style="all:unset;cursor:pointer">${esc(e.label)}</button></h2>
-    <div class="small muted">후기 ${fmt(e.a.n)}건${cmp.type !== 'product' ? ` · 상품 ${e.ps.length}개` : ''}</div>
-    ${sbar(e.a.sent, 12)}<div class="small">칭찬 ${fmt(e.a.sent[0])} · 보통 ${fmt(e.a.sent[1])} · 불만 ${fmt(e.a.sent[2])}</div>
-    <div><h3>이번 주 (지난주 대비)</h3>${wkLine(e.a.wk)}</div>
-    <div><h3>마음에 든 점</h3>${mini(e.a.pos, 'good')}</div>
-    <div><h3>마음에 안 든 점</h3>${mini(e.a.neg, 'bad')}</div>
-    <div><h3>교환·반품 사유</h3><div class="rv" style="display:flex;flex-wrap:wrap;gap:6px">${Object.entries((e.a.it || {})['교환·반품'] || {}).sort((x, y) => y[1] - x[1]).slice(0, 4).map(([t, v]) => `<span class="chip bad">${esc(tagName(t))} ${v}</span>`).join('') || '<span class="muted small">없음</span>'}</div></div>
-    <button class="cmpbtn" data-cmp-type="${cmp.type}" data-cmp-key="${esc(e.k)}" aria-pressed="true">비교에서 빼기</button></section>`).join('')}</div>
-  ${heatmap(es.map(e => ({ label: e.label, attr: e.attr, thumb: e.thumb, a: e.a })), '세분류별로 나란히', '고른 항목을 세분류별로 견줍니다.', 12)}`;
+  el.innerHTML = `<span>비교 <b>${st.cmp.length}</b>/4</span><button class="go" data-compare ${st.cmp.length < 2 ? 'disabled style="opacity:.5"' : ''}>비교</button><button class="clr" data-cmp-clear>비우기</button>`;
 }
 
-// ── 보기: Overview ──
-const backBtn = (go, t) => `<button class="back" data-go="${go}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>${t}</button>`;
-function vOverview() {
-  const live = P.filter(visible), a = agg(live), rows = tagStats(a.pos, a.neg), w = a.wk;
-  const big = live.filter(p => p.n >= minN() && !p.pilot);
-  const worst = [...big].sort((x, y) => badShare(y) - badShare(x)).slice(0, 6), best = [...big].sort((x, y) => goodShare(y) - goodShare(x)).slice(0, 6);
-  const rankRow = (p, v, why) => `<li><div class="pname"><button data-open="${esc(p.key)}">${thumb(p, 30)} ${esc(p.name)}</button><span class="why">${why}</span></div>${sbar(p.sent)}<span class="pct">${v}%</span></li>`;
-  const c14 = ymdMinus(13), fresh = [];
-  for (const r of D.R) { if (r[1] < c14) continue; r[5].forEach(sg => { if (sg[0] === 2 && sg[3]) fresh.push({ r, s: sg[3], t: sg[1].map(ti => tagName(TAGS[ti])) }); }); }
-  fresh.sort((x, y) => y.r[1] - x.r[1]);
-  return `
-  <header class="head"><div class="eyebrow">${esc(periodLabel())} · ${esc(ANCHOR)} 아침 기준 · 매일 08:00 새로 모읍니다</div><h1>Overview</h1></header>
-  <section class="figures" aria-label="주요 숫자">
-    <div class="fig"><span class="k">후기</span><span class="v">${fmt(a.n)}<small>건</small></span><span class="d">${esc(periodLabel())} · 상품 ${live.length}개</span></div>
-    <div class="fig"><span class="k">이번 주 새 후기</span><span class="v">${fmt(w.n)}<small>건</small></span><span class="d">지난주 대비 ${delta(w.n, w.np, true).replace('dl good', 'dl flat').replace('dl bad', 'dl flat')}</span></div>
-    <div class="fig"><span class="k">이번 주 칭찬 이야기</span><span class="v">${fmt(w.g)}<small>개</small></span><span class="d">지난주 대비 ${delta(w.g, w.gp, true)}</span></div>
-    <div class="fig"><span class="k">이번 주 불만 이야기</span><span class="v">${fmt(w.b)}<small>개</small></span><span class="d">지난주 대비 ${delta(w.b, w.bp, false)}</span></div>
-  </section>
-  ${a.n ? likeDislike(rows, a.ex) + reasons(a) : '<div class="empty">이 기간에 들어온 후기가 없습니다.</div>'}
-  <section class="panel" aria-labelledby="h-fresh"><div class="panel-head"><div><h2 id="h-fresh">최근 2주 새로 들어온 불만</h2><p class="small muted">${esc(ymdStr(c14))} 이후 · 기간 선택과 상관없이 늘 최근 것</p></div><span class="small muted">${fmt(fresh.length)}개</span></div>
-    ${fresh.length ? `<div class="list">${fresh.slice(0, 8).map(x => { const p = P[x.r[0]]; return `<div class="item"><span class="when">${esc(ymdStr(x.r[1]))}</span><div class="what"><div class="meta"><button class="chip" data-open="${esc(p.key)}">${thumb(p, 18)} ${esc(p.name)}</button>${x.t.map(t => `<span class="chip bad">${esc(t)}</span>`).join('')}</div><span class="sum">${esc(x.s)} ${ext(reviewLink(x.r[4]))}</span></div></div>`; }).join('')}</div>${fresh.length > 8 ? `<p class="small muted" style="margin:0">나머지 ${fmt(fresh.length - 8)}개는 «후기 검색»에서 찾을 수 있습니다.</p>` : ''}` : '<div class="empty">최근 2주 동안 새로 들어온 불만이 없습니다.</div>'}</section>
-  <div class="cols">
-    <section class="panel"><div class="panel-head"><h2>불만 비율이 높은 상품</h2><span class="small muted">후기 ${minN()}건 이상</span></div>${worst.length ? `<ol class="rank">${worst.map(p => rankRow(p, badShare(p), `불만 ${fmt(p.sent[2])}개 · 주로 ${topNeg(p, 2).map(tagName).map(esc).join(', ') || '—'}`)).join('')}</ol>` : '<div class="empty">이 기간에 후기가 충분한 상품이 없습니다.</div>'}</section>
-    <section class="panel"><div class="panel-head"><h2>칭찬 비율이 높은 상품</h2><span class="small muted">후기 ${minN()}건 이상</span></div>${best.length ? `<ol class="rank">${best.map(p => rankRow(p, goodShare(p), `칭찬 ${fmt(p.sent[0])}개 · 후기 ${fmt(p.n)}건`)).join('')}</ol>` : '<div class="empty">이 기간에 후기가 충분한 상품이 없습니다.</div>'}</section>
-  </div>
-  <section class="panel"><div class="panel-head"><div><h2>달마다 들어온 이야기</h2><p class="small muted">최근 24개월 · 기간 선택과 상관없이 늘 같은 범위</p></div>${keyRow()}</div>${monthChart(M.monthly, { launches: launchesOf(P) })}</section>`;
-}
-
-// ── 보기: 상품별 ──
-const st = { q: '', cat: '', sort: 'n', pilot: false, sq: '', ss: '', sShow: 30, qShow: 40 };
-function productRows() {
-  const rows = P.filter(p => visible(p) && (st.pilot || !p.pilot) && (!st.cat || p.cats.includes(st.cat)) &&
-    (!st.q || (p.name + ' ' + p.num + ' ' + p.mall.join(' ') + ' ' + p.partners.join(' ')).toLowerCase().includes(st.q.toLowerCase())));
-  const W = p => WK[PI.get(p)];
-  const s = { n: (a, b) => b.n - a.n, bad: (a, b) => (b.n >= 10) - (a.n >= 10) || badShare(b) - badShare(a), good: (a, b) => (b.n >= 10) - (a.n >= 10) || goodShare(b) - goodShare(a),
-    wkb: (a, b) => (W(b).b - W(b).bp) - (W(a).b - W(a).bp), wkg: (a, b) => (W(b).g - W(b).gp) - (W(a).g - W(a).gp), num: (a, b) => a.num.localeCompare(b.num) }[st.sort];
-  return rows.sort(s);
-}
-function vProducts() {
-  const cats = [...new Set(P.flatMap(p => p.cats))];
-  return `
-  <header class="head"><div class="eyebrow">${esc(periodLabel())} · 썸네일 테두리: 초록=칭찬이 많음, 빨강=불만이 많음(진할수록 한쪽으로 쏠림)</div><h1>상품별</h1></header>
-  <div class="tools" role="search">
-    <label class="field">찾기<input id="f-q" type="search" placeholder="상품·번호·파트너사" value="${esc(st.q)}"></label>
-    <label class="field">분류<select id="f-cat"><option value="">전체</option>${cats.map(c => `<option ${st.cat === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select></label>
-    <label class="field">줄 세우기<select id="f-sort">${[['n', '후기 많은 순'], ['wkb', '이번 주 불만이 많이 는 순'], ['wkg', '이번 주 칭찬이 많이 는 순'], ['bad', '불만 비율 높은 순'], ['good', '칭찬 비율 높은 순'], ['num', '번호 순']].map(([v, t]) => `<option value="${v}" ${st.sort === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label>
-    <label class="field">파일럿<select id="f-pilot"><option value="0">빼고 보기</option><option value="1" ${st.pilot ? 'selected' : ''}>함께 보기</option></select></label>
-  </div>
-  <div id="ptable"></div>`;
-}
-function renderPTable() {
-  const rows = productRows(), el = $('#ptable'); if (!el) return;
-  const tops = (o, n) => Object.keys(o || {}).slice(0, n);
-  el.innerHTML = rows.length ? `<div class="tbl-wrap"><table><caption class="sr">상품별 후기 반응</caption><thead><tr><th scope="col">상품</th><th scope="col" class="r">후기</th><th scope="col">이번 주 (지난주 대비)</th><th scope="col" class="hide-sm">마음에 든 점</th><th scope="col" class="hide-sm">마음에 안 든 점</th><th scope="col"><span class="sr">비교</span></th></tr></thead><tbody>${rows.map(p => `<tr tabindex="0" data-open="${esc(p.key)}"><td><div class="pcell">${thumb(p)}<div class="pc-txt"><b>${esc(p.name)}</b><span class="small muted">${p.pilot ? '파일럿' : esc(p.num)}${p.cats[0] ? ' · ' + esc(p.cats[0]) : ''}</span></div></div></td><td class="r">${fmt(p.n)}</td><td>${wkLine(WK[PI.get(p)])}</td><td class="hide-sm">${tops(p.pos, 2).map(t => `<span class="chip good">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td class="hide-sm">${tops(p.neg, 2).map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td><td>${cmpBtn('product', p.key)}</td></tr>`).join('')}</tbody></table></div>
-    ${heatmap(rows.slice(0, 25).map(p => ({ label: p.name, attr: `data-open="${esc(p.key)}"`, thumb: thumb(p, 26), a: p })), '상품 × 세분류 히트맵', `위 목록 순서대로 상위 ${Math.min(25, rows.length)}개 상품입니다.`)}`
-    : `<div class="empty">찾는 상품이 없습니다. 찾기 칸을 비우거나, 분류를 «전체»로 바꾸거나, 기간을 넓혀 보세요.</div>`;
-}
-
-// ── 보기: 상품 상세 ──
-function vProduct(key) {
-  const p = byKey[key]; if (!p) return '<p>상품을 찾을 수 없습니다.</p>';
-  const a = agg([p]), rows = tagStats(p.pos, p.neg), t = total(p.sent);
-  const q = (arr, cls) => arr.length ? arr.map(x => `<div class="quote ${cls}"><span class="s"><span>${esc(x.s)}</span>${ext(x.link)}</span><span class="c">“${esc(x.c)}${x.c.length >= 150 ? '…' : ''}”</span><span class="m">${esc(x.d)}</span></div>`).join('') : '<p class="muted">해당하는 후기가 없습니다.</p>';
-  const sb = P.filter(x => x.group === p.group && x.key !== p.key).sort((x, y) => y.n - x.n);
-  return `
-  ${backBtn('products', '상품 목록')}
-  <header class="phead">${thumb(p, 96)}<div class="head">
-    <div class="facts">${numChip(p)}${p.season ? `<span class="chip">${/^\d+$/.test(p.season) ? '시즌 ' + esc(p.season) : esc(p.season)}</span>` : ''}${p.status ? `<span class="chip">${esc(p.status)}</span>` : ''}${p.cats.map(c => `<button class="chip" data-cat="${esc(c)}">${esc(c)}</button>`).join('')}${cmpBtn('product', p.key)}</div>
-    <h1>${esc(p.name)}</h1>
-    <p class="small muted" style="margin:0">${esc(periodLabel())} 후기 ${fmt(p.n)}건 · ${esc(p.first)} ~ ${esc(p.last)}${p.partners.length ? ' · 함께 만든 곳 ' + p.partners.map(x => `<button class="chip" data-partner="${esc(x)}">${esc(x)}</button>`).join(' ') : ''}${mallLink(p) ? ` · <a href="${mallLink(p)}" target="_blank" rel="noopener">겸손몰에서 보기</a>` : ''}</p>
-    ${wkLine(a.wk)}</div></header>
-  ${sb.length ? `<nav class="sibs" aria-label="같은 아이템의 다른 상품"><span class="small muted">같은 아이템의 다른 상품</span>${sb.map(x => `<button class="chip" data-open="${esc(x.key)}">${thumb(x, 20)} ${esc(x.name)} · ${fmt(x.n)}건</button>`).join('')}</nav>` : ''}
-  ${p.n ? insightBox(rows) + likeDislike(rows, p.tex) + reasons(a) : '<div class="empty">이 기간에 들어온 후기가 없습니다. 왼쪽에서 기간을 넓혀 보세요.</div>'}
-  <div class="cols">
-    <section class="panel"><div class="panel-head"><h2>칭찬 후기</h2><span class="small muted">전체 기간 대표</span></div><div class="quotes">${q(p.pos_q, 'g')}</div></section>
-    <section class="panel"><div class="panel-head"><h2>불만 후기</h2><span class="small muted">전체 기간 대표</span></div><div class="quotes">${q(p.neg_q, 'b')}</div></section>
-  </div>
-  <section class="panel"><div class="panel-head"><div><h2>달마다 들어온 이야기</h2><p class="small muted">${t ? `이 기간 이야기 ${fmt(t)}개 중 칭찬 ${goodShare(p)}% · 불만 ${badShare(p)}%` : ''}</p></div>${keyRow()}</div>${monthChart(p.series, { launches: launchesOf([p]) })}</section>`;
-}
-
-// ── 보기: 분류별 / 파트너사별 (같은 틀) ──
-function groupCards(groups, type, attrName) {
-  const order = Object.entries(groups).map(([k, ps]) => ({ k, ps, a: agg(ps) })).sort((x, y) => y.a.n - x.a.n);
-  return { order, html: `<div class="pgrid">${order.map(({ k, ps, a }) => {
-    const g = Object.keys(a.pos).slice(0, 2).map(tagName), b = Object.keys(a.neg).slice(0, 2).map(tagName);
-    return `<section class="ecard" style="box-shadow:inset 4px 0 0 ${tone(a.sent)}"><div class="panel-head"><h2><button ${attrName}="${esc(k)}">${esc(k)}</button></h2>${cmpBtn(type, k)}</div>
-      <div class="small muted">상품 ${ps.length}개 · 후기 ${fmt(a.n)}건</div>${wkLine(a.wk)}
-      ${g.length ? `<div class="small"><span class="muted">마음에 든 점</span> ${g.map(x => `<span class="chip good">${esc(x)}</span>`).join(' ')}</div>` : ''}
-      ${b.length ? `<div class="small"><span class="muted">마음에 안 든 점</span> ${b.map(x => `<span class="chip bad">${esc(x)}</span>`).join(' ')}</div>` : ''}
-      <ul class="plist">${ps.sort((x, y) => y.n - x.n).slice(0, 5).map(p => `<li><button data-open="${esc(p.key)}">${thumb(p, 26)}<span class="nm">${esc(p.name)}</span></button>${sbar(p.sent, 8)}<span class="n">${fmt(p.n)}</span></li>`).join('')}</ul></section>`;
-  }).join('')}</div>` };
-}
-function vCategories() {
-  const { order, html } = groupCards(catGroups(), 'category', 'data-cat');
-  return `<header class="head"><div class="eyebrow">${esc(periodLabel())} · 분류 ${order.length}개 · 카드 왼쪽 띠: 초록=칭찬이 많음, 빨강=불만이 많음</div><h1>분류별</h1></header>
-  ${heatmap(order.map(o => ({ label: o.k, attr: `data-cat="${esc(o.k)}"`, a: o.a })), '분류 × 세분류 히트맵', '분류마다 어떤 세분류에서 칭찬·불만이 나왔는지 봅니다.')}${html}`;
-}
-function vPartners() {
-  const { order, html } = groupCards(partnerGroups(), 'partner', 'data-partner');
-  return `<header class="head"><div class="eyebrow">${esc(periodLabel())} · 파트너사 ${order.length}곳 · 한 아이템을 여러 곳이 함께 만든 경우가 있어 파트너사끼리 후기 수를 더하지 않습니다</div><h1>파트너사별</h1></header>
-  ${heatmap(order.map(o => ({ label: o.k, attr: `data-partner="${esc(o.k)}"`, a: o.a })), '파트너사 × 세분류 히트맵', '파트너사마다 어떤 세분류에서 칭찬·불만이 나왔는지 봅니다.')}${html}`;
-}
-function vGroupDetail(type, key) {
-  const ps = ((type === 'category' ? catGroups() : partnerGroups())[key] || []).sort((x, y) => y.n - x.n);
-  if (!ps.length) return `${backBtn(type === 'category' ? 'categories' : 'partners', '목록으로')}<div class="empty">이 기간에는 후기가 없습니다. 왼쪽에서 기간을 넓혀 보세요.</div>`;
-  const a = agg(ps), rows = tagStats(a.pos, a.neg);
-  return `
-  ${backBtn(type === 'category' ? 'categories' : 'partners', type === 'category' ? '분류 목록' : '파트너사 목록')}
-  <header class="head"><div class="eyebrow">${type === 'category' ? '분류' : '파트너사'} · ${esc(periodLabel())} · 상품 ${ps.length}개 · 후기 ${fmt(a.n)}건</div><h1>${esc(key)}</h1><div class="facts">${wkLine(a.wk)}${cmpBtn(type, key)}</div></header>
-  ${likeDislike(rows, a.ex)}${reasons(a)}
-  ${heatmap(ps.map(p => ({ label: p.name, attr: `data-open="${esc(p.key)}"`, thumb: thumb(p, 26), a: p })), `${key} 상품 × 세분류 히트맵`, '상품마다 어떤 세분류에서 칭찬·불만이 나왔는지 봅니다.')}`;
-}
-
-// ── 보기: 후기 검색 ──
-function vSearch() {
-  return `<header class="head"><div class="eyebrow">${esc(periodLabel())} · 후기 ${fmt(D.R.length)}건의 제목·본문에서 찾기</div><h1>후기 검색</h1></header>
-  <div class="tools" role="search">
-    <label class="field">찾을 말<input id="s-q" type="search" placeholder="예: 보풀, 사이즈, 배송" value="${esc(st.sq)}"></label>
-    <div class="seg" role="group" aria-label="감정으로 거르기">${[['', '모든 후기'], ['2', '불만이 있는 후기'], ['0', '칭찬이 있는 후기']].map(([v, l]) => `<button data-ss="${v}" aria-pressed="${st.ss === v}">${l}</button>`).join('')}</div>
-  </div><section class="panel" aria-live="polite"><div id="slist"></div></section>`;
-}
-function renderSearch() {
-  const el = $('#slist'); if (!el) return;
-  const q = st.sq.trim(), ql = q.toLowerCase();
-  if (q.length < 2) { el.innerHTML = '<div class="empty">두 글자 이상 넣어 주세요.</div>'; return; }
-  const c = cutoff(), hits = [];
-  for (const r of D.R) { if (r[1] < c) continue; const txt = r[2] + ' — ' + r[3], i = txt.toLowerCase().indexOf(ql); if (i < 0) continue; if (st.ss && !r[5].some(sg => String(sg[0]) === st.ss)) continue; hits.push([r, i, txt]); }
-  hits.sort((a, b) => b[0][1] - a[0][1]);
-  const snip = (t, i) => { const a = Math.max(0, i - 50), b = Math.min(t.length, i + q.length + 90); return (a ? '…' : '') + esc(t.slice(a, i)) + '<mark>' + esc(t.slice(i, i + q.length)) + '</mark>' + esc(t.slice(i + q.length, b)) + (b < t.length ? '…' : ''); };
-  el.innerHTML = hits.length ? `<p class="small muted" style="margin:0">«${esc(q)}» ${fmt(hits.length)}건</p><div class="list">${hits.slice(0, st.sShow).map(([r, i, t]) => { const p = P[r[0]], ss = new Set(r[5].map(sg => sg[0]));
-    return `<div class="item"><span class="when">${esc(ymdStr(r[1]))}</span><div class="what"><div class="meta"><button class="chip" data-open="${esc(p.key)}">${thumb(p, 18)} ${esc(p.name)}</button>${ss.has(2) ? '<span class="chip bad">불만 있음</span>' : ''}${ss.has(0) ? '<span class="chip good">칭찬 있음</span>' : ''}</div><span class="sum"><span>${snip(t, i)}</span>${ext(reviewLink(r[4]))}</span></div></div>`; }).join('')}</div>${hits.length > st.sShow ? `<button class="more" id="s-more">${fmt(Math.min(30, hits.length - st.sShow))}건 더 보기</button>` : ''}`
-    : `<div class="empty">«${esc(q)}»이(가) 들어간 후기가 없습니다. 다른 말로 찾거나 기간을 «전체 기간»으로 바꿔 보세요.</div>`;
-}
-
-// ── 보기: 확인 대기 ──
-function vQueue() {
-  const rows = D.queue, S = { 긍정: '칭찬', 중립: '보통', 부정: '불만' };
-  return `<header class="head"><div class="eyebrow">${fmt(rows.length)}건</div><h1>사람이 확인할 후기</h1><p class="lead">AI 판정 두 번이 서로 다르게 나왔고, 정해 둔 기준으로도 정리되지 않은 후기입니다.</p></header>
-  ${rows.length ? `<section class="panel"><div class="list">${rows.slice(0, st.qShow).map(r => { const p = byKey[r.p];
-    return `<div class="item"><span class="when">${esc(r.d)}</span><div class="what"><div class="meta">${p ? `<button class="chip" data-open="${esc(p.key)}">${esc(p.name)}</button>` : ''}</div>${r.segs.map(s => `<span class="sum">${esc(s.s)}</span><span class="verdict">처음 판정 <span class="chip">${S[s.a] || esc(s.a)}</span> → 다시 본 판정 <span class="chip">${S[s.b] || esc(s.b)}</span></span>`).join('')}<span class="small muted">“${esc(r.c)}” ${ext(r.link)}</span></div></div>`; }).join('')}</div></section>` : '<section class="panel"><div class="empty">지금 확인할 후기가 없습니다.</div></section>'}`;
-}
-
-// ── 보기: 보는 법 · 용어 ──
-function vGuide() {
-  const T = [
-    ['상품', '겸손몰에 올라간 상품 하나(상세페이지 하나). 후기가 붙는 단위라 이 대시보드의 한 줄입니다. 예: 하이넥 여름니트'],
-    ['아이템', '팀이 한 이름으로 부르는 물건. 같은 아이템의 상품 여럿을 묶습니다. 예: 여름니트(더블넥·하이넥·셔츠넥). 상품 상세 위쪽 «같은 아이템의 다른 상품»으로 오갈 수 있습니다'],
-    ['분류(품목)', '의류·패션잡화·신발·문구·생활·식품·장인·파일럿. 브레인 제품 노트에 적힌 값을 매일 읽어 옵니다'],
-    ['파트너사', '그 아이템을 함께 만든 곳. 한 아이템을 여러 곳이 함께 만들기도 해서, 파트너사끼리 후기 수를 더하지 않습니다'],
-    ['이야기', '후기 한 편에 칭찬과 불만이 같이 있으면 나눠서 셉니다. 그 하나하나가 «이야기»입니다. 그래서 이야기 수가 후기 수보다 많습니다'],
-    ['칭찬 · 보통 · 불만', 'AI가 이야기마다 붙인 판정입니다. 칭찬=초록, 불만=빨강, 보통(평가 없음·사실만 적음)=회색'],
-    ['세분류', '이야기가 상품의 어느 부분에 대한 것인지. 사이즈·내구성·재질·마감·디자인·무게감·첫인상·사용성 등. «마음에 든 점 / 안 든 점»은 세분류별로 칭찬·불만을 센 것입니다'],
-    ['이번 주 (지난주 대비)', '기준일을 포함한 최근 7일과 그 전 7일을 견줍니다. ▲·▼ 옆 숫자는 늘거나 준 개수. 칭찬이 늘면 초록, 불만이 늘면 빨강으로 표시합니다'],
-    ['기간', '왼쪽 아래에서 고릅니다. 최근 30일·90일·1년·전체. 숫자·순위·히트맵이 그 기간으로 다시 계산됩니다. «최근 2주 새 불만»과 월별 차트는 기간과 상관없이 늘 같습니다'],
-    ['히트맵', '가로=세분류, 세로=상품·분류·파트너사. 칸 숫자는 이야기 수. 초록은 칭찬이 많은 칸, 빨강은 불만이 많은 칸, 노랑은 비슷하게 갈린 칸이고, 진할수록 이야기가 많습니다'],
-    ['썸네일 테두리 · 카드 띠', '그 상품(묶음)의 칭찬·불만 쏠림. 초록이 진하면 칭찬 위주, 빨강이 진하면 불만 위주입니다'],
-    ['교환·문의·제안은 무엇 때문이었나', '후기 속 요청이 어떤 세분류에서 나왔는지. 처리 현황이 아니라 «왜»를 보는 칸입니다'],
-    ['확인 대기', 'AI 판정 두 번이 갈렸는데 정해 둔 기준으로도 정리되지 않은 후기. 생겼을 때만 메뉴에 나타납니다'],
-  ];
-  return `<header class="head"><h1>보는 법 · 용어</h1><p class="lead">처음 보는 분을 위한 안내입니다. 숫자는 매일 아침 8시에 겸손몰 후기 게시판에서 새 후기를 모아 AI가 분류한 결과입니다.</p></header>
-  <section class="panel guide"><h2>이렇게 보세요</h2><ol>
-    <li><b>Overview</b>에서 이번 주 칭찬·불만이 늘었는지(▲▼), 무엇이 마음에 들고 안 들었는지 봅니다.</li>
-    <li><b>최근 2주 새로 들어온 불만</b>에서 지금 생기는 문제를 확인합니다. 원문 아이콘을 누르면 겸손몰 게시글이 열립니다.</li>
-    <li><b>상품별 · 분류별 · 파트너사별</b>에서 히트맵으로 어느 세분류가 문제인지 보고, 이름을 누르면 자세히 봅니다.</li>
-    <li>두세 개를 견주고 싶으면 <b>+ 비교</b>를 눌러 담은 뒤 화면 아래 <b>비교하기</b>를 누릅니다(같은 종류끼리 최대 4개).</li>
-    <li>특정 말이 들어간 후기를 찾으려면 <b>후기 검색</b>을 씁니다.</li>
-  </ol></section>
-  <section class="panel guide"><h2>용어</h2><dl>${T.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></section>
-  <section class="panel guide"><h2>읽을 때 주의할 점</h2><ol>
-    <li>후기는 쓰고 싶은 사람만 씁니다. 비율의 절대 크기보다 상품끼리, 주마다 견줘 보는 데 쓰세요.</li>
-    <li>후기가 적은 상품은 한두 건에 숫자가 크게 흔들립니다. 순위는 후기가 일정 수 이상인 상품만 줄 세웁니다.</li>
-    <li>AI 분류라 틀린 판정이 섞여 있을 수 있습니다. 이상한 판정을 보면 리뷰쟁이에게 알려 주세요.</li>
-  </ol></section>`;
-}
-
-// ── 라우팅 ──
-const VIEWS = { overview: vOverview, products: vProducts, categories: vCategories, partners: vPartners, search: vSearch, queue: vQueue, guide: vGuide, compare: vCompare };
-const NAV_OF = { product: 'products', category: 'categories', partner: 'partners' };
-let current = 'overview', openKey = null;
-function go(view, key = null, scroll = true) {
-  current = view; openKey = key; hideTip();
-  document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-current', b.dataset.view === (NAV_OF[view] || view) ? 'page' : 'false'));
-  $('#view').innerHTML = view === 'product' ? vProduct(key) : view === 'category' ? vGroupDetail('category', key) : view === 'partner' ? vGroupDetail('partner', key) : VIEWS[view]();
-  if (view === 'products') renderPTable();
-  if (view === 'search') { renderSearch(); const q = $('#s-q'); if (q && st.sq) { q.focus(); q.selectionStart = q.selectionEnd = q.value.length; } }
-  try { history.replaceState(null, '', '#' + (NAV_OF[view] || view)); } catch (e) {}
-  renderCmpBar();
-  if (scroll) { scrollTo({ top: 0 }); $('#main').focus({ preventScroll: true }); }
-}
-function renderPeriods() { $('#periods').innerHTML = PERIODS.map(([v, l]) => `<button data-period="${v}" aria-pressed="${period === v}">${l}</button>`).join(''); }
-function refreshBadges() { $('#b-products').textContent = P.filter(p => visible(p) && !p.pilot).length; }
+// ── 이벤트 ──
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-view],[data-go],[data-open],[data-cat],[data-partner],[data-period],[data-cmp-type],[data-cmp-clear],[data-ss],#s-more');
+  if (e.target.closest('#d-close') || e.target.id === 'scrim') return closeDrawer();
+  if (e.target.matches('.ck')) { e.stopPropagation(); const k = e.target.dataset.cmp;
+    st.cmp = st.cmp.includes(k) ? st.cmp.filter(x => x !== k) : st.cmp.length >= 4 ? (e.target.checked = false, st.cmp) : [...st.cmp, k];
+    e.target.closest('tr').classList.toggle('sel', st.cmp.includes(k)); return renderCmpBar(); }
+  const t = e.target.closest('[data-open],[data-scope],[data-period],[data-sort],[data-hm],[data-more],[data-compare],[data-cmp-clear],#help-btn,#queue-btn');
   if (!t) return;
-  if (t.dataset.cmpType) { e.stopPropagation(); toggleCmp(t.dataset.cmpType, t.dataset.cmpKey);
-    if (current === 'compare') return go('compare', null, false);
-    document.querySelectorAll(`[data-cmp-type]`).forEach(b => { const on = inCmp(b.dataset.cmpType, b.dataset.cmpKey); b.setAttribute('aria-pressed', on); if (!b.closest('.ccol')) b.textContent = on ? '✓ 비교에 담음' : '+ 비교'; });
-    return renderCmpBar(); }
-  if (t.dataset.cmpClear !== undefined) { cmp = { type: null, keys: [] }; return go(current, openKey, false); }
-  if (t.dataset.period) { period = t.dataset.period; applyPeriod(); renderPeriods(); refreshBadges(); return go(current, openKey, false); }
-  if (t.dataset.view) return go(t.dataset.view);
-  if (t.dataset.go) { e.preventDefault(); return go(t.dataset.go); }
-  if (t.dataset.open) return go('product', t.dataset.open);
-  if (t.dataset.cat) return go('category', t.dataset.cat);
-  if (t.dataset.partner) return go('partner', t.dataset.partner);
-  if (t.dataset.ss !== undefined) { st.ss = t.dataset.ss; st.sShow = 30; document.querySelectorAll('[data-ss]').forEach(b => b.setAttribute('aria-pressed', b === t)); return renderSearch(); }
-  if (t.id === 's-more') { st.sShow += 30; return renderSearch(); }
+  if (t.id === 'help-btn') return helpDrawer();
+  if (t.id === 'queue-btn') return queueDrawer();
+  if (t.dataset.compare !== undefined) return st.cmp.length >= 2 && compareDrawer();
+  if (t.dataset.cmpClear !== undefined) { st.cmp = []; return render(); }
+  if (t.dataset.open) return productDrawer(t.dataset.open);
+  if (t.dataset.scope) { e.preventDefault(); const s = t.dataset.scope, k = t.dataset.key || '';
+    st.scope = (s === 'all' || (st.scope.t === s && st.scope.k === k && t.classList.contains('pill'))) ? { t: 'all', k: '' } : { t: s, k };
+    if (s !== 'all' && st.hm !== 'product' && t.closest('.hm')) st.hm = 'product';
+    st.show = 40; closeDrawer(); renderTop(); return render(); }
+  if (t.dataset.period) { st.period = t.dataset.period; applyPeriod(); renderTop(); return render(); }
+  if (t.dataset.sort) { st.sort = t.dataset.sort; return render(); }
+  if (t.dataset.hm) { st.hm = t.dataset.hm; return render(); }
+  if (t.dataset.more !== undefined) { st.show += 40; return renderFeed(); }
 });
-document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('tr[data-open]')) { e.preventDefault(); go('product', e.target.dataset.open); } });
-document.addEventListener('input', e => {
-  if (e.target.id === 'f-q') { st.q = e.target.value; renderPTable(); }
-  if (e.target.id === 's-q') { st.sq = e.target.value; st.sShow = 30; clearTimeout(window.__sqT); window.__sqT = setTimeout(renderSearch, 200); }
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !$('#drawer').hidden) return closeDrawer();
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('tr[data-open]')) { e.preventDefault(); productDrawer(e.target.dataset.open); }
 });
-document.addEventListener('change', e => {
-  const id = e.target.id;
-  if (id === 'f-cat') { st.cat = e.target.value; renderPTable(); }
-  if (id === 'f-sort') { st.sort = e.target.value; renderPTable(); }
-  if (id === 'f-pilot') { st.pilot = e.target.value === '1'; renderPTable(); }
-});
+document.addEventListener('input', e => { if (e.target.id === 'q') { st.q = e.target.value; st.show = 40; clearTimeout(window.__qT); window.__qT = setTimeout(renderFeed, 180); } });
+document.addEventListener('change', e => { if (e.target.id === 'partner-sel') { const v = e.target.value; st.scope = v ? { t: 'partner', k: v } : { t: 'all', k: '' }; st.show = 40; renderTop(); render(); } });
 
-applyPeriod(); renderPeriods(); refreshBadges();
-$('#brand-sub').textContent = `후기 ${fmt(M.reviews)}건 · ${ANCHOR} 기준`;
-if (M.queue) { $('#t-queue').hidden = false; $('#b-queue').textContent = fmt(M.queue); }
-$('#rail-foot').innerHTML = `매일 08:00 겸손몰 게시판에서 새 후기를 모아 AI가 분류합니다.<br>테스트·추가구매 상품 ${fmt(M.excluded)}건은 뺐습니다.<br>${esc(M.built)} 갱신`;
-// 들어오면 언제나 Overview부터(이석원 2026-10-13).
-go('overview');
+applyPeriod(); renderTop(); render();
+$('#stamp').textContent = `${ANCHOR.slice(5).replace('-', '.')} 08:00 · ${fmt(M.reviews)}건`;
+if (M.queue) { const b = $('#queue-btn'); b.hidden = false; b.textContent = `확인 대기 ${fmt(M.queue)}`; }
 })();
 </script>
