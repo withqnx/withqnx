@@ -82,7 +82,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .dl small{font-weight:500;opacity:.85}
 
 /* 세 칸 */
-.main3{display:grid;grid-template-columns:minmax(240px,270px) minmax(0,1fr) minmax(280px,340px);gap:var(--gap);height:clamp(440px,calc(100vh - 190px),660px)}
+.main3{display:grid;grid-template-columns:minmax(240px,270px) minmax(0,1fr) minmax(280px,340px);gap:var(--gap);height:clamp(400px,calc(100vh - 300px),600px)}
 .stack{display:flex;flex-direction:column;gap:var(--gap);min-height:0}
 .stack>.panel{flex:1 1 0}
 .main2{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:var(--gap)}
@@ -215,7 +215,7 @@ mark{background:var(--accent);color:var(--accent-ink);border-radius:2px;padding:
   .search{flex:1 1 140px}
   .stamp{display:none}
   .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .kpi.hero{grid-column:1/-1} .kpi.x{display:flex}
+  .kpi.hero{grid-column:1/-1} .kpi.x{display:none}
   .main3{grid-template-columns:minmax(0,1fr)}
   .main3>.stack:first-child,.main3>.tblp{height:auto}
   .stack>.panel{flex:0 0 auto}
@@ -299,7 +299,7 @@ const sortObj = o => Object.fromEntries(Object.entries(o).sort((a, b) => b[1] - 
 
 // ── 상태 ──
 const PERIODS = [['30', '30일'], ['90', '90일'], ['365', '1년'], ['all', '전체']];
-const st = { period: 'all', scope: { t: 'all', k: '' }, sort: 'n', q: '', show: 40, hm: 'product', cmp: [] };
+const st = { period: '90', scope: { t: 'all', k: '' }, sort: 'n', q: '', show: 40, hm: 'product', cmp: [] };
 const ANCHOR = (M.updated || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
 const ymdMinus = days => { const d = new Date(ANCHOR + 'T00:00:00'); d.setDate(d.getDate() - days); return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate(); };
 const cutoff = () => st.period === 'all' ? 0 : ymdMinus(+st.period);
@@ -338,8 +338,8 @@ const wkOf = ps => ps.reduce((a, p) => { const w = WK[PI.get(p)]; for (const k i
 function delta(cur, prev, upIsGood = true, neutral = false) {
   const d = cur - prev;
   if (!d) return `<span class="dl flat" title="지난주와 같음">— 0</span>`;
-  const cls = neutral ? 'flat' : ((d > 0) === upIsGood ? 'good' : 'bad'), p = prev ? `${d > 0 ? '+' : ''}${Math.round(d / prev * 100)}%` : '새로';
-  return `<span class="dl ${cls}" title="지난주 ${prev} → 이번 주 ${cur}">${d > 0 ? '▲' : '▼'}${Math.abs(d)} <small>${p}</small></span>`;
+  const cls = neutral ? 'flat' : ((d > 0) === upIsGood ? 'good' : 'bad'), p = prev >= 5 ? `${d > 0 ? '+' : ''}${Math.round(d / prev * 100)}%` : '';
+  return `<span class="dl ${cls}" title="지난주 ${prev} → 이번 주 ${cur}">${d > 0 ? '▲' : '▼'}${Math.abs(d)}${p ? ` <small>${p}</small>` : ''}</span>`;
 }
 
 // ── 상태 색: 칭찬이 많으면 초록, 불만이 많으면 빨강, 진할수록 한쪽으로 쏠림 ──
@@ -434,12 +434,14 @@ function monthChart(rows, opt = {}) {
     const [yy, mm] = r[0].split('-');
     const lbl = i % every === 0 ? `<text x="${x + bar / 2}" y="${H - B + 15}" text-anchor="middle">${yy.slice(2)}.${+mm}</text>` : '';
     const ln = launches[r[0]] ? `<circle cx="${x + bar / 2}" cy="${T - 8}" r="3.5" fill="var(--accent)"/>` : '';
-    g += `${ln}<g class="mbar" data-i="${i}">${parts}<rect x="${L + i * bw}" y="0" width="${bw}" height="${H - B}" fill="transparent"/></g>${lbl}`;
+    const part = r[0] === ANCHOR.slice(0, 7), tt = r[2] + r[3] + r[4];
+    const pl = part ? `<text x="${x + bar}" y="${y(tt) - 5}" text-anchor="end">진행 중</text>` : '';
+    g += `${ln}${pl}<g class="mbar" data-i="${i}"${part ? ' opacity=".45"' : ''}>${parts}<rect x="${L + i * bw}" y="0" width="${bw}" height="${H - B}" fill="transparent"/></g>${lbl}`;
   });
   const id = 'c' + Math.random().toString(36).slice(2, 7);
   setTimeout(() => { const svg = document.getElementById(id); if (!svg) return;
     svg.querySelectorAll('.mbar').forEach(el => { const r = data[+el.dataset.i], t = r[2] + r[3] + r[4];
-      const html = `<b>${r[0].replace('-', '년 ')}월</b><br>후기 ${fmt(r[1])} · 이야기 ${fmt(t)}<br>칭찬 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 불만 ${fmt(r[4])}${launches[r[0]] ? `<br><span style="color:var(--accent)">● 판매 시작 ${launches[r[0]].map(esc).join(', ')}</span>` : ''}`;
+      const html = `<b>${r[0].replace('-', '년 ')}월${r[0] === ANCHOR.slice(0, 7) ? ' · 진행 중' : ''}</b><br>후기 ${fmt(r[1])} · 이야기 ${fmt(t)}<br>칭찬 ${fmt(r[2])} · 보통 ${fmt(r[3])} · 불만 ${fmt(r[4])}${launches[r[0]] ? `<br><span style="color:var(--accent)">● 판매 시작 ${launches[r[0]].map(esc).join(', ')}</span>` : ''}`;
       el.addEventListener('mousemove', e => showTip(html, e.clientX, e.clientY)); el.addEventListener('mouseleave', hideTip); }); });
   return `<div class="chart"><svg id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="월별 이야기 수">${g}</svg></div>`;
 }
@@ -454,10 +456,10 @@ const SORTS = {
 function tableHtml(ps) {
   const rows = [...ps].sort(SORTS[st.sort][0]);
   const th = (k, cls = '') => `<th scope="col" class="${cls}"><button data-sort="${k}" aria-pressed="${st.sort === k}">${SORTS[k][1]}${st.sort === k ? ' ▾' : ''}</button></th>`;
-  return rows.length ? `<table class="pt"><caption class="sr">상품별 후기</caption><thead><tr><th scope="col">상품</th>${th('n', 'r')}<th scope="col">반응</th>${th('good', 'r hide-sm')}${th('bad', 'r')}${th('wkb', 'r')}<th scope="col" class="hide-sm">주요 불만</th><th scope="col"><span class="sr">비교</span></th></tr></thead>
-    <tbody>${rows.map(p => { const w = WK[PI.get(p)], top = Object.keys(p.neg).slice(0, 1);
+  return rows.length ? `<table class="pt"><caption class="sr">상품별 후기</caption><thead><tr><th scope="col">상품</th>${th('n', 'r')}<th scope="col">반응</th>${th('bad', 'r')}${th('wkb', 'r')}<th scope="col" class="hide-sm">주요 불만</th><th scope="col"><span class="sr">비교</span></th></tr></thead>
+    <tbody>${rows.map(p => { const w = WK[PI.get(p)], top = Object.keys(p.neg).slice(0, 2);
       return `<tr data-open="${esc(p.key)}" tabindex="0" class="${st.cmp.includes(p.key) ? 'sel' : ''}"><td><div class="pcell">${thumb(p, 26)}<span class="nm" title="${esc(p.name)}">${esc(p.name)}</span><span class="no">${p.pilot ? '파일럿' : esc(p.num)}</span></div></td>
-      <td class="r">${fmt(p.n)}</td><td>${sbar(p.sent)}</td><td class="r hide-sm" style="color:var(--good)">${goodShare(p)}%</td><td class="r" style="color:${badShare(p) >= 30 ? 'var(--bad)' : 'var(--ink-2)'}">${badShare(p)}%</td>
+      <td class="r">${fmt(p.n)}</td><td>${sbar(p.sent)}</td><td class="r" style="color:${badShare(p) >= 30 ? 'var(--bad)' : 'var(--ink-2)'}">${badShare(p)}%</td>
       <td class="r">${w.b || w.bp ? `${fmt(w.b)} ${delta(w.b, w.bp, false)}` : '<span class="muted">—</span>'}</td>
       <td class="hide-sm">${top.map(t => `<span class="chip bad">${esc(tagName(t))}</span>`).join(' ') || '<span class="muted">—</span>'}</td>
       <td><input type="checkbox" class="ck" data-cmp="${esc(p.key)}" aria-label="${esc(p.name)} 비교에 담기" ${st.cmp.includes(p.key) ? 'checked' : ''}></td></tr>`; }).join('')}</tbody></table>` : '<div class="empty">없음</div>';
@@ -471,7 +473,7 @@ function feedHtml(ps) {
     for (const r of D.R) { if (r[1] < c || !set.has(r[0])) continue; const txt = r[2] + ' — ' + r[3], i = txt.toLowerCase().indexOf(ql); if (i >= 0) hits.push([r, i, txt]); }
     hits.sort((a, b) => b[0][1] - a[0][1]);
     const snip = (t, i) => { const a = Math.max(0, i - 36), b = Math.min(t.length, i + q.length + 70); return (a ? '…' : '') + esc(t.slice(a, i)) + '<mark>' + esc(t.slice(i, i + q.length)) + '</mark>' + esc(t.slice(i + q.length, b)) + (b < t.length ? '…' : ''); };
-    return { title: `«${esc(q)}» 검색`, meta: `${fmt(hits.length)}건 · ${esc(periodLabel())}`, html: hits.length ? `<div class="feed">${hits.slice(0, st.show).map(([r, i, t]) => { const p = P[r[0]], ss = new Set(r[5].map(sg => sg[0]));
+    return { title: `«${esc(q)}» · ${esc(scopeLabel())}`, meta: `${fmt(hits.length)}건 · ${esc(periodLabel())}`, html: hits.length ? `<div class="feed">${hits.slice(0, st.show).map(([r, i, t]) => { const p = P[r[0]], ss = new Set(r[5].map(sg => sg[0]));
       return `<div class="fi"><div class="row"><span class="num">${esc(ymdStr(r[1]))}</span><button class="chip" data-open="${esc(p.key)}">${esc(p.name)}</button>${ss.has(2) ? '<span class="chip bad">불만</span>' : ''}${ss.has(0) ? '<span class="chip good">칭찬</span>' : ''}</div><span class="s"><span>${snip(t, i)}</span>${ext(reviewLink(r[4]))}</span></div>`; }).join('')}</div>${hits.length > st.show ? `<button class="more" data-more>더 보기 · ${fmt(hits.length - st.show)}</button>` : ''}` : '<div class="empty">찾은 후기 없음</div>' };
   }
   const c14 = ymdMinus(13), fresh = [];
@@ -487,19 +489,20 @@ function renderFeed() {
 
 // ── 한 화면 ──
 function render() {
-  const ps = scoped(), a = agg(ps), rows = tagStats(a.pos, a.neg), w = a.wk, t = total(a.sent);
+  const ps = scoped(), a = agg(ps), rows = tagStats(a.pos, a.neg), w = a.wk;
+  const topB = [...rows].sort((x, y) => y.b - x.b).find(r => r.b), topG = [...rows].sort((x, y) => y.g - x.g).find(r => r.g);
   let hmRows;
   if (st.hm === 'product') hmRows = [...ps].sort((x, y) => y.n - x.n).slice(0, 14).map(p => ({ label: p.name, attr: `data-open="${esc(p.key)}"`, thumb: thumb(p, 18), a: p }));
   else { const gs = groupsBy(st.hm === 'cat' ? 'cat' : 'partner');
     hmRows = Object.entries(gs).map(([k, g]) => ({ label: k, attr: `data-scope="${st.hm === 'cat' ? 'cat' : 'partner'}" data-key="${esc(k)}"`, a: agg(g), on: st.scope.k === k })).sort((x, y) => y.a.n - x.a.n).slice(0, 14); }
   $('#view').innerHTML = `
   <section class="kpis" aria-label="주요 숫자">
-    ${kpi(`후기 · ${esc(scopeLabel())}`, fmt(a.n), '건', `${esc(periodLabel())} · 상품 ${ps.length}`, 'hero')}
-    ${kpi('칭찬 비율', goodShare(a), '%', `칭찬 ${fmt(a.sent[0])} / 이야기 ${fmt(t)}`, '', 'g')}
-    ${kpi('불만 비율', badShare(a), '%', `불만 ${fmt(a.sent[2])}`, '', 'b')}
-    ${kpi('이번 주 새 후기', fmt(w.n), '건', `지난주 대비 ${delta(w.n, w.np, true, true)}`)}
-    ${kpi('이번 주 칭찬', fmt(w.g), '', `지난주 대비 ${delta(w.g, w.gp, true)}`, 'x')}
-    ${kpi('이번 주 불만', fmt(w.b), '', `지난주 대비 ${delta(w.b, w.bp, false)}`, 'x')}
+    ${kpi(`이번 주 불만 · ${esc(scopeLabel())}`, fmt(w.b), '개', `지난주 ${fmt(w.bp)} → ${delta(w.b, w.bp, false)}`, 'hero')}
+    ${kpi('이번 주 칭찬', fmt(w.g), '개', `지난주 ${fmt(w.gp)} → ${delta(w.g, w.gp, true)}`)}
+    ${kpi('이번 주 새 후기', fmt(w.n), '건', `지난주 ${fmt(w.np)} → ${delta(w.n, w.np, true, true)}`)}
+    ${kpi('가장 많은 불만', topB ? esc(topB.name) : '—', '', topB ? `불만 ${fmt(topB.b)} · ${esc(periodLabel())}` : '', '', 'b')}
+    ${kpi('가장 많은 칭찬', topG ? esc(topG.name) : '—', '', topG ? `칭찬 ${fmt(topG.g)} · ${esc(periodLabel())}` : '', 'x', 'g')}
+    ${kpi('후기', fmt(a.n), '건', `${esc(periodLabel())} · 상품 ${ps.length}`, 'x')}
     ${kpi('교환·AS 요청', fmt(a.itN['교환·반품'] || 0), '', esc(periodLabel()), 'x')}
   </section>
   <div class="main3">
